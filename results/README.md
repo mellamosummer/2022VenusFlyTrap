@@ -1,8 +1,8 @@
 **Number of BLAST hits to tairdb** 
 
-     36 list_pairwiseanalysis_petiole_vs_traps_noprey_time0_blast_descriptionstairdb.out
-    461 list_pairwiseanalysis_petiole_vs_traps_noprey_time1440_blast_descriptionstairdb.out
-    810 list_pairwiseanalysis_petiole_vs_traps_noprey_time5_blast_descriptionstairdb.out
+   36 list_pairwiseanalysis_petiole_vs_traps_noprey_time0_blast_descriptionstairdb.out
+   461 list_pairwiseanalysis_petiole_vs_traps_noprey_time1440_blast_descriptionstairdb.out
+   810 list_pairwiseanalysis_petiole_vs_traps_noprey_time5_blast_descriptionstairdb.out
    3243 list_pairwiseanalysis_petiole_vs_traps_noprey_time60_blast_descriptionstairdb.out
    1565 list_pairwiseanalysis_petiole_vs_traps_prey_time1440_blast_descriptionstairdb.out
    1780 list_pairwiseanalysis_petiole_vs_traps_prey_time180_blast_descriptionstairdb.out
