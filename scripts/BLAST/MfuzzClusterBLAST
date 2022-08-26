@@ -1,0 +1,38 @@
+#!/bin/bash
+#SBATCH --partition batch
+#SBATCH --ntasks=1
+#SBATCH --time=00:30:00
+#SBATCH --mem=3gb
+
+#trapsnoprey BLAST clusters 1 and 2
+ grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapsnoprey/trapsnopreyc1sed.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_oneHSP.out > Mfuzz_traps_no_prey_cluster1_BLAST_swissprot.txt
+ grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapsnoprey/trapsnopreyc1sed.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_tairdb.out > Mfuzz_traps_no_prey_cluster1_BLAST_tair.txt
+
+ grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapsnoprey/trapsnopreyc2sed.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_oneHSP.out > Mfuzz_traps_no_prey_cluster2_BLAST_swissprot.txt
+ grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapsnoprey/trapsnopreyc2sed.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_tairdb.out > Mfuzz_traps_no_prey_cluster2_BLAST_tair.txt
+
+#trapsprey BLAST clusters 1-8
+
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster1.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_oneHSP.out > Mfuzz_traps_prey_cluster1_BLAST_swissprot.txt
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster1.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_tairdb.out > Mfuzz_traps_prey_cluster1_BLAST_tair.txt
+
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster2.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_oneHSP.out > Mfuzz_traps_prey_cluster2_BLAST_swissprot.txt
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster2.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_tairdb.out > Mfuzz_traps_prey_cluster2_BLAST_tair.txt
+
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster3.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_oneHSP.out > Mfuzz_traps_prey_cluster3_BLAST_swissprot.txt
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster3.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_tairdb.out > Mfuzz_traps_prey_cluster3_BLAST_tair.txt
+
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster4.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_oneHSP.out > Mfuzz_traps_prey_cluster4_BLAST_swissprot.txt
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster4.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_tairdb.out > Mfuzz_traps_prey_cluster4_BLAST_tair.txt
+
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster5.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_oneHSP.out > Mfuzz_traps_prey_cluster5_BLAST_swissprot.txt
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster5.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_tairdb.out > Mfuzz_traps_prey_cluster5_BLAST_tair.txt
+
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster6.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_oneHSP.out > Mfuzz_traps_prey_cluster6_BLAST_swissprot.txt
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster6.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_tairdb.out > Mfuzz_traps_prey_cluster6_BLAST_tair.txt
+
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster7.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_oneHSP.out > Mfuzz_traps_prey_cluster7_BLAST_swissprot.txt
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster7.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_tairdb.out > Mfuzz_traps_prey_cluster7_BLAST_tair.txt
+
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster8.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_oneHSP.out > Mfuzz_traps_prey_cluster8_BLAST_swissprot.txt
+grep -f VFT_Analysis2/6_BLAST/Mfuzz/BLAST/mfuzzclusters_trapswithprey/trapswithpreycluster8.txt VFT_Analysis2/6_BLAST/results/Dm_proteins_BLAST_combined/combined_blast_results_tairdb.out > Mfuzz_traps_prey_cluster8_BLAST_tair.txt
