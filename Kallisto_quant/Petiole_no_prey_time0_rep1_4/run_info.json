@@ -1,0 +1,13 @@
+{
+	"n_targets": 21135,
+	"n_bootstraps": 100,
+	"n_processed": 16489725,
+	"n_pseudoaligned": 10921919,
+	"n_unique": 10784270,
+	"p_pseudoaligned": 66.2,
+	"p_unique": 65.4,
+	"kallisto_version": "0.46.1",
+	"index_version": 10,
+	"start_time": "Tue Jan 18 12:32:26 2022",
+	"call": "kallisto quant -i VFT.idx -o kallistoquant_42 -b 100 80_JMII_RNAseq_VFT48_Petiole_Petiole_PLT1_CGCTATGT_Dionaea_muscipula_typical_I1143_L2_R1.fastq 80_JMII_RNAseq_VFT48_Petiole_Petiole_PLT1_CGCTATGT_Dionaea_muscipula_typical_I1143_L2_R2.fastq"
+}
