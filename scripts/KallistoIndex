@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH --job-name=kallisto_idx
+#SBATCH --partition=batch
+#SBATCH --ntasks=1
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=80gb
+#SBATCH --time=8:00:00
+#SBATCH --output=%s_kallisto_idx.%j.out
+#SBATCH --error=%s_kallisto_idx.%j.err
+
+module load kallisto/0.46.1-foss-2019b
+
+kallisto index -i VFT.idx \
+Dm-transcripts.fa
+
+#VFT.idx is the name of the index file i am creating using Dm-transcripts.fa to generate the index
