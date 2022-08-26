@@ -1,0 +1,10 @@
+#!/bin/bash
+#SBATCH --partition batch
+#SBATCH --ntasks=1
+#SBATCH --time=48:00:00
+#SBATCH --mem=3gb
+
+ml HpcGridRunner/1.0.2
+ml BLAST+/2.12.0-gompi-2020b
+
+hpc_FASTA_GridRunner.pl --grid_conf=$HPCGR_CONF_DIR/sapelo_1c_3g.conf --cmd_template "blastp -query __QUERY_FILE__ -db /db/ncbiblast/swissprot/03012021 -max_target_seqs 1 -outfmt 6 -evalue 1e-20 -num_threads 1" --seqs_per_bin 100 --query_fasta Dm_proteins.fa --out_dir blast_result_swissprot
