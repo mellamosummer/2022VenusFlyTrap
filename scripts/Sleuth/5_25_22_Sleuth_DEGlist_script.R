@@ -181,8 +181,11 @@ traps_noprey_outliers_removed <- traps_noprey[-c(11, 14), ]
 
 
 #beginning of sleuth code , generates data frame with sample, condition, and path---------------
-sample_id <- subset(pairwise_time_1440_outlier_removed, select = c(condition, sample, sample))
+sample_id <- subset(pairwise_time_1440_outlier_removed, select = c(condition, sample, sample)) 
+###I changed "pairwise_time_1440_outlier_removed" for each of the pairwise comparisons to generate the output files.
 sample_id
+
+
 
 #rename one of the samples to file path 
 colnames(sample_id)[3] <- "path"
@@ -203,7 +206,6 @@ head(sleuth_significant, 20)
 plot_bootstrap(so, " Dm_00000118-RA", units = "est_counts", color_by = "condition")
 
 #Plot PCA
-
 jpeg("PCA_traps_noprey_outliers_removed.jpg")
 plot_pca(so, color_by = 'condition')
 dev.off()
