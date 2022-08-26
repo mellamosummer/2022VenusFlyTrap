@@ -1,0 +1,7 @@
+#how to get list of names for DEGlist -> BLAST script (Mfuzz results)
+
+awk -F "," '{ print $1}' geneclusters8.csv > traps_prey_names.txt
+awk -F "," '{ print $1}' geneclusters2.csv > traps_no_prey_names.txt
+
+sed 's/"//g' traps_prey_names.txt > traps_prey_names_sed.txt
+sed 's/"//g' traps_no_prey_names.txt > traps_no_prey_names_sed.txt
