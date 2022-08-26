@@ -1,0 +1,13 @@
+{
+	"n_targets": 21135,
+	"n_bootstraps": 100,
+	"n_processed": 9445694,
+	"n_pseudoaligned": 3860616,
+	"n_unique": 3796654,
+	"p_pseudoaligned": 40.9,
+	"p_unique": 40.2,
+	"kallisto_version": "0.46.1",
+	"index_version": 10,
+	"start_time": "Tue Jan 18 12:22:10 2022",
+	"call": "kallisto quant -i VFT.idx -o kallistoquant_20 -b 100 39_JMHK_RNAseq_VFT24_Leaf_Trap_closed_w_prey_24hr_PLT1_CCTTCACC_Dionaea_muscipula_typical_I1143_L2_R1.fastq 39_JMHK_RNAseq_VFT24_Leaf_Trap_closed_w_prey_24hr_PLT1_CCTTCACC_Dionaea_muscipula_typical_I1143_L2_R2.fastq 40_JMHK_RNAseq_VFT24_Leaf_Trap_closed_w_prey_24hr_PLT1_CCTTCACC_Dionaea_muscipula_typical_I1148_L1_R1.fastq 40_JMHK_RNAseq_VFT24_Leaf_Trap_closed_w_prey_24hr_PLT1_CCTTCACC_Dionaea_muscipula_typical_I1148_L1_R2.fastq"
+}
