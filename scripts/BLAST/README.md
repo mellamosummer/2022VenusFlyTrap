@@ -1,9 +1,8 @@
 #to create text file compare DEG lists to BLAST hits
 paste number_of_genes_DEG_lists.txt number_of_annotated_BLAST_hits_DEG_lists.txt > total_genes_per_list_vs_BLAST_hits.txt
 
-##############################################
-BLAST against Tair database for GO annotations
-##############################################
+
+**BLAST against Tair database for GO annotations**
 
 #download TAIR sequences
 wget https://www.arabidopsis.org/download_files/Proteins/Araport11_protein_lists/Araport11_pep_20220103.gz
@@ -20,17 +19,15 @@ gridrunnerBLAST.sh
 #use same format to concatenate out files
 find blast_results_title_oneHSP_tairdb -name '*.fa.OUT' | xargs cat > combined_blast_results_tairdb.out
 
-##############
-GO annotations
-##############
+**GO annotations**
+
 #pull AT gene names from BLAST results
 awk '{print $1, $2}' results/combined_blast_results_tairdb.out > Dm_AT_BLASThits.txt
 
 #paste entire list into https://www.arabidopsis.org/tools/go_term_enrichment.jsp
 
-###################
-Traps Overlap BLAST
-###################
+
+**Traps Overlap BLAST**
 
 #swissprot BLAST
 grep -f data/trapspreynopreyoverlap.txt results/Dm_proteins_BLAST_combined/combined_blast_results_oneHSP.out > trapsoverlap_swissprot.txt
@@ -38,9 +35,7 @@ grep -f data/trapspreynopreyoverlap.txt results/Dm_proteins_BLAST_combined/combi
 #tair BLAST
 grep -f data/trapspreynopreyoverlap.txt results/Dm_proteins_BLAST_combined/combined_blast_results_tairdb.out > trapsoverlap_tair.txt
 
-#####################
-BLAST results headers
-#####################
+**BLAST results headers**
 
 qseqid 
 sseqid 
