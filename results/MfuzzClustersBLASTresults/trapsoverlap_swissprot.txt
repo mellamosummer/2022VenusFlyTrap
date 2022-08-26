@@ -1,0 +1,954 @@
+Dm_00007096-RA	sp|P49310.1|	RecName: Full=Glycine-rich RNA-binding protein GRP1A [Sinapis alba]	83.529	85	14	0	1	85	1	85	4.97e-48	156
+Dm_00007092-RA	sp|Q9CAJ9.1|	RecName: Full=BTB/POZ domain-containing protein At1g63850 [Arabidopsis thaliana]	26.018	442	253	17	58	477	135	524	7.71e-21	99.0
+Dm_00006960-RA	sp|Q8L999.1|	RecName: Full=Protein BASIC PENTACYSTEINE6; Short=AtBPC6; AltName: Full=GAGA-binding transcriptional activator BBR/BPC6 [Arabidopsis thaliana]	59.420	345	117	9	1	326	1	341	2.41e-123	363
+Dm_00006516-RA	sp|Q9LR67.1|	RecName: Full=Pentatricopeptide repeat-containing protein At1g03560, mitochondrial; Flags: Precursor [Arabidopsis thaliana]	65.738	610	207	2	44	652	46	654	0.0	863
+Dm_00006338-RA	sp|Q9SL42.1|	RecName: Full=Peptidyl-prolyl cis-trans isomerase Pin1; Short=PPIase Pin1; AltName: Full=PIN1At; AltName: Full=Rotamase Pin1 [Arabidopsis thaliana]	78.814	118	25	0	1	118	1	118	2.84e-67	201
+Dm_00006672-RA	sp|P51823.2|	RecName: Full=ADP-ribosylation factor 2 [Oryza sativa Japonica Group]	99.448	181	1	0	1	181	1	181	8.39e-134	375
+Dm_00006814-RA	sp|Q941A6.1|	RecName: Full=Succinate dehydrogenase subunit 6, mitochondrial [Arabidopsis thaliana]	64.029	139	50	0	10	148	4	142	2.37e-65	198
+Dm_00006596-RA	sp|P51414.2|	RecName: Full=60S ribosomal protein L26-1 [Arabidopsis thaliana]	86.301	146	20	0	1	146	1	146	4.51e-92	266
+Dm_00009247-RA	sp|Q0WL80.1|	RecName: Full=UDP-glucose:glycoprotein glucosyltransferase; AltName: Full=EMS-mutagenized BRI1 suppressor 1; AltName: Full=Protein PRIORITY IN SWEET LIFE 2; Flags: Precursor [Arabidopsis thaliana]	76.596	94	22	0	1	94	1051	1144	3.78e-45	158
+Dm_00009246-RA	sp|Q0WL80.1|	RecName: Full=UDP-glucose:glycoprotein glucosyltransferase; AltName: Full=EMS-mutagenized BRI1 suppressor 1; AltName: Full=Protein PRIORITY IN SWEET LIFE 2; Flags: Precursor [Arabidopsis thaliana]	55.114	176	63	4	1	164	1159	1330	2.20e-49	178
+Dm_00009212-RA	sp|Q9M1A8.1|	RecName: Full=DNA-directed RNA polymerases II, IV and V subunit 8B; AltName: Full=RNA polymerase Rpb8 [Arabidopsis thaliana]	47.368	76	40	0	8	83	27	102	3.51e-23	89.7
+Dm_00017090-RA	sp|Q6TGC6.1|	RecName: Full=Serine/threonine-protein kinase CBK1 [Pneumocystis carinii]	50.269	372	162	5	70	430	140	499	1.23e-122	369
+Dm_00007394-RA	sp|F4HW02.1|	RecName: Full=GABA transporter 1; Short=AtGAT1; AltName: Full=Bidirectional amino acid transporter 1 [Arabidopsis thaliana]	64.013	314	112	1	4	316	138	451	7.73e-136	395
+Dm_00007274-RA	sp|Q9FIZ7.1|	RecName: Full=5-oxoprolinase 1; AltName: Full=5-oxo-L-prolinase; Short=5-OPase; AltName: Full=Protein OXOPROLINASE 1; AltName: Full=Pyroglutamase [Arabidopsis thaliana]	82.859	1266	212	2	1	1263	1	1264	0.0	2174
+Dm_00007779-RA	sp|Q67YU0.1|	RecName: Full=Cytokinin dehydrogenase 5; AltName: Full=Cytokinin oxidase 5; Short=AtCKX5; Short=AtCKX6; Short=CKO5; Flags: Precursor [Arabidopsis thaliana]	61.856	582	151	13	3	583	9	520	0.0	694
+Dm_00008433-RA	sp|P0DKK1.1|	RecName: Full=60S ribosomal protein L37a-1 [Oryza sativa Japonica Group]	95.604	91	4	0	34	124	1	91	1.70e-58	179
+Dm_00008377-RA	sp|P08770.2|	RecName: Full=Putative AC transposase; AltName: Full=ORFA [Zea mays]	39.869	306	161	4	2	284	236	541	1.31e-61	211
+Dm_00009383-RA	sp|P08770.2|	RecName: Full=Putative AC transposase; AltName: Full=ORFA [Zea mays]	26.783	687	352	22	81	694	143	751	2.60e-51	195
+Dm_00008823-RA	sp|Q9LUQ6.1|	RecName: Full=60S ribosomal protein L19-2 [Arabidopsis thaliana]	88.525	183	21	0	1	183	1	183	1.80e-115	329
+Dm_00020781-RA	sp|O22932.1|	RecName: Full=CBL-interacting serine/threonine-protein kinase 11; AltName: Full=SNF1-related kinase 3.22; AltName: Full=SOS2-like protein kinase PKS5; AltName: Full=SOS3-interacting protein 4 [Arabidopsis thaliana]	60.633	442	147	7	11	447	2	421	0.0	535
+Dm_00021089-RA	sp|Q2QZJ8.1|	RecName: Full=Transcription factor JAMYB; AltName: Full=OsJAMyb [Oryza sativa Japonica Group]	60.829	217	62	2	6	222	1	194	1.06e-85	263
+Dm_00020779-RA	sp|Q9M5Z9.1|	RecName: Full=40S ribosomal protein S23 [Euphorbia esula]	78.049	123	8	2	27	149	39	142	7.77e-59	182
+Dm_00019961-RA	sp|L0BWK3.1|	RecName: Full=Probable caffeine synthase 4 [Camellia sinensis]	45.745	376	186	10	1	372	1	362	9.35e-104	313
+Dm_00017525-RA	sp|Q9LUZ4.1|	RecName: Full=Zinc finger CCCH domain-containing protein 66; Short=AtC3H66 [Arabidopsis thaliana]	48.413	756	222	26	10	758	13	607	0.0	580
+Dm_00007238-RA	sp|Q9FJF9.1|	RecName: Full=Auxin-responsive protein SAUR21; AltName: Full=Protein SMALL AUXIN UP RNA 21 [Arabidopsis thaliana]	52.703	74	35	0	98	171	13	86	1.15e-25	97.1
+Dm_00007239-RA	sp|Q9FJF9.1|	RecName: Full=Auxin-responsive protein SAUR21; AltName: Full=Protein SMALL AUXIN UP RNA 21 [Arabidopsis thaliana]	56.000	75	33	0	23	97	14	88	6.95e-27	97.1
+Dm_00006773-RA	sp|Q9LXD9.1|	RecName: Full=Probable pectinesterase/pectinesterase inhibitor 51; Includes: RecName: Full=Pectinesterase inhibitor 51; AltName: Full=Pectin methylesterase inhibitor 51; Includes: RecName: Full=Pectinesterase 51; Short=PE 51; AltName: Full=Pectin methylesterase 51; Short=AtPME51; Flags: Precursor [Arabidopsis thaliana]	76.786	112	26	0	190	301	276	387	3.15e-55	191
+Dm_00007319-RA	sp|Q9M0B6.1|	RecName: Full=UDP-glucuronate 4-epimerase 1; AltName: Full=UDP-glucuronic acid epimerase 1; Short=AtUGlcAE3 [Arabidopsis thaliana]	84.561	421	62	1	7	427	4	421	0.0	736
+Dm_00009931-RA	sp|Q9LSQ6.1|	RecName: Full=Calcium-binding protein PBP1; AltName: Full=KIC-related protein 2; AltName: Full=PINOID-binding protein 1 [Arabidopsis thaliana]	53.043	115	53	1	2	115	6	120	4.52e-36	122
+Dm_00009935-RA	sp|Q9M0Y3.1|	RecName: Full=Equilibrative nucleotide transporter 3; Short=AtENT3; AltName: Full=Nucleoside transporter ENT3; AltName: Full=Protein FLUOROURIDINE RESISTANT 1 [Arabidopsis thaliana]	69.704	406	118	3	2	405	12	414	0.0	587
+Dm_00008810-RA	sp|Q06548.1|	RecName: Full=Probable serine/threonine-protein kinase PBL9; AltName: Full=PBS1-like protein 9; AltName: Full=Protein kinase 1A [Arabidopsis thaliana]	62.281	342	127	1	108	447	13	354	3.56e-158	456
+Dm_00008801-RA	sp|Q8LSN3.1|	RecName: Full=Phytochrome-associated serine/threonine-protein phosphatase; AltName: Full=PsFyPP [Pisum sativum]	83.051	354	9	1	1	354	1	303	0.0	600
+Dm_00007527-RA	sp|P59278.2|	RecName: Full=Uncharacterized protein At1g51745 [Arabidopsis thaliana]	31.724	435	196	14	2	367	61	463	1.46e-41	162
+Dm_00008420-RA	sp|Q9ZU46.1|	RecName: Full=Receptor protein kinase-like protein ZAR1; AltName: Full=Protein ZYGOTIC ARREST 1; Flags: Precursor [Arabidopsis thaliana]	37.845	724	355	16	6	654	6	709	1.85e-134	414
+Dm_00009084-RA	sp|Q9FL12.1|	RecName: Full=Protease Do-like 9 [Arabidopsis thaliana]	74.545	605	129	5	1	597	1	588	0.0	863
+Dm_00008478-RA	sp|F4JUL9.1|	RecName: Full=Actin-related protein 2/3 complex subunit 4; AltName: Full=Actin-related protein C4; AltName: Full=Arp2/3 complex 20 kDa subunit; Short=p20-ARC [Arabidopsis thaliana]	82.692	104	18	0	44	147	37	140	1.23e-57	179
+Dm_00009379-RA	sp|P93823.1|	RecName: Full=RING-H2 finger protein ATL1; AltName: Full=RING-type E3 ubiquitin transferase ATL1 [Arabidopsis thaliana]	43.188	345	160	7	28	349	32	363	1.55e-78	248
+Dm_00009378-RA	sp|Q9LSX0.1|	RecName: Full=Ethylene-responsive transcription factor ERF096 [Arabidopsis thaliana]	61.983	121	36	2	7	127	4	114	2.57e-40	134
+Dm_00008606-RA	sp|O24361.1|	RecName: Full=Proteasome subunit beta type-5; AltName: Full=20S proteasome subunit E; AltName: Full=Proteasome epsilon chain; Flags: Precursor [Spinacia oleracea]	84.559	272	39	1	1	272	1	269	1.09e-170	475
+Dm_00008874-RA	sp|Q8GZD4.2|	RecName: Full=Nucleobase-ascorbate transporter 3; Short=AtNAT3 [Arabidopsis thaliana]	65.289	484	166	2	1	483	68	550	0.0	635
+Dm_00007727-RA	sp|Q8VZT6.1|	RecName: Full=Thioredoxin-like 3-2, chloroplastic; AltName: Full=Thioredoxin WCRKC-2; Flags: Precursor [Arabidopsis thaliana]	71.765	85	18	1	24	102	106	190	7.47e-39	130
+Dm_00007891-RA	sp|Q3EBL9.1|	RecName: Full=Vacuolar protein-sorting-associated protein 37 homolog 2; Short=AtVPS37-2; AltName: Full=ESCRT-I complex subunit VPS37 homolog 2 [Arabidopsis thaliana]	66.667	204	56	1	7	210	26	217	8.70e-93	273
+Dm_00015386-RA	sp|O64823.1|	RecName: Full=Calcium uniporter protein 2, mitochondrial; Flags: Precursor [Arabidopsis thaliana]	48.266	346	142	9	1	327	1	328	1.78e-103	311
+Dm_00015692-RA	sp|Q8L6Z4.1|	RecName: Full=30S ribosomal protein S9, mitochondrial; Flags: Precursor [Arabidopsis thaliana]	77.561	205	45	1	11	215	227	430	2.16e-111	328
+Dm_00018495-RA	sp|P25076.1|	RecName: Full=Cytochrome c1-1, heme protein, mitochondrial; AltName: Full=Complex III subunit 4-1; AltName: Full=Complex III subunit IV-1; AltName: Full=Cytochrome b-c1 complex subunit 4-1; AltName: Full=Ubiquinol-cytochrome-c reductase complex cytochrome c1 subunit 1; Short=Cytochrome c-1-1; Flags: Precursor [Solanum tuberosum]	83.388	307	48	2	4	308	15	320	0.0	529
+Dm_00016675-RA	sp|Q9SYM9.1|	RecName: Full=Receptor-like serine/threonine-protein kinase At1g78530 [Arabidopsis thaliana]	66.181	343	89	5	8	328	9	346	4.41e-164	464
+Dm_00017694-RA	sp|Q9ZUX4.1|	RecName: Full=Uncharacterized protein At2g27730, mitochondrial; Flags: Precursor [Arabidopsis thaliana]	49.624	133	42	5	1	128	1	113	1.94e-23	90.5
+Dm_00017323-RA	sp|A2XQE8.1|	RecName: Full=Senescence-specific cysteine protease SAG39; AltName: Full=Cysteine proteinase SAG39; AltName: Full=Protein SENESCENCE-ASSOCIATED GENE 39; Flags: Precursor [Oryza sativa Indica Group]	51.343	335	155	6	15	343	6	338	1.64e-118	348
+Dm_00020993-RA	sp|Q5UNY4.1|	RecName: Full=Uncharacterized protein L728 [Acanthamoeba polyphaga mimivirus]	36.000	150	92	2	1	148	341	488	6.09e-28	112
+Dm_00018606-RA	sp|O82197.1|	RecName: Full=Vacuolar protein sorting-associated protein 32 homolog 1; Short=AtVPS32-1; AltName: Full=Charged multivesicular body protein 4 homolog 1; AltName: Full=ESCRT-III complex subunit VPS32 homolog 1 [Arabidopsis thaliana]	81.818	220	31	4	1	218	1	213	1.48e-110	318
+Dm_00018291-RA	sp|Q9XIM8.1|	RecName: Full=Pentatricopeptide repeat-containing protein At2g15980 [Arabidopsis thaliana]	46.482	469	221	8	53	518	45	486	4.75e-134	400
+Dm_00020970-RA	sp|Q9SJL2.2|	RecName: Full=Heavy metal-associated isoprenylated plant protein 5; Short=AtHIP05; AltName: Full=Farnesylated protein 2; Short=AtFP2; Flags: Precursor [Arabidopsis thaliana]	40.462	346	171	10	32	353	52	386	3.08e-55	188
+Dm_00020813-RA	sp|Q9SB52.1|	RecName: Full=Mitochondrial uncoupling protein 4; Short=AtPUMP4; AltName: Full=Mitochondrial dicarboxylate carrier 2 [Arabidopsis thaliana]	69.350	323	89	3	1	323	1	313	2.20e-159	450
+Dm_00016105-RA	sp|Q54PM7.2|	RecName: Full=N-acetyl-D-glucosamine kinase; Short=N-acetylglucosamine kinase; AltName: Full=GlcNAc kinase [Dictyostelium discoideum]	36.741	313	170	5	23	326	4	297	3.38e-56	190
+Dm_00009309-RA	sp|P93206.2|	RecName: Full=14-3-3 protein 1 [Solanum lycopersicum]	42.857	217	109	7	9	220	3	209	3.22e-40	142
+Dm_00010895-RA	sp|Q5PNS0.1|	RecName: Full=PHD finger protein At3g20280 [Arabidopsis thaliana]	52.336	107	51	0	340	446	2	108	3.38e-38	152
+Dm_00015394-RA	sp|Q9MA96.1|	RecName: Full=Signal peptidase complex subunit 3A; AltName: Full=Microsomal signal peptidase 22 kDa subunit; Short=SPC22; Short=SPase 22 kDa subunit [Arabidopsis thaliana]	72.785	158	41	1	1	158	1	156	5.47e-84	246
+Dm_00014761-RA	sp|Q9FZ62.1|	RecName: Full=Inorganic pyrophosphatase 2; Short=AtPPsPase2; Short=PPi phosphatase 2; Short=Pyrophosphate-specific phosphatase 2 [Arabidopsis thaliana]	68.936	235	68	2	4	234	7	240	4.68e-118	342
+Dm_00015952-RA	sp|Q8L3Z8.1|	RecName: Full=Protein FIZZY-RELATED 2; AltName: Full=Cell cycle switch protein CCS52A1 [Arabidopsis thaliana]	74.096	498	92	9	18	509	17	483	0.0	717
+Dm_00015363-RA	sp|Q9ZWQ7.1|	RecName: Full=Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit DAD1; Short=Oligosaccharyl transferase subunit DAD1; AltName: Full=CitDAD-1-1; AltName: Full=Defender against cell death 1; Short=DAD-1 [Citrus unshiu]	94.444	108	6	0	31	138	1	108	1.97e-68	204
+Dm_00002524-RA	sp|Q84KJ6.1|	RecName: Full=Ammonium transporter 3 member 1; Short=OsAMT3;1 [Oryza sativa Japonica Group]	74.029	489	98	4	7	490	11	475	0.0	727
+Dm_00003403-RA	sp|O22173.1|	RecName: Full=Polyadenylate-binding protein 4; Short=PABP-4; Short=Poly(A)-binding protein 4 [Arabidopsis thaliana]	66.667	369	97	9	1	357	308	662	1.35e-157	460
+Dm_00003835-RA	sp|Q39434.1|	RecName: Full=Ras-related protein Rab2BV [Beta vulgaris]	84.874	238	12	3	1	238	1	214	1.51e-142	400
+Dm_00018936-RA	sp|Q9FY79.1|	RecName: Full=Laccase-14; AltName: Full=Benzenediol:oxygen oxidoreductase 14; AltName: Full=Diphenol oxidase 14; AltName: Full=Urishiol oxidase 14; Flags: Precursor [Arabidopsis thaliana]	47.764	559	240	8	9	528	12	557	0.0	532
+Dm_00019244-RA	sp|Q9SV72.1|	RecName: Full=EPIDERMAL PATTERNING FACTOR-like protein 9; Short=EPF-like protein 9; Contains: RecName: Full=Stomagen; Flags: Precursor [Arabidopsis thaliana]	82.000	50	8	1	64	112	53	102	8.02e-24	90.5
+Dm_00019056-RA	sp|Q9LV37.2|	RecName: Full=Mitogen-activated protein kinase 9; Short=AtMPK9; Short=MAP kinase 9 [Arabidopsis thaliana]	83.689	515	79	4	75	589	1	510	0.0	862
+Dm_00019001-RA	sp|Q8S8F8.1|	RecName: Full=GLABRA2 expression modulator [Arabidopsis thaliana]	59.862	289	105	5	17	296	13	299	2.67e-107	316
+Dm_00011592-RA	sp|Q8RXK7.2|	RecName: Full=Probable pectinesterase/pectinesterase inhibitor 41; Includes: RecName: Full=Pectinesterase inhibitor 41; AltName: Full=Pectin methylesterase inhibitor 41; Includes: RecName: Full=Pectinesterase 41; Short=PE 41; AltName: Full=AtPMEpcrB; AltName: Full=Pectin methylesterase 41; Short=AtPME41; Flags: Precursor [Arabidopsis thaliana]	57.610	611	208	9	7	606	1	571	0.0	704
+Dm_00011791-RA	sp|Q9CAJ9.1|	RecName: Full=BTB/POZ domain-containing protein At1g63850 [Arabidopsis thaliana]	58.932	543	193	6	130	651	10	543	0.0	628
+Dm_00002730-RA	sp|Q9FMM3.1|	RecName: Full=Protein ESSENTIAL FOR POTEXVIRUS ACCUMULATION 1; AltName: Full=Plant SMY2-type ILE-GYF domain-containing protein 1; AltName: Full=Protein MUTANT, SNC1-ENHANCING 11 [Arabidopsis thaliana]	39.075	1103	513	36	83	1156	33	1005	1.36e-163	538
+Dm_00002783-RA	sp|Q9SR02.1|	RecName: Full=Mediator of RNA polymerase II transcription subunit 14; AltName: Full=Protein STRUWWELPETER; Short=AtSWP [Arabidopsis thaliana]	58.650	1555	498	29	1	1528	1	1437	0.0	1649
+Dm_00002791-RA	sp|Q9SQZ9.2|	RecName: Full=PITH domain-containing protein At3g04780 [Arabidopsis thaliana]	83.523	176	29	0	1	176	1	176	4.42e-110	313
+Dm_00002359-RA	sp|Q9ZQE5.2|	RecName: Full=Pentatricopeptide repeat-containing protein At2g15690, mitochondrial; Flags: Precursor [Arabidopsis thaliana]	60.158	379	147	2	213	591	205	579	1.17e-172	504
+Dm_00002355-RA	sp|Q96289.1|	RecName: Full=Zinc finger protein ZAT10; AltName: Full=Salt-tolerance zinc finger [Arabidopsis thaliana]	41.606	274	92	10	1	263	1	217	1.04e-48	164
+Dm_00002361-RA	sp|Q9FHS6.1|	RecName: Full=F-box/kelch-repeat protein At5g43190 [Arabidopsis thaliana]	49.051	369	163	8	4	359	35	391	3.46e-99	302
+Dm_00002597-RA	sp|Q9ZQ31.2|	RecName: Full=Serine/threonine-protein kinase STY13; AltName: Full=AtSTYPK; AltName: Full=Serine/threonine/tyrosine-protein kinase 13 [Arabidopsis thaliana]	38.889	288	156	3	59	346	122	389	1.55e-68	224
+Dm_00018695-RA	sp|Q38912.1|	RecName: Full=Rac-like GTP-binding protein ARAC3; Short=AtRAC1; AltName: Full=GTPase protein ROP6; Flags: Precursor [Arabidopsis thaliana]	76.991	226	22	2	1	224	1	198	3.63e-119	340
+Dm_00018144-RA	sp|P81392.1|	RecName: Full=Myb-related protein 306 [Antirrhinum majus]	56.213	338	114	8	1	338	1	304	2.60e-110	327
+Dm_00019360-RA	sp|Q9LJE5.1|	RecName: Full=YTH domain-containing protein ECT2; AltName: Full=Protein EVOLUTIONARILY CONSERVED C-TERMINAL REGION 2 [Arabidopsis thaliana]	50.526	285	111	7	325	589	338	612	2.72e-83	281
+Dm_00013182-RA	sp|Q8LCQ3.3|	RecName: Full=Transcription elongation factor SPT4 homolog 1 [Arabidopsis thaliana]	77.049	61	14	0	1	61	1	61	9.23e-32	108
+Dm_00011016-RA	sp|Q5ZK33.1|	RecName: Full=Mitochondrial proton/calcium exchanger protein; AltName: Full=Leucine zipper-EF-hand-containing transmembrane protein 1; Flags: Precursor [Gallus gallus]	38.693	566	284	15	236	758	158	703	2.34e-97	321
+Dm_00013030-RA	sp|O48724.1|	RecName: Full=Protein WEAK CHLOROPLAST MOVEMENT UNDER BLUE LIGHT 1; Short=Protein WEB1 [Arabidopsis thaliana]	61.992	713	215	6	186	898	148	804	0.0	787
+Dm_00011624-RA	sp|P49690.3|	RecName: Full=60S ribosomal protein L23; AltName: Full=Protein EMBRYO DEFECTIVE 2171 [Arabidopsis thaliana]	97.143	140	4	0	1	140	1	140	8.36e-97	277
+Dm_00011906-RA	sp|Q9SS87.1|	RecName: Full=Protein SIEVE ELEMENT OCCLUSION B; Short=AtSEOb; AltName: Full=Protein SIEVE ELEMENT OCCLUSION-RELATED 1; Short=AtSEOR1 [Arabidopsis thaliana]	42.292	733	367	16	67	779	33	729	0.0	590
+Dm_00009215-RA	sp|Q8RY22.1|	RecName: Full=Protease Do-like 7 [Arabidopsis thaliana]	70.903	842	233	7	14	855	267	1096	0.0	1228
+Dm_00010071-RA	sp|Q0WQ57.1|	RecName: Full=Auxilin-related protein 2 [Arabidopsis thaliana]	46.830	978	381	31	1	938	1	879	2.80e-180	547
+Dm_00010063-RA	sp|Q9ZWJ9.1|	RecName: Full=Two-component response regulator ARR2; AltName: Full=Receiver-like protein 5 [Arabidopsis thaliana]	46.365	729	270	29	23	709	15	664	3.71e-175	518
+Dm_00008360-RA	sp|Q84QC2.1|	RecName: Full=Ethylene-responsive transcription factor ERF017 [Arabidopsis thaliana]	49.510	204	67	6	15	209	9	185	2.12e-50	164
+Dm_00008763-RA	sp|F4JYC8.1|	RecName: Full=DDT domain-containing protein PTM; AltName: Full=DDT domain-containing protein 1; AltName: Full=Membrane-bound transcription factor PTM; AltName: Full=PHD type transcription factor with transmembrane domains [Arabidopsis thaliana]	42.132	788	393	21	1	774	798	1536	1.27e-178	559
+Dm_00002985-RA	sp|F4IRR2.1|	RecName: Full=Importin beta-like SAD2; AltName: Full=Protein ENHANCED MIRNA ACTIVITY 1; AltName: Full=Protein SUPER SENSITIVE TO ABA AND DROUGHT 2; AltName: Full=Protein UNARMED 9 [Arabidopsis thaliana]	70.588	1037	275	8	1	1009	1	1035	0.0	1452
+Dm_00002548-RA	sp|Q94K49.1|	RecName: Full=Protein ANTAGONIST OF LIKE HETEROCHROMATIN PROTEIN 1 [Arabidopsis thaliana]	32.166	314	180	8	185	472	43	349	2.93e-40	153
+Dm_00002192-RA	sp|A9QM73.1|	RecName: Full=Nonsense-mediated mRNA decay factor SMG7; AltName: Full=Protein SMG7; AltName: Full=SMG7 homolog [Arabidopsis thaliana]	46.789	654	312	7	32	652	6	656	0.0	606
+Dm_00015439-RA	sp|Q9M9W1.1|	RecName: Full=60S ribosomal protein L22-2 [Arabidopsis thaliana]	80.952	126	21	2	1	125	1	124	7.44e-57	175
+Dm_00021120-RA	sp|Q9ZVD2.1|	RecName: Full=NDR1/HIN1-like protein 13 [Arabidopsis thaliana]	43.673	245	131	3	64	306	21	260	3.04e-66	211
+Dm_00016820-RA	sp|Q84VW5.1|	RecName: Full=Mediator of RNA polymerase II transcription subunit 32; AltName: Full=Mediator of RNA polymerase II transcription subunit 2 [Arabidopsis thaliana]	64.474	152	46	2	28	172	1	151	4.29e-63	197
+Dm_00017284-RA	sp|Q9FLC0.1|	RecName: Full=Peroxidase 52; Short=Atperox P52; AltName: Full=ATP49; Flags: Precursor [Arabidopsis thaliana]	57.860	299	113	2	27	322	26	314	4.08e-120	351
+Dm_00017384-RA	sp|O22283.1|	RecName: Full=Probable E3 ubiquitin-protein ligase RHC2A; AltName: Full=RING-H2 finger C2a; AltName: Full=RING-H2 zinc finger protein RHC2a; AltName: Full=RING-type E3 ubiquitin transferase RHC2A [Arabidopsis thaliana]	51.524	328	133	9	11	318	3	324	3.47e-97	298
+Dm_00010708-RA	sp|Q66J99.1|	RecName: Full=Probable RNA-binding protein 18; AltName: Full=RNA-binding motif protein 18 [Xenopus laevis]	35.821	134	80	3	12	141	25	156	6.18e-22	89.4
+Dm_00008505-RA	sp|A0A314KSQ4.2|	RecName: Full=Jasmonoyl--L-amino acid synthetase JAR6; AltName: Full=Jasmonate-amino acid synthetase JAR6; AltName: Full=Jasmonic acid-amido synthetase JAR6; AltName: Full=Protein JASMONATE RESISTANT 6 [Nicotiana attenuata]	72.089	584	157	4	1	583	1	579	0.0	874
+Dm_00012917-RA	sp|Q9SEE9.1|	RecName: Full=Serine/arginine-rich splicing factor SR45; Short=At-SR45; Short=AtSR45; AltName: Full=Serine/arginine-rich ribonucleoprotein 1 [Arabidopsis thaliana]	57.927	164	50	6	12	168	120	271	7.26e-35	134
+Dm_00015225-RA	sp|Q93Z27.1|	RecName: Full=Probable calcium-binding protein CML46; AltName: Full=Calmodulin-like protein 46 [Arabidopsis thaliana]	46.491	114	58	2	28	141	91	201	2.00e-26	101
+Dm_00015417-RA	sp|Q9M9S6.1|	RecName: Full=UDP-galactose/UDP-glucose transporter 3; Short=AtUTr3 [Arabidopsis thaliana]	80.303	330	53	2	1	318	1	330	0.0	527
+Dm_00016385-RA	sp|Q9S7J8.1|	RecName: Full=Copper-transporting ATPase RAN1; AltName: Full=Protein HEAVY METAL ATPASE 7; AltName: Full=Protein RESPONSIVE TO ANTAGONIST 1 [Arabidopsis thaliana]	71.823	1015	260	9	1	1003	1	1001	0.0	1449
+Dm_00016347-RA	sp|Q8LDR3.1|	RecName: Full=Peptidyl-prolyl cis-trans isomerase CYP23; Short=PPIase CYP23; AltName: Full=Cyclophilin of 23 kDa; AltName: Full=Cyclophilin-23; Flags: Precursor [Arabidopsis thaliana]	83.636	165	26	1	26	189	15	179	8.24e-99	288
+Dm_00003030-RA	sp|P35016.1|	RecName: Full=Endoplasmin homolog; AltName: Full=Glucose-regulated protein 94 homolog; Short=GRP-94 homolog; Flags: Precursor [Catharanthus roseus]	83.460	792	121	2	1	792	1	782	0.0	1282
+Dm_00003040-RA	sp|P93024.3|	RecName: Full=Auxin response factor 5; AltName: Full=Auxin-responsive protein IAA24; AltName: Full=Transcription factor MONOPTEROS [Arabidopsis thaliana]	59.335	932	264	26	109	997	32	891	0.0	981
+Dm_00002759-RA	sp|P29162.1|	RecName: Full=L-ascorbate oxidase homolog; AltName: Full=Pollen-specific protein NTP303; Flags: Precursor [Nicotiana tabacum]	51.159	561	236	7	13	559	9	545	0.0	575
+Dm_00002813-RA	sp|F4HXZ1.1|	RecName: Full=Vacuolar-sorting protein BRO1; AltName: Full=BRO domain-containing protein 1; Short=AtBRO1 [Arabidopsis thaliana]	69.419	860	241	5	15	873	8	846	0.0	1152
+Dm_00002831-RA	sp|Q9ZT50.1|	RecName: Full=E3 ubiquitin-protein ligase RHA2A; AltName: Full=RING-H2 finger A2a; AltName: Full=RING-H2 zinc finger protein RHA2a; AltName: Full=RING-type E3 ubiquitin transferase RHA2A [Arabidopsis thaliana]	48.851	174	67	3	1	173	1	153	1.26e-46	152
+Dm_00002836-RA	sp|F4I1S7.1|	RecName: Full=Elongator complex protein 2; Short=AtELP2; AltName: Full=Elongator component 2; AltName: Full=Protein GREEN NPR1 SEEDLING ON SA MEDIUM 1 [Arabidopsis thaliana]	64.755	837	281	9	4	833	5	834	0.0	1095
+Dm_00002827-RA	sp|F4HXY7.1|	RecName: Full=CDP-diacylglycerol--serine O-phosphatidyltransferase 1; AltName: Full=Phosphatidylserine synthase 1 [Arabidopsis thaliana]	77.017	409	84	2	24	423	18	425	0.0	655
+Dm_00018152-RA	sp|Q9LJ87.1|	RecName: Full=Protein CDC73 homolog; AltName: Full=Protein PLANT HOMOLOGOUS TO PARAFIBROMIN [Arabidopsis thaliana]	60.373	429	149	6	1	422	1	415	7.49e-175	508
+Dm_00018130-RA	sp|Q9M8L2.1|	RecName: Full=F-box/kelch-repeat protein At1g80440 [Arabidopsis thaliana]	45.330	364	184	6	3	362	2	354	9.85e-106	317
+Dm_00017975-RA	sp|Q9ZUT9.1|	RecName: Full=40S ribosomal protein S5-1; AltName: Full=AtRPS5B [Arabidopsis thaliana]	85.106	188	24	2	5	189	3	189	4.05e-115	328
+Dm_00017335-RA	sp|Q9C7W2.1|	RecName: Full=Ethylene-responsive transcription factor ERF061 [Arabidopsis thaliana]	47.278	349	112	11	18	325	18	335	4.19e-63	206
+Dm_00006285-RA	sp|Q9C5Q2.1|	RecName: Full=ABSCISIC ACID-INSENSITIVE 5-like protein 3; AltName: Full=Dc3 promoter-binding factor 4; Short=AtDPBF4; AltName: Full=Protein ENHANCED EM LEVEL; AltName: Full=bZIP transcription factor 12; Short=AtbZIP12 [Arabidopsis thaliana]	41.935	186	80	5	31	197	60	236	6.48e-29	112
+Dm_00006255-RA	sp|P0DKK8.1|	RecName: Full=40S ribosomal protein S10-1 [Oryza sativa Japonica Group]	72.535	142	37	1	5	144	18	159	4.20e-68	207
+Dm_00006259-RA	sp|Q32PL8.2|	RecName: Full=DNA-directed primase/polymerase protein [Danio rerio]	34.625	413	214	11	99	471	42	438	2.67e-62	216
+Dm_00005361-RA	sp|Q9MAG3.2|	RecName: Full=ABC transporter G family member 24; Short=ABC transporter ABCG.24; Short=AtABCG24; AltName: Full=Probable white-brown complex homolog protein 25; Short=AtWBC25 [Arabidopsis thaliana]	59.659	1056	376	11	4	1041	86	1109	0.0	1258
+Dm_00005966-RA	sp|O80452.2|	RecName: Full=AMP deaminase; Short=AtAMPD; AltName: Full=Protein EMBRYONIC FACTOR 1 [Arabidopsis thaliana]	70.016	637	143	3	145	762	230	837	0.0	937
+Dm_00014180-RA	sp|Q9FK51.1|	RecName: Full=ADP-glucose phosphorylase; AltName: Full=ADP-glucose:phosphate adenylyltransferase [Arabidopsis thaliana]	60.641	343	133	2	6	347	9	350	1.23e-157	448
+Dm_00014803-RA	sp|Q9M0E0.1|	RecName: Full=40S ribosomal protein S15a-5 [Arabidopsis thaliana]	74.118	85	22	0	1	85	40	124	1.15e-43	143
+Dm_00014392-RA	sp|Q9LXC9.1|	RecName: Full=Soluble inorganic pyrophosphatase 6, chloroplastic; AltName: Full=Inorganic pyrophosphatase 6; AltName: Full=Pyrophosphate phospho-hydrolase 6; Short=PPase 6; Flags: Precursor [Arabidopsis thaliana]	81.200	250	46	1	49	298	51	299	1.94e-152	431
+Dm_00012717-RA	sp|Q9XED8.1|	RecName: Full=Auxin response factor 9 [Arabidopsis thaliana]	60.383	626	193	13	24	610	6	615	0.0	693
+Dm_00015827-RA	sp|Q8H0Y8.2|	RecName: Full=Probable WRKY transcription factor 41; AltName: Full=WRKY DNA-binding protein 41 [Arabidopsis thaliana]	38.462	351	151	12	10	340	7	312	8.10e-59	195
+Dm_00006379-RA	sp|Q0WNJ6.1|	RecName: Full=Clathrin heavy chain 1 [Arabidopsis thaliana]	89.747	1658	129	3	1	1618	1	1657	0.0	3088
+Dm_00006619-RA	sp|O22193.3|	RecName: Full=U-box domain-containing protein 4; AltName: Full=Plant U-box protein 4; AltName: Full=RING-type E3 ubiquitin transferase PUB4 [Arabidopsis thaliana]	61.212	330	114	5	1	325	504	824	1.69e-121	371
+Dm_00006410-RA	sp|Q9SSJ8.1|	RecName: Full=Putative 1-phosphatidylinositol-3-phosphate 5-kinase FAB1C; Short=Phosphatidylinositol 3-phosphate 5-kinase; AltName: Full=Phosphatidylinositol 3-phosphate 5-kinase type III; Short=PIPkin-III; Short=Type III PIP kinase; AltName: Full=Protein FORMS APLOID AND BINUCLEATE CELLS 1C [Arabidopsis thaliana]	47.138	1782	691	37	1	1701	1	1612	0.0	1412
+Dm_00006867-RA	sp|Q8W496.1|	RecName: Full=Protochlorophyllide-dependent translocon component 52, chloroplastic; AltName: Full=ACD1-like protein; AltName: Full=Protein TIC 55-IV; AltName: Full=Translocon at the inner envelope membrane of chloroplasts 55-IV; Flags: Precursor [Arabidopsis thaliana]	57.143	84	36	0	2	85	475	558	1.47e-30	115
+Dm_00006864-RA	sp|Q9LJD7.1|	RecName: Full=Constitutive photomorphogenesis protein 10 [Arabidopsis thaliana]	71.341	164	47	0	19	182	19	182	2.69e-87	256
+Dm_00006332-RA	sp|Q04088.1|	RecName: Full=Probable transcription factor PosF21; AltName: Full=bZIP transcription factor 59; Short=AtbZIP59 [Arabidopsis thaliana]	59.677	372	106	13	1	361	1	339	1.10e-130	384
+Dm_00007002-RA	sp|P42056.2|	RecName: Full=Mitochondrial outer membrane protein porin of 36 kDa; AltName: Full=POM 36; AltName: Full=Voltage-dependent anion-selective channel protein; Short=VDAC [Solanum tuberosum]	78.623	276	59	0	1	276	1	276	2.37e-163	456
+Dm_00016130-RA	sp|F4IMH3.1|	RecName: Full=Protein NUCLEOLAR COMPLEX ASSOCIATED 4; Short=AtNoc4; AltName: Full=Protein EMBRYO DEFECTIVE 2762 [Arabidopsis thaliana]	52.586	580	189	8	1	506	1	568	0.0	572
+Dm_00019103-RA	sp|Q9ZQ31.2|	RecName: Full=Serine/threonine-protein kinase STY13; AltName: Full=AtSTYPK; AltName: Full=Serine/threonine/tyrosine-protein kinase 13 [Arabidopsis thaliana]	45.818	275	131	7	18	286	122	384	2.70e-73	235
+Dm_00019221-RA	sp|Q6ZI17.1|	RecName: Full=Protein MEI2-like 2; Short=OML2; AltName: Full=MEI2-like protein 2 [Oryza sativa Japonica Group]	57.590	863	315	19	1	842	1	833	0.0	889
+Dm_00019224-RA	sp|P82193.2|	RecName: Full=50S ribosomal protein L6, chloroplastic; AltName: Full=Chloroplastic large ribosomal subunit protein uL6c; Flags: Precursor [Spinacia oleracea]	69.626	214	64	1	44	256	7	220	5.11e-104	303
+Dm_00019216-RA	sp|Q8GZ17.2|	RecName: Full=COBRA-like protein 7; Flags: Precursor [Arabidopsis thaliana]	66.332	597	193	4	52	643	46	639	0.0	856
+Dm_00018845-RA	sp|Q9M2F1.2|	RecName: Full=40S ribosomal protein S27-2 [Arabidopsis thaliana]	94.118	85	5	0	6	90	2	86	1.29e-56	171
+Dm_00014379-RA	sp|Q6NKX1.1|	RecName: Full=Proline dehydrogenase 2, mitochondrial; AltName: Full=Osmotic stress-induced proline dehydrogenase; AltName: Full=Proline oxidase; Flags: Precursor [Arabidopsis thaliana]	56.674	457	184	4	27	481	31	475	0.0	532
+Dm_00014911-RA	sp|Q42601.1|	RecName: Full=Carbamoyl-phosphate synthase large chain, chloroplastic; AltName: Full=Carbamoyl-phosphate synthetase ammonia chain; AltName: Full=Protein VENOSA 3; Flags: Precursor [Arabidopsis thaliana]	78.987	533	93	3	523	1044	659	1183	0.0	865
+Dm_00014506-RA	sp|Q9FMC2.1|	RecName: Full=Basic leucine zipper 43; Short=AtbZIP43; Short=bZIP protein 43 [Arabidopsis thaliana]	41.549	142	60	3	48	189	26	144	2.70e-21	89.7
+Dm_00015327-RA	sp|O23160.1|	RecName: Full=Transcription factor MYB73; AltName: Full=Myb-related protein 73; Short=AtMYB73 [Arabidopsis thaliana]	49.346	306	106	9	15	305	6	277	3.94e-85	262
+Dm_00002943-RA	sp|Q9SHS7.2|	RecName: Full=Serine/threonine-protein phosphatase BSL3; AltName: Full=BSU1-like protein 3 [Arabidopsis thaliana]	91.995	862	67	2	3	864	147	1006	0.0	1563
+Dm_00002945-RA	sp|Q0V865.1|	RecName: Full=Protein FAF-like, chloroplastic; Flags: Precursor [Arabidopsis thaliana]	39.726	292	128	12	40	301	19	292	3.07e-36	144
+Dm_00002929-RA	sp|Q8LC68.2|	RecName: Full=NAP1-related protein 2; AltName: Full=Nucleosome/chromatin assembly factor group A5; AltName: Full=Protein SET homolog 2 [Arabidopsis thaliana]	79.747	158	29	1	1	155	1	158	6.99e-84	250
+Dm_00002622-RA	sp|P42322.1|	RecName: Full=Calcineurin subunit B; AltName: Full=Calcineurin regulatory subunit; AltName: Full=Protein phosphatase 2B regulatory subunit [Naegleria gruberi]	41.606	137	66	3	1	125	1	135	9.66e-28	103
+Dm_00002776-RA	sp|Q9ZSY2.1|	RecName: Full=Chaperone protein dnaJ 15; Short=AtDjB15; Short=AtJ15; AltName: Full=Protein ALTERED RESPONSE TO GRAVITY; Short=AtARG1 [Arabidopsis thaliana]	76.960	421	67	5	7	421	8	404	0.0	645
+Dm_00003049-RA	sp|Q9SRE5.1|	RecName: Full=Uncharacterized protein At1g76660 [Arabidopsis thaliana]	48.654	483	179	14	1	476	1	421	1.79e-127	380
+Dm_00003067-RA	sp|Q9M0L0.2|	RecName: Full=Dehydration-responsive element-binding protein 1A; Short=Protein DREB1A; AltName: Full=C-repeat/dehydration-responsive element-binding factor 3; Short=C-repeat-binding factor 3; Short=CRT/DRE-binding factor 3; AltName: Full=Cold resistance-related AP2 transcription factor [Arabidopsis thaliana]	49.372	239	93	7	26	259	1	216	4.73e-59	189
+Dm_00003077-RA	sp|Q9SCW4.1|	RecName: Full=Heat stress transcription factor B-2a; Short=AtHsfB2a; AltName: Full=AtHsf-22; AltName: Full=Heat shock factor protein 6; Short=HSF 6; AltName: Full=Heat shock transcription factor 6; Short=HSTF 6 [Arabidopsis thaliana]	48.097	289	112	7	18	291	16	281	5.82e-79	244
+Dm_00003075-RA	sp|O80450.1|	RecName: Full=Trihelix transcription factor GT-3b; AltName: Full=Transcription factor GT-1-like; AltName: Full=Trihelix DNA-binding protein GT-3b [Arabidopsis thaliana]	54.417	283	114	3	7	289	16	283	5.22e-72	226
+Dm_00003083-RA	sp|Q9M0K4.2|	RecName: Full=Transcription factor LAF1; AltName: Full=Myb-related protein 18; Short=AtMYB18; AltName: Full=Protein LONG AFTER FAR-RED LIGHT 1 [Arabidopsis thaliana]	50.505	198	83	5	15	209	9	194	1.69e-60	193
+Dm_00007922-RA	sp|Q8H1G0.1|	RecName: Full=GATA transcription factor 28; AltName: Full=Protein TIFY 2A; AltName: Full=ZIM-like 2 protein [Arabidopsis thaliana]	54.310	232	93	5	18	240	30	257	4.44e-69	219
+Dm_00007921-RA	sp|A2XKU9.1|	RecName: Full=Costars family protein [Oryza sativa Indica Group]	79.268	82	17	0	1	82	1	82	2.18e-43	138
+Dm_00006200-RA	sp|Q94KU2.1|	RecName: Full=6-phosphogluconate dehydrogenase, decarboxylating 2, chloroplastic; Flags: Precursor [Spinacia oleracea]	79.482	541	96	3	9	548	11	537	0.0	874
+Dm_00006888-RA	sp|O78328.1|	RecName: Full=Probable 1-deoxy-D-xylulose-5-phosphate synthase, chloroplastic; Short=1-deoxyxylulose-5-phosphate synthase; Short=DXP synthase; Short=DXPS; AltName: Full=CapTKT2; Flags: Precursor [Capsicum annuum]	80.529	719	110	2	1	689	1	719	0.0	1171
+Dm_00005949-RA	sp|Q9SIW1.1|	RecName: Full=BEL1-like homeodomain protein 7; Short=BEL1-like protein 7 [Arabidopsis thaliana]	64.338	272	73	5	254	523	109	358	1.77e-113	353
+Dm_00008268-RA	sp|F4HYJ7.1|	RecName: Full=DExH-box ATP-dependent RNA helicase DExH3 [Arabidopsis thaliana]	72.588	1109	272	10	103	1188	89	1188	0.0	1621
+Dm_00011804-RA	sp|C0LGU7.1|	RecName: Full=Protein MALE DISCOVERER 1; Short=AtMDIS1; AltName: Full=Probable LRR receptor-like serine/threonine-protein kinase At5g45840; Flags: Precursor [Arabidopsis thaliana]	41.168	685	338	14	29	672	34	694	4.17e-162	485
+Dm_00011805-RA	sp|Q0WNN7.2|	RecName: Full=Pentatricopeptide repeat-containing protein At2g30100, chloroplastic; Flags: Precursor [Arabidopsis thaliana]	56.950	518	202	6	1	512	1	503	0.0	536
+Dm_00011118-RA	sp|Q9FIU5.1|	RecName: Full=Calcium/calmodulin-regulated receptor-like kinase 1; Short=AtCRLK1 [Arabidopsis thaliana]	75.194	387	95	1	1	386	1	387	0.0	621
+Dm_00010728-RA	sp|Q9FVI2.1|	RecName: Full=Actin-depolymerizing factor 1; Short=ADF-1 [Petunia x hybrida]	85.507	138	18	1	10	145	2	139	3.23e-86	251
+Dm_00012064-RA	sp|Q9FMM3.1|	RecName: Full=Protein ESSENTIAL FOR POTEXVIRUS ACCUMULATION 1; AltName: Full=Plant SMY2-type ILE-GYF domain-containing protein 1; AltName: Full=Protein MUTANT, SNC1-ENHANCING 11 [Arabidopsis thaliana]	32.493	357	187	13	36	357	26	363	6.22e-26	120
+Dm_00009026-RA	sp|Q9NQ29.1|	RecName: Full=Putative RNA-binding protein Luc7-like 1; AltName: Full=Putative SR protein LUC7B1; AltName: Full=SR+89 [Homo sapiens]	33.333	174	102	2	4	177	7	166	5.34e-21	97.1
+Dm_00009781-RA	sp|Q94B74.1|	RecName: Full=Nudix hydrolase 2; Short=AtNUDT2; AltName: Full=ADP-ribose pyrophosphatase; AltName: Full=NADH pyrophosphatase [Arabidopsis thaliana]	52.397	292	101	3	24	315	19	272	6.62e-102	303
+Dm_00008943-RA	sp|F4ILR7.1|	RecName: Full=DExH-box ATP-dependent RNA helicase DExH1 [Arabidopsis thaliana]	69.324	577	161	4	61	622	39	614	0.0	824
+Dm_00009134-RA	sp|P37219.1|	RecName: Full=Abscisic stress-ripening protein 2 [Solanum lycopersicum]	76.316	76	17	1	17	91	18	93	7.42e-25	93.2
+Dm_00018393-RA	sp|Q6VAA5.1|	RecName: Full=UDP-glycosyltransferase 89B2 [Stevia rebaudiana]	56.237	489	188	9	3	487	1	467	0.0	529
+Dm_00016901-RA	sp|Q9C616.1|	RecName: Full=Probable transcription factor KAN2; AltName: Full=Protein KANADI 2 [Arabidopsis thaliana]	85.897	78	11	0	283	360	187	264	1.38e-37	142
+Dm_00018594-RA	sp|Q9ZT96.1|	RecName: Full=Transcription termination factor MTERF4, chloroplastic; AltName: Full=Mitochondrial transcription termination factor 4; AltName: Full=Protein BELAYA SMERT'; AltName: Full=Protein RUGOSA2; Flags: Precursor [Arabidopsis thaliana]	52.206	408	193	1	13	418	112	519	1.03e-148	438
+Dm_00019132-RA	sp|Q9FNA4.1|	RecName: Full=Elongator complex protein 1; Short=AtELP1; AltName: Full=Elongator component 1; AltName: Full=Protein ABA-OVERLY SENSITIVE 1; AltName: Full=Protein ELONGATA 2 [Arabidopsis thaliana]	54.692	1300	552	8	4	1297	51	1319	0.0	1405
+Dm_00017591-RA	sp|Q9C7N2.1|	RecName: Full=MACPF domain-containing protein CAD1; AltName: Full=Protein CONSTITUTIVELY ACTIVATED CELL DEATH 1; Short=Protein CAD1 [Arabidopsis thaliana]	65.841	565	179	5	25	588	10	561	0.0	760
+Dm_00019980-RA	sp|Q00466.4|	RecName: Full=Homeobox-leucine zipper protein HAT7; AltName: Full=HD-ZIP protein ATHB-3; AltName: Full=Homeodomain transcription factor ATHB-3; AltName: Full=Homeodomain-leucine zipper protein HAT7; Short=HD-ZIP protein 7 [Arabidopsis thaliana]	50.000	244	92	8	1	231	22	248	4.40e-57	189
+Dm_00019465-RA	sp|Q8N7N5.1|	RecName: Full=DDB1- and CUL4-associated factor 8; AltName: Full=WD repeat-containing protein 42A [Mus musculus]	39.955	443	207	11	12	449	147	535	7.11e-95	303
+Dm_00019331-RA	sp|Q8S904.1|	RecName: Full=Adrenodoxin-like protein 2, mitochondrial; AltName: Full=Mitochondrial ferredoxin 2; Short=AtMFDX2; Flags: Precursor [Arabidopsis thaliana]	84.746	118	18	0	7	124	80	197	5.26e-72	216
+Dm_00004778-RA	sp|O80644.1|	RecName: Full=ACT domain-containing protein ACR9; AltName: Full=Protein ACT DOMAIN REPEATS 9 [Arabidopsis thaliana]	56.955	381	147	3	19	399	48	411	7.15e-147	425
+Dm_00004381-RA	sp|P34788.1|	RecName: Full=40S ribosomal protein S18 [Arabidopsis thaliana]	94.702	151	8	0	10	160	2	152	7.45e-105	299
+Dm_00009196-RA	sp|M1CZC0.1|	RecName: Full=ERBB-3 BINDING PROTEIN 1; Short=StEBP1 [Solanum tuberosum]	86.479	355	47	1	1	354	1	355	0.0	648
+Dm_00019153-RA	sp|Q9FFN1.1|	RecName: Full=Pentatricopeptide repeat-containing protein At5g03800; AltName: Full=Protein EMBRYO DEFECTIVE 175 [Arabidopsis thaliana]	51.874	827	383	7	3	818	74	896	0.0	866
+Dm_00019230-RA	sp|Q9LVP9.1|	RecName: Full=Vesicle transport v-SNARE 13; Short=AtVTI13; AltName: Full=Vesicle soluble NSF attachment protein receptor 13; AltName: Full=Vesicle transport v-SNARE protein VTI13 [Arabidopsis thaliana]	71.628	215	61	0	1	215	1	215	5.88e-114	327
+Dm_00019145-RA	sp|P34788.1|	RecName: Full=40S ribosomal protein S18 [Arabidopsis thaliana]	77.596	183	9	1	1	183	2	152	1.40e-95	276
+Dm_00004600-RA	sp|Q1G3I2.1|	RecName: Full=B-box domain protein 30; Short=AtBBX30; AltName: Full=Microprotein 1A [Arabidopsis thaliana]	46.847	111	38	2	30	140	28	117	2.38e-27	100
+Dm_00005920-RA	sp|Q9LHG8.1|	RecName: Full=Protein ELC; Short=AtELC; AltName: Full=ESCRT-I complex subunit VPS23 homolog 1; AltName: Full=Protein VACUOLAR PROTEIN SORTING 23A; AltName: Full=Vacuolar protein-sorting-associated protein 23 homolog 1 [Arabidopsis thaliana]	57.882	406	153	4	11	413	6	396	9.03e-155	446
+Dm_00020841-RA	sp|Q9LVQ7.1|	RecName: Full=Zinc finger protein ENHYDROUS; AltName: Full=Protein indeterminate-domain 1 [Arabidopsis thaliana]	55.556	549	184	14	1	538	1	500	9.52e-168	487
+Dm_00020774-RA	sp|O81283.1|	RecName: Full=Translocase of chloroplast 159, chloroplastic; Short=AtToc159; AltName: Full=159 kDa chloroplast outer envelope protein; AltName: Full=Plastid protein import 2; AltName: Full=Translocase of chloroplast 160, chloroplastic; Short=AtToc160; AltName: Full=Translocase of chloroplast 86, chloroplastic; Short=AtToc86 [Arabidopsis thaliana]	69.231	871	249	8	591	1443	627	1496	0.0	1206
+Dm_00012492-RA	sp|E3SXU5.1|	RecName: Full=Truncated basic helix-loop-helix protein A [Pisum sativum]	86.777	121	16	0	8	128	4	124	8.82e-74	226
+Dm_00011802-RA	sp|P41918.1|	RecName: Full=GTP-binding nuclear protein Ran-A1 [Nicotiana tabacum]	97.688	173	4	0	14	186	25	197	7.59e-127	358
+Dm_00020026-RA	sp|Q94KE2.2|	RecName: Full=Protein TIME FOR COFFEE [Arabidopsis thaliana]	40.631	1110	457	51	585	1597	542	1546	2.87e-142	483
+Dm_00019983-RA	sp|P43394.1|	RecName: Full=Fruit protein pKIWI502 [Actinidia deliciosa]	50.579	259	118	3	23	271	52	310	2.58e-84	264
+Dm_00019782-RA	sp|O80920.1|	RecName: Full=Abscisic acid receptor PYL4; AltName: Full=ABI1-binding protein 2; AltName: Full=PYR1-like protein 4; AltName: Full=Regulatory components of ABA receptor 10 [Arabidopsis thaliana]	76.875	160	35	2	45	203	38	196	1.15e-79	239
+Dm_00019856-RA	sp|Q8GT20.1|	RecName: Full=Benzyl alcohol O-benzoyltransferase; AltName: Full=Benzoyl coenzyme A:benzyl alcohol benzoyl transferase [Nicotiana tabacum]	67.925	106	30	1	40	145	49	150	7.81e-42	147
+Dm_00007402-RA	sp|P0DKK1.1|	RecName: Full=60S ribosomal protein L37a-1 [Oryza sativa Japonica Group]	96.203	79	3	0	7	85	13	91	6.46e-52	160
+Dm_00007598-RA	sp|Q9SIM4.1|	RecName: Full=60S ribosomal protein L14-1 [Arabidopsis thaliana]	81.061	132	25	0	2	133	3	134	2.08e-73	218
+Dm_00006230-RA	sp|Q39236.2|	RecName: Full=Transcription initiation factor IIA subunit 2; AltName: Full=General transcription factor IIA subunit 2; AltName: Full=Transcription initiation factor IIA gamma chain; Short=TFIIA-gamma [Arabidopsis thaliana]	84.906	106	16	0	1	106	1	106	1.50e-65	196
+Dm_00007288-RA	sp|Q8VWK4.1|	RecName: Full=Telomere repeat-binding factor 1; Short=AtTRB1; AltName: Full=MYB transcription factor [Arabidopsis thaliana]	46.640	253	111	4	1	245	1	237	1.22e-68	218
+Dm_00015117-RA	sp|Q9FNQ0.1|	RecName: Full=Protein LEO1 homolog; AltName: Full=Protein VERNALIZATION INDEPENDENCE 4 [Arabidopsis thaliana]	53.077	650	251	16	1	622	2	625	3.71e-164	486
+Dm_00012820-RA	sp|O64587.1|	RecName: Full=Accelerated cell death 11; AltName: Full=Ceramide-1-phosphate transfer protein ACD11; AltName: Full=Glycolipid transfer protein domain-containing protein ACD11 [Arabidopsis thaliana]	61.497	187	70	2	1	186	1	186	1.84e-75	228
+Dm_00016996-RA	sp|Q01417.1|	RecName: Full=18 kDa seed maturation protein [Glycine max]	46.111	180	87	3	1	178	1	172	7.14e-33	118
+Dm_00016894-RA	sp|Q9FGZ9.1|	RecName: Full=Ubiquitin-like protein 5 [Arabidopsis thaliana]	86.957	69	9	0	1	69	1	69	2.41e-37	125
+Dm_00016803-RA	sp|Q9LYN8.1|	RecName: Full=Leucine-rich repeat receptor protein kinase EMS1; AltName: Full=Protein EXCESS MICROSPOROCYTES 1; AltName: Full=Protein EXTRA SPOROGENOUS CELLS; Flags: Precursor [Arabidopsis thaliana]	46.273	322	143	8	67	386	896	1189	6.14e-76	258
+Dm_00015398-RA	sp|P04635.1|	RecName: Full=Lipase; AltName: Full=Phospholipase A1; AltName: Full=Triacylglycerol lipase; Contains: RecName: Full=Lipase 86 kDa form; Contains: RecName: Full=Lipase 46 kDa form; Flags: Precursor [Staphylococcus hyicus]	30.070	429	213	22	46	433	243	625	8.75e-31	129
+Dm_00003311-RA	sp|Q9M352.1|	RecName: Full=60S ribosomal protein L36-2 [Arabidopsis thaliana]	80.909	110	21	0	27	136	1	110	1.19e-56	174
+Dm_00002447-RA	sp|Q9LZK5.1|	RecName: Full=DnaJ protein ERDJ3B; AltName: Full=Chaperone protein dnaJ 19; Short=AtDjB19; Short=AtJ19; AltName: Full=Endoplasmic reticulum dnaJ domain-containing protein 3B; Short=AtERdj3B; AltName: Full=Protein SCJ1 homolog ERDJ3B; Flags: Precursor [Arabidopsis thaliana]	82.456	342	54	3	13	349	6	346	0.0	559
+Dm_00003845-RA	sp|Q9LSL6.1|	RecName: Full=Dof zinc finger protein DOF5.7; Short=AtDOF5.7 [Arabidopsis thaliana]	70.833	72	21	0	16	87	27	98	1.23e-32	127
+Dm_00003562-RA	sp|Q9M363.1|	RecName: Full=Cytochrome b561 and DOMON domain-containing protein At3g61750; AltName: Full=Protein b561A.tha9; Flags: Precursor [Arabidopsis thaliana]	49.682	314	148	5	390	701	68	373	1.08e-99	315
+Dm_00003570-RA	sp|Q42191.2|	RecName: Full=Mitochondrial inner membrane protein OXA1; AltName: Full=Oxidase assembly 1 protein; Short=AtOXA1; Flags: Precursor [Arabidopsis thaliana]	52.089	359	149	6	1	354	1	341	2.00e-124	367
+Dm_00003129-RA	sp|Q9LET3.1|	RecName: Full=Rhomboid-like protein 20; Short=AtRBL20 [Arabidopsis thaliana]	65.493	284	96	1	52	333	10	293	9.42e-123	357
+Dm_00009004-RA	sp|Q9FIB6.1|	RecName: Full=26S proteasome non-ATPase regulatory subunit 12 homolog A; AltName: Full=26S proteasome regulatory subunit RPN5a; Short=AtRPN5a; AltName: Full=26S proteasome regulatory subunit p55 homolog A; AltName: Full=Protein EMBRYO DEFECTIVE 2107; AltName: Full=Protein MARIPOSA [Arabidopsis thaliana]	81.465	437	81	0	4	440	5	441	0.0	726
+Dm_00011104-RA	sp|Q8VY16.2|	RecName: Full=Plastid division protein CDP1, chloroplastic; AltName: Full=ARC6-homolog protein; AltName: Full=Protein CHLOROPLAST DIVISION SITE POSITIONING 1; Short=AtCDP1; AltName: Full=Protein PARALOG OF ARC6; AltName: Full=Protein STROMULE BIOGENESIS ALTERED 2; Flags: Precursor [Arabidopsis thaliana]	51.902	736	318	11	75	784	66	791	0.0	659
+Dm_00010147-RA	sp|Q6NLF4.1|	RecName: Full=GPI-anchored protein LLG2; AltName: Full=LORELEI-like-GPI-anchored protein 2; Flags: Precursor [Arabidopsis thaliana]	55.000	140	56	2	30	169	27	159	2.79e-48	156
+Dm_00002431-RA	sp|Q9S7T8.1|	RecName: Full=Serpin-ZX; AltName: Full=ArathZx; AltName: Full=AtSerpin1; AltName: Full=Serpin-1 [Arabidopsis thaliana]	60.000	390	153	2	1	387	1	390	1.08e-169	482
+Dm_00002439-RA	sp|O48723.1|	RecName: Full=Patatin-like protein 2; Short=AtPLP2; AltName: Full=Patatin-related phospholipase A IIalpha; Short=pPLAIIa; AltName: Full=Phospholipase A IIA; Short=AtPLAIIA [Arabidopsis thaliana]	59.030	371	148	1	33	399	10	380	1.17e-160	460
+Dm_00002642-RA	sp|P93007.1|	RecName: Full=Ethylene-responsive transcription factor ERF112 [Arabidopsis thaliana]	61.111	90	27	2	86	171	41	126	1.18e-28	111
+Dm_00002654-RA	sp|Q9SND6.1|	RecName: Full=Mitogen-activated protein kinase kinase kinase 20; Short=MAPKK kinase 20; AltName: Full=Protein ABA-INSENSITIVE PROTEIN KINASE 1 [Arabidopsis thaliana]	44.054	370	174	7	3	368	2	342	5.48e-94	287
+Dm_00002453-RA	sp|Q9FFF3.1|	RecName: Full=Conserved oligomeric Golgi complex subunit 1; Short=COG complex subunit 1; AltName: Full=Component of oligomeric Golgi complex 1 [Arabidopsis thaliana]	57.632	1081	423	9	5	1077	13	1066	0.0	1219
+Dm_00002458-RA	sp|Q5JK68.1|	RecName: Full=Cyclin-dependent kinase C-2; Short=CDKC;2 [Oryza sativa Japonica Group]	78.053	524	101	10	1	521	1	513	0.0	767
+Dm_00009590-RA	sp|B9DFG5.1|	RecName: Full=PTI1-like tyrosine-protein kinase 3; Short=PTI1-3 [Arabidopsis thaliana]	78.771	358	74	2	15	370	39	396	0.0	559
+Dm_00009464-RA	sp|D4AZ24.1|	RecName: Full=Probable endo-1,3(4)-beta-glucanase ARB_01444; Short=Endo-1,3-beta-glucanase; Short=Endo-1,4-beta-glucanase; AltName: Full=Laminarinase; Flags: Precursor [Trichophyton benhamiae CBS 112371]	28.025	471	279	20	1	422	413	872	1.94e-27	119
+Dm_00010010-RA	sp|B7FKW7.1|	RecName: Full=Cyanate hydratase; Short=Cyanase; AltName: Full=Cyanate hydrolase; AltName: Full=Cyanate lyase [Medicago truncatula]	80.745	161	31	0	1	161	1	161	1.27e-98	284
+Dm_00009514-RA	sp|Q9M7J4.1|	RecName: Full=MAR-binding filament-like protein 1-1 [Nicotiana tabacum]	44.517	611	338	1	30	640	103	712	1.04e-152	461
+Dm_00016476-RA	sp|F4J8V5.1|	RecName: Full=Autophagy-related protein 13b; Short=AtAPG13b [Arabidopsis thaliana]	43.899	631	281	16	11	598	14	614	1.16e-104	332
+Dm_00016523-RA	sp|Q9SRM0.1|	RecName: Full=RING-H2 finger protein ATL66; AltName: Full=RING-type E3 ubiquitin transferase ATL66 [Arabidopsis thaliana]	40.606	165	72	5	54	217	15	154	1.71e-29	110
+Dm_00016261-RA	sp|Q9MAP3.1|	RecName: Full=50S ribosomal protein L11, chloroplastic; AltName: Full=CL11; Flags: Precursor [Arabidopsis thaliana]	82.123	179	27	1	61	239	45	218	1.24e-101	297
+Dm_00015074-RA	sp|Q9SYP1.1|	RecName: Full=DExH-box ATP-dependent RNA helicase DExH12; AltName: Full=BRR2 homolog A; Short=AtBRR2A; AltName: Full=Pre-mRNA-splicing helicase BRR2A; AltName: Full=Protein EMBRYO DEFECTIVE 1507 [Arabidopsis thaliana]	78.427	2174	456	9	1	2174	1	2161	0.0	3516
+Dm_00014262-RA	sp|Q6UNT2.1|	RecName: Full=60S ribosomal protein L5 [Cucumis sativus]	74.085	328	48	1	130	457	1	291	2.43e-177	501
+Dm_00015495-RA	sp|O23617.2|	RecName: Full=Alpha,alpha-trehalose-phosphate synthase [UDP-forming] 5; AltName: Full=Trehalose-6-phosphate synthase 5; Short=AtTPS5 [Arabidopsis thaliana]	78.593	668	134	3	1	667	1	660	0.0	1107
+Dm_00015211-RA	sp|O24371.1|	RecName: Full=Linoleate 13S-lipoxygenase 3-1, chloroplastic; Flags: Precursor [Solanum tuberosum]	71.367	922	246	9	3	914	1	914	0.0	1350
+Dm_00015131-RA	sp|Q9SKN2.1|	RecName: Full=Double-stranded RNA-binding protein 2; AltName: Full=dsRNA-binding protein 2; Short=AtDRB2 [Arabidopsis thaliana]	53.989	376	132	11	1	339	1	372	3.20e-119	354
+Dm_00013606-RA	sp|P35687.1|	RecName: Full=40S ribosomal protein S21 [Oryza sativa Japonica Group]	81.481	81	15	0	1	81	1	81	5.66e-47	147
+Dm_00015503-RA	sp|Q940Y1.1|	RecName: Full=Oxysterol-binding protein-related protein 2A; AltName: Full=OSBP-related protein 2A [Arabidopsis thaliana]	62.924	766	212	13	1	739	1	721	0.0	945
+Dm_00010155-RA	sp|P62302.1|	RecName: Full=40S ribosomal protein S13 [Glycine max]	92.857	140	10	0	1	140	1	140	2.47e-92	266
+Dm_00009877-RA	sp|Q9LT79.1|	RecName: Full=U-box domain-containing protein 25; AltName: Full=Plant U-box protein 25; AltName: Full=RING-type E3 ubiquitin transferase PUB25 [Arabidopsis thaliana]	31.455	426	233	12	1	404	12	400	5.87e-41	153
+Dm_00009958-RA	sp|O24413.3|	RecName: Full=60S acidic ribosomal protein P3; AltName: Full=P1/P2-like; AltName: Full=P3A [Zea mays]	71.642	67	19	0	1	67	1	67	6.79e-28	104
+Dm_00006930-RA	sp|Q8VYU7.1|	RecName: Full=Purple acid phosphatase 4; Flags: Precursor [Arabidopsis thaliana]	56.958	309	123	4	41	340	32	339	1.35e-126	369
+Dm_00003624-RA	sp|Q9C5Z1.1|	RecName: Full=Eukaryotic translation initiation factor 3 subunit B; Short=eIF3b; AltName: Full=eIF-3-eta; AltName: Full=eIF3 p110; AltName: Full=p82 [Arabidopsis thaliana]	74.298	712	176	5	1	708	1	709	0.0	1113
+Dm_00003620-RA	sp|Q27GK7.2|	RecName: Full=Topless-related protein 4; AltName: Full=WUS-interacting protein 2 [Arabidopsis thaliana]	73.702	1156	277	9	1	1150	1	1135	0.0	1774
+Dm_00003324-RA	sp|Q6DDJ3.1|	RecName: Full=Differentially expressed in FDCP 8 homolog A; Short=DEF-8-A [Xenopus laevis]	35.533	197	115	6	705	898	230	417	2.35e-29	125
+Dm_00003331-RA	sp|Q9SB63.2|	RecName: Full=Protein MODIFIER OF SNC1 1; AltName: Full=MODIFIER OF snc1, 1 [Arabidopsis thaliana]	32.628	1606	800	54	49	1605	10	1382	2.43e-174	566
+Dm_00003674-RA	sp|Q03685.1|	RecName: Full=Luminal-binding protein 5; Short=BiP 5; AltName: Full=78 kDa glucose-regulated protein homolog 5; Short=GRP-78-5; Flags: Precursor [Nicotiana tabacum]	90.393	687	46	2	1	686	1	668	0.0	1247
+Dm_00003671-RA	sp|Q8VZV9.1|	RecName: Full=Protein PLASTID TRANSCRIPTIONALLY ACTIVE 7; Short=pTAC7; AltName: Full=Protein PIGMENT DEFECTIVE 225; Flags: Precursor [Arabidopsis thaliana]	52.294	109	49	2	12	119	50	156	1.30e-31	112
+Dm_00003677-RA	sp|Q6LA54.2|	RecName: Full=Uncharacterized WD repeat-containing protein C3H5.08c [Schizosaccharomyces pombe 972h-]	33.807	352	181	8	276	615	318	629	3.62e-48	186
+Dm_00003694-RA	sp|Q3UJZ3.2|	RecName: Full=Armadillo repeat-containing protein 7 [Mus musculus]	52.419	124	53	2	9	132	8	125	3.91e-36	127
+Dm_00002956-RA	sp|Q9CAD5.1|	RecName: Full=Mitogen-activated protein kinase kinase kinase YODA; AltName: Full=YODA MAPKK kinase [Arabidopsis thaliana]	58.243	922	332	26	1	909	1	882	0.0	860
+Dm_00002958-RA	sp|Q7XA39.1|	RecName: Full=Putative disease resistance protein RGA4; AltName: Full=RGA4-blb [Solanum bulbocastanum]	33.733	1085	601	32	1	1065	1	987	8.08e-155	488
+Dm_00002963-RA	sp|F4KEC6.1|	RecName: Full=Kinesin-like protein KIN-10C [Arabidopsis thaliana]	45.260	327	157	8	260	586	18	322	1.20e-70	250
+Dm_00010642-RA	sp|Q9FZN8.1|	RecName: Full=3,7-dimethylxanthine N-methyltransferase TCS1; Short=TCS1a; AltName: Full=Caffeine synthase 1 [Camellia sinensis]	49.189	370	165	6	1	366	15	365	8.78e-115	341
+Dm_00010484-RA	sp|P40590.1|	RecName: Full=60S ribosomal protein L34 [Pisum sativum]	93.333	120	8	0	1	120	1	120	2.25e-76	224
+Dm_00015786-RA	sp|Q50EK3.1|	RecName: Full=Cytochrome P450 704C1; AltName: Full=Cytochrome P450 CYPD [Pinus taeda]	49.448	362	163	7	40	384	97	455	1.38e-114	346
+Dm_00015490-RA	sp|Q38884.2|	RecName: Full=Eukaryotic translation initiation factor 3 subunit I; Short=eIF3i; AltName: Full=Eukaryotic translation initiation factor 3 subunit 2; AltName: Full=TGF-beta receptor-interacting protein 1; Short=TRIP-1; AltName: Full=eIF-3-beta; AltName: Full=eIF3 p36 [Arabidopsis thaliana]	76.214	206	33	2	13	216	136	327	1.08e-100	297
+Dm_00014854-RA	sp|Q9C5S1.1|	RecName: Full=Protein-tyrosine-phosphatase MKP1; AltName: Full=Mitogen-activated protein kinase phosphatase 1; Short=AtMKP1 [Arabidopsis thaliana]	51.084	830	309	16	63	874	18	768	0.0	729
+Dm_00015852-RA	sp|F4I340.1|	RecName: Full=Seipin-2; Short=AtSEIPIN2 [Arabidopsis thaliana]	39.785	558	272	16	4	542	12	524	8.71e-121	369
+Dm_00014356-RA	sp|O75629.1|	RecName: Full=Protein CREG1; AltName: Full=Cellular repressor of E1A-stimulated genes 1; Flags: Precursor [Homo sapiens]	35.106	188	102	4	40	225	50	219	1.54e-29	112
+Dm_00014810-RA	sp|P40590.1|	RecName: Full=60S ribosomal protein L34 [Pisum sativum]	94.624	93	5	0	42	134	27	119	1.23e-57	177
+Dm_00006417-RA	sp|Q9C637.1|	RecName: Full=Receptor-like protein 6; Short=AtRLP6; Flags: Precursor [Arabidopsis thaliana]	37.059	993	481	18	307	1177	24	994	2.16e-162	511
+Dm_00006470-RA	sp|Q9XIC5.1|	RecName: Full=NAC domain-containing protein 17; Short=ANAC017; AltName: Full=Protein NTM1-like 7; AltName: Full=Protein REGULATORS OF AOX1A 2 [Arabidopsis thaliana]	60.326	184	70	1	3	183	61	244	6.08e-74	235
+Dm_00006483-RA	sp|Q9SSR1.1|	RecName: Full=DCC family protein At1g52590, chloroplastic; Flags: Precursor [Arabidopsis thaliana]	61.688	154	18	1	8	161	60	172	1.20e-58	182
+Dm_00011275-RA	sp|Q9ZQC5.1|	RecName: Full=Interactor of constitutive active ROPs 2, chloroplastic; AltName: Full=ROP-interactive partner 2; Flags: Precursor [Arabidopsis thaliana]	43.987	632	253	15	69	657	10	583	1.76e-133	407
+Dm_00012187-RA	sp|Q39224.1|	RecName: Full=Protein SRG1; Short=AtSRG1; AltName: Full=Protein SENESCENCE-RELATED GENE 1 [Arabidopsis thaliana]	43.314	344	186	5	17	357	17	354	3.76e-103	311
+Dm_00012801-RA	sp|Q9SL05.1|	RecName: Full=Protein PROTON GRADIENT REGULATION 5, chloroplastic; Flags: Precursor [Arabidopsis thaliana]	66.165	133	40	3	1	128	1	133	4.56e-53	166
+Dm_00014039-RA	sp|Q94AI1.1|	RecName: Full=QWRF motif-containing protein 2 [Arabidopsis thaliana]	47.336	657	247	20	26	635	29	633	9.30e-139	424
+Dm_00013409-RA	sp|Q9C524.1|	RecName: Full=Probable fructokinase-6, chloroplastic; Flags: Precursor [Arabidopsis thaliana]	84.211	323	51	0	17	339	61	383	0.0	564
+Dm_00013023-RA	sp|Q67UF5.1|	RecName: Full=Protein disulfide isomerase-like 2-3; Short=OsPDIL2-3; AltName: Full=Protein disulfide isomerase-like 5-1; Short=OsPDIL5-1; Flags: Precursor [Oryza sativa Japonica Group]	74.852	338	77	1	5	334	104	441	0.0	528
+Dm_00013862-RA	sp|Q9SJF3.2|	RecName: Full=mRNA-decapping enzyme-like protein; AltName: Full=DCP1 homolog [Arabidopsis thaliana]	57.500	360	123	7	1	341	1	349	4.59e-117	345
+Dm_00002369-RA	sp|O23160.1|	RecName: Full=Transcription factor MYB73; AltName: Full=Myb-related protein 73; Short=AtMYB73 [Arabidopsis thaliana]	50.645	310	90	8	1	283	1	274	6.69e-88	268
+Dm_00002377-RA	sp|Q9STX0.1|	RecName: Full=Probable WRKY transcription factor 7; AltName: Full=WRKY DNA-binding protein 7 [Arabidopsis thaliana]	47.462	394	146	12	1	382	1	345	3.56e-91	280
+Dm_00002374-RA	sp|Q9FM80.1|	RecName: Full=Transcription termination factor MTERF9, chloroplastic; AltName: Full=Mitochondrial transcription termination factor 9; AltName: Full=Protein TWIRT1; Flags: Precursor [Arabidopsis thaliana]	59.897	389	143	3	68	449	113	495	9.37e-160	463
+Dm_00003087-RA	sp|Q9CB01.1|	RecName: Full=Ras-related protein RABF1; Short=AtRABF1; AltName: Full=Ras-related protein Ara-6; AltName: Full=Ras-related protein Rab5C; Short=AtRab5C [Arabidopsis thaliana]	83.590	195	32	0	1	195	1	195	1.36e-119	340
+Dm_00002668-RA	sp|Q9LG26.2|	RecName: Full=Poly(A)-specific ribonuclease PARN; AltName: Full=Polyadenylate-specific ribonuclease; Short=AtPARN; AltName: Full=Protein ABA hypersensitive germination 2 [Arabidopsis thaliana]	56.661	623	258	4	38	658	36	648	0.0	709
+Dm_00002688-RA	sp|Q42588.2|	RecName: Full=Serine acetyltransferase 1, chloroplastic; Short=AtSAT-1; AltName: Full=AtSERAT2;1; AltName: Full=SAT-p [Arabidopsis thaliana]	65.060	332	98	2	1	332	1	314	2.40e-149	425
+Dm_00002686-RA	sp|Q9FM79.1|	RecName: Full=Pectinesterase QRT1; Short=PE QRT1; AltName: Full=Pectin methylesterase 62; Short=AtPME62; AltName: Full=Pectin methylesterase QRT1; AltName: Full=Protein QUARTET 1; Short=AtQRT1; Flags: Precursor [Arabidopsis thaliana]	54.660	397	138	4	5	385	10	380	2.04e-136	397
+Dm_00006513-RA	sp|O04609.1|	RecName: Full=WRKY transcription factor 22; AltName: Full=WRKY DNA-binding protein 22 [Arabidopsis thaliana]	50.000	246	83	10	186	418	80	298	4.77e-61	202
+Dm_00005275-RA	sp|Q0JHZ2.2|	RecName: Full=Zinc finger CCCH domain-containing protein 11; Short=OsC3H11 [Oryza sativa Japonica Group]	67.949	390	93	6	1	388	1	360	2.90e-154	442
+Dm_00005876-RA	sp|Q9FR62.1|	RecName: Full=Co-chaperone protein p23-1; AltName: Full=Bnp23-1 [Brassica napus]	57.812	128	50	2	1	124	3	130	7.83e-44	149
+Dm_00005907-RA	sp|O24023.2|	RecName: Full=9-cis-epoxycarotenoid dioxygenase NCED1, chloroplastic; Short=LeNCED1; Short=SlNCED1; AltName: Full=Nine-cis-epoxycarotenoid dioxygenase 1; Flags: Precursor [Solanum lycopersicum]	67.462	587	169	6	66	646	34	604	0.0	822
+Dm_00006213-RA	sp|Q4V3D2.1|	RecName: Full=Aspartic proteinase 36; Flags: Precursor [Arabidopsis thaliana]	31.818	374	212	15	114	459	76	434	1.37e-37	149
+Dm_00013145-RA	sp|O22174.1|	RecName: Full=Ethylene-responsive transcription factor ERF008 [Arabidopsis thaliana]	61.392	158	45	4	6	155	20	169	3.36e-52	166
+Dm_00005937-RA	sp|Q84LH3.1|	RecName: Full=Werner Syndrome-like exonuclease [Arabidopsis thaliana]	32.967	182	118	2	43	222	95	274	1.30e-23	98.6
+Dm_00005935-RA	sp|O22199.1|	RecName: Full=Phosphatidylinositol 4-kinase gamma 1; Short=AtPI4Kgamma1; Short=PI-4Kgamma1; Short=PI4K gamma 1 [Arabidopsis thaliana]	47.619	588	245	14	1	571	20	561	3.17e-160	471
+Dm_00006184-RA	sp|Q7XJR9.1|	RecName: Full=Calcium-dependent protein kinase 16 [Arabidopsis thaliana]	71.164	593	117	9	1	571	1	561	0.0	829
+Dm_00004852-RA	sp|Q84TH6.1|	RecName: Full=Dirigent protein 23; Short=AtDIR23; Flags: Precursor [Arabidopsis thaliana]	60.366	164	63	2	7	169	25	187	2.13e-65	201
+Dm_00005898-RA	sp|Q3EAF9.1|	RecName: Full=Probable protein phosphatase 2C 49; Short=AtPP2C49 [Arabidopsis thaliana]	58.656	387	124	8	1	355	1	383	5.25e-151	433
+Dm_00005897-RA	sp|Q949Z1.1|	RecName: Full=Polygalacturonase At1g48100; Short=PG; AltName: Full=Pectinase At1g48100; Flags: Precursor [Arabidopsis thaliana]	65.693	137	45	1	2	138	334	468	2.48e-58	190
+Dm_00004877-RA	sp|Q03878.1|	RecName: Full=Glycine-rich RNA-binding protein [Daucus carota]	86.747	83	11	0	36	118	2	84	1.38e-47	155
+Dm_00005618-RA	sp|Q8RUN2.1|	RecName: Full=Cytokinin riboside 5'-monophosphate phosphoribohydrolase LOG1; AltName: Full=Protein LONELY GUY 1 [Arabidopsis thaliana]	65.816	196	67	0	13	208	6	201	5.56e-96	281
+Dm_00005620-RA	sp|Q87L85.1|	RecName: Full=tRNA-dihydrouridine(20/20a) synthase; AltName: Full=U20-specific dihydrouridine synthase; Short=U20-specific Dus; AltName: Full=tRNA-dihydrouridine synthase A [Vibrio parahaemolyticus RIMD 2210633]	40.181	331	184	6	80	408	3	321	4.94e-80	253
+Dm_00006125-RA	sp|Q9FNK5.1|	RecName: Full=F-box protein At5g46170 [Arabidopsis thaliana]	33.141	347	184	8	11	322	22	355	1.38e-39	153
+Dm_00017087-RA	sp|Q9ZW07.1|	RecName: Full=Pumilio homolog 1; Short=APUM-1; Short=AtPUM1 [Arabidopsis thaliana]	53.892	1015	357	27	11	989	22	961	0.0	931
+Dm_00018986-RA	sp|Q9SJK3.2|	RecName: Full=Protein argonaute 5 [Arabidopsis thaliana]	56.471	850	301	15	189	998	177	997	0.0	926
+Dm_00013158-RA	sp|Q9CAF2.1|	RecName: Full=Nudix hydrolase 26, chloroplastic; Short=AtNUDT26; AltName: Full=Bis(5'-nucleosyl)-tetraphosphatase (asymmetrical); Flags: Precursor [Arabidopsis thaliana]	65.445	191	36	1	93	283	56	216	1.56e-86	261
+Dm_00012078-RA	sp|O64973.2|	RecName: Full=Disease resistance protein RPS5; AltName: Full=Resistance to Pseudomonas syringae protein 5; AltName: Full=pNd3/pNd10 [Arabidopsis thaliana]	36.102	939	535	18	1	933	1	880	1.54e-169	520
+Dm_00013079-RA	sp|Q8RXN8.1|	RecName: Full=DCD domain-containing protein NRP; AltName: Full=Asparagine-rich protein; Short=N-rich protein; AltName: Full=GDA1-like protein [Arabidopsis thaliana]	54.670	364	127	6	4	350	6	348	6.73e-113	335
+Dm_00013678-RA	sp|O80977.1|	RecName: Full=Vacuolar-sorting receptor 3; Short=AtVSR3; AltName: Full=BP80-like protein a'; Short=AtBP80a'; AltName: Full=Epidermal growth factor receptor-like protein 2a; Short=AtELP2a; Flags: Precursor [Arabidopsis thaliana]	82.550	596	103	1	30	624	24	619	0.0	1063
+Dm_00012425-RA	sp|Q8GXR2.2|	RecName: Full=Probable polyol transporter 6 [Arabidopsis thaliana]	62.346	486	169	3	5	482	8	487	0.0	627
+Dm_00012905-RA	sp|Q9SX73.1|	RecName: Full=Kinase-interacting family protein; Short=KIP1-like family protein [Arabidopsis thaliana]	34.959	246	131	6	1	243	14	233	5.08e-36	134
+Dm_00015946-RA	sp|Q949M9.1|	RecName: Full=ATPase GET3A; Short=AtGET3A; AltName: Full=Arsenical pump-driving ATPase; AltName: Full=Arsenite-stimulated ATPase; AltName: Full=Guided entry of tail-anchored proteins 3 homolog A [Arabidopsis thaliana]	76.404	356	81	1	1	356	1	353	0.0	551
+Dm_00016339-RA	sp|Q9LPS1.1|	RecName: Full=Hexokinase-3 [Arabidopsis thaliana]	59.810	525	160	5	25	549	25	498	0.0	612
+Dm_00011229-RA	sp|Q5CCK4.1|	RecName: Full=B3 domain-containing transcription repressor VAL2; AltName: Full=Protein HIGH-LEVEL EXPRESSION OF SUGAR-INDUCIBLE-LIKE 1; AltName: Full=Protein VP1/ABI3-LIKE 2 [Arabidopsis thaliana]	44.984	638	252	13	4	630	5	554	9.77e-175	519
+Dm_00009477-RA	sp|Q9FN92.1|	RecName: Full=Probable receptor-like protein kinase At5g59700; Flags: Precursor [Arabidopsis thaliana]	52.415	828	322	17	68	850	27	827	0.0	775
+Dm_00011583-RA	sp|A3RCV9.1|	RecName: Full=Eukaryotic translation initiation factor NCBP; AltName: Full=Novel cap-binding protein; Short=nCBP; AltName: Full=mRNA cap-binding protein [Triticum aestivum]	85.246	183	20	2	100	282	53	228	3.87e-112	325
+Dm_00011239-RA	sp|Q9LJW5.1|	RecName: Full=Mini zinc finger protein 2; Short=AtMIF2 [Arabidopsis thaliana]	52.885	104	44	3	1	103	1	100	2.40e-29	103
+Dm_00010262-RA	sp|P41210.1|	RecName: Full=Caltractin; AltName: Full=Centrin [Atriplex nummularia]	56.021	191	33	2	9	199	8	147	1.40e-57	183
+Dm_00010261-RA	sp|Q58FV0.1|	RecName: Full=Protein DOG1-like 3 [Arabidopsis thaliana]	33.465	254	143	5	30	276	18	252	8.04e-42	148
+Dm_00011220-RA	sp|F4JGZ1.1|	RecName: Full=Mediator of RNA polymerase II transcription subunit 16; AltName: Full=Protein SENSITIVE TO FREEZING 6 [Arabidopsis thaliana]	71.291	1146	274	16	25	1136	106	1230	0.0	1557
+Dm_00008952-RA	sp|F6HDM2.1|	RecName: Full=ATP-dependent (S)-NAD(P)H-hydrate dehydratase; AltName: Full=ATP-dependent NAD(P)HX dehydratase [Vitis vinifera]	78.676	136	29	0	3	138	35	170	2.20e-74	229
+Dm_00011518-RA	sp|Q8RX88.1|	RecName: Full=CAAX prenyl protease 1 homolog; AltName: Full=Farnesylated proteins-converting enzyme 1; Short=AtFACE-1; Short=FACE-1; AltName: Full=Prenyl protein-specific endoprotease 1; AltName: Full=Zinc metalloproteinase Ste24 homolog; Short=AtSTE24 [Arabidopsis thaliana]	82.452	416	73	0	2	417	9	424	0.0	722
+Dm_00012101-RA	sp|P28723.3|	RecName: Full=Formate--tetrahydrofolate ligase; AltName: Full=10-formyletrahydrofolate synthetase; Short=FHS; Short=FTHFS; AltName: Full=Formyltetrahydrofolate synthetase [Spinacia oleracea]	89.048	630	69	0	2	631	3	632	0.0	1156
+Dm_00018051-RA	sp|Q9LE22.1|	RecName: Full=Probable calcium-binding protein CML27; AltName: Full=Calmodulin-like protein 27 [Arabidopsis thaliana]	59.184	147	58	2	4	149	8	153	1.29e-59	185
+Dm_00016884-RA	sp|Q766C3.1|	RecName: Full=Aspartic proteinase nepenthesin-1; AltName: Full=Nepenthesin-I; Flags: Precursor [Nepenthes gracilis]	31.957	460	268	15	4	450	8	435	8.60e-63	212
+Dm_00018387-RA	sp|Q9LH89.1|	RecName: Full=Uncharacterized protein At3g28850 [Arabidopsis thaliana]	43.574	498	176	17	1	463	1	428	2.14e-101	312
+Dm_00018545-RA	sp|Q9SII8.1|	RecName: Full=Ubiquitin domain-containing protein DSK2b [Arabidopsis thaliana]	60.746	563	179	9	1	533	1	551	0.0	586
+Dm_00003659-RA	sp|Q8S8Q6.1|	RecName: Full=Tetraspanin-8 [Arabidopsis thaliana]	60.886	271	100	2	2	266	3	273	5.41e-123	354
+Dm_00003432-RA	sp|Q9LES2.1|	RecName: Full=UBP1-associated protein 2A; AltName: Full=UBP1-interacting protein 2a [Arabidopsis thaliana]	60.880	409	129	10	109	501	85	478	3.33e-150	440
+Dm_00003425-RA	sp|P04353.2|	RecName: Full=Calmodulin; Short=CaM [Spinacia oleracea]	100.000	124	0	0	143	266	26	149	1.02e-85	255
+Dm_00003751-RA	sp|Q9SIV2.2|	RecName: Full=26S proteasome non-ATPase regulatory subunit 2 homolog A; AltName: Full=26S proteasome regulatory subunit RPN1a; Short=AtRPN1a; AltName: Full=26S proteasome regulatory subunit S2 homolog A [Arabidopsis thaliana]	78.009	864	175	2	26	889	39	887	0.0	1357
+Dm_00003646-RA	sp|Q9SGE0.1|	RecName: Full=UDP-D-apiose/UDP-D-xylose synthase 2 [Arabidopsis thaliana]	82.212	416	46	2	4	419	2	389	0.0	721
+Dm_00017353-RA	sp|Q9FLD7.1|	RecName: Full=Beta-glucuronosyltransferase GlcAT14A; AltName: Full=GT14 family glucuronic acid transferase 1; Short=AtGlcAT14A [Arabidopsis thaliana]	54.439	428	181	8	14	435	28	447	2.99e-158	457
+Dm_00020564-RA	sp|Q5M750.1|	RecName: Full=VQ motif-containing protein 4; Short=AtVQ4; AltName: Full=MPK3/6-targeted VQ-motif-containing protein 1 [Arabidopsis thaliana]	52.804	214	72	9	40	246	47	238	6.19e-51	169
+Dm_00020570-RA	sp|B8BDW1.1|	RecName: Full=Protein XAP5 CIRCADIAN TIMEKEEPER [Oryza sativa Indica Group]	77.746	346	55	7	1	338	1	332	2.15e-158	449
+Dm_00020569-RA	sp|Q8H1F4.1|	RecName: Full=Coatomer subunit zeta-3; AltName: Full=Zeta-3-coat protein; AltName: Full=Zeta-COP 3 [Arabidopsis thaliana]	70.787	178	52	0	103	280	4	181	4.69e-93	275
+Dm_00020511-RA	sp|A2XUW1.1|	RecName: Full=Cyclin-dependent kinase G-2; Short=CDKG;2 [Oryza sativa Indica Group]	52.417	786	282	18	1	770	1	710	0.0	673
+Dm_00007966-RA	sp|Q8H7Y8.1|	RecName: Full=Probable histone H2A variant 1 [Oryza sativa Japonica Group]	90.625	64	6	0	411	474	37	100	3.77e-31	120
+Dm_00008566-RA	sp|F4K4L7.1|	RecName: Full=Transcription initiation factor TFIID subunit 4b; AltName: Full=TBP-associated factor 4b; Short=AtTAF4b [Arabidopsis thaliana]	47.077	633	244	19	362	958	275	852	1.31e-136	433
+Dm_00007380-RA	sp|P93755.2|	RecName: Full=Zinc finger CCCH domain-containing protein 30; Short=AtC3H30 [Arabidopsis thaliana]	42.857	770	311	32	1	705	1	706	7.64e-158	476
+Dm_00007377-RA	sp|Q42438.1|	RecName: Full=Calcium-dependent protein kinase 8; AltName: Full=Calcium-dependent protein kinase isoform CDPK19; Short=AtCDPK19 [Arabidopsis thaliana]	80.699	544	88	3	1	539	1	532	0.0	909
+Dm_00007940-RA	sp|F4K2A1.1|	RecName: Full=Folylpolyglutamate synthase; AltName: Full=DHFS-FPGS homolog B; AltName: Full=Folylpoly-gamma-glutamate synthetase; Short=FPGS; AltName: Full=Tetrahydrofolylpolyglutamate synthase; Short=Tetrahydrofolate synthase [Arabidopsis thaliana]	53.846	364	129	9	4	356	217	552	1.85e-113	348
+Dm_00008304-RA	sp|P38389.1|	RecName: Full=Protein transport protein Sec61 subunit beta [Arabidopsis thaliana]	73.611	72	15	1	8	75	7	78	4.47e-24	90.9
+Dm_00007134-RA	sp|Q9S7Q2.1|	RecName: Full=Pentatricopeptide repeat-containing protein At1g74850, chloroplastic; AltName: Full=Protein PLASTID TRANSCRIPTIONALLY ACTIVE 2; Flags: Precursor [Arabidopsis thaliana]	63.515	825	291	5	21	841	25	843	0.0	1110
+Dm_00017798-RA	sp|O22874.1|	RecName: Full=Expansin-A8; Short=AtEXPA8; AltName: Full=Alpha-expansin-8; Short=At-EXP8; Short=AtEx8; AltName: Full=Ath-ExpAlpha-1.11; Flags: Precursor [Arabidopsis thaliana]	77.912	249	49	3	9	256	10	253	1.48e-142	402
+Dm_00017837-RA	sp|A8MQL1.1|	RecName: Full=TNF receptor-associated factor homolog 1b; AltName: Full=Protein MUTANT SNC1-ENHANCING 13 [Arabidopsis thaliana]	46.589	1202	475	33	1	1155	1	1082	0.0	824
+Dm_00017925-RA	sp|Q96326.1|	RecName: Full=Cytochrome c-type biogenesis protein CcmE homolog, mitochondrial; AltName: Full=Cytochrome c maturation protein E homolog; Short=AtCCME; AltName: Full=Heme chaperone CcmE homolog; Flags: Precursor [Arabidopsis thaliana]	76.596	188	40	1	64	251	57	240	2.17e-106	311
+Dm_00012115-RA	sp|Q8VYX0.2|	RecName: Full=IAA-amino acid hydrolase ILR1-like 6; AltName: Full=Protein gr1; AltName: Full=jasmonoyl-L-amino acid hydrolase; Flags: Precursor [Arabidopsis thaliana]	62.471	437	153	5	51	484	36	464	0.0	526
+Dm_00013313-RA	sp|Q9LHJ8.1|	RecName: Full=Zinc finger A20 and AN1 domain-containing stress-associated protein 5; Short=AtSAP5 [Arabidopsis thaliana]	81.818	66	12	0	78	143	95	160	3.20e-36	125
+Dm_00012644-RA	sp|Q9FMM3.1|	RecName: Full=Protein ESSENTIAL FOR POTEXVIRUS ACCUMULATION 1; AltName: Full=Plant SMY2-type ILE-GYF domain-containing protein 1; AltName: Full=Protein MUTANT, SNC1-ENHANCING 11 [Arabidopsis thaliana]	32.267	375	167	18	60	386	28	363	3.16e-26	121
+Dm_00011212-RA	sp|Q8VZJ9.1|	RecName: Full=Calmodulin-binding receptor-like cytoplasmic kinase 2 [Arabidopsis thaliana]	46.739	184	78	6	31	201	101	277	1.13e-41	149
+Dm_00005031-RA	sp|Q9LFQ4.2|	RecName: Full=Pentatricopeptide repeat-containing protein At5g15010, mitochondrial; Flags: Precursor [Arabidopsis thaliana]	52.612	536	225	7	85	618	64	572	0.0	564
+Dm_00005380-RA	sp|F4HRV8.1|	RecName: Full=Meiosis-specific protein ASY1; AltName: Full=Protein ASYNAPTIC 1; Short=AtASY1 [Arabidopsis thaliana]	58.564	613	195	11	36	608	2	595	0.0	650
+Dm_00006233-RA	sp|F4K1G2.1|	RecName: Full=Putative acyl-activating enzyme 19 [Arabidopsis thaliana]	45.960	792	399	13	37	817	3	776	0.0	650
+Dm_00016845-RA	sp|Q9SGA0.1|	RecName: Full=ACT domain-containing protein ACR6; AltName: Full=Protein ACT DOMAIN REPEATS 6 [Arabidopsis thaliana]	71.212	396	107	3	2	396	4	393	0.0	572
+Dm_00016050-RA	sp|Q9LDE3.1|	RecName: Full=F-box/kelch-repeat protein At1g23390 [Arabidopsis thaliana]	39.683	378	216	9	39	410	20	391	4.29e-88	276
+Dm_00015232-RA	sp|Q8W4K5.1|	RecName: Full=VAN3-binding protein; AltName: Full=Protein FORKED 1 [Arabidopsis thaliana]	60.744	484	146	14	21	487	30	486	4.24e-134	400
+Dm_00014362-RA	sp|F4IHY7.1|	RecName: Full=Protein PLASTID TRANSCRIPTIONALLY ACTIVE 12, chloroplastic; Short=pTAC12; AltName: Full=Plastid-encoded RNA polymerase-associated protein 5; Short=PEP-associated protein 5; AltName: Full=Protein HEMERA; Flags: Precursor [Arabidopsis thaliana]	62.937	429	135	5	93	507	26	444	0.0	523
+Dm_00016099-RA	sp|O81445.3|	RecName: Full=Calcineurin B-like protein 1; AltName: Full=SOS3-like calcium-binding protein 5 [Arabidopsis thaliana]	80.282	213	42	0	1	213	1	213	2.66e-127	360
+Dm_00016173-RA	sp|O65399.3|	RecName: Full=Glucan endo-1,3-beta-glucosidase 1; AltName: Full=(1->3)-beta-glucan endohydrolase 1; Short=(1->3)-beta-glucanase 1; AltName: Full=Beta-1,3-endoglucanase 1; Short=Beta-1,3-glucanase 1; Flags: Precursor [Arabidopsis thaliana]	50.000	96	47	1	95	189	370	465	1.76e-21	97.1
+Dm_00014796-RA	sp|P29356.1|	RecName: Full=Fructose-bisphosphate aldolase, cytoplasmic isozyme [Spinacia oleracea]	87.106	349	45	0	10	358	9	357	0.0	624
+Dm_00010488-RA	sp|Q9SZN7.1|	RecName: Full=Heavy metal-associated isoprenylated plant protein 26; Short=AtHIP26; Short=AtHIPP26; AltName: Full=Farnesylated protein 6; Short=AtFP6; Flags: Precursor [Arabidopsis thaliana]	75.316	158	34	1	1	158	1	153	8.64e-87	253
+Dm_00005498-RA	sp|Q9M2Z3.2|	RecName: Full=Single-strand DNA endonuclease 1; Short=AtSEND1; AltName: Full=Flap endonuclease GEN-like 2; Short=XPG-like endonuclease 2 [Arabidopsis thaliana]	59.145	421	132	6	1	382	1	420	7.69e-168	486
+Dm_00005497-RA	sp|Q9M2Z4.1|	RecName: Full=Membrane steroid-binding protein 2; Short=AtMP2; AltName: Full=Membrane-associated progesterone-binding protein 3; Short=AtMAPR3 [Arabidopsis thaliana]	77.586	174	32	2	1	172	1	169	1.83e-90	268
+Dm_00005500-RA	sp|Q9FEE2.1|	RecName: Full=Probable serine/threonine-protein phosphatase 2A regulatory subunit B'' subunit TON2; AltName: Full=Protein EMBRYO DEFFECTIVE 40; AltName: Full=Protein GORDO; AltName: Full=Protein TONNEAU 2 [Arabidopsis thaliana]	83.617	470	43	2	14	450	1	469	0.0	808
+Dm_00008472-RA	sp|Q38914.2|	RecName: Full=AP2-like ethylene-responsive transcription factor ANT; AltName: Full=Complementing a protein kinase C mutant protein 1; AltName: Full=Protein AINTEGUMENTA; AltName: Full=Protein DRAGON; AltName: Full=Protein OVULE MUTANT [Arabidopsis thaliana]	51.901	526	157	15	1	489	1	467	1.84e-150	450
+Dm_00008787-RA	sp|Q6DJB3.1|	RecName: Full=Differentially expressed in FDCP 8 homolog; Short=DEF-8 [Xenopus tropicalis]	38.168	131	78	2	847	974	230	360	7.14e-23	106
+Dm_00008483-RA	sp|O22224.2|	RecName: Full=Nuclear pore complex protein NUP93A; AltName: Full=Nucleoporin 93A [Arabidopsis thaliana]	67.016	858	234	5	1	812	1	855	0.0	1182
+Dm_00008484-RA	sp|O64847.1|	RecName: Full=Protein FATTY ACID EXPORT 7; Short=At-FAX7 [Arabidopsis thaliana]	64.486	107	38	0	1	107	1	107	6.54e-39	128
+Dm_00002312-RA	sp|Q9SN43.1|	RecName: Full=CBL-interacting serine/threonine-protein kinase 12; AltName: Full=SNF1-related kinase 3.9; AltName: Full=SOS2-like protein kinase PKS8 [Arabidopsis thaliana]	80.087	462	83	4	22	476	20	479	0.0	762
+Dm_00002293-RA	sp|Q9FJH0.1|	RecName: Full=Ras-related protein RABA1f; Short=AtRABA1f [Arabidopsis thaliana]	91.244	217	19	0	1	217	1	217	4.53e-148	413
+Dm_00002296-RA	sp|O22959.1|	RecName: Full=Peroxidase 19; Short=Atperox P19; AltName: Full=ATP51; Flags: Precursor [Arabidopsis thaliana]	55.807	353	135	6	9	361	11	342	1.52e-132	385
+Dm_00002311-RA	sp|Q9LXT4.1|	RecName: Full=Plant cysteine oxidase 5; Short=AtPCO5 [Arabidopsis thaliana]	58.120	117	40	2	5	121	135	242	1.55e-41	140
+Dm_00003258-RA	sp|Q64M78.1|	RecName: Full=Protein MEI2-like 4; Short=OML4; AltName: Full=MEI2-like protein 4 [Oryza sativa Japonica Group]	50.118	425	174	11	295	702	548	951	7.98e-112	366
+Dm_00017254-RA	sp|Q9FGK5.1|	RecName: Full=Ras-related protein RABA5a; Short=AtRABA5a [Arabidopsis thaliana]	65.625	224	21	2	86	256	1	221	1.17e-95	282
+Dm_00015098-RA	sp|O80888.1|	RecName: Full=Mitogen-activated protein kinase kinase kinase 17 [Arabidopsis thaliana]	42.953	298	137	9	23	302	3	285	2.17e-63	213
+Dm_00016390-RA	sp|Q9LEV3.1|	RecName: Full=CBS domain-containing protein CBSX3, mitochondrial; Flags: Precursor [Arabidopsis thaliana]	75.728	206	41	2	1	197	1	206	3.59e-110	316
+Dm_00012207-RA	sp|Q9LZK5.1|	RecName: Full=DnaJ protein ERDJ3B; AltName: Full=Chaperone protein dnaJ 19; Short=AtDjB19; Short=AtJ19; AltName: Full=Endoplasmic reticulum dnaJ domain-containing protein 3B; Short=AtERdj3B; AltName: Full=Protein SCJ1 homolog ERDJ3B; Flags: Precursor [Arabidopsis thaliana]	84.424	321	48	2	1	320	25	344	0.0	538
+Dm_00017304-RA	sp|Q9SKI2.2|	RecName: Full=Vacuolar protein sorting-associated protein 2 homolog 1; Short=AtVPS2-1; AltName: Full=Charged multivesicular body protein 2 homolog 1; AltName: Full=ESCRT-III complex subunit VPS2 homolog 1; AltName: Full=SNF7-like protein [Arabidopsis thaliana]	80.631	222	24	3	1	221	22	225	2.27e-107	310
+Dm_00017587-RA	sp|Q8LG50.2|	RecName: Full=1-acyl-sn-glycerol-3-phosphate acyltransferase 2; AltName: Full=Lysophosphatidyl acyltransferase 2 [Arabidopsis thaliana]	68.889	405	106	4	1	403	1	387	0.0	566
+Dm_00013342-RA	sp|P93758.1|	RecName: Full=Remorin 4.2; Short=AtREM4.2; AltName: Full=Remorin group 4 member 2 [Arabidopsis thaliana]	50.000	248	104	4	7	247	37	271	3.62e-69	216
+Dm_00015199-RA	sp|Q9SJ81.1|	RecName: Full=Fasciclin-like arabinogalactan protein 7; Flags: Precursor [Arabidopsis thaliana]	62.121	198	72	2	1	197	1	196	3.67e-75	231
+Dm_00013394-RA	sp|Q9FME2.1|	RecName: Full=Nuclear transport factor 2; Short=AtNTF2 [Arabidopsis thaliana]	41.905	420	175	15	11	391	9	398	1.94e-74	244
+Dm_00015137-RA	sp|Q8LPF0.1|	RecName: Full=Transcription initiation factor TFIID subunit 2; AltName: Full=TBP-associated factor 2; Short=AtTAF2 [Arabidopsis thaliana]	55.645	1249	503	15	1	1205	1	1242	0.0	1306
+Dm_00020642-RA	sp|Q0DJV6.1|	RecName: Full=Probable calcium-binding protein CML18; AltName: Full=Calmodulin-like protein 18 [Oryza sativa Japonica Group]	58.389	149	51	2	16	155	1	147	1.14e-52	167
+Dm_00013214-RA	sp|Q8W034.1|	RecName: Full=Heterogeneous nuclear ribonucleoprotein 1; Short=hnRNP1 [Arabidopsis thaliana]	54.942	344	145	3	1	343	1	335	3.63e-100	309
+Dm_00011729-RA	sp|Q9FJZ9.1|	RecName: Full=Peroxidase 72; Short=Atperox P72; AltName: Full=ATP6a; AltName: Full=PRXR8; Flags: Precursor [Arabidopsis thaliana]	64.412	340	103	1	15	354	12	333	1.06e-164	466
+Dm_00003450-RA	sp|Q9FJY9.1|	RecName: Full=Pentatricopeptide repeat-containing protein At5g66500, mitochondrial; Flags: Precursor [Arabidopsis thaliana]	48.614	541	264	5	24	562	1	529	4.14e-172	506
+Dm_00003498-RA	sp|Q93VK0.2|	RecName: Full=Phosphoenolpyruvate carboxylase kinase 2; Short=AtPPCK2 [Arabidopsis thaliana]	56.554	267	109	5	5	268	7	269	1.13e-105	311
+Dm_00014338-RA	sp|Q9SEL5.3|	RecName: Full=Vesicle transport v-SNARE 12; Short=AtVTI12; AltName: Full=Protein ZIG SUPPRESSOR 1; AltName: Full=Vesicle soluble NSF attachment protein receptor VTI1b; Short=AtVTI1b; AltName: Full=Vesicle transport v-SNARE protein VTI1b [Arabidopsis thaliana]	69.388	196	58	2	38	232	28	222	4.87e-93	275
+Dm_00012841-RA	sp|Q8RX22.1|	RecName: Full=MND1-interacting protein 1; Short=AtMIP1 [Arabidopsis thaliana]	50.590	763	300	17	1	738	1	711	0.0	637
+Dm_00014217-RA	sp|Q8VYP0.1|	RecName: Full=Protein SCO1 homolog 1, mitochondrial; AltName: Full=Homolog of the copper chaperone SCO1 member 1; Short=HCC1; Flags: Precursor [Arabidopsis thaliana]	71.090	211	61	0	237	447	124	334	5.17e-113	338
+Dm_00014483-RA	sp|Q8L5Z7.1|	RecName: Full=Sorting nexin 2A [Arabidopsis thaliana]	63.972	569	159	10	14	546	11	569	0.0	667
+Dm_00013854-RA	sp|F4I312.2|	RecName: Full=Vacuolar sorting protein 3 [Arabidopsis thaliana]	82.162	185	33	0	11	195	800	984	4.04e-106	330
+Dm_00020094-RA	sp|Q9SRW9.1|	RecName: Full=Cellulose synthase-like protein D5; Short=AtCslD5 [Arabidopsis thaliana]	76.436	1201	242	14	1	1180	1	1181	0.0	1826
+Dm_00020641-RA	sp|Q9M9W1.1|	RecName: Full=60S ribosomal protein L22-2 [Arabidopsis thaliana]	81.301	123	19	2	1	123	1	119	6.10e-55	170
+Dm_00017031-RA	sp|Q9SKY8.1|	RecName: Full=Heat shock 70 kDa protein 8; AltName: Full=Heat shock protein 70-8; Short=AtHsp70-8; AltName: Full=Heat-shock protein 70T-2 [Arabidopsis thaliana]	64.654	563	193	4	1	558	1	562	0.0	764
+Dm_00020157-RA	sp|O81884.1|	RecName: Full=L-galactose dehydrogenase; Short=At-GalDH; Short=L-GalDH [Arabidopsis thaliana]	79.048	315	66	0	9	323	4	318	0.0	526
+Dm_00004954-RA	sp|Q8CGC6.4|	RecName: Full=RNA-binding protein 28; AltName: Full=RNA-binding motif protein 28 [Mus musculus]	39.927	273	154	3	464	730	326	594	2.52e-49	190
+Dm_00004960-RA	sp|Q9SDZ9.1|	RecName: Full=Purple acid phosphatase 2; AltName: Full=Manganese(II) purple acid phosphatase 2; Flags: Precursor [Ipomoea batatas]	72.885	461	119	2	22	482	10	464	0.0	730
+Dm_00005267-RA	sp|O64730.2|	RecName: Full=Probable protein phosphatase 2C 26; Short=AtPP2C26 [Arabidopsis thaliana]	63.241	253	78	1	17	269	59	296	2.12e-118	343
+Dm_00004226-RA	sp|Q1G3M3.1|	RecName: Full=B3 domain-containing protein At3g19184 [Arabidopsis thaliana]	56.757	222	86	4	1	213	1	221	5.73e-77	236
+Dm_00004734-RA	sp|Q9Z2Y8.1|	RecName: Full=Pyridoxal phosphate homeostasis protein; Short=PLP homeostasis protein; AltName: Full=Proline synthase co-transcribed bacterial homolog protein; AltName: Full=Pyridoxal phosphate-binding protein [Mus musculus]	49.174	242	105	6	13	236	16	257	3.34e-65	206
+Dm_00005045-RA	sp|Q96S44.2|	RecName: Full=EKC/KEOPS complex subunit TP53RK; AltName: Full=Atypical serine/threonine protein kinase TP53RK; AltName: Full=Nori-2; AltName: Full=TP53-regulating kinase; AltName: Full=p53-related protein kinase [Homo sapiens]	49.074	216	107	2	12	224	36	251	8.91e-60	197
+Dm_00007915-RA	sp|Q944G9.2|	RecName: Full=Fructose-bisphosphate aldolase 2, chloroplastic; Short=AtFBA2; Flags: Precursor [Arabidopsis thaliana]	85.464	399	56	2	1	398	1	398	0.0	702
+Dm_00006808-RA	sp|Q6Q3H3.1|	RecName: Full=(-)-germacrene D synthase [Vitis vinifera]	58.427	534	205	7	539	1065	22	545	0.0	620
+Dm_00006805-RA	sp|O49329.1|	RecName: Full=Receptor like protein 24; Short=AtRLP24; Flags: Precursor [Arabidopsis thaliana]	38.367	649	365	12	39	681	242	861	1.19e-110	357
+Dm_00005991-RA	sp|Q5M729.1|	RecName: Full=Dihydrolipoyllysine-residue acetyltransferase component 3 of pyruvate dehydrogenase complex, mitochondrial; AltName: Full=Dihydrolipoamide S-acetyltransferase component 3 of pyruvate dehydrogenase complex; AltName: Full=Pyruvate dehydrogenase complex component E2 3; Short=PDC-E2 3; Short=PDCE2 3; Flags: Precursor [Arabidopsis thaliana]	64.037	545	176	11	5	535	1	539	0.0	660
+Dm_00007025-RA	sp|Q53WK4.1|	RecName: Full=Nucleosome assembly protein 1;2; Short=OsNAP1;2; AltName: Full=Nucleosome assembly protein 1-like 2; Short=OsNAP1_L2; Flags: Precursor [Oryza sativa Japonica Group]	63.930	402	107	3	1	402	1	364	7.88e-159	454
+Dm_00006205-RA	sp|Q9LMK7.1|	RecName: Full=Ran-binding protein 1 homolog a; AltName: Full=Ran-binding protein siRanBP [Arabidopsis thaliana]	75.325	154	34	3	1	151	1	153	7.12e-81	241
+Dm_00019083-RA	sp|A0A193AUF6.1|	RecName: Full=Gallate 1-beta-glucosyltransferase 84A23; AltName: Full=UDP-glucose:gallate glucosyltransferase; AltName: Full=UDP-glycosyltransferase 84A23 [Punica granatum]	71.569	510	140	4	1	510	1	505	0.0	761
+Dm_00019668-RA	sp|Q5VST6.1|	RecName: Full=Alpha/beta hydrolase domain-containing protein 17B; Short=Abhydrolase domain-containing protein 17B [Homo sapiens]	47.529	263	125	6	8	259	22	282	2.97e-82	257
+Dm_00019606-RA	sp|Q9ASP6.1|	RecName: Full=Heterogeneous nuclear ribonucleoprotein Q; Short=hnRNP Q; AltName: Full=Protein LHP1-INTERACTING FACTOR 2 [Arabidopsis thaliana]	63.279	433	146	6	51	475	68	495	0.0	549
+Dm_00017891-RA	sp|Q5XF36.1|	RecName: Full=Vacuole membrane protein KMS1; AltName: Full=Protein KILLING ME SLOWLY 1 [Arabidopsis thaliana]	70.277	397	117	1	22	417	17	413	0.0	589
+Dm_00008365-RA	sp|F4INW9.1|	RecName: Full=Probable myosin-binding protein 4 [Arabidopsis thaliana]	41.129	248	118	6	59	303	12	234	1.39e-48	186
+Dm_00009892-RA	sp|Q9ZW06.1|	RecName: Full=Pumilio homolog 2; Short=APUM-2; Short=AtPUM2 [Arabidopsis thaliana]	60.115	1043	324	23	6	1030	1	969	0.0	1118
+Dm_00008803-RA	sp|Q9FX53.1|	RecName: Full=Trihelix transcription factor GT-1; AltName: Full=Trihelix DNA-binding protein GT-1 [Arabidopsis thaliana]	54.484	446	141	12	23	450	1	402	2.11e-150	436
+Dm_00009298-RA	sp|Q8VZ42.1|	RecName: Full=Zinc finger AN1 and C2H2 domain-containing stress-associated protein 11; Short=AtSAP11 [Arabidopsis thaliana]	55.442	294	97	6	1	275	1	279	1.89e-107	315
+Dm_00013212-RA	sp|Q0IU52.1|	RecName: Full=Aspartic proteinase Asp1; Short=OSAP1; Short=OsAsp1; AltName: Full=Nucellin-like protein; Flags: Precursor [Oryza sativa Japonica Group]	44.595	370	189	10	48	406	36	400	8.73e-102	311
+Dm_00011529-RA	sp|P21820.1|	RecName: Full=Triosephosphate isomerase, cytosolic; Short=TIM; Short=Triose-phosphate isomerase [Coptis japonica]	74.615	130	25	2	87	216	64	185	6.10e-61	194
+Dm_00004940-RA	sp|Q9C5D2.1|	RecName: Full=F-box/LRR-repeat protein 4; Short=AtFBL4 [Arabidopsis thaliana]	22.770	527	367	12	8	522	11	509	1.74e-21	102
+Dm_00004927-RA	sp|Q9XHS0.1|	RecName: Full=40S ribosomal protein S12 [Hordeum vulgare]	86.139	101	14	0	1	101	24	124	1.02e-58	181
+Dm_00004152-RA	sp|Q8W4L0.1|	RecName: Full=Probable calcium-binding protein CML49; AltName: Full=Calmodulin-like protein 49 [Arabidopsis thaliana]	60.119	336	76	9	26	334	31	335	1.75e-119	350
+Dm_00005080-RA	sp|Q40152.1|	RecName: Full=Heat shock factor protein HSF8; AltName: Full=Heat shock transcription factor 8; Short=HSTF 8; AltName: Full=Heat stress transcription factor [Solanum lycopersicum]	52.456	509	190	17	98	578	40	524	5.25e-147	438
+Dm_00004916-RA	sp|P06183.1|	RecName: Full=Photosystem II 10 kDa polypeptide, chloroplastic; AltName: Full=Light-inducible tissue-specific ST-LS1 protein; Flags: Precursor [Solanum tuberosum]	75.362	138	25	3	4	135	3	137	8.18e-66	199
+Dm_00004654-RA	sp|Q9SX98.1|	RecName: Full=Lysine histidine transporter-like 8; AltName: Full=Amino acid transporter-like protein 1 [Arabidopsis thaliana]	82.955	528	79	2	1	528	1	517	0.0	876
+Dm_00005200-RA	sp|P56330.1|	RecName: Full=Protein translation factor SUI1 homolog; AltName: Full=Protein GOS2 [Zea mays]	79.130	115	21	1	1	112	1	115	3.76e-63	190
+Dm_00004521-RA	sp|O80834.1|	RecName: Full=AT-hook motif nuclear-localized protein 9 [Arabidopsis thaliana]	44.972	358	173	6	1	344	1	348	1.65e-84	262
+Dm_00005742-RA	sp|F4HZB5.1|	RecName: Full=Protein NETWORKED 1D [Arabidopsis thaliana]	41.580	1823	934	17	35	1819	1	1730	0.0	1199
+Dm_00005488-RA	sp|O82768.1|	RecName: Full=Histidine biosynthesis bifunctional protein hisIE, chloroplastic; AltName: Full=Protein HISTIDINE BIOSYNTHESIS 2; Includes: RecName: Full=Phosphoribosyl-AMP cyclohydrolase; Short=PRA-CH; Includes: RecName: Full=Phosphoribosyl-ATP pyrophosphatase; Short=PRA-PH; Flags: Precursor [Arabidopsis thaliana]	60.751	293	102	3	3	295	1	280	1.73e-121	352
+Dm_00005491-RA	sp|Q9FN05.1|	RecName: Full=Probable glucan 1,3-alpha-glucosidase; AltName: Full=Glucosidase II subunit alpha; AltName: Full=Protein PRIORITY IN SWEET LIFE 5; AltName: Full=Protein RADIAL SWELLING 3; Flags: Precursor [Arabidopsis thaliana]	73.403	955	212	7	13	962	4	921	0.0	1466
+Dm_00006072-RA	sp|Q9SP08.1|	RecName: Full=Exosome complex component RRP41 homolog; AltName: Full=Ribosomal RNA-processing protein 41; Short=AtRRP41; Short=AtRrp41p [Arabidopsis thaliana]	70.632	269	50	3	1	268	1	241	6.79e-130	370
+Dm_00010992-RA	sp|Q1G3Q4.1|	RecName: Full=Protein RGF1 INDUCIBLE TRANSCRIPTION FACTOR 1 [Arabidopsis thaliana]	47.101	138	72	1	50	187	6	142	4.01e-37	134
+Dm_00010176-RA	sp|O23116.1|	RecName: Full=ETHYLENE INSENSITIVE 3-like 3 protein [Arabidopsis thaliana]	50.915	601	246	12	1	590	1	563	0.0	530
+Dm_00012441-RA	sp|Q93WC5.1|	RecName: Full=Pentatricopeptide repeat-containing protein At4g01990, mitochondrial; Flags: Precursor [Arabidopsis thaliana]	38.085	470	283	6	536	1001	34	499	2.42e-99	324
+Dm_00011634-RA	sp|Q9FFN7.1|	RecName: Full=Diacylglycerol kinase 2; Short=AtDGK2; Short=DAG kinase 2; AltName: Full=Diglyceride kinase 2; Short=DGK 2 [Arabidopsis thaliana]	64.051	701	240	7	22	720	22	712	0.0	916
+Dm_00014345-RA	sp|F4I116.1|	RecName: Full=Leucine--tRNA ligase, cytoplasmic; AltName: Full=Leucyl-tRNA synthetase; Short=LeuRS [Arabidopsis thaliana]	70.561	1087	313	4	5	1091	2	1081	0.0	1607
+Dm_00016611-RA	sp|Q93V51.1|	RecName: Full=Protein LEAD-SENSITIVE 1; Short=Protein Pb-SENSITIVE 1 [Arabidopsis thaliana]	55.794	233	101	2	1	232	1	232	5.61e-87	261
+Dm_00019935-RA	sp|P08299.1|	RecName: Full=Pathogenesis-related protein 1A; Short=PR-1A; Flags: Precursor [Nicotiana tabacum]	62.411	141	52	1	29	169	29	168	2.03e-59	185
+Dm_00020000-RA	sp|P43394.1|	RecName: Full=Fruit protein pKIWI502 [Actinidia deliciosa]	50.579	259	118	3	23	271	52	310	2.58e-84	264
+Dm_00020013-RA	sp|Q8GZ92.1|	RecName: Full=Protein Brevis radix-like 4; Short=AtBRXL4 [Arabidopsis thaliana]	60.969	392	117	9	1	370	1	378	2.28e-139	404
+Dm_00006768-RA	sp|Q9C7U7.1|	RecName: Full=Transcription factor MYB20; AltName: Full=Myb-related protein 20; Short=AtMYB20 [Arabidopsis thaliana]	81.250	144	27	0	26	169	1	144	8.02e-85	259
+Dm_00008766-RA	sp|Q9SV30.1|	RecName: Full=GATA transcription factor 8 [Arabidopsis thaliana]	68.675	83	19	1	288	363	214	296	2.86e-36	137
+Dm_00007558-RA	sp|Q9M088.1|	RecName: Full=Glucan endo-1,3-beta-glucosidase 5; AltName: Full=(1->3)-beta-glucan endohydrolase 5; Short=(1->3)-beta-glucanase 5; AltName: Full=Beta-1,3-endoglucanase 5; Short=Beta-1,3-glucanase 5; Flags: Precursor [Arabidopsis thaliana]	59.420	483	186	4	5	482	6	483	0.0	609
+Dm_00008239-RA	sp|Q93ZY3.1|	RecName: Full=Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit STT3A; Short=Oligosaccharyl transferase subunit STT3A; Short=STT3-A; AltName: Full=Integral membrane protein 1; AltName: Full=Protein STAUROSPORIN AND TEMPERATURE SENSITIVE 3-LIKE A [Arabidopsis thaliana]	84.865	740	100	5	186	920	1	733	0.0	1256
+Dm_00007599-RA	sp|Q9S7T7.2|	RecName: Full=Sister chromatid cohesion 1 protein 1; AltName: Full=Protein DETERMINATE INFERTILE 1; AltName: Full=SCC1 homolog 1 [Arabidopsis thaliana]	36.006	636	310	19	5	607	29	600	1.00e-91	298
+Dm_00008038-RA	sp|Q9FXA8.1|	RecName: Full=Alkaline/neutral invertase A, mitochondrial; Short=A/N-INVA; Flags: Precursor [Arabidopsis thaliana]	77.289	568	100	4	98	665	77	615	0.0	925
+Dm_00006624-RA	sp|Q0IIH8.1|	RecName: Full=Ubiquitin carboxyl-terminal hydrolase MINDY-3; AltName: Full=Deubiquitinating enzyme MINDY-3; AltName: Full=Protein CARP [Bos taurus]	32.714	269	151	6	180	434	177	429	4.09e-35	139
+Dm_00006308-RA	sp|O48716.1|	RecName: Full=Protein JINGUBANG [Arabidopsis thaliana]	36.750	400	183	12	65	463	89	419	7.53e-69	229
+Dm_00007186-RA	sp|Q8H116.1|	RecName: Full=Mannosyl-oligosaccharide 1,2-alpha-mannosidase MNS2; Short=AtMANIa; AltName: Full=Alpha-mannosidase IA [Arabidopsis thaliana]	78.571	406	79	2	1	398	163	568	0.0	656
+Dm_00007734-RA	sp|O48780.1|	RecName: Full=3-ketoacyl-CoA synthase 11; Short=KCS-11; AltName: Full=Very long-chain fatty acid condensing enzyme 11; Short=VLCFA condensing enzyme 11 [Arabidopsis thaliana]	82.556	493	86	0	18	510	17	509	0.0	885
+Dm_00012925-RA	sp|Q93V51.1|	RecName: Full=Protein LEAD-SENSITIVE 1; Short=Protein Pb-SENSITIVE 1 [Arabidopsis thaliana]	36.100	241	129	6	40	264	4	235	7.92e-41	145
+Dm_00014819-RA	sp|Q9LRW7.1|	RecName: Full=Protein indeterminate-domain 11 [Arabidopsis thaliana]	79.186	221	40	2	34	248	17	237	7.01e-120	370
+Dm_00014413-RA	sp|Q8LC83.2|	RecName: Full=40S ribosomal protein S24-2 [Arabidopsis thaliana]	83.333	132	22	0	1	132	1	132	1.13e-77	228
+Dm_00014767-RA	sp|Q8L7E9.1|	RecName: Full=Protein MID1-COMPLEMENTING ACTIVITY 1 [Arabidopsis thaliana]	66.194	423	132	4	189	603	1	420	0.0	579
+Dm_00012532-RA	sp|Q941Q3.1|	RecName: Full=Zinc finger CCCH domain-containing protein 37; Short=AtC3H37; AltName: Full=ENHANCER OF AG-4 protein 1 [Arabidopsis thaliana]	57.308	260	95	5	158	415	136	381	3.77e-103	319
+Dm_00014782-RA	sp|Q5Z8P0.1|	RecName: Full=Probable protein phosphatase 2C 60; Short=OsPP2C60 [Oryza sativa Japonica Group]	60.484	372	142	2	1	370	8	376	1.81e-165	471
+Dm_00014785-RA	sp|F4JZG9.1|	RecName: Full=Thylakoid membrane protein TERC, chloroplastic; AltName: Full=Protein PIGMENT DEFECTIVE 149; AltName: Full=Protein TELLURITE RESISTANCE C; Short=AtTerC; Flags: Precursor [Arabidopsis thaliana]	76.515	132	16	1	2	133	254	370	4.68e-60	193
+Dm_00013568-RA	sp|P42731.1|	RecName: Full=Polyadenylate-binding protein 2; Short=PABP-2; Short=Poly(A)-binding protein 2 [Arabidopsis thaliana]	64.787	656	197	11	1	649	1	629	0.0	815
+Dm_00018007-RA	sp|Q9LDK9.1|	RecName: Full=Beta-adaptin-like protein A; Short=At-bA-Ad; Short=At-betaA-Ad; AltName: Full=AP complex subunit beta-A; AltName: Full=Adaptor protein complex AP subunit beta-A; AltName: Full=Beta-adaptin A; AltName: Full=Clathrin assembly protein complex beta large chain A [Arabidopsis thaliana]	78.462	845	171	5	1	838	1	841	0.0	1362
+Dm_00015992-RA	sp|P60040.1|	RecName: Full=60S ribosomal protein L7-2 [Arabidopsis thaliana]	82.700	237	41	0	10	246	6	242	2.08e-144	406
+Dm_00019279-RA	sp|Q94F39.1|	RecName: Full=Ninja-family protein AFP3; AltName: Full=ABI five-binding protein 3; Short=ABI5-binding protein 3 [Arabidopsis thaliana]	46.454	282	92	7	40	318	5	230	5.74e-63	202
+Dm_00019135-RA	sp|Q2N2K1.1|	RecName: Full=Probable phytol kinase 1, chloroplastic; Flags: Precursor [Glycine max]	66.298	181	55	1	90	264	120	300	1.18e-79	245
+Dm_00019481-RA	sp|Q9FHX3.1|	RecName: Full=L-type lectin-domain containing receptor kinase S.6; Short=LecRK-S.6; Flags: Precursor [Arabidopsis thaliana]	51.325	717	298	15	17	721	13	690	0.0	652
+Dm_00019198-RA	sp|Q8LFR2.2|	RecName: Full=Dehydration-responsive element-binding protein 2C; Short=Protein DREB2C [Arabidopsis thaliana]	41.408	355	160	13	1	331	1	331	1.13e-66	215
+Dm_00018141-RA	sp|Q9LZL3.1|	RecName: Full=Aspartic proteinase PCS1; AltName: Full=Aspartic protease 38; Short=AtASP38; AltName: Full=Protein EMBRYO DEFECTIVE 24; AltName: Full=Protein PROMOTION OF CELL SURVIVAL 1; Flags: Precursor [Arabidopsis thaliana]	62.683	410	143	7	29	431	45	451	2.35e-172	493
+Dm_00018338-RA	sp|O80522.1|	RecName: Full=GDSL esterase/lipase At1g09390; AltName: Full=Extracellular lipase At1g09390; Flags: Precursor [Arabidopsis thaliana]	65.266	357	117	4	7	359	15	368	1.33e-174	493
+Dm_00018222-RA	sp|P49206.2|	RecName: Full=40S ribosomal protein S26-1 [Arabidopsis thaliana]	77.381	84	19	0	17	100	30	113	1.72e-41	136
+Dm_00018247-RA	sp|Q9SI52.2|	RecName: Full=Phosphatidylinositol 4-kinase gamma 7; Short=AtPI4Kgamma7; Short=PI-4Kgamma7; Short=PI4K gamma 7; AltName: Full=Ubiquitin-like domain kinase gamma 7; Short=UbDK gamma 7 [Arabidopsis thaliana]	67.069	662	184	9	1	640	1	650	0.0	859
+Dm_00018343-RA	sp|Q9LIL4.1|	RecName: Full=Transmembrane emp24 domain-containing protein p24beta3; AltName: Full=p24 family protein beta2; Short=p24beta2; AltName: Full=p24 family protein beta3; Short=p24beta3; Flags: Precursor [Arabidopsis thaliana]	81.773	203	37	0	20	222	12	214	9.17e-128	362
+Dm_00013570-RA	sp|Q84W89.2|	RecName: Full=DEAD-box ATP-dependent RNA helicase 37 [Arabidopsis thaliana]	71.799	578	130	8	1	561	1	562	0.0	819
+Dm_00014669-RA	sp|F4JQZ3.2|	RecName: Full=Rho GTPase-activating protein REN1; AltName: Full=Protein ROP1 ENHANCER 1; AltName: Full=Rho-type GTPase-activating protein REN1 [Arabidopsis thaliana]	59.389	687	239	10	6	667	49	720	0.0	714
+Dm_00013548-RA	sp|F4K5K6.1|	RecName: Full=Protein PLASTID MOVEMENT IMPAIRED 1-RELATED 1 [Arabidopsis thaliana]	33.061	1222	615	40	77	1159	6	1163	2.03e-148	479
+Dm_00011216-RA	sp|Q9LHN9.1|	RecName: Full=IQ domain-containing protein IQM2; AltName: Full=IQ motif-containing protein 2 [Arabidopsis thaliana]	74.603	63	16	0	86	148	508	570	1.10e-25	107
+Dm_00011165-RA	sp|Q9FIC3.1|	RecName: Full=Protein BOLA2 [Arabidopsis thaliana]	85.000	60	9	0	4	63	21	80	2.89e-33	112
+Dm_00010199-RA	sp|Q8VY57.1|	RecName: Full=ADP-ribosylation factor-like protein 8a; Short=AtARL8a; AltName: Full=ADP-ribosylation factor-like A1C; Short=AtARLA1C [Arabidopsis thaliana]	90.761	184	17	0	1	184	1	184	1.33e-123	348
+Dm_00015606-RA	sp|F4I116.1|	RecName: Full=Leucine--tRNA ligase, cytoplasmic; AltName: Full=Leucyl-tRNA synthetase; Short=LeuRS [Arabidopsis thaliana]	71.809	1089	291	5	8	1092	5	1081	0.0	1651
+Dm_00002422-RA	sp|Q9M3H5.2|	RecName: Full=Probable cadmium/zinc-transporting ATPase HMA1, chloroplastic; AltName: Full=Protein HEAVY METAL ATPASE 1; Flags: Precursor [Arabidopsis thaliana]	72.316	708	194	2	113	819	95	801	0.0	1025
+Dm_00002420-RA	sp|Q9FGQ6.1|	RecName: Full=Microtubule-associated protein RP/EB family member 1C; AltName: Full=APC-binding protein EB1C; AltName: Full=End-binding protein 1C; Short=AtEB1C; AltName: Full=Protein ATEB1 homolog 1; Short=AtEB1H1 [Arabidopsis thaliana]	60.756	344	102	7	1	327	1	328	7.93e-134	391
+Dm_00002852-RA	sp|O04536.1|	RecName: Full=Probable galacturonosyltransferase-like 9; AltName: Full=Like glycosyl transferase 8 [Arabidopsis thaliana]	70.732	369	104	3	8	373	6	373	0.0	548
+Dm_00002583-RA	sp|Q8LC83.2|	RecName: Full=40S ribosomal protein S24-2 [Arabidopsis thaliana]	76.087	138	19	1	1	138	1	124	1.14e-70	211
+Dm_00002278-RA	sp|P00072.1|	RecName: Full=Cytochrome c [Fagopyrum esculentum]	92.793	111	8	0	2	112	1	111	1.03e-75	221
+Dm_00002103-RA	sp|Q9LUV4.1|	RecName: Full=FRIGIDA-like protein 4a [Arabidopsis thaliana]	31.293	294	163	11	337	604	131	411	1.88e-21	102
+Dm_00008128-RA	sp|P42798.2|	RecName: Full=40S ribosomal protein S15a-1 [Arabidopsis thaliana]	95.968	124	5	0	1	124	1	124	2.71e-86	251
+Dm_00007827-RA	sp|Q6AVN2.1|	RecName: Full=E3 ubiquitin-protein ligase SIRP1; AltName: Full=Salt-induced RING finger protein 1; Short=OsSIRP1 [Oryza sativa Japonica Group]	37.076	383	162	10	9	382	8	320	5.91e-68	220
+Dm_00007828-RA	sp|A1CRV0.2|	RecName: Full=Probable glucan 1,3-beta-glucosidase A; AltName: Full=Exo-1,3-beta-glucanase 1; AltName: Full=Exo-1,3-beta-glucanase A; Flags: Precursor [Aspergillus clavatus NRRL 1]	44.094	127	67	3	295	421	72	194	1.64e-23	106
+Dm_00007431-RA	sp|A0A1P8B554.1|	RecName: Full=Thaumatin-like protein 1; Short=AtTLP1; Flags: Precursor [Arabidopsis thaliana]	63.672	256	85	4	6	253	5	260	9.20e-113	327
+Dm_00007697-RA	sp|Q9XEE6.1|	RecName: Full=Zinc finger CCCH domain-containing protein 29; Short=AtC3H29; AltName: Full=AtSZF2 [Arabidopsis thaliana]	46.237	651	255	21	11	638	19	597	1.88e-178	522
+Dm_00010227-RA	sp|Q5EAE0.1|	RecName: Full=Endoplasmic reticulum-Golgi intermediate compartment protein 3 [Bos taurus]	51.915	235	72	2	39	232	147	381	3.28e-79	245
+Dm_00007815-RA	sp|Q9M1Y3.1|	RecName: Full=Ankyrin repeat protein SKIP35; AltName: Full=SKP1-interacting partner 35 [Arabidopsis thaliana]	72.034	590	149	6	31	611	24	606	0.0	847
+Dm_00008880-RA	sp|Q93X17.1|	RecName: Full=Snakin-2; Flags: Precursor [Solanum tuberosum]	57.692	104	42	1	1	102	1	104	2.40e-27	99.0
+Dm_00015873-RA	sp|Q9LQ73.1|	RecName: Full=Peroxisomal membrane protein 11C; AltName: Full=Peroxin-11C; Short=AtPEX11c [Arabidopsis thaliana]	80.176	227	45	0	1	227	1	227	2.59e-137	387
+Dm_00015764-RA	sp|P54774.1|	RecName: Full=Cell division cycle protein 48 homolog; AltName: Full=Valosin-containing protein homolog; Short=VCP [Glycine max]	92.222	810	59	3	1	809	1	807	0.0	1537
+Dm_00015771-RA	sp|A4FV84.1|	RecName: Full=mRNA turnover protein 4 homolog; AltName: Full=Ribosome assembly factor MRTO4 [Bos taurus]	43.498	223	109	4	1	208	1	221	2.51e-56	181
+Dm_00000842-RA	sp|O50046.1|	RecName: Full=Tryptophan synthase beta chain 2, chloroplastic; Flags: Precursor [Camptotheca acuminata]	75.705	461	80	3	31	491	38	466	0.0	719
+Dm_00000864-RA	sp|Q38868.1|	RecName: Full=Calcium-dependent protein kinase 9; AltName: Full=Calmodulin-domain protein kinase CDPK isoform 9 [Arabidopsis thaliana]	74.164	538	132	4	1	532	1	537	0.0	827
+Dm_00000865-RA	sp|Q9SIB9.2|	RecName: Full=Aconitate hydratase 3, mitochondrial; Short=Aconitase 3; Short=mACO1; AltName: Full=Citrate hydro-lyase 3; Flags: Precursor [Arabidopsis thaliana]	84.755	938	137	2	82	1018	58	990	0.0	1685
+Dm_00000858-RA	sp|Q9SIT7.1|	RecName: Full=Pentatricopeptide repeat-containing protein At2g13600 [Arabidopsis thaliana]	35.102	490	276	6	14	465	152	637	1.28e-98	313
+Dm_00000575-RA	sp|Q54TS4.1|	RecName: Full=Protein YIPF1 homolog [Dictyostelium discoideum]	34.956	226	143	3	95	317	96	320	8.88e-41	148
+Dm_00000587-RA	sp|Q944A6.1|	RecName: Full=Sucrose nonfermenting 4-like protein; Short=SNF4; AltName: Full=CBS domain-containing protein CBSCBS3; AltName: Full=SNF1-related protein kinase regulatory subunit betagamma; Short=AKIN subunit betagamma; Short=AKINbetagamma [Arabidopsis thaliana]	70.348	489	123	3	1	470	1	486	0.0	691
+Dm_00000609-RA	sp|Q9SW70.1|	RecName: Full=Stress-related protein [Vitis riparia]	66.228	228	77	0	5	232	2	229	2.54e-105	308
+Dm_00000608-RA	sp|Q8L9P8.1|	RecName: Full=Protein RALF-like 33; Flags: Precursor [Arabidopsis thaliana]	57.627	118	35	5	6	121	11	115	8.34e-37	124
+Dm_00003725-RA	sp|F4HQD4.1|	RecName: Full=Heat shock 70 kDa protein 15; AltName: Full=Heat shock protein 70-15; Short=AtHsp70-15 [Arabidopsis thaliana]	79.028	782	159	2	1	780	1	779	0.0	1284
+Dm_00003747-RA	sp|Q6R0E3.2|	RecName: Full=Telomere repeat-binding protein 5; AltName: Full=Protein TRF-LIKE 2 [Arabidopsis thaliana]	46.311	488	180	9	274	747	211	630	5.66e-113	358
+Dm_00003803-RA	sp|Q42510.1|	RecName: Full=ARF guanine-nucleotide exchange factor GNOM; AltName: Full=Pattern formation protein EMB30; AltName: Full=Protein EMBRYO DEFECTIVE 30; AltName: Full=Protein MIZU-KUSSEI2; AltName: Full=Protein VASCULAR NETWORK 7 [Arabidopsis thaliana]	67.950	1429	445	6	35	1457	15	1436	0.0	1991
+Dm_00000436-RA	sp|A2ZEX7.1|	RecName: Full=Chalcone synthase 1; Short=OsCHS1; AltName: Full=Naregenin-chalcone synthase [Oryza sativa Indica Group]	67.347	392	128	0	7	398	1	392	0.0	588
+Dm_00000446-RA	sp|Q9FJD4.1|	RecName: Full=Importin subunit beta-1; AltName: Full=Karyopherin subunit beta-1; Short=ATKPNB1 [Arabidopsis thaliana]	81.473	869	161	0	7	875	1	869	0.0	1468
+Dm_00001241-RA	sp|Q9LN20.1|	RecName: Full=Probable prolyl 4-hydroxylase 3; Short=AtP4H3 [Arabidopsis thaliana]	79.167	288	59	1	1	288	1	287	8.42e-173	481
+Dm_00001245-RA	sp|Q84TH4.1|	RecName: Full=Serine/arginine-rich splicing factor SR45a; Short=At-SR45A; Short=AtSR45a; AltName: Full=Protein TRANSFORMER2-like; Short=atTra2 [Arabidopsis thaliana]	66.250	80	27	0	85	164	72	151	3.10e-30	119
+Dm_00000624-RA	sp|Q38910.1|	RecName: Full=Probable xyloglucan endotransglucosylase/hydrolase protein 23; Short=At-XTH23; Short=XTH-23; Flags: Precursor [Arabidopsis thaliana]	68.683	281	81	5	29	309	10	283	6.01e-142	404
+Dm_00015419-RA	sp|F4JN00.1|	RecName: Full=CMP-sialic acid transporter 4; Short=CMP-SA-Tr 4; Short=CMP-Sia-Tr 4 [Arabidopsis thaliana]	73.941	307	40	2	1	269	1	305	6.06e-162	456
+Dm_00016664-RA	sp|O22800.2|	RecName: Full=Zinc finger protein CONSTANS-LIKE 14 [Arabidopsis thaliana]	33.879	428	157	17	24	437	12	327	1.24e-47	175
+Dm_00009768-RA	sp|F4IB81.1|	RecName: Full=LysM domain receptor-like kinase 3; Short=LysM-containing receptor-like kinase 3; Flags: Precursor [Arabidopsis thaliana]	29.915	351	212	10	74	417	324	647	1.80e-36	144
+Dm_00009853-RA	sp|Q8VZU9.1|	RecName: Full=Derlin-1; AltName: Full=AtDerlin1-1 [Arabidopsis thaliana]	55.140	107	22	1	1	81	98	204	1.62e-28	108
+Dm_00012004-RA	sp|Q8LB33.1|	RecName: Full=F-box protein At3g58530 [Arabidopsis thaliana]	53.015	398	124	4	18	415	19	353	2.43e-138	402
+Dm_00012539-RA	sp|Q93ZY2.2|	RecName: Full=Rop guanine nucleotide exchange factor 1; Short=AtRopGEF1; AltName: Full=Kinase partner protein-like; Short=KPP-like; AltName: Full=Rho of plants guanine nucleotide exchange factor 1 [Arabidopsis thaliana]	60.755	609	176	15	1	607	1	548	0.0	646
+Dm_00016651-RA	sp|Q9FUL4.1|	RecName: Full=60S ribosomal protein L24 [Prunus avium]	92.500	160	10	2	1	159	1	159	6.44e-92	268
+Dm_00016627-RA	sp|Q56X76.2|	RecName: Full=DEAD-box ATP-dependent RNA helicase 39 [Arabidopsis thaliana]	62.654	648	189	11	23	664	18	618	0.0	739
+Dm_00015351-RA	sp|Q5RD67.2|	RecName: Full=Solute carrier family 25 member 44 [Pongo abelii]	33.238	349	178	12	9	345	2	307	3.70e-44	157
+Dm_00014066-RA	sp|Q9C7Q1.1|	RecName: Full=Auxin-responsive protein SAUR66; AltName: Full=Protein SMALL AUXIN UP RNA 66 [Arabidopsis thaliana]	48.438	128	59	3	1	127	1	122	9.56e-35	120
+Dm_00016671-RA	sp|Q9SDQ3.1|	RecName: Full=Scarecrow-like protein 1; Short=AtSCL1; AltName: Full=GRAS family protein 4; Short=AtGRAS-4 [Arabidopsis thaliana]	59.965	567	184	12	8	550	46	593	0.0	657
+Dm_00015134-RA	sp|O24301.1|	RecName: Full=Sucrose synthase 2; AltName: Full=Sucrose-UDP glucosyltransferase 2 [Pisum sativum]	84.568	486	74	1	1	485	79	564	0.0	860
+Dm_00001629-RA	sp|A0A1U8IPT1.1|	RecName: Full=Calmodulin-binding protein 60 B; AltName: Full=GhCBP60B [Gossypium hirsutum]	39.899	396	181	3	37	431	44	383	2.50e-86	285
+Dm_00002176-RA	sp|Q9LQY3.1|	RecName: Full=Transmembrane emp24 domain-containing protein p24delta9; AltName: Full=p24 family protein delta2c; Short=p24delta2c; AltName: Full=p24 family protein delta9; Short=p24delta9; Flags: Precursor [Arabidopsis thaliana]	64.019	214	77	0	1	214	1	214	2.48e-106	307
+Dm_00002188-RA	sp|Q9C4Z7.1|	RecName: Full=Cell division topological specificity factor homolog, chloroplastic; Short=AtMinE1; AltName: Full=Protein ACCUMULATION AND REPLICATION OF CHLOROPLASTS 12; Flags: Precursor [Arabidopsis thaliana]	57.143	238	87	6	1	233	1	228	5.28e-78	237
+Dm_00002018-RA	sp|Q5F259.1|	RecName: Full=Ankyrin repeat domain-containing protein 13B [Mus musculus]	33.333	252	152	6	66	310	46	288	1.52e-33	139
+Dm_00002032-RA	sp|Q43191.1|	RecName: Full=Probable linoleate 9S-lipoxygenase 5; AltName: Full=Leaf lipoxygenase [Solanum tuberosum]	65.762	847	288	2	27	872	17	862	0.0	1200
+Dm_00001549-RA	sp|Q9ZTS1.2|	RecName: Full=Probable methionine--tRNA ligase; AltName: Full=Methionyl-tRNA synthetase; Short=MetRS [Oryza sativa Japonica Group]	70.688	829	178	4	21	825	14	801	0.0	1228
+Dm_00001545-RA	sp|P26861.2|	RecName: Full=60S ribosomal protein L6, mitochondrial [Marchantia polymorpha]	64.000	100	36	0	1	100	1	100	5.82e-45	143
+Dm_00005338-RA	sp|Q9LVS0.1|	RecName: Full=Transcription factor KUA1; AltName: Full=Myb-related protein H; Short=AtMYBH; Short=AtMYBS3; Short=MYBS3-homolog protein; AltName: Full=Protein KUODA1 [Arabidopsis thaliana]	62.185	357	102	13	1	330	1	351	1.44e-126	369
+Dm_00005334-RA	sp|O82528.1|	RecName: Full=60S ribosomal protein L15 [Petunia x hybrida]	89.655	203	21	0	14	216	2	204	1.53e-134	378
+Dm_00005072-RA	sp|Q9M086.2|	RecName: Full=DDB1- and CUL4-associated factor homolog 1; AltName: Full=Protein DDB1-CUL4 ASSOCIATED FACTOR 1; Short=Protein DCAF1 [Arabidopsis thaliana]	52.830	1908	644	38	72	1906	47	1771	0.0	1670
+Dm_00004986-RA	sp|Q9S9U0.1|	RecName: Full=Callose synthase 11; AltName: Full=1,3-beta-glucan synthase; AltName: Full=Protein GLUCAN SYNTHASE-LIKE 1 [Arabidopsis thaliana]	66.722	1794	556	14	33	1812	2	1768	0.0	2402
+Dm_00006036-RA	sp|Q8RWQ5.1|	RecName: Full=Probable folate-biopterin transporter 4 [Arabidopsis thaliana]	65.726	496	164	2	1	496	1	490	0.0	662
+Dm_00016821-RA	sp|P49637.2|	RecName: Full=60S ribosomal protein L27a-3 [Arabidopsis thaliana]	88.356	146	17	0	1	146	1	146	1.02e-91	265
+Dm_00012636-RA	sp|Q9FUS8.1|	RecName: Full=Glutathione S-transferase U17; Short=AtGSTU17; AltName: Full=GST class-tau member 17; AltName: Full=Glutathione S-transferase 30; AltName: Full=Protein EARLY RESPONSIVE TO DEHYDRATION 9 [Arabidopsis thaliana]	71.028	107	30	1	4	110	2	107	2.54e-47	155
+Dm_00011577-RA	sp|G5DAC6.1|	RecName: Full=Xyloglucan endotransglucosylase protein 1; Short=XET protein 1; AltName: Full=DkXTH1; AltName: Full=Xyloglucan endotransglucosylase/hydrolase protein 1; Short=XTH protein 1; Flags: Precursor [Diospyros kaki]	66.667	300	76	3	21	318	5	282	5.02e-143	407
+Dm_00012261-RA	sp|P93835.2|	RecName: Full=Dehydration-responsive element-binding protein 1B; Short=Protein DREB1B; AltName: Full=C-repeat/dehydration-responsive element-binding factor 1; Short=C-repeat-binding factor 1; Short=CRT/DRE-binding factor 1 [Arabidopsis thaliana]	60.317	189	66	5	68	248	26	213	1.23e-63	200
+Dm_00012260-RA	sp|Q9FJ93.1|	RecName: Full=Dehydration-responsive element-binding protein 1D; Short=Protein DREB1D; AltName: Full=C-repeat/dehydration-responsive element-binding factor 4; Short=C-repeat-binding factor 4; Short=CRT/DRE-binding factor 4 [Arabidopsis thaliana]	54.884	215	83	3	39	251	20	222	3.27e-69	215
+Dm_00019617-RA	sp|Q9LSV0.1|	RecName: Full=Glyoxylate/succinic semialdehyde reductase 1; Short=AtGLYR1; Short=AtGR1; Short=SSA reductase 1; AltName: Full=Gamma-hydroxybutyrate dehydrogenase; Short=AtGHBDH [Arabidopsis thaliana]	76.125	289	69	0	4	292	1	289	4.36e-162	455
+Dm_00004817-RA	sp|P83442.1|	RecName: Full=Late embryogenesis abundant protein Dc3 [Daucus carota]	52.893	121	35	1	1	99	29	149	2.88e-24	92.8
+Dm_00004423-RA	sp|Q8L7A9.1|	RecName: Full=AP-4 complex subunit epsilon; AltName: Full=AP-4 adaptor complex subunit epsilon; AltName: Full=Adaptor-related protein complex 4 subunit epsilon; AltName: Full=Epsilon subunit of AP-4; AltName: Full=Epsilon-adaptin [Arabidopsis thaliana]	66.837	980	236	15	1	934	1	937	0.0	1250
+Dm_00001225-RA	sp|Q9MAS5.2|	RecName: Full=Putative vesicle-associated membrane protein 726; Short=AtVAMP726 [Arabidopsis thaliana]	78.082	219	40	1	1	211	1	219	7.32e-124	352
+Dm_00001938-RA	sp|F4I2S4.1|	RecName: Full=Vacuolar fusion protein CCZ1 homolog A [Arabidopsis thaliana]	54.450	573	190	6	7	576	2	506	0.0	622
+Dm_00001947-RA	sp|Q9FYK2.1|	RecName: Full=Probable calcium-binding protein CML25; AltName: Full=Calmodulin-like protein 25 [Arabidopsis thaliana]	68.310	142	44	1	1	141	35	176	3.08e-62	192
+Dm_00001952-RA	sp|Q9C5J3.1|	RecName: Full=Protein RRC1; AltName: Full=Reduced red-light responses in cry1cry2 background 1 [Arabidopsis thaliana]	68.265	980	258	15	110	1077	5	943	0.0	1228
+Dm_00002337-RA	sp|Q9LSB9.1|	RecName: Full=PX domain-containing protein EREX; AltName: Full=Protein ENDOSOMAL RAB EFFECTOR WITH PX-DOMAIN [Arabidopsis thaliana]	40.227	706	337	14	5	668	91	753	7.37e-135	416
+Dm_00019678-RA	sp|P53492.1|	RecName: Full=Actin-7; AltName: Full=Actin-2 [Arabidopsis thaliana]	98.408	377	6	0	1	377	1	377	0.0	772
+Dm_00019497-RA	sp|Q9ZSD4.1|	RecName: Full=Syntaxin-121; Short=AtSYP121; AltName: Full=Protein SYNTAXIN OF PLANTS 121; AltName: Full=Syntaxin-related protein At-Syr1 [Arabidopsis thaliana]	68.403	288	82	2	1	279	1	288	3.27e-132	382
+Dm_00020324-RA	sp|Q91VC0.1|	RecName: Full=dCTP pyrophosphatase 1; AltName: Full=Deoxycytidine-triphosphatase 1; Short=dCTPase 1; AltName: Full=RS21-C6 [Rattus norvegicus]	50.476	105	52	0	12	116	30	134	3.41e-33	116
+Dm_00020358-RA	sp|Q9ZNS1.1|	RecName: Full=40S ribosomal protein S7 [Avicennia marina]	76.316	190	45	0	1	190	1	190	9.66e-107	306
+Dm_00020363-RA	sp|Q3TIX9.2|	RecName: Full=U4/U6.U5 tri-snRNP-associated protein 2; AltName: Full=Inactive ubiquitin-specific peptidase 39 [Mus musculus]	50.408	490	222	8	84	561	73	553	3.21e-163	479
+Dm_00020237-RA	sp|Q55CU8.1|	RecName: Full=Phosphatidylinositol transfer protein 3; AltName: Full=CRAL-TRIO domain-containing protein pitC; AltName: Full=Random slug protein 5 [Dictyostelium discoideum]	30.992	242	157	6	54	286	46	286	4.24e-32	126
+Dm_00001837-RA	sp|Q9FQ04.1|	RecName: Full=5'-3' exoribonuclease 4; AltName: Full=Protein ACC INSENSITIVE 1; AltName: Full=Protein ETHYLENE INSENSITIVE 5; AltName: Full=Protein EXORIBONUCLEASE 4 [Arabidopsis thaliana]	53.211	109	51	0	1	109	361	469	9.11e-35	129
+Dm_00001446-RA	sp|P24805.1|	RecName: Full=Stem-specific protein TSJT1 [Nicotiana tabacum]	34.524	168	90	3	1	168	1	148	2.56e-28	108
+Dm_00001455-RA	sp|Q9ZPX1.1|	RecName: Full=ADP-ribosylation factor-like protein 2; AltName: Full=Protein ARF-like 2; AltName: Full=Protein HALLIMASCH; AltName: Full=Protein TITAN 5 [Arabidopsis thaliana]	77.523	218	16	1	1	218	1	185	4.23e-107	308
+Dm_00001463-RA	sp|Q1PEB4.1|	RecName: Full=Uncharacterized protein At4g04980 [Arabidopsis thaliana]	60.133	301	105	5	570	862	422	715	4.26e-109	354
+Dm_00002092-RA	sp|F4JMI5.1|	RecName: Full=Putative glucuronosyltransferase PGSIP7; AltName: Full=Glycogenin-like protein 7; AltName: Full=Plant glycogenin-like starch initiation protein 7 [Arabidopsis thaliana]	69.191	383	118	0	1	383	112	494	0.0	577
+Dm_00002143-RA	sp|Q8LCQ3.3|	RecName: Full=Transcription elongation factor SPT4 homolog 1 [Arabidopsis thaliana]	77.049	61	14	0	1	61	1	61	9.23e-32	108
+Dm_00002158-RA	sp|Q9SKZ2.2|	RecName: Full=Probable CCR4-associated factor 1 homolog 7 [Arabidopsis thaliana]	73.606	269	70	1	1	268	1	269	6.16e-155	435
+Dm_00002159-RA	sp|Q9FFU6.1|	RecName: Full=Cytochrome b561, DM13 and DOMON domain-containing protein At5g54830; AltName: Full=Protein b561A.tha1; Flags: Precursor [Arabidopsis thaliana]	61.591	880	321	9	1	877	42	907	0.0	1107
+Dm_00002154-RA	sp|Q93ZE8.1|	RecName: Full=Stromal cell-derived factor 2-like protein; Short=AtSDF2; Short=SDF2-like protein; Flags: Precursor [Arabidopsis thaliana]	65.812	234	60	4	1	234	3	216	2.59e-111	321
+Dm_00002157-RA	sp|P58684.1|	RecName: Full=Signal peptidase complex subunit 2; AltName: Full=Microsomal signal peptidase 25 kDa subunit; Short=SPase 25 kDa subunit [Arabidopsis thaliana]	68.421	190	48	1	1	178	1	190	6.13e-91	266
+Dm_00001804-RA	sp|O81919.1|	RecName: Full=Calreticulin; Flags: Precursor [Beta vulgaris]	89.275	345	37	0	20	364	21	365	0.0	615
+Dm_00006952-RA	sp|Q9SI52.2|	RecName: Full=Phosphatidylinositol 4-kinase gamma 7; Short=AtPI4Kgamma7; Short=PI-4Kgamma7; Short=PI4K gamma 7; AltName: Full=Ubiquitin-like domain kinase gamma 7; Short=UbDK gamma 7 [Arabidopsis thaliana]	65.361	664	190	15	1	638	1	650	0.0	828
+Dm_00009208-RA	sp|A8MR89.1|	RecName: Full=Protein AE7-like 1; AltName: Full=MIP18 family protein At3g50845 [Arabidopsis thaliana]	58.376	197	39	3	1	197	1	154	6.13e-71	215
+Dm_00009207-RA	sp|Q8L5Y0.1|	RecName: Full=Vacuolar sorting protein 39; AltName: Full=Protein EMBRYO DEFECTIVE 2754 [Arabidopsis thaliana]	68.900	1000	297	7	1	996	1	990	0.0	1417
+Dm_00007183-RA	sp|O82155.1|	RecName: Full=Dof zinc finger protein DOF1.7; Short=AtDOF1.7 [Arabidopsis thaliana]	48.795	166	64	3	9	166	22	174	2.81e-43	147
+Dm_00008477-RA	sp|O42929.1|	RecName: Full=Translation machinery-associated protein 22; AltName: Full=Density-regulated protein homolog [Schizosaccharomyces pombe 972h-]	40.116	172	91	2	5	170	7	172	1.55e-33	120
+Dm_00009636-RA	sp|Q8W4B1.1|	RecName: Full=RNA-binding KH domain-containing protein RCF3; AltName: Full=Protein ENHANCED STRESS RESPONSE 1; AltName: Full=Protein HIGH OSMOTIC STRESS GENE EXPRESSION 5; AltName: Full=Protein REGULATOR OF CBF GENE EXPRESSION 3; AltName: Full=Protein SHINY 1 [Arabidopsis thaliana]	31.489	470	250	11	44	490	68	488	5.90e-63	224
+Dm_00014515-RA	sp|P93042.1|	RecName: Full=Protein ROOT HAIR DEFECTIVE 3; AltName: Full=Protein FRAGILE FIBER 4; AltName: Full=Protein SEY1 homolog 1 [Arabidopsis thaliana]	63.073	436	130	5	16	442	365	778	0.0	558
+Dm_00017320-RA	sp|Q9XI90.2|	RecName: Full=Probable WRKY transcription factor 4; AltName: Full=WRKY DNA-binding protein 4 [Arabidopsis thaliana]	53.945	545	199	18	1	524	1	514	1.97e-158	463
+Dm_00008102-RA	sp|Q9ZQ80.1|	RecName: Full=Nodulin-related protein 1; Short=AtNRP1; AltName: Full=RPS2-interacting protein 11 [Arabidopsis thaliana]	43.750	144	62	3	22	164	62	187	2.18e-23	94.0
+Dm_00014366-RA	sp|Q95661.1|	RecName: Full=Small heat shock protein, chloroplastic; Flags: Precursor [Solanum lycopersicum]	38.308	201	106	4	9	209	53	235	3.78e-39	137
+Dm_00013017-RA	sp|O14053.1|	RecName: Full=U3 small nucleolar RNA-associated protein 21 homolog; Short=U3 snoRNA-associated protein 21 [Schizosaccharomyces pombe 972h-]	33.983	924	513	19	3	919	23	856	2.91e-170	522
+Dm_00013309-RA	sp|O03982.1|	RecName: Full=Heavy metal-associated isoprenylated plant protein 39; Short=AtHIP39; Flags: Precursor [Arabidopsis thaliana]	59.155	71	28	1	1	70	1	71	5.07e-25	98.2
+Dm_00000467-RA	sp|A2QVV2.1|	RecName: Full=Probable catabolite repression protein creC [Aspergillus niger CBS 513.88]	31.311	412	222	9	147	512	169	565	2.34e-51	188
+Dm_00000488-RA	sp|F4IB81.1|	RecName: Full=LysM domain receptor-like kinase 3; Short=LysM-containing receptor-like kinase 3; Flags: Precursor [Arabidopsis thaliana]	31.594	345	203	9	91	433	324	637	5.20e-37	146
+Dm_00013162-RA	sp|Q2NNE0.1|	RecName: Full=Protein IQ-DOMAIN 22; Short=AtIQD22 [Arabidopsis thaliana]	54.615	130	39	8	244	363	361	480	1.99e-24	107
+Dm_00015545-RA	sp|P0DKL4.1|	RecName: Full=Spliceosome-associated protein 130 A; Short=AtSAP130a; Short=SAP 130 A; AltName: Full=Pre-mRNA-splicing factor SF3b 130 kDa subunit A; Short=SF3b130 A [Arabidopsis thaliana]	86.881	1212	157	2	1	1211	1	1211	0.0	2214
+Dm_00012338-RA	sp|P46266.1|	RecName: Full=14-3-3-like protein [Pisum sativum]	88.976	254	28	0	2	255	4	257	3.83e-168	467
+Dm_00014758-RA	sp|O82161.1|	RecName: Full=Protein PHOSPHATE-INDUCED 1; Flags: Precursor [Nicotiana tabacum]	74.242	66	17	0	94	159	248	313	3.99e-28	108
+Dm_00013870-RA	sp|P82190.2|	RecName: Full=50S ribosomal protein L27, chloroplastic; AltName: Full=CL27; AltName: Full=Chloroplastic large ribosomal subunit protein bL27c; Flags: Precursor [Spinacia oleracea]	70.968	186	45	4	2	183	3	183	1.60e-78	235
+Dm_00012516-RA	sp|S4TF94.1|	RecName: Full=Acyl-coenzyme A thioesterase 4, mitochondrial; Short=Acyl-CoA thioesterase 4; Short=HlTE4; AltName: Full=2-methylbutanoyl-CoA hydrolase TE4; AltName: Full=2-methylpropanoyl-CoA hydrolase TE4; AltName: Full=3-methylbutanoyl-CoA hydrolase TE4; AltName: Full=Acyl-CoA thioester hydrolase 4; AltName: Full=Butanoyl-CoA hydrolase TE4; AltName: Full=Propanoyl-CoA hydrolase TE4; Flags: Precursor [Humulus lupulus]	71.464	403	110	2	1	402	117	515	0.0	601
+Dm_00012332-RA	sp|Q9LMK0.1|	RecName: Full=60S ribosomal protein L35a-1 [Arabidopsis thaliana]	86.667	105	14	0	1	105	1	105	1.46e-64	194
+Dm_00014282-RA	sp|O48724.1|	RecName: Full=Protein WEAK CHLOROPLAST MOVEMENT UNDER BLUE LIGHT 1; Short=Protein WEB1 [Arabidopsis thaliana]	74.000	150	38	1	4	153	233	381	1.70e-61	205
+Dm_00014283-RA	sp|O48724.1|	RecName: Full=Protein WEAK CHLOROPLAST MOVEMENT UNDER BLUE LIGHT 1; Short=Protein WEB1 [Arabidopsis thaliana]	53.289	152	68	1	1	152	431	579	1.07e-38	142
+Dm_00011404-RA	sp|O82161.1|	RecName: Full=Protein PHOSPHATE-INDUCED 1; Flags: Precursor [Nicotiana tabacum]	75.325	154	33	1	1	149	160	313	3.73e-83	249
+Dm_00012208-RA	sp|W0FFD7.1|	RecName: Full=(-)-drimenol synthase; Short=PhDS; AltName: Full=Drimenol cyclase; AltName: Full=Sesquiterpene synthase [Persicaria hydropiper]	48.689	534	257	12	21	550	39	559	1.69e-172	502
+Dm_00014119-RA	sp|P93047.1|	RecName: Full=High mobility group B protein 3; AltName: Full=High mobility group protein B 2; Short=AtHMGbeta2; Short=HMG beta 2; AltName: Full=Nucleosome/chromatin assembly factor group D 03; Short=Nucleosome/chromatin assembly factor group D 3 [Arabidopsis thaliana]	67.692	130	35	3	1	128	1	125	4.28e-49	156
+Dm_00000057-RA	sp|Q9SJ52.1|	RecName: Full=NDR1/HIN1-like protein 10; Short=AtNHL10; AltName: Full=Protein YELLOW-LEAF-SPECIFIC GENE 9 [Arabidopsis thaliana]	50.505	198	86	4	1	198	1	186	8.19e-61	199
+Dm_00001079-RA	sp|Q8RY67.2|	RecName: Full=Wall-associated receptor kinase-like 14; Flags: Precursor [Arabidopsis thaliana]	50.894	727	297	14	1	704	17	706	0.0	693
+Dm_00001083-RA	sp|D7LTJ4.2|	RecName: Full=CASP-like protein ARALYDRAFT_485429 [Arabidopsis lyrata subsp. lyrata]	52.597	154	70	1	7	160	2	152	9.17e-50	159
+Dm_00000673-RA	sp|Q9LJG8.1|	RecName: Full=Trihelix transcription factor ASIL2; AltName: Full=6B-interacting protein 1-like 2; AltName: Full=Trihelix DNA-binding protein ASIL2 [Arabidopsis thaliana]	54.478	134	54	4	14	143	72	202	3.42e-38	143
+Dm_00000667-RA	sp|Q8LPK5.1|	RecName: Full=Cellulose synthase A catalytic subunit 8 [UDP-forming]; Short=AtCesA8; AltName: Full=Protein IRREGULAR XYLEM 1; Short=AtIRX1; AltName: Full=Protein LEAF WILTING 2 [Arabidopsis thaliana]	75.956	994	164	10	1	928	1	985	0.0	1523
+Dm_00000698-RA	sp|F4JRJ6.1|	RecName: Full=Probable pre-mRNA-splicing factor ATP-dependent RNA helicase DEAH9; AltName: Full=DEAH RNA helicase homolog DDX35 [Arabidopsis thaliana]	74.456	689	164	4	4	682	3	689	0.0	1068
+Dm_00000701-RA	sp|Q6Z6S1.1|	RecName: Full=Apoptosis inhibitor 5-like protein API5; AltName: Full=Protein APOPTOSIS INHIBITOR 5 [Oryza sativa Japonica Group]	64.059	409	125	6	5	412	3	390	1.35e-178	523
+Dm_00001823-RA	sp|Q8LEK2.1|	RecName: Full=Golgi apparatus membrane protein-like protein ECHIDNA [Arabidopsis thaliana]	82.418	182	32	0	30	211	5	186	1.78e-110	317
+Dm_00001511-RA	sp|A7RP64.1|	RecName: Full=RNA-binding protein pno1 [Nematostella vectensis]	56.853	197	85	0	59	255	42	238	4.30e-85	256
+Dm_00001520-RA	sp|Q8W034.1|	RecName: Full=Heterogeneous nuclear ribonucleoprotein 1; Short=hnRNP1 [Arabidopsis thaliana]	42.857	189	94	3	18	194	6	192	5.20e-49	172
+Dm_00001594-RA	sp|F4IM84.1|	RecName: Full=DExH-box ATP-dependent RNA helicase DExH5, mitochondrial; Flags: Precursor [Arabidopsis thaliana]	69.831	1064	308	4	163	1220	56	1112	0.0	1534
+Dm_00002127-RA	sp|M1C146.1|	RecName: Full=Autophagy-related protein 8C-like; AltName: Full=Autophagy-related ubiquitin-like modifier ATG8CL; Flags: Precursor [Solanum tuberosum]	99.057	106	1	0	3	108	13	118	8.44e-73	214
+Dm_00010333-RA	sp|K4CI52.1|	RecName: Full=Abscisic acid 8'-hydroxylase CYP707A2; Short=ABA 8'-hydroxylase CYP707A2; Short=SlCYP707A2; AltName: Full=Cytochrome P450 707A2 [Solanum lycopersicum]	71.670	473	110	6	3	464	6	465	0.0	698
+Dm_00009796-RA	sp|Q2V9B0.1|	RecName: Full=Transcription factor MYB1R1; AltName: Full=Myb-related protein R1; Short=StMYB1R-1 [Solanum tuberosum]	48.658	298	110	9	10	280	16	297	1.74e-58	191
+Dm_00010675-RA	sp|Q8S904.1|	RecName: Full=Adrenodoxin-like protein 2, mitochondrial; AltName: Full=Mitochondrial ferredoxin 2; Short=AtMFDX2; Flags: Precursor [Arabidopsis thaliana]	76.056	142	30	1	48	189	60	197	2.45e-72	219
+Dm_00010749-RA	sp|Q8W3M7.2|	RecName: Full=Uncharacterized protein At4g06598 [Arabidopsis thaliana]	43.333	270	142	8	1	264	1	265	1.07e-44	157
+Dm_00013037-RA	sp|Q8RXR2.2|	RecName: Full=Chloride channel protein CLC-f; Short=AtCLC-f; AltName: Full=CBS domain-containing protein CBSCLC1 [Arabidopsis thaliana]	64.144	806	234	9	50	837	11	779	0.0	983
+Dm_00013036-RA	sp|Q29Q26.1|	RecName: Full=Ankyrin repeat domain-containing protein 2B [Arabidopsis thaliana]	64.308	325	107	3	12	332	25	344	5.04e-140	402
+Dm_00012682-RA	sp|Q9FNP8.1|	RecName: Full=40S ribosomal protein S19-3 [Arabidopsis thaliana]	70.349	172	17	1	11	182	5	142	2.96e-81	240
+Dm_00011123-RA	sp|Q944A7.1|	RecName: Full=Serine/threonine-protein kinase BSK1; AltName: Full=Brassinosteroid-signaling kinase 1 [Arabidopsis thaliana]	87.281	456	56	1	49	504	55	508	0.0	848
+Dm_00010949-RA	sp|A0A067XRK9.1|	RecName: Full=Xyloglucan endotransglucosylase protein 6; Short=XET protein 6; AltName: Full=DkXTH6; AltName: Full=Xyloglucan endotransglucosylase/hydrolase protein 6; Short=XTH protein 6; Flags: Precursor [Diospyros kaki]	74.667	300	67	2	1	300	9	299	8.27e-175	488
+Dm_00010864-RA	sp|P54774.1|	RecName: Full=Cell division cycle protein 48 homolog; AltName: Full=Valosin-containing protein homolog; Short=VCP [Glycine max]	92.597	797	58	1	6	801	11	807	0.0	1531
+Dm_00011643-RA	sp|Q9SA60.1|	RecName: Full=Pentatricopeptide repeat-containing protein At1g03100, mitochondrial; Flags: Precursor [Arabidopsis thaliana]	67.455	719	230	2	66	780	74	792	0.0	1022
+Dm_00011684-RA	sp|Q9LKA5.1|	RecName: Full=Multiple organellar RNA editing factor 8, chloroplastic/mitochondrial; AltName: Full=RNA editing-interacting protein 1; Flags: Precursor [Arabidopsis thaliana]	54.321	162	55	4	17	169	11	162	3.98e-43	150
+Dm_00012193-RA	sp|Q9LI61.1|	RecName: Full=Amino acid transporter AVT6A; Short=AtAvt6A [Arabidopsis thaliana]	65.227	463	150	6	1	458	1	457	0.0	593
+Dm_00001189-RA	sp|Q2QY10.1|	RecName: Full=Calcium-binding protein CBP; Short=OsCBP [Oryza sativa Japonica Group]	71.930	228	54	5	5	227	70	292	9.06e-111	322
+Dm_00001205-RA	sp|Q08069.2|	RecName: Full=40S ribosomal protein S8 [Zea mays]	85.500	200	21	2	20	218	27	219	2.75e-121	345
+Dm_00000013-RA	sp|Q9MB46.1|	RecName: Full=V-type proton ATPase subunit E; Short=V-ATPase subunit E; AltName: Full=Vacuolar proton pump subunit E [Citrus unshiu]	72.314	242	49	2	1	241	1	225	5.91e-117	336
+Dm_00000028-RA	sp|Q9LYK9.1|	RecName: Full=40S ribosomal protein S26-3 [Arabidopsis thaliana]	77.647	85	18	1	101	184	32	116	4.17e-38	132
+Dm_00000052-RA	sp|Q8S8P5.2|	RecName: Full=Probable WRKY transcription factor 33; AltName: Full=WRKY DNA-binding protein 33 [Arabidopsis thaliana]	62.452	261	60	4	254	488	178	426	2.12e-96	320
+Dm_00017695-RA	sp|Q93XX5.1|	RecName: Full=PI-PLC X domain-containing protein At5g67130; Flags: Precursor [Arabidopsis thaliana]	57.801	282	119	0	4	285	78	359	1.10e-119	352
+Dm_00017562-RA	sp|Q9SGA5.1|	RecName: Full=OVARIAN TUMOR DOMAIN-containing deubiquitinating enzyme 12; Short=OTU domain-containing protein 12; AltName: Full=Deubiquitinating enzyme OTU12 [Arabidopsis thaliana]	77.070	157	36	0	66	222	2	158	1.73e-82	248
+Dm_00017343-RA	sp|P49598.1|	RecName: Full=Protein phosphatase 2C 37; Short=AtPP2C37; AltName: Full=Protein ABA-HYPERSENSITIVE GERMINATION 3; AltName: Full=Protein phosphatase 2C A; Short=PP2CA [Arabidopsis thaliana]	51.843	407	123	9	5	399	1	346	1.65e-126	375
+Dm_00017651-RA	sp|Q9LQU5.1|	RecName: Full=Nudix hydrolase 18, mitochondrial; Short=AtNUDT18; Flags: Precursor [Arabidopsis thaliana]	61.212	165	57	2	8	171	1	159	1.64e-63	197
+Dm_00019398-RA	sp|Q9C7Q1.1|	RecName: Full=Auxin-responsive protein SAUR66; AltName: Full=Protein SMALL AUXIN UP RNA 66 [Arabidopsis thaliana]	48.438	128	59	3	1	127	1	122	9.56e-35	120
+Dm_00015696-RA	sp|Q9LT89.1|	RecName: Full=Transcription factor TCP19 [Arabidopsis thaliana]	50.400	250	90	10	77	312	50	279	1.65e-61	201
+Dm_00014690-RA	sp|Q9SBF3.1|	RecName: Full=Transcription factor MYB92; AltName: Full=Myb-related protein 92; Short=AtMYB92 [Arabidopsis thaliana]	67.265	223	65	4	1	217	1	221	3.50e-104	311
+Dm_00016481-RA	sp|Q9FT52.3|	RecName: Full=ATP synthase subunit d, mitochondrial; Short=ATPase subunit d [Arabidopsis thaliana]	85.799	169	23	1	1	169	1	168	1.75e-102	294
+Dm_00016479-RA	sp|Q9NCL8.1|	RecName: Full=Phosphatidylinositol transfer protein 1; Short=PtdIns transfer protein 1; AltName: Full=DdPITP1 [Dictyostelium discoideum]	38.431	255	139	6	4	255	3	242	1.65e-58	191
+Dm_00016274-RA	sp|O94387.1|	RecName: Full=Uncharacterized ATP-dependent helicase C29A10.10c [Schizosaccharomyces pombe 972h-]	29.854	824	440	24	442	1249	1081	1782	2.12e-83	305
+Dm_00016527-RA	sp|Q8L706.1|	RecName: Full=Synaptotagmin-5; AltName: Full=NTMC2T2.1; AltName: Full=Synaptotagmin E [Arabidopsis thaliana]	63.368	576	178	5	1	559	1	560	0.0	758
+Dm_00003870-RA	sp|Q9T029.1|	RecName: Full=40S ribosomal protein S25-4 [Arabidopsis thaliana]	73.770	122	18	1	1	122	1	108	4.21e-44	142
+Dm_00004018-RA	sp|O82161.1|	RecName: Full=Protein PHOSPHATE-INDUCED 1; Flags: Precursor [Nicotiana tabacum]	64.427	253	76	7	6	257	5	244	1.04e-104	309
+Dm_00004014-RA	sp|Q93YQ7.1|	RecName: Full=Endoglucanase 24; AltName: Full=Endo-1,4-beta glucanase 24; Flags: Precursor [Arabidopsis thaliana]	72.093	473	132	0	23	495	22	494	0.0	722
+Dm_00003797-RA	sp|Q6NU53.1|	RecName: Full=CCR4-NOT transcription complex subunit 10-B [Xenopus laevis]	31.481	540	292	16	327	837	218	708	1.64e-48	187
+Dm_00003786-RA	sp|Q9LMR3.1|	RecName: Full=Arogenate dehydrogenase 2, chloroplastic; AltName: Full=TyrAAT2; Flags: Precursor [Arabidopsis thaliana]	62.195	328	123	1	38	365	19	345	1.84e-152	437
+Dm_00004062-RA	sp|P51418.2|	RecName: Full=60S ribosomal protein L18a-2 [Arabidopsis thaliana]	89.655	174	14	1	196	365	5	178	2.18e-110	322
+Dm_00003378-RA	sp|A7QJG1.1|	RecName: Full=S-adenosylmethionine synthase 3; Short=AdoMet synthase 3; AltName: Full=Methionine adenosyltransferase 3; Short=MAT 3 [Vitis vinifera]	93.830	389	24	0	1	389	1	389	0.0	742
+Dm_00004140-RA	sp|P49209.3|	RecName: Full=60S ribosomal protein L9-1 [Arabidopsis thaliana]	85.052	194	29	0	1	194	1	194	3.32e-119	338
+Dm_00019998-RA	sp|Q9STR1.1|	RecName: Full=60S ribosomal protein L31-2 [Arabidopsis thaliana]	89.524	105	11	0	7	111	6	110	4.01e-63	192
+Dm_00001782-RA	sp|Q9SD53.1|	RecName: Full=UPF0481 protein At3g47200 [Arabidopsis thaliana]	35.267	431	251	10	54	462	34	458	9.69e-84	268
+Dm_00001881-RA	sp|Q39183.1|	RecName: Full=Serine/threonine-protein kinase D6PKL2; AltName: Full=D6 protein kinase-like 2; AltName: Full=Serine/threonine-protein kinase AtPK5 [Arabidopsis thaliana]	75.468	534	85	10	132	657	91	586	0.0	791
+Dm_00001903-RA	sp|Q7XQN1.2|	RecName: Full=Transcription factor MYB80; AltName: Full=Myb-related protein 80; Short=OsMYB80 [Oryza sativa Japonica Group]	53.790	409	82	13	1	339	1	372	9.72e-122	357
+Dm_00001308-RA	sp|F4ICK8.1|	RecName: Full=Protein IWS1 homolog 1; Short=AtIWS1; AltName: Full=Interacts with SPT6 protein 1; AltName: Full=Protein HIGH NITROGEN INSENSITIVE 9; AltName: Full=Protein SUPPRESSOR OF BES-1-D 1 [Arabidopsis thaliana]	55.575	565	178	12	1	555	1	502	0.0	532
+Dm_00001319-RA	sp|Q38907.2|	RecName: Full=Probable xyloglucan endotransglucosylase/hydrolase protein 25; Short=At-XTH25; Short=XTH-25; Flags: Precursor [Arabidopsis thaliana]	69.149	282	80	4	12	290	5	282	1.12e-144	410
+Dm_00005597-RA	sp|Q9LMI0.1|	RecName: Full=Probable alpha,alpha-trehalose-phosphate synthase [UDP-forming] 7; AltName: Full=Trehalose-6-phosphate synthase 7; Short=AtTPS7 [Arabidopsis thaliana]	72.071	845	231	3	1	845	1	840	0.0	1289
+Dm_00005189-RA	sp|Q55BK0.1|	RecName: Full=Ubiquitin fusion degradation protein 1 homolog [Dictyostelium discoideum]	38.596	171	86	4	91	261	47	198	2.30e-24	107
+Dm_00005302-RA	sp|Q8LBM4.2|	RecName: Full=Iron-sulfur assembly protein IscA-like 1, mitochondrial; Flags: Precursor [Arabidopsis thaliana]	81.343	134	25	0	1	134	1	134	7.41e-81	236
+Dm_00005463-RA	sp|O49636.1|	RecName: Full=Mitochondrial pyruvate carrier 4 [Arabidopsis thaliana]	76.623	77	18	0	6	82	18	94	7.84e-42	134
+Dm_00009279-RA	sp|Q93V51.1|	RecName: Full=Protein LEAD-SENSITIVE 1; Short=Protein Pb-SENSITIVE 1 [Arabidopsis thaliana]	51.383	253	105	3	1	247	1	241	1.11e-86	261
+Dm_00008728-RA	sp|Q9FDZ9.1|	RecName: Full=60S ribosomal protein L21-2 [Arabidopsis thaliana]	82.927	164	28	0	1	164	1	164	8.77e-102	291
+Dm_00008729-RA	sp|Q9FH32.1|	RecName: Full=Autophagy-related protein 18f; Short=AtATG18f [Arabidopsis thaliana]	42.680	806	316	24	26	815	23	698	2.14e-172	519
+Dm_00009274-RA	sp|Q9LX74.1|	RecName: Full=Exosome complex exonuclease RRP46 homolog; AltName: Full=Exosome component 5; AltName: Full=Ribosomal RNA-processing protein 46 [Arabidopsis thaliana]	73.786	206	47	1	1	199	1	206	2.17e-111	320
+Dm_00009478-RA	sp|Q9SH89.1|	RecName: Full=O-fucosyltransferase 19; Short=O-FucT-19; AltName: Full=O-fucosyltransferase family protein [Arabidopsis thaliana]	76.906	446	99	3	22	465	195	638	0.0	725
+Dm_00005229-RA	sp|P49293.1|	RecName: Full=Phytoene synthase, chloroplastic; AltName: Full=MEL5; Flags: Precursor [Cucumis melo]	86.127	346	46	2	77	421	78	422	0.0	626
+Dm_00004635-RA	sp|Q9SII6.2|	RecName: Full=Probable serine/threonine-protein kinase PIX13 [Arabidopsis thaliana]	42.265	362	174	8	3	363	45	372	2.48e-90	280
+Dm_00004639-RA	sp|Q9SII6.2|	RecName: Full=Probable serine/threonine-protein kinase PIX13 [Arabidopsis thaliana]	41.398	372	169	10	3	369	45	372	4.56e-88	274
+Dm_00004637-RA	sp|Q9SII6.2|	RecName: Full=Probable serine/threonine-protein kinase PIX13 [Arabidopsis thaliana]	47.262	347	161	7	3	346	45	372	5.33e-105	317
+Dm_00005074-RA	sp|Q9BWU0.1|	RecName: Full=Kanadaptin; AltName: Full=Human lung cancer oncogene 3 protein; Short=HLC-3; AltName: Full=Kidney anion exchanger adapter protein; AltName: Full=Solute carrier family 4 anion exchanger member 1 adapter protein [Homo sapiens]	30.687	466	254	14	60	479	138	580	5.85e-37	152
+Dm_00005701-RA	sp|Q9FIW5.1|	RecName: Full=Putative NAC domain-containing protein 94; Short=ANAC094 [Arabidopsis thaliana]	60.891	202	52	5	14	197	17	209	9.04e-81	253
+Dm_00005355-RA	sp|Q9ZQP1.2|	RecName: Full=Phosphatidylglycerophosphate phosphatase PTPMT1; AltName: Full=Protein TYROSINE PHOSPHATASE LOCALIZED TO THE MITOCHONDRION 1; AltName: Full=Putative dual specificity protein phosphatase DSP8 [Arabidopsis thaliana]	35.942	345	134	12	1	269	1	334	1.60e-46	161
+Dm_00005454-RA	sp|Q9M0Y8.2|	RecName: Full=Vesicle-fusing ATPase; AltName: Full=N-ethylmaleimide-sensitive fusion protein; AltName: Full=Vesicular-fusion protein NSF [Arabidopsis thaliana]	75.729	754	164	2	3	756	5	739	0.0	1188
+Dm_00005448-RA	sp|Q944N1.2|	RecName: Full=Chromo domain protein LHP1; AltName: Full=Protein LIKE HETEROCHROMATIN PROTEIN 1; AltName: Full=Sl LHP1 [Solanum lycopersicum]	34.333	300	162	9	117	401	85	364	2.63e-35	137
+Dm_00001688-RA	sp|Q6NNP0.1|	RecName: Full=Autophagy-related protein 16 [Arabidopsis thaliana]	67.793	503	162	0	8	510	3	505	0.0	743
+Dm_00001702-RA	sp|Q9SB67.1|	RecName: Full=High-affinity nitrate transporter 3.2; Flags: Precursor [Arabidopsis thaliana]	50.000	202	91	5	54	253	11	204	2.48e-61	195
+Dm_00002066-RA	sp|O23006.1|	RecName: Full=LysM domain-containing GPI-anchored protein 2; AltName: Full=Chitin elicitor-binding protein LYM2; Short=CEBiP LYM2; Flags: Precursor [Arabidopsis thaliana]	48.232	311	148	7	11	315	8	311	1.68e-82	256
+Dm_00002065-RA	sp|Q9SVE7.2|	RecName: Full=Protein DETOXIFICATION 45, chloroplastic; Short=AtDTX45; AltName: Full=Multidrug and toxic compound extrusion protein 45; Short=MATE protein 45; Flags: Precursor [Arabidopsis thaliana]	50.446	561	207	9	18	568	37	536	2.00e-165	489
+Dm_00001760-RA	sp|Q9AT54.1|	RecName: Full=Scopoletin glucosyltransferase; AltName: Full=Phenylpropanoid:glucosyltransferase 1 [Nicotiana tabacum]	28.507	442	268	12	14	428	15	435	2.52e-43	162
+Dm_00001645-RA	sp|Q9M7Q4.1|	RecName: Full=ABSCISIC ACID-INSENSITIVE 5-like protein 5; AltName: Full=ABA-responsive element-binding protein 1; AltName: Full=Abscisic acid responsive elements-binding factor 2; Short=ABRE-binding factor 2; AltName: Full=bZIP transcription factor 36; Short=AtbZIP36 [Arabidopsis thaliana]	51.869	428	143	15	10	416	7	392	6.21e-109	332
+Dm_00001839-RA	sp|Q9FQ04.1|	RecName: Full=5'-3' exoribonuclease 4; AltName: Full=Protein ACC INSENSITIVE 1; AltName: Full=Protein ETHYLENE INSENSITIVE 5; AltName: Full=Protein EXORIBONUCLEASE 4 [Arabidopsis thaliana]	55.385	195	49	1	13	207	493	649	6.32e-61	208
+Dm_00020310-RA	sp|O22864.1|	RecName: Full=Protein NLP8; Short=AtNLP8; AltName: Full=NIN-like protein 8; AltName: Full=Nodule inception protein-like protein 8 [Arabidopsis thaliana]	47.433	974	376	24	28	931	33	940	0.0	765
+Dm_00019614-RA	sp|Q5I7K3.1|	RecName: Full=40S ribosomal protein S29 [Triticum aestivum]	90.741	54	5	0	1	54	1	54	8.57e-32	107
+Dm_00019359-RA	sp|P09189.1|	RecName: Full=Heat shock cognate 70 kDa protein [Petunia x hybrida]	92.012	651	48	2	1	647	1	651	0.0	1234
+Dm_00019674-RA	sp|Q9SB67.1|	RecName: Full=High-affinity nitrate transporter 3.2; Flags: Precursor [Arabidopsis thaliana]	50.000	202	91	5	54	253	11	204	2.48e-61	195
+Dm_00012944-RA	sp|Q9C9V9.1|	RecName: Full=Conserved oligomeric Golgi complex subunit 5; Short=COG complex subunit 5; AltName: Full=Component of oligomeric Golgi complex 5 [Arabidopsis thaliana]	67.551	829	248	7	32	850	15	832	0.0	1061
+Dm_00012751-RA	sp|Q9M098.1|	RecName: Full=Nucleoid-associated protein At4g30620, chloroplastic; Flags: Precursor [Arabidopsis thaliana]	84.416	77	12	0	24	100	67	143	1.06e-42	141
+Dm_00012783-RA	sp|Q9FMU5.1|	RecName: Full=U3 small nucleolar RNA-associated protein 18 homolog [Arabidopsis thaliana]	61.290	558	193	6	4	552	3	546	0.0	680
+Dm_00013656-RA	sp|Q8LGG8.2|	RecName: Full=Universal stress protein A-like protein [Arabidopsis thaliana]	65.942	138	47	0	54	191	4	141	1.87e-67	206
+Dm_00007196-RA	sp|Q39732.1|	RecName: Full=Glycine cleavage system H protein, mitochondrial; Flags: Precursor [Flaveria anomala]	67.539	191	32	3	16	205	1	162	6.01e-82	243
+Dm_00008686-RA	sp|Q8L7S8.2|	RecName: Full=DEAD-box ATP-dependent RNA helicase 3, chloroplastic; AltName: Full=Protein EMBRYO DEFECTIVE 1138; Flags: Precursor [Arabidopsis thaliana]	67.857	112	32	1	110	221	130	237	3.61e-38	146
+Dm_00007251-RA	sp|Q8L7U7.1|	RecName: Full=ACD11 homolog protein; AltName: Full=Probable ceramide-1-phosphate transfer protein [Arabidopsis thaliana]	62.209	172	59	2	21	186	26	197	6.43e-72	219
+Dm_00007965-RA	sp|Q8W490.1|	RecName: Full=Serine/threonine-protein kinase PEPKR2; AltName: Full=Protein PHOSPHOENOLPYRUVATE CARBOXYLASE-RELATED KINASE 2 [Arabidopsis thaliana]	55.136	477	192	10	5	468	3	470	1.12e-172	496
+Dm_00008134-RA	sp|Q9M612.1|	RecName: Full=Nascent polypeptide-associated complex subunit alpha-like protein; Short=NAC-alpha-like protein; AltName: Full=Alpha-NAC-like protein [Pinus taeda]	75.622	201	37	4	11	210	16	205	2.46e-89	264
+Dm_00007976-RA	sp|Q42510.1|	RecName: Full=ARF guanine-nucleotide exchange factor GNOM; AltName: Full=Pattern formation protein EMB30; AltName: Full=Protein EMBRYO DEFECTIVE 30; AltName: Full=Protein MIZU-KUSSEI2; AltName: Full=Protein VASCULAR NETWORK 7 [Arabidopsis thaliana]	77.307	1441	313	5	1	1437	1	1431	0.0	2287
+Dm_00007438-RA	sp|Q93YW0.1|	RecName: Full=Protein EXECUTER 1, chloroplastic; Short=AtEX1; Flags: Precursor [Arabidopsis thaliana]	47.539	711	326	11	11	702	1	683	0.0	554
+Dm_00007877-RA	sp|Q9LHJ8.1|	RecName: Full=Zinc finger A20 and AN1 domain-containing stress-associated protein 5; Short=AtSAP5 [Arabidopsis thaliana]	54.444	180	56	7	1	174	1	160	2.25e-47	159
+Dm_00021005-RA	sp|Q9LXD9.1|	RecName: Full=Probable pectinesterase/pectinesterase inhibitor 51; Includes: RecName: Full=Pectinesterase inhibitor 51; AltName: Full=Pectin methylesterase inhibitor 51; Includes: RecName: Full=Pectinesterase 51; Short=PE 51; AltName: Full=Pectin methylesterase 51; Short=AtPME51; Flags: Precursor [Arabidopsis thaliana]	69.841	315	94	1	1	315	237	550	5.50e-166	476
+Dm_00021132-RA	sp|Q84TH6.1|	RecName: Full=Dirigent protein 23; Short=AtDIR23; Flags: Precursor [Arabidopsis thaliana]	60.366	164	63	2	7	169	25	187	2.13e-65	201
+Dm_00011712-RA	sp|O24473.1|	RecName: Full=Eukaryotic translation initiation factor 2 subunit beta; Short=eIF-2-beta; AltName: Full=P38 [Triticum aestivum]	75.115	217	52	2	3	218	2	217	1.29e-96	288
+Dm_00008772-RA	sp|O76021.3|	RecName: Full=Ribosomal L1 domain-containing protein 1; AltName: Full=CATX-11; AltName: Full=Cellular senescence-inhibited gene protein; AltName: Full=Protein PBK1 [Homo sapiens]	37.736	212	123	5	41	247	57	264	8.41e-42	157
+Dm_00010291-RA	sp|A0A4D6Q411.1|	RecName: Full=Transcription factor MYB1; AltName: Full=Myb-related protein 1; Short=CcMYB1 [Crocosmia x crocosmiiflora]	66.279	172	44	3	1	167	1	163	2.65e-74	231
+Dm_00007858-RA	sp|F4K5J1.2|	RecName: Full=Myosin-17; AltName: Full=Myosin XI K; Short=AtXIK [Arabidopsis thaliana]	71.599	838	217	4	3	821	692	1527	0.0	1203
+Dm_00007857-RA	sp|Q01544.1|	RecName: Full=17.2 kDa class II heat shock protein [Ipomoea nil]	59.763	169	41	4	1	162	1	149	6.68e-56	180
+Dm_00009367-RA	sp|Q8RXN6.1|	RecName: Full=U4/U6 small nuclear ribonucleoprotein Prp31 homolog; AltName: Full=Pre-mRNA-processing factor 31 homolog; AltName: Full=Protein EMBRYO DEFECTIVE 1220 [Arabidopsis thaliana]	69.679	498	102	3	1	496	1	451	0.0	625
+Dm_00009369-RA	sp|Q8LC45.2|	RecName: Full=Probable xyloglucan endotransglucosylase/hydrolase protein 33; Short=At-XTH33; Short=XTH-33; Flags: Precursor [Arabidopsis thaliana]	57.235	311	123	4	20	323	3	310	7.46e-130	375
+Dm_00009536-RA	sp|Q94AP3.1|	RecName: Full=Protein WALLS ARE THIN 1 [Arabidopsis thaliana]	62.183	394	96	6	1	346	1	389	8.60e-168	475
+Dm_00001554-RA	sp|Q9SVG9.1|	RecName: Full=Calcium-binding protein CML42; AltName: Full=Calmodulin-like protein 42 [Arabidopsis thaliana]	56.132	212	67	3	13	224	6	191	2.26e-72	221
+Dm_00001416-RA	sp|Q8VYG9.1|	RecName: Full=Plant intracellular Ras-group-related LRR protein 9 [Arabidopsis thaliana]	54.682	534	204	8	2	535	4	499	0.0	521
+Dm_00001492-RA	sp|P82413.2|	RecName: Full=50S ribosomal protein L19, chloroplastic; AltName: Full=CL19; AltName: Full=Chloroplastic large ribosomal subunit protein bL19c; Flags: Precursor [Spinacia oleracea]	53.361	238	98	4	1	232	1	231	1.26e-72	224
+Dm_00018122-RA	sp|Q43644.1|	RecName: Full=NADH dehydrogenase [ubiquinone] iron-sulfur protein 1, mitochondrial; AltName: Full=76 kDa mitochondrial complex I subunit; AltName: Full=Complex I-76kD; Short=CI-76kD; AltName: Full=NADH-ubiquinone oxidoreductase 76 kDa subunit; Flags: Precursor [Solanum tuberosum]	79.869	765	127	2	1	765	1	738	0.0	1264
+Dm_00016850-RA	sp|O23702.1|	RecName: Full=C-terminal binding protein AN; Short=CtBP; AltName: Full=Protein ANGUSTIFOLIA; AltName: Full=Protein DETORQUEO [Arabidopsis thaliana]	66.086	631	207	6	19	645	2	629	0.0	820
+Dm_00017927-RA	sp|O48844.1|	RecName: Full=26S proteasome non-ATPase regulatory subunit 1 homolog A; AltName: Full=26S proteasome regulatory subunit RPN2a; Short=AtRPN2a; AltName: Full=26S proteasome regulatory subunit S1 homolog A [Arabidopsis thaliana]	81.405	1011	167	10	1	997	1	1004	0.0	1598
+Dm_00017787-RA	sp|O80742.1|	RecName: Full=U-box domain-containing protein 19; AltName: Full=Plant U-box protein 19; AltName: Full=RING-type E3 ubiquitin transferase PUB19 [Arabidopsis thaliana]	40.883	702	387	12	1	692	1	684	1.81e-159	478
+Dm_00017605-RA	sp|P41111.2|	RecName: Full=Translation initiation factor eIF-2B subunit delta; AltName: Full=eIF-2B GDP-GTP exchange factor subunit delta [Oryctolagus cuniculus]	43.612	454	210	8	212	665	100	507	3.88e-107	338
+Dm_00012778-RA	sp|B4FUS3.1|	RecName: Full=Cell number regulator 8; AltName: Full=ZmCNR08 [Zea mays]	52.610	249	87	4	2	241	5	231	1.77e-84	254
+Dm_00011781-RA	sp|P27527.2|	RecName: Full=Ribosomal protein S19, mitochondrial [Petunia x hybrida]	84.507	71	10	1	1	70	1	71	2.30e-34	118
+Dm_00014151-RA	sp|Q9SS81.1|	RecName: Full=Pentatricopeptide repeat-containing protein At3g09060 [Arabidopsis thaliana]	54.307	685	312	1	1	684	1	685	0.0	791
+Dm_00013565-RA	sp|O82752.1|	RecName: Full=Protein DETOXIFICATION 49; Short=AtDTX49; AltName: Full=Multidrug and toxic compound extrusion protein 49; Short=MATE protein 49; AltName: Full=Protein NOVEL ION CARRIER 1; Short=Protein NIC1 [Arabidopsis thaliana]	68.737	483	142	4	24	504	10	485	0.0	598
+Dm_00013980-RA	sp|Q9SNC6.1|	RecName: Full=U-box domain-containing protein 13; AltName: Full=Plant U-box protein 13; AltName: Full=RING-type E3 ubiquitin transferase PUB13 [Arabidopsis thaliana]	60.610	688	225	5	1	683	1	647	0.0	810
+Dm_00013278-RA	sp|Q9LHJ9.1|	RecName: Full=Probable protein phosphatase 2C 38; Short=AtPP2C38 [Arabidopsis thaliana]	79.365	63	13	0	6	68	170	232	1.97e-25	99.0
+Dm_00013832-RA	sp|Q9LYB9.1|	RecName: Full=Methyl-CpG-binding domain-containing protein 4; Short=AtMBD4; Short=MBD04; AltName: Full=Methyl-CpG-binding protein MBD4 [Arabidopsis thaliana]	62.238	143	54	0	110	252	21	163	1.98e-64	203
+Dm_00007337-RA	sp|O50003.1|	RecName: Full=60S ribosomal protein L12 [Prunus armeniaca]	90.964	166	15	0	1	166	1	166	1.25e-105	301
+Dm_00006275-RA	sp|Q9XID0.1|	RecName: Full=Putative 1-phosphatidylinositol-3-phosphate 5-kinase FAB1D; Short=Phosphatidylinositol 3-phosphate 5-kinase; AltName: Full=Phosphatidylinositol 3-phosphate 5-kinase type III; Short=PIPkin-III; Short=Type III PIP kinase; AltName: Full=Protein FORMS APLOID AND BINUCLEATE CELLS 1D [Arabidopsis thaliana]	44.459	1516	646	30	324	1827	125	1456	0.0	1138
+Dm_00017934-RA	sp|Q9LZ00.1|	RecName: Full=Mediator of RNA polymerase II transcription subunit 4 [Arabidopsis thaliana]	57.590	415	144	7	66	457	1	406	9.12e-120	360
+Dm_00005923-RA	sp|Q9SRR7.1|	RecName: Full=Calmodulin-like protein 3 [Arabidopsis thaliana]	84.868	152	23	0	1	152	1	152	1.27e-81	240
+Dm_00005880-RA	sp|Q9SAH7.1|	RecName: Full=Probable WRKY transcription factor 40; AltName: Full=WRKY DNA-binding protein 40 [Arabidopsis thaliana]	47.692	325	114	12	1	296	1	298	1.15e-80	249
+Dm_00006553-RA	sp|Q8LSZ4.1|	RecName: Full=E2F transcription factor-like E2FE; AltName: Full=DP-E2F-like protein 1; AltName: Full=E2F-like repressor E2L3 [Arabidopsis thaliana]	44.866	448	163	12	18	461	29	396	5.35e-108	328
+Dm_00010112-RA	sp|Q9LTV6.1|	RecName: Full=Peroxisomal 2,4-dienoyl-CoA reductase [(3E)-enoyl-CoA-producing] [Arabidopsis thaliana]	76.695	236	54	1	2	236	63	298	3.19e-122	352
+Dm_00009954-RA	sp|Q9SU29.1|	RecName: Full=E3 ubiquitin-protein ligase UPL5; Short=Ubiquitin-protein ligase 5; AltName: Full=HECT-type E3 ubiquitin transferase UPL5 [Arabidopsis thaliana]	43.387	620	311	12	30	626	184	786	1.06e-165	498
+Dm_00010391-RA	sp|Q8UVD9.1|	RecName: Full=Far upstream element-binding protein 2; Short=FUSE-binding protein 2; AltName: Full=KH type-splicing regulatory protein; Short=KSRP; AltName: Full=Zipcode-binding protein 2 [Gallus gallus]	34.682	173	100	4	121	293	206	365	9.74e-22	103
+Dm_00008773-RA	sp|F4IS56.1|	RecName: Full=Integrin-linked protein kinase 1; AltName: Full=Ankyrin protein kinase 1 [Arabidopsis thaliana]	46.517	402	202	4	75	467	74	471	4.01e-120	370
+Dm_00010119-RA	sp|Q5R9R1.1|	RecName: Full=Erythroid differentiation-related factor 1 [Pongo abelii]	28.385	384	220	11	128	509	118	448	2.58e-38	160
+Dm_00008368-RA	sp|Q944R1.1|	RecName: Full=Probable pectate lyase 15; AltName: Full=Pectate lyase A11; Flags: Precursor [Arabidopsis thaliana]	78.820	373	79	0	14	386	98	470	0.0	651
+Dm_00008976-RA	sp|Q9ASS7.1|	RecName: Full=Cationic amino acid transporter 2, vacuolar [Arabidopsis thaliana]	57.821	358	115	5	1	332	268	615	2.30e-130	388
+Dm_00009483-RA	sp|P51427.2|	RecName: Full=40S ribosomal protein S5-2; AltName: Full=AtRPS5A; AltName: Full=Protein ARABIDOPSIS MINUTE-LIKE 1 [Arabidopsis thaliana]	77.033	209	45	1	1	209	1	206	2.22e-115	331
+Dm_00007174-RA	sp|Q9LY62.1|	RecName: Full=Glycosylinositol phosphorylceramide mannosyl transferase 1; Short=GIPC mannosyl-transferase 1; AltName: Full=Glycosyltransferase family 64 protein C4; Short=GT64 C4; AltName: Full=Protein ECTOPICALLY PARTING CELLS 1; Short=AtEPC1 [Arabidopsis thaliana]	49.524	315	133	4	44	335	23	334	2.13e-105	314
+Dm_00013239-RA	sp|Q00081.1|	RecName: Full=Glucose-1-phosphate adenylyltransferase large subunit 1; AltName: Full=ADP-glucose pyrophosphorylase; AltName: Full=ADP-glucose synthase; AltName: Full=AGPase S; AltName: Full=Alpha-D-glucose-1-phosphate adenyl transferase [Solanum tuberosum]	75.053	469	117	0	63	531	2	470	0.0	759
+Dm_00012164-RA	sp|Q9LS25.1|	RecName: Full=Pentatricopeptide repeat-containing protein At5g46580, chloroplastic; Flags: Precursor [Arabidopsis thaliana]	55.509	717	299	9	1	712	1	702	0.0	832
+Dm_00013550-RA	sp|Q8W234.1|	RecName: Full=Transcriptional corepressor SEUSS; Short=AtSEU [Arabidopsis thaliana]	58.209	871	249	30	1	832	1	795	0.0	698
+Dm_00012597-RA	sp|Q9LQU4.1|	RecName: Full=Protein PLANT CADMIUM RESISTANCE 2; Short=AtPCR2 [Arabidopsis thaliana]	61.702	141	53	1	29	168	12	152	4.18e-60	186
+Dm_00001337-RA	sp|Q9FGN7.1|	RecName: Full=Sister chromatid cohesion protein SCC4; AltName: Full=Protein SISTER-CHROMATID COHESION 4; Short=AtSCC4 [Arabidopsis thaliana]	55.907	728	275	5	1	684	1	726	0.0	776
+Dm_00002233-RA	sp|Q8L5Y5.1|	RecName: Full=Probable protein S-acyltransferase 19; AltName: Full=Probable palmitoyltransferase At4g15080; AltName: Full=Zinc finger DHHC domain-containing protein At4g15080 [Arabidopsis thaliana]	52.450	755	282	23	26	761	16	712	0.0	666
+Dm_00001997-RA	sp|O80493.1|	RecName: Full=Protein DMP8; Short=AtDMP8 [Arabidopsis thaliana]	53.846	247	86	7	1	223	1	243	1.38e-72	223
+Dm_00002003-RA	sp|P41098.1|	RecName: Full=60S ribosomal protein L34 [Nicotiana tabacum]	94.167	120	7	0	1	120	1	120	3.34e-77	226
+Dm_00001993-RA	sp|Q93ZL5.2|	RecName: Full=Cyclic dof factor 2; AltName: Full=Dof zinc finger protein DOF5.2; Short=AtDOF5.2 [Arabidopsis thaliana]	39.921	506	208	17	7	467	3	457	2.08e-91	288
+Dm_00001622-RA	sp|P21616.4|	RecName: Full=Pyrophosphate-energized vacuolar membrane proton pump; AltName: Full=Pyrophosphate-energized inorganic pyrophosphatase; Short=H(+)-PPase; AltName: Full=Vacuolar H(+)-pyrophosphatase [Vigna radiata var. radiata]	82.982	758	120	2	396	1146	11	766	0.0	1276
+Dm_00001624-RA	sp|O04834.1|	RecName: Full=GTP-binding protein SAR1A [Arabidopsis thaliana]	93.229	192	13	0	1	192	1	192	7.65e-134	375
+Dm_00013576-RA	sp|Q9SZ52.1|	RecName: Full=Pentatricopeptide repeat-containing protein At4g31850, chloroplastic; AltName: Full=Protein PROTON GRADIENT REGULATION 3; Flags: Precursor [Arabidopsis thaliana]	57.610	1071	445	7	47	1111	45	1112	0.0	1249
+Dm_00019774-RA	sp|Q8LAU9.2|	RecName: Full=GATA transcription factor 1; Short=AtGATA-1 [Arabidopsis thaliana]	48.598	214	88	6	7	207	58	262	1.29e-45	155
+Dm_00019718-RA	sp|Q84TH4.1|	RecName: Full=Serine/arginine-rich splicing factor SR45a; Short=At-SR45A; Short=AtSR45a; AltName: Full=Protein TRANSFORMER2-like; Short=atTra2 [Arabidopsis thaliana]	62.637	91	32	1	28	118	63	151	9.51e-31	115
+Dm_00019763-RA	sp|Q96558.1|	RecName: Full=UDP-glucose 6-dehydrogenase 1; Short=UDP-Glc dehydrogenase 1; Short=UDP-GlcDH 1; Short=UDPGDH 1; AltName: Full=Gm-UGD1 [Glycine max]	91.268	481	41	1	1	481	1	480	0.0	912
+Dm_00019560-RA	sp|O80871.1|	RecName: Full=Probable protein phosphatase 2C 25; Short=AtPP2C25; AltName: Full=Protein phosphatase AP2C1 [Arabidopsis thaliana]	58.081	396	142	6	1	373	1	395	8.91e-148	426
+Dm_00019759-RA	sp|Q9SJ12.1|	RecName: Full=Probable ATP synthase 24 kDa subunit, mitochondrial; Flags: Precursor [Arabidopsis thaliana]	67.647	238	67	1	1	238	1	228	3.50e-110	319
+Dm_00018692-RA	sp|O49453.1|	RecName: Full=Uncharacterized protein At4g28440 [Arabidopsis thaliana]	68.889	135	36	2	6	134	15	149	2.07e-62	191
+Dm_00018615-RA	sp|Q8LGD5.2|	RecName: Full=Protein MKS1; AltName: Full=Protein MAP kinase 4 substrate 1; AltName: Full=VQ motif-containing protein 21; Short=AtVQ21 [Arabidopsis thaliana]	37.344	241	104	7	1	240	1	195	2.50e-25	102
+Dm_00018681-RA	sp|O80612.2|	RecName: Full=Probable apyrase 6; Short=AtAPY6; AltName: Full=ATP-diphosphatase; AltName: Full=ATP-diphosphohydrolase; AltName: Full=Adenosine diphosphatase; Short=ADPase; AltName: Full=NTPDase; AltName: Full=Nucleoside triphosphate diphosphohydrolase 6 [Arabidopsis thaliana]	52.098	572	233	8	1	549	1	554	0.0	553
+Dm_00016748-RA	sp|Q9Y673.1|	RecName: Full=Dolichyl-phosphate beta-glucosyltransferase; Short=DolP-glucosyltransferase; AltName: Full=Asparagine-linked glycosylation protein 5 homolog [Homo sapiens]	48.736	277	125	3	71	346	57	317	3.38e-87	268
+Dm_00018505-RA	sp|Q8VZI8.1|	RecName: Full=ATP-dependent zinc metalloprotease FTSH 10, mitochondrial; Short=AtFTSH10; Flags: Precursor [Arabidopsis thaliana]	76.963	777	166	6	20	791	45	813	0.0	1200
+Dm_00018514-RA	sp|Q9LNT9.1|	RecName: Full=SKP1-like protein 4; Short=AtSK4 [Arabidopsis thaliana]	51.256	199	53	3	14	208	5	163	2.49e-57	181
+Dm_00018650-RA	sp|A2Q5W1.1|	RecName: Full=Ethylene-responsive transcription factor ERN1; Short=ERF transcription factor ERN1; AltName: Full=NF box-binding protein 1; AltName: Full=Protein ERF REQUIRED FOR NODULATION 1 [Medicago truncatula]	47.423	291	103	12	1	265	1	267	6.84e-70	219
+Dm_00001163-RA	sp|Q9FMM3.1|	RecName: Full=Protein ESSENTIAL FOR POTEXVIRUS ACCUMULATION 1; AltName: Full=Plant SMY2-type ILE-GYF domain-containing protein 1; AltName: Full=Protein MUTANT, SNC1-ENHANCING 11 [Arabidopsis thaliana]	36.076	1203	610	34	490	1642	416	1509	2.44e-146	496
+Dm_00000740-RA	sp|O64624.1|	RecName: Full=Pentatricopeptide repeat-containing protein At2g18940, chloroplastic; Flags: Precursor [Arabidopsis thaliana]	59.785	838	309	9	1	828	1	820	0.0	1014
+Dm_00000749-RA	sp|Q8VZP1.1|	RecName: Full=(DL)-glycerol-3-phosphatase 2; AltName: Full=Glycerol-1-phosphatase 2; AltName: Full=Haloacid dehalogenase-like hydrolase domain-containing protein GPP2 [Arabidopsis thaliana]	77.193	228	52	0	17	244	11	238	4.44e-133	377
+Dm_00000764-RA	sp|Q40374.1|	RecName: Full=Pathogenesis-related protein PR-1; Flags: Precursor [Medicago truncatula]	64.925	134	47	0	86	219	40	173	2.62e-63	197
+Dm_00001353-RA	sp|O22193.3|	RecName: Full=U-box domain-containing protein 4; AltName: Full=Plant U-box protein 4; AltName: Full=RING-type E3 ubiquitin transferase PUB4 [Arabidopsis thaliana]	45.833	336	177	3	14	349	494	824	5.54e-78	258
+Dm_00001873-RA	sp|Q9FFN7.1|	RecName: Full=Diacylglycerol kinase 2; Short=AtDGK2; Short=DAG kinase 2; AltName: Full=Diglyceride kinase 2; Short=DGK 2 [Arabidopsis thaliana]	68.247	696	215	5	22	716	22	712	0.0	986
+Dm_00001876-RA	sp|P34091.1|	RecName: Full=60S ribosomal protein L6; AltName: Full=YL16-like [Mesembryanthemum crystallinum]	69.565	230	39	2	5	204	6	234	1.09e-99	291
+Dm_00001880-RA	sp|F4J5S1.1|	RecName: Full=Clustered mitochondria protein; AltName: Full=Friendly mitochondria protein [Arabidopsis thaliana]	63.642	1499	408	20	38	1499	1	1399	0.0	1782
+Dm_00001680-RA	sp|Q94BR1.1|	RecName: Full=MA3 DOMAIN-CONTAINING TRANSLATION REGULATORY FACTOR 1; AltName: Full=MA3 domain-containing protein 6 [Arabidopsis thaliana]	70.391	716	190	5	1	714	1	696	0.0	998
+Dm_00020454-RA	sp|Q9M0E5.1|	RecName: Full=Serine/threonine-protein kinase VPS15; AltName: Full=Vacuolar protein sorting-associated protein 15; Short=AtVPS15 [Arabidopsis thaliana]	65.528	1552	460	14	1	1537	1	1492	0.0	1966
+Dm_00020427-RA	sp|P42736.2|	RecName: Full=Ethylene-responsive transcription factor RAP2-3; AltName: Full=Cadmium-induced protein AS30; AltName: Full=Ethylene response factor 72; Short=ERF72; AltName: Full=Ethylene-responsive element binding protein; Short=AtEBP; AltName: Full=Protein RELATED TO APETALA2 3; Short=Related to AP2 3 [Arabidopsis thaliana]	50.365	137	56	4	1	126	1	136	5.47e-36	132
+Dm_00017058-RA	sp|Q9LYV6.1|	RecName: Full=GEM-like protein 5 [Arabidopsis thaliana]	61.328	256	93	2	7	261	16	266	4.09e-119	345
+Dm_00020444-RA	sp|Q9M7T0.2|	RecName: Full=Peroxiredoxin-2F, mitochondrial; AltName: Full=Glutaredoxin-dependent peroxiredoxin; AltName: Full=Peroxiredoxin IIF; AltName: Full=Thioredoxin peroxidase 2F; Flags: Precursor [Arabidopsis thaliana]	68.780	205	59	2	1	204	1	201	2.78e-98	286
+Dm_00020338-RA	sp|Q8GYC1.1|	RecName: Full=Protein indeterminate-domain 4, chloroplastic; Flags: Precursor [Arabidopsis thaliana]	43.396	530	182	16	34	543	48	479	1.75e-111	345
+Dm_00016998-RA	sp|Q9S840.1|	RecName: Full=Squamosa promoter-binding-like protein 2 [Arabidopsis thaliana]	44.906	265	118	6	1	257	1	245	2.91e-60	199
+Dm_00019117-RA	sp|Q8H1D2.1|	RecName: Full=WUSCHEL-related homeobox 5 [Arabidopsis thaliana]	47.938	194	68	8	15	190	2	180	1.07e-45	151
+Dm_00017967-RA	sp|A2Z259.1|	RecName: Full=Zinc-finger homeodomain protein 1 [Oryza sativa Indica Group]	60.515	233	80	5	73	304	54	275	3.85e-78	242
+Dm_00018812-RA	sp|Q9ZWT2.1|	RecName: Full=Cytochrome B5 isoform D; Short=AtCb5-D; AltName: Full=Cytochrome b5 isoform B; Short=AtCb5-B [Arabidopsis thaliana]	52.985	134	63	0	1	134	1	134	1.23e-50	160
+Dm_00018806-RA	sp|P42698.2|	RecName: Full=DNA-damage-repair/toleration protein DRT111, chloroplastic; AltName: Full=REQUIRED FOR SNC4-1D protein 2; Flags: Precursor [Arabidopsis thaliana]	66.667	399	115	7	1	393	1	387	7.19e-165	470
+Dm_00005782-RA	sp|P93830.2|	RecName: Full=Auxin-responsive protein IAA17; AltName: Full=Auxin response 3; AltName: Full=Indoleacetic acid-induced protein 17 [Arabidopsis thaliana]	44.017	234	92	8	1	210	7	225	1.95e-50	166
+Dm_00006372-RA	sp|P08926.2|	RecName: Full=RuBisCO large subunit-binding protein subunit alpha, chloroplastic; AltName: Full=60 kDa chaperonin subunit alpha; AltName: Full=CPN-60 alpha; Flags: Precursor [Pisum sativum]	85.628	494	66	3	71	561	1	492	0.0	837
+Dm_00006688-RA	sp|Q9SYZ9.1|	RecName: Full=Transcription initiation factor TFIID subunit 8; AltName: Full=TBP-associated factor 8; Short=AtTAF8 [Arabidopsis thaliana]	39.726	365	166	11	36	396	37	351	2.28e-74	238
+Dm_00006305-RA	sp|Q9LT57.1|	RecName: Full=CRM-domain containing factor CFM9, mitochondrial; AltName: Full=Protein CRM FAMILY MEMBER 9; Flags: Precursor [Arabidopsis thaliana]	80.435	322	60	3	58	377	16	336	1.78e-155	456
+Dm_00003991-RA	sp|Q67YE6.2|	RecName: Full=Zinc finger AN1 domain-containing stress-associated protein 12; Short=AtSAP12 [Arabidopsis thaliana]	63.905	169	59	1	1	167	1	169	5.59e-70	213
+Dm_00004866-RA	sp|O64566.1|	RecName: Full=Plant intracellular Ras-group-related LRR protein 6 [Arabidopsis thaliana]	62.829	304	92	4	16	317	96	380	6.52e-128	373
+Dm_00004346-RA	sp|Q9FE06.1|	RecName: Full=Protein EXORDIUM-like 2; Flags: Precursor [Arabidopsis thaliana]	60.797	301	112	4	15	313	9	305	4.50e-128	370
+Dm_00003434-RA	sp|Q945M1.1|	RecName: Full=NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9; AltName: Full=B22 subunit of eukaryotic mitochondrial complex I; AltName: Full=Complex I-B22; Short=AtCIB22; Short=CI-B22; AltName: Full=NADH-ubiquinone oxidoreductase B22 subunit [Arabidopsis thaliana]	70.000	80	24	0	2	81	6	85	4.28e-38	125
+Dm_00003435-RA	sp|Q43075.1|	RecName: Full=Arginine decarboxylase; Short=ADC; Short=ARGDC [Pisum sativum]	67.285	755	208	11	1	743	1	728	0.0	1020
+Dm_00003443-RA	sp|Q9FJF9.1|	RecName: Full=Auxin-responsive protein SAUR21; AltName: Full=Protein SMALL AUXIN UP RNA 21 [Arabidopsis thaliana]	60.811	74	29	0	23	96	13	86	4.86e-30	105
+Dm_00003442-RA	sp|Q9FJF9.1|	RecName: Full=Auxin-responsive protein SAUR21; AltName: Full=Protein SMALL AUXIN UP RNA 21 [Arabidopsis thaliana]	63.514	74	27	0	39	112	14	87	1.15e-30	107
+Dm_00008725-RA	sp|P35130.1|	RecName: Full=Ubiquitin-conjugating enzyme E2 2; AltName: Full=E2 ubiquitin-conjugating enzyme 2; AltName: Full=Ubiquitin carrier protein 2; AltName: Full=Ubiquitin-conjugating enzyme E2-17 kDa 2; AltName: Full=Ubiquitin-protein ligase 2 [Medicago sativa]	96.053	152	6	0	4	155	1	152	4.88e-110	311
+Dm_00007680-RA	sp|Q9SAK8.1|	RecName: Full=Cation/H(+) antiporter 2; AltName: Full=Protein CATION/H+ EXCHANGER 2; Short=AtCHX2 [Arabidopsis thaliana]	36.982	868	428	24	7	854	6	774	7.41e-166	504
+Dm_00007678-RA	sp|Q54I39.1|	RecName: Full=IST1-like protein [Dictyostelium discoideum]	33.540	161	105	2	1	161	19	177	6.20e-26	110
+Dm_00007339-RA	sp|Q54MZ4.1|	RecName: Full=Mitochondrial substrate carrier family protein B [Dictyostelium discoideum]	45.000	240	116	5	88	323	196	423	6.45e-57	194
+Dm_00008318-RA	sp|Q0WPK4.1|	RecName: Full=Protein PAT1 homolog; Short=AtPAT1 [Arabidopsis thaliana]	52.395	689	289	17	38	710	117	782	0.0	636
+Dm_00007552-RA	sp|Q9S9Z7.1|	RecName: Full=Probable protein phosphatase 2C 10; Short=AtPP2C10 [Arabidopsis thaliana]	72.243	263	72	1	5	266	20	282	2.68e-138	393
+Dm_00008807-RA	sp|Q94KD0.1|	RecName: Full=Transcription initiation factor TFIID subunit 15b; AltName: Full=TBP-associated factor 15b; Short=AtTAF15b [Arabidopsis thaliana]	51.429	315	119	7	156	460	88	378	2.27e-60	206
+Dm_00008030-RA	sp|Q9FLZ8.1|	RecName: Full=EID1-like F-box protein 2 [Arabidopsis thaliana]	79.352	247	50	1	11	256	1	247	7.99e-151	423
+Dm_00000507-RA	sp|Q94C98.1|	RecName: Full=Protein PAT1 homolog 2; Short=AtPAT1H2 [Arabidopsis thaliana]	51.497	835	323	27	2	824	22	786	0.0	708
+Dm_00000501-RA	sp|Q9LNJ3.1|	RecName: Full=Aspartyl protease family protein 2; Flags: Precursor [Arabidopsis thaliana]	38.952	439	226	15	131	564	84	485	1.03e-71	240
+Dm_00001035-RA	sp|Q9T0K7.2|	RecName: Full=3-hydroxyisobutyryl-CoA hydrolase-like protein 3, mitochondrial; Flags: Precursor [Arabidopsis thaliana]	71.827	394	108	1	42	435	31	421	0.0	597
+Dm_00000951-RA	sp|Q2LAJ3.1|	RecName: Full=Auxin response factor 2A; Short=SlARF2A [Solanum lycopersicum]	63.517	836	279	11	18	834	7	835	0.0	1013
+Dm_00000968-RA	sp|P31593.1|	RecName: Full=Glutamate-1-semialdehyde 2,1-aminomutase, chloroplastic; Short=GSA; AltName: Full=Glutamate-1-semialdehyde aminotransferase; Short=GSA-AT; Flags: Precursor [Nicotiana tabacum]	84.915	411	62	0	1	411	68	478	0.0	734
+Dm_00000977-RA	sp|Q9LSD5.1|	RecName: Full=Transcription factor TCP20 [Arabidopsis thaliana]	48.276	232	83	9	23	236	62	274	7.48e-51	172
+Dm_00000991-RA	sp|Q9M0B6.1|	RecName: Full=UDP-glucuronate 4-epimerase 1; AltName: Full=UDP-glucuronic acid epimerase 1; Short=AtUGlcAE3 [Arabidopsis thaliana]	83.953	430	65	2	7	436	2	427	0.0	741
+Dm_00005971-RA	sp|Q9M897.1|	RecName: Full=Protein DMP5; Short=AtDMP5 [Arabidopsis thaliana]	52.632	228	92	4	3	230	2	213	2.16e-77	235
+Dm_00005580-RA	sp|Q6S4P4.2|	RecName: Full=Transcription factor RF2b [Oryza sativa Japonica Group]	59.585	193	62	7	5	195	136	314	1.53e-59	192
+Dm_00006071-RA	sp|P0C7R4.1|	RecName: Full=Pentatricopeptide repeat-containing protein At1g69290 [Arabidopsis thaliana]	63.706	653	216	8	12	650	12	657	0.0	796
+Dm_00005751-RA	sp|Q67YI9.1|	RecName: Full=Clathrin interactor EPSIN 2; AltName: Full=EPSIN-related 2 [Arabidopsis thaliana]	48.531	851	306	28	3	778	1	794	0.0	623
+Dm_00006228-RA	sp|Q9LMK7.1|	RecName: Full=Ran-binding protein 1 homolog a; AltName: Full=Ran-binding protein siRanBP [Arabidopsis thaliana]	80.137	146	28	1	1	146	1	145	1.91e-82	245
+Dm_00006219-RA	sp|Q39023.2|	RecName: Full=Mitogen-activated protein kinase 3; Short=AtMPK3; Short=MAP kinase 3 [Arabidopsis thaliana]	82.016	367	66	0	15	381	4	370	0.0	645
+Dm_00006390-RA	sp|Q9LMI0.1|	RecName: Full=Probable alpha,alpha-trehalose-phosphate synthase [UDP-forming] 7; AltName: Full=Trehalose-6-phosphate synthase 7; Short=AtTPS7 [Arabidopsis thaliana]	75.266	845	205	2	1	845	1	841	0.0	1346
+Dm_00005779-RA	sp|O24648.1|	RecName: Full=Gibberellin 3-beta-dioxygenase 1; AltName: Full=GA 3-oxidase 1; AltName: Full=Gibberellin 3 beta-hydroxylase 1 [Pisum sativum]	59.763	338	132	3	56	392	21	355	2.32e-143	415
+Dm_00008436-RA	sp|Q3E6S9.1|	RecName: Full=Probable L-cysteine desulfhydrase, chloroplastic; AltName: Full=Chloroplastic cysteine desulfurase-like protein 3; AltName: Full=NIFS-like protein 3; Short=CpNifS3; Flags: Precursor [Arabidopsis thaliana]	66.435	432	140	2	27	453	43	474	0.0	597
+Dm_00009177-RA	sp|Q9FH57.1|	RecName: Full=GATA transcription factor 5 [Arabidopsis thaliana]	37.184	277	151	7	84	350	54	317	1.99e-36	137
+Dm_00009178-RA	sp|Q9SIV5.3|	RecName: Full=Zinc finger CCCH domain-containing protein 19; Short=AtC3H19; AltName: Full=Protein Needed for RDR2-independent DNA methylation [Arabidopsis thaliana]	42.530	1091	464	41	140	1151	766	1772	0.0	626
+Dm_00010598-RA	sp|Q8RX22.1|	RecName: Full=MND1-interacting protein 1; Short=AtMIP1 [Arabidopsis thaliana]	47.170	742	339	16	1	726	1	705	5.80e-178	528
+Dm_00001396-RA	sp|O82039.1|	RecName: Full=Probable UDP-N-acetylglucosamine--peptide N-acetylglucosaminyltransferase SPINDLY; AltName: Full=PhSPY [Petunia x hybrida]	76.873	921	188	6	118	1015	1	919	0.0	1478
+Dm_00001397-RA	sp|Q9SIH5.1|	RecName: Full=Probable F-box protein At2g36090 [Arabidopsis thaliana]	40.741	351	154	6	20	370	14	310	6.64e-72	229
+Dm_00001717-RA	sp|A4D998.1|	RecName: Full=Transcription factor bHLH75; AltName: Full=Basic helix-loop-helix protein 75; Short=AtbHLH75; Short=bHLH 75; AltName: Full=Transcription factor EN 78; AltName: Full=bHLH transcription factor bHLH075 [Arabidopsis thaliana]	71.818	110	23	1	146	255	91	192	7.24e-47	158
+Dm_00001846-RA	sp|Q5MAU8.1|	RecName: Full=Probable inactive purple acid phosphatase 27; Flags: Precursor [Arabidopsis thaliana]	78.802	217	46	0	1	217	395	611	6.93e-128	376
+Dm_00020676-RA	sp|Q55DL2.1|	RecName: Full=Histidine protein methyltransferase 1 homolog; AltName: Full=Protein METTL18 homolog [Dictyostelium discoideum]	36.923	195	68	8	94	270	116	273	9.32e-28	112
+Dm_00013840-RA	sp|Q8LLR1.1|	RecName: Full=Agamous-like MADS-box protein MADS3; AltName: Full=Agamous-like protein 6; Short=VvAGL6; Short=VviAGL6a; AltName: Full=MADS-box protein 3; Short=VvMADS3 [Vitis vinifera]	57.595	158	50	3	1	158	1	141	1.42e-54	175
+Dm_00015155-RA	sp|Q9FXA2.1|	RecName: Full=Polyadenylate-binding protein 8; Short=PABP-8; Short=Poly(A)-binding protein 8 [Arabidopsis thaliana]	71.315	631	165	5	34	653	44	669	0.0	883
+Dm_00014266-RA	sp|Q8LPQ9.2|	RecName: Full=Flowering time control protein FPA [Arabidopsis thaliana]	37.569	905	409	33	1	865	91	879	9.74e-139	438
+Dm_00003486-RA	sp|Q9BQ70.1|	RecName: Full=Transcription factor 25; Short=TCF-25; AltName: Full=Nuclear localized protein 1 [Homo sapiens]	27.681	690	395	21	1	645	1	631	2.01e-64	228
+Dm_00003862-RA	sp|Q9M2U3.1|	RecName: Full=Protein ALP1-like [Arabidopsis thaliana]	31.288	326	184	12	164	463	53	364	3.06e-37	144
+Dm_00003855-RA	sp|O82645.1|	RecName: Full=IQ domain-containing protein IQM1; AltName: Full=IQ motif-containing protein 1 [Arabidopsis thaliana]	55.515	553	170	7	38	583	2	485	0.0	561
+Dm_00004005-RA	sp|Q9P7J5.1|	RecName: Full=Uncharacterized AAA domain-containing protein C24B10.10c [Schizosaccharomyces pombe 972h-]	49.004	251	123	4	490	737	68	316	3.08e-68	233
+Dm_00020691-RA	sp|Q9T048.1|	RecName: Full=Disease resistance protein At4g27190 [Arabidopsis thaliana]	27.459	925	591	29	104	993	72	951	1.31e-62	234
+Dm_00011074-RA	sp|Q9LHJ8.1|	RecName: Full=Zinc finger A20 and AN1 domain-containing stress-associated protein 5; Short=AtSAP5 [Arabidopsis thaliana]	52.660	188	50	5	1	177	1	160	1.18e-52	168
+Dm_00010410-RA	sp|Q8S9J2.1|	RecName: Full=Tyrosine--tRNA ligase 1, cytoplasmic; AltName: Full=Tyrosyl-tRNA synthetase; Short=TyrRS [Arabidopsis thaliana]	79.545	352	67	2	42	393	39	385	0.0	597
+Dm_00010326-RA	sp|A0A4D6Q411.1|	RecName: Full=Transcription factor MYB1; AltName: Full=Myb-related protein 1; Short=CcMYB1 [Crocosmia x crocosmiiflora]	61.453	179	66	2	1	176	1	179	1.92e-73	227
+Dm_00000542-RA	sp|Q9LZ57.1|	RecName: Full=60S ribosomal protein L36-3 [Arabidopsis thaliana]	91.045	67	6	0	2	68	31	97	2.17e-35	117
+Dm_00000558-RA	sp|Q9S9K7.1|	RecName: Full=Probable histone H2AXb; AltName: Full=HTA3 [Arabidopsis thaliana]	91.852	135	10	1	6	139	8	142	1.30e-84	246
+Dm_00020381-RA	sp|Q9FYL3.3|	RecName: Full=ALBINO3-like protein 1, chloroplastic; AltName: Full=Arabidopsis thaliana envelope membrane integrase; AltName: Full=Protein ALBINA 4; Short=Ath4; AltName: Full=Protein ARTEMIS; AltName: Full=Suppressor of tic40 protein 1; Flags: Precursor [Arabidopsis thaliana]	60.041	493	162	9	30	509	25	495	0.0	528
+Dm_00005516-RA	sp|P83947.1|	RecName: Full=Pectinesterase/pectinesterase inhibitor; Includes: RecName: Full=Pectinesterase inhibitor; AltName: Full=Pectin methylesterase inhibitor; Includes: RecName: Full=Pectinesterase; Short=PE; AltName: Full=Pectin methylesterase; Flags: Precursor [Ficus pumila var. awkeotsang]	68.447	206	65	0	230	435	339	544	1.23e-96	303
+Dm_00005520-RA	sp|Q9SVS0.1|	RecName: Full=RNA pseudouridine synthase 6, chloroplastic; AltName: Full=RNA pseudouridylate synthase 6; AltName: Full=RNA-uridine isomerase 6; Flags: Precursor [Arabidopsis thaliana]	66.080	398	120	4	8	400	75	462	0.0	564
+Dm_00005515-RA	sp|Q1JPL7.3|	RecName: Full=Pectinesterase/pectinesterase inhibitor 18; AltName: Full=AtPMEpcrA; Contains: RecName: Full=Pectinesterase inhibitor 18; AltName: Full=Pectin methylesterase inhibitor 18; Contains: RecName: Full=Bifunctional pectinesterase 18/rRNA N-glycosylase; Short=PE 18; AltName: Full=Pectin methylesterase 18; AltName: Full=Pectin methylesterase 4; Short=AtPME4; AltName: Full=Ribosome-inactivating protein; Flags: Precursor [Arabidopsis thaliana]	40.122	329	166	9	10	327	6	314	1.28e-63	219
+Dm_00006565-RA	sp|P37219.1|	RecName: Full=Abscisic stress-ripening protein 2 [Solanum lycopersicum]	75.714	70	17	0	97	166	24	93	3.48e-21	86.7
+Dm_00000345-RA	sp|P51418.2|	RecName: Full=60S ribosomal protein L18a-2 [Arabidopsis thaliana]	89.888	178	16	1	1	176	1	178	6.89e-114	332
+Dm_00000375-RA	sp|P43298.1|	RecName: Full=Receptor protein kinase TMK1; AltName: Full=BARK1-like kinase 1; AltName: Full=Transmembrane kinase 1; Flags: Precursor [Arabidopsis thaliana]	50.987	861	388	10	31	867	28	878	0.0	828
+Dm_00000389-RA	sp|Q9FYK2.1|	RecName: Full=Probable calcium-binding protein CML25; AltName: Full=Calmodulin-like protein 25 [Arabidopsis thaliana]	71.812	149	42	0	54	202	33	181	6.53e-75	226
+Dm_00000395-RA	sp|Q9CAC1.1|	RecName: Full=Endoglucanase 8; AltName: Full=Cellulase 1; Short=AtCEL1; AltName: Full=Endo-1,4-beta glucanase 8; Flags: Precursor [Arabidopsis thaliana]	78.937	489	96	2	15	503	7	488	0.0	800
+Dm_00012073-RA	sp|Q9SYJ2.1|	RecName: Full=Probable glycerol-3-phosphate acyltransferase 3; Short=AtGPAT3 [Arabidopsis thaliana]	49.071	538	233	10	33	564	17	519	3.31e-171	498
+Dm_00017620-RA	sp|Q8LIY8.1|	RecName: Full=Carotenoid cleavage dioxygenase 8 homolog B, chloroplastic; Short=OsCCD8b; AltName: Full=Protein DWARF-10; AltName: Full=Protein MAX4 homolog; Flags: Precursor [Oryza sativa Japonica Group]	72.165	485	133	2	87	571	81	563	0.0	781
+Dm_00018588-RA	sp|Q9FG14.1|	RecName: Full=Myosin-binding protein 7 [Arabidopsis thaliana]	51.477	474	216	7	1	465	1	469	8.83e-147	434
+Dm_00018647-RA	sp|O81831.1|	RecName: Full=Calcium-binding protein KRP1; AltName: Full=KIC-related protein 1 [Arabidopsis thaliana]	69.298	114	35	0	4	117	13	126	1.31e-51	162
+Dm_00018838-RA	sp|Q8S8L9.1|	RecName: Full=Uncharacterized TPR repeat-containing protein At2g32450 [Arabidopsis thaliana]	71.286	801	211	6	3	794	2	792	0.0	1196
+Dm_00007301-RA	sp|Q8RWV3.2|	RecName: Full=Cyclin-L1-1; Short=CycL1;1; AltName: Full=Arginine-rich cyclin 1; Short=AtRCY1; AltName: Full=Protein MODIFIER OF SNC1 12 [Arabidopsis thaliana]	66.121	428	120	6	1	427	1	404	0.0	546
+Dm_00009195-RA	sp|Q8W034.1|	RecName: Full=Heterogeneous nuclear ribonucleoprotein 1; Short=hnRNP1 [Arabidopsis thaliana]	51.579	190	88	1	12	197	2	191	3.58e-66	221
+Dm_00004201-RA	sp|O42901.3|	RecName: Full=Uncharacterized protein C119.09c [Schizosaccharomyces pombe 972h-]	36.170	141	90	0	7	147	25	165	6.76e-30	109
+Dm_00004204-RA	sp|Q93V51.1|	RecName: Full=Protein LEAD-SENSITIVE 1; Short=Protein Pb-SENSITIVE 1 [Arabidopsis thaliana]	50.769	260	103	3	1	257	1	238	1.70e-84	256
+Dm_00004336-RA	sp|Q9ZT87.1|	RecName: Full=Protein PELOTA 1; Short=AtPelota1 [Arabidopsis thaliana]	48.158	380	183	3	1	368	1	378	3.90e-128	375
+Dm_00019215-RA	sp|Q9SL94.1|	RecName: Full=FCS-Like Zinc finger 11 [Arabidopsis thaliana]	35.878	393	159	20	56	442	1	306	1.65e-40	151
+Dm_00013933-RA	sp|O82256.1|	RecName: Full=Zinc finger protein CONSTANS-LIKE 13 [Arabidopsis thaliana]	41.854	356	149	11	14	338	4	332	3.05e-75	239
+Dm_00004414-RA	sp|Q6NLC8.1|	RecName: Full=Uncharacterized protein At1g66480 [Arabidopsis thaliana]	42.857	196	82	8	1	184	1	178	2.68e-44	152
+Dm_00004102-RA	sp|O82531.1|	RecName: Full=Proteasome subunit beta type-1; AltName: Full=20S proteasome alpha subunit F; AltName: Full=20S proteasome subunit beta-6 [Petunia x hybrida]	85.153	229	28	1	1	229	1	223	9.65e-146	408
+Dm_00004106-RA	sp|P46637.1|	RecName: Full=Arginase 1, mitochondrial; AltName: Full=Agmatinase ARGAH1; AltName: Full=Arginine amidohydrolase 1; Short=AtARGAH1; Flags: Precursor [Arabidopsis thaliana]	89.851	335	31	1	8	339	8	342	0.0	616
+Dm_00004485-RA	sp|P34893.1|	RecName: Full=10 kDa chaperonin, mitochondrial; AltName: Full=Chaperonin 10; Short=CPN10; AltName: Full=Protein groES; Flags: Precursor [Arabidopsis thaliana]	68.293	82	26	0	1	82	1	82	6.03e-36	119
+Dm_00004126-RA	sp|Q08069.2|	RecName: Full=40S ribosomal protein S8 [Zea mays]	87.330	221	24	2	1	217	1	221	1.65e-139	392
+Dm_00004129-RA	sp|Q9SEE4.1|	RecName: Full=Pirin-like protein [Solanum lycopersicum]	67.958	284	91	0	3	286	8	291	6.01e-144	409
+Dm_00012060-RA	sp|Q943Z6.1|	RecName: Full=Signal recognition particle 19 kDa protein; Short=SRP19 [Arabidopsis thaliana]	71.910	89	24	1	7	94	9	97	1.31e-41	136
+Dm_00011931-RA	sp|Q94BP7.1|	RecName: Full=AUGMIN subunit 6 [Arabidopsis thaliana]	67.940	733	219	8	109	830	1	728	0.0	949
+Dm_00011899-RA	sp|Q9LEY9.1|	RecName: Full=H/ACA ribonucleoprotein complex subunit 2-like protein; AltName: Full=Nhp2-like protein [Arabidopsis thaliana]	75.000	156	37	2	1	154	1	156	1.81e-78	232
+Dm_00010555-RA	sp|O49071.1|	RecName: Full=Inositol monophosphatase; Short=IMP; Short=IMPase; AltName: Full=Inositol-1(or 4)-monophosphatase [Mesembryanthemum crystallinum]	74.035	285	53	1	8	292	7	270	4.42e-154	434
+Dm_00009117-RA	sp|Q9ASR1.1|	RecName: Full=Elongation factor 2; Short=EF-2; AltName: Full=Protein LOW EXPRESSION OF OSMOTICALLY RESPONSIVE GENES 1 [Arabidopsis thaliana]	90.438	251	24	0	1	251	589	839	4.98e-161	490
+Dm_00012014-RA	sp|Q9SF86.1|	RecName: Full=Serine/threonine-protein kinase PCRK1; AltName: Full=Protein PTI-COMPROMISED RECEPTOR-LIKE CYTOPLASMIC KINASE 1 [Arabidopsis thaliana]	62.972	424	95	4	1	413	1	373	8.68e-180	511
+Dm_00012846-RA	sp|Q8LGU7.3|	RecName: Full=tRNase Z TRZ1; AltName: Full=Nuclear ribonuclease Z; Short=Nuclear RNase Z; AltName: Full=Short tRNase Z 1; AltName: Full=Zinc phosphodiesterase NUZ; AltName: Full=tRNA 3 endonuclease; AltName: Full=tRNase ZS1; Short=AthTRZS1 [Arabidopsis thaliana]	68.953	277	86	0	29	305	3	279	1.02e-146	416
+Dm_00010445-RA	sp|F4I8H8.1|	RecName: Full=Glycerophosphodiester phosphodiesterase GDPD4; AltName: Full=Glycerophosphodiester phosphodiesterase 4; Short=ATGDPD4 [Arabidopsis thaliana]	53.871	310	105	4	25	300	21	326	1.86e-104	310
+Dm_00009956-RA	sp|Q9C744.1|	RecName: Full=AP-3 complex subunit delta; AltName: Full=Adaptor-related protein complex 3 subunit delta; AltName: Full=Delta-adaptin; Short=At-d-Ad; Short=At-delta-Ad; AltName: Full=Protein-affected trafficking 4 [Arabidopsis thaliana]	68.224	535	166	1	31	565	2	532	0.0	755
+Dm_00011811-RA	sp|Q9T0G7.1|	RecName: Full=Histone-lysine N-methyltransferase family member SUVH9; AltName: Full=Histone H3-K9 methyltransferase 9; Short=H3-K9-HMTase 9; AltName: Full=Protein SET DOMAIN GROUP 22; AltName: Full=Suppressor of variegation 3-9 homolog protein 9; Short=Su(var)3-9 homolog protein 9 [Arabidopsis thaliana]	60.369	651	233	8	30	661	6	650	0.0	810
+Dm_00012938-RA	sp|Q08CL8.1|	RecName: Full=CCR4-NOT transcription complex subunit 10 [Danio rerio]	31.261	547	288	16	93	605	89	581	2.37e-56	204
+Dm_00011848-RA	sp|Q9LXM2.1|	RecName: Full=Probable CCR4-associated factor 1 homolog 9 [Arabidopsis thaliana]	71.841	277	62	3	10	283	17	280	9.28e-140	397
+Dm_00003242-RA	sp|Q43517.1|	RecName: Full=Ferredoxin-1, chloroplastic; AltName: Full=Ferredoxin I; Flags: Precursor [Solanum lycopersicum]	59.333	150	49	4	5	149	1	143	2.67e-56	175
+Dm_00002870-RA	sp|Q9FML2.1|	RecName: Full=Histone deacetylase 6; Short=AtHDA6 [Arabidopsis thaliana]	73.923	441	79	4	1	441	1	405	0.0	662
+Dm_00002880-RA	sp|Q9FFJ3.1|	RecName: Full=Plant intracellular Ras-group-related LRR protein 1 [Arabidopsis thaliana]	56.121	531	199	8	4	530	6	506	0.0	521
+Dm_00004084-RA	sp|Q38841.2|	RecName: Full=Agamous-like MADS-box protein AGL12; AltName: Full=Protein XAANTAL 1 [Arabidopsis thaliana]	87.097	62	8	0	1	62	1	62	7.07e-34	118
+Dm_00004492-RA	sp|Q8W468.1|	RecName: Full=Probable E3 ubiquitin-protein ligase ARI8; AltName: Full=ARIADNE-like protein ARI8; AltName: Full=Protein ariadne homolog 8; AltName: Full=RING-type E3 ubiquitin transferase ARI8 [Arabidopsis thaliana]	70.000	580	145	3	13	576	1	567	0.0	837
+Dm_00004360-RA	sp|Q9FJ90.1|	RecName: Full=Ethylene-responsive transcription factor ERF025 [Arabidopsis thaliana]	52.660	188	78	3	79	265	54	231	2.57e-46	157
+Dm_00005135-RA	sp|Q9MAS5.2|	RecName: Full=Putative vesicle-associated membrane protein 726; Short=AtVAMP726 [Arabidopsis thaliana]	85.388	219	32	0	1	219	1	219	1.43e-136	384
+Dm_00000265-RA	sp|Q9LZ17.3|	RecName: Full=40S ribosomal protein S17-4 [Arabidopsis thaliana]	81.757	148	20	2	47	194	1	141	1.09e-78	234
+Dm_00000275-RA	sp|Q2R3P9.1|	RecName: Full=Bidirectional sugar transporter SWEET14; Short=OsSWEET14 [Oryza sativa Japonica Group]	42.439	205	92	3	2	206	100	278	4.72e-41	144
+Dm_00000283-RA	sp|Q07764.1|	RecName: Full=Protein HVA22 [Hordeum vulgare]	69.643	112	34	0	1	112	1	112	5.07e-54	168
+Dm_00000295-RA	sp|P0DI74.1|	RecName: Full=Protein transport protein Sec61 subunit gamma-1 [Arabidopsis thaliana]	92.647	68	5	0	1	68	1	68	8.90e-41	130
+Dm_00000296-RA	sp|F4JRR5.1|	RecName: Full=TITAN-like protein [Arabidopsis thaliana]	43.510	416	162	13	6	351	2	414	3.40e-94	293
+Dm_00000301-RA	sp|Q9FGH9.1|	RecName: Full=Exocyst complex component EXO70B1; Short=AtExo70b1; AltName: Full=Exocyst subunit Exo70 family protein B1 [Arabidopsis thaliana]	35.538	650	375	11	7	647	5	619	2.10e-116	364
+Dm_00000303-RA	sp|Q8GWQ6.1|	RecName: Full=UPF0235 protein At5g63440 [Arabidopsis thaliana]	87.850	214	26	0	1	214	1	214	5.22e-144	403
+Dm_00000316-RA	sp|P34783.1|	RecName: Full=Glyceraldehyde-3-phosphate dehydrogenase; Short=GAPDH [Atriplex nummularia]	87.202	336	43	0	1	336	1	336	0.0	625
+Dm_00000520-RA	sp|P46667.1|	RecName: Full=Homeobox-leucine zipper protein ATHB-5; AltName: Full=HD-ZIP protein ATHB-5; AltName: Full=Homeodomain transcription factor ATHB-5 [Arabidopsis thaliana]	47.656	128	65	1	53	180	35	160	1.74e-32	120
+Dm_00018680-RA	sp|Q9FFF5.1|	RecName: Full=PHD finger protein ALFIN-LIKE 1; Short=Protein AL1 [Arabidopsis thaliana]	77.731	238	52	1	1	237	1	238	3.34e-122	349
+Dm_00019080-RA	sp|P52409.1|	RecName: Full=Glucan endo-1,3-beta-glucosidase; AltName: Full=(1->3)-beta-glucan endohydrolase; Short=(1->3)-beta-glucanase; AltName: Full=Beta-1,3-endoglucanase; Flags: Precursor [Triticum aestivum]	51.402	428	192	4	41	453	26	452	8.91e-141	414
+Dm_00015022-RA	sp|Q43125.2|	RecName: Full=Cryptochrome-1; Short=AtCry; Short=Atcry1; AltName: Full=Blue light photoreceptor; AltName: Full=Protein BLUE LIGHT UNINHIBITED 1; AltName: Full=Protein ELONGATED HYPOCOTYL 4; AltName: Full=Protein OUT OF PHASE 2; Short=OOP2 [Arabidopsis thaliana]	75.672	670	139	9	8	668	15	669	0.0	983
+Dm_00015080-RA	sp|Q9SKI2.2|	RecName: Full=Vacuolar protein sorting-associated protein 2 homolog 1; Short=AtVPS2-1; AltName: Full=Charged multivesicular body protein 2 homolog 1; AltName: Full=ESCRT-III complex subunit VPS2 homolog 1; AltName: Full=SNF7-like protein [Arabidopsis thaliana]	86.765	204	26	1	1	203	22	225	8.11e-112	321
+Dm_00010189-RA	sp|Q8L6Y1.1|	RecName: Full=Ubiquitin carboxyl-terminal hydrolase 14; AltName: Full=Deubiquitinating enzyme 14; Short=AtUBP14; AltName: Full=TITAN-6 protein; AltName: Full=Ubiquitin thioesterase 14; AltName: Full=Ubiquitin-specific-processing protease 14 [Arabidopsis thaliana]	73.177	809	189	8	5	798	1	796	0.0	1229
+Dm_00014877-RA	sp|F4KFV7.1|	RecName: Full=DExH-box ATP-dependent RNA helicase DExH18, mitochondrial; AltName: Full=ATP-dependent RNA helicase SUV3L; Short=AtSUV3L; AltName: Full=Protein SUPPRESSOR OF VAR 3-like; Flags: Precursor [Arabidopsis thaliana]	71.214	667	184	4	82	743	103	766	0.0	1004
+Dm_00007448-RA	sp|P25766.2|	RecName: Full=Ras-related protein RGP1; AltName: Full=GTP-binding regulatory protein RGP1 [Oryza sativa Japonica Group]	76.712	219	49	2	5	223	8	224	1.86e-122	349
+Dm_00008116-RA	sp|Q93YU2.1|	RecName: Full=Protein root UVB sensitive 6 [Arabidopsis thaliana]	60.284	282	64	4	7	282	235	474	2.96e-113	338
+Dm_00008115-RA	sp|Q93YU2.1|	RecName: Full=Protein root UVB sensitive 6 [Arabidopsis thaliana]	66.953	233	58	3	32	264	21	234	1.72e-96	294
+Dm_00008342-RA	sp|O05413.1|	RecName: Full=Probable nitronate monooxygenase; Short=NMO; AltName: Full=Propionate 3-nitronate monooxygenase; Short=P3N monooxygenase [Bacillus subtilis subsp. subtilis str. 168]	28.691	359	189	11	7	321	8	343	1.05e-31	124
+Dm_00000092-RA	sp|Q9LT81.1|	RecName: Full=Zinc finger CCCH domain-containing protein 39; Short=AtC3H39 [Arabidopsis thaliana]	41.515	330	162	14	48	359	60	376	4.36e-67	219
+Dm_00000121-RA	sp|Q6AVI0.1|	RecName: Full=Zinc finger BED domain-containing protein RICESLEEPER 2; AltName: Full=Transposase-like protein RICESLEEPER 2 [Oryza sativa Japonica Group]	29.876	241	146	7	225	462	340	560	3.01e-24	109
+Dm_00000140-RA	sp|M4IQR7.1|	RecName: Full=Probable CoA ligase CCL5; Short=HlCCL5 [Humulus lupulus]	71.245	233	50	2	6	221	319	551	1.89e-114	340
+Dm_00000163-RA	sp|Q9LM69.1|	RecName: Full=RING-H2 finger protein ATL80; AltName: Full=RING-type E3 ubiquitin transferase ATL80 [Arabidopsis thaliana]	64.384	146	41	3	18	154	21	164	7.85e-56	177
+Dm_00000150-RA	sp|F4HUK6.1|	RecName: Full=Butanoate--CoA ligase AAE1; AltName: Full=4-methylpentanoate--CoA ligase AAE2; AltName: Full=AMP-binding protein 1; Short=AtAMPBP1; AltName: Full=Acyl-activating enzyme 1, peroxisomal; AltName: Full=Hexanoate--CoA ligase CCL3; AltName: Full=Pentanoate--CoA ligase CCL3 [Arabidopsis thaliana]	69.134	554	169	1	1	552	3	556	0.0	806
+Dm_00000156-RA	sp|Q9SII6.2|	RecName: Full=Probable serine/threonine-protein kinase PIX13 [Arabidopsis thaliana]	61.508	252	92	2	35	281	137	388	1.50e-104	314
+Dm_00007362-RA	sp|Q8S4W7.1|	RecName: Full=DELLA protein GAI1; AltName: Full=Gibberellic acid-insensitive mutant protein 1; AltName: Full=VvGAI1 [Vitis vinifera]	61.214	593	200	9	1	578	1	578	0.0	711
+Dm_00006842-RA	sp|Q9LD18.2|	RecName: Full=Potassium transporter 4; Short=AtKT4; Short=AtKUP3; Short=AtPOT4 [Arabidopsis thaliana]	77.121	778	173	4	11	783	12	789	0.0	1190
+Dm_00007129-RA	sp|Q9FNN6.1|	RecName: Full=Transcription factor SRM1; AltName: Full=Myb-related protein SRM1; AltName: Full=Protein SALT-RELATED MYB 1 [Arabidopsis thaliana]	53.846	182	82	1	17	196	9	190	3.03e-58	189
+Dm_00007942-RA	sp|Q9LME6.1|	RecName: Full=Methyl-CpG-binding domain-containing protein 8; Short=AtMBD8; Short=MBD08; AltName: Full=Methyl-CpG-binding protein MBD8 [Arabidopsis thaliana]	36.193	373	168	9	12	316	20	390	3.99e-46	177
+Dm_00007060-RA	sp|Q94A40.2|	RecName: Full=Coatomer subunit alpha-1; AltName: Full=Alpha-coat protein 1; Short=Alpha-COP 1 [Arabidopsis thaliana]	79.902	1219	228	5	1	1205	1	1216	0.0	2041
+Dm_00013758-RA	sp|P0CZ23.1|	RecName: Full=Acyl-coenzyme A oxidase 3, peroxisomal; Short=AOX 3; Short=Acyl-CoA oxidase 3; AltName: Full=Medium-chain acyl-CoA oxidase; Short=AtCX3; Flags: Precursor [Arabidopsis thaliana]	69.099	699	187	4	7	704	4	674	0.0	1018
+Dm_00013600-RA	sp|A0A3Q7HH64.1|	RecName: Full=NAC domain-containing protein JA2L; AltName: Full=Protein JASMONIC ACID 2-LIKE; Short=Protein JA2-LIKE [Solanum lycopersicum]	58.152	368	136	10	1	364	1	354	2.39e-128	375
+Dm_00013835-RA	sp|Q07121.1|	RecName: Full=Primary amine oxidase; AltName: Full=Copper amine oxidase; AltName: Full=MAOXI; Flags: Precursor [Arthrobacter sp. P1]	39.703	471	203	11	48	486	11	432	5.80e-87	285
+Dm_00005765-RA	sp|Q9LX73.1|	RecName: Full=E3 UFM1-protein ligase 1 homolog; AltName: Full=E3 UFM1-protein transferase 1 homolog [Arabidopsis thaliana]	61.951	820	286	4	1	811	1	803	0.0	994
+Dm_00004466-RA	sp|B5X4Z9.1|	RecName: Full=Protein kinase STUNTED [Arabidopsis thaliana]	36.547	695	332	15	36	726	10	599	7.07e-127	394
+Dm_00005083-RA	sp|Q8L8Q8.1|	RecName: Full=Uncharacterized protein At5g64816; Flags: Precursor [Arabidopsis thaliana]	86.777	121	15	1	23	143	1	120	1.83e-73	218
+Dm_00005084-RA	sp|Q9C5J9.1|	RecName: Full=Small GTPase LIP1; AltName: Full=Protein LIGHT INSENSITIVE PERIOD 1 [Arabidopsis thaliana]	73.235	340	84	5	2	334	3	342	1.14e-176	495
+Dm_00005528-RA	sp|Q6NQB7.1|	RecName: Full=Beta-1,3-galactosyltransferase 7 [Arabidopsis thaliana]	73.003	363	81	5	12	365	39	393	0.0	550
+Dm_00004800-RA	sp|Q42962.1|	RecName: Full=Phosphoglycerate kinase, cytosolic [Nicotiana tabacum]	89.526	401	42	0	1	401	1	401	0.0	723
+Dm_00000722-RA	sp|Q688X9.1|	RecName: Full=Protein DEHYDRATION-INDUCED 19; AltName: Full=OsDi19 [Oryza sativa Japonica Group]	50.400	250	100	4	1	250	1	226	2.09e-76	233
+Dm_00000869-RA	sp|O80341.1|	RecName: Full=Ethylene-responsive transcription factor 5; Short=AtERF5; AltName: Full=Ethylene-responsive element-binding factor 5; Short=EREBP-5 [Arabidopsis thaliana]	55.224	201	72	5	178	378	118	300	7.40e-57	190
+Dm_00000885-RA	sp|O82528.1|	RecName: Full=60S ribosomal protein L15 [Petunia x hybrida]	91.176	204	18	0	1	204	1	204	7.23e-137	384
+Dm_00000893-RA	sp|Q8LPF8.1|	RecName: Full=O-fucosyltransferase 29; Short=O-FucT-29; AltName: Full=O-fucosyltransferase family protein [Arabidopsis thaliana]	75.941	478	108	3	45	518	33	507	0.0	746
+Dm_00000913-RA	sp|O81316.1|	RecName: Full=Scarecrow-like protein 6; Short=AtSCL6; AltName: Full=GRAS family protein 22; Short=AtGRAS-22; AltName: Full=SCL6-IV [Arabidopsis thaliana]	43.869	367	184	7	443	807	209	555	1.15e-81	275
+Dm_00000414-RA	sp|Q9FLU1.2|	RecName: Full=DNA-binding protein BIN4; AltName: Full=Protein BRASSINOSTEROID INSENSITIVE 4; AltName: Full=Protein MIDGET [Arabidopsis thaliana]	46.983	232	62	4	175	404	272	444	1.70e-52	184
+Dm_00013096-RA	sp|Q9LVE0.1|	RecName: Full=Protein NRT1/ PTR FAMILY 6.4; Short=AtNPF6.4; AltName: Full=Nitrate transporter 1.3 [Arabidopsis thaliana]	69.151	577	165	4	1	567	2	575	0.0	776
+Dm_00013705-RA	sp|Q9C7S5.1|	RecName: Full=Tyrosine-sulfated glycopeptide receptor 1; AltName: Full=PSY1 receptor [Arabidopsis thaliana]	53.711	1078	462	15	5	1069	27	1080	0.0	1078
+Dm_00018077-RA	sp|O65554.1|	RecName: Full=CBL-interacting serine/threonine-protein kinase 6; AltName: Full=SNF1-related kinase 3.14; AltName: Full=SOS2-like protein kinase PKS4; AltName: Full=SOS3-interacting protein 3 [Arabidopsis thaliana]	73.050	423	109	2	11	428	17	439	0.0	621
+Dm_00015937-RA	sp|O80340.1|	RecName: Full=Ethylene-responsive transcription factor 4; Short=AtERF4; AltName: Full=Ethylene-responsive element-binding factor 4; Short=EREBP-4; AltName: Full=Protein RELATED TO APETALA2 5 [Arabidopsis thaliana]	60.317	126	38	3	12	128	9	131	1.01e-38	136
+Dm_00017763-RA	sp|Q29Q28.1|	RecName: Full=UDP-galactose/UDP-glucose transporter 2; Short=AtUTr2 [Arabidopsis thaliana]	75.802	343	79	2	5	343	3	345	0.0	516
+Dm_00018034-RA	sp|Q2QUC5.1|	RecName: Full=Tryptamine 5-hydroxylase; AltName: Full=Cytochrome P450 71P1; AltName: Full=Protein SEKIGUCHI LESION [Oryza sativa Japonica Group]	55.731	506	186	8	54	549	38	515	0.0	546
+Dm_00018068-RA	sp|Q69VG1.1|	RecName: Full=Chitin-inducible gibberellin-responsive protein 1 [Oryza sativa Japonica Group]	58.845	554	206	6	76	625	36	571	0.0	628
+Dm_00018073-RA	sp|Q94KE2.2|	RecName: Full=Protein TIME FOR COFFEE [Arabidopsis thaliana]	38.347	1742	747	74	1	1607	1	1550	0.0	656
+Dm_00004175-RA	sp|Q94BY9.1|	RecName: Full=Rab GTPase-activating protein 22 [Arabidopsis thaliana]	59.459	518	176	8	41	558	58	541	0.0	570
+Dm_00004182-RA	sp|O80341.1|	RecName: Full=Ethylene-responsive transcription factor 5; Short=AtERF5; AltName: Full=Ethylene-responsive element-binding factor 5; Short=EREBP-5 [Arabidopsis thaliana]	43.629	259	104	7	177	418	59	292	3.38e-50	174
+Dm_00007763-RA	sp|Q8RWI9.2|	RecName: Full=ABC transporter G family member 15; Short=ABC transporter ABCG.15; Short=AtABCG15; AltName: Full=White-brown complex homolog protein 15; Short=AtWBC15; AltName: Full=White-brown complex homolog protein 22; Short=AtWBC22 [Arabidopsis thaliana]	60.949	653	205	5	7	648	76	689	0.0	810
+Dm_00007764-RA	sp|Q9C8K2.1|	RecName: Full=ABC transporter G family member 12; Short=ABC transporter ABCG.12; Short=AtABCG12; AltName: Full=Protein ECERIFERUM 5; AltName: Full=White-brown complex homolog protein 12; Short=AtWBC12 [Arabidopsis thaliana]	79.661	59	12	0	29	87	19	77	2.53e-25	102
+Dm_00012480-RA	sp|Q9LV16.2|	RecName: Full=Hydroxyproline O-galactosyltransferase GALT6; AltName: Full=Beta-1,3-galactosyltransferase 19 [Arabidopsis thaliana]	60.174	688	205	9	2	637	11	681	0.0	843
+Dm_00007260-RA	sp|A1K5T6.1|	RecName: Full=Protein adenylyltransferase SelO [Azoarcus olearius]	49.273	550	232	9	102	637	1	517	6.00e-160	472
+Dm_00007263-RA	sp|O24370.1|	RecName: Full=Linoleate 13S-lipoxygenase 2-1, chloroplastic; AltName: Full=Lipoxygenase 2-1; Flags: Precursor [Solanum tuberosum]	58.667	900	348	12	383	1276	18	899	0.0	1073
+Dm_00007264-RA	sp|O24370.1|	RecName: Full=Linoleate 13S-lipoxygenase 2-1, chloroplastic; AltName: Full=Lipoxygenase 2-1; Flags: Precursor [Solanum tuberosum]	59.444	360	141	5	31	388	101	457	1.06e-145	438
+Dm_00006087-RA	sp|Q54KZ8.1|	RecName: Full=Eukaryotic translation initiation factor 3 subunit M; Short=eIF3m [Dictyostelium discoideum]	33.425	362	217	7	72	428	50	392	1.10e-66	221
+Dm_00005737-RA	sp|B5X4Z9.1|	RecName: Full=Protein kinase STUNTED [Arabidopsis thaliana]	34.358	716	324	17	37	741	10	590	7.76e-116	366
+Dm_00016073-RA	sp|Q9STY6.1|	RecName: Full=40S ribosomal protein S20-2 [Arabidopsis thaliana]	87.931	116	13	1	1	115	1	116	7.75e-69	205
+Dm_00016470-RA	sp|Q9SI72.1|	RecName: Full=Pectinesterase inhibitor 9; AltName: Full=Pectin methylesterase inhibitor 9; Short=AtPMEI9; Flags: Precursor [Arabidopsis thaliana]	47.486	179	91	3	27	202	20	198	4.27e-52	169
+Dm_00015108-RA	sp|Q9CA78.2|	RecName: Full=Nuclear intron maturase 4, mitochondrial; Short=AtnMat4; AltName: Full=Nuclear intron maturase 2 b; Short=AtnMat2b; Flags: Precursor [Arabidopsis thaliana]	55.438	754	326	5	105	848	43	796	0.0	832
+Dm_00017614-RA	sp|Q9M2R0.1|	RecName: Full=FT-interacting protein 3; AltName: Full=Multiple C2 domain and transmembrane region protein 3 [Arabidopsis thaliana]	62.883	784	268	7	237	1013	6	773	0.0	1066
+Dm_00016891-RA	sp|Q9LHJ9.1|	RecName: Full=Probable protein phosphatase 2C 38; Short=AtPP2C38 [Arabidopsis thaliana]	71.538	390	94	4	3	391	4	377	0.0	573
+Dm_00016062-RA	sp|Q9C8N5.1|	RecName: Full=Protein SENSITIVE TO PROTON RHIZOTOXICITY 1; AltName: Full=Zinc finger protein STOP1 [Arabidopsis thaliana]	55.212	518	175	12	3	501	1	480	4.00e-179	515
+Dm_00013627-RA	sp|P37833.1|	RecName: Full=Aspartate aminotransferase, cytoplasmic; AltName: Full=Transaminase A [Oryza sativa Japonica Group]	90.278	72	7	0	4	75	21	92	3.72e-40	139
+Dm_00012756-RA	sp|P92990.2|	RecName: Full=Polygalacturonase 1 beta-like protein 3; Short=AtPGL3; AltName: Full=Aromatic-rich glycoprotein JP650; AltName: Full=PG1beta-like protein 3; AltName: Full=Polygalacturonase 2; AltName: Full=Probable polygalacturonase non-catalytic subunit JP650; Flags: Precursor [Arabidopsis thaliana]	58.970	641	231	11	7	633	4	626	0.0	748
+Dm_00012316-RA	sp|Q9SLB7.1|	RecName: Full=LOB domain-containing protein 16; AltName: Full=ASYMMETRIC LEAVES 2-like protein 18; Short=AS2-like protein 18 [Arabidopsis thaliana]	54.891	184	62	7	2	171	5	181	1.30e-57	184
+Dm_00014749-RA	sp|P93736.2|	RecName: Full=Valine--tRNA ligase, mitochondrial 1; AltName: Full=AtSYV1; AltName: Full=Protein TWIN 2; AltName: Full=Valyl-tRNA synthetase; Short=ValRS; Flags: Precursor [Arabidopsis thaliana]	72.985	918	214	1	96	1013	85	968	0.0	1457
+Dm_00014701-RA	sp|O80683.1|	RecName: Full=Calmodulin-binding protein 25; Short=AtCAMBP25; AltName: Full=VQ motif-containing protein 15; Short=AtVQ15 [Arabidopsis thaliana]	35.366	246	133	9	13	248	9	238	7.74e-27	106
+Dm_00007323-RA	sp|Q05737.1|	RecName: Full=GTP-binding protein YPTM2 [Zea mays]	65.775	187	37	3	18	195	25	193	8.18e-77	233
+Dm_00007551-RA	sp|Q9T043.1|	RecName: Full=60S ribosomal protein L14-2 [Arabidopsis thaliana]	84.615	130	20	0	1	130	1	130	2.37e-74	221
+Dm_00007346-RA	sp|Q9SD67.1|	RecName: Full=ATP-dependent zinc metalloprotease FTSH 7, chloroplastic; Short=AtFTSH7; Flags: Precursor [Arabidopsis thaliana]	67.354	824	216	16	12	826	22	801	0.0	988
+Dm_00016581-RA	sp|P19446.1|	RecName: Full=Malate dehydrogenase, glyoxysomal; Flags: Precursor [Citrullus lanatus]	72.168	309	26	2	1	249	25	333	3.22e-146	429
+Dm_00001005-RA	sp|Q9SUG7.1|	RecName: Full=Autophagy-related protein 11 [Arabidopsis thaliana]	56.059	1147	464	15	47	1168	13	1144	0.0	1207
+Dm_00001016-RA	sp|Q9M088.1|	RecName: Full=Glucan endo-1,3-beta-glucosidase 5; AltName: Full=(1->3)-beta-glucan endohydrolase 5; Short=(1->3)-beta-glucanase 5; AltName: Full=Beta-1,3-endoglucanase 5; Short=Beta-1,3-glucanase 5; Flags: Precursor [Arabidopsis thaliana]	60.140	429	170	1	243	671	25	452	0.0	548
+Dm_00001027-RA	sp|Q84QC2.1|	RecName: Full=Ethylene-responsive transcription factor ERF017 [Arabidopsis thaliana]	71.739	92	26	0	8	99	3	94	1.06e-42	145
+Dm_00000772-RA	sp|Q9LZS6.1|	RecName: Full=Subtilisin-like protease SBT4.15; AltName: Full=Subtilase subfamily 4 member 15; Short=AtSBT4.15; Flags: Precursor [Arabidopsis thaliana]	45.865	133	58	3	5	128	54	181	7.01e-28	112
+Dm_00000779-RA	sp|Q9SJM6.1|	RecName: Full=Zinc finger A20 and AN1 domain-containing stress-associated protein 4; Short=AtSAP4 [Arabidopsis thaliana]	50.000	178	68	3	1	174	1	161	7.68e-55	173
+Dm_00000791-RA	sp|P59230.1|	RecName: Full=60S ribosomal protein L10a-2 [Arabidopsis thaliana]	82.915	199	31	1	1	196	1	199	5.48e-106	306
+Dm_00000248-RA	sp|Q1G3Q4.1|	RecName: Full=Protein RGF1 INDUCIBLE TRANSCRIPTION FACTOR 1 [Arabidopsis thaliana]	48.855	131	62	2	43	173	6	131	2.94e-35	130
+Dm_00000243-RA	sp|Q7X7S8.2|	RecName: Full=GPCR-type G protein COLD1; AltName: Full=Protein CHILLING TOLERANCE DIVERGENCE 1 [Oryza sativa Japonica Group]	76.250	320	43	2	32	327	108	418	6.00e-163	468
+Dm_00000239-RA	sp|Q6ZIK0.1|	RecName: Full=Probable tocopherol O-methyltransferase, chloroplastic; AltName: Full=Gamma-tocopherol methyltransferase; AltName: Full=Vitamin E pathway gene 4 protein; Flags: Precursor [Oryza sativa Japonica Group]	78.246	285	62	0	65	349	74	358	1.62e-170	481
+Dm_00000240-RA	sp|Q6E7H0.1|	RecName: Full=Origin of replication complex subunit 3; Short=AtORC3 [Arabidopsis thaliana]	51.587	252	107	3	79	323	171	414	4.76e-74	249
+Dm_00001113-RA	sp|Q9SRT0.1|	RecName: Full=U-box domain-containing protein 9; AltName: Full=Plant U-box protein 9; AltName: Full=RING-type E3 ubiquitin transferase PUB9 [Arabidopsis thaliana]	54.603	478	194	8	1	473	1	460	1.28e-174	501
+Dm_00001271-RA	sp|O80673.1|	RecName: Full=CDPK-related kinase 1; Short=AtCRK1; AltName: Full=Calcium/calmodulin-dependent protein kinase 3; AltName: Full=Calmodulin-binding protein kinase 3; Short=AtCBK3; Short=CaM-binding protein kinase 3 [Arabidopsis thaliana]	79.758	578	114	3	10	586	1	576	0.0	953
+Dm_00001282-RA	sp|Q9LHK1.1|	RecName: Full=Nudix hydrolase 16, mitochondrial; Short=AtNUDT16; Flags: Precursor [Arabidopsis thaliana]	66.082	171	58	0	1	171	1	171	2.48e-69	211
+Dm_00001294-RA	sp|Q9M1J2.1|	RecName: Full=DNA-directed RNA polymerase V subunit 5A [Arabidopsis thaliana]	60.793	227	84	1	1	227	1	222	2.39e-100	293
+Dm_00001296-RA	sp|O04016.2|	RecName: Full=Pyrroline-5-carboxylate reductase; Short=P5C reductase; Short=P5CR [Actinidia chinensis var. chinensis]	77.323	269	60	1	6	273	9	277	1.26e-147	417
+Dm_00001295-RA	sp|Q55EX9.2|	RecName: Full=Putative methyltransferase DDB_G0268948 [Dictyostelium discoideum]	33.716	261	153	7	5	259	15	261	1.94e-34	127
+Dm_00013803-RA	sp|P41379.1|	RecName: Full=Eukaryotic initiation factor 4A-2; Short=eIF-4A-2; AltName: Full=ATP-dependent RNA helicase eIF4A-2 [Nicotiana plumbaginifolia]	93.462	413	26	1	1	412	1	413	0.0	801
+Dm_00014387-RA	sp|Q9S7G6.1|	RecName: Full=Polyribonucleotide nucleotidyltransferase 2, mitochondrial; Short=AtmtPNPase; AltName: Full=Polynucleotide phosphorylase 2; Short=PNPase 2; Flags: Precursor [Arabidopsis thaliana]	62.500	1016	323	13	25	1032	22	987	0.0	1219
+Dm_00012606-RA	sp|Q9LTA2.1|	RecName: Full=AT-hook motif nuclear-localized protein 17 [Arabidopsis thaliana]	37.118	229	129	7	81	305	56	273	6.05e-36	133
+Dm_00019309-RA	sp|O24542.1|	RecName: Full=Auxin-induced protein 22D; AltName: Full=Indole-3-acetic acid-induced protein ARG13 [Vigna radiata var. radiata]	61.058	208	52	5	11	218	11	189	8.00e-78	234
+Dm_00012773-RA	sp|P43289.1|	RecName: Full=Shaggy-related protein kinase gamma; AltName: Full=ASK-gamma; AltName: Full=Shaggy-related protein kinase 12; Short=AtSK12 [Arabidopsis thaliana]	77.419	403	65	2	1	377	1	403	0.0	653
+Dm_00013069-RA	sp|Q9FSB9.1|	RecName: Full=Chalcone synthase 1; AltName: Full=Naringenin-chalcone synthase 1 [Ruta graveolens]	69.966	293	88	0	1	293	99	391	4.73e-155	441
