@@ -3,6 +3,19 @@ Files for each cluster from analysis for prey & no prey time series. Contains ge
 
 MfuzzClustersBLASTresults:
 BLAST results from tair & swissprot databases for genes assigned to each cluster. BLAST headers are as follows:
+qseqid 
+sseqid 
+stitle 
+pident 
+length 
+mismatch 
+gapopen 
+qstart 
+qend 
+sstart 
+send 
+evalue 
+bitscore
 
 PairwiseBLASTresults
 DEG lists from sleuth analysis BLASTed against tair & swissprot databases.
