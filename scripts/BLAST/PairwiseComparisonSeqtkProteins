@@ -1,0 +1,28 @@
+#!/bin/bash
+#SBATCH --job-name=seqtk
+#SBATCH --partition=batch
+#SBATCH --ntasks=1
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=10gb
+#SBATCH --time=1:00:00
+#SBATCH --output=%s_seqtk.%j.out
+#SBATCH --error=%s_seqtk.%j.err
+
+module load seqtk/1.3-GCC-8.3.0
+seqtk subseq Dm_proteins.fa list_pairwiseanalysis_petiole_vs_traps_noprey_time0.lst > proteins_out_list_pairwiseanalysis_petiole_vs_traps_noprey_time0.fq
+seqtk subseq Dm_proteins.fa list_pairwiseanalysis_petiole_vs_traps_noprey_time5.lst > proteins_out_list_pairwiseanalysis_petiole_vs_traps_noprey_time5.fq
+seqtk subseq Dm_proteins.fa list_pairwiseanalysis_petiole_vs_traps_noprey_time60.lst > proteins_out_list_pairwiseanalysis_petiole_vs_traps_noprey_time60.fq
+seqtk subseq Dm_proteins.fa list_pairwiseanalysis_petiole_vs_traps_noprey_time1440.lst > proteins_out_list_pairwiseanalysis_petiole_vs_traps_noprey_time144$
+seqtk subseq Dm_proteins.fa list_pairwiseanalysis_petiole_vs_traps_prey_time5.lst > proteins_out_list_pairwiseanalysis_petiole_vs_traps_prey_time5.fq
+seqtk subseq Dm_proteins.fa list_pairwiseanalysis_petiole_vs_traps_prey_time60.lst > proteins_out_list_pairwiseanalysis_petiole_vs_traps_prey_time60.fq
+seqtk subseq Dm_proteins.fa list_pairwiseanalysis_petiole_vs_traps_prey_time180.lst > proteins_out_list_pairwiseanalysis_petiole_vs_traps_prey_time180.fq
+seqtk subseq Dm_proteins.fa list_pairwiseanalysis_petiole_vs_traps_prey_time720.lst > proteins_out_list_pairwiseanalysis_petiole_vs_traps_prey_time720.fq
+seqtk subseq Dm_proteins.fa list_pairwiseanalysis_petiole_vs_traps_prey_time1440.lst > proteins_out_list_pairwiseanalysis_petiole_vs_traps_prey_time1440.fq
+seqtk subseq Dm_proteins.fa list_pairwiseanalysis_petiole_vs_traps_prey_time2880.lst > proteins_out_list_pairwiseanalysis_petiole_vs_traps_prey_time2880.fq
+seqtk subseq Dm_proteins.fa list_pairwiseanalysis_petiole_vs_traps_prey_time4320.lst > proteins_out_list_pairwiseanalysis_petiole_vs_traps_prey_time4320.fq
+seqtk subseq Dm_proteins.fa list_pairwiseanalysis_traps_vs_no_traps_time_60.lst > proteins_out_list_pairwiseanalysis_traps_vs_no_traps_time_60.fq
+seqtk subseq Dm_proteins.fa list_pairwiseanalysis_traps_vs_no_traps_time_1440.lst > proteins_out_list_pairwiseanalysis_traps_vs_no_traps_time_1440.txt.fq
+
+
+
