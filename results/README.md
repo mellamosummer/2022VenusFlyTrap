@@ -17,5 +17,5 @@ send
 evalue 
 bitscore
 
-PairwiseBLASTresults
+PairwiseBLASTresults:
 DEG lists from sleuth analysis BLASTed against tair & swissprot databases.
