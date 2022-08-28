@@ -3,7 +3,7 @@
   - cp -r /project/jlmlab/VFT.tar.gz /scratch/srb67793/VFT_Analysis2/
 - untar
   - tar -xf
--unzip with **unzip.sh**
+- unzip with **unzip.sh**
 - QC reads before trimming with **FASTQC script**
 - summarize FASTQC results with **MultiQC script**
 - Trim reads using **trimmomatic script**
