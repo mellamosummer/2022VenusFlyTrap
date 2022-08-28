@@ -3,14 +3,17 @@ BLAST headers are as follows: qseqid sseqid stitle pident length mismatch gapope
 File hierarchy summary:
 
 **ALL time structured genes combined for traps without prey** 
+
 Mfuzz_traps_no_prey_BLAST_swissprot.txt
 Mfuzz_traps_no_prey_BLAST_tair.txt
 
 **ALL time structured genes combined for traps with prey** 
+
 Mfuzz_traps_prey_BLAST_swissprot.txt
 Mfuzz_traps_prey_BLAST_tair.txt
 
 **Overlap between ALL time structured genes for traps with prey & ALL time structured genes for traps without prey** (see purple overlap on poster)
+
 trapsoverlap_swissprot.txt
 trapsoverlap_tair.txt
 
