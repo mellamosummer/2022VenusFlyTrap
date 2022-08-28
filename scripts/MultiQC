@@ -11,6 +11,6 @@
 
 module load MultiQC/1.8-foss-2019b-Python-3.7.4
 
-multiqc /lustre2/scratch/srb67793/VFT_Analysis2/FastQC_VFT/*.zip
+multiqc /scratch/srb67793/VFT_Analysis2/FastQC_VFT/*.zip
 
-#outputs an .txt files and an html file for online exploring/figures
+#outputs a .txt file and an html file for online exploring/figures
