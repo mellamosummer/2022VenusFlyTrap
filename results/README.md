@@ -1,6 +1,6 @@
 **MfuzzClusterLists:**
 
-Contains gene name & cluster assignment from Mfuzz.
+Contains gene name & cluster assignment from Mfuzz. Folder also contains mfuzz graphic for each cluster. Note: clusters on poster are labelled ina different order (manually manipulated).
 
 Traps without prey (Time points: o min, 5 min, 1 hr, 12 hrs)
 2 time structured clusters
