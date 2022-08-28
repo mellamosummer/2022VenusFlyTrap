@@ -3,8 +3,11 @@ BLAST headers are as follows: qseqid sseqid stitle pident length mismatch gapope
 **MfuzzTrapsNoPreyBLAST**
 
 no prey cluster 1 -- swissprot
+
 no prey cluster 1 -- tair
+
 no prey cluster 2 -- swissprot
+
 no prey cluster 2 -- tair
 
 **MfuzzTrapsPreyBLAST**
