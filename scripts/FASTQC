@@ -11,4 +11,4 @@
 
 module load FastQC/0.11.9-Java-11
 
-fastqc -o /scratch/srb67793/VFT_Analysis2/FastQC_VFT /scratch/srb67793/VFT_Analysis2/Raw_reads/*
+fastqc -o /scratch/srb67793/VFT_Analysis2/2_FastQC_VFT/results /scratch/srb67793/VFT_Analysis2/Raw_reads/*.fastq
