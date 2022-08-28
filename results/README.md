@@ -55,7 +55,6 @@ DEG lists from sleuth analysis BLASTed against tair (no description available, b
 24. traps with prey vs. traps without prey time 1440 -- tair
 25. traps with prey vs. traps without prey 1440 outlier removed-- swissprot 
 26. traps with prey vs. traps without prey time 1440 outlier removed-- tair
-
 27. traps with prey vs. traps without prey 60 -- swissprot 
 28. traps with prey vs. traps without prey time 60 -- tair
 29. traps with prey vs. traps without prey 60 outlier removed-- swissprot 
