@@ -5,7 +5,7 @@ Venus flytrap RNAseq time series experiment scripts &amp; results
 - Kallisto abundance files for R analyses
 
 ## results
--Mfuzz Cluster lists
+- Mfuzz Cluster lists
   - .txt files for each respective cluster
   -Mfuzz figures
 - Mfuzz BLAST results
