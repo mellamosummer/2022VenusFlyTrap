@@ -1,4 +1,3 @@
-#FASTQC Script
 #!/bin/bash
 #SBATCH --job-name=FastQC
 #SBATCH --partition=batch
