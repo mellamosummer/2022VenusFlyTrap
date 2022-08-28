@@ -1,7 +1,6 @@
 ## Computational Workflow 
 - copy over reads to scratch directory on xfer node
   - cp -r /project/jlmlab/VFT.tar.gz /scratch/srb67793/VFT_Analysis2/
-
 - untar
   - tar -xf
 -unzip with **unzip.sh**
