@@ -9,7 +9,7 @@ Traps with prey (Time points: 5 min, 1 hr, 3 hrs, 12 hrs, 24 hrs, 48 hrs, 72 hrs
 8 time structured clusters
 
 
-MfuzzClustersBLASTresults:
+**MfuzzClustersBLASTresults:**
 Mfuzz cluster lists BLASTed against tair & swissprot databases. BLAST headers are as follows:
 qseqid 
 sseqid 
