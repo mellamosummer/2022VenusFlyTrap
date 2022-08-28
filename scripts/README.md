@@ -2,11 +2,9 @@
 - copy over reads to scratch directory on xfer node
   - cp -r /project/jlmlab/VFT.tar.gz /scratch/srb67793/VFT_Analysis2/
 
-- untar and unzip files
+- untar
   - tar -xf
-  - qlogin
-  - bzip2 -d /scratch/srb67793/VFT_Analysis2/VFT/Raw_reads/*.bz2
-
+-unzip with **unzip.sh**
 - QC reads before trimming with **FASTQC script**
 - summarize FASTQC results with **MultiQC script**
 - Trim reads using **trimmomatic script**
