@@ -1,8 +1,16 @@
-MfuzzClusterLists: 
-Files for each cluster from analysis for prey & no prey time series. Contains gene name & cluster assignment from Mfuzz.
+**MfuzzClusterLists:**
+
+Contains gene name & cluster assignment from Mfuzz.
+
+Traps without prey (Time points: o min, 5 min, 1 hr, 12 hrs)
+2 time structured clusters
+
+Traps with prey (Time points: 5 min, 1 hr, 3 hrs, 12 hrs, 24 hrs, 48 hrs, 72 hrs)
+8 time structured clusters
+
 
 MfuzzClustersBLASTresults:
-BLAST results from tair & swissprot databases for genes assigned to each cluster. BLAST headers are as follows:
+Mfuzz cluster lists BLASTed against tair & swissprot databases. BLAST headers are as follows:
 qseqid 
 sseqid 
 stitle 
