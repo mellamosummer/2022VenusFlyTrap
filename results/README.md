@@ -29,6 +29,8 @@ bitscore
 
 DEG lists from sleuth analysis BLASTed against tair (no description available, but arabidopsis gene given) & swissprot databases (gives description of gene)
 
+File information:
+
 **Petiole vs. Traps without prey**
 
 1. petiole vs trap no prey time 0 -- swissprot 
