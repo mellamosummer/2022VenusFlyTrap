@@ -17,8 +17,9 @@ send
 evalue 
 bitscore
 
-PairwiseBLASTresults:
-DEG lists from sleuth analysis BLASTed against tair & swissprot databases.
+**PairwiseBLASTresults:**
+
+DEG lists from sleuth analysis BLASTed against tair (no description available, but arabidopsis gene given) & swissprot databases (gives description of gene)
 
 **Petiole vs. Traps without prey**
 
