@@ -49,7 +49,7 @@ OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
 #qlogin
 #scp -r /project/jlmlab/VFT.tar.gz $OUTDIR
 #
-tar -xf VFT.tar.gz
+tar -xf $OUTDIR/VFT.tar.gz
 mkdir $OUTDIR/rawreads
 mv $OUTDIR/VFT/*bz2 $OUTDIR/rawreads
 bzip2 -d $OUTDIR/rawreads/*bz2
