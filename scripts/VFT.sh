@@ -53,21 +53,23 @@ OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
 # mkdir $OUTDIR/rawreads
 # mv $OUTDIR/VFT/*bz2 $OUTDIR/rawreads
 
-#load modules
-module load FastQC/0.11.9-Java-11
-module load MultiQC/1.8-foss-2019b-Python-3.7.4
-module load Trimmomatic/0.39-Java-1.8.0_144
-module load kallisto/0.46.1-foss-2019b
+bzip2 -d $OUTDIR/rawreads/*bz2
+
+# #load modules
+# module load FastQC/0.11.9-Java-11
+# module load MultiQC/1.8-foss-2019b-Python-3.7.4
+# module load Trimmomatic/0.39-Java-1.8.0_144
+# module load kallisto/0.46.1-foss-2019b
 
 ####################################################################
 # 1) TRIMS VFT READS
 ####################################################################
 
 #QC pre-trim with FASTQC & MultiQC (took ~1 hr)
-mkdir $OUTDIR/FastQC
-mkdir $OUTDIR/FastQC/pretrim
-fastqc -o $OUTDIR/FastQC/pretrim/ $OUTDIR/rawreads/*.gz
-multiqc $OUTDIR/FastQC/pretrim/*.zip -o $OUTDIR/FastQC/pretrim/
+# mkdir $OUTDIR/FastQC
+# mkdir $OUTDIR/FastQC/pretrim
+# fastqc -o $OUTDIR/FastQC/pretrim/ $OUTDIR/rawreads/*.gz
+# multiqc $OUTDIR/FastQC/pretrim/*.zip -o $OUTDIR/FastQC/pretrim/
 #
 # mkdir $OUTDIR/trimmedreads
 # for infile in $OUTDIR/rawreads/*1.fastq.bz2; do
