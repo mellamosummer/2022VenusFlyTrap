@@ -1,0 +1,22 @@
+Read mapping and abundance estimation for transcripts was conducted using Kallisto v (Bray et al., 2016).
+
+R software package maSigPro (Conesa et al., 2006; Nueda et al., 2014)
+expression data for patterns across time by fitting each gene’s expression pattern to a polynomial using stepwise regression.
+
+Cross-normalized read counts and a negative binomial distribution for the generalized linear models were used.
+
+For each transcript, maSigPro estimated up to a fourth degree polynomial and tested the fit via ANOVA.
+
+Transcripts that had significantly time-structured expression were retained while all others were removed from further analysis.
+
+In total, _____ transcripts were removed as influential genes.
+
+The remaining transcripts that did show time-dependent expression (n = ) were clustered by fuzzy clustering based on similarity in expression profiles.
+
+An optimal fuzzifier m, a parameter that determines how much clusters can overlap, was calculated in the Mfuzz package (Kumar and Futschik, 2007) of R for each species (m = ).
+
+The number of groups k was determined by choosing a value which minimizes the within-group variance
+
+a k of 8 was used for traps triggered with prey and a k of 2 was used for mechanically triggered traps.
+
+Z-scores of normalized counts were calculated for each gene in each cluster as well as a median cluster expression.
