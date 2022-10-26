@@ -3,8 +3,8 @@
 #SBATCH --partition=batch                                 # Partition (queue) name
 #SBATCH --ntasks=1			                                  # Single task job
 #SBATCH --cpus-per-task=8	                                # Number of cores per taskT
-#SBATCH --mem=100gb                                       # Total memory for job
-#SBATCH --time=24:00:00  		                              # Time limit hrs:min:sec
+#SBATCH --mem=50gb                                       # Total memory for job
+#SBATCH --time=2:00:00  		                              # Time limit hrs:min:sec
 #SBATCH --output="/home/srb67793/2022VenusFlyTrap/log.%j" # Location of standard output and error log files
 #SBATCH --mail-user=srb67793@uga.edu                    # Where to send mail
 #SBATCH --mail-type=END,FAIL                          # Mail events (BEGIN, END, FAIL, ALL)
