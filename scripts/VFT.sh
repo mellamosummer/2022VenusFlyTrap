@@ -1,0 +1,125 @@
+
+#!/bin/bash
+#SBATCH --job-name=VFT                                    # Job name
+#SBATCH --partition=batch                                 # Partition (queue) name
+#SBATCH --ntasks=1			                                  # Single task job
+#SBATCH --cpus-per-task=8	                                # Number of cores per taskT
+#SBATCH --mem=100gb                                       # Total memory for job
+#SBATCH --time=24:00:00  		                              # Time limit hrs:min:sec
+#SBATCH --output="/home/srb67793/2022VenusFlyTrap/log.%j" # Location of standard output and error log files
+#SBATCH --mail-user=srb67793@uga.edu                    # Where to send mail
+#SBATCH --mail-type=END,FAIL                          # Mail events (BEGIN, END, FAIL, ALL)
+
+##################################
+
+#SUMMER BLANCO
+#PHD STUDENT, PLANT BIOLOGY
+#LEEBENS-MACK & CHANG LABS
+#UNIVERSITY OF GEORGIA
+
+#Venus Fly Trap RNAseq
+#SAPELO2
+
+##################################
+
+#THIS SCRIPT:
+#1) TRIMS VFT ILLUMINA SHORT READS -- DONE
+#2) QC'S VFT ILLUMINA SHORT READS  -- DONE
+
+# CODING QUESTIONS:
+
+# RESEARCH QUESTIONS:
+
+##################################
+# SET UP
+##################################
+
+#set output directory variable
+OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
+
+#if output directory doesn't exist, create it
+
+# if [ ! -d $OUTDIR ]
+# then
+#     mkdir -p $OUTDIR
+# fi
+
+#on xfer node
+#qlogin
+#scp -r /project/jlmlab/VFT.tar.gz $OUTDIR
+#
+# tar -xf VFT.tar.gz
+# mkdir $OUTDIR/rawreads
+# mv $OUTDIR/VFT/*bz2 $OUTDIR/rawreads
+
+#load modules
+module load FastQC/0.11.9-Java-11
+module load MultiQC/1.8-foss-2019b-Python-3.7.4
+module load Trimmomatic/0.39-Java-1.8.0_144
+module load kallisto/0.46.1-foss-2019b
+
+####################################################################
+# 1) TRIMS VFT READS
+####################################################################
+
+#QC pre-trim with FASTQC & MultiQC (took ~1 hr)
+mkdir $OUTDIR/FastQC
+mkdir $OUTDIR/FastQC/pretrim
+fastqc -o $OUTDIR/FastQC/pretrim/ $OUTDIR/rawreads/*.gz
+#multiqc $OUTDIR/FastQC/pretrim/*.zip -o $OUTDIR/FastQC/pretrim/
+
+mkdir $OUTDIR/trimmedreads
+for infile in $OUTDIR/rawreads/*1.fastq.bz2; do
+  java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE -threads 4 \
+  base=$(basename ${infile} 1.fastq.bz2) trimmomatic PE \
+  $OUTDIR/rawreads/${infile} \
+  $OUTDIR/rawreads/${base}2.fastq.bz2 \
+  $OUTDIR/trimmedreads/${base}1.trim.fastq.gz \
+  $OUTDIR/trimmedreads/${base}1un.trim.fastq.bz2 \
+  $OUTDIR/trimmedreads/${base}2.trim.fastq.gz \
+  $OUTDIR/trimmedreads/${base}2un.trim.fastq.bz2 \
+  ILLUMINACLIP:$EBROOTTRIMMOMATIC/adapters/TruSeq3-PE-2.fa:2:30:10 \
+  LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+done
+
+####################################################################
+# 2) QC'S G MACULATUM ILLUMINA SHORT READS
+####################################################################
+
+# #QC post-trim with FASTQC & MultiQC
+# mkdir $OUTDIR/FastQC/trimmed
+# fastqc -o $OUTDIR/FastQC/trimmed/ $OUTDIR/rawreads/*.trim.fastq.gz
+# multiqc $OUTDIR/FastQC/trimmed/*.zip
+
+####################################################################
+# 3) MAKE KALLISTO INDEX
+####################################################################
+
+mkdir $OUTDIR/kallisto
+kallisto index -i $OUTDIR/kallisto/VFT.idx \
+Dm-transcripts.fa
+
+####################################################################
+# 4) KALLISTO QUANT
+####################################################################
+
+ ls | awk -F _ '{print $1}' | uniq > librarynames.txt
+
+# name output files whatever you want, as long as ${output} is somewhere in the name
+mkdir $OUTDIR/kallisto/quant
+for i in librarynames.txt; do
+  kallisto quant -i $OUTDIR/kallisto/VFT.idx -o $OUTDIR/kallisto/quant  -b 100 \
+  $OUTDIR/trimmedreads/${i}_RNAseq*
+done
+
+#   java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE  -threads 4 \
+#   base=$(basename ${infile} 1.fastq.bz2) \
+#   trimmomatic PE ${infile} ${base}2.fastq.bz2 \
+#   ${base}_1.trim.fastq.gz ${base}1un.trim.fastq.bz2 \
+#   ${base}_2.trim.fastq.gz ${base}2un.trim.fastq.bz2 \
+#   ILLUMINACLIP:$EBROOTTRIMMOMATIC/adapters/TruSeq3-PE-2.fa:2:30:10 \
+#   LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+# done
+
+kallisto quant -i VFT.idx -o ${SLURM_ARRAY_TASK_ID}_kallistoquant -b 100 \
+$files
