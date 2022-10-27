@@ -3,7 +3,7 @@
 #SBATCH --partition=batch                                 # Partition (queue) name
 #SBATCH --ntasks=1			                                  # Single task job
 #SBATCH --cpus-per-task=8	                                # Number of cores per taskT
-#SBATCH --mem=100gb                                       # Total memory for job
+#SBATCH --mem=50gb                                       # Total memory for job
 #SBATCH --time=12:00:00  		                              # Time limit hrs:min:sec
 #SBATCH --output="/home/srb67793/2022VenusFlyTrap/log.%j" # Location of standard output and error log files
 #SBATCH --mail-user=srb67793@uga.edu                    # Where to send mail
@@ -49,9 +49,9 @@ OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
 #qlogin
 #scp -r /project/jlmlab/VFT.tar.gz $OUTDIR
 #
-tar -xf $OUTDIR/VFT.tar.gz
-mkdir $OUTDIR/rawreads
-mv $OUTDIR/VFT/*bz2 $OUTDIR/rawreads
+# tar -xf $OUTDIR/VFT.tar.gz
+# mkdir $OUTDIR/rawreads
+# mv $OUTDIR/VFT/*.bz2 $OUTDIR/rawreads
 bzip2 -d $OUTDIR/rawreads/*bz2
 
 # #load modules
