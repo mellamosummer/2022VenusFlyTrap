@@ -83,8 +83,9 @@ module load kallisto/0.46.1-foss-2019b
 
 mkdir $OUTDIR/trimmedreads
 for infile in $OUTDIR/rawreads/*1.fastq; do
+  base=$(basename ${infile} 1.fastq);
   java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE -threads 8 \
-  base=$(basename ${infile} 1.fastq) trimmomatic PE \
+  trimmomatic PE \
   $OUTDIR/rawreads/${infile} \
   $OUTDIR/rawreads/${base}2.fastq \
   $OUTDIR/trimmedreads/${base}1.trim.fastq \
