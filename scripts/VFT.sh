@@ -76,24 +76,24 @@ module load kallisto/0.46.1-foss-2019b
 ##################################
 
 #QC pre-trim with FASTQC & MultiQC
-mkdir $OUTDIR/FastQC
-mkdir $OUTDIR/FastQC/pretrim
-fastqc -o $OUTDIR/FastQC/pretrim/ $OUTDIR/rawreads/*.fastq
-multiqc $OUTDIR/FastQC/pretrim/*.zip -o $OUTDIR/FastQC/pretrim/
+# mkdir $OUTDIR/FastQC
+# mkdir $OUTDIR/FastQC/pretrim
+# fastqc -o $OUTDIR/FastQC/pretrim/ $OUTDIR/rawreads/*.fastq
+# multiqc $OUTDIR/FastQC/pretrim/*.zip -o $OUTDIR/FastQC/pretrim/
 
-# mkdir $OUTDIR/trimmedreads
-# for infile in $OUTDIR/rawreads/*1.fastq.bz2; do
-#   java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE -threads 4 \
-#   base=$(basename ${infile} 1.fastq.bz2) trimmomatic PE \
-#   $OUTDIR/rawreads/${infile} \
-#   $OUTDIR/rawreads/${base}2.fastq.bz2 \
-#   $OUTDIR/trimmedreads/${base}1.trim.fastq.gz \
-#   $OUTDIR/trimmedreads/${base}1un.trim.fastq.bz2 \
-#   $OUTDIR/trimmedreads/${base}2.trim.fastq.gz \
-#   $OUTDIR/trimmedreads/${base}2un.trim.fastq.bz2 \
-#   ILLUMINACLIP:$EBROOTTRIMMOMATIC/adapters/TruSeq3-PE-2.fa:2:30:10 \
-#   LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
-# done
+mkdir $OUTDIR/trimmedreads
+for infile in $OUTDIR/rawreads/*1.fastq; do
+  java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE -threads 8 \
+  base=$(basename ${infile} 1.fastq) trimmomatic PE \
+  $OUTDIR/rawreads/${infile} \
+  $OUTDIR/rawreads/${base}2.fastq \
+  $OUTDIR/trimmedreads/${base}1.trim.fastq \
+  $OUTDIR/trimmedreads/${base}1un.trim.fastq \
+  $OUTDIR/trimmedreads/${base}2.trim.fastq \
+  $OUTDIR/trimmedreads/${base}2un.trim.fastq \
+  ILLUMINACLIP:$EBROOTTRIMMOMATIC/adapters/TruSeq3-PE-2.fa:2:30:10 \
+  LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+done
 
 ####################################################################
 # 2) QC'S G MACULATUM ILLUMINA SHORT READS
