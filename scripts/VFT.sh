@@ -87,11 +87,11 @@ for infile in $OUTDIR/rawreads/*1.fastq; do
   java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE -threads 8 \
   trimmomatic PE \
   ${infile} \
-  ${base}2.fastq \
-  ${base}1.trim.fastq \
-  ${base}1un.trim.fastq \
-  ${base}2.trim.fastq \
-  ${base}2un.trim.fastq \
+  $OUTDIR/trimmedreads/${base}2.fastq \
+  $OUTDIR/trimmedreads/${base}1.trim.fastq \
+  $OUTDIR/trimmedreads/${base}1un.trim.fastq \
+  $OUTDIR/trimmedreads/${base}2.trim.fastq \
+  $OUTDIR/trimmedreads/${base}2un.trim.fastq \
   ILLUMINACLIP:$EBROOTTRIMMOMATIC/adapters/TruSeq3-PE-2.fa:2:30:10 \
   LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 done
