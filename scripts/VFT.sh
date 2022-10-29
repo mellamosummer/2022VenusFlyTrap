@@ -4,7 +4,7 @@
 #SBATCH --ntasks=1			                                  # Single task job
 #SBATCH --cpus-per-task=8	                                # Number of cores per taskT
 #SBATCH --mem=50gb                                       # Total memory for job
-#SBATCH --time=12:00:00  		                              # Time limit hrs:min:sec
+#SBATCH --time=36:00:00  		                              # Time limit hrs:min:sec
 #SBATCH --output="/home/srb67793/2022VenusFlyTrap/log.%j" # Location of standard output and error log files
 #SBATCH --mail-user=srb67793@uga.edu                    # Where to send mail
 #SBATCH --mail-type=END,FAIL                          # Mail events (BEGIN, END, FAIL, ALL)
@@ -72,7 +72,7 @@ module load Trimmomatic/0.39-Java-1.8.0_144
 module load kallisto/0.46.1-foss-2019b
 
 ##################################
-# 1) TRIMS VFT READS
+# 1) TRIMS VFT READS (more than 12 hrs)
 ##################################
 
 #QC pre-trim with FASTQC & MultiQC
@@ -95,19 +95,24 @@ for infile in $OUTDIR/rawreads/*1.fastq; do
   LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 done
 
+# mkdir $OUTDIR/trimmedreads/paired
+# mkdir $OUTDIR/trimmedreads/unpaired
+# mv $OUTDIR/trimmedreads/*_paired.fastq $OUTDIR/trimmedreads/paired
+# mv $OUTDIR/trimmedreads/*_unpaired.fastq $OUTDIR/trimmedreads/unpaired
+
 ####################################################################
 # 2) QC'S G MACULATUM ILLUMINA SHORT READS
 ####################################################################
 
-# #QC post-trim with FASTQC & MultiQC
-# mkdir $OUTDIR/FastQC/trimmed
-# fastqc -o $OUTDIR/FastQC/trimmed/ $OUTDIR/rawreads/*.trim.fastq.gz
+#QC post-trim with FASTQC & MultiQC
+# mkdir $OUTDIR/FastQC/trimmed/paired
+# fastqc -o $OUTDIR/FastQC/trimmed/ $OUTDIR/trimmedreads/paired/*
 # multiqc $OUTDIR/FastQC/trimmed/*.zip
 
 ####################################################################
 # 3) MAKE KALLISTO INDEX
 ####################################################################
-#
+
 # mkdir $OUTDIR/kallisto
 # kallisto index -i $OUTDIR/kallisto/VFT.idx \
 # Dm-transcripts.fa
@@ -115,10 +120,9 @@ done
 ####################################################################
 # 4) KALLISTO QUANT
 ####################################################################
-#
-#  ls | awk -F _ '{print $1}' | uniq > librarynames.txt
-#
-# # name output files whatever you want, as long as ${output} is somewhere in the name
+
+#  ls /$OUTDIR/trimmedreads/paired | awk -F _ '{print $1}' | uniq > librarynames.txt
+
 # mkdir $OUTDIR/kallisto/quant
 # for i in librarynames.txt; do
 #   kallisto quant -i $OUTDIR/kallisto/VFT.idx -o $OUTDIR/kallisto/quant  -b 100 \
