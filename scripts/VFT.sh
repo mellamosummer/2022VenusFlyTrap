@@ -104,17 +104,17 @@ module load kallisto/0.46.1-foss-2019b
 # 2) QC'S G MACULATUM ILLUMINA SHORT READS
 ####################################################################
 
-#QC post-trim with FASTQC & MultiQC
-# mkdir $OUTDIR/FastQC/trimmed/paired
-# fastqc -o $OUTDIR/FastQC/trimmed/ $OUTDIR/trimmedreads/paired/*
-# multiqc $OUTDIR/FastQC/trimmed/*.zip
+QC post-trim with FASTQC & MultiQC
+mkdir $OUTDIR/FastQC/trimmed/paired
+fastqc -o $OUTDIR/FastQC/trimmed/ $OUTDIR/trimmedreads/paired/*
+multiqc $OUTDIR/FastQC/trimmed/*.zip
 
 ####################################################################
 # 3) MAKE KALLISTO INDEX
 ####################################################################
-
-mkdir $OUTDIR/kallisto
-kallisto index -i $OUTDIR/kallisto/VFT.idx $OUTDIR/VFT/Dm_transcripts.fa
+#
+# mkdir $OUTDIR/kallisto
+# kallisto index -i $OUTDIR/kallisto/VFT.idx $OUTDIR/VFT/Dm_transcripts.fa
 
 ####################################################################
 # 4) KALLISTO QUANT
