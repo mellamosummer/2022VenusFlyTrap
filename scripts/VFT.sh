@@ -114,7 +114,7 @@ module load kallisto/0.46.1-foss-2019b
 ####################################################################
 
 mkdir $OUTDIR/kallisto
-kallisto index -i $OUTDIR/kallisto/VFT.idx $OUTDIR/VFT/Dm-transcripts.fa
+kallisto index -i $OUTDIR/kallisto/VFT.idx $OUTDIR/VFT/Dm_transcripts.fa
 
 ####################################################################
 # 4) KALLISTO QUANT
