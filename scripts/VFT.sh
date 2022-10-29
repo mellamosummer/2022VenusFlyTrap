@@ -81,19 +81,19 @@ module load kallisto/0.46.1-foss-2019b
 # fastqc -o $OUTDIR/FastQC/pretrim/ $OUTDIR/rawreads/*.fastq
 # multiqc $OUTDIR/FastQC/pretrim/*.zip -o $OUTDIR/FastQC/pretrim/
 
-mkdir $OUTDIR/trimmedreads
-for infile in $OUTDIR/rawreads/*1.fastq; do
-  base=$(basename ${infile} 1.fastq);
-  java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE -threads 8 \
-  ${infile} \
-  $OUTDIR/rawreads/${base}2.fastq \
-  $OUTDIR/trimmedreads/${base}1_paired.fastq \
-  $OUTDIR/trimmedreads/${base}1_unpaired.fastq \
-  $OUTDIR/trimmedreads/${base}2_paired.fastq \
-  $OUTDIR/trimmedreads/${base}2_unpaired.fastq \
-  ILLUMINACLIP:$EBROOTTRIMMOMATIC/adapters/TruSeq3-PE-2.fa:2:30:10 \
-  LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
-done
+# mkdir $OUTDIR/trimmedreads
+# for infile in $OUTDIR/rawreads/*1.fastq; do
+#   base=$(basename ${infile} 1.fastq);
+#   java -jar $EBROOTTRIMMOMATIC/trimmomatic-0.39.jar PE -threads 8 \
+#   ${infile} \
+#   $OUTDIR/rawreads/${base}2.fastq \
+#   $OUTDIR/trimmedreads/${base}1_paired.fastq \
+#   $OUTDIR/trimmedreads/${base}1_unpaired.fastq \
+#   $OUTDIR/trimmedreads/${base}2_paired.fastq \
+#   $OUTDIR/trimmedreads/${base}2_unpaired.fastq \
+#   ILLUMINACLIP:$EBROOTTRIMMOMATIC/adapters/TruSeq3-PE-2.fa:2:30:10 \
+#   LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+# done
 
 # mkdir $OUTDIR/trimmedreads/paired
 # mkdir $OUTDIR/trimmedreads/unpaired
@@ -113,9 +113,8 @@ done
 # 3) MAKE KALLISTO INDEX
 ####################################################################
 
-# mkdir $OUTDIR/kallisto
-# kallisto index -i $OUTDIR/kallisto/VFT.idx \
-# Dm-transcripts.fa
+mkdir $OUTDIR/kallisto
+kallisto index -i $OUTDIR/kallisto/VFT.idx $OUTDIR/VFT/Dm-transcripts.fa
 
 ####################################################################
 # 4) KALLISTO QUANT
