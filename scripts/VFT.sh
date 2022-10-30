@@ -95,16 +95,16 @@ module load kallisto/0.46.1-foss-2019b
 #   LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 # done
 
-# mkdir $OUTDIR/trimmedreads/paired
-# mkdir $OUTDIR/trimmedreads/unpaired
-# mv $OUTDIR/trimmedreads/*_paired.fastq $OUTDIR/trimmedreads/paired
-# mv $OUTDIR/trimmedreads/*_unpaired.fastq $OUTDIR/trimmedreads/unpaired
+mkdir $OUTDIR/trimmedreads/paired
+mkdir $OUTDIR/trimmedreads/unpaired
+mv $OUTDIR/trimmedreads/*_paired.fastq $OUTDIR/trimmedreads/paired
+mv $OUTDIR/trimmedreads/*_unpaired.fastq $OUTDIR/trimmedreads/unpaired
 
 ####################################################################
 # 2) QC'S G MACULATUM ILLUMINA SHORT READS
 ####################################################################
 
-QC post-trim with FASTQC & MultiQC
+# QC post-trim with FASTQC & MultiQC
 mkdir $OUTDIR/FastQC/trimmed/paired
 fastqc -o $OUTDIR/FastQC/trimmed/ $OUTDIR/trimmedreads/paired/*
 multiqc $OUTDIR/FastQC/trimmed/*.zip
