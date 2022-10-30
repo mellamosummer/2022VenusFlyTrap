@@ -132,4 +132,4 @@ OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
 mkdir $OUTDIR/sleuth
 
 source activate R
-R --no-save < /home/srb67793/2022VenusFlyTrap/scripts/Script/sleuth.R
+R --no-save < /home/srb67793/2022VenusFlyTrap/scripts/Cleaned_Workflow/sleuth.R
