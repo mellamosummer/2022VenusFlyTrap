@@ -135,4 +135,4 @@ multiqc $OUTDIR/FastQC/pretrim/*.zip -o $OUTDIR/FastQC/pretrim/
 # mkdir $OUTDIR/sleuth
 
 source activate R
-R --no-save < /home/srb67793/2022VenusFlyTrap/scripts/sleuth.R
+R --no-save < /home/srb67793/2022VenusFlyTrap/scripts/Script/sleuth.R
