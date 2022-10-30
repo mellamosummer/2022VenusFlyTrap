@@ -124,5 +124,5 @@ module load kallisto/0.46.1-foss-2019b
 # mkdir $OUTDIR/kallisto/quant
 cat $OUTDIR/trimmedreads/paired/librarynames.txt | while read i; do
   kallisto quant -i $OUTDIR/kallisto/VFT.idx -o $OUTDIR/kallisto/quant -b 100 \
-  $OUTDIR/trimmedreads/${i}_RNAseq*
+  $OUTDIR/trimmedreads/paired/${i}_RNAseq*
 done
