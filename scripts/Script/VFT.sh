@@ -22,14 +22,11 @@
 ##################################
 
 #THIS SCRIPT:
-#1) TRIMS VFT ILLUMINA SHORT READS --
-#2) QC'S VFT ILLUMINA SHORT READS  --
-#3) MAKE KALLISTO INDEX  --
-#4) QUANTIFIES TRANSCRIPT ABUNDANCE WITH KALLISTO QUANT -
-
-# CODING QUESTIONS:
-
-# RESEARCH QUESTIONS:
+#1) TRIMS VFT ILLUMINA SHORT READS WITH TRIMMMOMATIC -- DONE
+#2) QC'S VFT ILLUMINA SHORT READS WITH FASTQC & MULTIQC -- DONE
+#3) MAKES INDEX WITH KALLISTO INDEX -- DONE
+#4) QUANTIFIES TRANSCRIPT ABUNDANCE WITH KALLISTO QUANT - DONE
+#5) DIFFERENTIAL GENEEXPRESSION ANALYSIS WITH SLEUTH
 
 ##################################
 # SET UP
@@ -66,8 +63,8 @@ OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
 #  LOAD MODULES
 ##################################
 
-module load FastQC/0.11.9-Java-11
-module load MultiQC/1.8-foss-2019b-Python-3.7.4
+# module load FastQC/0.11.9-Java-11
+# module load MultiQC/1.8-foss-2019b-Python-3.7.4
 # module load Trimmomatic/0.39-Java-1.8.0_144
 # module load kallisto/0.46.1-foss-2019b
 
@@ -78,8 +75,8 @@ module load MultiQC/1.8-foss-2019b-Python-3.7.4
 #QC pre-trim with FASTQC & MultiQC
 # mkdir $OUTDIR/FastQC
 # mkdir $OUTDIR/FastQC/pretrim
-fastqc -o $OUTDIR/FastQC/pretrim/ $OUTDIR/rawreads/*
-multiqc $OUTDIR/FastQC/pretrim/*.zip -o $OUTDIR/FastQC/pretrim/
+# fastqc -o $OUTDIR/FastQC/pretrim/ $OUTDIR/rawreads/*
+# multiqc $OUTDIR/FastQC/pretrim/*.zip -o $OUTDIR/FastQC/pretrim/
 
 
 # mkdir $OUTDIR/trimmedreads
