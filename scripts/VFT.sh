@@ -66,10 +66,10 @@ OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
 #  LOAD MODULES
 ##################################
 
-module load FastQC/0.11.9-Java-11
-module load MultiQC/1.8-foss-2019b-Python-3.7.4
+# module load FastQC/0.11.9-Java-11
+# module load MultiQC/1.8-foss-2019b-Python-3.7.4
 # module load Trimmomatic/0.39-Java-1.8.0_144
-# module load kallisto/0.46.1-foss-2019b
+module load kallisto/0.46.1-foss-2019b
 
 ##################################
 # 1) TRIMS VFT READS (more than 12 hrs)
@@ -105,9 +105,9 @@ module load MultiQC/1.8-foss-2019b-Python-3.7.4
 ####################################################################
 
 # QC post-trim with FASTQC & MultiQC
-mkdir $OUTDIR/FastQC/trimmed
-fastqc -o $OUTDIR/FastQC/trimmed $OUTDIR/trimmedreads/paired/*
-multiqc $OUTDIR/FastQC/trimmed/*.zip
+# mkdir $OUTDIR/FastQC/trimmed
+# fastqc -o $OUTDIR/FastQC/trimmed $OUTDIR/trimmedreads/paired/*
+# multiqc $OUTDIR/FastQC/trimmed/*.zip
 
 ####################################################################
 # 3) MAKE KALLISTO INDEX
@@ -120,10 +120,10 @@ multiqc $OUTDIR/FastQC/trimmed/*.zip
 # 4) KALLISTO QUANT
 ####################################################################
 
-#  ls /$OUTDIR/trimmedreads/paired | awk -F _ '{print $1}' | uniq > librarynames.txt
+ ls /$OUTDIR/trimmedreads/paired | awk -F _ '{print $1}' | uniq > librarynames.txt
 
 # mkdir $OUTDIR/kallisto/quant
-# for i in librarynames.txt; do
-#   kallisto quant -i $OUTDIR/kallisto/VFT.idx -o $OUTDIR/kallisto/quant  -b 100 \
-#   $OUTDIR/trimmedreads/${i}_RNAseq*
-# done
+for i in $OUTDIR/trimmedreads/paired/librarynames.txt; do
+  kallisto quant -i $OUTDIR/kallisto/VFT.idx -o $OUTDIR/kallisto/quant  -b 100 \
+  $OUTDIR/trimmedreads/${i}_RNAseq*
+done
