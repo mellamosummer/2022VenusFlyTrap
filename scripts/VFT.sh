@@ -68,8 +68,8 @@ OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
 
 module load FastQC/0.11.9-Java-11
 module load MultiQC/1.8-foss-2019b-Python-3.7.4
-module load Trimmomatic/0.39-Java-1.8.0_144
-module load kallisto/0.46.1-foss-2019b
+# module load Trimmomatic/0.39-Java-1.8.0_144
+# module load kallisto/0.46.1-foss-2019b
 
 ##################################
 # 1) TRIMS VFT READS (more than 12 hrs)
@@ -95,18 +95,18 @@ module load kallisto/0.46.1-foss-2019b
 #   LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
 # done
 
-mkdir $OUTDIR/trimmedreads/paired
-mkdir $OUTDIR/trimmedreads/unpaired
-mv $OUTDIR/trimmedreads/*_paired.fastq $OUTDIR/trimmedreads/paired
-mv $OUTDIR/trimmedreads/*_unpaired.fastq $OUTDIR/trimmedreads/unpaired
+# mkdir $OUTDIR/trimmedreads/paired
+# mkdir $OUTDIR/trimmedreads/unpaired
+# mv $OUTDIR/trimmedreads/*_paired.fastq $OUTDIR/trimmedreads/paired
+# mv $OUTDIR/trimmedreads/*_unpaired.fastq $OUTDIR/trimmedreads/unpaired
 
 ####################################################################
 # 2) QC'S G MACULATUM ILLUMINA SHORT READS
 ####################################################################
 
 # QC post-trim with FASTQC & MultiQC
-mkdir $OUTDIR/FastQC/trimmed/paired
-fastqc -o $OUTDIR/FastQC/trimmed/ $OUTDIR/trimmedreads/paired/*
+mkdir $OUTDIR/FastQC/trimmed
+fastqc -o $OUTDIR/FastQC/trimmed $OUTDIR/trimmedreads/paired/*
 multiqc $OUTDIR/FastQC/trimmed/*.zip
 
 ####################################################################
