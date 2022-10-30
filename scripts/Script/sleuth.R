@@ -8,9 +8,9 @@ resultdir <- "/scratch/srb67793/2022VenusFlyTrap/sleuth"   # you need to modify 
 setwd(resultdir)
 
 #create a sample-to-condition metadata object
-sample <- c('JMGQ','JMGR','JMGS','JMGT','JMGU','JMGW','JMGX','JMGY','JMGZ','JMHA','JMHB','JMHC','JMHD','JMHE','JMHF','JMHG','JMHH','JMHI','JMHJ','JMHK','JMHL','JMHM','JMHN','JMHP','JMHQ','JMHR','JMHS','JMHT','JMHU','JMHW','JMHX','JMHY','JMHZ','JMIA','JMIB','JMIC','','JMID','JMIE','JMIF','JMIG','JMIH','JMII') #create vector of sample IDs
+sample <- c('JMGQ','JMGR','JMGS','JMGT','JMGU','JMGW','JMGX','JMGY','JMGZ','JMHA','JMHB','JMHC','JMHD','JMHE','JMHF','JMHG','JMHH','JMHI','JMHJ','JMHK','JMHL','JMHM','JMHN','JMHP','JMHQ','JMHR','JMHS','JMHT','JMHU','JMHW','JMHX','JMHY','JMHZ','JMIA','JMIB','JMIC','JMID','JMIE','JMIF','JMIG','JMIH','JMII','JMIJ','JMIK','JMIL','JMIM','JMIN','JMIP') #create vector of sample IDs
 kallisto_dirs <- file.path(datapath, sample) #create vector of paths to kallisto output directories
-condition <- c('LeafTrap','LeafTrap','Petiole','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','Leaf_Trap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','Petiole','Petiole','Petiole') #create vector of treatments in same order as sample IDs
+condition <- c('LeafTrap','LeafTrap','Petiole','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','Leaf_Trap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','Petiole','Petiole','Petiole','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap') #create vector of treatments in same order as sample IDs
 samples_to_conditions <- data.frame(sample,condition) #create dataframe associating treatments to sample IDs
 samples_to_conditions <- dplyr::mutate(samples_to_conditions, path = kallisto_dirs) #add kallisto output paths to dataframe
 
