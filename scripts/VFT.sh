@@ -120,9 +120,15 @@ module load kallisto/0.46.1-foss-2019b
 # 4) KALLISTO QUANT
 ####################################################################
 
- ls $OUTDIR/trimmedreads/paired | awk -F _ '{print $1}' | uniq > $OUTDIR/trimmedreads/paired/librarynames.txt
+# ls $OUTDIR/trimmedreads/paired | awk -F _ '{print $1}' | uniq > $OUTDIR/trimmedreads/paired/librarynames.txt
 # mkdir $OUTDIR/kallisto/quant
 cat $OUTDIR/trimmedreads/paired/librarynames.txt | while read i; do
-  kallisto quant -i $OUTDIR/kallisto/VFT.idx -o $OUTDIR/kallisto/quant -b 100 \
+  kallisto quant -i $OUTDIR/kallisto/VFT.idx -o $OUTDIR/kallisto/quant/${i} -b 100 \
   $OUTDIR/trimmedreads/paired/${i}_RNAseq*
 done
+
+####################################################################
+# 4) SLEUTH
+####################################################################
+
+mkdir $OUTDIR/sleuth
