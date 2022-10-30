@@ -66,10 +66,10 @@ OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
 #  LOAD MODULES
 ##################################
 
-# module load FastQC/0.11.9-Java-11
-# module load MultiQC/1.8-foss-2019b-Python-3.7.4
+module load FastQC/0.11.9-Java-11
+module load MultiQC/1.8-foss-2019b-Python-3.7.4
 # module load Trimmomatic/0.39-Java-1.8.0_144
-module load kallisto/0.46.1-foss-2019b
+# module load kallisto/0.46.1-foss-2019b
 
 ##################################
 # 1) TRIMS VFT READS (more than 12 hrs)
@@ -78,8 +78,9 @@ module load kallisto/0.46.1-foss-2019b
 #QC pre-trim with FASTQC & MultiQC
 # mkdir $OUTDIR/FastQC
 # mkdir $OUTDIR/FastQC/pretrim
-# fastqc -o $OUTDIR/FastQC/pretrim/ $OUTDIR/rawreads/*.fastq
-# multiqc $OUTDIR/FastQC/pretrim/*.zip -o $OUTDIR/FastQC/pretrim/
+fastqc -o $OUTDIR/FastQC/pretrim/ $OUTDIR/rawreads/*
+multiqc $OUTDIR/FastQC/pretrim/*.zip -o $OUTDIR/FastQC/pretrim/
+
 
 # mkdir $OUTDIR/trimmedreads
 # for infile in $OUTDIR/rawreads/*1.fastq; do
@@ -122,13 +123,16 @@ module load kallisto/0.46.1-foss-2019b
 
 # ls $OUTDIR/trimmedreads/paired | awk -F _ '{print $1}' | uniq > $OUTDIR/trimmedreads/paired/librarynames.txt
 # mkdir $OUTDIR/kallisto/quant
-cat $OUTDIR/trimmedreads/paired/librarynames.txt | while read i; do
-  kallisto quant -i $OUTDIR/kallisto/VFT.idx -o $OUTDIR/kallisto/quant/${i} -b 100 \
-  $OUTDIR/trimmedreads/paired/${i}_RNAseq*
-done
-
-####################################################################
-# 4) SLEUTH
-####################################################################
-
-mkdir $OUTDIR/sleuth
+# cat $OUTDIR/trimmedreads/paired/librarynames.txt | while read i; do
+#   kallisto quant -i $OUTDIR/kallisto/VFT.idx -o $OUTDIR/kallisto/quant/${i} -b 100 \
+#   $OUTDIR/trimmedreads/paired/${i}_RNAseq*
+# done
+#
+# ####################################################################
+# # 4) SLEUTH
+# ####################################################################
+#
+# mkdir $OUTDIR/sleuth
+# 
+# source activate R
+# R --no-save < /home/srb67793/2022VenusFlyTrap/scripts/sleuth.R
