@@ -44,7 +44,7 @@ OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
 
 ##################################
 #  DO IN AN INTERACTIVE SESSION
-##################################
+#################################
 ## 3on xfer node
 ## qlogin
 ## scp -r /project/jlmlab/VFT.tar.gz $OUTDIR
@@ -129,7 +129,7 @@ OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
 # # 4) SLEUTH
 # ####################################################################
 #
-# mkdir $OUTDIR/sleuth
+mkdir $OUTDIR/sleuth
 
 source activate R
 R --no-save < /home/srb67793/2022VenusFlyTrap/scripts/Script/sleuth.R
