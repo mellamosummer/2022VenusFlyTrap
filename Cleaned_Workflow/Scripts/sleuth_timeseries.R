@@ -84,16 +84,16 @@ sleuth_significant <- dplyr::filter(sleuth_table, qval <= 0.05)
 write.csv(x = sleuth_significant, file = "SleuthPreyTimeSeriesResults_qval_0.05.csv", row.names = FALSE)
 
 pdf(file="SleuthPreyTimeSeriesQQPlot.pdf")
-plot_qq(so, test = 'reduced:full', test_type = 'lrt', sig_level = 0.05)
+plot_qq(sleuth_object, test = 'reduced:full', test_type = 'lrt', sig_level = 0.05)
 dev.off()
 
 pdf(file="SleuthPreyTimeSeriesTop20HeatMap.pdf")
-plot_transcript_heatmap(so, head(lrt_results, n = 20)$target_id, 'est_counts')
+plot_transcript_heatmap(sleuth_object, head(lrt_results, n = 20)$target_id, 'est_counts')
 dev.off()
 
 pdf(file="SleuthNoPreyTimeSeriesResults.pdf")
 for(i in sleuth_significant$target_id[1:881]) {
-  p1 <- plot_bootstrap(so, i, units = "tpm", color_by = "condition")
+  p1 <- plot_bootstrap(sleuth_object, i, units = "tpm", color_by = "condition")
   print(p1)
 }
 dev.off()
