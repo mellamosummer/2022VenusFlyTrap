@@ -63,25 +63,36 @@ time <- s2c$minutes
 full_design <- model.matrix(formula(~ ns(time, df = 4)))
 full_design
 
-so <- sleuth_prep(s2c, full_model = full_design)
-so <- sleuth_fit(so)
-so <- sleuth_fit(so, formula = ~ 1, fit_name = "reduced")
-so <- sleuth_lrt(so, "reduced", "full")
+# read data into sleuth_object, import bootstrap summaries and TPMs, and perform normalization/filtering steps
+sleuth_object <- sleuth_prep(s2c, full_model = full_design, extra_bootstrap_summary = TRUE, read_bootstrap_tpm=TRUE)
+
+# estimate parameters for the full linear model that includes the conditions as factors
+sleuth_object <- sleuth_fit(sleuth_object, ~condition, 'full')
+
+# estimate parameters for the reduced linear model that assumes equal transcript abundances in both conditions
+sleuth_object <- sleuth_fit(sleuth_object, ~1, 'reduced')
+
+# perform likelihood ratio test to identify transcripts whose fit is significantly better under full model relative to reduced model
+sleuth_object <- sleuth_lrt(sleuth_object, 'reduced', 'full')
+
+# check that sleuth object is OK
+models(sleuth_object)
+
+#summarize the sleuth results for DE genes with q-values < 0.05
+sleuth_table <- sleuth_results(sleuth_object, 'reduced:full', 'lrt', show_all = FALSE)
+sleuth_significant <- dplyr::filter(sleuth_table, qval <= 0.05)
+write.csv(x = sleuth_significant, file = "SleuthPreyTimeSeriesResults_qval_0.05.csv", row.names = FALSE)
 
 pdf(file="SleuthPreyTimeSeriesQQPlot.pdf")
 plot_qq(so, test = 'reduced:full', test_type = 'lrt', sig_level = 0.05)
 dev.off()
-
-lrt_results <- sleuth_results(so, 'reduced:full', test_type = 'lrt')
-sleuth_significant <- dplyr::filter(lrt_results, qval <= 0.05)
-write.csv(x = sleuth_significant, file = "SleuthPreyTimeSeriesResults_qval_0.05.csv", row.names = FALSE)
 
 pdf(file="SleuthPreyTimeSeriesTop20HeatMap.pdf")
 plot_transcript_heatmap(so, head(lrt_results, n = 20)$target_id, 'est_counts')
 dev.off()
 
 pdf(file="SleuthNoPreyTimeSeriesResults.pdf")
-for(i in sleuth_significant$target_id[2:881]) {
+for(i in sleuth_significant$target_id[1:881]) {
   p1 <- plot_bootstrap(so, i, units = "tpm", color_by = "condition")
   print(p1)
 }
