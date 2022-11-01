@@ -67,7 +67,7 @@ full_design
 sleuth_object <- sleuth_prep(s2c, full_model = full_design, extra_bootstrap_summary = TRUE, read_bootstrap_tpm=TRUE)
 
 # estimate parameters for the full linear model that includes the conditions as factors
-sleuth_object <- sleuth_fit(sleuth_object, 'full')
+sleuth_object <- sleuth_fit(sleuth_object)
 
 # estimate parameters for the reduced linear model that assumes equal transcript abundances in both conditions
 sleuth_object <- sleuth_fit(sleuth_object, ~1, 'reduced')
