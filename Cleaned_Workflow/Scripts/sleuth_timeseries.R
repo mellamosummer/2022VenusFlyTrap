@@ -19,7 +19,7 @@ time <- s2c$minutes
 full_design <- model.matrix(formula(~ ns(time, df = 4)))
 full_design
 
-so <- sleuth_prep(s2c, full_model = full_design, target_mapping = t2g)
+so <- sleuth_prep(s2c, full_model = full_design)
 so <- sleuth_fit(so)
 so <- sleuth_fit(so, formula = ~ 1, fit_name = "reduced")
 so <- sleuth_lrt(so, "reduced", "full")
