@@ -82,7 +82,7 @@ dev.off()
 
 pdf(file="SleuthNoPreyTimeSeriesResults.pdf")
 for(i in sleuth_significant$target_id[1:882]) {
-  p1 <- plot_bootstrap(sleuth_object, i, units = "tpm", color_by = "condition")
+  p1 <- plot_bootstrap(so, i, units = "tpm", color_by = "condition")
   print(p1)
 }
 dev.off()
