@@ -37,9 +37,9 @@ setwd(resultdir)
 # dev.off()
 #
 # lrt_results <- sleuth_results(so, 'reduced:full', test_type = 'lrt')
-# table(lrt_results[,"qval"] < 0.05)
-#
-# lrt_results %>% head(n = 20) %>% dplyr::select(target_id, qval)
+# sleuth_significant <- dplyr::filter(lrt_results, qval <= 0.05)
+# write.csv(x = sleuth_significant, file = "SleuthNoPreyTimeSeriesResults_qval_0.05.csv", row.names = FALSE)
+
 # write.csv(x = lrt_results, file = "SleuthNoPreyTimeSeriesResults.csv", row.names = FALSE)
 #
 # pdf(file="SleuthNoPreyTimeSeriesTop20HeatMap.pdf")
@@ -68,10 +68,8 @@ plot_qq(so, test = 'reduced:full', test_type = 'lrt', sig_level = 0.05)
 dev.off()
 
 lrt_results <- sleuth_results(so, 'reduced:full', test_type = 'lrt')
-table(lrt_results[,"qval"] < 0.05)
-
-lrt_results %>% head(n = 20) %>% dplyr::select(target_id, qval)
-write.csv(x = lrt_results, file = "SleuthPreyTimeSeriesResults.csv", row.names = FALSE)
+sleuth_significant <- dplyr::filter(lrt_results, qval <= 0.05)
+write.csv(x = sleuth_significant, file = "SleuthPreyTimeSeriesResults_qval_0.05.csv", row.names = FALSE)
 
 pdf(file="SleuthPreyTimeSeriesTop20HeatMap.pdf")
 plot_transcript_heatmap(so, head(lrt_results, n = 20)$target_id, 'est_counts')
