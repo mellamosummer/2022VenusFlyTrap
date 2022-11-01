@@ -13,7 +13,7 @@ setwd(resultdir)
 
 s2c <- read.csv("/scratch/srb67793/2022VenusFlyTrap/kallisto/VFT_samples_condition_time_path.csv", header = TRUE, stringsAsFactors = FALSE)
 s2c[] <- lapply(s2c, as.character)
-s2c
+s2c$minutes <- as.numeric(s2c$minutes)
 
 time <- s2c$minutes
 full_design <- model.matrix(formula(~ ns(time, df = 4)))
