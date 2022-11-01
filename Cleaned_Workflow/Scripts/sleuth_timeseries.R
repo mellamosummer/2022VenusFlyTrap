@@ -88,7 +88,7 @@ plot_qq(sleuth_object, test = 'reduced:full', test_type = 'lrt', sig_level = 0.0
 dev.off()
 
 pdf(file="SleuthPreyTimeSeriesTop20HeatMap.pdf")
-plot_transcript_heatmap(sleuth_object, head(lrt_results, n = 20)$target_id, 'est_counts')
+plot_transcript_heatmap(sleuth_object, head(sleuth_significant, n = 20)$target_id, 'est_counts')
 dev.off()
 
 pdf(file="SleuthNoPreyTimeSeriesResults.pdf")
