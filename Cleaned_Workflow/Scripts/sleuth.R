@@ -52,9 +52,16 @@ for(i in sleuth_significant$target_id[1:10]) {
 }
 dev.off()
 
+rm(list = ls())
+
 ##################################
 # Prey vs. No Prey 5 min
 ##################################
+
+#set input and output dirs
+datapath <- "/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/"  # you need to modify this line to match the path made by your BASH script
+resultdir <- "/scratch/srb67793/2022VenusFlyTrap/sleuth"   # you need to modify this line to match the path made by your BASH script
+setwd(resultdir)
 
 #create a sample-to-condition metadata object
 sample <- c('JMIK','JMIL','JMIM','JMIN','JMGR','JMGS','JMGT','JMHR')
@@ -101,9 +108,16 @@ for(i in sleuth_significant$target_id[1:10]) {
 }
 dev.off()
 
+rm(list = ls())
+
 ##################################
 # Prey vs. No Prey 60 min
 ##################################
+
+#set input and output dirs
+datapath <- "/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/"  # you need to modify this line to match the path made by your BASH script
+resultdir <- "/scratch/srb67793/2022VenusFlyTrap/sleuth"   # you need to modify this line to match the path made by your BASH script
+setwd(resultdir)
 
 
 #create a sample-to-condition metadata object
@@ -150,10 +164,16 @@ for(i in sleuth_significant$target_id[1:10]) {
 }
 dev.off()
 
+rm(list = ls())
+
 ##################################
 # Prey vs. No Prey 1440 min
 ##################################
 
+#set input and output dirs
+datapath <- "/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/"  # you need to modify this line to match the path made by your BASH script
+resultdir <- "/scratch/srb67793/2022VenusFlyTrap/sleuth"   # you need to modify this line to match the path made by your BASH script
+setwd(resultdir)
 
 #create a sample-to-condition metadata object
 sample <- c('JMHH','JMHI','JMHJ','JMHK','JMHT','JMHU','JMHW','JMHX')
