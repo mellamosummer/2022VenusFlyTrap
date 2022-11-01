@@ -7,12 +7,11 @@ suppressMessages({
 })
 
 #set input and output dirs
-datapath <- "/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/"
 resultdir <- "/scratch/srb67793/2022VenusFlyTrap/sleuth"
 
 setwd(resultdir)
 
-s2c <- read.table("/home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Scripts/VFT_samples_condition_time_path.csv", header = TRUE, stringsAsFactors = FALSE)
+s2c <- read.table("/scratch/srb67793/2022VenusFlyTrap/kallisto/VFT_samples_condition_time_path.csv", header = TRUE, stringsAsFactors = FALSE)
 s2c <- dplyr::mutate(s2c, path = paths)
 s2c[] <- lapply(s2c, as.character)
 s2c
@@ -34,7 +33,6 @@ lrt_results <- sleuth_results(so, 'reduced:full', test_type = 'lrt')
 table(lrt_results[,"qval"] < 0.05)
 
 lrt_results %>% head(n = 20) %>% dplyr::select(target_id, qval)
-
 write.csv(x = lrt_results, file = "SleuthTimeSeriesResults.csv", row.names = FALSE)
 
 pdf(file="SleuthTimeSeriesTop20HeatMap.pdf")
