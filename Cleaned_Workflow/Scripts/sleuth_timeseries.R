@@ -15,36 +15,36 @@ resultdir <- "/scratch/srb67793/2022VenusFlyTrap/sleuth"
 
 setwd(resultdir)
 
-##################################
-# No Prey Time Series
-##################################
-
-s2c <- read.csv("/scratch/srb67793/2022VenusFlyTrap/kallisto/Sleuth_NoPreyTimeSeries_SampleTissueConditionMinPath.csv", header = TRUE, stringsAsFactors = FALSE)
-s2c[] <- lapply(s2c, as.character)
-s2c$minutes <- as.numeric(s2c$minutes)
-
-time <- s2c$minutes
-full_design <- model.matrix(formula(~ ns(time, df = 4)))
-full_design
-
-so <- sleuth_prep(s2c, full_model = full_design)
-so <- sleuth_fit(so)
-so <- sleuth_fit(so, formula = ~ 1, fit_name = "reduced")
-so <- sleuth_lrt(so, "reduced", "full")
-
-pdf(file="SleuthNoPreyTimeSeriesQQPlot.pdf")
-plot_qq(so, test = 'reduced:full', test_type = 'lrt', sig_level = 0.05)
-dev.off()
-
-lrt_results <- sleuth_results(so, 'reduced:full', test_type = 'lrt')
-table(lrt_results[,"qval"] < 0.05)
-
-lrt_results %>% head(n = 20) %>% dplyr::select(target_id, qval)
-write.csv(x = lrt_results, file = "SleuthNoPreyTimeSeriesResults.csv", row.names = FALSE)
-
-pdf(file="SleuthNoPreyTimeSeriesTop20HeatMap.pdf")
-plot_transcript_heatmap(so, head(lrt_results, n = 20)$target_id, 'est_counts')
-dev.off()
+# ##################################
+# # No Prey Time Series
+# ##################################
+#
+# s2c <- read.csv("/scratch/srb67793/2022VenusFlyTrap/kallisto/Sleuth_NoPreyTimeSeries_SampleTissueConditionMinPath.csv", header = TRUE, stringsAsFactors = FALSE)
+# s2c[] <- lapply(s2c, as.character)
+# s2c$minutes <- as.numeric(s2c$minutes)
+#
+# time <- s2c$minutes
+# full_design <- model.matrix(formula(~ ns(time, df = 4)))
+# full_design
+#
+# so <- sleuth_prep(s2c, full_model = full_design)
+# so <- sleuth_fit(so)
+# so <- sleuth_fit(so, formula = ~ 1, fit_name = "reduced")
+# so <- sleuth_lrt(so, "reduced", "full")
+#
+# pdf(file="SleuthNoPreyTimeSeriesQQPlot.pdf")
+# plot_qq(so, test = 'reduced:full', test_type = 'lrt', sig_level = 0.05)
+# dev.off()
+#
+# lrt_results <- sleuth_results(so, 'reduced:full', test_type = 'lrt')
+# table(lrt_results[,"qval"] < 0.05)
+#
+# lrt_results %>% head(n = 20) %>% dplyr::select(target_id, qval)
+# write.csv(x = lrt_results, file = "SleuthNoPreyTimeSeriesResults.csv", row.names = FALSE)
+#
+# pdf(file="SleuthNoPreyTimeSeriesTop20HeatMap.pdf")
+# plot_transcript_heatmap(so, head(lrt_results, n = 20)$target_id, 'est_counts')
+# dev.off()
 
 ##################################
 # Prey Time Series
