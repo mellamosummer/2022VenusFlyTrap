@@ -132,5 +132,9 @@ OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
 # mkdir $OUTDIR/sleuth
 
 source activate R
-R --no-save < /home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Scripts/sleuth_timeseries.R
+# R --no-save < /home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Scripts/sleuth_timeseries.R
 R --no-save < /home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Scripts/sleuth.R
+
+####################################################################
+# 5) BLAST LISTS
+####################################################################
