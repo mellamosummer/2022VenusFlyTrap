@@ -81,7 +81,7 @@ plot_transcript_heatmap(so, head(lrt_results, n = 20)$target_id, 'est_counts')
 dev.off()
 
 pdf(file="SleuthNoPreyTimeSeriesResults.pdf")
-for(i in sleuth_significant$target_id[1:881]) {
+for(i in sleuth_significant$target_id[1:880]) {
   p1 <- plot_bootstrap(so, i, units = "tpm", color_by = "condition")
   print(p1)
 }
