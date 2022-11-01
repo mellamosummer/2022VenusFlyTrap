@@ -91,7 +91,7 @@ pdf(file="SleuthPreyTimeSeriesTop20HeatMap.pdf")
 plot_transcript_heatmap(sleuth_object, head(sleuth_significant, n = 20)$target_id, 'est_counts')
 dev.off()
 
-pdf(file="SleuthNoPreyTimeSeriesResults.pdf")
+pdf(file="SleuthPreyTimeSeriesResults.pdf")
 for(i in sleuth_significant$target_id[1:881]) {
   p1 <- plot_bootstrap(sleuth_object, i, units = "tpm")
   print(p1)
