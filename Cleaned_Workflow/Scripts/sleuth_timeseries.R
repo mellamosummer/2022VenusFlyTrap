@@ -12,7 +12,7 @@ resultdir <- "/scratch/srb67793/2022VenusFlyTrap/sleuth"
 
 setwd(resultdir)
 
-s2c <- read.table("/home/srb67793/2022VenusFlyTrap/VFT_samples_condition_time_path.csv", header = TRUE, stringsAsFactors = FALSE)
+s2c <- read.table("/home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Scripts/VFT_samples_condition_time_path.csv", header = TRUE, stringsAsFactors = FALSE)
 s2c <- dplyr::mutate(s2c, path = paths)
 s2c[] <- lapply(s2c, as.character)
 s2c
