@@ -1,9 +1,14 @@
-suppressMessages({library("edgeR")
-library("maSigPro")
+suppressMessages({library("maSigPro")
 library("tximport")
 library("readr")
 library("tidyr")
 library("dplyr")})
+
+suppressMessages({
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("edgeR")})
 
 #set input and output dirs
 datapath <- "/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/"  # you need to modify this line to match the path made by your BASH script
