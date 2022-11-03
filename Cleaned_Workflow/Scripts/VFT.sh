@@ -131,17 +131,17 @@ OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
 
 # mkdir $OUTDIR/sleuth
 
-source activate R
-# R --no-save < /home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Scripts/sleuth_timeseries.R
-# R --no-save < /home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Scripts/sleuth.R
-source deactivate R
+# source activate R
+# # R --no-save < /home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Scripts/sleuth_timeseries.R
+# # R --no-save < /home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Scripts/sleuth.R
+# source deactivate R
 
 
 # ####################################################################
 # # 4) MASIGPRO
 # ####################################################################
 
-mkdir $OUTDIR/masigpro
+# mkdir $OUTDIR/masigpro
 R --no-save < /home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Scripts/MaSigPro.R
 
 
