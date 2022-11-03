@@ -5,9 +5,9 @@ library("tidyr")
 library("dplyr")})
 
 chooseCRANmirror(ind = 80)
-install.packages("edgeR")
+BiocManager::install("edgeR")
 library("edgeR")
-install.packages("MaSigPro")
+BiocManager::install("maSigPro")
 library("MaSigPro")
 
 #set input and output dirs
