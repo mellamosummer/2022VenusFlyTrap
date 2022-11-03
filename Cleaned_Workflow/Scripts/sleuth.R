@@ -16,6 +16,7 @@ sample <- c('JMGQ','JMGR','JMGS','JMGT','JMGU','JMGW','JMGX','JMGY','JMGZ','JMHA
 
 #create vector of sample IDs
 kallisto_dirs <- file.path(datapath, sample) #create vector of paths to kallisto output directories
+
 condition <- c('LeafTrap','LeafTrap','Petiole','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','Petiole','Petiole','Petiole','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap','LeafTrap')
 
  #create vector of treatments in same order as sample IDs
