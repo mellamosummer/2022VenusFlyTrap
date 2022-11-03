@@ -141,7 +141,7 @@ source activate R
 # ####################################################################
 
 mkdir $OUTDIR/masigpro
-R --no-save < /home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Scripts/masigpro.R
+R --no-save < /home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Scripts/MaSigPro.R
 
 
 ####################################################################
