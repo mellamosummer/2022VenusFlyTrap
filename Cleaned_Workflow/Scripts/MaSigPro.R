@@ -5,12 +5,10 @@ library("tidyr")
 library("dplyr")})
 
 chooseCRANmirror(ind = 80)
-
-suppressMessages({
 install.packages("edgeR")
-install.packages("MaSigPro")
 library("edgeR")
-library("MaSigPro")})
+install.packages("MaSigPro")
+library("MaSigPro")
 
 #set input and output dirs
 datapath <- "/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/"  # you need to modify this line to match the path made by your BASH script
