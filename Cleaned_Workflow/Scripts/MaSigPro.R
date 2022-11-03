@@ -1,14 +1,19 @@
-suppressMessages({
+chooseCRANmirror(ind = 80)
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("edgeR")
+
+install.packages("tximport")
+install.packages("readr")
+install.packages("tidyr")
+install.packages("dplyr")
+
 library("tximport")
 library("readr")
 library("tidyr")
-library("dplyr")})
-
-chooseCRANmirror(ind = 80)
-BiocManager::install("edgeR")
-library("edgeR")
-BiocManager::install("maSigPro")
-library("MaSigPro")
+library("dplyr")
 
 #set input and output dirs
 datapath <- "/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/"  # you need to modify this line to match the path made by your BASH script
