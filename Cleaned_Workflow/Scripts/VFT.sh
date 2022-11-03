@@ -134,6 +134,7 @@ OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
 source activate R
 # R --no-save < /home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Scripts/sleuth_timeseries.R
 # R --no-save < /home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Scripts/sleuth.R
+source deactivate R
 
 
 # ####################################################################
