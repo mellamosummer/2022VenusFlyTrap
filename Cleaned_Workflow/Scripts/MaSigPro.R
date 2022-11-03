@@ -4,6 +4,8 @@ library("readr")
 library("tidyr")
 library("dplyr")})
 
+chooseCRANmirror(ind = 80)
+
 suppressMessages({
 install.packages("edgeR")
 install.packages("MaSigPro")
