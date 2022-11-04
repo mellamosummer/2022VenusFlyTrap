@@ -180,7 +180,7 @@ design$groups.vector
 #using the negative binomial options in masigpro, calculate polynomial regressions for each gene
 # p.vector generates list of FDR corrected significant genes
 NBp<-p.vector(normdm, design, counts=TRUE, min.obs=0) #Global regression step: 18926 genes total -> 8577 genes
-#T.fit selects the best regression model for each gene using stepwise regression.
+#T.fit selects the best regression model for each gene using stepwise regression
 NBt<-T.fit(NBp) #fits 8577 genes, 1463 with influential data
 
 #remove influential genes
@@ -207,8 +207,28 @@ write.csv(x = sigs, file = "MaSigProPreySignificantGenes.csv")
 #  CLUSTER VISUALIZATION
 ##################################
 
+pdf(file="MaSigProPreySeriesCluster3.pdf")
+see.genes(sigs$sig.genes, k = 3)
+dev.off()
+
+pdf(file="MaSigProPreySeriesCluster4.pdf")
+see.genes(sigs$sig.genes, k = 4)
+dev.off()
+
+pdf(file="MaSigProPreySeriesCluster5.pdf")
+see.genes(sigs$sig.genes, k = 5)
+dev.off()
+
 pdf(file="MaSigProPreySeriesCluster6.pdf")
 see.genes(sigs$sig.genes, k = 6)
+dev.off()
+
+pdf(file="MaSigProPreySeriesCluster7.pdf")
+see.genes(sigs$sig.genes, k = 7)
+dev.off()
+
+pdf(file="MaSigProPreySeriesCluster8.pdf")
+see.genes(sigs$sig.genes, k = 8)
 dev.off()
 
 MaSigProPreySigProfiles<-sigs$sig.genes$sig.profiles
@@ -380,13 +400,14 @@ dev.off()
 sigs <- get.siggenes(NBt,rsq=0.6, vars="all")
 
 ##################################
-#  CLUSTER VISUALIZATION
+#  CLUSTER VISUALIZATION & CSVs
 ##################################
 
 pdf(file="MaSigNoProPreySeriesCluster2.pdf")
 see.genes(sigs$sig.genes, k = 2)
 dev.off()
 
+#save gene lists
 MaSigProNoPreySigProfiles<-sigs$sig.genes$sig.profiles
 write.csv(x = MaSigProNoPreySigProfiles, file = "MaSigProNoPreySigProfiles.csv")
 MaSigProNoPreySigPValues<-sigs$sig.genes$sig.pvalues
@@ -408,3 +429,207 @@ cluster2 <- names(which(k2vis$cut==2)) #434 genes
 #make cluster csv's
 write.csv(x = cluster1, file = "MaSigProNoPreyCluster1.csv")
 write.csv(x = cluster2, file = "MaSigProNoPreyCluster2.csv")
+
+##################################
+#  SHARED TIME POINTS ANALYSIS
+##################################
+
+##################################
+#  BUILD COUNTS MATRIX
+##################################
+
+#Create a text file with the names of the Kallisto folders and assign as "sample"
+sample <-c('JMGR','JMGT','JMHR','JMHS','JMGQ','JMHY','JMHZ','JMIA','JMHT','JMHU','JMHW','JMHX','JMIK','JMIL','JMIM','JMIN','JMIP','JMGU','JMGW','JMGX','JMHH','JMHI','JMHJ','JMHK')
+
+#Create file path for abundance.tsv file in each of the folders that are specified in "samples"
+files <- file.path(datapath, sample,"abundance.tsv")
+
+#pull info from gff
+txdb<- makeTxDbFromGFF("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Dionaea_muscipula.gff")
+seqinfo(txdb)
+genes(txdb)
+k <- keys(txdb, keytype = "TXNAME")
+tx2gene <- AnnotationDbi::select(txdb, k, "GENEID", "TXNAME")
+head(tx2gene)
+tail(tx2gene)
+tx2genedm <- as.vector(tx2gene)
+head (tx2genedm)
+
+#extracts counts data and builds matrix with geneID and counts
+txi <- tximport(files, type="kallisto", tx2gene = tx2genedm, txOut = TRUE, geneIdCol =
+                  TRUE, abundanceCol = FALSE, countsCol = TRUE)
+head(txi)
+
+#create variable with just the counts
+counts <- txi$counts
+
+#rename "sample1", "sample2", and so on to thea actual names of the samples
+colnames(counts) <- c('LT_NP_Time5_1',
+'LT_NP_Time5_2',
+'LT_NP_Time5_3',
+'LT_NP_Time5_4',
+'LT_NP_Time60_1',
+'LT_NP_Time60_2',
+'LT_NP_Time60_3',
+'LT_NP_Time60_4',
+'LT_NP_Time1440_1',
+'LT_NP_Time1440_2',
+'LT_NP_Time1440_3',
+'LT_NP_Time1440_4',
+'LT_P_Time5_1',
+'LT_P_Time5_2',
+'LT_P_Time5_3',
+'LT_P_Time5_4',
+'LT_P_Time60_1',
+'LT_P_Time60_2',
+'LT_P_Time60_3',
+'LT_P_Time60_4',
+'LT_P_Time1440_1',
+'LT_P_Time1440_2',
+'LT_P_Time1440_3',
+'LT_P_Time1440_4')
+
+
+#now that we have a counts matrix we will normalize the counts to TMM using EdgeR
+#first assign groups
+groups<-c('LT_NP_Time5_1',
+'LT_NP_Time5_2',
+'LT_NP_Time5_3',
+'LT_NP_Time5_4',
+'LT_NP_Time60_1',
+'LT_NP_Time60_2',
+'LT_NP_Time60_3',
+'LT_NP_Time60_4',
+'LT_NP_Time1440_1',
+'LT_NP_Time1440_2',
+'LT_NP_Time1440_3',
+'LT_NP_Time1440_4',
+'LT_P_Time5_1',
+'LT_P_Time5_2',
+'LT_P_Time5_3',
+'LT_P_Time5_4',
+'LT_P_Time60_1',
+'LT_P_Time60_2',
+'LT_P_Time60_3',
+'LT_P_Time60_4',
+'LT_P_Time1440_1',
+'LT_P_Time1440_2',
+'LT_P_Time1440_3',
+'LT_P_Time1440_4')
+
+##################################
+#  NORMALIZE COUNTS MATRIX
+##################################
+
+#"Creates a DGEList object from a table of counts, group indicator for each column"
+ddm<-DGEList(counts, group=groups)
+
+#"Calculate scaling factors to convert raw library sizes into effective library sizes"
+ddm<-calcNormFactors(ddm, method="TMM")
+
+#"Compute counts per million (CPM)"
+normdm<-cpm(ddm, normalize.lib.sizes=TRUE)
+
+##################################
+#  PLOT MDS OF SAMPLES TO QC
+##################################
+
+#"Plot samples on a two-dimensional scatterplot so that distances on the plot approximate the typical log2 fold changes between the samples"
+#to identify outliers
+pdf(file="MaSigProSharedTimePointSeriesMDS.pdf")
+plotMDS(normdm, labels=groups)
+dev.off()
+
+#Removes genes that have all zero read counts
+normdm <- normdm[rowSums(normdm)!=0, ]
+
+##################################
+#  MAKE MASIGPRO E. DESIGN
+##################################
+
+#experimental design
+Time <- rep(c(5,60,1440,5,60,1440), each = 4)
+Replicate <- rep(c(1:6), each = 4)
+Prey <- rep(c(0,1), each = 12)
+NoPrey <- rep(c(1,0), each = 12)
+edesign.VFT <- cbind(Time,Replicate,Prey,NoPrey)
+edesign.VFT <- as.data.frame(edesign.VFT)
+rownames(edesign.VFT) <- groups
+
+#make exp. design for masigpro
+design <- make.design.matrix(edesign.VFT, degree = 2)
+design$groups.vector
+
+##################################
+#  RUN TIME SERIES ANALYSIS
+##################################
+
+#using the negative binomial options in masigpro, calculate polynomial regressions for each gene
+NBp<-p.vector(normdm, design, counts=TRUE, min.obs=0) #Global regression step: 18815 genes total ->  6340 genes
+NBt<-T.fit(NBp) #1304 genes with influential data
+
+#remove influential genes
+influential<-NBt$influ.info
+inf.genenames<-colnames(influential)
+normdm<-normdm[!rownames(normdm) %in% inf.genenames, ]
+
+#redo regression with influential genes removed
+NBp<-p.vector(normdm, design, counts=TRUE) #Global regression step: 17511 genes -> 4764 genes
+NBt<-T.fit(NBp)
+
+#plot within sum of squares to determine cluster #
+wss<-(nrow(NBp$SELEC)-1)*sum(apply(NBp$SELEC,2,var))
+pdf(file="MaSigProWSSSharedTimePointClusterRange.pdf")
+for (i in 2:15) wss[i]<- sum(kmeans(NBp$SELEC, centers=i, iter.max=20)$withinss)
+plot(1:15, wss, type="b")
+dev.off()
+
+#get list of significant genes
+sigs <- get.siggenes(NBt,rsq=0.6, vars="all")
+
+##################################
+#  CLUSTER VISUALIZATION & CSVs
+##################################
+
+pdf(file="MaSigSharedTimePointCluster2.pdf")
+see.genes(sigs$sig.genes, k = 2)
+dev.off()
+
+pdf(file="MaSigSharedTimePointCluster3.pdf")
+see.genes(sigs$sig.genes, k = 3)
+dev.off()
+
+pdf(file="MaSigSharedTimePointCluster4.pdf")
+see.genes(sigs$sig.genes, k = 4)
+dev.off()
+
+pdf(file="MaSigSharedTimePointCluster5.pdf")
+see.genes(sigs$sig.genes, k = 5)
+dev.off()
+
+pdf(file="MaSigSharedTimePointCluster6.pdf")
+see.genes(sigs$sig.genes, k = 6)
+dev.off()
+
+#save gene lists
+MaSigSharedTimePointProfiles<-sigs$sig.genes$sig.profiles
+write.csv(x = MaSigSharedTimePointProfiles, file = "MaSigSharedTimePointProfiles.csv")
+MaSigSharedTimePointPValues<-sigs$sig.genes$sig.pvalues
+write.csv(x = MaSigSharedTimePointPValues, file = "MaSigSharedTimePointPValues.csv")
+MaSigSharedTimePointCoefficients<-sigs$sig.genes$coefficients
+write.csv(x = MaSigSharedTimePointCoefficients, file = "MaSigSharedTimePointCoefficients.csv")
+
+
+##################################
+#  CLUSTER OUTPUT
+##################################
+
+k2vis<- see.genes(sigs$sig.genes, k = 2)
+
+#get genes in each cluster
+cluster1 <- names(which(k2vis$cut==1)) #279 genes
+cluster2 <- names(which(k2vis$cut==2)) #434 genes
+
+#make cluster csv's
+write.csv(x = cluster1, file = "MaSigSharedTimePointProfilesCluster1.csv")
+write.csv(x = cluster2, file = "MaSigSharedTimePointProfilesCluster2.csv")

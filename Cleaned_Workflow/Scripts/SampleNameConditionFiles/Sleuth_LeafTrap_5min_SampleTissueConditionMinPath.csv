@@ -1,0 +1,9 @@
+﻿sample,tissue,condition,minutes,path
+JMGR,LeafTrap,NoPrey,5,/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/JMGR
+JMGT,LeafTrap,NoPrey,5,/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/JMGT
+JMHR,LeafTrap,NoPrey,5,/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/JMHR
+JMHS,LeafTrap,NoPrey,5,/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/JMHS
+JMIK,LeafTrap,Prey,5,/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/JMHK
+JMIL,LeafTrap,Prey,5,/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/JMHL
+JMIM,LeafTrap,Prey,5,/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/JMHM
+JMIN,LeafTrap,Prey,5,/scratch/srb67793/2022VenusFlyTrap/kallisto/quant/JMHN
