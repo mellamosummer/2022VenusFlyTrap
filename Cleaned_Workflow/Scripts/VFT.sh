@@ -2,7 +2,7 @@
 #SBATCH --job-name=VFT                                    # Job name
 #SBATCH --partition=batch                                 # Partition (queue) name
 #SBATCH --ntasks=1			                                  # Single task job                           #
-#SBATCH --mem=3                                       # Total memory for job
+#SBATCH --mem=100gb                                      # Total memory for job
 #SBATCH --time=24:00:00  		                              # Time limit hrs:min:sec
 #SBATCH --output="/home/srb67793/2022VenusFlyTrap/log.%j" # Location of standard output and error log files
 #SBATCH --mail-user=srb67793@uga.edu                    # Where to send mail
@@ -148,7 +148,7 @@ OUTDIR="/scratch/srb67793/2022VenusFlyTrap"
 # 5) BLAST LISTS
 ####################################################################
 
-#maketairdb
+
 ml BLAST+/2.12.0-gompi-2020b
 ml HpcGridRunner/1.0.2
 # ml seqkit/0.16.1
@@ -157,12 +157,15 @@ ml HpcGridRunner/1.0.2
 # mkdir $OUTDIR/BLAST/db
 # mkdir $OUTDIR/BLAST/DmProteinsBLAST
 
+#maketairdb
 # curl -s https://www.arabidopsis.org/download_files/Proteins/Araport11_protein_lists/Araport11_pep_20220914.gz | gunzip -c > $OUTDIR/BLAST/db/Araport11_pep_20220914
 #
 # makeblastdb -in $OUTDIR/BLAST/db/Araport11_pep_20220914 -parse_seqids -blastdb_version 5 -title "db_Araport11_pep_20220914" -dbtype prot
-#
+
+#translate transcripts to proteins
 # seqkit translate $OUTDIR/VFT/Dm_transcripts.fa > $OUTDIR/BLAST/Dm_proteins.fa
 
+#blast Dmproteins file 
 hpc_FASTA_GridRunner.pl --grid_conf=$HPCGR_CONF_DIR/sapelo_1c_3g.conf \
 --cmd_template "blastp \
 -query __QUERY_FILE__ \
@@ -174,3 +177,15 @@ hpc_FASTA_GridRunner.pl --grid_conf=$HPCGR_CONF_DIR/sapelo_1c_3g.conf \
 --seqs_per_bin 100 \
 --query_fasta $OUTDIR/BLAST/Dm_proteins.fa \
 --out_dir $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsSwissprot
+
+# hpc_FASTA_GridRunner.pl --grid_conf=$HPCGR_CONF_DIR/sapelo_1c_3g.conf \
+# --cmd_template "blastp \
+# -query __QUERY_FILE__ \
+# -db $OUTDIR/BLAST/db \
+# -max_target_seqs 1 \
+# -max_hsps 1 \
+# -outfmt '6 qseqid sseqid stitle pident length mismatch gapopen qstart qend sstart send evalue bitscore' \
+# -evalue 1e-20 -num_threads 1" \
+# --seqs_per_bin 100 \
+# --query_fasta $OUTDIR/BLAST/Dm_proteins.fa \
+# --out_dir $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsSwissprot
