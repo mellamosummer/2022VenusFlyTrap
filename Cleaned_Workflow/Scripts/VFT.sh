@@ -165,11 +165,11 @@ ml HpcGridRunner/1.0.2
 #translate transcripts to proteins
 # seqkit translate $OUTDIR/VFT/Dm_transcripts.fa > $OUTDIR/BLAST/Dm_proteins.fa
 
-#blast Dmproteins file 
+#blast Dmproteins file
 hpc_FASTA_GridRunner.pl --grid_conf=$HPCGR_CONF_DIR/sapelo_1c_3g.conf \
 --cmd_template "blastp \
 -query __QUERY_FILE__ \
--db /db/ncbiblast/swissprot/03012021 \
+-db /db/ncbiblast/20221102/swissprot \
 -max_target_seqs 1 \
 -max_hsps 1 \
 -outfmt '6 qseqid sseqid stitle pident length mismatch gapopen qstart qend sstart send evalue bitscore' \
