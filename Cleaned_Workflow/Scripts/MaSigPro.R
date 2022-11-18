@@ -58,8 +58,7 @@ tx2genedm <- as.vector(tx2gene)
 head (tx2genedm)
 
 #extracts counts data and builds matrix with geneID and counts
-txi <- tximport(files, type="kallisto", tx2gene = tx2genedm, txOut = TRUE, geneIdCol =
-                  TRUE, abundanceCol = FALSE, countsCol = TRUE)
+txi <- tximport(files, type="kallisto", tx2gene = tx2genedm, txOut = TRUE, geneIdCol = TRUE, abundanceCol = FALSE, countsCol = TRUE)
 head(txi)
 
 #create variable with just the counts
@@ -201,34 +200,13 @@ dev.off()
 
 #get list of significant genes
 sigs <- get.siggenes(NBt,rsq=0.6, vars="all")
-write.csv(x = sigs, file = "MaSigProPreySignificantGenes.csv")
 
 ##################################
 #  CLUSTER VISUALIZATION
 ##################################
 
-pdf(file="MaSigProPreySeriesCluster3.pdf")
-see.genes(sigs$sig.genes, k = 3)
-dev.off()
-
-pdf(file="MaSigProPreySeriesCluster4.pdf")
-see.genes(sigs$sig.genes, k = 4)
-dev.off()
-
 pdf(file="MaSigProPreySeriesCluster5.pdf")
 see.genes(sigs$sig.genes, k = 5)
-dev.off()
-
-pdf(file="MaSigProPreySeriesCluster6.pdf")
-see.genes(sigs$sig.genes, k = 6)
-dev.off()
-
-pdf(file="MaSigProPreySeriesCluster7.pdf")
-see.genes(sigs$sig.genes, k = 7)
-dev.off()
-
-pdf(file="MaSigProPreySeriesCluster8.pdf")
-see.genes(sigs$sig.genes, k = 8)
 dev.off()
 
 MaSigProPreySigProfiles<-sigs$sig.genes$sig.profiles
@@ -243,21 +221,19 @@ write.csv(x = MaSigProPreySigCoefficients, file = "MaSigProPreySigCoefficients.c
 ##################################
 
 #get genes in each cluster
-k6vis<- see.genes(sigs$sig.genes, k = 6)
-cluster1 <- names(which(k6vis$cut==1))
-cluster2 <- names(which(k6vis$cut==2))
-cluster3 <- names(which(k6vis$cut==3))
-cluster4 <- names(which(k6vis$cut==4))
-cluster5 <- names(which(k6vis$cut==5))
-cluster6 <- names(which(k6vis$cut==6))
+k5vis<- see.genes(sigs$sig.genes, k = 5)
+cluster1 <- names(which(k5vis$cut==1))
+cluster2 <- names(which(k5vis$cut==2))
+cluster3 <- names(which(k5vis$cut==3))
+cluster4 <- names(which(k5vis$cut==4))
+cluster5 <- names(which(k5vis$cut==5))
 
 #make cluster csv's
 write.csv(x = cluster1, file = "MaSigProPreyCluster1.csv") #794 genes
-write.csv(x = cluster2, file = "MaSigProPreyCluster2.csv") #393 genes
-write.csv(x = cluster3, file = "MaSigProPreyCluster3.csv") #201 genes
-write.csv(x = cluster4, file = "MaSigProPreyCluster4.csv") #123 genes
-write.csv(x = cluster5, file = "MaSigProPreyCluster5.csv") #140 genes
-write.csv(x = cluster6, file = "MaSigProPreyCluster6.csv") #149 genes
+write.csv(x = cluster2, file = "MaSigProPreyCluster2.csv") #594 genes
+write.csv(x = cluster3, file = "MaSigProPreyCluster3.csv") #123 genes
+write.csv(x = cluster4, file = "MaSigProPreyCluster4.csv") #140 genes
+write.csv(x = cluster5, file = "MaSigProPreyCluster5.csv") #149 genes
 
 ##################################
 #  NO PREY TIME SERIES
@@ -591,22 +567,6 @@ sigs <- get.siggenes(NBt,rsq=0.6, vars="all")
 #  CLUSTER VISUALIZATION & CSVs
 ##################################
 
-pdf(file="MaSigSharedTimePointCluster2.pdf")
-see.genes(sigs$sig.genes, k = 2)
-dev.off()
-
-pdf(file="MaSigSharedTimePointCluster3.pdf")
-see.genes(sigs$sig.genes, k = 3)
-dev.off()
-
-pdf(file="MaSigSharedTimePointCluster4.pdf")
-see.genes(sigs$sig.genes, k = 4)
-dev.off()
-
-pdf(file="MaSigSharedTimePointCluster5.pdf")
-see.genes(sigs$sig.genes, k = 5)
-dev.off()
-
 pdf(file="MaSigSharedTimePointCluster6.pdf")
 see.genes(sigs$sig.genes, k = 6)
 dev.off()
@@ -624,12 +584,20 @@ write.csv(x = MaSigSharedTimePointCoefficients, file = "MaSigSharedTimePointCoef
 #  CLUSTER OUTPUT
 ##################################
 
-k2vis<- see.genes(sigs$sig.genes, k = 2)
+k6vis<- see.genes(sigs$sig.genes, k = 6)
 
 #get genes in each cluster
-cluster1 <- names(which(k2vis$cut==1)) #279 genes
-cluster2 <- names(which(k2vis$cut==2)) #434 genes
+cluster1 <- names(which(k6vis$cut==1)) #278 genes
+cluster2 <- names(which(k6vis$cut==2)) #73 genes
+cluster3 <- names(which(k6vis$cut==3)) #236 genes
+cluster4 <- names(which(k6vis$cut==4)) #189 genes
+cluster5 <- names(which(k6vis$cut==5)) #59 genes
+cluster6 <- names(which(k6vis$cut==6)) #48 genes
 
 #make cluster csv's
-write.csv(x = cluster1, file = "MaSigSharedTimePointProfilesCluster1.csv")
-write.csv(x = cluster2, file = "MaSigSharedTimePointProfilesCluster2.csv")
+write.csv(x = cluster1, file = "MaSigProSharedCluster1.csv")
+write.csv(x = cluster2, file = "MaSigProSharedCluster2.csv")
+write.csv(x = cluster3, file = "MaSigProSharedCluster3.csv")
+write.csv(x = cluster4, file = "MaSigProSharedCluster4.csv")
+write.csv(x = cluster5, file = "MaSigProSharedCluster5.csv")
+write.csv(x = cluster6, file = "MaSigProSharedCluster6.csv")
