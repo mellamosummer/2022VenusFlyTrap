@@ -28,7 +28,7 @@ library("rhdf5")
 ##################################
 
 #set input and output dirs
-datapath <- "/scratch/srb67793/2022VenusFlyTrap/kallisto/quant"  # you need to modify this line to match the path made by your BASH script
+datapath <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/quant"  # you need to modify this line to match the path made by your BASH script
 resultdir <- "/scratch/srb67793/2022VenusFlyTrap/masigpro"   # you need to modify this line to match the path made by your BASH script
 setwd(resultdir)
 
