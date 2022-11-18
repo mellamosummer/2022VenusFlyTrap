@@ -250,8 +250,11 @@ cat $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdb/*/*.OUT > $OUTDIR/BLAST/DmPro
 #
 
 #on local computer#
+#
+# for i in /Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/BLAST/TairBLAST/*.txt; do
+#   base=$(basename ${i} _tairBLAST.txt)
+#   awk '{print $2}' ${i} | cut -c 1-9 > ${base}_ATnames.txt
+# done
 
-for i in /Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/BLAST/TairBLAST/*.txt; do
-  base=$(basename ${i} _tairBLAST.txt)
-  awk '{print $2}' ${i} | cut -c 1-9 > ${base}_ATnames.txt
-done
+#make background set of tair proteins
+# awk '{print $2}' DmProteinsTairdbBLASTconcat.txt | cut -c 1-9 > AllATnames.txt
