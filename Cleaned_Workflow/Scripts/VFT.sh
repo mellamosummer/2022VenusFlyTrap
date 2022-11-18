@@ -181,19 +181,19 @@ ml HpcGridRunner/1.0.2
 #
 # cat $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsSwissprot/*/*.OUT > $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsSwissprotBLASTconcat.txt
 
-hpc_FASTA_GridRunner.pl --grid_conf=$HPCGR_CONF_DIR/sapelo_1c_3g.conf \
---cmd_template "blastp \
--query __QUERY_FILE__ \
--db $OUTDIR/BLAST/db/Araport11_pep_20220914 \
--max_target_seqs 1 \
--max_hsps 1 \
--outfmt '6 qseqid sseqid stitle pident length mismatch gapopen qstart qend sstart send evalue bitscore' \
--evalue 1e-20 -num_threads 1" \
---seqs_per_bin 100 \
---query_fasta $OUTDIR/BLAST/Dm_proteins.fa \
---out_dir $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdb
+# hpc_FASTA_GridRunner.pl --grid_conf=$HPCGR_CONF_DIR/sapelo_1c_3g.conf \
+# --cmd_template "blastp \
+# -query __QUERY_FILE__ \
+# -db $OUTDIR/BLAST/db/Araport11_pep_20220914 \
+# -max_target_seqs 1 \
+# -max_hsps 1 \
+# -outfmt '6 qseqid sseqid stitle pident length mismatch gapopen qstart qend sstart send evalue bitscore' \
+# -evalue 1e-20 -num_threads 1" \
+# --seqs_per_bin 100 \
+# --query_fasta $OUTDIR/BLAST/Dm_proteins.fa \
+# --out_dir $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdb
 
-# cat $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdb/*/*.OUT > $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdbBLASTconcat.txt
+cat $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdb/*/*.OUT > $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdbBLASTconcat.txt
 
 #cleans CSV output into individual files for each cluster with 1 gene name per line for grep BLAST
 
@@ -211,7 +211,7 @@ hpc_FASTA_GridRunner.pl --grid_conf=$HPCGR_CONF_DIR/sapelo_1c_3g.conf \
 # #prey
 #
 # for k in 1 2 3 4 5; do
-#    sed '1d' /home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Results/maSigPro/PreyTimeSeries/MaSigProPreyCluster${k}.csv | awk -F "," '{ print $2}' | tr -d '"' > $OUTDIR/BLAST/MaSigProClusters/PreyTimeSeries/PreyCluster${k}.txt
+#    sed '1d' /home/srb67793/2022VenusFlyTrap/Cleaned_Workflow/Results/maSigPro/PreyTimeSeries/MaSigProPreyCluster${k}.csv |    > $OUTDIR/BLAST/MaSigProClusters/PreyTimeSeries/PreyCluster${k}.txt
 # done
 #
 # #shared time point
@@ -221,7 +221,7 @@ hpc_FASTA_GridRunner.pl --grid_conf=$HPCGR_CONF_DIR/sapelo_1c_3g.conf \
 #
 # mkdir $OUTDIR/BLAST/Results
 #
-# #grep blast
+# #grep blast swissprot
 # for file in $OUTDIR/BLAST/MaSigProClusters/PreyTimeSeries/PreyCluster*; do
 #   base=$(basename ${file} .txt)
 #   grep -f ${file} $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsSwissprotBLASTconcat.txt > $OUTDIR/BLAST/Results/${base}_swissprotBLAST.txt
@@ -236,3 +236,22 @@ hpc_FASTA_GridRunner.pl --grid_conf=$HPCGR_CONF_DIR/sapelo_1c_3g.conf \
 #   base=$(basename ${file} .txt)
 #   grep -f ${file} $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsSwissprotBLASTconcat.txt > $OUTDIR/BLAST/Results/${base}_swissprotBLAST.txt
 # done
+
+#grep blast tairdb
+# for file in $OUTDIR/BLAST/MaSigProClusters/PreyTimeSeries/PreyCluster*; do
+#   base=$(basename ${file} .txt)
+#   grep -f ${file} $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdbBLASTconcat.txt > $OUTDIR/BLAST/Results/${base}_tairBLAST.txt
+# done
+#
+# for file in $OUTDIR/BLAST/MaSigProClusters/BothTimeSeries/SharedCluster*; do
+#   base=$(basename ${file} .txt)
+#   grep -f ${file} $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdbBLASTconcat.txt > $OUTDIR/BLAST/Results/${base}_tairBLAST.txt
+# done
+#
+
+#on local computer#
+
+for i in /Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/BLAST/TairBLAST/*.txt; do
+  base=$(basename ${i} _tairBLAST.txt)
+  awk '{print $2}' ${i} | cut -c 1-9 > ${base}_ATnames.txt
+done
