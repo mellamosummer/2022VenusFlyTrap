@@ -193,7 +193,7 @@ ml HpcGridRunner/1.0.2
 # --query_fasta $OUTDIR/BLAST/Dm_proteins.fa \
 # --out_dir $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdb
 
-cat $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdb/*/*.OUT > $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdbBLASTconcat.txt
+# cat $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdb/*/*.OUT > $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdbBLASTconcat.txt
 
 #cleans CSV output into individual files for each cluster with 1 gene name per line for grep BLAST
 
@@ -248,6 +248,26 @@ cat $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdb/*/*.OUT > $OUTDIR/BLAST/DmPro
 #   grep -f ${file} $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdbBLASTconcat.txt > $OUTDIR/BLAST/Results/${base}_tairBLAST.txt
 # done
 #
+
+#BLAST sleuth LISTS
+
+mkdir $OUTDIR/BLAST/Sleuth
+sed '1d' /scratch/srb67793/2022VenusFlyTrap/sleuth/petioleVstraps_sleuth_q_0.05.csv | awk -F "," '{ print $1}' | tr -d '"' > $OUTDIR/BLAST/Sleuth/SleuthPetiolesVsTraps.txt
+
+sed '1d' /scratch/srb67793/2022VenusFlyTrap/sleuth/SleuthPreyNoPrey60minResults_q_0.05.csv | awk -F "," '{ print $1}' | tr -d '"' > $OUTDIR/BLAST/Sleuth/SleuthPreyNoPrey60min.txt
+
+sed '1d' /scratch/srb67793/2022VenusFlyTrap/sleuth/SleuthPreyNoPrey1440min_q_0.05.csv | awk -F "," '{ print $1}' | tr -d '"' > $OUTDIR/BLAST/Sleuth/SleuthPreyNoPrey1440min.txt
+
+for file in $OUTDIR/BLAST/Sleuth/Sleuth*; do
+  base=$(basename ${file} .txt)
+  grep -f ${file} $OUTDIR/BLAST/DmProteinsBLAST/DmProteinsTairdbBLASTconcat.txt > $OUTDIR/BLAST/Sleuth/${base}_tairBLAST.txt
+done
+
+for i in $OUTDIR/BLAST/Sleuth/*BLAST*; do
+  base=$(basename ${i} _tairBLAST.txt)
+  awk '{print $2}' ${i} | cut -c 1-9 > ${base}_ATnames.txt
+done
+
 
 #on local computer#
 #
