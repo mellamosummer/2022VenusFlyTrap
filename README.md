@@ -1,25 +1,26 @@
 ## 2022VenusFlyTrap
 Venus flytrap RNAseq time series experiment scripts &amp; results
 
-## Kallisto_quant
-- Kallisto abundance files for R analyses
+# Cleaned workflow
 
 ## results
-- Mfuzz Cluster lists
-  - .txt files for each respective cluster
-  - Mfuzz figures
-- Mfuzz BLAST results
-  - tair results -- Arabidopsis hit
-  - swissprot -- contains gene description 
-- Pairwise comparisons (Sleuth lists)
-  - petiole vs. traps with prey
-  - petiole vs. traps without prey
-  - traps w/ prey vs. traps without prey
+- BLAST
+  - MaSigPro Lists
+  - Sleuth Lists
+- maSigPro (time series differential gene expression analysis)
+  - No Prey Time Series
+  - Prey Time Series
+  - Shared Time Series
+- quant (Kallisto abundances of transcripts)
+  - for 48 libraries
+- sleuth (differential gene expression analysis)
+  - prey time series
+  - no prey time series
+  - 1440 minute time point comparison 
+  - for 60 minute time point comparison
 
 ## scripts
-- FASTQC
-- MultiQC
-- Trimmmomatic
-- Kallisto
-- Sleuth
-- MaSigPro & Mfuzz
+- VFT.sh
+- MaSigPro.R
+- sleuth.R
+- sleuth_timeseries.R
