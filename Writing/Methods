@@ -9,3 +9,5 @@ To further explore genes involved in the trap mechanism, time series analysis wa
 Differentially expressed transcripts were translated using seqkit and protein sequences were BLASTed against a custom database of annotated Arabidopsis proteins (Araport11_pep_20220914) and the SwissProt database.
 
 Functional enrichment analysis was conducted using the web-based application, GOrilla, with the arabidopsis protein homologs of the Dionaea muscipula transcriptome as a background set and the Arabidopsis protein homolog of each time point by condition as the target set.
+
+Scripts for analyses can be found at www.github.com/mellamosummer/2022VenusFlyTrap/tree/main/Cleaned_Workflow/Scripts.
