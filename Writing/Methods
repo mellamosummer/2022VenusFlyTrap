@@ -1,22 +1,11 @@
-Read mapping and abundance estimation for transcripts was conducted using Kallisto v (Bray et al., 2016).
+Methods
 
-R software package maSigPro (Conesa et al., 2006; Nueda et al., 2014)
-expression data for patterns across time by fitting each gene’s expression pattern to a polynomial using stepwise regression.
+Trimmomatic was used for quality trimmming and adapter clipping(citations). Sequencing reads were visualized for quality using FASTQC & MultiQC before and after trimming (citations). 
 
-Cross-normalized read counts and a negative binomial distribution for the generalized linear models were used.
+Trimmed reads were pseudo-aligned to the Dionaea muscipula reference transcriptome index then quantified using Kallisto (citation). A principal component analysis (PCA) was generated using the R software package Sleuth to visualize the variance between sample groups and replicates (citation). Kallisto transcript abundances were then used for pair-wise differential gene expression analyses across organs (leaf vs. petiole) and shared time points between treatments (prey vs. no prey treatments at 5 min, 1 hr, & 24 hr).
 
-For each transcript, maSigPro estimated up to a fourth degree polynomial and tested the fit via ANOVA.
+To further explore genes involved in the trap mechanism, time series analysis was performed using maSigPro for both prey (5 min,1 hr, 3 hr,12 hr,24 hr,48 hr, 72 hr) and no prey (0 min, 5 min, 1 hr, 24 hr)conditions (citation). This method assigns differentially expressed genes to statistically significant time profiles. A cluster analysis using k-means clustering approach was used to group differentially expressed genes by similar profiles. Cluster number was determined by visually insepecting profiles for a range of k values.
 
-Transcripts that had significantly time-structured expression were retained while all others were removed from further analysis.
+Differentially expressed transcripts were translated using seqkit and protein sequences were BLASTed against a custom database of annotated Arabidopsis proteins (Araport11_pep_20220914) and the SwissProt database.
 
-In total, _____ transcripts were removed as influential genes.
-
-The remaining transcripts that did show time-dependent expression (n = ) were clustered by fuzzy clustering based on similarity in expression profiles.
-
-An optimal fuzzifier m, a parameter that determines how much clusters can overlap, was calculated in the Mfuzz package (Kumar and Futschik, 2007) of R for each species (m = ).
-
-The number of groups k was determined by choosing a value which minimizes the within-group variance
-
-a k of 8 was used for traps triggered with prey and a k of 2 was used for mechanically triggered traps.
-
-Z-scores of normalized counts were calculated for each gene in each cluster as well as a median cluster expression.
+Functional enrichment analysis was conducted using the web-based application, GOrilla, with the arabidopsis protein homologs of the Dionaea muscipula transcriptome as a background set and the Arabidopsis protein homolog of each time point by condition as the target set.
