@@ -1,0 +1,4 @@
+for i in *             
+do
+jq '.n_processed, .n_pseudoaligned, .p_pseudoaligned' $i/run_info.json > $i/$i.txt
+done
