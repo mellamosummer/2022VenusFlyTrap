@@ -2,9 +2,39 @@ Results
 
 Pair-Wise Differential Expression Analysis
 
+q=0.05
 
 
+Leaf vs. Petioles -- 1623 differentially expressed genes 
 
+
+No DEGS at 5 min -- prey vs. no prey
+
+174 DEGs -- Prey vs. no prey 60 min
+
+151 DEGs -- Prey vs. no prey 1440 min
 
 Time-Structured Gene Expression Profiles
 
+
+Prey -- 5,60,180,720,1440,2880,4320
+18926 genes total -> 8577 genes
+1463 genes with influential data removed
+17463 genes total -> 6924 genes
+
+k=5
+
+cluster1 #794 genes
+cluster2 #594 genes
+cluster3 #123 genes
+cluster4 #140 genes
+cluster5 #149 genes
+
+No Prey -- 0,5,60,1440
+18592 genes total -> 2821 genes
+240 genes with influential data removed
+18352 genes -> 2475 genes
+
+k=2
+cluster1 #279 genes
+cluster2 #434 genes

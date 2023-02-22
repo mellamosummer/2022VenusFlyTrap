@@ -180,10 +180,10 @@ design$groups.vector
 # p.vector generates list of FDR corrected significant genes
 NBp<-p.vector(normdm, design, counts=TRUE, min.obs=0) #Global regression step: 18926 genes total -> 8577 genes
 #T.fit selects the best regression model for each gene using stepwise regression
-NBt<-T.fit(NBp) #fits 8577 genes, 1463 with influential data
+NBt<-T.fit(NBp) #fits 18926 genes total -> 8577 genes
 
 #remove influential genes
-influential<-NBt$influ.info
+influential<-NBt$influ.info #1463 genes
 inf.genenames<-colnames(influential)
 normdm<-normdm[!rownames(normdm) %in% inf.genenames, ]
 
