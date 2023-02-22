@@ -2,28 +2,23 @@ Results
 
 Pair-Wise Differential Expression Analysis
 
-q=0.05
+There were 1623 DEGÕs between all petiole and trap samples.
 
 
-Leaf vs. Petioles -- 1623 differentially expressed genes 
 
 
-No DEGS at 5 min -- prey vs. no prey
-
-174 DEGs -- Prey vs. no prey 60 min
-
-151 DEGs -- Prey vs. no prey 1440 min
+There were 0, 174, and 151 DEGs identified between prey and no prey treatments at 5 min, 1 hr, and 24 hr time points, respectively. 
 
 Time-Structured Gene Expression Profiles
 
 
-Prey -- 5,60,180,720,1440,2880,4320
+Prey -- 5, 60, 180, 720, 1440, 2880, 4320
 18926 genes total -> 8577 genes
 1463 genes with influential data removed
 17463 genes total -> 6924 genes
 
 k=5
-
+Time-structured genes across prey treatment time pint,  744, 594, 123, 140, and 149 genes.
 cluster1 #794 genes
 cluster2 #594 genes
 cluster3 #123 genes
@@ -38,3 +33,4 @@ No Prey -- 0,5,60,1440
 k=2
 cluster1 #279 genes
 cluster2 #434 genes
+

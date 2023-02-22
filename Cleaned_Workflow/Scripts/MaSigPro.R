@@ -268,7 +268,7 @@ head(txi)
 #create variable with just the counts
 counts <- txi$counts
 
-#rename "sample1", "sample2", and so on to thea actual names of the samples
+#rename "sample1", "sample2", and so on to the actual names of the samples
 colnames(counts) <- c('LT_Time0_1',
 'LT_Time0_2',
 'LT_Time0_3',
