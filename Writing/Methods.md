@@ -26,6 +26,7 @@ Scripts and results for these analyses can be found at: www.github.com/mellamosu
 ## Citations ##
 
 Andrews, S. (2010). FastQC: A Quality Control Tool for High Throughput Sequence Data. http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+
 Bairoch, A., & Boeckmann, B. (1994). The SWISS-PROT protein sequence data bank: Current status. Nucleic Acids Research, 22(17), 3578Ð3580.
 
 Berardini, T. Z., Reiser, L., Li, D., Mezheritsky, Y., Muller, R., Strait, E., & Huala, E. (2015). The arabidopsis information resource: Making and mining the Ògold standardÓ annotated reference plant genome: Tair: Making and Mining the ÒGold StandardÓ Plant Genome. Genesis, 53(8), 474Ð485. https://doi.org/10.1002/dvg.22877
