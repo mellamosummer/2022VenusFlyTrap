@@ -2,7 +2,7 @@ Results
 
 Pair-Wise Differential Expression Analysis
 
-There were 1623 DEGÕs between all petiole and trap samples.
+There were 1623 DEG's between all petiole and trap samples.
 
 
 
