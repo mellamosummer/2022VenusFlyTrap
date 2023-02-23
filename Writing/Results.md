@@ -1,6 +1,6 @@
-Results
+## Results ##
 
-Pair-Wise Differential Expression Analysis
+_Pair-Wise Differential Expression Analysis_
 
 There were 1623 DEG's between all petiole and trap samples.
 
@@ -9,7 +9,7 @@ There were 1623 DEG's between all petiole and trap samples.
 
 There were 0, 174, and 151 DEGs identified between prey and no prey treatments at 5 min, 1 hr, and 24 hr time points, respectively. 
 
-Time-Structured Gene Expression Profiles
+_Time-Structured Gene Expression Profiles_
 
 
 Prey -- 5, 60, 180, 720, 1440, 2880, 4320
