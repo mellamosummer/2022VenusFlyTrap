@@ -1,4 +1,4 @@
-##Methods##
+## Methods ##
 
 Trimmomatic v0.39 (Bolger et al., 2014) was used for quality trimming and adapter clipping. Sequencing reads were visualized for quality using FASTQC v0.11.9 (Andrews, 2010) & MultiQC v1.8 (Ewels et al., 2016) before and after trimming.
 
