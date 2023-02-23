@@ -27,12 +27,20 @@ Scripts and results for these analyses can be found at: www.github.com/mellamosu
 
 Andrews, S. (2010). FastQC: A Quality Control Tool for High Throughput Sequence Data. http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 Bairoch, A., & Boeckmann, B. (1994). The SWISS-PROT protein sequence data bank: Current status. Nucleic Acids Research, 22(17), 3578Ð3580.
+
 Berardini, T. Z., Reiser, L., Li, D., Mezheritsky, Y., Muller, R., Strait, E., & Huala, E. (2015). The arabidopsis information resource: Making and mining the Ògold standardÓ annotated reference plant genome: Tair: Making and Mining the ÒGold StandardÓ Plant Genome. Genesis, 53(8), 474Ð485. https://doi.org/10.1002/dvg.22877
+
 Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina sequence data. Bioinformatics, 30(15), 2114Ð2120. https://doi.org/10.1093/bioinformatics/btu170
+
 Bray, N. L., Pimentel, H., Melsted, P., & Pachter, L. (2016). Near-optimal probabilistic RNA-seq quantification. Nature Biotechnology, 34(5), 525Ð527. https://doi.org/10.1038/nbt.3519
+
 Conesa, A., Nueda, M. J., Ferrer, A., & Tal—n, M. (2006). maSigPro: A method to identify significantly differential expression profiles in time-course microarray experiments. Bioinformatics, 22(9), 1096Ð1102. https://doi.org/10.1093/bioinformatics/btl056
+
 Eden, E., Navon, R., Steinfeld, I., Lipson, D., & Yakhini, Z. (2009). GOrilla: A tool for discovery and visualization of enriched GO terms in ranked gene lists. BMC Bioinformatics, 10(1), 48. https://doi.org/10.1186/1471-2105-10-48
+
 Ewels, P., Magnusson, M., Lundin, S., & KŠller, M. (2016). MultiQC: Summarize analysis results for multiple tools and samples in a single report. Bioinformatics, 32(19), 3047Ð3048. https://doi.org/10.1093/bioinformatics/btw354
+
 Pimentel, H., Bray, N. L., Puente, S., Melsted, P., & Pachter, L. (2017). Differential analysis of RNA-seq incorporating quantification uncertainty. Nature Methods, 14(7), 687Ð690. https://doi.org/10.1038/nmeth.4324
+
 Shen, W., Le, S., Li, Y., & Hu, F. (2016). SeqKit: A Cross-Platform and Ultrafast Toolkit for FASTA/Q File Manipulation. PLOS ONE, 11(10), e0163962. https://doi.org/10.1371/journal.pone.0163962
 
