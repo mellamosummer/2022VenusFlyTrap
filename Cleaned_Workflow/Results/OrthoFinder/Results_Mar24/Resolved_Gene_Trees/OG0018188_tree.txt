@@ -1,0 +1,1 @@
+((A_thaliana_proteins_AT5G12040.2:0.157086,P_amilis_proteins_FUN_027855-T2:0.144967)n1:0.084733,(V_vinifera_proteins_VIT_204s0008g01690.3:0,(V_vinifera_proteins_VIT_204s0008g01690.4:0,V_vinifera_proteins_VIT_204s0008g01690.2:0)n3:0)n2:0.084733)n0;

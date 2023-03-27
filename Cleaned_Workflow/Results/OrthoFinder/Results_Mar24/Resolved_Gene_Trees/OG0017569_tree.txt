@@ -1,0 +1,1 @@
+(P_amilis_proteins_FUN_028284-T1:0.583295,((A_coerulea_proteins_Aqcoe5G098000.1.p:0.0730065,A_coerulea_proteins_Aqcoe4G228100.1.p:0.229433)n2:0.0220215,(A_coerulea_proteins_Aqcoe0020s0003.1.p:0.094045,A_coerulea_proteins_Aqcoe3G201600.1.p:0.013973)n3:0.007755)n1:0.583295)n0;

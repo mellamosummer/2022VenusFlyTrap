@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_210s0003g04743.1:0.153168,(V_vinifera_proteins_VIT_210s0003g04811.1:0.130299,(V_vinifera_proteins_VIT_208s0007g00910.1:0.533213,V_vinifera_proteins_VIT_210s0003g04815.1:0.160588)n2:0.012061)n1:0.153168)n0;

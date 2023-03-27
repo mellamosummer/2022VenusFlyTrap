@@ -1,0 +1,1 @@
+((B_vulgaris_proteins_Bevul.9G094500.1.p:0.579457,B_vulgaris_proteins_Bevul.2G170900.1.p:0.231191)n1:0.282602,(D_spatulata_proteins_Ds_00004456-RA:0.33903,(D_spatulata_proteins_Ds_00013066-RA:0.321204,D_spatulata_proteins_Ds_00013626-RA:0.448454)n3:0.27042)n2:0.282602)n0;

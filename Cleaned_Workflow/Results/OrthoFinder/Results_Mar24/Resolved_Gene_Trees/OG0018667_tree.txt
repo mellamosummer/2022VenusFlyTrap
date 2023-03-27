@@ -1,0 +1,1 @@
+(P_amilis_proteins_FUN_038701-T1:0.176005,(((L_sativa_proteins_Lsat_1_v5_gn_3_51220.1:0.270963,L_sativa_proteins_Lsat_1_v5_gn_1_37321.1:0.263824)n3:0.0209836,L_sativa_proteins_Lsat_1_v5_gn_1_37321.3:0.641609)n2:0.341704,S_lycopersicum_proteins_Solyc11g018535.1.1:0.337784)n1:0.176005)n0;

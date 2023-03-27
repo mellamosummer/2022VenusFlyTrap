@@ -1,0 +1,1 @@
+(((((B_vulgaris_proteins_Bevul.9G157900.2.p:1.26011e-06,B_vulgaris_proteins_Bevul.9G157900.1.p:0.00197169)n4:0.00799806,B_vulgaris_proteins_Bevul.9G157900.3.p:0.00195094)n3:0.12475,A_hypochondriacus_proteins_AH001719-RA:0.205238)n2:0.0814528,P_amilis_proteins_FUN_051647-T1:0.261116)n1:0.287815,(A_thaliana_proteins_AT4G34750.1:0,A_thaliana_proteins_AT4G34750.2:0)n5:0.287815)n0;

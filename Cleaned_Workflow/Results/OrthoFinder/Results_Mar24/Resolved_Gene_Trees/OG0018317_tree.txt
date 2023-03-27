@@ -1,0 +1,1 @@
+(D_spatulata_proteins_Ds_00017917-RA:0.479319,(D_muscipula_proteins_Dm_00013831-RA:0.429652,(D_muscipula_proteins_Dm_00015976-RA:0.346928,(D_muscipula_proteins_Dm_00020119-RA:0.135317,D_muscipula_proteins_Dm_00014693-RA:0.104713)n3:0.162955)n2:0.104667)n1:0.479319)n0;

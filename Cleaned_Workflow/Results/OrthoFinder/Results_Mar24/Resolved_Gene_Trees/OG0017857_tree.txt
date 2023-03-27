@@ -1,0 +1,1 @@
+((G_max_proteins_GmISU01.12G195930.1.p:0.0235297,A_thaliana_proteins_ATCG00570.1:0.00256733)n1:0.0453403,(B_vulgaris_proteins_Bevul.7G081300.1.p:0.108492,(A_hypochondriacus_proteins_AH019278-RA:0.0473523,D_spatulata_proteins_Ds_00010236-RA:0.644667)n3:0.0927559)n2:0.0453403)n0;

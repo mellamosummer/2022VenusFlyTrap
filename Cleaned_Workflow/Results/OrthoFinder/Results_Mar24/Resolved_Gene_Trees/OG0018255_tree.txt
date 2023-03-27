@@ -1,0 +1,1 @@
+(G_max_proteins_GmISU01.01G067500.2.p:0.687908,(((B_vulgaris_proteins_Bevul.8G082800.1.p:0.396739,B_vulgaris_proteins_Bevul.2G083700.1.p:0.159568)n3:0.0744466,B_vulgaris_proteins_Bevul.9G018600.1.p:0.0687474)n2:0.111831,B_vulgaris_proteins_Bevul.5G077300.1.p:0.355564)n1:0.687908)n0;

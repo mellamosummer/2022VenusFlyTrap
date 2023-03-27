@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe7G327400.1.p:0.183754,(V_vinifera_proteins_VIT_204s0008g02380.1:0.214093,(A_thaliana_proteins_AT2G24540.1:0.41869,(G_max_proteins_GmISU01.06G070500.1.p:0.16106,G_max_proteins_GmISU01.04G069600.1.p:0.0781336)n3:0.3749)n2:0.0600929)n1:0.183754)n0;

@@ -1,0 +1,1 @@
+(A_thaliana_proteins_AT4G18620.1:0.269571,((P_amilis_proteins_FUN_043490-T1:0.174245,P_amilis_proteins_FUN_043485-T1:0.103023)n2:0.183671,(B_vulgaris_proteins_Bevul.8G005200.1.p:0.251779,A_hypochondriacus_proteins_AH014793-RA:0.399202)n3:0.160137)n1:0.269571)n0;

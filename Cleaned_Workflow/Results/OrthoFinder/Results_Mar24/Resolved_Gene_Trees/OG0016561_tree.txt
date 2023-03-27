@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe1155s0001.1.p:0.0906743,((A_vesiculosa_proteins_Av_00011033-RA:0.317381,(V_vinifera_proteins_VIT_211s0052g00720.1:0.35066,(S_lycopersicum_proteins_Solyc07g017740.3.1:0.255139,S_lycopersicum_proteins_Solyc07g017737.1.1:2.73899e-06)n4:0.336001)n3:0.0517875)n2:0.0790895,D_muscipula_proteins_Dm_00005385-RA:1.18127)n1:0.0906743)n0;

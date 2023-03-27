@@ -1,0 +1,1 @@
+(A_thaliana_proteins_AT3G25280.1:0.173102,(A_coerulea_proteins_Aqcoe3G151900.1.p:0.831313,(A_coerulea_proteins_Aqcoe2G409900.3.p:0.0313273,(A_coerulea_proteins_Aqcoe2G409900.1.p:0.0013455,A_coerulea_proteins_Aqcoe2G409900.2.p:0.0001265)n3:0.0283923)n2:0.269604)n1:0.173102)n0;

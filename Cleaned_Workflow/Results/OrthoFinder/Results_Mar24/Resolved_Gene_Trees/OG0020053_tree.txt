@@ -1,0 +1,1 @@
+((A_vesiculosa_proteins_Av_00015388-RA:0.341396,A_vesiculosa_proteins_Av_00000373-RA:0.218899)n1:0.267234,(D_spatulata_proteins_Ds_00010948-RA:0.806377,D_spatulata_proteins_Ds_00003608-RA:0.557981)n2:0.267234)n0;

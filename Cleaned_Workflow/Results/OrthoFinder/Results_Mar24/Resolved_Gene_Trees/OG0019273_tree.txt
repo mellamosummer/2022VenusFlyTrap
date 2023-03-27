@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe7G235800.1.p:0.341178,(A_hypochondriacus_proteins_AH001591-RA:0.565029,(L_sativa_proteins_Lsat_1_v5_gn_2_73880.3:0.586883,S_lycopersicum_proteins_Solyc08g044340.1.1:0.460173)n2:0.246504)n1:0.341178)n0;

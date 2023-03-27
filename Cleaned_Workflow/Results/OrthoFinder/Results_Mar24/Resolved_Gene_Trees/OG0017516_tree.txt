@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_215s0048g00485.1:0.016129,(V_vinifera_proteins_VIT_215s0048g00495.1:0.0316959,(((V_vinifera_proteins_VIT_217s0000g07135.1:0.0473842,V_vinifera_proteins_VIT_217s0000g08445.1:0.0312888)n4:0.275433,V_vinifera_proteins_VIT_215s0021g00560.1:0.781911)n3:0.267311,V_vinifera_proteins_VIT_205s0049g01465.1:0.106755)n2:0.0420883)n1:0.016129)n0;

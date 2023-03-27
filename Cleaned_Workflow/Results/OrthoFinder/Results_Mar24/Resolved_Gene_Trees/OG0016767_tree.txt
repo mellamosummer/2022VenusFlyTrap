@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_203s0063g00920.1:0.0616164,(A_thaliana_proteins_AT3G19120.1:0.158161,(A_hypochondriacus_proteins_AH017242-RA:0.154963,(D_spatulata_proteins_Ds_00017397-RA:0.215995,(D_muscipula_proteins_Dm_00020160-RA:0.169131,A_vesiculosa_proteins_Av_00005489-RA:0.0806412)n4:0.0588802)n3:0.0287468)n2:0.0507964)n1:0.0616164)n0;

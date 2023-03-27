@@ -1,0 +1,1 @@
+((A_thaliana_proteins_AT2G23320.2:0.824325,A_hypochondriacus_proteins_AH006137-RA:0.149018)n1:0.244002,(V_vinifera_proteins_VIT_202s0154g00210.1:0.113914,V_vinifera_proteins_VIT_200s2547g00010.1:0.420439)n2:0.244002)n0;

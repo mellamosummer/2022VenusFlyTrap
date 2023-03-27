@@ -1,0 +1,1 @@
+((A_coerulea_proteins_Aqcoe7G225700.1.p:0.0810776,A_coerulea_proteins_Aqcoe7G228000.1.p:0.200104)n1:0.0780778,((S_lycopersicum_proteins_Solyc12g036710.2.1:0.954886,S_lycopersicum_proteins_Solyc01g017185.1.1:0.543207)n3:0.0588278,(A_hypochondriacus_proteins_AH023770-RA:0.276877,B_vulgaris_proteins_Bevul.6G177800.1.p:0.573199)n4:0.0151142)n2:0.0780778)n0;

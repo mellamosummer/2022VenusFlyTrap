@@ -1,0 +1,1 @@
+(B_vulgaris_proteins_Bevul.9G025600.2.p:0,(B_vulgaris_proteins_Bevul.9G025600.1.p:0,(B_vulgaris_proteins_Bevul.9G025600.4.p:0,B_vulgaris_proteins_Bevul.9G025600.3.p:0)n2:0)n1:0)n0;

@@ -1,0 +1,1 @@
+((A_coerulea_proteins_Aqcoe1G393700.1.p:0,A_coerulea_proteins_Aqcoe1G393700.2.p:0)n1:0.30642,((B_vulgaris_proteins_Bevul.7G012900.1.p:0.492016,P_amilis_proteins_FUN_003972-T1:0.566616)n3:0.493142,S_lycopersicum_proteins_Solyc09g014950.2.1:0.895545)n2:0.30642)n0;

@@ -1,0 +1,1 @@
+((V_vinifera_proteins_VIT_206s0061g00710.3:0,V_vinifera_proteins_VIT_206s0061g00710.2:0)n1:0.160194,((A_vesiculosa_proteins_Av_00004726-RA:1.30355,D_spatulata_proteins_Ds_00014263-RA:0.305293)n3:0.164881,S_lycopersicum_proteins_Solyc09g008430.3.1:0.470333)n2:0.160194)n0;

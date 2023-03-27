@@ -1,0 +1,1 @@
+((A_coerulea_proteins_Aqcoe3G121200.2.p:0,A_coerulea_proteins_Aqcoe3G121200.1.p:0)n1:0.297048,(L_sativa_proteins_Lsat_1_v5_gn_2_17401.1:0.03361,L_sativa_proteins_Lsat_1_v5_gn_2_17401.2:0.054145)n2:0.297048)n0;

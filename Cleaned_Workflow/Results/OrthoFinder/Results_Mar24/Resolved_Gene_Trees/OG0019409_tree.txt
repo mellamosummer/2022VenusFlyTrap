@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe5G259100.1.p:0.306947,((A_vesiculosa_proteins_Av_00015591-RA:0.320797,A_vesiculosa_proteins_Av_00009106-RA:0.484725)n2:0.336193,P_amilis_proteins_FUN_002752-T1:0.853144)n1:0.306947)n0;

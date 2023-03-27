@@ -1,0 +1,1 @@
+(S_lycopersicum_proteins_Solyc08g068040.3.1:0.197462,(D_muscipula_proteins_Dm_00003337-RA:0.311269,(P_amilis_proteins_FUN_021169-T1:0.339886,A_hypochondriacus_proteins_AH018981-RA:0.278252)n2:0.274285)n1:0.197462)n0;

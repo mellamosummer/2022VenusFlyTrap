@@ -1,0 +1,1 @@
+(G_max_proteins_GmISU01.13G284300.1.p:0.0196253,((G_max_proteins_GmISU01.12G144100.1.p:0,G_max_proteins_GmISU01.12G144100.2.p:0)n2:0.0495855,G_max_proteins_GmISU01.03G051400.2.p:2.53975)n1:0.0196253)n0;

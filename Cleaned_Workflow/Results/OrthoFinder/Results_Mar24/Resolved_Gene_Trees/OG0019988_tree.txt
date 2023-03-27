@@ -1,0 +1,1 @@
+((A_thaliana_proteins_AT5G09300.3:8.04378e-07,A_thaliana_proteins_AT5G09300.4:0.140101)n1:0.110808,(P_amilis_proteins_FUN_038831-T1:0.242793,S_lycopersicum_proteins_Solyc12g055890.2.1:0.217522)n2:0.110808)n0;

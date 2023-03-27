@@ -1,0 +1,1 @@
+(A_thaliana_proteins_AT2G07820.1:0.243337,(D_spatulata_proteins_Ds_00011710-RA:0.677227,(B_vulgaris_proteins_Bevul.4G232200.1.p:0.161723,B_vulgaris_proteins_Bevul.4G232300.1.p:0.172751)n2:0.186427)n1:0.243337)n0;

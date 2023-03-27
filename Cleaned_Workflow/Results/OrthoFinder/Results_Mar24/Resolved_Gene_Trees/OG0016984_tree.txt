@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_203s0017g02230.1:0.34679,((A_vesiculosa_proteins_Av_00022153-RA:0.337647,A_vesiculosa_proteins_Av_00008490-RA:0.500043)n2:0.121251,(L_sativa_proteins_Lsat_1_v5_gn_6_24221.4:0.171704,(L_sativa_proteins_Lsat_1_v5_gn_2_24820.1:0.09291,L_sativa_proteins_Lsat_1_v5_gn_2_24780.3:0.175542)n4:0.0852)n3:0.0387091)n1:0.34679)n0;

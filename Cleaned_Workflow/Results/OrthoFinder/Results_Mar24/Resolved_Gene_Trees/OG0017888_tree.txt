@@ -1,0 +1,1 @@
+(A_thaliana_proteins_AT5G16720.1:0.604078,(((B_vulgaris_proteins_Bevul.2G077800.2.p:0.00073483,B_vulgaris_proteins_Bevul.2G077800.1.p:0.00553617)n3:0.399764,A_hypochondriacus_proteins_AH015558-RA:0.358717)n2:0.167083,P_amilis_proteins_FUN_029058-T1:0.480385)n1:0.604078)n0;

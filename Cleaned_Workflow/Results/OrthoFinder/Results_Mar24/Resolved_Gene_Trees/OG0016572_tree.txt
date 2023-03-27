@@ -1,0 +1,1 @@
+((A_coerulea_proteins_Aqcoe6G081900.1.p:0.106998,A_coerulea_proteins_Aqcoe6G082000.1.p:0.135148)n1:0.0794149,(V_vinifera_proteins_VIT_203s0017g01040.1:0.196448,(B_vulgaris_proteins_Bevul.9G147200.1.p:0.170281,(A_hypochondriacus_proteins_AH002175-RA:0.253675,A_hypochondriacus_proteins_AH002174-RA:0.421386)n4:0.0468207)n3:0.00714776)n2:0.0794149)n0;

@@ -1,0 +1,1 @@
+((A_thaliana_proteins_AT3G20620.1:1.08039,((V_vinifera_proteins_VIT_217s0000g00940.1:0.995187,(V_vinifera_proteins_VIT_219s0027g00320.1:0.295449,V_vinifera_proteins_VIT_219s0014g05306.1:0.29378)n4:0.197076)n3:0.20642,V_vinifera_proteins_VIT_219s0014g05405.1:0.377005)n2:0.0418894)n1:0.0632691,L_sativa_proteins_Lsat_1_v5_gn_7_108460.1:0.867576)n0;

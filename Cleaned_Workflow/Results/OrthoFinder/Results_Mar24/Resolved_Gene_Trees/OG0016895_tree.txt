@@ -1,0 +1,1 @@
+(A_thaliana_proteins_AT1G35540.1:0.0461574,((A_thaliana_proteins_AT1G34310.1:0.0512188,A_thaliana_proteins_AT1G34390.1:0.0418613)n2:0.00411012,(A_thaliana_proteins_AT1G35520.1:0.0443519,(A_thaliana_proteins_AT1G35240.1:0.0479129,A_thaliana_proteins_AT1G34410.1:0.0248881)n4:0.0238816)n3:0.00634813)n1:0.0461574)n0;

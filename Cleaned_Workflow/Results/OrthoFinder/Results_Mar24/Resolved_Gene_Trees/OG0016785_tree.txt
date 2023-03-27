@@ -1,0 +1,1 @@
+(A_hypochondriacus_proteins_AH008406-RA:0.190191,((A_thaliana_proteins_AT5G43160.1:0,A_thaliana_proteins_AT5G43160.2:0)n2:0.484168,(G_max_proteins_GmISU01.06G040700.3.p:0,(G_max_proteins_GmISU01.06G040700.2.p:0,G_max_proteins_GmISU01.06G040700.1.p:0)n4:0)n3:0.494876)n1:0.190191)n0;

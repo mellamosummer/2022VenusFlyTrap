@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe1G188300.1.p:0.270011,(A_hypochondriacus_proteins_AH021298-RA:0.263809,(G_max_proteins_GmISU01.08G089000.1.p:0.0045215,G_max_proteins_GmISU01.08G089000.2.p:0.0262645)n2:0.437007)n1:0.270011)n0;

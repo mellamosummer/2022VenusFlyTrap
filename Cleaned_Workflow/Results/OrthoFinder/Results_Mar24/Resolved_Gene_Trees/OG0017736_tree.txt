@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe7G398000.1.p:0.249092,((D_spatulata_proteins_Ds_00000693-RA:0.122733,D_muscipula_proteins_Dm_00006923-RA:0.257865)n2:0.112378,(B_vulgaris_proteins_Bevul.9G198600.1.p:0.340105,P_amilis_proteins_FUN_016097-T1:0.517233)n3:0.243618)n1:0.249092)n0;

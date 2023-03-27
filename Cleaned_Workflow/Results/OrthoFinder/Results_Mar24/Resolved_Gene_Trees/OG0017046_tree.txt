@@ -1,0 +1,1 @@
+((G_max_proteins_GmISU01.16G092300.1.p:0.182979,(G_max_proteins_GmISU01.14G141500.1.p:0.0748588,G_max_proteins_GmISU01.16G092300.2.p:0.00146519)n2:0.107921)n1:0.0655816,(D_muscipula_proteins_Dm_00008648-RA:0.313378,(D_spatulata_proteins_Ds_00004896-RA:0.31911,D_spatulata_proteins_Ds_00002495-RA:0.0324036)n4:0.703986)n3:0.0655816)n0;

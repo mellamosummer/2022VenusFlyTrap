@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe5G444300.2.p:0.00195175,((A_thaliana_proteins_AT5G53300.3:0.0326803,D_muscipula_proteins_Dm_00019679-RA:0.157107)n2:0.0135157,V_vinifera_proteins_VIT_215s0046g01400.3:0.0142585)n1:0.00195175)n0;
