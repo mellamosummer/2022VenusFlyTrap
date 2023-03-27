@@ -1,0 +1,1 @@
+(P_amilis_proteins_FUN_030119-T1:0.251407,(V_vinifera_proteins_VIT_213s0019g02250.5:0.0254711,(V_vinifera_proteins_VIT_213s0019g02250.4:0.0154187,(V_vinifera_proteins_VIT_213s0019g02250.2:0.151052,V_vinifera_proteins_VIT_213s0019g02250.3:0.0216205):0.0588742):0.0512279):0.251407);

@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_213s0047g00990.1:0.16325,((A_hypochondriacus_proteins_AH010979-RA:0.323513,(P_amilis_proteins_FUN_052720-T1:0.313103,D_muscipula_proteins_Dm_00005640-RA:0.337437):0.0355334):0.0774799,D_spatulata_proteins_Ds_00014753-RA:0.45919):0.16325);

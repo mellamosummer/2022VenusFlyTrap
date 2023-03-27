@@ -1,0 +1,1 @@
+(S_lycopersicum_proteins_Solyc10g049930.1.1:0.400808,(G_max_proteins_GmISU01.01G201450.3.p:0.0175275,(G_max_proteins_GmISU01.01G201450.2.p:0.0152553,G_max_proteins_GmISU01.01G201450.1.p:0.11902):0.0144395):0.400808);

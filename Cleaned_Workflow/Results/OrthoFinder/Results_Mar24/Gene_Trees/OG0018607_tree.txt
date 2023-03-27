@@ -1,0 +1,1 @@
+(S_lycopersicum_proteins_Solyc06g009533.1.1:0.317084,((L_sativa_proteins_Lsat_1_v5_gn_7_62820.3:0.0015675,L_sativa_proteins_Lsat_1_v5_gn_7_62820.1:0.0601395):0.238537,(L_sativa_proteins_Lsat_1_v5_gn_7_62960.1:0.00809025,L_sativa_proteins_Lsat_1_v5_gn_7_62960.2:0.0179918):0.230775):0.317084);

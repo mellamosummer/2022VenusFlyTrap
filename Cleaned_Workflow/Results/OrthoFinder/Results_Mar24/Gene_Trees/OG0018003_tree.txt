@@ -1,0 +1,1 @@
+(A_thaliana_proteins_ATCG01120.1:0.0394614,((P_amilis_proteins_FUN_006910-T1:0.952906,S_lycopersicum_proteins_Solyc02g011815.1.1:0.534794):0.427581,(B_vulgaris_proteins_Bevul.9G098800.1.p:0,B_vulgaris_proteins_Bevul.6G135400.1.p:0):0.127169):0.0394614);

@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe6G282600.1.p:0.181418,((((A_thaliana_proteins_AT3G44716.2:0.0263925,A_thaliana_proteins_AT3G44716.1:0.0423415):0.938044,S_lycopersicum_proteins_Solyc11g066940.2.1:0.651028):0.210756,G_max_proteins_GmISU01.11G150000.1.p:0.585199):0.0518715,V_vinifera_proteins_VIT_206s0061g01370.1:0.302762):0.181418);

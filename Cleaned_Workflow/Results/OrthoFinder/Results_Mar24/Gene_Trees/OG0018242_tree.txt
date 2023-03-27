@@ -1,0 +1,1 @@
+((V_vinifera_proteins_VIT_201s0010g00450.1:0.0776918,V_vinifera_proteins_VIT_201s0026g02520.2:0.207548):0.109333,((D_spatulata_proteins_Ds_00009081-RA:0.609504,A_vesiculosa_proteins_Av_00007546-RA:0.557083):0.134454,D_muscipula_proteins_Dm_00001999-RA:0.424737):0.109333);

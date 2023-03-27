@@ -1,0 +1,1 @@
+(G_max_proteins_GmISU01.15G223800.1.p:0.241322,(G_max_proteins_GmISU01.15G223800.3.p:0,(G_max_proteins_GmISU01.15G223800.5.p:0,G_max_proteins_GmISU01.15G223800.4.p:0):0):0.241322);

@@ -1,0 +1,1 @@
+(A_vesiculosa_proteins_Av_00009615-RA:0.41833,(G_max_proteins_GmISU01.20G166600.1.p:0.244102,(G_max_proteins_GmISU01.20G166600.3.p:0,G_max_proteins_GmISU01.20G166600.2.p:0):0.170075):0.41833);

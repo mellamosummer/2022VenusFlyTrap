@@ -1,0 +1,1 @@
+((A_vesiculosa_proteins_Av_00007136-RA:0.58282,A_vesiculosa_proteins_Av_00009607-RA:0.292456):0.0842616,(P_amilis_proteins_FUN_009678-T1:0.446388,P_amilis_proteins_FUN_042975-T1:0.243848):0.0842616);

@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe7G212600.1.p:0.181245,(D_muscipula_proteins_Dm_00010343-RA:0.588787,(A_vesiculosa_proteins_Av_00023711-RA:0.0544171,A_vesiculosa_proteins_Av_00015205-RA:0.289264):0.0976863):0.181245);

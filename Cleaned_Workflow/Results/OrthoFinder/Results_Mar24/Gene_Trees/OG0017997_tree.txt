@@ -1,0 +1,1 @@
+(((S_lycopersicum_proteins_Solyc10g007107.1.1:0.171874,A_hypochondriacus_proteins_AH000309-RA:0.0453084):0.0294949,D_muscipula_proteins_Dm_00007614-RA:0.208256):0.0454334,(V_vinifera_proteins_VIT_205s0062g00920.1:0.136783,V_vinifera_proteins_VIT_205s0020g00060.1:0.0423836):0.0454334);

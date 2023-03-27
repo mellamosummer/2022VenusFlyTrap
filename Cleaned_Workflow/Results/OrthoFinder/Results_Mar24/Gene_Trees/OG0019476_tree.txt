@@ -1,0 +1,1 @@
+(A_hypochondriacus_proteins_AH018104-RA:0.243547,(P_amilis_proteins_FUN_018371-T3:0.129411,(P_amilis_proteins_FUN_018371-T2:0.0585198,P_amilis_proteins_FUN_018371-T1:7.28265e-07):0.0651257):0.243547);

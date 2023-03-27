@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe2G195800.1.p:0.343723,((A_thaliana_proteins_ATMG01310.1:0,A_thaliana_proteins_AT2G07691.1:0):0.779968,((P_amilis_proteins_FUN_006699-T1:1.21046,P_amilis_proteins_FUN_006735-T1:0.897764):0.0288283,A_vesiculosa_proteins_Av_00015172-RA:1.09165):0.218221):0.343723);

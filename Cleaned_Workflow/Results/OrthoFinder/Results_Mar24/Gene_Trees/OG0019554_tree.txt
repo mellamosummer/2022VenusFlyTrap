@@ -1,0 +1,1 @@
+((A_hypochondriacus_proteins_AH009235-RA:0.404534,A_hypochondriacus_proteins_AH003439-RA:0.0685053):0.112135,(D_spatulata_proteins_Ds_00010864-RA:0.358395,D_spatulata_proteins_Ds_00013672-RA:0.41207):0.112135);

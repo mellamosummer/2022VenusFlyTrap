@@ -1,0 +1,1 @@
+(((L_sativa_proteins_Lsat_1_v5_gn_3_128061.1:0.358976,D_muscipula_proteins_Dm_00015593-RA:1.06422):0.037775,A_hypochondriacus_proteins_AH003684-RA:0.302849):0.285328,(A_coerulea_proteins_Aqcoe6G204600.2.p:0.276383,A_coerulea_proteins_Aqcoe6G204600.1.p:0.147172):0.285328);

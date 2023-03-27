@@ -1,0 +1,1 @@
+(G_max_proteins_GmISU01.16G016950.1.p:0.220641,(P_amilis_proteins_FUN_033547-T1:0.514239,(A_vesiculosa_proteins_Av_00007790-RA:0.0589228,(D_spatulata_proteins_Ds_00006510-RA:0.597673,(A_vesiculosa_proteins_Av_00017016-RA:0.0821351,(A_vesiculosa_proteins_Av_00010866-RA:0,A_vesiculosa_proteins_Av_00022854-RA:0):0.0181559):0.0231065):0.0339303):0.228025):0.220641);

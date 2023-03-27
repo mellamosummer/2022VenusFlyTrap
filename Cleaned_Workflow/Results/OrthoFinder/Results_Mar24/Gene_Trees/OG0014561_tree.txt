@@ -1,0 +1,1 @@
+((A_coerulea_proteins_Aqcoe4G017100.2.p:0,A_coerulea_proteins_Aqcoe4G017100.1.p:0):1.11821,((A_thaliana_proteins_AT4G18070.4:0,(A_thaliana_proteins_AT4G18070.3:0,A_thaliana_proteins_AT4G18070.1:0):0):0.0349555,((A_thaliana_proteins_AT4G18070.2:0,(A_thaliana_proteins_AT4G18070.5:0,A_thaliana_proteins_AT4G18070.6:0):0):0,A_thaliana_proteins_AT4G18070.7:0):0.0002555):1.11821);

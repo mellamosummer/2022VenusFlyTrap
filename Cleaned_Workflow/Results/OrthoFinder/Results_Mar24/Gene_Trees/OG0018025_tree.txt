@@ -1,0 +1,1 @@
+(A_thaliana_proteins_AT2G42960.2:0.177858,(G_max_proteins_GmISU01.02G245700.13.p:0.010486,((G_max_proteins_GmISU01.14G027500.9.p:0,G_max_proteins_GmISU01.14G027500.11.p:0):0,G_max_proteins_GmISU01.14G027500.10.p:0):0.015454):0.177858);

@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_209s0054g01750.1:0.220857,(A_thaliana_proteins_AT1G16730.1:0.540858,((B_vulgaris_proteins_Bevul.8G083000.1.p:0.428013,A_hypochondriacus_proteins_AH014736-RA:0.523365):0.0851635,P_amilis_proteins_FUN_034781-T1:0.357691):0.0733696):0.220857);

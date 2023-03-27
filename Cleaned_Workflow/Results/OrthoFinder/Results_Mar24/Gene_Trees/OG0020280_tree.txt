@@ -1,0 +1,1 @@
+(G_max_proteins_GmISU01.17G226100.2.p:2.5e-07,((G_max_proteins_GmISU01.14G184600.2.p:0.269726,G_max_proteins_GmISU01.14G184600.1.p:3.73404e-07):0.105744,G_max_proteins_GmISU01.17G226100.1.p:5e-07):2.5e-07);

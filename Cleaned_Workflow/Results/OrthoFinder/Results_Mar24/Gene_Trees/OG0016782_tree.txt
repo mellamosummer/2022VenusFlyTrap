@@ -1,0 +1,1 @@
+(G_max_proteins_GmISU01.07G118700.1.p:0.242262,(S_lycopersicum_proteins_Solyc03g113410.2.1:0.425624,(A_hypochondriacus_proteins_AH009542-RA:0.625907,((S_lycopersicum_proteins_Solyc12g042075.1.1:0.615421,A_hypochondriacus_proteins_AH002955-RA:0.259196):0.187053,L_sativa_proteins_Lsat_1_v5_gn_6_46381.1:0.5871):0.164859):0.154528):0.242262);

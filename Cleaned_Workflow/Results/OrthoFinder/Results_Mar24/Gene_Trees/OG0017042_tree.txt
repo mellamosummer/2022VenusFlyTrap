@@ -1,0 +1,1 @@
+((V_vinifera_proteins_VIT_207s0095g00010.1:0.208846,V_vinifera_proteins_VIT_200s0335g00050.1:0.463444):0.179221,((L_sativa_proteins_Lsat_1_v5_gn_4_116441.1:0.354881,L_sativa_proteins_Lsat_1_v5_gn_4_57601.4:0.0627667):0.176106,(D_muscipula_proteins_Dm_00018519-RA:0.667994,D_spatulata_proteins_Ds_00005540-RA:0.548995):0.136683):0.179221);

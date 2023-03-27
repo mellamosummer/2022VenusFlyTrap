@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe4G273900.1.p:0.221596,(V_vinifera_proteins_VIT_204s0069g01120.1:0.294636,(V_vinifera_proteins_VIT_204s0210g00140.1:0.132222,(L_sativa_proteins_Lsat_1_v5_gn_6_8261.2:0.180495,P_amilis_proteins_FUN_012801-T1:0.198379):0.198721):0.122398):0.221596);

@@ -1,0 +1,1 @@
+((S_lycopersicum_proteins_Solyc06g007220.3.1:0,(A_thaliana_proteins_AT3G08520.1:0,(A_thaliana_proteins_AT3G56020.1:0,A_thaliana_proteins_AT1G56045.1:0):0):0):0,(A_thaliana_proteins_AT3G11120.1:0,(S_lycopersicum_proteins_Solyc06g007210.3.1:0,(S_lycopersicum_proteins_Solyc07g066380.3.1:0,A_thaliana_proteins_AT2G40205.1:0):0):0):0);

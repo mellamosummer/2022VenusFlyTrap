@@ -1,0 +1,1 @@
+(A_hypochondriacus_proteins_AH002461-RA:0.441703,(V_vinifera_proteins_VIT_200s1450g00005.1:0.533039,(V_vinifera_proteins_VIT_210s0003g03025.1:0.258323,(V_vinifera_proteins_VIT_207s0005g06590.1:0.0122851,V_vinifera_proteins_VIT_210s0003g03970.1:0.00211788):0.114255):0.131951):0.441703);

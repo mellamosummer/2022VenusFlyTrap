@@ -1,0 +1,1 @@
+((A_thaliana_proteins_ATCG00590.1:0.0245322,A_hypochondriacus_proteins_AH015577-RA:0.0424988):0.0316194,((G_max_proteins_GmISU01.12G195925.1.p:0,G_max_proteins_GmISU01.12G195910.1.p:0):0.124469,S_lycopersicum_proteins_Solyc09g074540.3.1:0.128323):0.0316194);

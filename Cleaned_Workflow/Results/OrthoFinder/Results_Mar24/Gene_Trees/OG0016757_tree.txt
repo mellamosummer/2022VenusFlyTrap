@@ -1,0 +1,1 @@
+(((A_hypochondriacus_proteins_AH014998-RA:0.22655,(A_hypochondriacus_proteins_AH021502-RA:0.277239,B_vulgaris_proteins_Bevul.8G054600.1.p:0.185622):0.0579938):0.195286,P_amilis_proteins_FUN_047127-T1:0.334683):0.268809,(A_thaliana_proteins_AT5G60830.1:0.652825,A_thaliana_proteins_AT5G08141.1:0.68322):0.268809);

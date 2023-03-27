@@ -1,0 +1,1 @@
+(((A_thaliana_proteins_AT2G41390.1:0.0824815,A_thaliana_proteins_AT2G41400.1:0.116414):0.388419,A_thaliana_proteins_AT5G05020.1:0.566542):0.124145,(S_lycopersicum_proteins_Solyc09g072770.1.1:0.933803,S_lycopersicum_proteins_Solyc09g072750.2.1:0.941925):0.124145);

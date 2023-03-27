@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe5G255000.1.p:0.152106,(P_amilis_proteins_FUN_004326-T1:0.291239,(V_vinifera_proteins_VIT_207s0031g01835.2:0,V_vinifera_proteins_VIT_207s0031g01835.1:0):0.169771):0.152106);

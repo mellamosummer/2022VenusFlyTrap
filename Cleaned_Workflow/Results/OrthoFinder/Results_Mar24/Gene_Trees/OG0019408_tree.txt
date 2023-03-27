@@ -1,0 +1,1 @@
+((S_lycopersicum_proteins_Solyc02g086460.3.1:2.07527,B_vulgaris_proteins_Bevul.6G217000.1.p:2.25385):0.830534,(A_coerulea_proteins_Aqcoe5G403800.1.p:0.39451,A_coerulea_proteins_Aqcoe5G403800.2.p:6.32387e-06):0.830534);

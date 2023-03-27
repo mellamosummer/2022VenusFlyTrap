@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe7G196400.1.p:0.18245,(L_sativa_proteins_Lsat_1_v5_gn_8_100120.1:0.581551,((G_max_proteins_GmISU01.13G326800.1.p:0.100333,G_max_proteins_GmISU01.15G004100.2.p:0.114694):0.501063,V_vinifera_proteins_VIT_209s0002g09085.1:0.326915):0.152455):0.18245);

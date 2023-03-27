@@ -1,0 +1,1 @@
+(A_hypochondriacus_proteins_AH008596-RA:0.0837224,(S_lycopersicum_proteins_Solyc11g032225.1.1:0.37431,(L_sativa_proteins_Lsat_1_v5_gn_2_65081.2:0.162432,L_sativa_proteins_Lsat_1_v5_gn_2_65081.1:0.0583388):0.414121):0.0837224);

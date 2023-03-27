@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_214s0006g01425.1:0.308644,(A_thaliana_proteins_AT1G48020.1:0.629464,(G_max_proteins_GmISU01.02G117450.1.p:0.589439,(G_max_proteins_GmISU01.15G178400.1.p:0.0020625,G_max_proteins_GmISU01.15G178500.1.p:0.0009005):0.155834):0.588808):0.308644);

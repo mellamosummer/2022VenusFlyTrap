@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe2G087100.1.p:0.337293,((P_amilis_proteins_FUN_036528-T1:0.795109,(S_lycopersicum_proteins_Solyc03g095870.2.1:0.713398,P_amilis_proteins_FUN_015558-T1:1.10051):0.111398):0.284188,(A_vesiculosa_proteins_Av_00015066-RA:0.307878,D_spatulata_proteins_Ds_00011803-RA:0.276385):0.123642):0.337293);

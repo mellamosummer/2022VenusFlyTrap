@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_207s0185g00080.1:0.266579,((P_amilis_proteins_FUN_027199-T1:0.573622,((B_vulgaris_proteins_Bevul.7G127800.1.p:0.141049,A_hypochondriacus_proteins_AH013093-RA:0.287135):0.064167,P_amilis_proteins_FUN_025003-T1:0.355671):0.0229541):0.136053,(A_vesiculosa_proteins_Av_00009658-RA:0.207602,D_muscipula_proteins_Dm_00010439-RA:0.138771):0.224825):0.266579);

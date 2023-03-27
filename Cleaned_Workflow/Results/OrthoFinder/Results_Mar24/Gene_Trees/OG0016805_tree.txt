@@ -1,0 +1,1 @@
+(A_thaliana_proteins_AT2G46390.1:0.221368,(S_lycopersicum_proteins_Solyc01g097020.3.1:0.596801,(A_hypochondriacus_proteins_AH012641-RA:0.623929,((A_vesiculosa_proteins_Av_00003248-RA:0.550501,A_vesiculosa_proteins_Av_00017430-RA:0.580714):0.104173,D_spatulata_proteins_Ds_00002826-RA:0.652093):0.0732421):0.0295789):0.221368);

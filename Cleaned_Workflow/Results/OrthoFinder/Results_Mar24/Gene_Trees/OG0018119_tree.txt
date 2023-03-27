@@ -1,0 +1,1 @@
+((P_amilis_proteins_FUN_035205-T1:0.418817,(L_sativa_proteins_Lsat_1_v5_gn_7_16080.3:0.78397,L_sativa_proteins_Lsat_1_v5_gn_7_16080.1:2.59526e-06):1.09814):0.274206,(A_thaliana_proteins_AT1G11710.1:0.00434137,A_thaliana_proteins_AT1G11710.2:0.0754076):0.274206);

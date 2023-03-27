@@ -1,0 +1,1 @@
+((((D_muscipula_proteins_Dm_00010089-RA:0.657909,A_vesiculosa_proteins_Av_00003175-RA:0.373371):0.0492527,D_muscipula_proteins_Dm_00014670-RA:0.343454):0.662086,(L_sativa_proteins_Lsat_1_v5_gn_9_76260.1:0.984815,L_sativa_proteins_Lsat_1_v5_gn_6_106340.4:0.717709):0.135367):0.549917,(V_vinifera_proteins_VIT_200s0407g00010.1:0,V_vinifera_proteins_VIT_200s0407g00010.2:0):0.549917);

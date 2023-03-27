@@ -1,0 +1,1 @@
+((B_vulgaris_proteins_Bevul.9G186800.1.p:0.821567,B_vulgaris_proteins_Bevul.5G140600.1.p:0.858012):0.132984,(S_lycopersicum_proteins_Solyc11g021270.1.1:0.0574013,S_lycopersicum_proteins_Solyc02g011840.1.1:0.665655):0.132984);

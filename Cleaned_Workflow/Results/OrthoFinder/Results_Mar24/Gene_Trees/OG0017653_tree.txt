@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe6G080800.1.p:0.0807202,(((D_muscipula_proteins_Dm_00007502-RA:0.230289,B_vulgaris_proteins_Bevul.1G104000.1.p:0.240279):0.0725907,V_vinifera_proteins_VIT_218s0001g06140.1:0.146359):0.0121473,S_lycopersicum_proteins_Solyc04g074400.1.1:0.282446):0.0807202);

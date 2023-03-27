@@ -1,0 +1,1 @@
+(G_max_proteins_GmISU01.11G209200.1.p:0.322799,(((D_spatulata_proteins_Ds_00011590-RA:0.341754,D_muscipula_proteins_Dm_00005689-RA:0.390254):0.140134,(P_amilis_proteins_FUN_050389-T1:0.267558,B_vulgaris_proteins_Bevul.7G189200.1.p:0.221071):0.141655):0.0529901,A_hypochondriacus_proteins_AH013819-RA:0.190225):0.322799);

@@ -1,0 +1,1 @@
+(P_amilis_proteins_FUN_053181-T1:0.827155,(A_thaliana_proteins_AT4G23160.2:2.35825e-06,(A_thaliana_proteins_AT4G23170.1:0.703936,A_thaliana_proteins_AT4G23160.3:0):0.199994):0.827155);

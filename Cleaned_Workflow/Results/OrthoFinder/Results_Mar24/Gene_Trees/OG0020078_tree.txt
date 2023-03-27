@@ -1,0 +1,1 @@
+(B_vulgaris_proteins_Bevul.7G148300.1.p:0.0352389,((B_vulgaris_proteins_Bevul.8G047500.1.p:0.236837,B_vulgaris_proteins_Bevul.8G047400.1.p:0.332984):0.203675,B_vulgaris_proteins_Bevul.7G148400.1.p:0.200176):0.0352389);

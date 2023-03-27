@@ -1,0 +1,1 @@
+((((A_thaliana_proteins_AT3G30820.1:0.511206,A_thaliana_proteins_AT3G44570.1:0.423223):0.204646,A_thaliana_proteins_AT2G14000.1:0.501223):0.337609,A_thaliana_proteins_AT3G44580.1:0.601787):0.156138,(A_hypochondriacus_proteins_AH003295-RA:1.19717,A_hypochondriacus_proteins_AH013667-RA:0.860755):0.156138);

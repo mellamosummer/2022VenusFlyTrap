@@ -1,0 +1,1 @@
+(((G_max_proteins_GmISU01.16G022800.1.p:0,(G_max_proteins_GmISU01.16G022800.4.p:0,G_max_proteins_GmISU01.16G022800.3.p:0):0):0,G_max_proteins_GmISU01.16G022800.2.p:0):0.272021,(S_lycopersicum_proteins_Solyc03g007250.1.1:1.25818e-06,(D_muscipula_proteins_Dm_00014190-RA:0.238835,P_amilis_proteins_FUN_037420-T1:0.208541):0.365071):0.272021);

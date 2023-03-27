@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe0358s0001.1.p:0.345374,((A_thaliana_proteins_AT4G00955.2:0.042879,A_thaliana_proteins_AT4G00955.1:0.004386):0.571194,L_sativa_proteins_Lsat_1_v5_gn_4_154340.1:0.631913):0.345374);

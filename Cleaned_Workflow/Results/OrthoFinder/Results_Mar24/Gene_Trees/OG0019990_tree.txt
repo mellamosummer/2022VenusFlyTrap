@@ -1,0 +1,1 @@
+(G_max_proteins_GmISU01.12G119900.1.p:0.136142,((P_amilis_proteins_FUN_039509-T1:0.273542,S_lycopersicum_proteins_Solyc04g017595.1.1:0.28451):0.533838,A_vesiculosa_proteins_Av_00000696-RA:0.448115):0.136142);

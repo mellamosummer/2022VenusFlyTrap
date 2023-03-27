@@ -1,0 +1,1 @@
+((P_amilis_proteins_FUN_016767-T1:1.11889,A_vesiculosa_proteins_Av_00012804-RA:0.663136):0.158005,(D_spatulata_proteins_Ds_00002593-RA:0.380692,(P_amilis_proteins_FUN_008401-T1:0.120943,((P_amilis_proteins_FUN_021016-T3:3.11651e-06,P_amilis_proteins_FUN_021016-T2:0.112316):0.00576482,P_amilis_proteins_FUN_021016-T1:0.210815):0.055281):0.134589):0.158005);

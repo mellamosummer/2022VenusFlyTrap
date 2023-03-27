@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe6G148600.1.p:0.31339,((D_spatulata_proteins_Ds_00011575-RA:0.568652,A_hypochondriacus_proteins_AH013876-RA:0.643885):0.104498,(A_hypochondriacus_proteins_AH016990-RA:0.350151,L_sativa_proteins_Lsat_1_v5_gn_8_20001.5:0.412067):0.236103):0.31339);

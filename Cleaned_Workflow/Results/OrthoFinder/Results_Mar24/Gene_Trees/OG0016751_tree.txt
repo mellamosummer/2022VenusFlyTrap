@@ -1,0 +1,1 @@
+(((B_vulgaris_proteins_Bevul.2G210500.1.p:0.106917,A_hypochondriacus_proteins_AH022863-RA:0.907021):0.223993,S_lycopersicum_proteins_Solyc02g063250.3.1:0.307386):0.106895,(V_vinifera_proteins_VIT_214s0006g02610.1:0.0338124,(V_vinifera_proteins_VIT_214s0006g02610.2:1.99769e-06,V_vinifera_proteins_VIT_214s0006g02610.3:0.131524):0.0744421):0.106895);

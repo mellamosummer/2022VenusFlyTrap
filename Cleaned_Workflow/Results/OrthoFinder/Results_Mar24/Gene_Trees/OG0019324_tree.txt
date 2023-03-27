@@ -1,0 +1,1 @@
+(S_lycopersicum_proteins_Solyc10g085715.1.1:0.287967,(A_coerulea_proteins_Aqcoe1G402900.1.p:0.1537,(A_coerulea_proteins_Aqcoe3G152700.2.p:0.043533,A_coerulea_proteins_Aqcoe1G402900.2.p:0.006782):0.106316):0.287967);

@@ -1,0 +1,1 @@
+((P_amilis_proteins_FUN_053220-T1:0.353251,A_hypochondriacus_proteins_AH015139-RA:0.533155):0.602101,(V_vinifera_proteins_VIT_204s0008g04226.1:0.0318805,V_vinifera_proteins_VIT_204s0008g04223.1:0.0350015):0.602101);

@@ -1,0 +1,1 @@
+((B_vulgaris_proteins_Bevul.9G048600.2.p:1.35872e-06,(B_vulgaris_proteins_Bevul.9G048600.3.p:0.00393744,B_vulgaris_proteins_Bevul.9G048600.1.p:0.00496756):0.0172753):0.235754,(D_spatulata_proteins_Ds_00005212-RA:0.191261,(D_muscipula_proteins_Dm_00004645-RA:0.43973,A_vesiculosa_proteins_Av_00014271-RA:0.216604):0.0135001):0.235754);

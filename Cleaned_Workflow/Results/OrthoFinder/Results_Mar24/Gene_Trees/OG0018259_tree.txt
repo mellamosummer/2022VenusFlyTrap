@@ -1,0 +1,1 @@
+(D_spatulata_proteins_Ds_00018049-RA:0.552373,((B_vulgaris_proteins_Bevul.1G050000.1.p:0.0336366,(B_vulgaris_proteins_Bevul.9G029000.2.p:0.015055,B_vulgaris_proteins_Bevul.9G029000.1.p:0.03133):0.181308):0.386412,P_amilis_proteins_FUN_043013-T1:1.06869):0.552373);
