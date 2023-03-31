@@ -89,9 +89,9 @@ dim(tpm)
 
 write.csv(x = tpm, file = "Blanco_tpm_all.csv")
 
-Exp_table <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/Blanco_tpm_all.csv", col_types = cols())
+Exp_table <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/GeneCoexpressionAnalysis/Data/Blanco_tpm_all.csv", col_types = cols())
 
-Metadata <-  read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/metadata.csv", col_types = cols())
+Metadata <-  read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/GeneCoexpressionAnalysis/Data/Metadata.csv", col_types = cols())
 
 Baits <- read_xlsx("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/baitgenes.xlsx", col_names = FALSE)
 colnames(Baits) <- c("gene_ID","ATannotation")
@@ -577,93 +577,30 @@ edge_table_select <- edge_table %>%
 
 dim(edge_table_select)
 
-Bait_cor_by_time <- z_score_wide %>% 
-  filter(gene_ID == "Dm_00017312-RA" |
-           gene_ID == "Dm_00007486-RA") %>% 
-  select(-gene_ID) %>% 
-  t() %>% 
-  as.data.frame() %>% 
-  mutate(tag = row.names(.)) %>% 
-  separate(tag, c("Time", "Treatment"), sep = "-") %>% 
-  mutate(Time = as.numeric(Time)) %>% 
-  inner_join(PCA_coord, by = c("Time", "Treatment")) %>% 
-  ggplot(aes(x = "Dm_00017312-RA",
-             y = "Dm_00007486-RA")) +
-  geom_point(aes(fill = Time), color = "grey20", 
-             size = 2, alpha = 0.8, shape = 21) +
-  scale_fill_gradientn(colors = viridis(10, option = "A")) +
-  guides(fill = guide_colorsteps()) +
-  labs(x = "Bait1 z score",
-       y = "Bait2 z score",
-       fill = "Time") + 
-  theme_classic() +
-  theme(
-    legend.position = c(0.25, 0.7),
-    text = element_text(size = 14),
-    axis.text = element_text(color = "black")
-  )
-
-Bait_cor_by_time
-
-Bait_cor_by_treatment <- z_score_wide %>% 
-  filter(gene_ID == "Dm_00017312-RA" |
-           gene_ID == "Dm_00007486-RA") %>% 
-  select(-gene_ID) %>% 
-  t() %>% 
-  as.data.frame() %>% 
-  mutate(tag = row.names(.)) %>% 
-  separate(tag, c("Time", "Treatment"), sep = "-") %>% 
-  mutate(Time = as.numeric(Time)) %>% 
-  inner_join(PCA_coord, by = c("Time", "Treatment")) %>% 
-  ggplot(aes(x = "Dm_00017312-RA",
-             y = "Dm_00007486-RA")) +
-  geom_point(aes(fill = Treatment), color = "grey20", 
-             size = 2, alpha = 0.8, shape = 21) +
-  scale_fill_manual(values = c("grey70", "tomato1")) +
-  labs(x = "Bait1 z score",
-       y = "Bait2 z score",
-       fill = "Time") + 
-  theme_classic() +
-  theme(
-    legend.position = c(0.25, 0.7),
-    text = element_text(size = 14),
-    axis.text = element_text(color = "black")
-  )
-
-Bait_cor_by_treatment
-
-
 ##################################
 # Build graph object
 ##################################
 
-funct_anno <- read_tsv("BLAST/DmProteinsTairdbBLASTconcat.txt", col_names = FALSE)
-head(Annotations)
-funct_anno <- funct_anno %>% 
-  select(1:3)
-colnames(funct_anno) <- c("gene_ID","ATgene_ID", "TopBLASTHit")
+funct_anno <- read_delim("BLAST/DmProteinsTairdbBLASTconcat.txt", 
+                         delim = "\t", col_names = F, col_types = cols())
 
-head(funct_anno)
-
-funct_anno <- funct_anno %>% 
-  mutate(ATgene_ID = str_remove(ATgene_ID, "\\.\\d+$")) %>% 
-  distinct(ATgene_ID, .keep_all = T)
-
+funct_anno <- funct_anno %>% select(X1:X3) %>% 
+  rename(gene_ID = X1, AT_gene_id = X2, annotation = X3)
 
 node_table <- data.frame(
   gene_ID = c(edge_table_select$from, edge_table_select$to) %>% unique()
 ) %>% 
-  left_join(funct_anno %>% 
-              select(-gene_ID), by = "gene_ID")
-
-my_network <- graph_from_data_frame(
-  edge_table_select,
-  directed = F
-)
+  left_join(funct_anno, by = "gene_ID")
 
 
 head(node_table)
 dim(node_table)
+
+my_network <- graph_from_data_frame(
+  edge_table_select,
+  vertices = node_table,
+  directed = F
+)
 
 
 ##################################
@@ -779,7 +716,69 @@ module_5 <- my_network_modules %>%
 my_network_modules <- my_network_modules %>% 
   filter(module %in% module_5$module)
 
+my_network_modules <- my_network_modules %>% 
+  left_join(funct_anno, by = "gene_ID")
 
+#serine endopeptidases
+my_network_modules %>% 
+  filter(gene_ID == "Dm_00000773-RA" |
+           gene_ID == "Dm_00001789-RA" |
+           gene_ID == "Dm_00004253-RA" |
+           gene_ID == "Dm_00015236-RA")
+
+  #gene_ID == "Dm_00000773-RA" module 13
+  #gene_ID == "Dm_00001789-RA" module 6
+  #gene_ID == "Dm_00004253-RA" not in module
+  #gene_ID == "Dm_00015236-RA" module 9 
+
+
+#cysteine endopeptidases
+
+my_network_modules %>% 
+  filter(gene_ID == "Dm_00010272-RA" |
+           gene_ID == "Dm_00017138-RA") #not in modules
+
+#metallo endopeptidases
+
+my_network_modules %>% 
+  filter(gene_ID == "Dm_00012406-RA" |
+           gene_ID == "Dm_00002722-RA" |
+           gene_ID == "Dm_00001146-RA" |
+           gene_ID == "Dm_00002723-RA" |
+           gene_ID == "Dm_00012588-RA")
+
+
+  #gene_ID == "Dm_00012406-RA" not in modules
+  #gene_ID == "Dm_00002722-RA" not in modules
+  #gene_ID == "Dm_00001146-RA" not in modules
+  #gene_ID == "Dm_00002723-RA" module 2
+  #gene_ID == "Dm_00012588-RA" module 2
+
+#chitinases
+
+my_network_modules %>% 
+  filter(gene_ID == "Dm_00013373-RA" |
+           gene_ID == "Dm_00019697-RA" |
+           gene_ID == "Dm_00004094-RA" |
+           gene_ID == "Dm_00000939-RA" |
+           gene_ID == "Dm_00020493-RA")
+
+#all in module 3
+
+#lipases
+
+my_network_modules %>% 
+  filter(gene_ID == "Dm_00003116-RA" |
+           gene_ID == "Dm_00002298-RA" |
+           gene_ID == "Dm_00004094-RA" |
+           gene_ID == "Dm_00002448-RA" |
+           gene_ID == "Dm_00010368-RA")
+  
+  #gene_ID == "Dm_00003116-RA" module 3
+  #gene_ID == "Dm_00002298-RA" module 4
+  #gene_ID == "Dm_00004094-RA" not in modules
+  #gene_ID == "Dm_00002448-RA" module 4
+  #gene_ID == "Dm_00010368-RA" not in modules
 
 ##################################
 # Module Treatment correspondence
@@ -1230,6 +1229,271 @@ ggsave("module_heatmap.png", height = 10, width = 8, bg = "white")
 # Gene co-expression graphs
 ##################################
 
+#chitinases
+
+neighbors_of_bait_chitinase <- c(
+  neighbors(my_network, v = "Dm_00013373-RA"),
+  neighbors(my_network, v = "Dm_00019697-RA"),
+  neighbors(my_network, v = "Dm_00004094-RA"), 
+  neighbors(my_network, v = "Dm_00000939-RA"), 
+  neighbors(my_network, v = "Dm_00020493-RA")
+) %>% 
+  unique()  
+
+length(neighbors_of_bait_chitinase)
+
+chitinase_transcription_factors <- my_network_modules %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_chitinase)) %>% 
+  filter(str_detect(annotation, "transcription factor"))
+
+nrow(chitinase_transcription_factors)
+head(chitinase_transcription_factors)
+
+chitinase_subnetwork_edges <- edge_table_select %>% 
+  filter(from %in% names(neighbors_of_bait_chitinase) &
+           to %in% names(neighbors_of_bait_chitinase)) %>% 
+  group_by(from) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup() %>% 
+  group_by(to) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup()
+
+length(chitinase_subnetwork_edges)
+dim(chitinase_subnetwork_edges)
+
+chitinase_subnetwork_genes <- c(chitinase_subnetwork_edges$from, chitinase_subnetwork_edges$to) %>% unique()
+
+chitinase_subnetwork_nodes <- node_table %>% 
+  filter(gene_ID %in% chitinase_subnetwork_genes) %>% 
+  left_join(my_network_modules, by = "gene_ID") %>% 
+  left_join(module_peak_exp, by = "module") 
+
+dim(chitinase_subnetwork_nodes)
+
+chitinase_subnetwork <- graph_from_data_frame(chitinase_subnetwork_edges,
+                                       vertices = chitinase_subnetwork_nodes,
+                                       directed = F)
+
+chitinase_subnetwork %>% 
+  ggraph(layout = "kk", circular = F) +
+  geom_edge_diagonal(color = "grey70", width = 0.5, alpha = 0.5) +
+  geom_node_point(alpha = 0.8, color = "grey30", shape = 21, size = 2,
+                  aes(fill = Time)) + 
+  scale_fill_gradientn(colors = viridis(10, option = "A")) +
+  labs(fill = "Peak time point") +
+  guides(size = "none",
+         fill = guide_colorsteps()) +
+  theme_void()+
+  theme(
+    text = element_text(size = 8), 
+    legend.position = "bottom",
+    legend.justification = 1,
+    title = element_text(size = 12)
+  )
+
+ggsave("chitinase_subnetwork_graph.png", height = 10, width = 12, bg = "white")
+
+#metalloendopeptidases
+
+neighbors_of_bait_metallo <- c(
+  neighbors(my_network, v = "Dm_00002723-RA"),
+  neighbors(my_network, v = "Dm_00012588-RA")
+) %>% 
+  unique()  
+
+length(neighbors_of_bait_metallo)
+
+metallo_transcription_factors <- my_network_modules %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_metallo)) %>% 
+  filter(str_detect(annotation, "transcription factor"))
+
+nrow(metallo_transcription_factors)
+head(metallo_transcription_factors)
+
+metallo_subnetwork_edges <- edge_table_select %>% 
+  filter(from %in% names(neighbors_of_bait_metallo) &
+           to %in% names(neighbors_of_bait_metallo)) %>% 
+  group_by(from) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup() %>% 
+  group_by(to) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup()
+
+length(metallo_subnetwork_edges)
+dim(metallo_subnetwork_edges)
+
+metallo_subnetwork_genes <- c(metallo_subnetwork_edges$from, metallo_subnetwork_edges$to) %>% unique()
+
+metallo_subnetwork_nodes <- node_table %>% 
+  filter(gene_ID %in% metallo_subnetwork_genes) %>% 
+  left_join(my_network_modules, by = "gene_ID") %>% 
+  left_join(module_peak_exp, by = "module") 
+
+dim(metallo_subnetwork_nodes)
+
+metallo_subnetwork <- graph_from_data_frame(metallo_subnetwork_edges,
+                                              vertices = metallo_subnetwork_nodes,
+                                              directed = F)
+
+metallo_subnetwork %>% 
+  ggraph(layout = "kk", circular = F) +
+  geom_edge_diagonal(color = "grey70", width = 0.5, alpha = 0.5) +
+  geom_node_point(alpha = 0.8, color = "grey30", shape = 21, size = 2,
+                  aes(fill = Time)) + 
+  scale_fill_gradientn(colors = viridis(10, option = "A")) +
+  labs(fill = "Peak time point") +
+  guides(size = "none",
+         fill = guide_colorsteps()) +
+  theme_void()+
+  theme(
+    text = element_text(size = 8), 
+    legend.position = "bottom",
+    legend.justification = 1,
+    title = element_text(size = 12)
+  )
+
+ggsave("metallo_subnetwork_graph.png", height = 10, width = 12, bg = "white")
+
+#lipases
+#gene_ID == "Dm_00003116-RA" module 3
+#gene_ID == "Dm_00002298-RA" module 4
+#gene_ID == "Dm_00002448-RA" module 4
+
+neighbors_of_bait_lipase <- c(
+  neighbors(my_network, v = "Dm_00003116-RA"),
+  neighbors(my_network, v = "Dm_00002298-RA"),
+  neighbors(my_network, v = "Dm_00002448-RA")
+) %>% 
+  unique()  
+
+length(neighbors_of_bait_lipase)
+
+lipase_transcription_factors <- my_network_modules %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_lipase)) %>% 
+  filter(str_detect(annotation, "transcription factor"))
+
+nrow(lipase_transcription_factors)
+head(lipase_transcription_factors)
+
+lipase_subnetwork_edges <- edge_table_select %>% 
+  filter(from %in% names(neighbors_of_bait_lipase) &
+           to %in% names(neighbors_of_bait_lipase)) %>% 
+  group_by(from) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup() %>% 
+  group_by(to) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup()
+
+length(lipase_subnetwork_edges)
+dim(lipase_subnetwork_edges)
+
+lipase_subnetwork_genes <- c(lipase_subnetwork_edges$from, lipase_subnetwork_edges$to) %>% unique()
+
+lipase_subnetwork_nodes <- node_table %>% 
+  filter(gene_ID %in% lipase_subnetwork_genes) %>% 
+  left_join(my_network_modules, by = "gene_ID") %>% 
+  left_join(module_peak_exp, by = "module") 
+
+dim(lipase_subnetwork_nodes)
+
+lipase_subnetwork <- graph_from_data_frame(lipase_subnetwork_edges,
+                                            vertices = lipase_subnetwork_nodes,
+                                            directed = F)
+
+lipase_subnetwork %>% 
+  ggraph(layout = "kk", circular = F) +
+  geom_edge_diagonal(color = "grey70", width = 0.5, alpha = 0.5) +
+  geom_node_point(alpha = 0.8, color = "grey30", shape = 21, size = 2,
+                  aes(fill = Time)) + 
+  scale_fill_gradientn(colors = viridis(10, option = "A")) +
+  labs(fill = "Peak time point") +
+  guides(size = "none",
+         fill = guide_colorsteps()) +
+  theme_void()+
+  theme(
+    text = element_text(size = 8), 
+    legend.position = "bottom",
+    legend.justification = 1,
+    title = element_text(size = 12)
+  )
+
+ggsave("lipase_subnetwork_graph.png", height = 10, width = 12, bg = "white")
+
+
+#serine endo
+#gene_ID == "Dm_00000773-RA" module 13
+#gene_ID == "Dm_00001789-RA" module 6
+#gene_ID == "Dm_00015236-RA" module 9 
+
+neighbors_of_bait_serine <- c(
+  neighbors(my_network, v = "Dm_00000773-RA"),
+  neighbors(my_network, v = "Dm_00001789-RA"),
+  neighbors(my_network, v = "Dm_00015236-RA")
+) %>% 
+  unique()  
+
+length(neighbors_of_bait_serine)
+
+serine_transcription_factors <- my_network_modules %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_serine)) %>% 
+  filter(str_detect(annotation, "transcription factor"))
+
+nrow(serine_transcription_factors)
+head(serine_transcription_factors)
+
+my_network_modules %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_serine))
+
+nrow(my_protein_kinase)
+
+serine_subnetwork_edges <- edge_table_select %>% 
+  filter(from %in% names(neighbors_of_bait_serine) &
+           to %in% names(neighbors_of_bait_serine)) %>% 
+  group_by(from) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup() %>% 
+  group_by(to) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup()
+
+length(serine_subnetwork_edges)
+dim(serine_subnetwork_edges)
+
+serine_subnetwork_genes <- c(serine_subnetwork_edges$from, serine_subnetwork_edges$to) %>% unique()
+
+serine_subnetwork_nodes <- node_table %>% 
+  filter(gene_ID %in% serine_subnetwork_genes) %>% 
+  left_join(my_network_modules, by = "gene_ID") %>% 
+  left_join(module_peak_exp, by = "module") 
+
+dim(serine_subnetwork_nodes)
+
+serine_subnetwork <- graph_from_data_frame(serine_subnetwork_edges,
+                                           vertices = serine_subnetwork_nodes,
+                                           directed = F)
+
+serine_subnetwork %>% 
+  ggraph(layout = "kk", circular = F) +
+  geom_edge_diagonal(color = "grey70", width = 0.5, alpha = 0.5) +
+  geom_node_point(alpha = 0.8, color = "grey30", shape = 21, size = 2,
+                  aes(fill = Time)) + 
+  scale_fill_gradientn(colors = viridis(10, option = "A")) +
+  labs(fill = "Peak time point") +
+  guides(size = "none",
+         fill = guide_colorsteps()) +
+  theme_void()+
+  theme(
+    text = element_text(size = 8), 
+    legend.position = "bottom",
+    legend.justification = 1,
+    title = element_text(size = 12)
+  )
+
+ggsave("serine_subnetwork_graph.png", height = 10, width = 12, bg = "white")
+
 coex <- graph_from_data_frame(edge_table_select,
                                        directed = F)
 
@@ -1249,6 +1513,31 @@ my_network %>%
     legend.justification = 1,
     title = element_text(size = 12)
   )
+
+
+neighbors_of_bait_serinecsv <- funct_anno %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_serine)) %>% 
+  select(gene_ID, AT_gene_id, annotation)
+
+write_excel_csv(neighbors_of_bait_serinecsv, "serineendopeptidase_neighbors.csv", col_names = T)
+
+neighbors_of_bait_chitinaseecsv <- funct_anno %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_chitinase)) %>% 
+  select(gene_ID, AT_gene_id, annotation)
+
+write_excel_csv(neighbors_of_bait_chitinaseecsv, "chitinase_neighbors.csv", col_names = T)
+
+neighbors_of_bait_lipasecsv <- funct_anno %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_lipase)) %>% 
+  select(gene_ID, AT_gene_id, annotation)
+
+write_excel_csv(neighbors_of_bait_lipasecsv, "lipase_neighbors.csv", col_names = T)
+
+neighbors_of_bait_metallocsv <- funct_anno %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_metallo)) %>% 
+  select(gene_ID, AT_gene_id, annotation)
+
+write_excel_csv(neighbors_of_bait_metallocsv, "metallo_neighbors.csv", col_names = T)
 
 
 ##################################
