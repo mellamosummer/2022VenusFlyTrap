@@ -93,10 +93,6 @@ Exp_table <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Clean
 
 Metadata <-  read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/GeneCoexpressionAnalysis/Data/Metadata.csv", col_types = cols())
 
-Baits <- read_xlsx("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/baitgenes.xlsx", col_names = FALSE)
-colnames(Baits) <- c("gene_ID","ATannotation")
-
-
 #check
 
 Metadata %>% 
@@ -1581,3 +1577,158 @@ my_network_moduless_annotated %>%
 
 
 write.csv(x = my_network_moduless_annotated, file = "network_modules_annotated.csv")
+
+###
+
+network_modules <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/GeneCoexpressionAnalysis/NetworkModules/network_modules_annotated.csv")
+
+
+genesinmodules <- network_modules %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n) %>% 
+  filter(n >= 5)
+
+write.csv(x = genesinmodules, file = "genesinmodules.csv")
+
+phosphatasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('phosphatase', ignore_case=TRUE)))
+
+phosphatasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+proteasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('protease', ignore_case=TRUE)))
+
+proteasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+chitinasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('chitinase', ignore_case=TRUE)))
+
+chitinasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+
+glucanasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('glucanase', ignore_case=TRUE)))
+
+glucanasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+
+esterasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('esterase', ignore_case=TRUE)))
+
+esterasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+peroxidasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('peroxidase', ignore_case=TRUE)))
+
+peroxidasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+nucleasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('nuclease', ignore_case=TRUE)))
+
+nucleasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+glucosaminidasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('glucosaminidase', ignore_case=TRUE)))
+
+glucosaminidasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+glucosidasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('glucosidase', ignore_case=TRUE)))
+
+glucosidasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+	
+amylasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('amylase', ignore_case=TRUE)))
+
+amylasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+lipasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('lipase', ignore_case=TRUE)))
+
+lipasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+ribonucleasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('ribonuclease', ignore_case=TRUE)))
+
+ribonucleasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+phosphoamidasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('phosphoamidase', ignore_case=TRUE)))
+
+phosphoamidasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+
+xylosidasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('xylosidase', ignore_case=TRUE)))
+
+xylosidasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+ureasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('urease', ignore_case=TRUE)))
+
+ureasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+
+
+write.csv(x = ureasesinnetwork, file = "ureasesinnetwork.csv")
+write.csv(x = xylosidasesinnetwork, file = "xylosidasesinnetwork.csv")
+write.csv(x = phosphoamidasesinnetwork, file = "phosphoamidasesinnetwork.csv")
+write.csv(x = ribonucleasesinnetwork, file = "ribonucleasesinnetwork.csv")
+write.csv(x = lipasesinnetwork, file = "lipasesinnetwork.csv")
+write.csv(x = amylasesinnetwork, file = "amylasesinnetwork.csv")
+write.csv(x = glucosidasesinnetwork, file = "glucosidasesinnetwork.csv")
+write.csv(x = glucosaminidasesinnetwork, file = "glucosaminidasesinnetwork.csv")
+write.csv(x = nucleasesinnetwork, file = "nucleasesinnetwork.csv")
+write.csv(x = peroxidasesinnetwork, file = "peroxidasesinnetwork.csv")
+write.csv(x = esterasesinnetwork, file = "esterasesinnetwork.csv")
+write.csv(x = glucanasesinnetwork, file = "glucanasesinnetwork.csv")
+write.csv(x = chitinasesinnetwork, file = "chitinasesinnetwork.csv")
+write.csv(x = proteasesinnetwork, file = "proteasesinnetwork.csv")
+write.csv(x = phosphatasesinnetwork, file = "phosphatasesinnetwork.csv")
+	
