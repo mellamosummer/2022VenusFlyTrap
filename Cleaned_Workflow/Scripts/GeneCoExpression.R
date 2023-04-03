@@ -89,9 +89,9 @@ dim(tpm)
 
 write.csv(x = tpm, file = "Blanco_tpm_all.csv")
 
-Exp_table <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/Blanco_tpm_all.csv", col_types = cols())
+Exp_table <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/GeneCoexpressionAnalysis/Data/Blanco_tpm_all.csv", col_types = cols())
 
-Metadata <-  read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/metadata.csv", col_types = cols())
+Metadata <-  read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/GeneCoexpressionAnalysis/Data/Metadata.csv", col_types = cols())
 
 #check
 
@@ -219,11 +219,19 @@ high_var_genes <- Exp_table_long_averaged_z %>%
 
 dim(high_var_genes)
 
+high_var_genes %>% 
+  filter(gene_ID %in% Baits$gene_ID)
+
 all_var_and_ranks <- Exp_table_long_averaged_z %>% 
   group_by(gene_ID) %>% 
   summarise(var = var(mean.logTPM)) %>% 
   ungroup() %>% 
   mutate(rank = rank(var, ties.method = "average")) 
+
+bait_var <- all_var_and_ranks %>% 
+  filter(gene_ID %in% Baits$gene_ID) 
+
+bait_var
 
 all_var_and_ranks %>% 
   ggplot(aes(x = var, y = rank)) +
@@ -235,6 +243,14 @@ all_var_and_ranks %>%
     fill = "dodgerblue2", alpha = 0.2
   ) +
   geom_line(size = 1.1) +
+  geom_hline(
+    data = bait_var, aes(yintercept = rank),
+    color = "tomato1", size = 0.8, alpha = 0.5
+  ) +
+  geom_vline(
+    data = bait_var, aes(xintercept = var), 
+    color = "tomato1", size = 0.8, alpha = 0.5
+  ) + 
   labs(y = "rank",
        x = "var(log10(FPKM))",
        caption = "Blue box = high var expressed genes.") +
@@ -245,6 +261,7 @@ all_var_and_ranks %>%
     plot.caption = element_text(hjust = 0)
   )
 
+ggsave("gene_var_distribution.png", height = 3.5, width = 3.5)
 
 Exp_table_long_averaged_z_high_var <- Exp_table_long_averaged_z %>% 
   filter(gene_ID %in% high_var_genes$gene_ID)
@@ -560,10 +577,27 @@ dim(edge_table_select)
 # Build graph object
 ##################################
 
+funct_anno <- read_delim("BLAST/DmProteinsTairdbBLASTconcat.txt", 
+                         delim = "\t", col_names = F, col_types = cols())
+
+funct_anno <- funct_anno %>% select(X1:X3) %>% 
+  rename(gene_ID = X1, AT_gene_id = X2, annotation = X3)
+
+node_table <- data.frame(
+  gene_ID = c(edge_table_select$from, edge_table_select$to) %>% unique()
+) %>% 
+  left_join(funct_anno, by = "gene_ID")
+
+
+head(node_table)
+dim(node_table)
+
 my_network <- graph_from_data_frame(
   edge_table_select,
+  vertices = node_table,
   directed = F
 )
+
 
 ##################################
 # optimize clustering resolution
@@ -678,7 +712,69 @@ module_5 <- my_network_modules %>%
 my_network_modules <- my_network_modules %>% 
   filter(module %in% module_5$module)
 
+my_network_modules <- my_network_modules %>% 
+  left_join(funct_anno, by = "gene_ID")
 
+#serine endopeptidases
+my_network_modules %>% 
+  filter(gene_ID == "Dm_00000773-RA" |
+           gene_ID == "Dm_00001789-RA" |
+           gene_ID == "Dm_00004253-RA" |
+           gene_ID == "Dm_00015236-RA")
+
+  #gene_ID == "Dm_00000773-RA" module 13
+  #gene_ID == "Dm_00001789-RA" module 6
+  #gene_ID == "Dm_00004253-RA" not in module
+  #gene_ID == "Dm_00015236-RA" module 9 
+
+
+#cysteine endopeptidases
+
+my_network_modules %>% 
+  filter(gene_ID == "Dm_00010272-RA" |
+           gene_ID == "Dm_00017138-RA") #not in modules
+
+#metallo endopeptidases
+
+my_network_modules %>% 
+  filter(gene_ID == "Dm_00012406-RA" |
+           gene_ID == "Dm_00002722-RA" |
+           gene_ID == "Dm_00001146-RA" |
+           gene_ID == "Dm_00002723-RA" |
+           gene_ID == "Dm_00012588-RA")
+
+
+  #gene_ID == "Dm_00012406-RA" not in modules
+  #gene_ID == "Dm_00002722-RA" not in modules
+  #gene_ID == "Dm_00001146-RA" not in modules
+  #gene_ID == "Dm_00002723-RA" module 2
+  #gene_ID == "Dm_00012588-RA" module 2
+
+#chitinases
+
+my_network_modules %>% 
+  filter(gene_ID == "Dm_00013373-RA" |
+           gene_ID == "Dm_00019697-RA" |
+           gene_ID == "Dm_00004094-RA" |
+           gene_ID == "Dm_00000939-RA" |
+           gene_ID == "Dm_00020493-RA")
+
+#all in module 3
+
+#lipases
+
+my_network_modules %>% 
+  filter(gene_ID == "Dm_00003116-RA" |
+           gene_ID == "Dm_00002298-RA" |
+           gene_ID == "Dm_00004094-RA" |
+           gene_ID == "Dm_00002448-RA" |
+           gene_ID == "Dm_00010368-RA")
+  
+  #gene_ID == "Dm_00003116-RA" module 3
+  #gene_ID == "Dm_00002298-RA" module 4
+  #gene_ID == "Dm_00004094-RA" not in modules
+  #gene_ID == "Dm_00002448-RA" module 4
+  #gene_ID == "Dm_00010368-RA" not in modules
 
 ##################################
 # Module Treatment correspondence
@@ -1129,6 +1225,271 @@ ggsave("module_heatmap.png", height = 10, width = 8, bg = "white")
 # Gene co-expression graphs
 ##################################
 
+#chitinases
+
+neighbors_of_bait_chitinase <- c(
+  neighbors(my_network, v = "Dm_00013373-RA"),
+  neighbors(my_network, v = "Dm_00019697-RA"),
+  neighbors(my_network, v = "Dm_00004094-RA"), 
+  neighbors(my_network, v = "Dm_00000939-RA"), 
+  neighbors(my_network, v = "Dm_00020493-RA")
+) %>% 
+  unique()  
+
+length(neighbors_of_bait_chitinase)
+
+chitinase_transcription_factors <- my_network_modules %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_chitinase)) %>% 
+  filter(str_detect(annotation, "transcription factor"))
+
+nrow(chitinase_transcription_factors)
+head(chitinase_transcription_factors)
+
+chitinase_subnetwork_edges <- edge_table_select %>% 
+  filter(from %in% names(neighbors_of_bait_chitinase) &
+           to %in% names(neighbors_of_bait_chitinase)) %>% 
+  group_by(from) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup() %>% 
+  group_by(to) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup()
+
+length(chitinase_subnetwork_edges)
+dim(chitinase_subnetwork_edges)
+
+chitinase_subnetwork_genes <- c(chitinase_subnetwork_edges$from, chitinase_subnetwork_edges$to) %>% unique()
+
+chitinase_subnetwork_nodes <- node_table %>% 
+  filter(gene_ID %in% chitinase_subnetwork_genes) %>% 
+  left_join(my_network_modules, by = "gene_ID") %>% 
+  left_join(module_peak_exp, by = "module") 
+
+dim(chitinase_subnetwork_nodes)
+
+chitinase_subnetwork <- graph_from_data_frame(chitinase_subnetwork_edges,
+                                       vertices = chitinase_subnetwork_nodes,
+                                       directed = F)
+
+chitinase_subnetwork %>% 
+  ggraph(layout = "kk", circular = F) +
+  geom_edge_diagonal(color = "grey70", width = 0.5, alpha = 0.5) +
+  geom_node_point(alpha = 0.8, color = "grey30", shape = 21, size = 2,
+                  aes(fill = Time)) + 
+  scale_fill_gradientn(colors = viridis(10, option = "A")) +
+  labs(fill = "Peak time point") +
+  guides(size = "none",
+         fill = guide_colorsteps()) +
+  theme_void()+
+  theme(
+    text = element_text(size = 8), 
+    legend.position = "bottom",
+    legend.justification = 1,
+    title = element_text(size = 12)
+  )
+
+ggsave("chitinase_subnetwork_graph.png", height = 10, width = 12, bg = "white")
+
+#metalloendopeptidases
+
+neighbors_of_bait_metallo <- c(
+  neighbors(my_network, v = "Dm_00002723-RA"),
+  neighbors(my_network, v = "Dm_00012588-RA")
+) %>% 
+  unique()  
+
+length(neighbors_of_bait_metallo)
+
+metallo_transcription_factors <- my_network_modules %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_metallo)) %>% 
+  filter(str_detect(annotation, "transcription factor"))
+
+nrow(metallo_transcription_factors)
+head(metallo_transcription_factors)
+
+metallo_subnetwork_edges <- edge_table_select %>% 
+  filter(from %in% names(neighbors_of_bait_metallo) &
+           to %in% names(neighbors_of_bait_metallo)) %>% 
+  group_by(from) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup() %>% 
+  group_by(to) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup()
+
+length(metallo_subnetwork_edges)
+dim(metallo_subnetwork_edges)
+
+metallo_subnetwork_genes <- c(metallo_subnetwork_edges$from, metallo_subnetwork_edges$to) %>% unique()
+
+metallo_subnetwork_nodes <- node_table %>% 
+  filter(gene_ID %in% metallo_subnetwork_genes) %>% 
+  left_join(my_network_modules, by = "gene_ID") %>% 
+  left_join(module_peak_exp, by = "module") 
+
+dim(metallo_subnetwork_nodes)
+
+metallo_subnetwork <- graph_from_data_frame(metallo_subnetwork_edges,
+                                              vertices = metallo_subnetwork_nodes,
+                                              directed = F)
+
+metallo_subnetwork %>% 
+  ggraph(layout = "kk", circular = F) +
+  geom_edge_diagonal(color = "grey70", width = 0.5, alpha = 0.5) +
+  geom_node_point(alpha = 0.8, color = "grey30", shape = 21, size = 2,
+                  aes(fill = Time)) + 
+  scale_fill_gradientn(colors = viridis(10, option = "A")) +
+  labs(fill = "Peak time point") +
+  guides(size = "none",
+         fill = guide_colorsteps()) +
+  theme_void()+
+  theme(
+    text = element_text(size = 8), 
+    legend.position = "bottom",
+    legend.justification = 1,
+    title = element_text(size = 12)
+  )
+
+ggsave("metallo_subnetwork_graph.png", height = 10, width = 12, bg = "white")
+
+#lipases
+#gene_ID == "Dm_00003116-RA" module 3
+#gene_ID == "Dm_00002298-RA" module 4
+#gene_ID == "Dm_00002448-RA" module 4
+
+neighbors_of_bait_lipase <- c(
+  neighbors(my_network, v = "Dm_00003116-RA"),
+  neighbors(my_network, v = "Dm_00002298-RA"),
+  neighbors(my_network, v = "Dm_00002448-RA")
+) %>% 
+  unique()  
+
+length(neighbors_of_bait_lipase)
+
+lipase_transcription_factors <- my_network_modules %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_lipase)) %>% 
+  filter(str_detect(annotation, "transcription factor"))
+
+nrow(lipase_transcription_factors)
+head(lipase_transcription_factors)
+
+lipase_subnetwork_edges <- edge_table_select %>% 
+  filter(from %in% names(neighbors_of_bait_lipase) &
+           to %in% names(neighbors_of_bait_lipase)) %>% 
+  group_by(from) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup() %>% 
+  group_by(to) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup()
+
+length(lipase_subnetwork_edges)
+dim(lipase_subnetwork_edges)
+
+lipase_subnetwork_genes <- c(lipase_subnetwork_edges$from, lipase_subnetwork_edges$to) %>% unique()
+
+lipase_subnetwork_nodes <- node_table %>% 
+  filter(gene_ID %in% lipase_subnetwork_genes) %>% 
+  left_join(my_network_modules, by = "gene_ID") %>% 
+  left_join(module_peak_exp, by = "module") 
+
+dim(lipase_subnetwork_nodes)
+
+lipase_subnetwork <- graph_from_data_frame(lipase_subnetwork_edges,
+                                            vertices = lipase_subnetwork_nodes,
+                                            directed = F)
+
+lipase_subnetwork %>% 
+  ggraph(layout = "kk", circular = F) +
+  geom_edge_diagonal(color = "grey70", width = 0.5, alpha = 0.5) +
+  geom_node_point(alpha = 0.8, color = "grey30", shape = 21, size = 2,
+                  aes(fill = Time)) + 
+  scale_fill_gradientn(colors = viridis(10, option = "A")) +
+  labs(fill = "Peak time point") +
+  guides(size = "none",
+         fill = guide_colorsteps()) +
+  theme_void()+
+  theme(
+    text = element_text(size = 8), 
+    legend.position = "bottom",
+    legend.justification = 1,
+    title = element_text(size = 12)
+  )
+
+ggsave("lipase_subnetwork_graph.png", height = 10, width = 12, bg = "white")
+
+
+#serine endo
+#gene_ID == "Dm_00000773-RA" module 13
+#gene_ID == "Dm_00001789-RA" module 6
+#gene_ID == "Dm_00015236-RA" module 9 
+
+neighbors_of_bait_serine <- c(
+  neighbors(my_network, v = "Dm_00000773-RA"),
+  neighbors(my_network, v = "Dm_00001789-RA"),
+  neighbors(my_network, v = "Dm_00015236-RA")
+) %>% 
+  unique()  
+
+length(neighbors_of_bait_serine)
+
+serine_transcription_factors <- my_network_modules %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_serine)) %>% 
+  filter(str_detect(annotation, "transcription factor"))
+
+nrow(serine_transcription_factors)
+head(serine_transcription_factors)
+
+my_network_modules %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_serine))
+
+nrow(my_protein_kinase)
+
+serine_subnetwork_edges <- edge_table_select %>% 
+  filter(from %in% names(neighbors_of_bait_serine) &
+           to %in% names(neighbors_of_bait_serine)) %>% 
+  group_by(from) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup() %>% 
+  group_by(to) %>% 
+  slice_max(order_by = r, n = 5) %>% 
+  ungroup()
+
+length(serine_subnetwork_edges)
+dim(serine_subnetwork_edges)
+
+serine_subnetwork_genes <- c(serine_subnetwork_edges$from, serine_subnetwork_edges$to) %>% unique()
+
+serine_subnetwork_nodes <- node_table %>% 
+  filter(gene_ID %in% serine_subnetwork_genes) %>% 
+  left_join(my_network_modules, by = "gene_ID") %>% 
+  left_join(module_peak_exp, by = "module") 
+
+dim(serine_subnetwork_nodes)
+
+serine_subnetwork <- graph_from_data_frame(serine_subnetwork_edges,
+                                           vertices = serine_subnetwork_nodes,
+                                           directed = F)
+
+serine_subnetwork %>% 
+  ggraph(layout = "kk", circular = F) +
+  geom_edge_diagonal(color = "grey70", width = 0.5, alpha = 0.5) +
+  geom_node_point(alpha = 0.8, color = "grey30", shape = 21, size = 2,
+                  aes(fill = Time)) + 
+  scale_fill_gradientn(colors = viridis(10, option = "A")) +
+  labs(fill = "Peak time point") +
+  guides(size = "none",
+         fill = guide_colorsteps()) +
+  theme_void()+
+  theme(
+    text = element_text(size = 8), 
+    legend.position = "bottom",
+    legend.justification = 1,
+    title = element_text(size = 12)
+  )
+
+ggsave("serine_subnetwork_graph.png", height = 10, width = 12, bg = "white")
+
 coex <- graph_from_data_frame(edge_table_select,
                                        directed = F)
 
@@ -1150,21 +1511,42 @@ my_network %>%
   )
 
 
+neighbors_of_bait_serinecsv <- funct_anno %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_serine)) %>% 
+  select(gene_ID, AT_gene_id, annotation)
+
+write_excel_csv(neighbors_of_bait_serinecsv, "serineendopeptidase_neighbors.csv", col_names = T)
+
+neighbors_of_bait_chitinaseecsv <- funct_anno %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_chitinase)) %>% 
+  select(gene_ID, AT_gene_id, annotation)
+
+write_excel_csv(neighbors_of_bait_chitinaseecsv, "chitinase_neighbors.csv", col_names = T)
+
+neighbors_of_bait_lipasecsv <- funct_anno %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_lipase)) %>% 
+  select(gene_ID, AT_gene_id, annotation)
+
+write_excel_csv(neighbors_of_bait_lipasecsv, "lipase_neighbors.csv", col_names = T)
+
+neighbors_of_bait_metallocsv <- funct_anno %>% 
+  filter(gene_ID %in% names(neighbors_of_bait_metallo)) %>% 
+  select(gene_ID, AT_gene_id, annotation)
+
+write_excel_csv(neighbors_of_bait_metallocsv, "metallo_neighbors.csv", col_names = T)
+
+
 ##################################
 # Annotate modules
 ##################################
 
 write.csv(x = my_network_modules, file = "network_modules.csv")
 
-Annotations <- read_tsv("BLAST/DmProteinsTairdbBLASTconcat.txt")
-colnames(Annotations) <- c(1:13)
-
+Annotations <- read_tsv("BLAST/DmProteinsTairdbBLASTconcat.txt", col_names = FALSE)
 head(Annotations)
 
 Annotation_subset <- Annotations %>% 
   select(1:3)
-
-head(Annotation_subset)
 
 colnames(Annotation_subset) <- c("gene_ID","ATgene_ID", "TopBLASTHit")
 
@@ -1195,3 +1577,529 @@ my_network_moduless_annotated %>%
 
 
 write.csv(x = my_network_moduless_annotated, file = "network_modules_annotated.csv")
+
+###
+
+network_modules <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/GeneCoexpressionAnalysis/NetworkModules/network_modules_annotated.csv")
+
+
+genesinmodules <- network_modules %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n) %>% 
+  filter(n >= 5)
+
+write.csv(x = genesinmodules, file = "genesinmodules.csv")
+
+phosphatasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('phosphatase', ignore_case=TRUE)))
+
+phosphatasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+proteasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('protease', ignore_case=TRUE)))
+
+proteasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+chitinasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('chitinase', ignore_case=TRUE)))
+
+chitinasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+
+glucanasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('glucanase', ignore_case=TRUE)))
+
+glucanasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+
+esterasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('esterase', ignore_case=TRUE)))
+
+esterasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+peroxidasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('peroxidase', ignore_case=TRUE)))
+
+peroxidasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+nucleasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('nuclease', ignore_case=TRUE)))
+
+nucleasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+glucosaminidasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('glucosaminidase', ignore_case=TRUE)))
+
+glucosaminidasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+glucosidasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('glucosidase', ignore_case=TRUE)))
+
+glucosidasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+	
+amylasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('amylase', ignore_case=TRUE)))
+
+amylasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+lipasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('lipase', ignore_case=TRUE)))
+
+lipasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+ribonucleasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('ribonuclease', ignore_case=TRUE)))
+
+ribonucleasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+phosphoamidasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('phosphoamidase', ignore_case=TRUE)))
+
+phosphoamidasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+
+xylosidasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('xylosidase', ignore_case=TRUE)))
+
+xylosidasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+ureasesinnetwork <- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('urease', ignore_case=TRUE)))
+
+ureasesinnetwork %>% 
+  group_by(module) %>% 
+  count() %>% 
+  arrange(-n)
+
+cysteineendopeptidasesinnetwork<- network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('cysteine endopeptidase', ignore_case=TRUE)))
+
+write.csv(x = cysteineendopeptidasesinnetwork, file = "cysteineendopeptidasesinnetwork.csv")
+
+
+write.csv(x = ureasesinnetwork, file = "ureasesinnetwork.csv")
+write.csv(x = xylosidasesinnetwork, file = "xylosidasesinnetwork.csv")
+write.csv(x = phosphoamidasesinnetwork, file = "phosphoamidasesinnetwork.csv")
+write.csv(x = ribonucleasesinnetwork, file = "ribonucleasesinnetwork.csv")
+write.csv(x = lipasesinnetwork, file = "lipasesinnetwork.csv")
+write.csv(x = amylasesinnetwork, file = "amylasesinnetwork.csv")
+write.csv(x = glucosidasesinnetwork, file = "glucosidasesinnetwork.csv")
+write.csv(x = glucosaminidasesinnetwork, file = "glucosaminidasesinnetwork.csv")
+write.csv(x = nucleasesinnetwork, file = "nucleasesinnetwork.csv")
+write.csv(x = peroxidasesinnetwork, file = "peroxidasesinnetwork.csv")
+write.csv(x = esterasesinnetwork, file = "esterasesinnetwork.csv")
+write.csv(x = glucanasesinnetwork, file = "glucanasesinnetwork.csv")
+write.csv(x = chitinasesinnetwork, file = "chitinasesinnetwork.csv")
+write.csv(x = proteasesinnetwork, file = "proteasesinnetwork.csv")
+write.csv(x = phosphatasesinnetwork, file = "phosphatasesinnetwork.csv")
+
+
+chitinases <- Exp_table_long %>% 
+  filter(gene_ID %in% chitinasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = logTPM)) +
+  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = gene_ID), 
+               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
+  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  labs(x = NULL,
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    axis.text.x = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
+chitinases
+
+ggsave("chitinases_graph.png", height = 12, width = 8, bg = "white")
+
+
+xylosidases <- Exp_table_long %>% 
+  filter(gene_ID %in% xylosidasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = logTPM)) +
+  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = gene_ID), 
+               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
+  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  labs(x = NULL,
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    axis.text.x = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
+xylosidases
+
+ggsave("xylosidases_graph.png", height = 12, width = 8, bg = "white")
+
+ureases <- Exp_table_long %>% 
+  filter(gene_ID %in% ureasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = logTPM)) +
+  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = gene_ID), 
+               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
+  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  labs(x = NULL,
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    axis.text.x = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
+ureases
+
+ggsave("ureases_graph.png", height = 12, width = 8, bg = "white")
+
+cysteineendopeptidases <- Exp_table_long %>% 
+  filter(gene_ID %in% cysteineendopeptidasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = logTPM)) +
+  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = gene_ID), 
+               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
+  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  labs(x = NULL,
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    axis.text.x = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
+cysteineendopeptidases
+
+ggsave("cysteineendopeptidases_graph.png", height = 12, width = 8, bg = "white")
+
+ribonucleases <- Exp_table_long %>% 
+  filter(gene_ID %in% ribonucleasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = logTPM)) +
+  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = gene_ID), 
+               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
+  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  labs(x = NULL,
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    axis.text.x = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
+ribonucleases
+
+ggsave("ribonucleases_graph.png", height = 15, width = 8, bg = "white")
+
+lipases <- Exp_table_long %>% 
+  filter(gene_ID %in% lipasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = logTPM)) +
+  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = gene_ID), 
+               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
+  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  labs(x = NULL,
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    axis.text.x = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
+lipases
+
+ggsave("lipases_graph.png", height = 47, width = 10, bg = "white")
+
+esterases <- Exp_table_long %>% 
+  filter(gene_ID %in% esterasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = logTPM)) +
+  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = gene_ID), 
+               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
+  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  labs(x = NULL,
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    axis.text.x = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
+esterases
+
+ggsave("esterases_graph.png", height = 55, width = 10, bg = "white", limitsize = FALSE)
+
+
+glucanases <- Exp_table_long %>% 
+  filter(gene_ID %in% glucanasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = logTPM)) +
+  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = gene_ID), 
+               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
+  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  labs(x = NULL,
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    axis.text.x = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
+glucanases
+
+ggsave("glucanases_graph.png", height = 8, width = 8, bg = "white", limitsize = FALSE)
+
+glucosidase <- Exp_table_long %>% 
+  filter(gene_ID %in% glucosidasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = logTPM)) +
+  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = gene_ID), 
+               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
+  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  labs(x = NULL,
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    axis.text.x = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
+glucosidase
+
+ggsave("glucosidase_graph.png", height = 20, width = 8, bg = "white", limitsize = FALSE)
+
+nucleases <- Exp_table_long %>% 
+  filter(gene_ID %in% nucleasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = logTPM)) +
+  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = gene_ID), 
+               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
+  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  labs(x = NULL,
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    axis.text.x = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
+nucleases
+
+ggsave("nucleases_graph.png", height =40, width = 10, bg = "white", limitsize = FALSE)
+
+peroxidases <- Exp_table_long %>% 
+  filter(gene_ID %in% peroxidasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = logTPM)) +
+  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = gene_ID), 
+               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
+  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  labs(x = NULL,
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    axis.text.x = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
+peroxidases
+
+ggsave("peroxidases_graph.png", height =30, width = 10, bg = "white", limitsize = FALSE)
+
+phosphatases <- Exp_table_long %>% 
+  filter(gene_ID %in% phosphatasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = logTPM)) +
+  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = gene_ID), 
+               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
+  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  labs(x = NULL,
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    axis.text.x = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
+phosphatases
+
+ggsave("phosphatases_graph.png", height =130, width = 8, bg = "white", limitsize = FALSE)
+
+proteases <- Exp_table_long %>% 
+  filter(gene_ID %in% proteasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = logTPM)) +
+  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = gene_ID), 
+               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
+  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  labs(x = NULL,
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    axis.text.x = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
+proteases
+
+ggsave("proteases_graph.png", height =50, width = 8, bg = "white", limitsize = FALSE)
+
+amylases <- Exp_table_long %>% 
+  filter(gene_ID %in% amylasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = logTPM)) +
+  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = gene_ID), 
+               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
+  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  labs(x = NULL,
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    axis.text.x = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
+amylases
+
+ggsave("amylases_graph.png", height =30, width = 8, bg = "white", limitsize = FALSE)
+
