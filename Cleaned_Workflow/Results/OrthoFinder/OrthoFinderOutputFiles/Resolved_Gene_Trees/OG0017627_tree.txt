@@ -1,1 +1,0 @@
-(A_coerulea_proteins_Aqcoe6G155000.1.p:0.0442111,(A_thaliana_proteins_AT1G58120.uORF1:0.10858,((G_max_proteins_GmISU01.15G053500.1.p:0.00787562,G_max_proteins_GmISU01.13G223300.1.p:0.00973037)n3:0.105199,G_max_proteins_GmISU01.06G085450.1.p:0.0948876)n2:0.0105431)n1:0.0524154)n0;

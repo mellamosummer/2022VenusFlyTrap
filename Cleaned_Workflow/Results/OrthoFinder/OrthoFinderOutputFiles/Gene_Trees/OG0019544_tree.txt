@@ -1,1 +1,0 @@
-(L_sativa_proteins_Lsat_1_v5_gn_7_106520.1:0.250037,(A_vesiculosa_proteins_Av_00022818-RA:0.419893,(A_hypochondriacus_proteins_AH019522-RA:0.242886,A_hypochondriacus_proteins_AH010386-RA:0.495495):0.264808):0.250037);

@@ -1,1 +1,0 @@
-(V_vinifera_proteins_VIT_200s0332g00150.1:0.119738,((D_spatulata_proteins_Ds_00013455-RA:0.269885,(A_hypochondriacus_proteins_AH000829-RA:0.0835331,A_hypochondriacus_proteins_AH011453-RA:0.232283)n3:0.141578)n2:0.63045,(S_lycopersicum_proteins_Solyc06g064525.1.1:0.82728,S_lycopersicum_proteins_Solyc12g036600.2.1:0.36878)n4:0.0409755)n1:0.136518)n0;

@@ -1,1 +1,0 @@
-(A_coerulea_proteins_Aqcoe3G030500.1.p:0.266117,(A_vesiculosa_proteins_Av_00025052-RA:0.379517,(A_vesiculosa_proteins_Av_00022449-RA:0.320266,A_vesiculosa_proteins_Av_00023477-RA:1.22046):0.187034):0.266117);

@@ -1,1 +1,0 @@
-(D_muscipula_proteins_Dm_00004639-RA:0.0577902,((D_muscipula_proteins_Dm_00020717-RA:0.0974259,D_muscipula_proteins_Dm_00004633-RA:0.00222312)n2:0.0851086,(D_muscipula_proteins_Dm_00004637-RA:0.171789,D_muscipula_proteins_Dm_00004635-RA:0.133953)n3:0.0428426)n1:0.0577902)n0;

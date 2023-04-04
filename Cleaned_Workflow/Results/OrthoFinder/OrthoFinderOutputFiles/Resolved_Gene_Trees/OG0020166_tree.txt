@@ -1,1 +1,0 @@
-(D_spatulata_proteins_Ds_00015210-RA:0.57542,((P_amilis_proteins_FUN_041393-T1:0.219434,P_amilis_proteins_FUN_041396-T1:0.239318)n2:0.594032,P_amilis_proteins_FUN_041398-T1:0.678313)n1:0.57542)n0;

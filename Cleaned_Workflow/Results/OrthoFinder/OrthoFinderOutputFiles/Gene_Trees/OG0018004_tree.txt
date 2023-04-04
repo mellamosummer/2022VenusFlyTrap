@@ -1,1 +1,0 @@
-(P_amilis_proteins_FUN_003002-T1:0.247763,(G_max_proteins_GmISU01.08G217700.1.p:0.817156,(A_thaliana_proteins_AT2G19820.1:0.312986,(A_thaliana_proteins_AT2G19510.1:0.0738876,A_thaliana_proteins_AT1G36000.1:0.0757123):0.203209):0.558826):0.247763);

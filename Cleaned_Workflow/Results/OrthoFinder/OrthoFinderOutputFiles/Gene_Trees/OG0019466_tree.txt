@@ -1,1 +1,0 @@
-(G_max_proteins_GmISU01.14G102000.1.p:0.187143,(A_hypochondriacus_proteins_AH011582-RA:0.422859,(A_hypochondriacus_proteins_AH018498-RA:0.063179,A_hypochondriacus_proteins_AH018496-RA:0.726897):0.15209):0.187143);

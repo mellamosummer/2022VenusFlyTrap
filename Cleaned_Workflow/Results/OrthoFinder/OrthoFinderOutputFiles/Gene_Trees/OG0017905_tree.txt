@@ -1,1 +1,0 @@
-(S_lycopersicum_proteins_Solyc04g025210.3.1:0.24446,((A_hypochondriacus_proteins_AH010731-RA:0.358959,B_vulgaris_proteins_Bevul.4G124700.1.p:0.0979476):0.105691,(P_amilis_proteins_FUN_002746-T2:0.256437,P_amilis_proteins_FUN_002746-T1:1.59726e-06):0.320664):0.24446);

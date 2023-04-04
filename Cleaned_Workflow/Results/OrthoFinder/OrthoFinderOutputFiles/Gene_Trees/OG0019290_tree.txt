@@ -1,1 +1,0 @@
-((A_coerulea_proteins_Aqcoe7G296900.1.p:0.424614,A_coerulea_proteins_Aqcoe7G297000.1.p:0.156162):0.548279,(G_max_proteins_GmISU01.09G094100.2.p:0,G_max_proteins_GmISU01.09G094100.1.p:0):0.548279);

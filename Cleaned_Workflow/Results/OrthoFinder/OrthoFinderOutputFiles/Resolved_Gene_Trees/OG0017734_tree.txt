@@ -1,1 +1,0 @@
-(A_coerulea_proteins_Aqcoe7G229800.1.p:0.0677848,((B_vulgaris_proteins_Bevul.5G154100.1.p:2.35592e-07,(B_vulgaris_proteins_Bevul.1G065100.1.p:0.0508054,B_vulgaris_proteins_Bevul.5G125900.1.p:2.35592e-07)n3:0.00118838)n2:0.0536199,A_thaliana_proteins_ATCG00210.1:2.35592e-07)n1:0.0677848)n0;

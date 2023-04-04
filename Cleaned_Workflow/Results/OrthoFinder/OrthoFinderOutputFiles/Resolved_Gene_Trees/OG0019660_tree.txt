@@ -1,1 +1,0 @@
-(A_hypochondriacus_proteins_AH001295-RA:0.0393341,((S_lycopersicum_proteins_Solyc09g042573.1.1:0.178875,S_lycopersicum_proteins_Solyc09g042577.1.1:0.149722)n2:0.32297,S_lycopersicum_proteins_Solyc08g006885.1.1:0.898789)n1:0.0393341)n0;

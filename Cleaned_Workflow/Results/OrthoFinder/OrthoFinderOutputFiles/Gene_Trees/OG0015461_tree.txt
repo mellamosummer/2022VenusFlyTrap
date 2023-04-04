@@ -1,1 +1,0 @@
-(G_max_proteins_GmISU01.06G268800.2.p:0,(G_max_proteins_GmISU01.06G268800.4.p:0,(G_max_proteins_GmISU01.06G268800.3.p:0,(G_max_proteins_GmISU01.06G268800.1.p:0.0470252,(G_max_proteins_GmISU01.04G108100.4.p:0.0535926,((G_max_proteins_GmISU01.04G108100.2.p:0,G_max_proteins_GmISU01.04G108100.3.p:0):0,G_max_proteins_GmISU01.04G108100.1.p:0):0.00751038):0.152079):0.00379383):0):0);

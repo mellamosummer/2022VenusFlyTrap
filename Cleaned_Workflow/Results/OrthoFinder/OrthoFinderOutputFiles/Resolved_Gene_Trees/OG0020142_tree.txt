@@ -1,1 +1,0 @@
-(G_max_proteins_GmISU01.10G143250.1.p:0.290327,(D_spatulata_proteins_Ds_00008977-RA:0.24492,(D_muscipula_proteins_Dm_00004944-RA:0.399122,D_muscipula_proteins_Dm_00005019-RA:0.128554)n2:0.0142838)n1:0.0829125)n0;

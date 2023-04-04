@@ -1,1 +1,0 @@
-((S_lycopersicum_proteins_Solyc09g098190.3.1:0.198806,S_lycopersicum_proteins_Solyc12g098670.2.1:0.218684)n1:0.231023,(P_amilis_proteins_FUN_039865-T1:0.483182,A_hypochondriacus_proteins_AH019090-RA:0.339805)n2:0.231023)n0;

@@ -1,1 +1,0 @@
-(A_thaliana_proteins_AT3G21000.1:0.792047,((D_muscipula_proteins_Dm_00018195-RA:0.206164,D_muscipula_proteins_Dm_00004002-RA:0.326241)n2:0.320808,A_vesiculosa_proteins_Av_00015017-RA:0.411864)n1:0.792047)n0;

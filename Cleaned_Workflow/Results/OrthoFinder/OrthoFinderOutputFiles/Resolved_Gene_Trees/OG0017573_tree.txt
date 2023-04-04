@@ -1,1 +1,0 @@
-(A_coerulea_proteins_Aqcoe2G394000.1.p:0.546585,((P_amilis_proteins_FUN_050783-T1:1.15731,(A_hypochondriacus_proteins_AH001256-RA:0.592327,B_vulgaris_proteins_Bevul.4G182500.1.p:0.325903)n3:0.636984)n2:0.42134,A_thaliana_proteins_AT5G63720.1:1.38847)n1:0.546585)n0;

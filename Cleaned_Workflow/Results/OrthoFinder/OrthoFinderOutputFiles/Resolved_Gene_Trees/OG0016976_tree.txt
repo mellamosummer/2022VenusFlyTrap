@@ -1,1 +1,0 @@
-((P_amilis_proteins_FUN_052655-T1:0.779166,B_vulgaris_proteins_Bevul.4G225300.1.p:0.588164)n1:0.326775,((A_vesiculosa_proteins_Av_00011846-RA:0.143841,A_vesiculosa_proteins_Av_00006991-RA:0.169253)n3:0.039257,(D_spatulata_proteins_Ds_00013931-RA:0.379613,D_muscipula_proteins_Dm_00012606-RA:0.224959)n4:0.0291803)n2:0.326775)n0;

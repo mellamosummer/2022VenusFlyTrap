@@ -1,1 +1,0 @@
-(((V_vinifera_proteins_VIT_213s0064g00190.3:0.0126581,V_vinifera_proteins_VIT_213s0064g00190.1:1.39688e-06)n2:0.123408,V_vinifera_proteins_VIT_213s0064g00190.2:0.144735)n1:0.0732921,(A_thaliana_proteins_AT5G13730.1:0.500116,S_lycopersicum_proteins_Solyc01g087690.2.1:0.469804)n3:0.0732921)n0;

@@ -1,1 +1,0 @@
-(A_vesiculosa_proteins_Av_00018037-RA:1.05752,((D_spatulata_proteins_Ds_00014172-RA:1.10543,P_amilis_proteins_FUN_000425-T1:0.701825)n2:0.0186129,(D_spatulata_proteins_Ds_00015944-RA:1.01538,((P_amilis_proteins_FUN_053225-T1:0.49249,P_amilis_proteins_FUN_036092-T1:0.222309)n5:0.426935,P_amilis_proteins_FUN_000426-T1:0.708413)n4:0.219874)n3:0.081887)n1:0.00909856)n0;

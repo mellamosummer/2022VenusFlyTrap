@@ -1,1 +1,0 @@
-(D_spatulata_proteins_Ds_00014203-RA:0.2478,(B_vulgaris_proteins_Bevul.2G197000.1.p:0.1247,(P_amilis_proteins_FUN_029698-T2:0.090655,P_amilis_proteins_FUN_029698-T1:8.3697e-07)n2:0.127593)n1:0.2478)n0;

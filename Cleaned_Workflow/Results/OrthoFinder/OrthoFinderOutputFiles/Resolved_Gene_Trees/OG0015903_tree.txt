@@ -1,1 +1,0 @@
-(((A_thaliana_proteins_AT1G53970.1:5e-07,A_thaliana_proteins_AT1G53970.2:5e-07)n2:0.432947,(A_hypochondriacus_proteins_AH013420-RA:0.379076,P_amilis_proteins_FUN_024054-T1:0.565266)n3:0.220026)n1:0.0413518,(S_lycopersicum_proteins_Solyc01g109020.2.1:0.60117,(G_max_proteins_GmISU01.19G221600.1.p:0.0210119,G_max_proteins_GmISU01.19G221600.2.p:0.0093341)n5:0.48025)n4:0.0413518)n0;

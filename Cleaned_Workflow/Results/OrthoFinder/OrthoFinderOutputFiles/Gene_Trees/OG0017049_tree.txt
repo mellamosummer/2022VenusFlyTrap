@@ -1,1 +1,0 @@
-((D_muscipula_proteins_Dm_00019732-RA:0.145941,(P_amilis_proteins_FUN_004163-T2:0.135413,P_amilis_proteins_FUN_004163-T1:1.95245e-06):0.305069):0.198959,((G_max_proteins_GmISU01.09G159300.2.p:0.0188439,G_max_proteins_GmISU01.09G159300.1.p:0.0970791):0.993017,G_max_proteins_GmISU01.04G102500.1.p:1.95245e-06):0.198959);

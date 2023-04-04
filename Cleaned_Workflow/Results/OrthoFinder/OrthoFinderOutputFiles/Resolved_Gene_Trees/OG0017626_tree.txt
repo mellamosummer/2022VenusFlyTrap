@@ -1,1 +1,0 @@
-(A_coerulea_proteins_Aqcoe6G263500.1.p:0.400663,(P_amilis_proteins_FUN_006692-T1:1.25635,(L_sativa_proteins_Lsat_1_v5_gn_8_93880.1:0.197997,(L_sativa_proteins_Lsat_1_v5_gn_8_124660.1:0.315129,L_sativa_proteins_Lsat_1_v5_gn_0_35081.1:0.204872)n3:0.0978732)n2:0.39257)n1:0.400663)n0;

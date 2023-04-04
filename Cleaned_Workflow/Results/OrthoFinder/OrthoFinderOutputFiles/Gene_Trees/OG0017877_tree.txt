@@ -1,1 +1,0 @@
-((P_amilis_proteins_FUN_017380-T1:0.958662,P_amilis_proteins_FUN_041359-T1:1.28919):0.200966,((A_hypochondriacus_proteins_AH011460-RA:0.0705543,A_hypochondriacus_proteins_AH023847-RA:0.345858):0.682299,B_vulgaris_proteins_Bevul.3G180000.1.p:0.354044):0.200966);

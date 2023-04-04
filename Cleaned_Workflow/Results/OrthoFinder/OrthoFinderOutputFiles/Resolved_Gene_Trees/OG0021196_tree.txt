@@ -1,1 +1,0 @@
-(P_amilis_proteins_FUN_011707-T1:0.64642,((S_lycopersicum_proteins_Solyc06g008080.2.1:0.090989,S_lycopersicum_proteins_Solyc06g008065.1.1:0.271539)n2:0.417596,S_lycopersicum_proteins_Solyc01g067200.1.1:0.367435)n1:0.64642)n0;

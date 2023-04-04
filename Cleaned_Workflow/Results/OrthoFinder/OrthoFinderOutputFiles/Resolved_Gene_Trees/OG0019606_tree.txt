@@ -1,1 +1,0 @@
-(A_hypochondriacus_proteins_AH005914-RA:0.576844,((A_vesiculosa_proteins_Av_00016594-RA:0.532914,A_vesiculosa_proteins_Av_00014833-RA:0.677515)n2:0.335671,D_muscipula_proteins_Dm_00003352-RA:0.563176)n1:0.576844)n0;

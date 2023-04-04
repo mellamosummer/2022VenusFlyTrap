@@ -1,1 +1,0 @@
-((((L_sativa_proteins_Lsat_1_v5_gn_8_66061.1:0.126196,L_sativa_proteins_Lsat_1_v5_gn_8_66041.1:0.161214)n3:0.0335761,L_sativa_proteins_Lsat_1_v5_gn_8_65921.1:0.21337)n2:0.115488,L_sativa_proteins_Lsat_1_v5_gn_8_66021.1:0.581799)n1:0.124385,(A_hypochondriacus_proteins_AH018857-RA:0.597743,B_vulgaris_proteins_Bevul.3G061300.1.p:0.6825)n4:0.124385)n0;

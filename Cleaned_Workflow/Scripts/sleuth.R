@@ -342,3 +342,198 @@ dev.off()
 
 #Quit R
 quit(save="no")
+
+
+SleuthList1Hr<- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/sleuth/PreyVsNoPrey_1hr/SleuthPreyNoPrey60minResults_q_0.05.csv")
+
+SleuthList1HrAnnotated <- SleuthList1Hr %>% 
+  left_join(funct_anno, by = "target_id") %>% select(target_id,AT_gene_id,annotation)
+
+SleuthList24Hr<- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/sleuth/PreyVsNoPrey_24hr/SleuthPreyNoPrey1440min_q_0.05.csv")
+
+SleuthList24HrAnnotated <- SleuthList24Hr %>% 
+  left_join(funct_anno, by = "target_id") %>% select(target_id,AT_gene_id,annotation)
+
+TrapsVsPetioles<- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/sleuth/PetiolesVsTraps/SleuthPetioleVstraps_q_0.05.csv")
+
+TrapsVsPetiolesAnnotated <- TrapsVsPetioles %>% 
+  left_join(funct_anno, by = "target_id") %>% select(target_id,AT_gene_id,annotation)
+
+write.csv(x = SleuthList1HrAnnotated, file = "SleuthList1HrAnnotated.csv")
+
+write.csv(x = SleuthList24HrAnnotated, file = "SleuthList24HrAnnotated.csv")
+
+write.csv(x = TrapsVsPetiolesAnnotated, file = "SleuthTrapsVsPetiolesAnnotated.csv")
+
+SleuthPreyamylase1hr <- SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('amylase', ignore_case=TRUE)))
+
+SleuthPreychitinase1hr <- SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('chitinase', ignore_case=TRUE)))
+
+SleuthPreyendopeptidase1hr <- SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('endopeptidase', ignore_case=TRUE)))
+
+SleuthPreyEsterases1hr <- SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('esterase', ignore_case=TRUE)))
+
+SleuthPreyglucanase1hr<-SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('glucanase', ignore_case=TRUE)))
+
+SleuthPreyGlucosidases1hr<-SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('glucosidase', ignore_case=TRUE)))
+
+SleuthPreyglucosaminidases1hr<-SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('glucosaminidase', ignore_case=TRUE)))
+
+SleuthPreyLipases1hr<-SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('lipase', ignore_case=TRUE)))
+
+SleuthPreyNucleases1hr<-SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('nuclease', ignore_case=TRUE)))
+
+SleuthPreyPeroxidases1hr<-SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('peroxidase', ignore_case=TRUE)))
+
+SleuthPreyPhosphatases1hr<-SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('phosphatase', ignore_case=TRUE)))
+
+SleuthPreyphosphoaminidase1hr<-SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('phosphoaminidase', ignore_case=TRUE)))
+
+SleuthPreyproteases1hr<-SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('protease', ignore_case=TRUE)))
+
+SleuthPreyribonuclease1hr<-SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('ribonuclease', ignore_case=TRUE)))
+
+SleuthPreyureases1hr<-SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('urease', ignore_case=TRUE)))
+
+SleuthPreyXylosidases1hr<-SleuthList1HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('xylosidase', ignore_case=TRUE)))
+
+SleuthPreyamylase24hr <- SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('amylase', ignore_case=TRUE)))
+
+SleuthPreychitinase24hr<- SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('chitinase', ignore_case=TRUE)))
+
+SleuthPreyendopeptidase24hr <- SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('endopeptidase', ignore_case=TRUE)))
+
+SleuthPreyEsterases24hr <- SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('esterase', ignore_case=TRUE)))
+
+SleuthPreyglucanase24hr<-SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('glucanase', ignore_case=TRUE)))
+
+SleuthPreyGlucosidases24hr<-SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('glucosidase', ignore_case=TRUE)))
+
+SleuthPreyglucosaminidases24hr<-SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('glucosaminidase', ignore_case=TRUE)))
+
+SleuthPreyLipases24hr<-SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('lipase', ignore_case=TRUE)))
+
+SleuthPreyNucleases24hr<-SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('nuclease', ignore_case=TRUE)))
+
+SleuthPreyPeroxidases24hr<-SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('peroxidase', ignore_case=TRUE)))
+
+SleuthPreyPhosphatases24hr<-SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('phosphatase', ignore_case=TRUE)))
+
+SleuthPreyphosphoaminidase24hr<-SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('phosphoaminidase', ignore_case=TRUE)))
+
+SleuthPreyproteases24hr<-SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('protease', ignore_case=TRUE)))
+
+SleuthPreyribonuclease24hr<-SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('ribonuclease', ignore_case=TRUE)))
+
+SleuthPreyureases24hr<-SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('urease', ignore_case=TRUE)))
+
+SleuthPreyXylosidases24hr<-SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('xylosidase', ignore_case=TRUE)))
+
+TrapsVsPetiolesamylase <- TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('amylase', ignore_case=TRUE)))
+
+TrapsVsPetioleschitinase<- TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('chitinase', ignore_case=TRUE)))
+
+TrapsVsPetiolesendopeptidase <- TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('endopeptidase', ignore_case=TRUE)))
+
+TrapsVsPetiolesEsterases <- TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('esterase', ignore_case=TRUE)))
+
+TrapsVsPetiolesglucanase<-TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('glucanase', ignore_case=TRUE)))
+
+TrapsVsPetiolesGlucosidases<-SleuthList24HrAnnotated %>% 
+  filter(str_detect(annotation, fixed('TrapsVsPetiolesAnnotated', ignore_case=TRUE)))
+
+TrapsVsPetiolesglucosaminidases<-TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('glucosaminidase', ignore_case=TRUE)))
+
+TrapsVsPetiolesLipases<-TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('lipase', ignore_case=TRUE)))
+
+TrapsVsPetiolesNucleases<-TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('nuclease', ignore_case=TRUE)))
+
+TrapsVsPetioleseroxidases<-TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('peroxidase', ignore_case=TRUE)))
+
+TrapsVsPetiolesPhosphatases<-TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('phosphatase', ignore_case=TRUE)))
+
+STrapsVsPetiolesphosphoaminidase<-TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('phosphoaminidase', ignore_case=TRUE)))
+
+TrapsVsPetiolesproteases<-TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('protease', ignore_case=TRUE)))
+
+TrapsVsPetiolesribonuclease<-TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('ribonuclease', ignore_case=TRUE)))
+
+TrapsVsPetiolesureases<-TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('urease', ignore_case=TRUE)))
+
+TrapsVsPetiolesXylosidases<-TrapsVsPetiolesAnnotated %>% 
+  filter(str_detect(annotation, fixed('xylosidase', ignore_case=TRUE)))
+
+write.csv(x = SleuthPreyamylase1hr, file = "SleuthPreyamylase1hr.csv")
+write.csv(x = SleuthPreychitinase1hr, file = "SleuthPreychitinase1hr.csv")
+write.csv(x = SleuthPreyendopeptidase1hr, file = "SleuthPreyendopeptidase1hr.csv")
+write.csv(x = SleuthPreyEsterases1hr, file = "SleuthPreyEsterases1hr.csv")
+write.csv(x = SleuthPreyglucanase1hr, file = "SleuthPreyglucanase1hr.csv")
+write.csv(x = SleuthPreyGlucosidases1hr, file = "SleuthPreyGlucosidases1hr.csv")
+write.csv(x = SleuthPreyglucosaminidases1hr, file = "SleuthPreyglucosaminidases1hr.csv")
+write.csv(x = SleuthPreyLipases1hr, file = "SleuthPreyLipases1hr.csv")
+write.csv(x = SleuthPreyNucleases1hr, file = "SleuthPreyNucleases1hr.csv")
+write.csv(x = SleuthPreyPeroxidases1hr, file = "SleuthPreyPeroxidases1hr.csv")
+write.csv(x = SleuthPreyPhosphatases1hr, file = "SleuthPreyPhosphatases1hr.csv")
+write.csv(x = SleuthPreyphosphoaminidase1hr, file = "SleuthPreyphosphoaminidase1hr.csv")
+write.csv(x = SleuthPreyproteases1hr, file = "SleuthPreyproteases1hr.csv")
+write.csv(x = SleuthPreyribonuclease1hr, file = "SleuthPreyribonuclease1hr.csv")
+write.csv(x = SleuthPreyureases1hr, file = "SleuthPreyureases1hr.csv")
+write.csv(x = SleuthPreyXylosidases1hr, file = "SleuthPreyXylosidases1hr.csv")
+
+write.csv(x = TrapsVsPetiolesamylase, file = "TrapsVsPetiolesamylase.csv")
+write.csv(x = TrapsVsPetiolesendopeptidase, file = "TrapsVsPetiolesendopeptidase.csv")
+write.csv(x = TrapsVsPetioleseroxidases, file = "TrapsVsPetiolesPeroxidases.csv")
+write.csv(x = TrapsVsPetiolesEsterases, file = "TrapsVsPetiolesEsterases.csv")
+write.csv(x = TrapsVsPetiolesLipases, file = "TrapsVsPetiolesLipases.csv")
+write.csv(x = TrapsVsPetiolesNucleases, file = "TrapsVsPetiolesNucleases.csv")
+write.csv(x = TrapsVsPetiolesPhosphatases, file = "TrapsVsPetiolesPhosphatases.csv")
+write.csv(x = TrapsVsPetiolesproteases, file = "TrapsVsPetiolesproteases.csv")
+write.csv(x = TrapsVsPetiolesribonuclease, file = "TrapsVsPetiolesribonuclease.csv")
+
+

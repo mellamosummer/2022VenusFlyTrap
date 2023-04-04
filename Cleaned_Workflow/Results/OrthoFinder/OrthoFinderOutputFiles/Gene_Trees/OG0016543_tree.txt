@@ -1,1 +1,0 @@
-(L_sativa_proteins_Lsat_1_v5_gn_9_36160.1:0.397802,(A_coerulea_proteins_Aqcoe5G382400.1.p:9.16694e-07,(A_coerulea_proteins_Aqcoe5G453000.1.p:0.0552739,(A_coerulea_proteins_Aqcoe4G166300.1.p:0.0166827,(A_coerulea_proteins_Aqcoe2G027200.1.p:0.0423486,A_coerulea_proteins_Aqcoe3G218800.1.p:0.00485444):0.00071781):0.00270731):0.00331056):0.397802);

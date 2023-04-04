@@ -1,1 +1,0 @@
-(A_coerulea_proteins_Aqcoe2G050300.1.p:0.379807,((A_vesiculosa_proteins_Av_00014210-RA:0.552477,B_vulgaris_proteins_Bevul.2G001100.1.p:0.758331):0.250916,(V_vinifera_proteins_VIT_219s0014g03877.1:0.00464269,(V_vinifera_proteins_VIT_219s0014g03884.1:2.84484e-06,V_vinifera_proteins_VIT_200s0238g00085.1:0.0952929):0.00420531):0.419901):0.379807);

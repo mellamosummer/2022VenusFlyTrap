@@ -1,1 +1,0 @@
-(V_vinifera_proteins_VIT_213s0073g00340.1:0.0957888,(A_thaliana_proteins_AT3G10640.2:0.250364,(A_vesiculosa_proteins_Av_00016064-RA:0.215212,(L_sativa_proteins_Lsat_1_v5_gn_0_22560.2:0.0360349,(L_sativa_proteins_Lsat_1_v5_gn_0_22560.3:0.0207983,L_sativa_proteins_Lsat_1_v5_gn_0_22560.1:0.14854)n4:0.0670766)n3:0.279492)n2:0.0780756)n1:0.0957888)n0;

@@ -1,1 +1,0 @@
-(B_vulgaris_proteins_Bevul.8G003500.1.p:0.15249,((P_amilis_proteins_FUN_008621-T1:0.049356,P_amilis_proteins_FUN_008621-T2:0.158728):0.951315,P_amilis_proteins_FUN_035557-T1:0.313656):0.15249);

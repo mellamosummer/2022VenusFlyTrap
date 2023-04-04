@@ -1,1 +1,0 @@
-(A_vesiculosa_proteins_Av_00019342-RA:0.359413,(A_vesiculosa_proteins_Av_00013681-RA:0.688685,(A_vesiculosa_proteins_Av_00012534-RA:0.521271,(A_vesiculosa_proteins_Av_00018858-RA:0.345005,(A_vesiculosa_proteins_Av_00010439-RA:0.854059,A_vesiculosa_proteins_Av_00008317-RA:1.03252)n4:0.0742356)n3:0.195621)n2:0.136982)n1:0.359413)n0;

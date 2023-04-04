@@ -1,1 +1,0 @@
-(V_vinifera_proteins_VIT_214s0030g00770.1:4.07354e-06,(S_lycopersicum_proteins_Solyc05g023770.3.1:0.895667,((A_hypochondriacus_proteins_AH022068-RA:0.675234,P_amilis_proteins_FUN_002485-T1:0.667431):0.36488,S_lycopersicum_proteins_Solyc10g037940.1.1:1.26682):0.227824):4.07354e-06);

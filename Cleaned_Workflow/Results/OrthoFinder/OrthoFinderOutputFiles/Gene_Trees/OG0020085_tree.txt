@@ -1,1 +1,0 @@
-(B_vulgaris_proteins_Bevul.7G030000.4.p:0,((B_vulgaris_proteins_Bevul.7G030000.1.p:0,B_vulgaris_proteins_Bevul.7G030000.2.p:0):0.133728,B_vulgaris_proteins_Bevul.7G030000.3.p:0):0);

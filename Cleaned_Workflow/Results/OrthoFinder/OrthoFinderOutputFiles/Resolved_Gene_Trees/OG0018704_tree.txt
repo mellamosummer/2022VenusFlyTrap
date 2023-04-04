@@ -1,1 +1,0 @@
-(L_sativa_proteins_Lsat_1_v5_gn_4_95421.1:0.115588,(L_sativa_proteins_Lsat_1_v5_gn_2_131781.1:0.0798363,((L_sativa_proteins_Lsat_1_v5_gn_0_29740.1:0.725019,L_sativa_proteins_Lsat_1_v5_gn_2_133720.1:0.0646188)n3:0.0418618,L_sativa_proteins_Lsat_1_v5_gn_2_133740.1:0.129654)n2:0.0438912)n1:0.115588)n0;

@@ -1,1 +1,0 @@
-(((S_lycopersicum_proteins_Solyc04g017980.1.1:0.632269,S_lycopersicum_proteins_Solyc11g050920.1.1:0.243731)n2:0.184748,S_lycopersicum_proteins_Solyc12g027520.1.1:0.0824368)n1:0.191254,(B_vulgaris_proteins_Bevul.6G073800.1.p:0.450949,D_muscipula_proteins_Dm_00019739-RA:0.578085)n3:0.191254)n0;

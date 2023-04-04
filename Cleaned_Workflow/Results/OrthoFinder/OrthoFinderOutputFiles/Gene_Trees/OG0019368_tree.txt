@@ -1,1 +1,0 @@
-(A_coerulea_proteins_Aqcoe5G308500.1.p:0.809131,((A_coerulea_proteins_Aqcoe5G329700.3.p:0.075369,A_coerulea_proteins_Aqcoe5G329700.1.p:0.095714):0.136071,A_coerulea_proteins_Aqcoe5G329700.2.p:1.8498e-06):0.809131);

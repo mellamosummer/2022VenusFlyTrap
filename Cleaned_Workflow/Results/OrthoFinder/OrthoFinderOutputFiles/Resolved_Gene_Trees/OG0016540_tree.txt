@@ -1,1 +1,0 @@
-((B_vulgaris_proteins_Bevul.8G084800.1.p:0.218144,((A_coerulea_proteins_Aqcoe2G191500.1.p:0.281224,(A_coerulea_proteins_Aqcoe7G227400.1.p:0.404433,A_coerulea_proteins_Aqcoe2G191600.1.p:0.282305)n4:0.343466)n3:0.0381629,A_coerulea_proteins_Aqcoe2G174300.1.p:0.140894)n2:0.0156549)n1:0.0988292,V_vinifera_proteins_VIT_217s0000g01915.1:0.304545)n0;

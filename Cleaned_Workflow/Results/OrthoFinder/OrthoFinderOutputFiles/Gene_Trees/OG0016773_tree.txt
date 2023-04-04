@@ -1,1 +1,0 @@
-(A_hypochondriacus_proteins_AH016792-RA:0.277402,((A_vesiculosa_proteins_Av_00013877-RA:0.361139,A_vesiculosa_proteins_Av_00017732-RA:0.623143):0.370072,((A_vesiculosa_proteins_Av_00024244-RA:0.352257,A_vesiculosa_proteins_Av_00011739-RA:0.162474):0.119465,A_vesiculosa_proteins_Av_00017040-RA:0.79451):0.201073):0.277402);

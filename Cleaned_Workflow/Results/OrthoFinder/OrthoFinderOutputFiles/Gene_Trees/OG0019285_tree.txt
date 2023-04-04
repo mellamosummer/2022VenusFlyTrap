@@ -1,1 +1,0 @@
-((S_lycopersicum_proteins_Solyc03g065050.1.1:0.145993,A_thaliana_proteins_ATCG00065.1:0.0127618):0.102419,(A_coerulea_proteins_Aqcoe7G230400.1.p:0.0373191,A_coerulea_proteins_Aqcoe5G477200.1.p:0.0353439):0.102419);

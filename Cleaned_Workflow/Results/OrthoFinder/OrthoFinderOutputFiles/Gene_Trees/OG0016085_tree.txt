@@ -1,1 +1,0 @@
-(((P_amilis_proteins_FUN_017549-T1:0.521013,P_amilis_proteins_FUN_041968-T1:0.0196658):0.192143,S_lycopersicum_proteins_Solyc05g015410.3.1:0.715344):0.0464925,(((S_lycopersicum_proteins_Solyc07g021650.2.1:0.998871,P_amilis_proteins_FUN_049856-T1:3.97291e-06):0.148153,D_muscipula_proteins_Dm_00010397-RA:0.762671):0.0230074,D_muscipula_proteins_Dm_00015355-RA:0.671021):0.0464925);

@@ -1,1 +1,0 @@
-(A_thaliana_proteins_AT5G27370.1:0.324089,((D_spatulata_proteins_Ds_00006912-RA:0.160862,(A_vesiculosa_proteins_Av_00021234-RA:0.259103,D_muscipula_proteins_Dm_00000562-RA:0.189473):0.0328048):0.170709,(P_amilis_proteins_FUN_002454-T1:0.327464,(B_vulgaris_proteins_Bevul.4G149900.1.p:0.164388,A_hypochondriacus_proteins_AH010560-RA:0.271147):0.0978498):0.0292252):0.324089);

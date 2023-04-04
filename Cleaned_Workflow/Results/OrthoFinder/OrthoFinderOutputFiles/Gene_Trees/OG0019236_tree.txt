@@ -1,1 +1,0 @@
-(A_coerulea_proteins_Aqcoe7G373700.1.p:0.583193,((A_coerulea_proteins_Aqcoe7G373600.1.p:0.198762,A_coerulea_proteins_Aqcoe7G373500.1.p:0.200246):0.076903,A_coerulea_proteins_Aqcoe4G151600.1.p:1.38741):0.583193);

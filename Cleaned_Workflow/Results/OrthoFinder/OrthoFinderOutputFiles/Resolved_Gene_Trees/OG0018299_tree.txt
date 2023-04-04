@@ -1,1 +1,0 @@
-(B_vulgaris_proteins_Bevul.6G109900.1.p:0.801274,(G_max_proteins_GmISU01.02G109900.1.p:0.174554,((G_max_proteins_GmISU01.01G057000.3.p:0,G_max_proteins_GmISU01.01G057000.1.p:0)n3:0,G_max_proteins_GmISU01.01G057000.2.p:0)n2:0.106637)n1:0.801274)n0;

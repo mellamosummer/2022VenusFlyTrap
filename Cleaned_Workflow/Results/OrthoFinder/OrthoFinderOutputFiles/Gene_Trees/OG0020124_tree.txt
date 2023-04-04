@@ -1,1 +1,0 @@
-(G_max_proteins_GmISU01.08G288700.1.p:0.202011,((D_muscipula_proteins_Dm_00004134-RA:0.336539,D_spatulata_proteins_Ds_00007999-RA:0.281668):0.196666,S_lycopersicum_proteins_Solyc10g051150.2.1:0.666883):0.202011);

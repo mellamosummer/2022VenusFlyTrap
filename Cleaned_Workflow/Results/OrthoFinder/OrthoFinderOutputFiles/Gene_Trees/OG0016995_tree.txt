@@ -1,1 +1,0 @@
-((S_lycopersicum_proteins_Solyc12g040580.1.1:0.242937,A_vesiculosa_proteins_Av_00015535-RA:0.397442):0.204416,(P_amilis_proteins_FUN_023642-T2:1.84871e-06,(A_vesiculosa_proteins_Av_00020835-RA:0.185589,(S_lycopersicum_proteins_Solyc04g005160.2.1:1.84871e-06,S_lycopersicum_proteins_Solyc12g040570.1.1:0.506593):0.143604):0.121369):0.204416);

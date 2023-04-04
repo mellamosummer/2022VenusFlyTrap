@@ -1,1 +1,0 @@
-(D_muscipula_proteins_Dm_00019535-RA:0.359841,(L_sativa_proteins_Lsat_1_v5_gn_2_113200.2:0.653374,(S_lycopersicum_proteins_Solyc03g071555.1.1:0.537696,S_lycopersicum_proteins_Solyc11g008220.2.1:0.345152)n2:0.0383502)n1:0.0818558)n0;

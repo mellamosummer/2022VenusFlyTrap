@@ -1781,16 +1781,39 @@ write.csv(x = proteasesinnetwork, file = "proteasesinnetwork.csv")
 write.csv(x = phosphatasesinnetwork, file = "phosphatasesinnetwork.csv")
 
 
+Exp_table_long %>% 
+  filter(gene_ID %in% chitinasesinnetwork$gene_ID) %>% 
+  inner_join(PCA_coord, by = "LibraryName") %>% 
+  ggplot(aes(x = Time, y = "log10(TPM)")) +
+  facet_grid(gene_ID ~ ., scales = "free_y") +
+  geom_point(aes(fill = Treatment), color = "white", size = 2, 
+             alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1")) +
+  scale_color_manual(values = c("grey70", "tomato1")) +
+  labs(x = "Time",
+       y = "log10(TPM)") +
+  theme_bw() +
+  theme(
+    legend.position = "none",
+    panel.spacing = unit(1, "lines"),
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    strip.background = element_blank()
+  )
+
 chitinases <- Exp_table_long %>% 
   filter(gene_ID %in% chitinasesinnetwork$gene_ID) %>% 
   inner_join(PCA_coord, by = "LibraryName") %>% 
   ggplot(aes(x = Time, y = logTPM)) +
-  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  facet_grid(gene_ID ~., scales = "free_y") +
   geom_point(aes(fill = Treatment), color = "white", size = 2, 
              alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
-  stat_summary(geom = "line", aes(group = gene_ID), 
-               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
-  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1"))+
+  scale_color_manual(values = c("grey70", "tomato1")) +
   labs(x = NULL,
        y = "log10(TPM)") +
   theme_bw() +
@@ -1803,21 +1826,22 @@ chitinases <- Exp_table_long %>%
     strip.background = element_blank()
   )
 
-chitinases
+chitinases + scale_x_continuous(limit = c(0,1440))
 
-ggsave("chitinases_graph.png", height = 12, width = 8, bg = "white")
+ggsave("chitinases_graph_truncatedd.png", height = 20, width = 3, bg = "white")
 
 
 xylosidases <- Exp_table_long %>% 
   filter(gene_ID %in% xylosidasesinnetwork$gene_ID) %>% 
   inner_join(PCA_coord, by = "LibraryName") %>% 
   ggplot(aes(x = Time, y = logTPM)) +
-  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  facet_grid(gene_ID ~., scales = "free_y") +
   geom_point(aes(fill = Treatment), color = "white", size = 2, 
              alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
-  stat_summary(geom = "line", aes(group = gene_ID), 
-               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
-  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1"))+
+  scale_color_manual(values = c("grey70", "tomato1")) +
   labs(x = NULL,
        y = "log10(TPM)") +
   theme_bw() +
@@ -1830,20 +1854,21 @@ xylosidases <- Exp_table_long %>%
     strip.background = element_blank()
   )
 
-xylosidases
+xylosidases + scale_x_continuous(limit = c(0,1440))
 
-ggsave("xylosidases_graph.png", height = 12, width = 8, bg = "white")
+ggsave("xylosidases_graph_truncated.png", height = 12, width = 5, bg = "white")
 
 ureases <- Exp_table_long %>% 
   filter(gene_ID %in% ureasesinnetwork$gene_ID) %>% 
   inner_join(PCA_coord, by = "LibraryName") %>% 
   ggplot(aes(x = Time, y = logTPM)) +
-  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  facet_grid(gene_ID ~., scales = "free_y") +
   geom_point(aes(fill = Treatment), color = "white", size = 2, 
              alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
-  stat_summary(geom = "line", aes(group = gene_ID), 
-               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
-  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1"))+
+  scale_color_manual(values = c("grey70", "tomato1")) +
   labs(x = NULL,
        y = "log10(TPM)") +
   theme_bw() +
@@ -1856,20 +1881,21 @@ ureases <- Exp_table_long %>%
     strip.background = element_blank()
   )
 
-ureases
+ureases + scale_x_continuous(limit = c(0,1440))
 
-ggsave("ureases_graph.png", height = 12, width = 8, bg = "white")
+ggsave("ureases_graph_truncated.png", height = 12, width = 5, bg = "white")
 
 cysteineendopeptidases <- Exp_table_long %>% 
   filter(gene_ID %in% cysteineendopeptidasesinnetwork$gene_ID) %>% 
   inner_join(PCA_coord, by = "LibraryName") %>% 
   ggplot(aes(x = Time, y = logTPM)) +
-  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  facet_grid(gene_ID ~., scales = "free_y") +
   geom_point(aes(fill = Treatment), color = "white", size = 2, 
              alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
-  stat_summary(geom = "line", aes(group = gene_ID), 
-               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
-  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1"))+
+  scale_color_manual(values = c("grey70", "tomato1")) +
   labs(x = NULL,
        y = "log10(TPM)") +
   theme_bw() +
@@ -1882,20 +1908,21 @@ cysteineendopeptidases <- Exp_table_long %>%
     strip.background = element_blank()
   )
 
-cysteineendopeptidases
+cysteineendopeptidases + scale_x_continuous(limit = c(0,1440))
 
-ggsave("cysteineendopeptidases_graph.png", height = 12, width = 8, bg = "white")
+ggsave("cysteineendopeptidases_graph_truncated.png", height = 12, width = 5, bg = "white")
 
 ribonucleases <- Exp_table_long %>% 
   filter(gene_ID %in% ribonucleasesinnetwork$gene_ID) %>% 
   inner_join(PCA_coord, by = "LibraryName") %>% 
   ggplot(aes(x = Time, y = logTPM)) +
-  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  facet_grid(gene_ID ~., scales = "free_y") +
   geom_point(aes(fill = Treatment), color = "white", size = 2, 
              alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
-  stat_summary(geom = "line", aes(group = gene_ID), 
-               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
-  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1"))+
+  scale_color_manual(values = c("grey70", "tomato1")) +
   labs(x = NULL,
        y = "log10(TPM)") +
   theme_bw() +
@@ -1908,20 +1935,21 @@ ribonucleases <- Exp_table_long %>%
     strip.background = element_blank()
   )
 
-ribonucleases
+ribonucleases + scale_x_continuous(limit = c(0,1440))
 
-ggsave("ribonucleases_graph.png", height = 15, width = 8, bg = "white")
+ggsave("ribonucleases_graph_truncated.png", height = 15, width = 3, bg = "white")
 
 lipases <- Exp_table_long %>% 
   filter(gene_ID %in% lipasesinnetwork$gene_ID) %>% 
   inner_join(PCA_coord, by = "LibraryName") %>% 
   ggplot(aes(x = Time, y = logTPM)) +
-  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  facet_grid(gene_ID ~., scales = "free_y") +
   geom_point(aes(fill = Treatment), color = "white", size = 2, 
              alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
-  stat_summary(geom = "line", aes(group = gene_ID), 
-               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
-  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1"))+
+  scale_color_manual(values = c("grey70", "tomato1")) +
   labs(x = NULL,
        y = "log10(TPM)") +
   theme_bw() +
@@ -1934,20 +1962,21 @@ lipases <- Exp_table_long %>%
     strip.background = element_blank()
   )
 
-lipases
+lipases + scale_x_continuous(limit = c(0,1440))
 
-ggsave("lipases_graph.png", height = 47, width = 10, bg = "white")
+ggsave("lipases_graph_truncated.png", height = 47, width = 3, bg = "white")
 
 esterases <- Exp_table_long %>% 
   filter(gene_ID %in% esterasesinnetwork$gene_ID) %>% 
   inner_join(PCA_coord, by = "LibraryName") %>% 
   ggplot(aes(x = Time, y = logTPM)) +
-  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  facet_grid(gene_ID ~., scales = "free_y") +
   geom_point(aes(fill = Treatment), color = "white", size = 2, 
              alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
-  stat_summary(geom = "line", aes(group = gene_ID), 
-               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
-  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1"))+
+  scale_color_manual(values = c("grey70", "tomato1")) +
   labs(x = NULL,
        y = "log10(TPM)") +
   theme_bw() +
@@ -1960,21 +1989,22 @@ esterases <- Exp_table_long %>%
     strip.background = element_blank()
   )
 
-esterases
+esterases + scale_x_continuous(limit = c(0,1440))
 
-ggsave("esterases_graph.png", height = 55, width = 10, bg = "white", limitsize = FALSE)
+ggsave("esterases_graph_truncated.png", height = 55, width = 3, bg = "white", limitsize = FALSE)
 
 
 glucanases <- Exp_table_long %>% 
   filter(gene_ID %in% glucanasesinnetwork$gene_ID) %>% 
   inner_join(PCA_coord, by = "LibraryName") %>% 
   ggplot(aes(x = Time, y = logTPM)) +
-  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  facet_grid(gene_ID ~., scales = "free_y") +
   geom_point(aes(fill = Treatment), color = "white", size = 2, 
              alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
-  stat_summary(geom = "line", aes(group = gene_ID), 
-               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
-  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1"))+
+  scale_color_manual(values = c("grey70", "tomato1")) +
   labs(x = NULL,
        y = "log10(TPM)") +
   theme_bw() +
@@ -1987,20 +2017,21 @@ glucanases <- Exp_table_long %>%
     strip.background = element_blank()
   )
 
-glucanases
+glucanases + scale_x_continuous(limit = c(0,1440))
 
-ggsave("glucanases_graph.png", height = 8, width = 8, bg = "white", limitsize = FALSE)
+ggsave("glucanases_graph_truncated.png", height = 8, width = 5, bg = "white", limitsize = FALSE)
 
 glucosidase <- Exp_table_long %>% 
   filter(gene_ID %in% glucosidasesinnetwork$gene_ID) %>% 
   inner_join(PCA_coord, by = "LibraryName") %>% 
   ggplot(aes(x = Time, y = logTPM)) +
-  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  facet_grid(gene_ID ~., scales = "free_y") +
   geom_point(aes(fill = Treatment), color = "white", size = 2, 
              alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
-  stat_summary(geom = "line", aes(group = gene_ID), 
-               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
-  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1"))+
+  scale_color_manual(values = c("grey70", "tomato1")) +
   labs(x = NULL,
        y = "log10(TPM)") +
   theme_bw() +
@@ -2013,20 +2044,21 @@ glucosidase <- Exp_table_long %>%
     strip.background = element_blank()
   )
 
-glucosidase
+glucosidase + scale_x_continuous(limit = c(0,1440))
 
-ggsave("glucosidase_graph.png", height = 20, width = 8, bg = "white", limitsize = FALSE)
+ggsave("glucosidase_graph_truncated.png", height = 20, width = 3, bg = "white", limitsize = FALSE)
 
 nucleases <- Exp_table_long %>% 
   filter(gene_ID %in% nucleasesinnetwork$gene_ID) %>% 
   inner_join(PCA_coord, by = "LibraryName") %>% 
   ggplot(aes(x = Time, y = logTPM)) +
-  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  facet_grid(gene_ID ~., scales = "free_y") +
   geom_point(aes(fill = Treatment), color = "white", size = 2, 
              alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
-  stat_summary(geom = "line", aes(group = gene_ID), 
-               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
-  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1"))+
+  scale_color_manual(values = c("grey70", "tomato1")) +
   labs(x = NULL,
        y = "log10(TPM)") +
   theme_bw() +
@@ -2039,20 +2071,21 @@ nucleases <- Exp_table_long %>%
     strip.background = element_blank()
   )
 
-nucleases
+nucleases + scale_x_continuous(limit = c(0,1440))
 
-ggsave("nucleases_graph.png", height =40, width = 10, bg = "white", limitsize = FALSE)
+ggsave("nucleases_graph_truncated.png", height =40, width = 3, bg = "white", limitsize = FALSE)
 
 peroxidases <- Exp_table_long %>% 
   filter(gene_ID %in% peroxidasesinnetwork$gene_ID) %>% 
   inner_join(PCA_coord, by = "LibraryName") %>% 
   ggplot(aes(x = Time, y = logTPM)) +
-  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  facet_grid(gene_ID ~., scales = "free_y") +
   geom_point(aes(fill = Treatment), color = "white", size = 2, 
              alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
-  stat_summary(geom = "line", aes(group = gene_ID), 
-               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
-  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1"))+
+  scale_color_manual(values = c("grey70", "tomato1")) +
   labs(x = NULL,
        y = "log10(TPM)") +
   theme_bw() +
@@ -2065,20 +2098,21 @@ peroxidases <- Exp_table_long %>%
     strip.background = element_blank()
   )
 
-peroxidases
+peroxidases + scale_x_continuous(limit = c(0,1440))
 
-ggsave("peroxidases_graph.png", height =30, width = 10, bg = "white", limitsize = FALSE)
+ggsave("peroxidases_graph_truncated.png", height =30, width = 3, bg = "white", limitsize = FALSE)
 
 phosphatases <- Exp_table_long %>% 
   filter(gene_ID %in% phosphatasesinnetwork$gene_ID) %>% 
   inner_join(PCA_coord, by = "LibraryName") %>% 
   ggplot(aes(x = Time, y = logTPM)) +
-  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  facet_grid(gene_ID ~., scales = "free_y") +
   geom_point(aes(fill = Treatment), color = "white", size = 2, 
              alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
-  stat_summary(geom = "line", aes(group = gene_ID), 
-               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
-  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1"))+
+  scale_color_manual(values = c("grey70", "tomato1")) +
   labs(x = NULL,
        y = "log10(TPM)") +
   theme_bw() +
@@ -2091,20 +2125,21 @@ phosphatases <- Exp_table_long %>%
     strip.background = element_blank()
   )
 
-phosphatases
+phosphatases + scale_x_continuous(limit = c(0,1440))
 
-ggsave("phosphatases_graph.png", height =130, width = 8, bg = "white", limitsize = FALSE)
+ggsave("phosphatases_graph_truncated.png", height =130, width = 3, bg = "white", limitsize = FALSE)
 
 proteases <- Exp_table_long %>% 
   filter(gene_ID %in% proteasesinnetwork$gene_ID) %>% 
   inner_join(PCA_coord, by = "LibraryName") %>% 
   ggplot(aes(x = Time, y = logTPM)) +
-  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  facet_grid(gene_ID ~., scales = "free_y") +
   geom_point(aes(fill = Treatment), color = "white", size = 2, 
              alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
-  stat_summary(geom = "line", aes(group = gene_ID), 
-               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
-  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1"))+
+  scale_color_manual(values = c("grey70", "tomato1")) +
   labs(x = NULL,
        y = "log10(TPM)") +
   theme_bw() +
@@ -2117,20 +2152,21 @@ proteases <- Exp_table_long %>%
     strip.background = element_blank()
   )
 
-proteases
+proteases + scale_x_continuous(limit = c(0,1440))
 
-ggsave("proteases_graph.png", height =50, width = 8, bg = "white", limitsize = FALSE)
+ggsave("proteases_graph_truncated.png", height =50, width = 3, bg = "white", limitsize = FALSE)
 
 amylases <- Exp_table_long %>% 
   filter(gene_ID %in% amylasesinnetwork$gene_ID) %>% 
   inner_join(PCA_coord, by = "LibraryName") %>% 
   ggplot(aes(x = Time, y = logTPM)) +
-  facet_grid(gene_ID ~ Treatment, scales = "free_y") +
+  facet_grid(gene_ID ~., scales = "free_y") +
   geom_point(aes(fill = Treatment), color = "white", size = 2, 
              alpha = 0.8, shape = 21, position = position_jitter(0.1, seed = 666)) +
-  stat_summary(geom = "line", aes(group = gene_ID), 
-               fun = mean, alpha = 0.8, size = 1.1, color = "grey20") +
-  scale_fill_manual(values = brewer.pal(8, "Set2")) +
+  stat_summary(geom = "line", aes(group = Treatment, color = Treatment), 
+               fun = mean, alpha = 0.8, size = 1.1) +
+  scale_fill_manual(values = c("grey70", "tomato1"))+
+  scale_color_manual(values = c("grey70", "tomato1")) +
   labs(x = NULL,
        y = "log10(TPM)") +
   theme_bw() +
@@ -2143,7 +2179,9 @@ amylases <- Exp_table_long %>%
     strip.background = element_blank()
   )
 
-amylases
+amylases + scale_x_continuous(limit = c(0,1440))
 
-ggsave("amylases_graph.png", height =30, width = 8, bg = "white", limitsize = FALSE)
+ggsave("amylases_graph_truncated.png", height =25, width = 3, bg = "white", limitsize = FALSE)
+
+ggsave("amylases_graph.png", height =30, width = 5, bg = "white", limitsize = FALSE)
 

@@ -1,1 +1,0 @@
-((L_sativa_proteins_Lsat_1_v5_gn_8_149641.3:0.0522601,L_sativa_proteins_Lsat_1_v5_gn_8_149641.1:0.0398079)n1:0.263414,(V_vinifera_proteins_VIT_201s0010g02740.1:0.0166067,((V_vinifera_proteins_VIT_201s0010g02740.3:0.0840289,V_vinifera_proteins_VIT_201s0010g02740.4:0.00585011)n4:0.0588384,V_vinifera_proteins_VIT_201s0010g02740.2:0.0155023)n3:0.0198991)n2:0.263414)n0;

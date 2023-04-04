@@ -1,1 +1,0 @@
-(P_amilis_proteins_FUN_011754-T1:0.377673,(A_hypochondriacus_proteins_AH021563-RA:0.733474,(A_hypochondriacus_proteins_AH015061-RA:0.25039,(A_hypochondriacus_proteins_AH021552-RA:0.473723,A_hypochondriacus_proteins_AH015063-RA:0.447381)n3:0.126484)n2:0.0912579)n1:0.377673)n0;

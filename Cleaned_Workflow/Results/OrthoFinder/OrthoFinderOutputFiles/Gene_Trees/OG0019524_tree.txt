@@ -1,1 +1,0 @@
-(S_lycopersicum_proteins_Solyc08g006140.2.1:0.397646,(A_vesiculosa_proteins_Av_00001090-RA:0.492337,(A_hypochondriacus_proteins_AH017070-RA:0.443966,D_muscipula_proteins_Dm_00020800-RA:0.974588):0.0834735):0.397646);

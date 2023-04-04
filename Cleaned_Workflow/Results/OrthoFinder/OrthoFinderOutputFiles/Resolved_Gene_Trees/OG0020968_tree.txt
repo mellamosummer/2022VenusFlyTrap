@@ -1,1 +1,0 @@
-(V_vinifera_proteins_VIT_214s0030g00170.1:0.166791,(S_lycopersicum_proteins_Solyc09g074110.3.1:0.638847,(P_amilis_proteins_FUN_024625-T1:0.893196,L_sativa_proteins_Lsat_1_v5_gn_8_55460.3:0.618015)n2:0.171575)n1:0.166791)n0;

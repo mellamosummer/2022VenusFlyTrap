@@ -1,1 +1,0 @@
-(D_spatulata_proteins_Ds_00007213-RA:0.974113,(((A_thaliana_proteins_AT1G07390.3:0.0669306,A_thaliana_proteins_AT1G07390.1:1.939e-05):0.00153237,(A_thaliana_proteins_AT1G07390.5:0.0327551,A_thaliana_proteins_AT1G07390.4:2.16678e-06):0.0316709):0.0502902,A_thaliana_proteins_AT1G07390.2:0.038825):0.974113);

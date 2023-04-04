@@ -1,1 +1,0 @@
-(G_max_proteins_GmISU01.10G195000.7.p:0.452414,(L_sativa_proteins_Lsat_1_v5_gn_7_112921.3:0.0444035,((L_sativa_proteins_Lsat_1_v5_gn_8_95820.1:0.310638,L_sativa_proteins_Lsat_1_v5_gn_7_112921.2:1.34625e-06):0.00799863,L_sativa_proteins_Lsat_1_v5_gn_7_112921.1:0.0543532):0.0280005):0.452414);

@@ -1,1 +1,0 @@
-(((G_max_proteins_GmISU01.14G184300.7.p:0,G_max_proteins_GmISU01.14G184300.6.p:0)n2:0.0250459,G_max_proteins_GmISU01.14G184300.9.p:0.0516361)n1:0.371176,(V_vinifera_proteins_VIT_204s0023g03920.1:0.25926,V_vinifera_proteins_VIT_204s0023g03900.1:0.0274478)n3:0.371176)n0;

@@ -1,1 +1,0 @@
-(D_spatulata_proteins_Ds_00016651-RA:1.04589,(((G_max_proteins_GmISU01.17G072600.3.p:0,(G_max_proteins_GmISU01.17G072600.4.p:0,G_max_proteins_GmISU01.17G072600.2.p:0):0):0,G_max_proteins_GmISU01.17G072600.1.p:0):0.223713,(G_max_proteins_GmISU01.02G253700.1.p:0.199083,G_max_proteins_GmISU01.07G003800.1.p:0.208065):0.336051):1.04589);

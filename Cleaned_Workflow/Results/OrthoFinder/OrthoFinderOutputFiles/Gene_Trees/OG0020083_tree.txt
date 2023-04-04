@@ -1,1 +1,0 @@
-(D_muscipula_proteins_Dm_00018253-RA:0.39764,((B_vulgaris_proteins_Bevul.7G096600.1.p:0.431069,B_vulgaris_proteins_Bevul.7G058900.1.p:0.426364):0.150515,B_vulgaris_proteins_Bevul.2G076000.1.p:0.0952846):0.39764);

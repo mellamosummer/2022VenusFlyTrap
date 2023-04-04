@@ -1,1 +1,0 @@
-((L_sativa_proteins_Lsat_1_v5_gn_0_29760.1:0.0332405,L_sativa_proteins_Lsat_1_v5_gn_0_29760.3:0.0883925):0.766106,(D_spatulata_proteins_Ds_00012982-RA:1.12179,(P_amilis_proteins_FUN_022730-T1:0.570771,B_vulgaris_proteins_Bevul.3G074200.1.p:0.573866):0.304859):0.766106);

@@ -1,1 +1,0 @@
-(D_spatulata_proteins_Ds_00005388-RA:0.196122,(D_muscipula_proteins_Dm_00002765-RA:0.419772,((A_vesiculosa_proteins_Av_00000290-RA:0.439101,A_vesiculosa_proteins_Av_00007731-RA:0.285046):0.113098,A_vesiculosa_proteins_Av_00002017-RA:0.45813):0.0967472):0.196122);

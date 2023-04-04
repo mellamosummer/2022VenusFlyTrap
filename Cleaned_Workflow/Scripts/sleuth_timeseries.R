@@ -153,4 +153,4 @@ write.csv(x = SleuthPreyLipases, file = "SleuthPreyLipases.csv")
 write.csv(x = SleuthPreyGlucosidases, file = "SleuthPreyGlucosidases.csv")
 write.csv(x = SleuthPreyEsterases, file = "SleuthPreyEsterases.csv")
 
-
+write.csv(x = SleuthPreyAnnotated, file = "SleuthPreyAnnotated.csv")

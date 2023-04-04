@@ -1,1 +1,0 @@
-(A_hypochondriacus_proteins_AH015839-RA:0.547744,(B_vulgaris_proteins_Bevul.2G074400.1.p:1.4705e-06,((B_vulgaris_proteins_Bevul.2G074400.3.p:0.00760883,B_vulgaris_proteins_Bevul.2G074400.4.p:0.0314102):0.275668,B_vulgaris_proteins_Bevul.2G074400.2.p:0.0123673):0.17303):0.547744);

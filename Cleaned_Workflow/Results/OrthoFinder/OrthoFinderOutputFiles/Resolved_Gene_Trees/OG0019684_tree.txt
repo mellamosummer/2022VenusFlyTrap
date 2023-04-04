@@ -1,1 +1,0 @@
-(D_muscipula_proteins_Dm_00017755-RA:0.387277,(A_thaliana_proteins_AT2G13960.2:0.262112,(A_thaliana_proteins_AT2G13960.1:2.09365e-06,A_thaliana_proteins_AT2G13960.3:0.859629)n2:0.582904)n1:0.387277)n0;

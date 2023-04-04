@@ -1,1 +1,0 @@
-(A_hypochondriacus_proteins_AH005040-RA:0.609897,(A_thaliana_proteins_AT3G53050.1:0.303996,(A_thaliana_proteins_AT3G53070.1:0.612011,(A_thaliana_proteins_AT3G53065.1:0.485174,(A_thaliana_proteins_AT3G53080.1:0.233558,(A_thaliana_proteins_AT3G53075.1:0.0029244,A_thaliana_proteins_AT3G53075.2:0.0709946)n5:0.271835)n4:0.164348)n3:0.166707)n2:0.117341)n1:0.609897)n0;

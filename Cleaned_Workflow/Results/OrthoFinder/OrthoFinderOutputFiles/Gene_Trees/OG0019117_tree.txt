@@ -1,1 +1,0 @@
-((B_vulgaris_proteins_Bevul.5G233800.1.p:0.076725,B_vulgaris_proteins_Bevul.5G233700.1.p:0.092688):0.514374,(A_coerulea_proteins_Aqcoe2G034500.1.p:0.57291,A_coerulea_proteins_Aqcoe2G034300.1.p:0.0606828):0.514374);

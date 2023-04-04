@@ -1,1 +1,0 @@
-(A_thaliana_proteins_AT3G13140.1:0.614246,(L_sativa_proteins_Lsat_1_v5_gn_9_16921.1:0.713639,(((S_lycopersicum_proteins_Solyc06g008940.3.1:0.479373,S_lycopersicum_proteins_Solyc06g008950.2.1:0.00785437)n4:0.489162,S_lycopersicum_proteins_Solyc09g064730.3.1:0.449181)n3:0.132722,S_lycopersicum_proteins_Solyc07g065440.3.1:0.664265)n2:0.0738072)n1:0.0820357)n0;

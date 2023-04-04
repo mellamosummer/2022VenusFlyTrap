@@ -1,1 +1,0 @@
-(P_amilis_proteins_FUN_009886-T1:0.450125,(G_max_proteins_GmISU01.02G056100.2.p:0.271665,(G_max_proteins_GmISU01.16G117700.1.p:0.0822828,G_max_proteins_GmISU01.02G056100.1.p:0.12774):0.452888):0.450125);

@@ -1,1 +1,0 @@
-(V_vinifera_proteins_VIT_202s0025g03400.5:0.122877,((P_amilis_proteins_FUN_037247-T2:0.163223,(P_amilis_proteins_FUN_048028-T1:0.0594775,P_amilis_proteins_FUN_048028-T2:0.0935255):0.0961536):0.0563376,D_spatulata_proteins_Ds_00012486-RA:0.492754):0.122877);

@@ -1,1 +1,0 @@
-(A_thaliana_proteins_AT2G22620.5:0.336841,(((P_amilis_proteins_FUN_027042-T4:0.00572638,P_amilis_proteins_FUN_027042-T3:0.0589816)n3:0.0407586,P_amilis_proteins_FUN_027042-T1:0.0189379)n2:0.0498051,P_amilis_proteins_FUN_027042-T2:0.00275062)n1:0.336841)n0;

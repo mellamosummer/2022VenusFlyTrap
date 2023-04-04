@@ -1,1 +1,0 @@
-(A_vesiculosa_proteins_Av_00019903-RA:0.326569,((B_vulgaris_proteins_Bevul.9G055300.1.p:0.375812,B_vulgaris_proteins_Bevul.2G117400.1.p:0.552886)n2:0.432043,(P_amilis_proteins_FUN_006753-T1:1.18724,P_amilis_proteins_FUN_019544-T1:0.719812)n3:0.0799792)n1:0.0291674)n0;

@@ -1,1 +1,0 @@
-((A_coerulea_proteins_Aqcoe6G245700.2.p:1.34709e-06,(A_coerulea_proteins_Aqcoe2G118100.1.p:0.384712,A_coerulea_proteins_Aqcoe1G268000.1.p:0.207023):0.487567):0.0469265,(P_amilis_proteins_FUN_002148-T2:0.138491,A_thaliana_proteins_AT2G21250.2:0.062517):0.0469265);

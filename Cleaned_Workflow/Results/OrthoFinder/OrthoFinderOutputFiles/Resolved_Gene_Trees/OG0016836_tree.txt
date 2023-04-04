@@ -1,1 +1,0 @@
-(D_muscipula_proteins_Dm_00020688-RA:0.302486,(((A_hypochondriacus_proteins_AH001391-RA:0.513884,A_hypochondriacus_proteins_AH001387-RA:0.137383)n3:0.0889593,(A_hypochondriacus_proteins_AH001394-RA:0.435794,A_hypochondriacus_proteins_AH001390-RA:0.414982)n4:0.0426373)n2:0.0719107,A_hypochondriacus_proteins_AH001389-RA:0.423179)n1:0.302486)n0;

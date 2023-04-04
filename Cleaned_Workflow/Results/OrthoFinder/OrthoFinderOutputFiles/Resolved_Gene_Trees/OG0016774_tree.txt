@@ -1,1 +1,0 @@
-(V_vinifera_proteins_VIT_200s0179g00370.1:0.120948,(S_lycopersicum_proteins_Solyc09g065770.1.1:0.453839,(L_sativa_proteins_Lsat_1_v5_gn_9_8120.1:0.499419,((B_vulgaris_proteins_Bevul.5G241400.1.p:0.268852,A_hypochondriacus_proteins_AH017782-RA:0.317246)n4:0.421671,A_thaliana_proteins_AT2G38830.1:0.594281)n3:0.0285193)n2:0.0437666)n1:0.120948)n0;

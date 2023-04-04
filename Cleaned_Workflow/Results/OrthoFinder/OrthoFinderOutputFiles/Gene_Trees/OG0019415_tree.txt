@@ -1,1 +1,0 @@
-((L_sativa_proteins_Lsat_1_v5_gn_8_142540.1:0.613444,G_max_proteins_GmISU01.09G144000.1.p:0.478188):0.311897,(A_coerulea_proteins_Aqcoe3G027100.1.p:0.0349812,A_coerulea_proteins_Aqcoe3G028200.1.p:0.451265):0.311897);

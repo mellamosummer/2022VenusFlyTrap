@@ -1,1 +1,0 @@
-(S_lycopersicum_proteins_Solyc09g074667.1.1:0.423526,(S_lycopersicum_proteins_Solyc10g031565.1.1:0.5503,(S_lycopersicum_proteins_Solyc12g044733.1.1:1.10429,S_lycopersicum_proteins_Solyc08g065537.1.1:0.784372)n2:0.106243)n1:0.423526)n0;

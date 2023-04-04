@@ -1,1 +1,0 @@
-(S_lycopersicum_proteins_Solyc01g094600.2.1:0.211937,(P_amilis_proteins_FUN_037229-T1:0.611427,(B_vulgaris_proteins_Bevul.1G177200.1.p:0.250075,((D_spatulata_proteins_Ds_00015698-RA:0.495476,D_spatulata_proteins_Ds_00012478-RA:0.0579087):0.170502,(A_vesiculosa_proteins_Av_00017893-RA:0.113945,D_muscipula_proteins_Dm_00004580-RA:0.331114):0.0596955):0.120182):0.042575):0.211937);

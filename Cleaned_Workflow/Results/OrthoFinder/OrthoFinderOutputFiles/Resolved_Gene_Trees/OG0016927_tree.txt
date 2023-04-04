@@ -1,1 +1,0 @@
-(D_muscipula_proteins_Dm_00001646-RA:0.143376,((((G_max_proteins_GmISU01.14G078100.3.p:1.06339e-06,G_max_proteins_GmISU01.14G078100.1.p:0.0481664)n4:0.00216844,G_max_proteins_GmISU01.14G078100.2.p:1.06339e-06)n3:0.0663392,G_max_proteins_GmISU01.17G210000.1.p:0.0448476)n2:0.288114,A_thaliana_proteins_AT1G45233.2:0.331337)n1:0.143376)n0;

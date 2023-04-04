@@ -1,1 +1,0 @@
-((G_max_proteins_GmISU01.14G105400.2.p:0.0756323,G_max_proteins_GmISU01.14G105400.1.p:0.0309047)n1:0.335185,((A_vesiculosa_proteins_Av_00004602-RA:0.744622,D_muscipula_proteins_Dm_00013301-RA:0.587774)n3:0.0919449,B_vulgaris_proteins_Bevul.9G142700.1.p:0.235909)n2:0.335185)n0;

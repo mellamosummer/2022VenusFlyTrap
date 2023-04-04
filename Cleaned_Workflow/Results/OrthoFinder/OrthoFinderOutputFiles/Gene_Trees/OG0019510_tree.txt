@@ -1,1 +1,0 @@
-(V_vinifera_proteins_VIT_213s0123g00056.1:0.834654,((A_hypochondriacus_proteins_AH015682-RA:0.303831,B_vulgaris_proteins_Bevul.2G042400.1.p:0.813782):0.323804,A_hypochondriacus_proteins_AH015684-RA:0.009943):0.834654);

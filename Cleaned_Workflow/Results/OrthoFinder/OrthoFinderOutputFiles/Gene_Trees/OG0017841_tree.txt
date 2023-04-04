@@ -1,1 +1,0 @@
-(A_coerulea_proteins_Aqcoe3G128700.1.p:0.120385,(D_spatulata_proteins_Ds_00002018-RA:0.310096,(P_amilis_proteins_FUN_019218-T1:0.571591,(D_spatulata_proteins_Ds_00008766-RA:0.36113,A_hypochondriacus_proteins_AH014680-RA:0.0642):0.207978):0.292464):0.120385);

@@ -1,1 +1,0 @@
-(D_muscipula_proteins_Dm_00011145-RA:0.316238,((A_coerulea_proteins_Aqcoe6G177000.1.p:0,A_coerulea_proteins_Aqcoe6G177000.2.p:0):0.049816,A_coerulea_proteins_Aqcoe6G177000.3.p:0.006135):0.316238);

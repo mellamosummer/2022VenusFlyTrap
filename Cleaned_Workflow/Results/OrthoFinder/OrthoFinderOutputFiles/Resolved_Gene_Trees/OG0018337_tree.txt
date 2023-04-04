@@ -1,1 +1,0 @@
-(G_max_proteins_GmISU01.20G151900.1.p:0.365545,(D_spatulata_proteins_Ds_00007991-RA:0.395641,(L_sativa_proteins_Lsat_1_v5_gn_8_17720.2:0.012611,(L_sativa_proteins_Lsat_1_v5_gn_8_17720.1:0.00268825,L_sativa_proteins_Lsat_1_v5_gn_8_17720.3:0.00143575)n3:0.0067605)n2:0.791185)n1:0.365545)n0;

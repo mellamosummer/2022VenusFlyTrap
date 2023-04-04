@@ -1,1 +1,0 @@
-(D_spatulata_proteins_Ds_00003758-RA:0.270745,(V_vinifera_proteins_VIT_201s0026g00390.1:0.300688,(V_vinifera_proteins_VIT_210s0042g00605.1:0.114338,V_vinifera_proteins_VIT_208s0105g00140.1:0.560411)n2:0.241239)n1:0.270745)n0;

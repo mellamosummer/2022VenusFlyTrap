@@ -1,1 +1,0 @@
-(A_vesiculosa_proteins_Av_00022658-RA:0.269758,(S_lycopersicum_proteins_Solyc08g016350.1.1:0.389532,(S_lycopersicum_proteins_Solyc09g074160.1.1:0.0707292,S_lycopersicum_proteins_Solyc10g050590.1.1:0.332533):0.0461377):0.269758);

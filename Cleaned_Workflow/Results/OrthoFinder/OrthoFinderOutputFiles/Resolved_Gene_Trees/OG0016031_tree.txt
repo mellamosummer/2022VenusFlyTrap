@@ -1,1 +1,0 @@
-(G_max_proteins_GmISU01.15G167800.1.p:0.851221,(A_thaliana_proteins_AT5G43490.1:0.393624,(A_thaliana_proteins_AT5G48610.5:2.89552e-06,(A_thaliana_proteins_AT5G48610.3:2.89552e-06,((A_thaliana_proteins_AT5G48610.2:0,A_thaliana_proteins_AT5G48610.4:0)n5:0,A_thaliana_proteins_AT5G48610.1:0)n4:0.462848)n3:0.14334)n2:0.479943)n1:0.851221)n0;

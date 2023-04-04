@@ -1,1 +1,0 @@
-(P_amilis_proteins_FUN_032679-T1:0.27203,(D_spatulata_proteins_Ds_00010522-RA:0.158584,(D_muscipula_proteins_Dm_00004839-RA:0.0769517,A_vesiculosa_proteins_Av_00007573-RA:0.246017)n2:0.0170812)n1:0.27203)n0;

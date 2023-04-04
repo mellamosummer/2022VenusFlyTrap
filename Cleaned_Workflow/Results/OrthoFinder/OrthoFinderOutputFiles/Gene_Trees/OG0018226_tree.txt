@@ -1,1 +1,0 @@
-(V_vinifera_proteins_VIT_218s0001g03430.1:0.0528742,(G_max_proteins_GmISU01.05G071300.1.p:0.155264,(D_spatulata_proteins_Ds_00001623-RA:0.0610178,(D_muscipula_proteins_Dm_00003245-RA:0.159963,A_vesiculosa_proteins_Av_00003187-RA:0.141491):0.0104842):0.0930581):0.0528742);

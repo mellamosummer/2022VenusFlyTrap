@@ -1,1 +1,0 @@
-(S_lycopersicum_proteins_Solyc08g006605.1.1:0.283083,((B_vulgaris_proteins_Bevul.2G006700.3.p:0.00815428,B_vulgaris_proteins_Bevul.2G006700.4.p:0.0117607)n2:0.00675518,(B_vulgaris_proteins_Bevul.2G006700.2.p:0.00874433,B_vulgaris_proteins_Bevul.2G006700.1.p:0.00996367)n3:0.0308647)n1:0.283083)n0;

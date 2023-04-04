@@ -1,1 +1,0 @@
-(A_coerulea_proteins_Aqcoe3G142900.1.p:0.483155,((D_spatulata_proteins_Ds_00010749-RA:0.425027,(D_spatulata_proteins_Ds_00000977-RA:0.774543,(D_spatulata_proteins_Ds_00010751-RA:1.28929,D_spatulata_proteins_Ds_00010750-RA:0.822405)n4:0.0724023)n3:0.21599)n2:0.0179425,(P_amilis_proteins_FUN_018841-T2:0.0988659,P_amilis_proteins_FUN_018841-T1:0.137548)n5:0.918542)n1:0.483155)n0;

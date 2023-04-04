@@ -1,1 +1,0 @@
-(V_vinifera_proteins_VIT_208s0040g00220.1:0.0403112,(L_sativa_proteins_Lsat_1_v5_gn_2_32281.1:0.617646,((A_hypochondriacus_proteins_AH006596-RA:0.422692,(A_vesiculosa_proteins_Av_00016115-RA:0.207526,A_hypochondriacus_proteins_AH007819-RA:0.0664039):0.0276727):0.044275,P_amilis_proteins_FUN_051256-T1:0.279526):0.0573694):0.0403112);

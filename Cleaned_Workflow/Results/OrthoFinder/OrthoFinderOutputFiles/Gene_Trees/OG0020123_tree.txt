@@ -1,1 +1,0 @@
-(D_muscipula_proteins_Dm_00002060-RA:0.317417,(P_amilis_proteins_FUN_005366-T1:0.291415,(P_amilis_proteins_FUN_005362-T1:1.74765,P_amilis_proteins_FUN_005365-T1:0.668387):0.096):0.317417);

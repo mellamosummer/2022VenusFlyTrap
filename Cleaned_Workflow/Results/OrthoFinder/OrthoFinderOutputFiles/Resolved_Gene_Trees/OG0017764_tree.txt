@@ -1,1 +1,0 @@
-((A_coerulea_proteins_Aqcoe1G233300.1.p:0.801928,A_coerulea_proteins_Aqcoe1G498000.1.p:1.07817)n1:0.188136,((B_vulgaris_proteins_Bevul.2G007100.1.p:0.0314745,B_vulgaris_proteins_Bevul.2G007300.1.p:0.0799585)n3:0.887199,G_max_proteins_GmISU01.20G027900.1.p:0.983114)n2:0.188136)n0;

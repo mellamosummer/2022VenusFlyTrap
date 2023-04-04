@@ -1,1 +1,0 @@
-(V_vinifera_proteins_VIT_218s0001g05340.1:0.266543,(A_hypochondriacus_proteins_AH008767-RA:0.745424,(P_amilis_proteins_FUN_038186-T1:0.0134723,P_amilis_proteins_FUN_038186-T2:0.0675777)n2:0.585861)n1:0.266543)n0;

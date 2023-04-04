@@ -1,1 +1,0 @@
-(A_hypochondriacus_proteins_AH013173-RA:0.36975,(L_sativa_proteins_Lsat_1_v5_gn_0_45981.1:0.0112421,(L_sativa_proteins_Lsat_1_v5_gn_1_78060.1:1.81528e-06,(L_sativa_proteins_Lsat_1_v5_gn_1_78060.2:1.81528e-06,L_sativa_proteins_Lsat_1_v5_gn_3_9081.1:0.793575)n3:0.182134)n2:0.444043)n1:0.36975)n0;

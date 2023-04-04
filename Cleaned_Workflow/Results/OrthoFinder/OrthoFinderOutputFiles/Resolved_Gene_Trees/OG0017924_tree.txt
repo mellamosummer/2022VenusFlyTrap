@@ -1,1 +1,0 @@
-((A_thaliana_proteins_AT3G55770.4:0.0635523,A_thaliana_proteins_AT3G55770.6:0.0906747)n1:0.14861,(L_sativa_proteins_Lsat_1_v5_gn_7_5181.3:0.265007,(P_amilis_proteins_FUN_037169-T1:0.452895,A_hypochondriacus_proteins_AH009250-RA:0.294676)n3:0.0386848)n2:0.14861)n0;

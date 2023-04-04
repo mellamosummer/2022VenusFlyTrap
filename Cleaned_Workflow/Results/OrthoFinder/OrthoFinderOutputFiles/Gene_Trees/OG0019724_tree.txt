@@ -1,1 +1,0 @@
-(A_thaliana_proteins_AT2G44330.1:0.432451,((D_muscipula_proteins_Dm_00014509-RA:0.899116,S_lycopersicum_proteins_Solyc01g016450.1.1:2.38039e-06):0.0440062,S_lycopersicum_proteins_Solyc01g016410.3.1:0.768496):0.432451);

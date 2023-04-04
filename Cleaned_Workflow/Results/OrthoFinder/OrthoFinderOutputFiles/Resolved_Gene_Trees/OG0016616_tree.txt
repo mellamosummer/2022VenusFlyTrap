@@ -1,1 +1,0 @@
-((A_coerulea_proteins_Aqcoe1G261100.1.p:0.319151,A_coerulea_proteins_Aqcoe4G096600.1.p:0.44055)n1:0.0667807,((S_lycopersicum_proteins_Solyc07g063090.1.1:0.406543,G_max_proteins_GmISU01.12G189500.1.p:0.423275)n3:0.0875009,(D_spatulata_proteins_Ds_00007583-RA:0.565671,A_thaliana_proteins_AT1G53130.1:0.463809)n4:0.0238054)n2:0.0667807)n0;

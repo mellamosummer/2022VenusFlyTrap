@@ -1,1 +1,0 @@
-((D_muscipula_proteins_Dm_00015265-RA:0.725338,D_spatulata_proteins_Ds_00017073-RA:0.37587):0.512532,(L_sativa_proteins_Lsat_1_v5_gn_8_152241.1:0.00599727,L_sativa_proteins_Lsat_1_v5_gn_8_152241.2:0.0409977):0.512532);

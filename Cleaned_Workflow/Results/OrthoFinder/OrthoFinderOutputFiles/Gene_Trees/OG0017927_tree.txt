@@ -1,1 +1,0 @@
-(A_hypochondriacus_proteins_AH001924-RA:0,(A_hypochondriacus_proteins_AH006707-RA:0,(A_hypochondriacus_proteins_AH002319-RA:0,(A_hypochondriacus_proteins_AH001918-RA:0.105608,A_hypochondriacus_proteins_AH019483-RA:0.903393):0.128365):0):0);

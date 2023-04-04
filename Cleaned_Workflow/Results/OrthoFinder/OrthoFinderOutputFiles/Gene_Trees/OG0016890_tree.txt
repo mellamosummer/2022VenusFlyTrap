@@ -1,1 +1,0 @@
-(S_lycopersicum_proteins_Solyc03g044525.1.1:0.742262,((A_thaliana_proteins_AT4G01380.1:0.493966,(A_thaliana_proteins_AT3G53330.1:0.553653,(A_thaliana_proteins_AT1G45063.2:0.0342714,A_thaliana_proteins_AT1G45063.1:0.146007):0.341236):0.0508694):0.407519,A_thaliana_proteins_AT3G28958.1:0.816449):0.742262);

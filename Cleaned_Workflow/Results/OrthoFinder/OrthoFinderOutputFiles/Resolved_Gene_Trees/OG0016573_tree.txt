@@ -1,1 +1,0 @@
-(A_coerulea_proteins_Aqcoe6G263000.1.p:0.0202029,((A_hypochondriacus_proteins_AH015543-RA:1.0191e-06,A_thaliana_proteins_ATMG01040.1:0.574916)n2:0.0785027,(A_hypochondriacus_proteins_AH015537-RA:1.0191e-06,(A_thaliana_proteins_AT2G07599.2:0.191943,A_thaliana_proteins_AT2G07599.1:0.109025)n4:0.163181)n3:0.0181312)n1:0.0202029)n0;

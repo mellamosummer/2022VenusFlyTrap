@@ -1,1 +1,0 @@
-(D_muscipula_proteins_Dm_00006328-RA:0.992566,(A_vesiculosa_proteins_Av_00011938-RA:0.0190525,((A_vesiculosa_proteins_Av_00024684-RA:0,A_vesiculosa_proteins_Av_00024682-RA:0):0,A_vesiculosa_proteins_Av_00024683-RA:0):0.0099935):0.992566);

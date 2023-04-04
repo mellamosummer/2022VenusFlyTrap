@@ -1,1 +1,0 @@
-((A_vesiculosa_proteins_Av_00016096-RA:0.87999,A_coerulea_proteins_Aqcoe3G078100.1.p:0.572234):0.067706,(B_vulgaris_proteins_Bevul.9G096200.1.p:0.187411,A_coerulea_proteins_Aqcoe2G165100.1.p:0.41601):0.067706);

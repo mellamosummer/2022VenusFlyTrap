@@ -1,1 +1,0 @@
-(V_vinifera_proteins_VIT_202s0033g00510.1:2.81384e-06,(A_vesiculosa_proteins_Av_00003368-RA:0.61358,(S_lycopersicum_proteins_Solyc04g049650.1.1:0.263599,(D_muscipula_proteins_Dm_00008121-RA:0.86963,(A_hypochondriacus_proteins_AH021510-RA:0.548418,D_muscipula_proteins_Dm_00006639-RA:0.334029)n4:0.06361)n3:0.00706778)n2:0.0123028)n1:0.119603)n0;

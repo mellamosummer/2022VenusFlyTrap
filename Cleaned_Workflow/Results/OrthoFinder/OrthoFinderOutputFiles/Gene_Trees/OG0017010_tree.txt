@@ -1,1 +1,0 @@
-((B_vulgaris_proteins_Bevul.1G058100.1.p:2.60754e-06,(B_vulgaris_proteins_Bevul.7G047200.1.p:0.185138,(B_vulgaris_proteins_Bevul.6G142600.1.p:0.320236,B_vulgaris_proteins_Bevul.5G200500.1.p:0.0974629):0.13159):0.123681):0.447035,(L_sativa_proteins_Lsat_1_v5_gn_8_134701.1:0.209098,L_sativa_proteins_Lsat_1_v5_gn_9_120281.4:0.647374):0.447035);

@@ -1,1 +1,0 @@
-(V_vinifera_proteins_VIT_206s0004g06110.2:0.06955,(P_amilis_proteins_FUN_049070-T1:0.139392,(A_thaliana_proteins_AT3G47000.3:0.0606925,A_thaliana_proteins_AT3G47040.3:0.0883315)n2:0.084636)n1:0.06955)n0;

@@ -1,1 +1,0 @@
-(A_coerulea_proteins_Aqcoe6G046300.1.p:0.367692,(D_muscipula_proteins_Dm_00013271-RA:0.420689,(A_hypochondriacus_proteins_AH023396-RA:0.63975,A_hypochondriacus_proteins_AH023634-RA:0.30495)n2:0.197009)n1:0.367692)n0;

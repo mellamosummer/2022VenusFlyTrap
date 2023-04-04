@@ -1,1 +1,0 @@
-(V_vinifera_proteins_VIT_219s0014g03560.1:0.352459,(S_lycopersicum_proteins_Solyc10g006830.3.1:0.515722,((L_sativa_proteins_Lsat_1_v5_gn_5_6840.2:0.0112554,L_sativa_proteins_Lsat_1_v5_gn_5_6840.1:0.0278116)n3:0.15749,(A_hypochondriacus_proteins_AH021598-RA:0.592825,A_hypochondriacus_proteins_AH008134-RA:0.976557)n4:0.574282)n2:0.41603)n1:0.352459)n0;

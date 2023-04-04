@@ -1,1 +1,0 @@
-(A_coerulea_proteins_Aqcoe7G003800.1.p:0.247928,((G_max_proteins_GmISU01.19G217100.1.p:0.584948,S_lycopersicum_proteins_Solyc05g050500.1.1:0.475822):0.0343435,(A_thaliana_proteins_AT4G00895.1:0.875384,(P_amilis_proteins_FUN_037509-T1:0.696356,A_hypochondriacus_proteins_AH009521-RA:0.822366):0.398391):0.142313):0.247928);

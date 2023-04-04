@@ -1,1 +1,0 @@
-((A_hypochondriacus_proteins_AH005752-RA:0.409109,B_vulgaris_proteins_Bevul.6G020000.1.p:0.732796):0.416974,(G_max_proteins_GmISU01.01G136600.1.p:0.132424,(G_max_proteins_GmISU01.11G062600.1.p:0.00769062,G_max_proteins_GmISU01.11G062600.2.p:0.00911638):0.484043):0.416974);

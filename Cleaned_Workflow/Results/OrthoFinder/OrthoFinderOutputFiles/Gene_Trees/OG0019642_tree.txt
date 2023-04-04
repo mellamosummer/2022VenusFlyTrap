@@ -1,1 +1,0 @@
-(L_sativa_proteins_Lsat_1_v5_gn_3_56281.1:0.640861,(P_amilis_proteins_FUN_029011-T1:0.952509,(A_hypochondriacus_proteins_AH004281-RA:0.711895,B_vulgaris_proteins_Bevul.6G218400.1.p:0.29188):0.27003):0.640861);

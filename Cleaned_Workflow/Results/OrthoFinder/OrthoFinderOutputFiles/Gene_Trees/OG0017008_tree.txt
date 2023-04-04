@@ -1,1 +1,0 @@
-(((G_max_proteins_GmISU01.15G085600.1.p:0.335912,G_max_proteins_GmISU01.16G133300.1.p:0.179754):0.0916884,G_max_proteins_GmISU01.03G017400.1.p:0.508015):0.701594,(B_vulgaris_proteins_Bevul.4G207800.1.p:2.66777e-06,(B_vulgaris_proteins_Bevul.9G146600.1.p:0.0931519,B_vulgaris_proteins_Bevul.4G209600.1.p:0.00998712):0.0661419):0.701594);

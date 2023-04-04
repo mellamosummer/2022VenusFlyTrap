@@ -1,1 +1,0 @@
-((A_coerulea_proteins_Aqcoe5G386300.1.p:2.26604e-06,(A_coerulea_proteins_Aqcoe4G247000.2.p:0.0443704,A_coerulea_proteins_Aqcoe4G247000.1.p:0.0663986)n2:0.234515)n1:0.373842,(G_max_proteins_GmISU01.18G056850.1.p:0.548238,A_vesiculosa_proteins_Av_00021786-RA:0.659027)n3:0.373842)n0;

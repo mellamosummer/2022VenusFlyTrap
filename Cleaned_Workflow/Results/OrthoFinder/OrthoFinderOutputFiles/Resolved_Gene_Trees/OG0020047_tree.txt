@@ -1,1 +1,0 @@
-(A_vesiculosa_proteins_Av_00013582-RA:0.373974,(P_amilis_proteins_FUN_039339-T1:0.486071,(P_amilis_proteins_FUN_039340-T1:0.317661,P_amilis_proteins_FUN_039338-T1:0.153316)n2:0.250269)n1:0.373974)n0;

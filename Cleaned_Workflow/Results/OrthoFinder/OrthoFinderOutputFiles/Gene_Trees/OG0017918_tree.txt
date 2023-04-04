@@ -1,1 +1,0 @@
-(A_vesiculosa_proteins_Av_00007927-RA:0.449943,(P_amilis_proteins_FUN_024275-T1:0.4034,((A_hypochondriacus_proteins_AH008343-RA:0.312862,B_vulgaris_proteins_Bevul.1G014400.1.p:0.20793):0.0507065,P_amilis_proteins_FUN_024276-T1:0.411625):0.044458):0.449943);

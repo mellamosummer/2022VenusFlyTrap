@@ -1,1 +1,0 @@
-((G_max_proteins_GmISU01.18G071800.1.p:0.0429958,(G_max_proteins_GmISU01.18G071800.2.p:0,G_max_proteins_GmISU01.18G071800.4.p:0):0.0183112):0.383252,(A_hypochondriacus_proteins_AH005767-RA:0.24951,((P_amilis_proteins_FUN_050365-T1:0.695744,P_amilis_proteins_FUN_025079-T1:1.05722):0.279932,A_hypochondriacus_proteins_AH015563-RA:0.254779):0.0671101):0.383252);

@@ -1,1 +1,0 @@
-((P_amilis_proteins_FUN_039830-T1:0.236721,A_hypochondriacus_proteins_AH019107-RA:0.415162)n1:0.161137,(A_vesiculosa_proteins_Av_00022211-RA:0.0617327,A_vesiculosa_proteins_Av_00018704-RA:0.132965)n2:0.161137)n0;

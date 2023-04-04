@@ -1,1 +1,0 @@
-(G_max_proteins_GmISU01.08G157400.1.p:0.232248,(P_amilis_proteins_FUN_015178-T1:0.534566,(S_lycopersicum_proteins_Solyc09g089750.1.1:0.177435,S_lycopersicum_proteins_Solyc09g055803.1.1:0.826671)n2:0.0918524)n1:0.0602765)n0;
