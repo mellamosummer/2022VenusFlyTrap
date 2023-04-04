@@ -802,6 +802,49 @@ module_peak_exp
 # Module QC
 ##################################
 
+module_line_plots <- Exp_table_long_averaged_z_high_var_or_high_F_modules %>% 
+  mutate(treatment = factor(Treatment, levels = c("prey", "no prey")))  %>%
+  mutate(order_x = case_when(
+    str_detect(module, "2") ~ 1,
+    str_detect(module, "7") ~ 2,
+    str_detect(module, "9") ~ 3,
+    str_detect(module, "14") ~ 4,
+    str_detect(module, "168") ~ 5,
+    str_detect(module, "24") ~ 6,
+    str_detect(module, "6") ~ 7,
+    str_detect(module, "5") ~ 8,
+    str_detect(module, "16") ~ 9,
+    str_detect(module, "10") ~ 10,
+    str_detect(module, "4") ~ 11,
+    str_detect(module, "142") ~ 12,
+    str_detect(module, "13") ~ 13,
+    str_detect(module, "3") ~ 14
+  )) %>% 
+  mutate(module = reorder(module, order_x)) %>% 
+  ggplot(aes(x = Time, y = z.score)) +
+  facet_grid(Treatment ~ module) +
+  geom_line(aes(group = gene_ID), alpha = 0.3, color = "grey70") +
+  geom_line(
+    data = modules_mean_z %>% 
+      mutate(Treatment = factor(Treatment, levels = c("prey", "no prey"))),
+    aes(y = mean.z, group = module), 
+    size = 1.1, alpha = 0.8
+  ) +
+  labs(x = "time point",
+       y = "z score") +
+  theme_classic() +
+  theme(
+    text = element_text(size = 14),
+    axis.text = element_text(color = "black"),
+    #axis.text.x = element_blank(),
+    panel.spacing = unit(1, "line")
+  )
+
+
+module_line_plots
+
+ggsave("module_line_plots_ordered.png", height = 20, width = , bg = "white")
+
 module_line_plot_3 <- Exp_table_long_averaged_z_high_var_or_high_F_modules %>% 
   mutate(treatment = factor(Treatment, levels = c("prey", "no prey"))) %>% 
   filter(module == "3") %>%  
@@ -1180,6 +1223,7 @@ module_line_plot_460 <- Exp_table_long_averaged_z_high_var_or_high_F_modules %>%
 module_line_plot_460
 
 ggsave("module_line_plot_460.png", height = 10, width = 8, bg = "white")
+
 
 ##################################
 # Heatmap
@@ -1580,7 +1624,7 @@ write.csv(x = my_network_moduless_annotated, file = "network_modules_annotated.c
 
 ###
 
-network_modules <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/GeneCoexpressionAnalysis/NetworkModules/network_modules_annotated.csv")
+my_network_modules <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/GeneCoexpressionAnalysis/NetworkModules/network_modules_annotated.csv")
 
 
 genesinmodules <- network_modules %>% 
