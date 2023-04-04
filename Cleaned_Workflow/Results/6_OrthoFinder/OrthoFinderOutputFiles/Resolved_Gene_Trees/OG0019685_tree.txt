@@ -1,0 +1,1 @@
+(A_vesiculosa_proteins_Av_00002552-RA:0.677842,((A_thaliana_proteins_AT2G07777.1:0.00729975,A_thaliana_proteins_ATMG01090.1:0.00058225)n2:0.372513,A_thaliana_proteins_ATMG00040.1:0.397899)n1:0.677842)n0;

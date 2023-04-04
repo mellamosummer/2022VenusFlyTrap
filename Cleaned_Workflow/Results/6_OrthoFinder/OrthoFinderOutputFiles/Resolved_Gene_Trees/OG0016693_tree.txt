@@ -1,0 +1,1 @@
+(((V_vinifera_proteins_VIT_202s0025g03220.3:0.00281825,(V_vinifera_proteins_VIT_202s0025g03220.4:0.014298,V_vinifera_proteins_VIT_202s0025g03220.1:0.008818)n3:0.00048075)n2:0.0335628,V_vinifera_proteins_VIT_202s0025g03220.2:0.0295933)n1:0.378158,(A_coerulea_proteins_Aqcoe5G478400.2.p:0.145013,A_coerulea_proteins_Aqcoe5G478400.1.p:9.66811e-07)n4:0.378158)n0;

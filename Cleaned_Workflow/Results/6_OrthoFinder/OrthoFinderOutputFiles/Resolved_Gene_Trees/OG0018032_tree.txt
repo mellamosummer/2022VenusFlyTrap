@@ -1,0 +1,1 @@
+((A_thaliana_proteins_AT2G15130.2:0.0488408,A_thaliana_proteins_AT2G15130.1:0.133054)n1:0.216501,(P_amilis_proteins_FUN_051691-T1:0.121215,(P_amilis_proteins_FUN_051692-T1:0.289672,P_amilis_proteins_FUN_051694-T1:0.286729)n3:0.0501228)n2:0.216501)n0;

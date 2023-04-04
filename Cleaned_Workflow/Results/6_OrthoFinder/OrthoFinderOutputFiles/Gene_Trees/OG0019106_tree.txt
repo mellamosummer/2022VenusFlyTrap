@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe2G166100.1.p:0.197598,(A_vesiculosa_proteins_Av_00025033-RA:0.395717,(A_thaliana_proteins_AT2G17360.2:0.191767,V_vinifera_proteins_VIT_200s0252g00080.1:0.228625):0.121308):0.197598);

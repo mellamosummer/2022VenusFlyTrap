@@ -1,0 +1,1 @@
+((V_vinifera_proteins_VIT_203s0091g00920.1:0.098309,V_vinifera_proteins_VIT_210s0071g00580.1:0.493914):0.13808,(P_amilis_proteins_FUN_049157-T1:0.212342,(A_vesiculosa_proteins_Av_00002070-RA:0.935118,A_hypochondriacus_proteins_AH009208-RA:0.221017):0.163075):0.13808);

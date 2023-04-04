@@ -1,0 +1,1 @@
+(G_max_proteins_GmISU01.06G082750.1.p:0.32144,(S_lycopersicum_proteins_Solyc04g076965.1.1:0.674716,(D_spatulata_proteins_Ds_00014207-RA:0.428211,D_spatulata_proteins_Ds_00014211-RA:0.782752)n2:0.715573)n1:0.32144)n0;

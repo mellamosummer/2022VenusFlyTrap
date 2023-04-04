@@ -1,0 +1,1 @@
+((G_max_proteins_GmISU01.01G166600.1.p:0.0608905,G_max_proteins_GmISU01.11G032700.1.p:0.0711845)n1:0.247963,(S_lycopersicum_proteins_Solyc08g078207.1.1:0.553693,L_sativa_proteins_Lsat_1_v5_gn_6_93601.1:0.523311)n2:0.247963)n0;

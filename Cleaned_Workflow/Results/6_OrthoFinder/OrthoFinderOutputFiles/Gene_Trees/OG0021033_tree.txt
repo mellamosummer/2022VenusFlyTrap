@@ -1,0 +1,1 @@
+(P_amilis_proteins_FUN_053215-T1:0.287324,(L_sativa_proteins_Lsat_1_v5_gn_5_59261.3:0.288133,(L_sativa_proteins_Lsat_1_v5_gn_5_59261.2:0.0469833,L_sativa_proteins_Lsat_1_v5_gn_5_59261.1:0.0968297):0.080464):0.287324);

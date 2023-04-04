@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe7G262300.1.p:0.3185,(((D_spatulata_proteins_Ds_00006031-RA:0.564449,A_thaliana_proteins_AT2G19320.1:0.554109)n3:0.0750438,L_sativa_proteins_Lsat_1_v5_gn_4_90900.1:0.523987)n2:0.0421156,A_hypochondriacus_proteins_AH006629-RA:0.597585)n1:0.3185)n0;

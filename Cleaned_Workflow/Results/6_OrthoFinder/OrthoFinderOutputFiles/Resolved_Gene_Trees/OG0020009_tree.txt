@@ -1,0 +1,1 @@
+(L_sativa_proteins_Lsat_1_v5_gn_7_107260.1:0.658066,(A_vesiculosa_proteins_Av_00022891-RA:0.495282,(D_muscipula_proteins_Dm_00005093-RA:0.0987042,D_muscipula_proteins_Dm_00017092-RA:0.0207097)n2:0.203144)n1:0.658066)n0;

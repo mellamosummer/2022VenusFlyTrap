@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe6G100100.1.p:0.2011,(V_vinifera_proteins_VIT_203s0063g01430.1:0.21279,(S_lycopersicum_proteins_Solyc02g082160.2.1:0.30343,(B_vulgaris_proteins_Bevul.9G179400.1.p:0.256725,P_amilis_proteins_FUN_002345-T1:0.231814):0.326078):0.0114582):0.2011);

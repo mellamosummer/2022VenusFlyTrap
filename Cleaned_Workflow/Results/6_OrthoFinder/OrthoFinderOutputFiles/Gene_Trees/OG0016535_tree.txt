@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe2G140900.1.p:0.260096,((A_thaliana_proteins_AT5G37474.1:0.543693,A_thaliana_proteins_AT5G37473.1:0.28938):0.118541,(V_vinifera_proteins_VIT_202s0025g02300.1:0.0170771,(V_vinifera_proteins_VIT_202s0025g02280.1:2.03042e-06,V_vinifera_proteins_VIT_202s0025g02290.1:0.0136892):0.0185199):0.510895):0.260096);

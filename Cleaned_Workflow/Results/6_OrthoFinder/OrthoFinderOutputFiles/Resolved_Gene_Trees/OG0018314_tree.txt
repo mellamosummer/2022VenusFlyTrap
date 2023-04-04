@@ -1,0 +1,1 @@
+(D_muscipula_proteins_Dm_00000157-RA:0.520502,((V_vinifera_proteins_VIT_204s0044g00050.1:0.0838253,(V_vinifera_proteins_VIT_204s0044g00050.2:0,V_vinifera_proteins_VIT_204s0044g00050.3:0)n3:0.0386008)n2:0.117389,V_vinifera_proteins_VIT_200s2539g00010.1:0.0733997)n1:0.520502)n0;

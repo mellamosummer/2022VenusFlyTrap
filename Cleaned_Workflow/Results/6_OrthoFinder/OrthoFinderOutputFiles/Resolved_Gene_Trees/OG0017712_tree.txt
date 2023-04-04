@@ -1,0 +1,1 @@
+(((A_coerulea_proteins_Aqcoe7G100500.2.p:0.00185298,A_coerulea_proteins_Aqcoe7G100500.3.p:0.00598902)n2:0.222565,A_coerulea_proteins_Aqcoe7G100500.1.p:4.60151e-06)n1:0.564061,(S_lycopersicum_proteins_Solyc09g090290.3.1:1.15115,V_vinifera_proteins_VIT_205s0049g01300.1:2.23871)n3:0.564061)n0;

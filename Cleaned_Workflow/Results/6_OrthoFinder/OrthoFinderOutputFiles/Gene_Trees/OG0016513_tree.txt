@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe2G064100.1.p:0.460707,(L_sativa_proteins_Lsat_1_v5_gn_1_115221.1:0.592948,(D_spatulata_proteins_Ds_00002640-RA:0.989375,((P_amilis_proteins_FUN_012844-T1:3.73938e-06,P_amilis_proteins_FUN_012844-T2:0.204071):0.28802,P_amilis_proteins_FUN_011482-T1:0.0950302):0.592839):0.132181):0.460707);

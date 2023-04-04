@@ -1,0 +1,1 @@
+((S_lycopersicum_proteins_Solyc04g074930.3.1:0.0851555,S_lycopersicum_proteins_Solyc04g074920.2.1:0.168767)n1:0.14465,(D_muscipula_proteins_Dm_00013010-RA:0.26007,(D_spatulata_proteins_Ds_00003509-RA:0.236255,D_spatulata_proteins_Ds_00001602-RA:0.250697)n3:0.203795)n2:0.14465)n0;

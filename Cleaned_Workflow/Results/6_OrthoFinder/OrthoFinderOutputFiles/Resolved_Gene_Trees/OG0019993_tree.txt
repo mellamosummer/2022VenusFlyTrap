@@ -1,0 +1,1 @@
+(S_lycopersicum_proteins_Solyc08g042143.1.1:0.305511,((A_vesiculosa_proteins_Av_00018262-RA:0.421413,P_amilis_proteins_FUN_023153-T1:1.04166)n2:0.291137,D_muscipula_proteins_Dm_00002336-RA:0.601449)n1:0.305511)n0;

@@ -1,0 +1,1 @@
+(G_max_proteins_GmISU01.05G091350.1.p:0.318312,((A_hypochondriacus_proteins_AH011489-RA:0.351539,B_vulgaris_proteins_Bevul.5G086900.1.p:0.219423):0.3406,(P_amilis_proteins_FUN_041512-T2:0.0732204,P_amilis_proteins_FUN_041512-T1:0.0794476):0.641942):0.318312);

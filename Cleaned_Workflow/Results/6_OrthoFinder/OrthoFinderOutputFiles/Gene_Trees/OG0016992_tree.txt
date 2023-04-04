@@ -1,0 +1,1 @@
+(G_max_proteins_GmISU01.20G177650.1.p:0.50472,(A_vesiculosa_proteins_Av_00008384-RA:0.869781,(D_muscipula_proteins_Dm_00001499-RA:0.900143,((L_sativa_proteins_Lsat_1_v5_gn_6_80660.3:0.111743,L_sativa_proteins_Lsat_1_v5_gn_6_80660.1:0.00758112):0.114018,L_sativa_proteins_Lsat_1_v5_gn_6_80660.2:0.00419911):0.722679):0.105373):0.50472);

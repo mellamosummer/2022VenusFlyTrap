@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe2G195500.1.p:0.0799489,(((S_lycopersicum_proteins_Solyc11g021160.1.1:0.566077,S_lycopersicum_proteins_Solyc11g072780.1.1:0.502954):0.181784,D_muscipula_proteins_Dm_00017733-RA:0.441519):0.124102,D_spatulata_proteins_Ds_00016935-RA:0.534159):0.0799489);

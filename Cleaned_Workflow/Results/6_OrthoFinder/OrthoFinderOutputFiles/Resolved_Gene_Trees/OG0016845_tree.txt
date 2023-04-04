@@ -1,0 +1,1 @@
+((A_hypochondriacus_proteins_AH000921-RA:0.417307,(D_muscipula_proteins_Dm_00008570-RA:0.202775,A_vesiculosa_proteins_Av_00023485-RA:0.300093)n2:0.0758417)n1:0.101032,(L_sativa_proteins_Lsat_1_v5_gn_5_46480.3:0.0102232,(L_sativa_proteins_Lsat_1_v5_gn_5_46480.2:0.0377961,L_sativa_proteins_Lsat_1_v5_gn_5_46480.1:0.0157469)n4:0.00046525)n3:0.101032)n0;

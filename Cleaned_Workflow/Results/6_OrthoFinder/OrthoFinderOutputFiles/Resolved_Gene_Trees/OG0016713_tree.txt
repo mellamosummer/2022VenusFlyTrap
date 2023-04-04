@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe3G419400.6.p:0,((A_coerulea_proteins_Aqcoe3G419400.3.p:0,(A_coerulea_proteins_Aqcoe3G419400.4.p:0,A_coerulea_proteins_Aqcoe3G419400.2.p:0)n3:0)n2:0,(A_coerulea_proteins_Aqcoe3G419400.1.p:0,A_coerulea_proteins_Aqcoe3G419400.5.p:0)n4:0)n1:0)n0;

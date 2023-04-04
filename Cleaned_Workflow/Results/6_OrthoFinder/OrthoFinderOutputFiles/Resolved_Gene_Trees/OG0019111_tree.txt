@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe2G200000.1.p:0.323977,(D_spatulata_proteins_Ds_00011698-RA:0.04039,(A_vesiculosa_proteins_Av_00016474-RA:0.149931,A_hypochondriacus_proteins_AH007301-RA:0.975452)n2:0.110009)n1:0.323977)n0;

@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe1305s0001.1.p:0.30008,(A_vesiculosa_proteins_Av_00018895-RA:0.185699,((G_max_proteins_GmISU01.09G075000.1.p:0.35729,D_muscipula_proteins_Dm_00006373-RA:0.448627):0.271329,A_hypochondriacus_proteins_AH007273-RA:0.521011):0.0947972):0.30008);

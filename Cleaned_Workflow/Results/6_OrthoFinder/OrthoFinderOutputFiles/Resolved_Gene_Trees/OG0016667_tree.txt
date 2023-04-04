@@ -1,0 +1,1 @@
+(((S_lycopersicum_proteins_Solyc12g042280.2.1:0.590782,S_lycopersicum_proteins_Solyc12g042250.2.1:0.0198385)n2:0.218508,P_amilis_proteins_FUN_011204-T1:0.232475)n1:0.076584,(A_coerulea_proteins_Aqcoe1G455700.5.p:0,(A_coerulea_proteins_Aqcoe1G455700.3.p:0,A_coerulea_proteins_Aqcoe1G455700.4.p:0)n4:0)n3:0.076584)n0;

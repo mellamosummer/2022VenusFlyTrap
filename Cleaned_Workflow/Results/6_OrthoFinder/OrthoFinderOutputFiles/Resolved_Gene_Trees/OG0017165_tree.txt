@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_215s0024g00890.1:0.135108,((G_max_proteins_GmISU01.11G011700.1.p:0.0745005,G_max_proteins_GmISU01.01G188300.1.p:0.0544725)n2:0.304203,(P_amilis_proteins_FUN_024807-T1:0.185374,(P_amilis_proteins_FUN_020345-T1:0.0438381,P_amilis_proteins_FUN_020346-T1:0.0596779)n4:0.037864)n3:0.384446)n1:0.135108)n0;

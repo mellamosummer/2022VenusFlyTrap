@@ -1,0 +1,1 @@
+((G_max_proteins_GmISU01.13G035550.1.p:0.777475,G_max_proteins_GmISU01.10G059200.1.p:0.944496):0.397605,(B_vulgaris_proteins_Bevul.6G152100.1.p:0.003703,B_vulgaris_proteins_Bevul.7G069900.1.p:0.129174):0.397605);

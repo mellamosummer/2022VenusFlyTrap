@@ -1,0 +1,1 @@
+(D_muscipula_proteins_Dm_00008599-RA:0.396392,(A_hypochondriacus_proteins_AH014236-RA:0.496874,(B_vulgaris_proteins_Bevul.8G127000.1.p:0.104494,(B_vulgaris_proteins_Bevul.8G126900.1.p:1.10825e-06,B_vulgaris_proteins_Bevul.8G127100.1.p:0.050861)n3:0.0050861)n2:0.000565122)n1:0.0609233)n0;

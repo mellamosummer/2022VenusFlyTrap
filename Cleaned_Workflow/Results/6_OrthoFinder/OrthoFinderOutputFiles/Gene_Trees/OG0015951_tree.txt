@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_208s0058g00300.1:0.336127,(S_lycopersicum_proteins_Solyc07g026800.1.1:0.521455,(P_amilis_proteins_FUN_037236-T1:0.500515,((A_thaliana_proteins_AT2G29220.1:0.115378,A_thaliana_proteins_AT2G29250.1:0.121406):0.561286,(A_thaliana_proteins_AT1G07460.2:0.0270893,A_thaliana_proteins_AT1G07460.1:0.0722357):0.318378):0.233574):0.0194887):0.336127);

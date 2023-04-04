@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe2G091800.1.p:0.146341,(S_lycopersicum_proteins_Solyc05g046370.1.1:0.305107,(A_vesiculosa_proteins_Av_00011601-RA:0.844479,(A_thaliana_proteins_AT5G45450.1:0.558775,(D_muscipula_proteins_Dm_00013161-RA:0.518617,S_lycopersicum_proteins_Solyc01g057330.1.1:0.452888):0.0636114):0.144217):0.071829):0.146341);

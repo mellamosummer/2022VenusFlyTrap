@@ -1,0 +1,1 @@
+((A_coerulea_proteins_Aqcoe4G122700.1.p:0.0558936,A_coerulea_proteins_Aqcoe4G119300.1.p:1.17093e-06)n1:0.123391,((L_sativa_proteins_Lsat_1_v5_gn_3_38100.1:0.282133,(B_vulgaris_proteins_Bevul.9G074700.1.p:0.143965,A_hypochondriacus_proteins_AH000615-RA:0.0698437)n4:0.232657)n3:0.0852015,V_vinifera_proteins_VIT_212s0028g03900.1:0.0578208)n2:0.123391)n0;

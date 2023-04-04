@@ -1,0 +1,1 @@
+((D_spatulata_proteins_Ds_00002752-RA:0.400279,D_muscipula_proteins_Dm_00015676-RA:1.48151):0.0589799,(P_amilis_proteins_FUN_033108-T1:0.238747,(A_hypochondriacus_proteins_AH019132-RA:0.192063,B_vulgaris_proteins_Bevul.3G165900.1.p:0.143568):0.105293):0.0589799);

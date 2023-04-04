@@ -1,0 +1,1 @@
+(A_vesiculosa_proteins_Av_00009536-RA:0.16272,((V_vinifera_proteins_VIT_201s0010g03240.1:0.603529,V_vinifera_proteins_VIT_212s0028g01910.1:0.382306):0.411849,(V_vinifera_proteins_VIT_211s0016g00450.5:0.0755092,(V_vinifera_proteins_VIT_211s0016g00450.3:0.0455809,V_vinifera_proteins_VIT_211s0016g00450.2:0.0172451):0.0697308):0.0441536):0.16272);

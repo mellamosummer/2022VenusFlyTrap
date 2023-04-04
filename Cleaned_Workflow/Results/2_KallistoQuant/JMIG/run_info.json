@@ -1,0 +1,13 @@
+{
+	"n_targets": 21135,
+	"n_bootstraps": 100,
+	"n_processed": 11416562,
+	"n_pseudoaligned": 7925375,
+	"n_unique": 7840999,
+	"p_pseudoaligned": 69.4,
+	"p_unique": 68.7,
+	"kallisto_version": "0.46.1",
+	"index_version": 10,
+	"start_time": "Sun Oct 30 13:17:13 2022",
+	"call": "kallisto quant -i /scratch/srb67793/2022VenusFlyTrap/kallisto/VFT.idx -o /scratch/srb67793/2022VenusFlyTrap/kallisto/quant/JMIG -b 100 /scratch/srb67793/2022VenusFlyTrap/trimmedreads/paired/JMIG_RNAseq_VFT45_Petiole_Petiole_PLT1_TCTGTTGG_Dionaea_muscipula_typical_I1143_L2_R1_paired.fastq /scratch/srb67793/2022VenusFlyTrap/trimmedreads/paired/JMIG_RNAseq_VFT45_Petiole_Petiole_PLT1_TCTGTTGG_Dionaea_muscipula_typical_I1143_L2_R2_paired.fastq"
+}

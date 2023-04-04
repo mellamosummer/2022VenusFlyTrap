@@ -1,0 +1,1 @@
+(P_amilis_proteins_FUN_008484-T1:0.337897,((P_amilis_proteins_FUN_039076-T1:0.167859,P_amilis_proteins_FUN_038310-T1:0.161174):0.386249,(P_amilis_proteins_FUN_022775-T1:0.622159,P_amilis_proteins_FUN_029132-T1:0.995896):0.549167):0.337897);

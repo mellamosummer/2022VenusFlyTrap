@@ -1,0 +1,1 @@
+((P_amilis_proteins_FUN_048710-T1:0.762091,D_muscipula_proteins_Dm_00020783-RA:1.02976):0.144518,(V_vinifera_proteins_VIT_215s0045g00080.1:0.74199,(V_vinifera_proteins_VIT_207s0005g05682.1:0.006717,(V_vinifera_proteins_VIT_216s0013g01248.1:0.102556,V_vinifera_proteins_VIT_207s0005g05686.1:3.43202e-06):0.006483):0.494912):0.144518);

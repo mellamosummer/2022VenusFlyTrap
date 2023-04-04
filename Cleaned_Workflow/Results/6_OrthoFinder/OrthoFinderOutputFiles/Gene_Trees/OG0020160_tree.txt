@@ -1,0 +1,1 @@
+((G_max_proteins_GmISU01.12G194650.1.p:0.502265,V_vinifera_proteins_VIT_213s0106g00460.1:0.100465):0.133484,(D_spatulata_proteins_Ds_00017030-RA:1.06386,V_vinifera_proteins_VIT_213s0106g00480.1:1.92313e-06):0.133484);

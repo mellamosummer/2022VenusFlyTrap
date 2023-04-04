@@ -1,0 +1,1 @@
+((A_coerulea_proteins_Aqcoe2G210000.1.p:0.0184128,A_coerulea_proteins_Aqcoe7G228700.1.p:0.150741):0.0378175,(A_thaliana_proteins_ATCG00050.1:0.234174,(G_max_proteins_GmISU01.16G077700.1.p:0.29733,B_vulgaris_proteins_Bevul.2G131700.1.p:0.266774):0.0642944):0.0378175);

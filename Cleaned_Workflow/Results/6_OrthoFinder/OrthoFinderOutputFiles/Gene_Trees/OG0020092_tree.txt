@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_217s0000g07965.1:0.277377,((P_amilis_proteins_FUN_047435-T1:0.269275,B_vulgaris_proteins_Bevul.5G208800.1.p:0.348349):0.020868,P_amilis_proteins_FUN_010875-T1:0.18455):0.277377);

@@ -1,0 +1,1 @@
+((A_thaliana_proteins_AT5G44265.1:0.344741,G_max_proteins_GmISU01.12G170900.1.p:0.4961)n1:0.265335,(S_lycopersicum_proteins_Solyc10g008205.1.1:0.478863,S_lycopersicum_proteins_Solyc07g053780.3.1:0.587219)n2:0.265335)n0;

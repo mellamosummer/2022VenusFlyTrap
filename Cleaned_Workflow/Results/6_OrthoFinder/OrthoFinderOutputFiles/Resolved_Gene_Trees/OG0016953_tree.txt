@@ -1,0 +1,1 @@
+(((A_thaliana_proteins_AT3G01175.1:0.976622,(L_sativa_proteins_Lsat_1_v5_gn_3_100140.1:3.41677e-06,L_sativa_proteins_Lsat_1_v5_gn_3_100140.3:0.215217)n3:0.743794)n2:0.06633,S_lycopersicum_proteins_Solyc02g087990.3.1:0.686523)n1:0.273407,(V_vinifera_proteins_VIT_214s0108g00930.2:0.348799,V_vinifera_proteins_VIT_214s0108g00930.1:3.41677e-06)n4:0.273407)n0;

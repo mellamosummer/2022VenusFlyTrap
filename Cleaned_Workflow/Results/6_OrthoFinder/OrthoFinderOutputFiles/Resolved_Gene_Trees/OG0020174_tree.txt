@@ -1,0 +1,1 @@
+(D_spatulata_proteins_Ds_00010485-RA:0.352461,(L_sativa_proteins_Lsat_1_v5_gn_3_117640.2:0.122031,(L_sativa_proteins_Lsat_1_v5_gn_3_117640.1:0,L_sativa_proteins_Lsat_1_v5_gn_3_117640.3:0)n2:0.318503)n1:0.352461)n0;

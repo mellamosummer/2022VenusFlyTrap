@@ -1,0 +1,1 @@
+((D_spatulata_proteins_Ds_00010264-RA:0.295332,P_amilis_proteins_FUN_030488-T1:0.778074)n1:0.295932,(S_lycopersicum_proteins_Solyc10g006630.2.1:0.383562,S_lycopersicum_proteins_Solyc10g006620.2.1:0.107827)n2:0.295932)n0;

@@ -1,0 +1,1 @@
+((P_amilis_proteins_FUN_051674-T1:0.941141,V_vinifera_proteins_VIT_209s0096g00930.1:0.318186):0.131372,(V_vinifera_proteins_VIT_209s0070g00015.1:3.94534e-06,(S_lycopersicum_proteins_Solyc09g090620.1.1:1.18822,P_amilis_proteins_FUN_043977-T1:1.05841):0.195182):0.131372);

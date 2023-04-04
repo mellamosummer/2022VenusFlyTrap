@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_204s0079g00160.1:0.0496586,(D_muscipula_proteins_Dm_00002844-RA:0.177202,(S_lycopersicum_proteins_Solyc12g006350.2.1:0.0094604,S_lycopersicum_proteins_Solyc12g006340.2.1:0.0231416)n2:0.147345)n1:0.0496586)n0;

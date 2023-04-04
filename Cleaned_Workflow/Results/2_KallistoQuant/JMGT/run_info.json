@@ -1,0 +1,13 @@
+{
+	"n_targets": 21135,
+	"n_bootstraps": 100,
+	"n_processed": 8866712,
+	"n_pseudoaligned": 5760844,
+	"n_unique": 5683735,
+	"p_pseudoaligned": 65.0,
+	"p_unique": 64.1,
+	"kallisto_version": "0.46.1",
+	"index_version": 10,
+	"start_time": "Sun Oct 30 10:53:57 2022",
+	"call": "kallisto quant -i /scratch/srb67793/2022VenusFlyTrap/kallisto/VFT.idx -o /scratch/srb67793/2022VenusFlyTrap/kallisto/quant/JMGT -b 100 /scratch/srb67793/2022VenusFlyTrap/trimmedreads/paired/JMGT_RNAseq_47_VFT32_Leaf_Trap_closed_false_trigger_5mins_GGTGAACC_Dionaea_muscipula_typical_I1143_L2_R1_paired.fastq /scratch/srb67793/2022VenusFlyTrap/trimmedreads/paired/JMGT_RNAseq_47_VFT32_Leaf_Trap_closed_false_trigger_5mins_GGTGAACC_Dionaea_muscipula_typical_I1143_L2_R2_paired.fastq /scratch/srb67793/2022VenusFlyTrap/trimmedreads/paired/JMGT_RNAseq_47_VFT32_Leaf_Trap_closed_false_trigger_5mins_GGTGAACC_Dionaea_muscipula_typical_I1148_L1_R1_paired.fastq /scratch/srb67793/2022VenusFlyTrap/trimmedreads/paired/JMGT_RNAseq_47_VFT32_Leaf_Trap_closed_false_trigger_5mins_GGTGAACC_Dionaea_muscipula_typical_I1148_L1_R2_paired.fastq"
+}

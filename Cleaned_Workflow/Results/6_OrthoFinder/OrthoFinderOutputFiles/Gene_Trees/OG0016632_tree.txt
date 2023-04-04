@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe7G115800.1.p:0.123597,(S_lycopersicum_proteins_Solyc06g064880.3.1:0.240584,((P_amilis_proteins_FUN_023908-T2:0.156926,P_amilis_proteins_FUN_023908-T1:0.0395926):0.158084,(B_vulgaris_proteins_Bevul.1G157200.1.p:0.125685,A_hypochondriacus_proteins_AH013362-RA:0.23238):0.0387777):0.188522):0.123597);

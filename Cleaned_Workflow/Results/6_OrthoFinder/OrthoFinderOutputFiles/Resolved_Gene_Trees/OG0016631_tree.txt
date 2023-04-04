@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe7G301100.1.p:0.434876,((A_vesiculosa_proteins_Av_00024092-RA:0.449031,P_amilis_proteins_FUN_000341-T1:0.452195)n2:0.15922,((V_vinifera_proteins_VIT_213s0064g01560.1:0.257728,V_vinifera_proteins_VIT_213s0064g01530.1:0.302205)n4:0.238686,V_vinifera_proteins_VIT_213s0064g01680.1:0.938689)n3:0.104299)n1:0.0296209)n0;

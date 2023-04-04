@@ -1,0 +1,1 @@
+(A_thaliana_proteins_AT3G19670.2:0,(A_thaliana_proteins_AT3G19670.3:0,(A_thaliana_proteins_AT3G19670.1:0,A_thaliana_proteins_AT3G19670.4:0.016607)n2:0)n1:0)n0;

@@ -1,0 +1,1 @@
+(G_max_proteins_GmISU01.14G148800.1.p:0.266977,(A_hypochondriacus_proteins_AH007444-RA:0.738807,(L_sativa_proteins_Lsat_1_v5_gn_2_125261.3:0.43029,L_sativa_proteins_Lsat_1_v5_gn_2_125261.1:2.2959e-06)n2:0.600385)n1:0.266977)n0;

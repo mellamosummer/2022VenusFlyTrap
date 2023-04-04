@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_216s0022g02015.1:0.601982,(A_thaliana_proteins_AT5G62240.1:0.443832,(A_thaliana_proteins_AT5G07170.2:2.29524e-06,A_thaliana_proteins_AT5G07170.1:0.0121472)n2:0.636633)n1:0.601982)n0;

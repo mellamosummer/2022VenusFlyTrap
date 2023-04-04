@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe4G123400.1.p:0.0909243,((V_vinifera_proteins_VIT_200s0285g00020.1:0.302565,V_vinifera_proteins_VIT_211s0065g00950.1:0.131017)n2:0.482208,(G_max_proteins_GmISU01.15G173100.2.p:0.14081,(G_max_proteins_GmISU01.15G173100.3.p:0.0109871,G_max_proteins_GmISU01.15G173100.4.p:0.0452439)n4:0.120965)n3:0.388084)n1:0.0909243)n0;

@@ -1,0 +1,1 @@
+(A_thaliana_proteins_AT1G07660.2:0.0510266,(A_hypochondriacus_proteins_AH018134-RA:0.209728,(A_vesiculosa_proteins_Av_00018701-RA:0.00903125,A_vesiculosa_proteins_Av_00006134-RA:0.316042)n2:0.0432457)n1:0.0510266)n0;

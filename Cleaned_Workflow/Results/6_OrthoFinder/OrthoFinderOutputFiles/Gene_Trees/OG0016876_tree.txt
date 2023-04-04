@@ -1,0 +1,1 @@
+(A_thaliana_proteins_ATMG00820.1:0.248342,((P_amilis_proteins_FUN_052991-T1:0.762983,P_amilis_proteins_FUN_053290-T1:0.26606):0.401448,(D_spatulata_proteins_Ds_00009080-RA:0.512789,(S_lycopersicum_proteins_Solyc02g072430.2.1:4.29487e-06,S_lycopersicum_proteins_Solyc02g072420.1.1:0.620151):1.17707):0.143128):0.248342);

@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_214s0068g01670.2:0.171276,((A_thaliana_proteins_AT3G01990.8:0.0108351,A_thaliana_proteins_AT3G01990.3:0.0108609):0.0167007,(A_thaliana_proteins_AT3G01990.2:0.00803832,(A_thaliana_proteins_AT3G01990.9:0.0195918,A_thaliana_proteins_AT3G01990.4:0.00019624):0.0103177):0.0555922):0.171276);

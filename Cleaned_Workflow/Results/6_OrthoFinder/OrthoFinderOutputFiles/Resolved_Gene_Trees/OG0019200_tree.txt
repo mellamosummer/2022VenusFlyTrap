@@ -1,0 +1,1 @@
+((S_lycopersicum_proteins_Solyc02g064840.1.1:0.616132,G_max_proteins_GmISU01.06G039100.1.p:0.662088)n1:0.0319858,(A_coerulea_proteins_Aqcoe5G132300.1.p:0.531343,A_coerulea_proteins_Aqcoe6G303900.1.p:0.395821)n2:0.0319858)n0;

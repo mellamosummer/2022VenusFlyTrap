@@ -1,0 +1,1 @@
+(A_vesiculosa_proteins_Av_00020884-RA:0.214741,(L_sativa_proteins_Lsat_1_v5_gn_4_19001.3:0.344084,(L_sativa_proteins_Lsat_1_v5_gn_5_157800.1:1.0214,L_sativa_proteins_Lsat_1_v5_gn_4_19041.1:0.512229):0.052634):0.214741);

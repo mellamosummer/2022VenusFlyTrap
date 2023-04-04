@@ -1,0 +1,1 @@
+(D_muscipula_proteins_Dm_00020792-RA:0.391796,((S_lycopersicum_proteins_Solyc01g067275.1.1:0.332973,S_lycopersicum_proteins_Solyc01g067230.3.1:0.465678)n2:0.16259,(S_lycopersicum_proteins_Solyc01g067125.1.1:0.692003,S_lycopersicum_proteins_Solyc01g067220.1.1:0.709763)n3:0.175893)n1:0.391796)n0;

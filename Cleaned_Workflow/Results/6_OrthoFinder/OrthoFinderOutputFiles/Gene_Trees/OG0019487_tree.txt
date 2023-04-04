@@ -1,0 +1,1 @@
+((D_muscipula_proteins_Dm_00019304-RA:0.512809,D_spatulata_proteins_Ds_00017407-RA:0.586551):0.271198,(A_hypochondriacus_proteins_AH023365-RA:0.280684,A_hypochondriacus_proteins_AH016165-RA:0.394974):0.271198);

@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_202s0012g00490.1:0.407485,(D_spatulata_proteins_Ds_00008135-RA:0.361765,((G_max_proteins_GmISU01.11G036200.1.p:0.304518,S_lycopersicum_proteins_Solyc08g077410.3.1:0.330207):0.0945046,A_thaliana_proteins_AT1G32710.1:0.555507):0.0655148):0.407485);

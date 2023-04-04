@@ -1,0 +1,1 @@
+(D_muscipula_proteins_Dm_00000196-RA:0.411008,((G_max_proteins_GmISU01.06G126200.3.p:0,G_max_proteins_GmISU01.06G126200.2.p:0)n2:0,G_max_proteins_GmISU01.06G126200.1.p:0)n1:0.411008)n0;

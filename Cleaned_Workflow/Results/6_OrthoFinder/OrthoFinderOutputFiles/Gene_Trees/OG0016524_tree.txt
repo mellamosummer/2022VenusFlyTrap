@@ -1,0 +1,1 @@
+((A_coerulea_proteins_Aqcoe6G030200.1.p:0.160561,(A_coerulea_proteins_Aqcoe2G219200.1.p:0.197756,A_coerulea_proteins_Aqcoe2G104700.1.p:0.162397):0.169892):0.207162,(S_lycopersicum_proteins_Solyc12g006190.1.1:0.670586,(L_sativa_proteins_Lsat_1_v5_gn_5_122320.3:0.0511508,L_sativa_proteins_Lsat_1_v5_gn_5_122320.1:0.0236462):0.515978):0.207162);

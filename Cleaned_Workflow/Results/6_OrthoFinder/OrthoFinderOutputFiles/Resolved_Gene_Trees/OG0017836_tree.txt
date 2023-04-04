@@ -1,0 +1,1 @@
+((A_coerulea_proteins_Aqcoe3G289500.1.p:5e-07,A_coerulea_proteins_Aqcoe3G289500.2.p:5e-07)n1:0.217399,(V_vinifera_proteins_VIT_214s0060g00950.1:-0,(V_vinifera_proteins_VIT_214s0060g00950.3:0,V_vinifera_proteins_VIT_214s0060g00950.2:0)n3:0)n2:0.217399)n0;

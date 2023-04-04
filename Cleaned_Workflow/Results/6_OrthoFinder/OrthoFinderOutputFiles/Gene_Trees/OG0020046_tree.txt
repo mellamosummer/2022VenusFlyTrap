@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_213s0073g00440.1:0.137152,((B_vulgaris_proteins_Bevul.9G069000.1.p:0.483922,G_max_proteins_GmISU01.02G104900.1.p:1.01376):0.641803,A_vesiculosa_proteins_Av_00021057-RA:0.124469):0.137152);

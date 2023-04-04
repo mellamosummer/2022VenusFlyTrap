@@ -1,0 +1,1 @@
+(V_vinifera_proteins_VIT_204s0008g06550.1:0.418144,(P_amilis_proteins_FUN_010645-T1:0.779598,(L_sativa_proteins_Lsat_1_v5_gn_9_79840.1:0.475502,(A_vesiculosa_proteins_Av_00013378-RA:0.583838,D_muscipula_proteins_Dm_00006469-RA:0.276384)n3:0.100752)n2:0.0541561)n1:0.418144)n0;

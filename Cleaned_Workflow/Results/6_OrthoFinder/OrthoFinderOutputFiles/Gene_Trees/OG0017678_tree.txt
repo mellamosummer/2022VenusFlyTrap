@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe4G095100.1.p:0.421224,(G_max_proteins_GmISU01.04G114550.1.p:0.132267,(G_max_proteins_GmISU01.04G114550.2.p:0.0423635,(G_max_proteins_GmISU01.04G114550.3.p:0,G_max_proteins_GmISU01.04G114550.4.p:0):0.0267985):0.0197842):0.421224);

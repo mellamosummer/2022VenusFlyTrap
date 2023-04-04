@@ -1,0 +1,1 @@
+(((P_amilis_proteins_FUN_040107-T1:0.419494,A_hypochondriacus_proteins_AH004828-RA:0.509011)n2:0.153678,D_muscipula_proteins_Dm_00014752-RA:0.444114)n1:0.210408,((G_max_proteins_GmISU01.02G035300.3.p:0,G_max_proteins_GmISU01.02G035300.4.p:0)n4:0.0555505,(G_max_proteins_GmISU01.02G035300.5.p:0,G_max_proteins_GmISU01.02G035300.6.p:0)n5:0.0248245)n3:0.210408)n0;

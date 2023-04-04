@@ -1,0 +1,1 @@
+((A_hypochondriacus_proteins_AH016768-RA:0.205681,B_vulgaris_proteins_Bevul.1G024900.1.p:0.149616):0.196251,((A_coerulea_proteins_Aqcoe6G214100.1.p:0,A_coerulea_proteins_Aqcoe6G214100.2.p:0):0.0866685,(A_coerulea_proteins_Aqcoe6G214100.4.p:0,A_coerulea_proteins_Aqcoe6G214100.3.p:0):0.0071335):0.196251);

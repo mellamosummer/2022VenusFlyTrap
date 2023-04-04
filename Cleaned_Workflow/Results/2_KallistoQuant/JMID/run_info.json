@@ -1,0 +1,13 @@
+{
+	"n_targets": 21135,
+	"n_bootstraps": 100,
+	"n_processed": 5494191,
+	"n_pseudoaligned": 420777,
+	"n_unique": 411717,
+	"p_pseudoaligned": 7.7,
+	"p_unique": 7.5,
+	"kallisto_version": "0.46.1",
+	"index_version": 10,
+	"start_time": "Sun Oct 30 13:02:36 2022",
+	"call": "kallisto quant -i /scratch/srb67793/2022VenusFlyTrap/kallisto/VFT.idx -o /scratch/srb67793/2022VenusFlyTrap/kallisto/quant/JMID -b 100 /scratch/srb67793/2022VenusFlyTrap/trimmedreads/paired/JMID_RNAseq_VFT42_Leaf_Trap_closed_w_prey_12hr_PLT1_AGGTTATA_Dionaea_muscipula_typical_I1143_L2_R1_paired.fastq /scratch/srb67793/2022VenusFlyTrap/trimmedreads/paired/JMID_RNAseq_VFT42_Leaf_Trap_closed_w_prey_12hr_PLT1_AGGTTATA_Dionaea_muscipula_typical_I1143_L2_R2_paired.fastq /scratch/srb67793/2022VenusFlyTrap/trimmedreads/paired/JMID_RNAseq_VFT42_Leaf_Trap_closed_w_prey_12hr_PLT1_AGGTTATA_Dionaea_muscipula_typical_I1148_L1_R1_paired.fastq /scratch/srb67793/2022VenusFlyTrap/trimmedreads/paired/JMID_RNAseq_VFT42_Leaf_Trap_closed_w_prey_12hr_PLT1_AGGTTATA_Dionaea_muscipula_typical_I1148_L1_R2_paired.fastq"
+}

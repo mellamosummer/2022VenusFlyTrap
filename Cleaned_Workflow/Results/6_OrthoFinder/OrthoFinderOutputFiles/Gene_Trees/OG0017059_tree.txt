@@ -1,0 +1,1 @@
+(D_spatulata_proteins_Ds_00012548-RA:0.0385342,(D_spatulata_proteins_Ds_00012546-RA:0.0315906,((D_spatulata_proteins_Ds_00012549-RA:0.110398,D_spatulata_proteins_Ds_00012547-RA:0.0841397):0.0884635,(D_spatulata_proteins_Ds_00012550-RA:0.168893,D_spatulata_proteins_Ds_00012545-RA:0.147075):0.151032):0.185789):0.0385342);

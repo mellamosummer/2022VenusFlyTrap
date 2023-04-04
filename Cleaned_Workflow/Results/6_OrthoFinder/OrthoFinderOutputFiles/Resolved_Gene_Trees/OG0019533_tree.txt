@@ -1,0 +1,1 @@
+((A_hypochondriacus_proteins_AH017240-RA:0.745036,P_amilis_proteins_FUN_046932-T1:0.734329)n1:0.478874,(L_sativa_proteins_Lsat_1_v5_gn_8_103701.1:2.48156e-06,L_sativa_proteins_Lsat_1_v5_gn_2_103900.1:0.0505992)n2:0.478874)n0;

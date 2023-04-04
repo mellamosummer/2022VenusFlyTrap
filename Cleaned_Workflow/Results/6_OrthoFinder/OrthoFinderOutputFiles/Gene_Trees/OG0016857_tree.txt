@@ -1,0 +1,1 @@
+(L_sativa_proteins_Lsat_1_v5_gn_3_104540.1:0.54037,((A_thaliana_proteins_AT1G66235.1:0.154552,A_thaliana_proteins_AT1G66235.2:0.101334):0.511091,(A_thaliana_proteins_AT2G13760.1:0.0924995,(A_thaliana_proteins_AT4G10230.1:0.0147507,A_thaliana_proteins_AT1G24380.1:0.0402663):0.145841):0.795671):0.54037);

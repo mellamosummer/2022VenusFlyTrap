@@ -1,0 +1,1 @@
+((D_spatulata_proteins_Ds_00014531-RA:0.133442,D_spatulata_proteins_Ds_00011623-RA:0.402315)n1:0.101737,(D_muscipula_proteins_Dm_00013396-RA:0.386043,D_muscipula_proteins_Dm_00010099-RA:0.435277)n2:0.101737)n0;

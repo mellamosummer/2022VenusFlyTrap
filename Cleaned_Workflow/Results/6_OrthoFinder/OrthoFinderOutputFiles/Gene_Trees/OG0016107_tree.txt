@@ -1,0 +1,1 @@
+((G_max_proteins_GmISU01.09G218100.2.p:0,G_max_proteins_GmISU01.09G218100.1.p:0):0.210095,(S_lycopersicum_proteins_Solyc11g042710.2.1:0.754914,((D_spatulata_proteins_Ds_00016489-RA:0.451158,D_spatulata_proteins_Ds_00016492-RA:0.418211):0.0403707,(P_amilis_proteins_FUN_037022-T1:0.453383,P_amilis_proteins_FUN_037147-T1:0.0693295):0.146814):0.0765995):0.210095);

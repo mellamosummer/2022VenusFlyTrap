@@ -1,0 +1,1 @@
+((B_vulgaris_proteins_Bevul.9G117200.1.p:0.725433,P_amilis_proteins_FUN_053076-T1:1.11749)n1:0.0376041,(((A_coerulea_proteins_Aqcoe2G228700.1.p:0.28988,A_coerulea_proteins_Aqcoe5G295500.1.p:0.407574)n4:0.0737257,A_coerulea_proteins_Aqcoe1G255800.2.p:0.161273)n3:0.176987,A_coerulea_proteins_Aqcoe3G130800.1.p:0.363754)n2:0.0376041)n0;

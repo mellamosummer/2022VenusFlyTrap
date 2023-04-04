@@ -1,0 +1,1 @@
+(P_amilis_proteins_FUN_011148-T1:1.02569,(((A_thaliana_proteins_AT5G61260.2:0,A_thaliana_proteins_AT5G61260.1:0)n3:0,A_thaliana_proteins_AT5G61260.3:0)n2:0.549291,A_thaliana_proteins_AT5G07820.1:0.73336)n1:1.02569)n0;

@@ -1,0 +1,1 @@
+((A_coerulea_proteins_Aqcoe3G122200.3.p:0.0338905,A_coerulea_proteins_Aqcoe3G122200.4.p:0.0189255)n1:0.113436,(D_muscipula_proteins_Dm_00012421-RA:0.321515,P_amilis_proteins_FUN_032840-T2:0.140654)n2:0.113436)n0;

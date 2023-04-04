@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe1G141600.1.p:0.33588,(A_hypochondriacus_proteins_AH022006-RA:0.345429,(B_vulgaris_proteins_Bevul.7G053700.1.p:0.109476,B_vulgaris_proteins_Bevul.7G054700.1.p:0.0937787):0.154188):0.33588);

@@ -1,0 +1,1 @@
+((A_coerulea_proteins_Aqcoe7G164100.1.p:0.0128599,A_coerulea_proteins_Aqcoe7G164100.2.p:2.61083e-06):0.292144,(D_muscipula_proteins_Dm_00017046-RA:0.863703,(A_thaliana_proteins_AT4G29060.2:0.724502,(G_max_proteins_GmISU01.08G033700.2.p:0.00774583,G_max_proteins_GmISU01.08G033700.1.p:0.0590062):0.335257):0.0240624):0.292144);

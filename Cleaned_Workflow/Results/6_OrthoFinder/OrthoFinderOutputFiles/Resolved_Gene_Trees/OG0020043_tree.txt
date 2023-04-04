@@ -1,0 +1,1 @@
+((S_lycopersicum_proteins_Solyc02g086510.3.1:0.0984885,S_lycopersicum_proteins_Solyc01g058690.1.1:0.11987)n1:0.52936,(D_spatulata_proteins_Ds_00014175-RA:0.760198,A_vesiculosa_proteins_Av_00022665-RA:0.56396)n2:0.52936)n0;

@@ -1,0 +1,1 @@
+((S_lycopersicum_proteins_Solyc12g100350.2.1:0.273533,(A_vesiculosa_proteins_Av_00004344-RA:0.976162,A_vesiculosa_proteins_Av_00008164-RA:0.822179)n2:0.0913532)n1:0.0408416,(L_sativa_proteins_Lsat_1_v5_gn_5_180321.6:0,L_sativa_proteins_Lsat_1_v5_gn_5_180321.8:0)n3:0.21403)n0;

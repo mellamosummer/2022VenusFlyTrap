@@ -1,0 +1,1 @@
+(D_spatulata_proteins_Ds_00010979-RA:0.263183,((A_hypochondriacus_proteins_AH010957-RA:0.314686,A_hypochondriacus_proteins_AH022707-RA:0.614522)n2:0.191279,A_hypochondriacus_proteins_AH010959-RA:0.455641)n1:0.263183)n0;

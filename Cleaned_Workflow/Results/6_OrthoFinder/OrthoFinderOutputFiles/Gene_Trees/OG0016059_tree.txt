@@ -1,0 +1,1 @@
+(((D_muscipula_proteins_Dm_00019921-RA:0.867414,B_vulgaris_proteins_Bevul.1G133900.1.p:0.539805):0.181244,P_amilis_proteins_FUN_053050-T1:0.456995):0.176544,(B_vulgaris_proteins_Bevul.8G085200.1.p:0.864147,((D_muscipula_proteins_Dm_00011027-RA:0.114877,A_vesiculosa_proteins_Av_00013649-RA:1.17037):0.106166,D_muscipula_proteins_Dm_00007101-RA:0.628209):0.276219):0.176544);

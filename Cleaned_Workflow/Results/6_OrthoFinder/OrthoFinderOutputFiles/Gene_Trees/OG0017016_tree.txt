@@ -1,0 +1,1 @@
+(B_vulgaris_proteins_Bevul.5G132200.1.p:0.355178,(D_spatulata_proteins_Ds_00008659-RA:0.1755,(D_spatulata_proteins_Ds_00011660-RA:0.424694,(D_spatulata_proteins_Ds_00010452-RA:0.516225,(D_spatulata_proteins_Ds_00002766-RA:0.519575,D_spatulata_proteins_Ds_00011219-RA:0.682628):0.414672):0.394947):0.242359):0.355178);

@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe5G177300.2.p:7.5639e-08,(A_hypochondriacus_proteins_AH008943-RA:0.0611893,(V_vinifera_proteins_VIT_218s0001g02650.2:7.5639e-08,(A_thaliana_proteins_AT4G38920.2:7.5639e-08,A_thaliana_proteins_AT4G34720.2:0.0135094)n3:0.00150105)n2:0.0001325)n1:7.5639e-08)n0;

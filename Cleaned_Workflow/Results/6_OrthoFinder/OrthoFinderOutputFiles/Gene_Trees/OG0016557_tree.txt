@@ -1,0 +1,1 @@
+(A_coerulea_proteins_Aqcoe2G066800.1.p:0.136233,(V_vinifera_proteins_VIT_208s0056g00140.1:0.371711,((L_sativa_proteins_Lsat_1_v5_gn_5_153521.1:0.322268,L_sativa_proteins_Lsat_1_v5_gn_8_108200.1:0.358164):0.0613267,(A_thaliana_proteins_AT5G01015.2:0.516579,A_thaliana_proteins_AT5G01015.1:0.437948):0.0779713):0.0448295):0.136233);
