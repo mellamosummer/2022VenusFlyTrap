@@ -112,3 +112,45 @@ quit(save="no")
 # pdf(file="SleuthTimeSeriesTop20HeatMap.pdf")
 # print(tmp)
 # dev.off()
+
+funct_anno <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/BLAST/DmProteinsTairdbBLASTconcat.txt", 
+                         delim = "\t", col_names = F, col_types = cols())
+
+funct_anno <- funct_anno %>% select(X1:X3) %>% 
+  rename(target_id = X1, AT_gene_id = X2, annotation = X3)
+
+SleuthListPrey<- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/sleuth/PreyTimeSeries/SleuthPreyTimeSeriesResults_qval_0.05.csv")
+
+SleuthPreyAnnotated <- SleuthListPrey %>% 
+  left_join(funct_anno, by = "target_id") %>% select(target_id,AT_gene_id,annotation)
+
+SleuthPreyEsterases <- SleuthPreyAnnotated %>% 
+  filter(str_detect(annotation, fixed('esterase', ignore_case=TRUE)))
+
+SleuthPreyGlucosidases<-SleuthPreyAnnotated %>% 
+  filter(str_detect(annotation, fixed('glucosidase', ignore_case=TRUE)))
+
+SleuthPreyLipases<-SleuthPreyAnnotated %>% 
+  filter(str_detect(annotation, fixed('lipase', ignore_case=TRUE)))
+
+SleuthPreyNucleases<-SleuthPreyAnnotated %>% 
+  filter(str_detect(annotation, fixed('nuclease', ignore_case=TRUE)))
+
+SleuthPreyPeroxidases<-SleuthPreyAnnotated %>% 
+  filter(str_detect(annotation, fixed('peroxidase', ignore_case=TRUE)))
+
+SleuthPreyPhosphatases<-SleuthPreyAnnotated %>% 
+  filter(str_detect(annotation, fixed('phosphatase', ignore_case=TRUE)))
+
+SleuthPreyXylosidases<-SleuthPreyAnnotated %>% 
+  filter(str_detect(annotation, fixed('xylosidase', ignore_case=TRUE)))
+
+write.csv(x = SleuthPreyXylosidases, file = "SleuthPreyXylosidases.csv")
+write.csv(x = SleuthPreyPhosphatases, file = "SleuthPreyPhosphatases.csv")
+write.csv(x = SleuthPreyPeroxidases, file = "SleuthPreyPeroxidases.csv")
+write.csv(x = SleuthPreyNucleases, file = "SleuthPreyNucleases.csv")
+write.csv(x = SleuthPreyLipases, file = "SleuthPreyLipases.csv")
+write.csv(x = SleuthPreyGlucosidases, file = "SleuthPreyGlucosidases.csv")
+write.csv(x = SleuthPreyEsterases, file = "SleuthPreyEsterases.csv")
+
+
