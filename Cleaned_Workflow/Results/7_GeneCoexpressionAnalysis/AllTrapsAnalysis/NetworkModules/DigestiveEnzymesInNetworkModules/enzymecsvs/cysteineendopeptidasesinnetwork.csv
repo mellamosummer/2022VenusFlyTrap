@@ -1,0 +1,3 @@
+,gene_ID,module,ATgene_ID,TopBLASTHit_Symbol,TopBLASTHit_Name,TopBLASTHit_Position,,Orthogroup
+1,Dm_00001436-RA,9,AT5G50260.1,Symbols: CEP1,cysteine endopeptidase 1,chr5:20455605-20456862 FORWARD LENGTH=361,,NA
+2,Dm_00017312-RA,9,AT3G48340.1,Symbols: CEP2,cysteine endopeptidase 2,chr3:17897739-17899074 FORWARD LENGTH=361,,NA
