@@ -17,7 +17,7 @@ Analyses included for:
 
 # 4. maSigPro
 
-Time series DE analysis.
+Time series DE analysis in R.
 Analyses included for:
 - prey time series
 - no prey time series
@@ -46,7 +46,7 @@ Orthogroup analysis including the following species:
 
 # 7. Gene Co-expression analysis
 
-Gene co-expression analysis that identifies modules of coexpressed genes. 
+Gene co-expression analysis that identifies modules of coexpressed genes in R.
 Analysis included for:
 - all trap samples (prey & no prey)
 - prey time series alone
