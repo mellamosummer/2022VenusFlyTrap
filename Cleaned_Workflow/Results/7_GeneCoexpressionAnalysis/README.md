@@ -16,13 +16,13 @@ For each analysis the directories are organized as follows:
      -  folder containing the Orthofinder resolved gene trees for each class of enzymes
   -  Digestive Enzyme TPM Graphs
      -  line plots for digestive enzyme genes extracted from all modules)
-# Powerpoint Slides
-  - just some summary slides that I've made to help guide folks through what stood out to me!
  # Subnetworks
  - just playing around with the subnetwork feature of the anlaysis
  - direct neighbors of chitinase, lipase, metalloendopeptidase, & serine endopeptidase genes 
     - csv of gene IDs & annotations
     - visualization of subnetworks as well 
+ # Powerpoint Slides
+  - just some summary slides that I've made to help guide folks through what stood out to me!
  
 
   
