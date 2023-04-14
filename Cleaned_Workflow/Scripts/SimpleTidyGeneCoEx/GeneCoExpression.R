@@ -1624,7 +1624,7 @@ write.csv(x = my_network_moduless_annotated, file = "network_modules_annotated.c
 
 ###
 
-my_network_modules <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/GeneCoexpressionAnalysis/NetworkModules/network_modules_annotated.csv")
+my_network_modules <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/NetworkModules/network_modules_annotated.csv")
 
 
 genesinmodules <- network_modules %>% 
