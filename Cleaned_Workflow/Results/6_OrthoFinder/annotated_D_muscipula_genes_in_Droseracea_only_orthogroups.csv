@@ -1,55 +1,72 @@
-"","gene_ID","AT_gene_id","annotation"
-"1","Dm_00005784-RA","sp|Q8VYU7.1|","RecName: Full=Purple acid phosphatase 4; Flags: Precursor [Arabidopsis thaliana]"
-"2","Dm_00015703-RA","sp|Q9SG80.1|","RecName: Full=Alpha-L-arabinofuranosidase 1; Short=AtASD1; AltName: Full=Beta-D-xylosidase; Flags: Precursor [Arabidopsis thaliana]"
-"3","Dm_00002317-RA","sp|Q38857.1|","RecName: Full=Xyloglucan endotransglucosylase/hydrolase protein 22; Short=At-XTH22; Short=XTH-22; AltName: Full=Touch protein 4; Flags: Precursor [Arabidopsis thaliana]"
-"4","Dm_00002053-RA","sp|Q3EDL4.2|","RecName: Full=Probable serine/threonine-protein kinase At1g01540 [Arabidopsis thaliana]"
-"5","Dm_00001349-RA","sp|Q94AI1.1|","RecName: Full=QWRF motif-containing protein 2 [Arabidopsis thaliana]"
-"6","Dm_00001364-RA","sp|P17859.1|","RecName: Full=Alpha-amylase; AltName: Full=1,4-alpha-D-glucan glucanohydrolase; Flags: Precursor [Vigna mungo]"
-"7","Dm_00003523-RA","sp|U3UA11.1|","RecName: Full=UDP-glucose iridoid glucosyltransferase; AltName: Full=UDP-glucose glucosyltransferase 7; Short=CrUGT7; AltName: Full=UDP-glycosyltransferase 76A2 [Catharanthus roseus]"
-"8","Dm_00003525-RA","sp|U3UA11.1|","RecName: Full=UDP-glucose iridoid glucosyltransferase; AltName: Full=UDP-glucose glucosyltransferase 7; Short=CrUGT7; AltName: Full=UDP-glycosyltransferase 76A2 [Catharanthus roseus]"
-"9","Dm_00004155-RA","sp|Q8RWY7.2|","RecName: Full=Peptidyl-prolyl cis-trans isomerase CYP95; Short=AtCYP95; Short=PPIase CYP95; AltName: Full=Cyclophilin-like protein CypRS92 [Arabidopsis thaliana]"
-"10","Dm_00004076-RA","sp|Q9SUR3.1|","RecName: Full=Reticulon-like protein B1; Short=AtRTNLB1; AltName: Full=VirB2-interacting protein 1 [Arabidopsis thaliana]"
-"11","Dm_00003658-RA","sp|Q9SQI3.1|","RecName: Full=Palmitoyl-acyl carrier protein thioesterase, chloroplastic; AltName: Full=16:0-acyl-carrier protein thioesterase; Short=16:0-ACP thioesterase; AltName: Full=Acyl-[acyl-carrier-protein] hydrolase; AltName: Full=PATE; Flags: Precursor [Gossypium hirsutum]"
-"12","Dm_00013593-RA","sp|Q94B55.1|","RecName: Full=Putative E3 ubiquitin-protein ligase XBAT31; AltName: Full=Ankyrin repeat domain and RING finger-containing protein XBAT31; AltName: Full=Protein XB3 homolog 1; AltName: Full=RING-type E3 ubiquitin transferase XB31 [Arabidopsis thaliana]"
-"13","Dm_00013462-RA","sp|Q53MB8.1|","RecName: Full=Thaumatin-like protein; Flags: Precursor [Oryza sativa Japonica Group]"
-"14","Dm_00008519-RA","sp|F4IHJ0.1|","RecName: Full=Phosphatidylinositol/phosphatidylcholine transfer protein SFH8; AltName: Full=Protein SEC FOURTEEN HOMOLOGS 8; Short=AtSFH8 [Arabidopsis thaliana]"
-"15","Dm_00016238-RA","sp|P0CH30.1|","RecName: Full=E3 ubiquitin-protein ligase RING1; AltName: Full=RING finger protein 1; AltName: Full=RING-type E3 ubiquitin transferase RING1 [Gossypium hirsutum]"
-"16","Dm_00016439-RA","sp|Q93ZE2.1|","RecName: Full=Transcription factor TGA7; AltName: Full=bZIP transcription factor 50; Short=AtbZIP50 [Arabidopsis thaliana]"
-"17","Dm_00018432-RA","sp|Q4PSU4.1|","RecName: Full=Agamous-like MADS-box protein AGL61; AltName: Full=Protein DIANA [Arabidopsis thaliana]"
-"18","Dm_00009228-RA","sp|Q9M2R0.1|","RecName: Full=FT-interacting protein 3; AltName: Full=Multiple C2 domain and transmembrane region protein 3 [Arabidopsis thaliana]"
-"19","Dm_00009223-RA","sp|Q8GUK7.1|","RecName: Full=E3 ubiquitin-protein ligase RMA3; AltName: Full=Protein RING membrane-anchor 3; AltName: Full=RING-type E3 ubiquitin transferase RMA3 [Arabidopsis thaliana]"
-"20","Dm_00021016-RA","sp|O24325.1|","RecName: Full=Vacuolar-processing enzyme; Short=VPE; AltName: Full=Legumain-like proteinase; Short=LLP; Flags: Precursor [Phaseolus vulgaris]"
-"21","Dm_00018787-RA","sp|Q56YP2.1|","RecName: Full=Phosphatidylinositol 4-phosphate 5-kinase 1; Short=AtPIP5K1; AltName: Full=1-phosphatidylinositol 4-phosphate kinase 1; AltName: Full=Diphosphoinositide kinase 1; AltName: Full=PtdIns(4)P-5-kinase 1 [Arabidopsis thaliana]"
-"22","Dm_00014654-RA","sp|Q9FKK2.1|","RecName: Full=Agamous-like MADS-box protein AGL62 [Arabidopsis thaliana]"
-"23","Dm_00000498-RA","sp|F4IDQ5.1|","RecName: Full=Protein JASON [Arabidopsis thaliana]"
-"24","Dm_00000435-RA","sp|Q9CAI3.1|","RecName: Full=Probable cinnamyl alcohol dehydrogenase 1; Short=AtCAD1 [Arabidopsis thaliana]"
-"25","Dm_00000636-RA","sp|Q942D4.1|","RecName: Full=BURP domain-containing protein 3; Short=OsBURP03; Flags: Precursor [Oryza sativa Japonica Group]"
-"26","Dm_00000637-RA","sp|Q942D4.1|","RecName: Full=BURP domain-containing protein 3; Short=OsBURP03; Flags: Precursor [Oryza sativa Japonica Group]"
-"27","Dm_00018814-RA","sp|Q7XKV2.2|","RecName: Full=Beta-glucosidase 13; Short=Os4bglu13; Flags: Precursor [Oryza sativa Japonica Group]"
-"28","Dm_00004611-RA","sp|Q9FJF7.1|","RecName: Full=Auxin-responsive protein SAUR22; AltName: Full=Protein SMALL AUXIN UP RNA 22 [Arabidopsis thaliana]"
-"29","Dm_00013008-RA","sp|P32826.2|","RecName: Full=Serine carboxypeptidase-like 49; Flags: Precursor [Arabidopsis thaliana]"
-"30","Dm_00019248-RA","sp|O04147.1|","RecName: Full=Cyclic phosphodiesterase; Short=CPDase [Arabidopsis thaliana]"
-"31","Dm_00008337-RA","sp|P62598.2|","RecName: Full=Two-component response regulator ARR12 [Arabidopsis thaliana]"
-"32","Dm_00010284-RA","sp|Q8VZ79.1|","RecName: Full=Protein INVOLVED IN DE NOVO 2; AltName: Full=Protein RNA-DIRECTED DNA METHYLATION 12 [Arabidopsis thaliana]"
-"33","Dm_00009519-RA","sp|Q9SNB6.1|","RecName: Full=E3 ubiquitin-protein ligase RDUF1; AltName: Full=RING and DUF1117 domain-containing protein 1; Short=AtRDUF1; AltName: Full=RING-type E3 ubiquitin transferase RDUF1 [Arabidopsis thaliana]"
-"34","Dm_00011169-RA","sp|Q9FLJ2.1|","RecName: Full=NAC domain-containing protein 100; Short=ANAC100; Short=AtNAC5 [Arabidopsis thaliana]"
-"35","Dm_00003257-RA","sp|Q8VZ20.1|","RecName: Full=Trihelix transcription factor ASR3; AltName: Full=Protein ARABIDOPSIS SH4-RELATED3 [Arabidopsis thaliana]"
-"36","Dm_00013126-RA","sp|Q8LER3.2|","RecName: Full=Probable xyloglucan endotransglucosylase/hydrolase protein 7; Short=At-XTH7; Short=XTH-7; Flags: Precursor [Arabidopsis thaliana]"
-"37","Dm_00013125-RA","sp|Q9SV60.1|","RecName: Full=Xyloglucan endotransglucosylase/hydrolase protein 2; Short=At-XTH2; Short=XTH-2; Flags: Precursor [Arabidopsis thaliana]"
-"38","Dm_00002765-RA","sp|Q9FKZ3.1|","RecName: Full=LOB domain-containing protein 36; AltName: Full=ASYMMETRIC LEAVES 2-like protein 1; Short=AS2-like protein 1 [Arabidopsis thaliana]"
-"39","Dm_00006619-RA","sp|O22193.3|","RecName: Full=U-box domain-containing protein 4; AltName: Full=Plant U-box protein 4; AltName: Full=RING-type E3 ubiquitin transferase PUB4 [Arabidopsis thaliana]"
-"40","Dm_00017580-RA","sp|Q8H1E4.1|","RecName: Full=Ethylene-responsive transcription factor RAP2-4; AltName: Full=Ethylene-responsive transcription factor ERF059; AltName: Full=Protein RELATED TO APETALA2 4 [Arabidopsis thaliana]"
-"41","Dm_00006930-RA","sp|Q8VYU7.1|","RecName: Full=Purple acid phosphatase 4; Flags: Precursor [Arabidopsis thaliana]"
-"42","Dm_00010792-RA","sp|A2Z259.1|","RecName: Full=Zinc-finger homeodomain protein 1 [Oryza sativa Indica Group]"
-"43","Dm_00004653-RA","sp|Q39088.2|","RecName: Full=Dof zinc finger protein DOF3.4; Short=AtDOF3.4; AltName: Full=OBF-binding protein 1 [Arabidopsis thaliana]"
-"44","Dm_00019373-RA","sp|Q5Z4U5.1|","RecName: Full=GATA transcription factor 20; Short=OsGATA20; AltName: Full=Protein TIFY 2b; Short=OsTIFY2b [Oryza sativa Japonica Group]"
-"45","Dm_00019372-RA","sp|Q8H1G0.1|","RecName: Full=GATA transcription factor 28; AltName: Full=Protein TIFY 2A; AltName: Full=ZIM-like 2 protein [Arabidopsis thaliana]"
-"46","Dm_00019553-RA","sp|Q9ZSY8.1|","RecName: Full=Auxin-responsive protein IAA27; AltName: Full=Auxin-induced protein 27; AltName: Full=Indoleacetic acid-induced protein 27; AltName: Full=Phytochrome-associated protein 2 [Arabidopsis thaliana]"
-"47","Dm_00015209-RA","sp|O22264.1|","RecName: Full=Transcription factor MYB12; AltName: Full=Myb-related protein 12; Short=AtMYB12; AltName: Full=Protein PRODUCTION OF FLAVONOL GLYCOSIDES 1 [Arabidopsis thaliana]"
-"48","Dm_00008367-RA","sp|Q9SKZ2.2|","RecName: Full=Probable CCR4-associated factor 1 homolog 7 [Arabidopsis thaliana]"
-"49","Dm_00009563-RA","sp|Q08298.1|","RecName: Full=BURP domain protein RD22; AltName: Full=Dehydration-responsive protein RD22; Flags: Precursor [Arabidopsis thaliana]"
-"50","Dm_00017165-RA","sp|Q9C7N4.1|","RecName: Full=GDSL esterase/lipase At1g29670; AltName: Full=Extracellular lipase At1g29670; Flags: Precursor [Arabidopsis thaliana]"
-"51","Dm_00016462-RA","sp|P27141.1|","RecName: Full=Carbonic anhydrase, chloroplastic; AltName: Full=Carbonate dehydratase; Flags: Precursor [Nicotiana tabacum]"
-"52","Dm_00007007-RA","sp|Q9M2E8.1|","RecName: Full=Homeobox-leucine zipper protein HDG1; AltName: Full=HD-ZIP protein HDG1; AltName: Full=Homeodomain GLABRA 2-like protein 1; Short=AtHD-GL2-1; AltName: Full=Homeodomain transcription factor HDG1; AltName: Full=Protein HOMEODOMAIN GLABROUS 1 [Arabidopsis thaliana]"
-"53","Dm_00006815-RA","sp|Q9SV61.3|","RecName: Full=Putative xyloglucan endotransglucosylase/hydrolase protein 1; Short=At-XTH1; Short=XTH-1; Flags: Precursor [Arabidopsis thaliana]"
-"54","Dm_00008211-RA","sp|Q5Z9S8.1|","RecName: Full=ABC transporter G family member 42; Short=OsABCG42; AltName: Full=Pleiotropic drug resistance protein 12; Short=OsPDR12 [Oryza sativa Japonica Group]"
+Orthogroup,gene_ID,module,ATgene_ID,TopBLASTHit_Symbol,TopBLASTHit_Name,TopBLASTHit_Position
+OG0018248,Dm_00000636-RA,2,AT5G25610.1,"Symbols: RD22, ATRD22",RESPONSIVE TO DESICCATION 22,chr5:8914498-8916684 REVERSE LENGTH=392
+OG0019994,Dm_00019373-RA,2,AT1G51600.2,"Symbols: ZML2, TIFY2A, GATA28","GATA TRANSCRIPTION FACTOR 28, ZIM-LIKE 2",chr1:19133176-19135252 FORWARD LENGTH=302
+OG0022925,Dm_00008211-RA,2,AT3G16340.1,"Symbols: ABCG29, AtABCG29, ATPDR1, PDR1","PLEIOTROPIC DRUG RESISTANCE 1, pleiotropic drug resistance 1, ATP-binding cassette G29",chr3:5539897-5546263 FORWARD LENGTH=1416
+OG0016972,Dm_00006930-RA,3,AT1G25230.1,Symbols: no symbol available,no full name available,chr1:8840474-8842298 REVERSE LENGTH=339
+OG0018234,Dm_00002565-RA,3,NA,NA,NA,NA
+OG0018251,Dm_00021016-RA,3,AT4G32940.1,"Symbols: AEP3, GAMMAVPE, AtLEG gamma, GAMMA-VPE, LEG gamma","gamma vacuolar processing enzyme, asparaginyl endopeptidase 3, legumain gamma",chr4:15900557-15903161 REVERSE LENGTH=494
+OG0020002,Dm_00008337-RA,3,AT2G25180.1,"Symbols: ARR12, AtARR12, RR12",response regulator 12,chr2:10724490-10726961 REVERSE LENGTH=596
+OG0020034,Dm_00001358-RA,3,NA,NA,NA,NA
+OG0020051,Dm_00019553-RA,3,AT4G29080.1,"Symbols: PAP2, IAA27","phytochrome-associated protein 2, indole-3-acetic acid inducible 27",chr4:14323665-14325213 REVERSE LENGTH=305
+OG0022830,Dm_00013008-RA,3,AT3G10410.1,"Symbols: CPY, SCPL49","CARBOXYPEPTIDASE Y, SERINE CARBOXYPEPTIDASE-LIKE 49",chr3:3235518-3238063 REVERSE LENGTH=516
+OG0022871,Dm_00016439-RA,3,AT1G77920.1,Symbols: TGA7,TGACG sequence-specific binding protein 7,chr1:29298959-29300607 FORWARD LENGTH=368
+OG0022897,Dm_00000435-RA,3,AT1G72680.1,"Symbols: ATCAD1, CAD1","CINNAMYL ALCOHOL DEHYDROGENASE 1, cinnamyl-alcohol dehydrogenase",chr1:27359346-27360876 REVERSE LENGTH=355
+OG0022910,Dm_00018787-RA,3,AT4G17080.1,Symbols: no symbol available,no full name available,chr4:9601570-9603815 FORWARD LENGTH=513
+OG0022949,Dm_00019248-RA,3,AT4G18930.1,Symbols: no symbol available,no full name available,chr4:10370797-10371885 FORWARD LENGTH=181
+OG0016980,Dm_00001349-RA,4,AT1G49890.1,Symbols: QWRF2,QWRF domain containing 2,chr1:18470282-18473463 FORWARD LENGTH=659
+OG0020015,Dm_00010792-RA,4,AT1G14440.2,"Symbols: FTM2, HB31, AtHB31, ZHD4","homeobox protein 31, ZINC FINGER HOMEODOMAIN 4, FLORAL TRANSITION AT THE MERISTEM2",chr1:4939076-4940014 REVERSE LENGTH=312
+OG0022926,Dm_00006619-RA,4,AT2G23140.5,"Symbols: AtPUB4, PUB4",plant U-box 4,chr2:9845696-9847721 REVERSE LENGTH=637
+OG0020012,Dm_00011169-RA,6,AT5G61430.1,"Symbols: NAC100, ATNAC5, ANAC100",NAC domain containing protein 100,chr5:24701328-24702553 REVERSE LENGTH=336
+OG0020041,Dm_00018360-RA,6,AT5G22460.3,Symbols: no symbol available,no full name available,chr5:7443659-7445269 REVERSE LENGTH=340
+OG0022858,Dm_00009228-RA,6,AT3G57880.4,"Symbols: FTIP3, MCTP3","multiple C2 domain and transmembrane region protein 3, FT INTERACTING PROTEIN 3",chr3:21431198-21433519 REVERSE LENGTH=773
+OG0022934,Dm_00014566-RA,6,NA,NA,NA,NA
+OG0019994,Dm_00019372-RA,7,AT1G51600.2,"Symbols: ZML2, TIFY2A, GATA28","GATA TRANSCRIPTION FACTOR 28, ZIM-LIKE 2",chr1:19133176-19135252 FORWARD LENGTH=302
+OG0020060,Dm_00018814-RA,7,AT2G44480.2,Symbols: BGLU17,beta glucosidase 17,chr2:18360476-18363001 FORWARD LENGTH=415
+OG0022937,Dm_00016462-RA,7,AT3G01500.4,"Symbols: CA1, SABP3, DEG10, ATBCA1, ATSABP3","carbonic anhydrase 1, BETA CARBONIC ANHYDRASE 1, SALICYLIC ACID-BINDING PROTEIN 3, ARABIDOPSIS THALIANA SALICYLIC ACID-BINDING PROTEIN 3",chr3:195173-196716 REVERSE LENGTH=259
+OG0000874,Dm_00007755-RA,10,NA,NA,NA,NA
+OG0000874,Dm_00014852-RA,10,NA,NA,NA,NA
+OG0016999,Dm_00017165-RA,10,AT1G29670.1,"Symbols: GDSL1, GGL6",NA,chr1:10375843-10377717 FORWARD LENGTH=363
+OG0018234,Dm_00001203-RA,10,NA,NA,NA,NA
+OG0020036,Dm_00015209-RA,10,AT2G47460.1,"Symbols: PFG1, ATMYB12, MYB12","myb domain protein 12, PRODUCTION OF FLAVONOL GLYCOSIDES 1, MYB DOMAIN PROTEIN 12",chr2:19476438-19479242 FORWARD LENGTH=371
+OG0022831,Dm_00002729-RA,10,AT4G36660.1,Symbols: no symbol available,no full name available,chr4:17285953-17287281 REVERSE LENGTH=179
+OG0022918,Dm_00004611-RA,10,AT5G18050.1,Symbols: SAUR22,SMALL AUXIN UP RNA 22,chr5:5974691-5974963 REVERSE LENGTH=90
+OG0019998,Dm_00004395-RA,13,NA,NA,NA,NA
+OG0022915,Dm_00000076-RA,16,AT5G25360.3,Symbols: no symbol available,no full name available,chr5:8799934-8802161 REVERSE LENGTH=216
+OG0016039,Dm_00004653-RA,24,AT3G50410.1,"Symbols: OBP1, DOF3.4","DOF protein 3.4, OBF binding protein 1",chr3:18709872-18710633 FORWARD LENGTH=253
+OG0020031,Dm_00017580-RA,24,AT1G78080.1,"Symbols: AtWIND1, WIND1, RAP2.4","wound induced dedifferentiation 1, related to AP2 4",chr1:29364790-29365794 FORWARD LENGTH=334
+OG0020041,Dm_00020831-RA,168,AT5G22460.3,Symbols: no symbol available,no full name available,chr5:7443659-7445269 REVERSE LENGTH=340
+OG0000874,Dm_00007637-RA,NA,NA,NA,NA,NA
+OG0000874,Dm_00010847-RA,NA,NA,NA,NA,NA
+OG0000874,Dm_00017968-RA,NA,NA,NA,NA,NA
+OG0016047,Dm_00008367-RA,NA,NA,NA,NA,NA
+OG0016057,Dm_00003523-RA,NA,NA,NA,NA,NA
+OG0016057,Dm_00003525-RA,NA,NA,NA,NA,NA
+OG0016972,Dm_00005784-RA,NA,NA,NA,NA,NA
+OG0016982,Dm_00014654-RA,NA,NA,NA,NA,NA
+OG0016982,Dm_00018432-RA,NA,NA,NA,NA,NA
+OG0016997,Dm_00006815-RA,NA,NA,NA,NA,NA
+OG0016997,Dm_00013124-RA,NA,NA,NA,NA,NA
+OG0016997,Dm_00013125-RA,NA,NA,NA,NA,NA
+OG0016997,Dm_00013126-RA,NA,NA,NA,NA,NA
+OG0018237,Dm_00002765-RA,NA,NA,NA,NA,NA
+OG0018240,Dm_00007007-RA,NA,NA,NA,NA,NA
+OG0018248,Dm_00000637-RA,NA,NA,NA,NA,NA
+OG0018248,Dm_00009563-RA,NA,NA,NA,NA,NA
+OG0018250,Dm_00009519-RA,NA,NA,NA,NA,NA
+OG0018250,Dm_00016238-RA,NA,NA,NA,NA,NA
+OG0019992,Dm_00004155-RA,NA,NA,NA,NA,NA
+OG0020013,Dm_00004076-RA,NA,NA,NA,NA,NA
+OG0020030,Dm_00015703-RA,NA,NA,NA,NA,NA
+OG0020056,Dm_00000498-RA,NA,NA,NA,NA,NA
+OG0022828,Dm_00003257-RA,NA,NA,NA,NA,NA
+OG0022862,Dm_00013462-RA,NA,NA,NA,NA,NA
+OG0022873,Dm_00002053-RA,NA,NA,NA,NA,NA
+OG0022893,Dm_00009223-RA,NA,NA,NA,NA,NA
+OG0022898,Dm_00001364-RA,NA,NA,NA,NA,NA
+OG0022899,Dm_00002317-RA,NA,NA,NA,NA,NA
+OG0022901,Dm_00009320-RA,NA,NA,NA,NA,NA
+OG0022916,Dm_00010284-RA,NA,NA,NA,NA,NA
+OG0022919,Dm_00008519-RA,NA,NA,NA,NA,NA
+OG0022924,Dm_00003658-RA,NA,NA,NA,NA,NA
+OG0022931,Dm_00009810-RA,NA,NA,NA,NA,NA
+OG0022941,Dm_00013593-RA,NA,NA,NA,NA,NA
