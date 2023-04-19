@@ -1,1 +1,0 @@
-((D_muscipula_proteins_Dm_00003172-RA:0.530778,S_lycopersicum_proteins_Solyc08g083250.3.1:0.580289)n1:0.253667,(A_coerulea_proteins_Aqcoe3G138400.2.p:1.63851e-06,(A_coerulea_proteins_Aqcoe3G138400.3.p:0,A_coerulea_proteins_Aqcoe3G138400.1.p:0.020112)n3:0.00114258)n2:0.253667)n0;

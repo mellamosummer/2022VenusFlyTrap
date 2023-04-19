@@ -1,0 +1,127 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=25;
+	taxlabels
+	'A_coerulea_proteins_Aqcoe4G276300.1.p'
+	'A_coerulea_proteins_Aqcoe4G276300.2.p'
+	A_hypochondriacus_proteins_AH014898-RA
+	'A_thaliana_proteins_AT3G02870.1'
+	'A_thaliana_proteins_AT3G02870.2'
+	'A_thaliana_proteins_AT3G02870.3'
+	A_vesiculosa_proteins_Av_00003709-RA
+	'B_vulgaris_proteins_Bevul.8G040800.1.p'
+	D_muscipula_proteins_Dm_00010555-RA
+	D_spatulata_proteins_Ds_00010269-RA
+	'G_max_proteins_GmISU01.07G228400.1.p'
+	'G_max_proteins_GmISU01.07G228400.2.p'
+	'G_max_proteins_GmISU01.07G228400.3.p'
+	'G_max_proteins_GmISU01.09G010300.1.p'
+	'G_max_proteins_GmISU01.15G107100.1.p'
+	'L_sativa_proteins_Lsat_1_v5_gn_4_63300.1'
+	'L_sativa_proteins_Lsat_1_v5_gn_4_63300.2'
+	'L_sativa_proteins_Lsat_1_v5_gn_4_63300.3'
+	P_amilis_proteins_FUN_012193-T1
+	'S_lycopersicum_proteins_Solyc03g044890.1.1'
+	'S_lycopersicum_proteins_Solyc04g014800.3.1'
+	'S_lycopersicum_proteins_Solyc11g012410.2.1'
+	'V_vinifera_proteins_VIT_210s0405g00030.1'
+	'V_vinifera_proteins_VIT_210s0405g00030.2'
+	'V_vinifera_proteins_VIT_210s0405g00030.3'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (((('V_vinifera_proteins_VIT_210s0405g00030.2':0.041233,('V_vinifera_proteins_VIT_210s0405g00030.3':0.005203,'V_vinifera_proteins_VIT_210s0405g00030.1':0.029367)[&label="n4"]:0.019488)[&label="n3"]:0.064282,P_amilis_proteins_FUN_012193-T1:0.094985)[&label="n2"]:0.011664,((('B_vulgaris_proteins_Bevul.8G040800.1.p':0.046683,A_hypochondriacus_proteins_AH014898-RA:0.098113)[&label="n7"]:0.02298,((D_muscipula_proteins_Dm_00010555-RA[&!color=#00ff00]:0.092791,A_vesiculosa_proteins_Av_00003709-RA:0.258653)[&label="n9"]:0.020817,D_spatulata_proteins_Ds_00010269-RA:0.088201)[&label="n8"]:0.044792)[&label="n6"]:0.036508,((('G_max_proteins_GmISU01.15G107100.1.p':0.007785,'G_max_proteins_GmISU01.09G010300.1.p':0.014705)[&label="n12"]:0.032629,(('G_max_proteins_GmISU01.07G228400.1.p':2.0E-6,'G_max_proteins_GmISU01.07G228400.3.p':0.070741)[&label="n14"]:0.009268,'G_max_proteins_GmISU01.07G228400.2.p':0.070512)[&label="n13"]:0.060434)[&label="n11"]:0.057904,(((('L_sativa_proteins_Lsat_1_v5_gn_4_63300.1':0.001871,'L_sativa_proteins_Lsat_1_v5_gn_4_63300.3':0.028373)[&label="n18"]:0.006907,'L_sativa_proteins_Lsat_1_v5_gn_4_63300.2':0.058527)[&label="n17"]:0.083818,(('A_thaliana_proteins_AT3G02870.1':2.0E-6,'A_thaliana_proteins_AT3G02870.2':0.013226)[&label="n20"]:0.003137,'A_thaliana_proteins_AT3G02870.3':0.013037)[&label="n19"]:0.102248)[&label="n16"]:0.007071,('S_lycopersicum_proteins_Solyc04g014800.3.1':0.130698,('S_lycopersicum_proteins_Solyc11g012410.2.1':0.033074,'S_lycopersicum_proteins_Solyc03g044890.1.1':0.112734)[&label="n22"]:0.052307)[&label="n21"]:0.029754)[&label="n15"]:0.001711)[&label="n10"]:0.011555)[&label="n5"]:0.022165)[&label="n1"]:0.041676,('A_coerulea_proteins_Aqcoe4G276300.2.p':0.136758,'A_coerulea_proteins_Aqcoe4G276300.1.p':0.033801)[&label="n23"]:0.041676)[&label="n0"];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

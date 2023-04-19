@@ -1,0 +1,127 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=25;
+	taxlabels
+	'A_coerulea_proteins_Aqcoe3G370700.1.p'
+	A_hypochondriacus_proteins_AH017493-RA
+	A_hypochondriacus_proteins_AH017495-RA
+	'A_thaliana_proteins_AT1G74210.1'
+	'A_thaliana_proteins_AT5G08030.1'
+	'A_thaliana_proteins_AT5G08030.2'
+	A_vesiculosa_proteins_Av_00001799-RA
+	'B_vulgaris_proteins_Bevul.5G176600.1.p'
+	'B_vulgaris_proteins_Bevul.5G176800.1.p'
+	D_muscipula_proteins_Dm_00006794-RA
+	D_spatulata_proteins_Ds_00005318-RA
+	D_spatulata_proteins_Ds_00011388-RA
+	D_spatulata_proteins_Ds_00013075-RA
+	D_spatulata_proteins_Ds_00016270-RA
+	'G_max_proteins_GmISU01.05G018200.1.p'
+	'G_max_proteins_GmISU01.17G072700.1.p'
+	'G_max_proteins_GmISU01.17G072700.2.p'
+	'L_sativa_proteins_Lsat_1_v5_gn_2_74281.2'
+	'L_sativa_proteins_Lsat_1_v5_gn_5_22440.1'
+	'L_sativa_proteins_Lsat_1_v5_gn_5_22440.2'
+	'L_sativa_proteins_Lsat_1_v5_gn_5_22440.3'
+	P_amilis_proteins_FUN_011209-T1
+	P_amilis_proteins_FUN_045510-T1
+	'S_lycopersicum_proteins_Solyc06g069470.3.1'
+	'V_vinifera_proteins_VIT_217s0000g07450.1'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] ('A_coerulea_proteins_Aqcoe3G370700.1.p':0.067825,('V_vinifera_proteins_VIT_217s0000g07450.1':0.118273,(('S_lycopersicum_proteins_Solyc06g069470.3.1':0.135478,(((((A_hypochondriacus_proteins_AH017495-RA:0.269762,'B_vulgaris_proteins_Bevul.5G176800.1.p':0.078116)[&label="n8"]:0.038466,P_amilis_proteins_FUN_045510-T1:0.09939)[&label="n7"]:0.05573,(P_amilis_proteins_FUN_011209-T1:0.226484,('B_vulgaris_proteins_Bevul.5G176600.1.p':0.062781,A_hypochondriacus_proteins_AH017493-RA:0.092952)[&label="n10"]:0.031797)[&label="n9"]:0.007266)[&label="n6"]:0.017812,((('L_sativa_proteins_Lsat_1_v5_gn_5_22440.2':0.0,('L_sativa_proteins_Lsat_1_v5_gn_5_22440.3':0.0,'L_sativa_proteins_Lsat_1_v5_gn_5_22440.1':0.0)[&label="n14"]:0.0)[&label="n13"]:0.081818,'L_sativa_proteins_Lsat_1_v5_gn_2_74281.2':0.206479)[&label="n12"]:0.093864,(A_vesiculosa_proteins_Av_00001799-RA:0.090516,(D_muscipula_proteins_Dm_00006794-RA[&!color=#00ff00]:0.370396,(((D_spatulata_proteins_Ds_00005318-RA:0.051591,D_spatulata_proteins_Ds_00011388-RA:0.51389)[&label="n19"]:0.051182,D_spatulata_proteins_Ds_00016270-RA:0.728116)[&label="n18"]:0.03075,D_spatulata_proteins_Ds_00013075-RA:0.108179)[&label="n17"]:0.01202)[&label="n16"]:0.007408)[&label="n15"]:0.030941)[&label="n11"]:0.026787)[&label="n5"]:0.01011,('A_thaliana_proteins_AT1G74210.1':0.173863,('A_thaliana_proteins_AT5G08030.2':0.021165,'A_thaliana_proteins_AT5G08030.1':4.0E-6)[&label="n21"]:0.113773)[&label="n20"]:0.012642)[&label="n4"]:0.015051)[&label="n3"]:0.010017,(('G_max_proteins_GmISU01.17G072700.2.p':0.129169,'G_max_proteins_GmISU01.17G072700.1.p':0.012822)[&label="n23"]:0.02855,'G_max_proteins_GmISU01.05G018200.1.p':0.046275)[&label="n22"]:0.085769)[&label="n2"]:0.001956)[&label="n1"]:0.067825)[&label="n0"];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

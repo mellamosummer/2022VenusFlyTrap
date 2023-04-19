@@ -18,8 +18,8 @@ set.seed(666)
 ##################################
 
 #set input and output dirs
-datapath <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/quant"  # you need to modify this line to match the path made by your BASH script
-resultdir <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/"   # you need to modify this line to match the path made by your BASH script
+datapath <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/"  # you need to modify this line to match the path made by your BASH script
+resultdir <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis"   # you need to modify this line to match the path made by your BASH script
 setwd(resultdir)
 
 ##################################
@@ -89,9 +89,9 @@ dim(tpm)
 
 write.csv(x = tpm, file = "Blanco_tpm_all.csv")
 
-Exp_table <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/GeneCoexpressionAnalysis/Data/Blanco_tpm_all.csv", col_types = cols())
+Exp_table <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/Data/Blanco_tpm_all.csv", col_types = cols())
 
-Metadata <-  read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/GeneCoexpressionAnalysis/Data/Metadata.csv", col_types = cols())
+Metadata <-  read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/Data/Metadata.csv", col_types = cols())
 
 #check
 
@@ -136,8 +136,6 @@ PCA_coord <- my_pca$x[, 1:10] %>%
 PCA_coord <- PCA_coord %>% filter(Tissue == "Trap") 
 PCA_coord$Time <- as.numeric(PCA_coord$Time)
 PCA_coord
-
-PCA_by_tissue
 
 PCA_by_treatment<- PCA_coord %>% 
   ggplot(aes(x = PC1, y = PC2)) +
@@ -577,7 +575,7 @@ dim(edge_table_select)
 # Build graph object
 ##################################
 
-funct_anno <- read_delim("BLAST/DmProteinsTairdbBLASTconcat.txt", 
+funct_anno <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/5_BLAST/AllDmProteinsBLASTresults/DmProteinsSwissprotBLASTconcat.txt", 
                          delim = "\t", col_names = F, col_types = cols())
 
 funct_anno <- funct_anno %>% select(X1:X3) %>% 
@@ -781,7 +779,8 @@ my_network_modules %>%
 ##################################
 
 Exp_table_long_averaged_z_high_var_or_high_F_modules <- Exp_table_long_averaged_z_high_var_or_high_F %>% 
-  inner_join(my_network_modules, by = "gene_ID")
+  inner_join(my_network_modules, by = "gene_ID") %>% 
+  select(gene_ID, Time,Treatment,mean.logTPM,z.score,module)
 
 head(Exp_table_long_averaged_z_high_var_or_high_F_modules)
 
@@ -1234,8 +1233,8 @@ quantile(modules_mean_z$mean.z, c(0.05, 0.95))
 
 modules_mean_z <- modules_mean_z %>% 
   mutate(mean.z.clipped = case_when(
-    mean.z > 1.5 ~ 1.5,
-    mean.z < -1.5 ~ -1.5,
+    mean.z > 2 ~ 2,
+    mean.z < -2 ~ -2,
     T ~ mean.z
   ))
 
@@ -1251,8 +1250,8 @@ modules_mean_z_reordered %>%
   ggplot(aes(x = as.factor(Time), y = as.factor(module))) +
   facet_grid(. ~ Treatment, scales = "free", space = "free") +
   geom_tile(aes(fill = mean.z)) +
-  scale_fill_gradientn(colors = rev(brewer.pal(11, "RdBu")), limits = c(-1.5, 1.5),
-                       breaks = c(-1.5, 0, 1.5), labels = c("< -1.5", "0", "> 1.5")) +
+  scale_fill_gradientn(colors = rev(brewer.pal(11, "RdBu")), limits = c(-2, 2),
+                       breaks = c(-2, 0, 2), labels = c("< -2", "0", "> 2")) +
   labs(x = "Time point",
        y = "Module",
        fill = "z score") +
@@ -2184,4 +2183,49 @@ amylases + scale_x_continuous(limit = c(0,1440))
 ggsave("amylases_graph_truncated.png", height =25, width = 3, bg = "white", limitsize = FALSE)
 
 ggsave("amylases_graph.png", height =30, width = 5, bg = "white", limitsize = FALSE)
+
+
+##Orthogroup check
+
+orthogroup_count <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/6_OrthoFinder/OrthoFinderOutputFiles/Orthogroups/Orthogroups.GeneCount.tsv")
+
+Droseracea_only_orthogroups <- orthogroup_count %>% 
+filter(A_coerulea.proteins == 0, A_hypochondriacus.proteins == 0, A_thaliana.proteins == 0, B_vulgaris.proteins == 0, G_max.proteins == 0, L_sativa.proteins == 0, P_amilis.proteins == 0, S_lycopersicum.proteins == 0, V_vinifera.proteins == 0, !D_muscipula.proteins ==0, !D_spatulata.proteins == 0, !A_vesiculosa.proteins == 0) 
+
+write.csv(Droseracea_only_orthogroups, "droseraceae_only_orthogroups.csv")
+
+Droseracea_only_orthogroups <-Droseracea_only_orthogroups$Orthogroup
+
+Droseracea_only_orthogroups <-as.data.frame(Droseracea_only_orthogroups)
+Droseracea_only_orthogroups
+
+genesinorthogroups <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/6_OrthoFinder/OrthoFinderOutputFiles/Orthogroups/Orthogroups.tsv")
+
+Droseracea_only_orthogroups <- Droseracea_only_orthogroups %>% rename(orthogroup = `Droseracea_only_orthogroups`)
+
+Droseracea_genes_in_Droseracea_only_orthogroups <- filter(genesinorthogroups,
+                                                           Orthogroup %in% Droseracea_only_orthogroups$orthogroup)
+
+D_muscipula_genes_in_Droseracea_only_orthogroups <- filter(genesinorthogroups,
+       Orthogroup %in% Droseracea_only_orthogroups$orthogroup) %>% 
+        select(Orthogroup, D_muscipula.proteins, )
+
+write.csv(Droseracea_genes_in_Droseracea_only_orthogroups, "Droseracea_genes_in_Droseracea_only_orthogroups.csv")
+write.csv(D_muscipula_genes_in_Droseracea_only_orthogroups, "D_muscipula_genes_in_Droseracea_only_orthogroups.csv")
+
+
+D_muscipula_genes_in_Droseracea_only_orthogroups <- separate_rows(D_muscipula_genes_in_Droseracea_only_orthogroups, D_muscipula.proteins, sep = ", ")
+
+D_muscipula_genes_in_Droseracea_only_orthogroups <- D_muscipula_genes_in_Droseracea_only_orthogroups %>% rename(gene_ID = `D_muscipula.proteins`)
+
+
+annotated_orthgroupgenes<- filter(funct_anno,
+       gene_ID %in% D_muscipula_genes_in_Droseracea_only_orthogroups$D_muscipula.proteins)
+
+annotated_orthgroupgenes <- D_muscipula_genes_in_Droseracea_only_orthogroups %>% 
+  left_join(my_network_modules, by = "gene_ID") %>% 
+  select(Orthogroup, gene_ID,  module, ATgene_ID, TopBLASTHit_Symbol, TopBLASTHit_Name, TopBLASTHit_Position)
+
+write.csv(annotated_orthgroupgenes, "annotated_D_muscipula_genes_in_Droseracea_only_orthogroups.csv")
+
 

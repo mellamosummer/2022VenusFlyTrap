@@ -1,0 +1,161 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=59;
+	taxlabels
+	'A_coerulea_proteins_Aqcoe3G243300.1.p'
+	'A_coerulea_proteins_Aqcoe7G293700.1.p'
+	'A_coerulea_proteins_Aqcoe7G293700.2.p'
+	'A_coerulea_proteins_Aqcoe7G293700.3.p'
+	A_hypochondriacus_proteins_AH014417-RA
+	A_hypochondriacus_proteins_AH020939-RA
+	'A_thaliana_proteins_AT2G19170.1'
+	'A_thaliana_proteins_AT2G19170.2'
+	'A_thaliana_proteins_AT4G30020.1'
+	'A_thaliana_proteins_AT4G30020.2'
+	'A_thaliana_proteins_AT4G30020.3'
+	'A_thaliana_proteins_AT4G30020.4'
+	A_vesiculosa_proteins_Av_00001031-RA
+	A_vesiculosa_proteins_Av_00009839-RA
+	A_vesiculosa_proteins_Av_00011047-RA
+	A_vesiculosa_proteins_Av_00018223-RA
+	A_vesiculosa_proteins_Av_00019913-RA
+	A_vesiculosa_proteins_Av_00023597-RA
+	'B_vulgaris_proteins_Bevul.5G075800.1.p'
+	'B_vulgaris_proteins_Bevul.8G207300.1.p'
+	D_muscipula_proteins_Dm_00000726-RA
+	D_muscipula_proteins_Dm_00002259-RA
+	D_spatulata_proteins_Ds_00005126-RA
+	D_spatulata_proteins_Ds_00009826-RA
+	D_spatulata_proteins_Ds_00015778-RA
+	'G_max_proteins_GmISU01.09G054000.1.p'
+	'G_max_proteins_GmISU01.09G054000.2.p'
+	'G_max_proteins_GmISU01.09G054000.3.p'
+	'G_max_proteins_GmISU01.09G054000.4.p'
+	'G_max_proteins_GmISU01.13G072600.1.p'
+	'G_max_proteins_GmISU01.15G150000.1.p'
+	'G_max_proteins_GmISU01.15G150000.2.p'
+	'G_max_proteins_GmISU01.15G150000.3.p'
+	'G_max_proteins_GmISU01.17G054800.10.p'
+	'G_max_proteins_GmISU01.17G054800.12.p'
+	'G_max_proteins_GmISU01.17G054800.13.p'
+	'G_max_proteins_GmISU01.17G054800.14.p'
+	'G_max_proteins_GmISU01.17G054800.15.p'
+	'G_max_proteins_GmISU01.17G054800.16.p'
+	'G_max_proteins_GmISU01.17G054800.2.p'
+	'G_max_proteins_GmISU01.17G054800.3.p'
+	'G_max_proteins_GmISU01.17G054800.5.p'
+	'G_max_proteins_GmISU01.17G054800.6.p'
+	'G_max_proteins_GmISU01.17G054800.7.p'
+	'G_max_proteins_GmISU01.17G054800.8.p'
+	'G_max_proteins_GmISU01.17G054800.9.p'
+	'L_sativa_proteins_Lsat_1_v5_gn_5_82881.1'
+	'L_sativa_proteins_Lsat_1_v5_gn_8_69380.1'
+	'L_sativa_proteins_Lsat_1_v5_gn_8_69380.3'
+	P_amilis_proteins_FUN_026753-T1
+	P_amilis_proteins_FUN_041295-T1
+	'S_lycopersicum_proteins_Solyc07g008900.3.1'
+	'S_lycopersicum_proteins_Solyc08g077860.3.1'
+	'V_vinifera_proteins_VIT_200s0204g00120.1'
+	'V_vinifera_proteins_VIT_211s0103g00550.1'
+	'V_vinifera_proteins_VIT_211s0103g00550.2'
+	'V_vinifera_proteins_VIT_211s0103g00550.3'
+	'V_vinifera_proteins_VIT_211s0103g00550.4'
+	'V_vinifera_proteins_VIT_211s0103g00550.5'
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (((('A_thaliana_proteins_AT2G19170.2':0.0,'A_thaliana_proteins_AT2G19170.1':0.0)[&label="n3"]:0.053653,('A_thaliana_proteins_AT4G30020.1':0.0,('A_thaliana_proteins_AT4G30020.3':0.0,('A_thaliana_proteins_AT4G30020.2':0.0,'A_thaliana_proteins_AT4G30020.4':0.0)[&label="n6"]:0.0)[&label="n5"]:0.0)[&label="n4"]:0.056226)[&label="n2"]:0.057465,((((((('V_vinifera_proteins_VIT_211s0103g00550.3':0.001072,'V_vinifera_proteins_VIT_211s0103g00550.1':0.005839)[&label="n13"]:0.009552,'V_vinifera_proteins_VIT_211s0103g00550.4':5.0E-6)[&label="n12"]:8.0E-6,'V_vinifera_proteins_VIT_211s0103g00550.2':5.0E-6)[&label="n11"]:8.0E-6,'V_vinifera_proteins_VIT_211s0103g00550.5':5.0E-6)[&label="n10"]:0.062527,(('A_coerulea_proteins_Aqcoe7G293700.1.p':0.0,('A_coerulea_proteins_Aqcoe7G293700.3.p':0.0,'A_coerulea_proteins_Aqcoe7G293700.2.p':0.0)[&label="n16"]:0.0)[&label="n15"]:0.107554,'S_lycopersicum_proteins_Solyc07g008900.3.1':0.095072)[&label="n14"]:0.007411)[&label="n9"]:0.001983,((((((A_vesiculosa_proteins_Av_00018223-RA:0.015865,A_vesiculosa_proteins_Av_00001031-RA:0.032161)[&label="n22"]:0.004895,A_vesiculosa_proteins_Av_00023597-RA:0.379453)[&label="n21"]:0.028732,D_muscipula_proteins_Dm_00002259-RA[&!color=#00ff00]:0.038667)[&label="n20"]:0.004997,D_spatulata_proteins_Ds_00015778-RA[&!color=#00ff00]:0.108036)[&label="n19"]:0.012466,((D_muscipula_proteins_Dm_00000726-RA:0.06467,(A_vesiculosa_proteins_Av_00011047-RA:0.02537,A_vesiculosa_proteins_Av_00009839-RA:0.068908)[&label="n25"]:0.062158)[&label="n24"]:0.012894,D_spatulata_proteins_Ds_00009826-RA:0.06272)[&label="n23"]:0.005594)[&label="n18"]:0.041096,(P_amilis_proteins_FUN_026753-T1:0.051422,('B_vulgaris_proteins_Bevul.8G207300.1.p':0.04265,(A_hypochondriacus_proteins_AH020939-RA:0.056854,A_hypochondriacus_proteins_AH014417-RA:0.055784)[&label="n28"]:0.105327)[&label="n27"]:0.036314)[&label="n26"]:0.032751)[&label="n17"]:0.016477)[&label="n8"]:0.003972,((((D_spatulata_proteins_Ds_00005126-RA:0.104663,A_vesiculosa_proteins_Av_00019913-RA:0.15627)[&label="n32"]:0.077631,(('V_vinifera_proteins_VIT_200s0204g00120.1':0.516087,'S_lycopersicum_proteins_Solyc08g077860.3.1':0.185639)[&label="n34"]:0.023499,'A_coerulea_proteins_Aqcoe3G243300.1.p':0.17201)[&label="n33"]:0.026726)[&label="n31"]:0.014313,('B_vulgaris_proteins_Bevul.5G075800.1.p':0.144774,P_amilis_proteins_FUN_041295-T1:0.20539)[&label="n35"]:0.015177)[&label="n30"]:0.588019,(('L_sativa_proteins_Lsat_1_v5_gn_8_69380.3':0.011564,'L_sativa_proteins_Lsat_1_v5_gn_8_69380.1':2.38E-4)[&label="n37"]:0.079462,'L_sativa_proteins_Lsat_1_v5_gn_5_82881.1':0.090548)[&label="n36"]:0.034598)[&label="n29"]:0.012977)[&label="n7"]:0.001442)[&label="n1"]:0.00141,(((('G_max_proteins_GmISU01.17G054800.16.p':1.0E-6,('G_max_proteins_GmISU01.17G054800.5.p':1.0E-6,('G_max_proteins_GmISU01.17G054800.10.p':1.0E-6,('G_max_proteins_GmISU01.17G054800.6.p':1.0E-6,('G_max_proteins_GmISU01.17G054800.8.p':1.0E-6,('G_max_proteins_GmISU01.17G054800.7.p':1.0E-6,('G_max_proteins_GmISU01.17G054800.15.p':1.0E-6,('G_max_proteins_GmISU01.17G054800.14.p':1.0E-6,('G_max_proteins_GmISU01.17G054800.12.p':1.0E-6,('G_max_proteins_GmISU01.17G054800.3.p':1.0E-6,('G_max_proteins_GmISU01.17G054800.2.p':1.0E-6,'G_max_proteins_GmISU01.17G054800.13.p':1.0E-6)[&label="n51"]:0.0)[&label="n50"]:0.0)[&label="n49"]:0.0)[&label="n48"]:0.0)[&label="n47"]:0.0)[&label="n46"]:0.0)[&label="n45"]:0.0)[&label="n44"]:0.0)[&label="n43"]:0.0)[&label="n42"]:0.0)[&label="n41"]:0.0,'G_max_proteins_GmISU01.17G054800.9.p':1.0E-6)[&label="n40"]:0.025586,'G_max_proteins_GmISU01.13G072600.1.p':0.017157)[&label="n39"]:0.038687,((('G_max_proteins_GmISU01.15G150000.1.p':0.0,'G_max_proteins_GmISU01.15G150000.2.p':0.0)[&label="n54"]:0.008963,'G_max_proteins_GmISU01.15G150000.3.p':0.016877)[&label="n53"]:0.008109,('G_max_proteins_GmISU01.09G054000.4.p':0.0,('G_max_proteins_GmISU01.09G054000.1.p':0.0,('G_max_proteins_GmISU01.09G054000.3.p':0.0,'G_max_proteins_GmISU01.09G054000.2.p':0.0)[&label="n57"]:0.0)[&label="n56"]:0.0)[&label="n55"]:0.016554)[&label="n52"]:0.046532)[&label="n38"]:0.034196)[&label="n0"];
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="sansserif";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="sansserif";
+	set nodeLabels.fontSize=8;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="sansserif";
+	set tipLabels.fontSize=8;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+
