@@ -13,10 +13,6 @@ library("tximport")
 
 set.seed(666)
 
-##################################
-#  SET DIRECTORIES
-##################################
-
 #set input and output dirs
 datapath <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/"  # you need to modify this line to match the path made by your BASH script
 resultdir <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis"   # you need to modify this line to match the path made by your BASH script
@@ -713,6 +709,10 @@ my_network_modules <- my_network_modules %>%
 my_network_modules <- my_network_modules %>% 
   left_join(funct_anno, by = "gene_ID")
 
+##################################
+#  CHECK FOR ENZYMES
+##################################
+
 #serine endopeptidases
 my_network_modules %>% 
   filter(gene_ID == "Dm_00000773-RA" |
@@ -838,7 +838,6 @@ module_line_plots <- Exp_table_long_averaged_z_high_var_or_high_F_modules %>%
     #axis.text.x = element_blank(),
     panel.spacing = unit(1, "line")
   )
-
 
 module_line_plots
 
@@ -1265,7 +1264,7 @@ modules_mean_z_reordered %>%
 ggsave("module_heatmap.png", height = 10, width = 8, bg = "white")
 
 ##################################
-# Gene co-expression graphs
+#  ENZYME SUB NETWORKS
 ##################################
 
 #chitinases
@@ -1618,10 +1617,12 @@ my_network_moduless_annotated %>%
   arrange(-n) %>% 
   filter(n >= 5)
 
-
 write.csv(x = my_network_moduless_annotated, file = "network_modules_annotated.csv")
 
-###
+
+##################################
+#  ENZYMES IN MODULES 
+##################################
 
 my_network_modules <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/NetworkModules/network_modules_annotated.csv")
 
@@ -1779,6 +1780,9 @@ write.csv(x = chitinasesinnetwork, file = "chitinasesinnetwork.csv")
 write.csv(x = proteasesinnetwork, file = "proteasesinnetwork.csv")
 write.csv(x = phosphatasesinnetwork, file = "phosphatasesinnetwork.csv")
 
+##################################
+#  PLOT ENZYMES IN MODULES TPM
+##################################
 
 Exp_table_long %>% 
   filter(gene_ID %in% chitinasesinnetwork$gene_ID) %>% 
@@ -2185,47 +2189,64 @@ ggsave("amylases_graph_truncated.png", height =25, width = 3, bg = "white", limi
 ggsave("amylases_graph.png", height =30, width = 5, bg = "white", limitsize = FALSE)
 
 
-##Orthogroup check
+########################################
+# CHECK ORTHOGROUPS FOR GENES IN MODULES
+########################################
 
+# get # of genes in each orthogroup
 orthogroup_count <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/6_OrthoFinder/OrthoFinderOutputFiles/Orthogroups/Orthogroups.GeneCount.tsv")
 
+# find orthogroups specific to Droseraceae
 Droseracea_only_orthogroups <- orthogroup_count %>% 
 filter(A_coerulea.proteins == 0, A_hypochondriacus.proteins == 0, A_thaliana.proteins == 0, B_vulgaris.proteins == 0, G_max.proteins == 0, L_sativa.proteins == 0, P_amilis.proteins == 0, S_lycopersicum.proteins == 0, V_vinifera.proteins == 0, !D_muscipula.proteins ==0, !D_spatulata.proteins == 0, !A_vesiculosa.proteins == 0) 
 
 write.csv(Droseracea_only_orthogroups, "droseraceae_only_orthogroups.csv")
 
-Droseracea_only_orthogroups <-Droseracea_only_orthogroups$Orthogroup
 
+Droseracea_only_orthogroups <-Droseracea_only_orthogroups$Orthogroup
 Droseracea_only_orthogroups <-as.data.frame(Droseracea_only_orthogroups)
-Droseracea_only_orthogroups
+
 
 genesinorthogroups <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/6_OrthoFinder/OrthoFinderOutputFiles/Orthogroups/Orthogroups.tsv")
 
-Droseracea_only_orthogroups <- Droseracea_only_orthogroups %>% rename(orthogroup = `Droseracea_only_orthogroups`)
-
-Droseracea_genes_in_Droseracea_only_orthogroups <- filter(genesinorthogroups,
-                                                           Orthogroup %in% Droseracea_only_orthogroups$orthogroup)
+Droseracea_only_orthogroups <- Droseracea_only_orthogroups %>% 
+  rename(orthogroup = `Droseracea_only_orthogroups`) %>% 
+  filter(genesinorthogroups, 
+         Orthogroup %in% Droseracea_only_orthogroups$orthogroup)
 
 D_muscipula_genes_in_Droseracea_only_orthogroups <- filter(genesinorthogroups,
-       Orthogroup %in% Droseracea_only_orthogroups$orthogroup) %>% 
-        select(Orthogroup, D_muscipula.proteins, )
-
-write.csv(Droseracea_genes_in_Droseracea_only_orthogroups, "Droseracea_genes_in_Droseracea_only_orthogroups.csv")
-write.csv(D_muscipula_genes_in_Droseracea_only_orthogroups, "D_muscipula_genes_in_Droseracea_only_orthogroups.csv")
-
-
-D_muscipula_genes_in_Droseracea_only_orthogroups <- separate_rows(D_muscipula_genes_in_Droseracea_only_orthogroups, D_muscipula.proteins, sep = ", ")
-
-D_muscipula_genes_in_Droseracea_only_orthogroups <- D_muscipula_genes_in_Droseracea_only_orthogroups %>% rename(gene_ID = `D_muscipula.proteins`)
-
+  Orthogroup %in% Droseracea_only_orthogroups$orthogroup) %>% 
+  select(Orthogroup, D_muscipula.proteins, ) %>% 
+  separate_rows(D_muscipula_genes_in_Droseracea_only_orthogroups, D_muscipula.proteins, sep = ", ") %>% 
+  rename(gene_ID = `D_muscipula.proteins`)
 
 annotated_orthgroupgenes<- filter(funct_anno,
-       gene_ID %in% D_muscipula_genes_in_Droseracea_only_orthogroups$D_muscipula.proteins)
+                                  gene_ID %in% D_muscipula_genes_in_Droseracea_only_orthogroups$D_muscipula.proteins) #annotate VFT orthogroup genes
 
 annotated_orthgroupgenes <- D_muscipula_genes_in_Droseracea_only_orthogroups %>% 
   left_join(my_network_modules, by = "gene_ID") %>% 
   select(Orthogroup, gene_ID,  module, ATgene_ID, TopBLASTHit_Symbol, TopBLASTHit_Name, TopBLASTHit_Position)
 
+write.csv(Droseracea_genes_in_Droseracea_only_orthogroups, "Droseracea_genes_in_Droseracea_only_orthogroups.csv")
+write.csv(D_muscipula_genes_in_Droseracea_only_orthogroups, "D_muscipula_genes_in_Droseracea_only_orthogroups.csv")
 write.csv(annotated_orthgroupgenes, "annotated_D_muscipula_genes_in_Droseracea_only_orthogroups.csv")
+
+
+# find orthogroups where there are more Venus Fly Trap genes compared to Arabidopsis genes
+many_Dm_to_AT_orthogroups<- orthogroup_count %>% 
+  filter(D_muscipula.proteins > A_thaliana.proteins)
+
+many_Dm_only_orthogroups <- filter(genesinorthogroups,Orthogroup %in% many_Dm_only_orthogroups$Orthogroup) %>% 
+  select(Orthogroup, D_muscipula.proteins) %>% 
+  separate_rows(many_Dm_only_orthogroups, D_muscipula.proteins, sep = ", ") %>% 
+  rename(gene_ID = `D_muscipula.proteins
+
+many_Dm_only_orthogroups_annotated <- many_Dm_only_orthogroups %>% 
+  left_join(my_network_modules, by = "gene_ID") %>% 
+  select(Orthogroup, gene_ID,  module, ATgene_ID, TopBLASTHit_Symbol, TopBLASTHit_Name, TopBLASTHit_Position)
+
+write.csv(many_Dm_to_AT_orthogroups, "many_Dm_to_AT_orthogroups.csv")
+write.csv(many_Dm_only_orthogroups_annotated, "many_Dm_to_AT_orthogroups_annotated.csv")
+
 
 
