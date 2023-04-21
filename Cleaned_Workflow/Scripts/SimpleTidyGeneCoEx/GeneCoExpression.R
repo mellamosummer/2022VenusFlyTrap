@@ -2239,7 +2239,7 @@ many_Dm_to_AT_orthogroups<- orthogroup_count %>%
 many_Dm_only_orthogroups <- filter(genesinorthogroups,Orthogroup %in% many_Dm_only_orthogroups$Orthogroup) %>% 
   select(Orthogroup, D_muscipula.proteins) %>% 
   separate_rows(many_Dm_only_orthogroups, D_muscipula.proteins, sep = ", ") %>% 
-  rename(gene_ID = `D_muscipula.proteins
+  rename(gene_ID = `D_muscipula.proteins`)
 
 many_Dm_only_orthogroups_annotated <- many_Dm_only_orthogroups %>% 
   left_join(my_network_modules, by = "gene_ID") %>% 
@@ -2248,5 +2248,30 @@ many_Dm_only_orthogroups_annotated <- many_Dm_only_orthogroups %>%
 write.csv(many_Dm_to_AT_orthogroups, "many_Dm_to_AT_orthogroups.csv")
 write.csv(many_Dm_only_orthogroups_annotated, "many_Dm_to_AT_orthogroups_annotated.csv")
 
+########################################
+# CHECK ORTHOGROUPS FOR SLEUTH RESULTS
+########################################
+
+expanded_genesinorthogroups <- separate_rows(genesinorthogroups, D_muscipula.proteins, sep = ", ") %>% 
+  rename(gene_ID = `D_muscipula.proteins`)
+
+Sleuth_1hr <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_1hr/DEGcsvs/SleuthList1HrAnnotated.csv")
+
+Sleuth_1hr_modules_orthogroups<- Sleuth_1hr %>% 
+  rename(gene_ID = `target_id`) %>% 
+  left_join(my_network_modules, by = "gene_ID") %>% 
+  left_join(expanded_genesinorthogroups, by= "gene_ID") %>% 
+  select(gene_ID, ATgene_ID, Symbol, Description, Position, DE_Direction, module, Orthogroup) 
 
 
+write.csv(Sleuth_1hr_modules_orthogroups, "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_1hr/DEGcsvs/SleuthList1HrAnnotated_modulesandorthogroups.csv")
+
+Sleuth_24hr <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_24hr/DEGcsvs/SleuthList24HrAnnotated.csv")
+
+Sleuth_24hr_modules_orthogroups<- Sleuth_24hr %>% 
+  rename(gene_ID = `target_id`) %>% 
+  left_join(my_network_modules, by = "gene_ID") %>% 
+  left_join(expanded_genesinorthogroups, by= "gene_ID") %>% 
+  select(gene_ID, ATgene_ID, Symbol, Description, Position, DE_Direction, module, Orthogroup) 
+
+write.csv(Sleuth_24hr_modules_orthogroups, "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_24hr/DEGcsvs/SleuthList24HrAnnotated_modulesandorthogroups.csv")
