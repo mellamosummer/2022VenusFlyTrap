@@ -1,0 +1,7 @@
+1	Glutamine glutamate conversion (P02745)	1	0.6%	0.6%
+2	FGF signaling pathway (P00021)	1	0.6%	0.6%
+3	EGF receptor signaling pathway (P00018)	1	0.6%	0.6%
+4	Asparagine and aspartate biosynthesis (P02730)	1	0.6%	0.6%
+5	Parkinson disease (P00049)	1	0.6%	0.6%
+6	No PANTHER category is assigned (UNCLASSIFIED)	153	97.5%	96.2%
+7	p53 pathway (P00059)	1	0.6%	0.6%

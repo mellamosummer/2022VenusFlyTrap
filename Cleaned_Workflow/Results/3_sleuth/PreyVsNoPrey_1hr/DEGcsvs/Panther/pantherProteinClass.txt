@@ -1,0 +1,12 @@
+1	protein modifying enzyme (PC00260)	9	5.7%	5.7%
+2	transporter (PC00227)	10	6.4%	6.4%
+3	scaffold/adaptor protein (PC00226)	2	1.3%	1.3%
+4	membrane traffic protein (PC00150)	2	1.3%	1.3%
+5	No PANTHER category is assigned (UNCLASSIFIED)	79	50.3%	50.3%
+6	protein-binding activity modulator (PC00095)	2	1.3%	1.3%
+7	transmembrane signal receptor (PC00197)	3	1.9%	1.9%
+8	defense/immunity protein (PC00090)	2	1.3%	1.3%
+9	RNA metabolism protein (PC00031)	9	5.7%	5.7%
+10	gene-specific transcriptional regulator (PC00264)	5	3.2%	3.2%
+11	metabolite interconversion enzyme (PC00262)	32	20.4%	20.4%
+12	chromatin/chromatin-binding, or -regulatory protein (PC00077)	2	1.3%	1.3%
