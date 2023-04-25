@@ -1,2 +1,2 @@
-Panther headers:
-# genes; Percent of gene hit against total # genes; Percent of gene hit against total # hits
+# Panther headers:
+'# of genes; Percent of gene hit against total # genes; Percent of gene hit against total # hits'
