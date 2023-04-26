@@ -1,0 +1,16 @@
+1	cellular process (GO:0009987)	759	33.0%	23.0%
+2	biological phase (GO:0044848)	1	0.0%	0.0%
+3	reproductive process (GO:0022414)	5	0.2%	0.2%
+4	No PANTHER category is assigned (UNCLASSIFIED)	1464	63.6%	44.5%
+5	localization (GO:0051179)	140	6.1%	4.3%
+6	biological process involved in interspecies interaction between organisms (GO:0044419)	5	0.2%	0.2%
+7	reproduction (GO:0000003)	5	0.2%	0.2%
+8	biological regulation (GO:0065007)	176	7.6%	5.3%
+9	response to stimulus (GO:0050896)	98	4.3%	3.0%
+10	signaling (GO:0023052)	33	1.4%	1.0%
+11	developmental process (GO:0032502)	18	0.8%	0.5%
+12	rhythmic process (GO:0048511)	1	0.0%	0.0%
+13	multicellular organismal process (GO:0032501)	10	0.4%	0.3%
+14	metabolic process (GO:0008152)	575	25.0%	17.5%
+15	growth (GO:0040007)	2	0.1%	0.1%
+16	immune system process (GO:0002376)	1	0.0%	0.0%

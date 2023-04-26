@@ -1,0 +1,7 @@
+1	response to stimulus (GO:0050896)	1	1.6%	1.2%
+2	signaling (GO:0023052)	1	1.6%	1.2%
+3	cellular process (GO:0009987)	14	22.6%	17.3%
+4	metabolic process (GO:0008152)	10	16.1%	12.3%
+5	biological regulation (GO:0065007)	6	9.7%	7.4%
+6	No PANTHER category is assigned (UNCLASSIFIED)	45	72.6%	55.6%
+7	localization (GO:0051179)	4	6.5%	4.9%

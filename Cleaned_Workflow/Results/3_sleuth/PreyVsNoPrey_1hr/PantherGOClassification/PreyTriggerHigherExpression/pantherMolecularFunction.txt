@@ -1,0 +1,5 @@
+1	binding (GO:0005488)	8	12.9%	11.8%
+2	molecular function regulator (GO:0098772)	1	1.6%	1.5%
+3	catalytic activity (GO:0003824)	13	21.0%	19.1%
+4	No PANTHER category is assigned (UNCLASSIFIED)	43	69.4%	63.2%
+5	transporter activity (GO:0005215)	3	4.8%	4.4%

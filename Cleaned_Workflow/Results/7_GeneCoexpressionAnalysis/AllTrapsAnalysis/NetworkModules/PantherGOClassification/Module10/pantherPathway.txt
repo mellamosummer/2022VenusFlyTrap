@@ -1,0 +1,50 @@
+1	De novo pyrimidine deoxyribonucleotide biosynthesis (P02739)	2	0.2%	0.2%
+2	Apoptosis signaling pathway (P00006)	1	0.1%	0.1%
+3	De novo purine biosynthesis (P02738)	4	0.4%	0.4%
+4	Angiogenesis (P00005)	1	0.1%	0.1%
+5	Alzheimer disease-presenilin pathway (P00004)	3	0.3%	0.3%
+6	Coenzyme A biosynthesis (P02736)	1	0.1%	0.1%
+7	Proline biosynthesis (P02768)	1	0.1%	0.1%
+8	Integrin signalling pathway (P00034)	3	0.3%	0.3%
+9	Phenylalanine biosynthesis (P02765)	1	0.1%	0.1%
+10	Inflammation mediated by chemokine and cytokine signaling pathway (P00031)	4	0.4%	0.4%
+11	Ubiquitin proteasome pathway (P00060)	10	1.1%	1.0%
+12	No PANTHER category is assigned (UNCLASSIFIED)	828	92.0%	86.3%
+13	Huntington disease (P00029)	10	1.1%	1.0%
+14	Heterotrimeric G-protein signaling pathway-rod outer segment phototransduction (P00028)	2	0.2%	0.2%
+15	p53 pathway (P00059)	2	0.2%	0.2%
+16	p53 pathway feedback loops 2 (P04398)	1	0.1%	0.1%
+17	Heterotrimeric G-protein signaling pathway-Gi alpha and Gs alpha mediated pathway (P00026)	2	0.2%	0.2%
+18	Wnt signaling pathway (P00057)	2	0.2%	0.2%
+19	Vitamin D metabolism and pathway (P04396)	1	0.1%	0.1%
+20	Vasopressin synthesis (P04395)	1	0.1%	0.1%
+21	Xanthine and guanine salvage pathway (P02788)	1	0.1%	0.1%
+22	Transcription regulation by bZIP transcription factor (P00055)	4	0.4%	0.4%
+23	General transcription regulation (P00023)	3	0.3%	0.3%
+24	Toll receptor signaling pathway (P00054)	3	0.3%	0.3%
+25	General transcription by RNA polymerase I (P00022)	2	0.2%	0.2%
+26	Adenine and hypoxanthine salvage pathway (P02723)	1	0.1%	0.1%
+27	T cell activation (P00053)	2	0.2%	0.2%
+28	FGF signaling pathway (P00021)	8	0.9%	0.8%
+29	TGF-beta signaling pathway (P00052)	1	0.1%	0.1%
+30	FAS signaling pathway (P00020)	1	0.1%	0.1%
+31	Methionine biosynthesis (P02753)	1	0.1%	0.1%
+32	Mannose metabolism (P02752)	2	0.2%	0.2%
+33	Lipoate_biosynthesis (P02750)	2	0.2%	0.2%
+34	Thiamin metabolism (P02780)	1	0.1%	0.1%
+35	EGF receptor signaling pathway (P00018)	8	0.9%	0.8%
+36	DNA replication (P00017)	1	0.1%	0.1%
+37	Parkinson disease (P00049)	9	1.0%	0.9%
+38	Cytoskeletal regulation by Rho GTPase (P00016)	7	0.8%	0.7%
+39	Cholesterol biosynthesis (P00014)	2	0.2%	0.2%
+40	Sulfate assimilation (P02778)	1	0.1%	0.1%
+41	Cell cycle (P00013)	1	0.1%	0.1%
+42	Glutamine glutamate conversion (P02745)	1	0.1%	0.1%
+43	Cadherin signaling pathway (P00012)	3	0.3%	0.3%
+44	Nicotinic acetylcholine receptor signaling pathway (P00044)	5	0.6%	0.5%
+45	Serine glycine biosynthesis (P02776)	1	0.1%	0.1%
+46	Muscarinic acetylcholine receptor 2 and 4 signaling pathway (P00043)	2	0.2%	0.2%
+47	Salvage pyrimidine ribonucleotides (P02775)	1	0.1%	0.1%
+48	B cell activation (P00010)	2	0.2%	0.2%
+49	Tetrahydrofolate biosynthesis (P02742)	2	0.2%	0.2%
+50	De novo pyrimidine ribonucleotides biosythesis (P02740)	1	0.1%	0.1%

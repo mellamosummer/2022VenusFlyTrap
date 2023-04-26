@@ -1,0 +1,22 @@
+1	extracellular matrix protein (PC00102)	1	0.1%	0.1%
+2	cytoskeletal protein (PC00085)	10	0.9%	0.9%
+3	transporter (PC00227)	50	4.4%	4.4%
+4	scaffold/adaptor protein (PC00226)	8	0.7%	0.7%
+5	DNA metabolism protein (PC00009)	9	0.8%	0.8%
+6	cell adhesion molecule (PC00069)	3	0.3%	0.3%
+7	protein-binding activity modulator (PC00095)	20	1.8%	1.8%
+8	viral or transposable element protein (PC00237)	2	0.2%	0.2%
+9	RNA metabolism protein (PC00031)	31	2.7%	2.7%
+10	calcium-binding protein (PC00060)	11	1.0%	1.0%
+11	gene-specific transcriptional regulator (PC00264)	80	7.0%	7.0%
+12	defense/immunity protein (PC00090)	6	0.5%	0.5%
+13	translational protein (PC00263)	15	1.3%	1.3%
+14	metabolite interconversion enzyme (PC00262)	216	18.9%	18.9%
+15	protein modifying enzyme (PC00260)	88	7.7%	7.7%
+16	chromatin/chromatin-binding, or -regulatory protein (PC00077)	12	1.1%	1.1%
+17	transfer/carrier protein (PC00219)	4	0.4%	0.4%
+18	membrane traffic protein (PC00150)	20	1.8%	1.8%
+19	chaperone (PC00072)	11	1.0%	1.0%
+20	structural protein (PC00211)	1	0.1%	0.1%
+21	transmembrane signal receptor (PC00197)	32	2.8%	2.8%
+22	No PANTHER category is assigned (UNCLASSIFIED)	510	44.7%	44.7%
