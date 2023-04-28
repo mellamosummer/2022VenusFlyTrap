@@ -2275,3 +2275,47 @@ Sleuth_24hr_modules_orthogroups<- Sleuth_24hr %>%
   select(gene_ID, ATgene_ID, Symbol, Description, Position, DE_Direction, module, Orthogroup) 
 
 write.csv(Sleuth_24hr_modules_orthogroups, "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_24hr/DEGcsvs/SleuthList24HrAnnotated_modulesandorthogroups.csv")
+
+######################################################
+# CHECK GENOME PAPAER ORTHOGROUPS FOR SLEUTH RESULTS
+######################################################
+
+setwd("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results")
+library("readxl")
+
+GenomeOrthogroups <- read_excel("mmc2.xlsx",sheet="J")
+ExpandedOrthogroups <- read_excel("mmc2.xlsx",sheet="C")
+
+GenomeOrthogroups$OGNumber<- substr(GenomeOrthogroups$X1,3,9)
+ExpandedOrthogroups$OGNumber<-substr(ExpandedOrthogroups$go,4,10)
+
+ExpandedOrthogroupsGenes<- ExpandedOrthogroups %>% 
+left_join(GenomeOrthogroups, by= "OGNumber") %>% 
+  select(OGNumber,Dionaea,go_desc) %>% 
+  separate_rows(Dionaea, sep = ", ") %>% 
+  na.omit(Dionaea)
+  
+ExpandedOrthogroupsGenes<- ExpandedOrthogroupsGenes[!(row.names(ExpandedOrthogroupsGenes) %in% c("11","14","33")),]
+
+ExpandedOrthogroupsGenes$Dionaea <- substr(ExpandedOrthogroupsGenes$Dionaea,1,14)
+
+ExpandedOrthogroupsGenes <- ExpandedOrthogroupsGenes %>% 
+  rename(gene_ID = `Dionaea`)
+
+NetworkModules_expanded_orthgroup_genes <- my_network_modules %>%
+  filter(gene_ID %in% ExpandedOrthogroupsGenes$gene_ID) %>%
+  left_join(ExpandedOrthogroupsGenes, by = 'gene_ID')
+
+ExpandedOrthogroupsGenes <- ExpandedOrthogroupsGenes %>% 
+  rename(target_id = `gene_ID`)
+
+Sleuth_1hr_expanded_orthgroup_genes <- Sleuth_1hr %>%
+  filter(target_id %in% ExpandedOrthogroupsGenes$target_id) #none overlapping
+
+Sleuth_24hr_expanded_orthgroup_genes <- Sleuth_24hr %>%
+  filter(target_id %in% ExpandedOrthogroupsGenes$target_id) #none overlapping
+
+write.csv(ExpandedOrthogroupsGenes, "ExpandedOrthogroupGenes.csv")
+
+write.csv(NetworkModules_expanded_orthgroup_genes, "NetworkModules_expanded_orthgroup_genes.csv")
+

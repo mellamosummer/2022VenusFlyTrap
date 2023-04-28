@@ -1,0 +1,21 @@
+,gene_ID,module,ATgene_ID,TopBLASTHit_Symbol,TopBLASTHit_Name,TopBLASTHit_Position,OGNumber,go_desc
+9,Dm_00005640-RA,4,AT5G19440.1,Symbols: no symbol available,no full name available,chr5:6556493-6558123 FORWARD LENGTH=326,160,two-component signal transduction system (phosphorelay)
+10,Dm_00005641-RA,4,AT5G19440.1,Symbols: no symbol available,no full name available,chr5:6556493-6558123 FORWARD LENGTH=326,160,two-component signal transduction system (phosphorelay)
+14,Dm_00005642-RA,7,AT5G19440.1,Symbols: no symbol available,no full name available,chr5:6556493-6558123 FORWARD LENGTH=326,160,two-component signal transduction system (phosphorelay)
+16,Dm_00013089-RA,7,NA,NA,NA,NA,160,two-component signal transduction system (phosphorelay)
+19,Dm_00016160-RA,13,AT5G19440.1,Symbols: no symbol available,no full name available,chr5:6556493-6558123 FORWARD LENGTH=326,160,two-component signal transduction system (phosphorelay)
+13,Dm_00003170-RA,6,AT2G03530.2,"Symbols: UPS2, ATUPS2","ureide permease 2, ARABIDOPSIS THALIANA UREIDE PERMEASE 2",chr2:1071951-1073522 FORWARD LENGTH=398,982,RNA polymerase II core promoter proximal region sequence-specific DNA binding transcription factor activity
+15,Dm_00008429-RA,7,AT1G25220.2,"Symbols: WEI7, ASB1, TRP4","TRYPTOPHAN BIOSYNTHESIS 4, WEAK ETHYLENE INSENSITIVE7, anthranilate synthase beta subunit 1",chr1:8837430-8839478 REVERSE LENGTH=289,4112,cyclic-nucleotide phosphodiesterase activity
+8,Dm_00016054-RA,4,AT3G62660.1,Symbols: GATL7,galacturonosyltransferase-like 7,chr3:23173419-23174504 FORWARD LENGTH=361,4185,serine-type carboxypeptidase activity
+6,Dm_00009004-RA,3,AT5G09900.2,"Symbols: EMB2107, MSA, RPN5A","MARIPOSA, EMBRYO DEFECTIVE  2107, REGULATORY PARTICLE NON-ATPASE SUBUNIT 5A",chr5:3089462-3092434 REVERSE LENGTH=442,4722,protein serine/threonine phosphatase activity
+2,Dm_00004512-RA,2,AT2G42620.1,"Symbols: MAX2, PPS, AtMAX2, ORE9","PLEIOTROPIC PHOTOSIGNALING, ORESARA 9, MORE AXILLARY BRANCHES 2",chr2:17756170-17758251 FORWARD LENGTH=693,4869,cysteine-type endopeptidase inhibitor activity
+3,Dm_00019904-RA,2,AT1G05460.2,Symbols: SDE3,SILENCING DEFECTIVE,chr1:1601357-1604658 REVERSE LENGTH=922,5618,cell wall
+5,Dm_00020117-RA,3,AT4G03110.1,"Symbols: RBP-DR1, BRN1, AtRBP-DR1, AtBRN1","Bruno-like 1, RNA-binding protein-defense related 1",chr4:1376612-1379275 REVERSE LENGTH=441,5634,nucleus
+11,Dm_00007244-RA,4,AT1G25500.2,Symbols: no symbol available,no full name available,chr1:8955437-8957793 REVERSE LENGTH=488,6470,protein dephosphorylation
+12,Dm_00012576-RA,4,AT1G25500.2,Symbols: no symbol available,no full name available,chr1:8955437-8957793 REVERSE LENGTH=488,6470,protein dephosphorylation
+1,Dm_00008314-RA,2,AT1G03750.1,Symbols: CHR9,CHROMATIN REMODELING 9,chr1:937920-941068 FORWARD LENGTH=862,7165,signal transduction
+4,Dm_00008313-RA,2,NA,NA,NA,NA,7165,signal transduction
+7,Dm_00008274-RA,3,AT3G20870.3,Symbols: ZTP29,zinc transporter 29,chr3:7309499-7312476 REVERSE LENGTH=276,8152,metabolic process
+18,Dm_00012468-RA,10,AT5G06580.1,Symbols: d-LDH,d-lactate dehydrogenase,chr5:2011486-2016473 REVERSE LENGTH=567,8270,zinc ion binding
+17,Dm_00007747-RA,10,AT1G61720.1,Symbols: BAN,BANYULS,chr1:22791326-22792757 REVERSE LENGTH=340,8289,lipid binding
+20,Dm_00006171-RA,16,AT2G47830.1,Symbols: no symbol available,no full name available,chr2:19591094-19593973 REVERSE LENGTH=471,9733,response to auxin stimulus
