@@ -1,0 +1,17 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20221013)
+Annotation Version and Release Date:	GO Ontology database DOI:  10.5281/zenodo.7709866 Released 2023-03-06
+Analyzed List:	upload_1 (Arabidopsis thaliana)
+Reference List:	Arabidopsis thaliana (all genes in database)
+Test Type:	FISHER
+Correction:	BONFERRONI
+Bonferroni count:	3010
+GO biological process complete	Arabidopsis thaliana - REFLIST (27430)	upload_1 (146)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (P-value)
+cellular response to stimulus (GO:0051716)	3846	41	20.47	+	2.00	3.40E-02
+response to abiotic stimulus (GO:0009628)	4779	48	25.44	+	1.89	2.57E-02
+response to stimulus (GO:0050896)	9805	88	52.19	+	1.69	6.17E-06
+Unclassified (UNCLASSIFIED)	1135	1	6.04	-	.17	0.00E00

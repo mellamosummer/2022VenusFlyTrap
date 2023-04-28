@@ -1,0 +1,14 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20221013)
+Annotation Version and Release Date:	GO Ontology database DOI:  10.5281/zenodo.7709866 Released 2023-03-06
+Analyzed List:	upload_1 (Arabidopsis thaliana)
+Reference List:	Arabidopsis thaliana (all genes in database)
+Test Type:	FISHER
+Correction:	BONFERRONI
+Bonferroni count:	657
+GO cellular component complete	Arabidopsis thaliana - REFLIST (27430)	upload_1 (126)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (P-value)
+Unclassified (UNCLASSIFIED)	873	4	4.01	-	1.00	0.00E00

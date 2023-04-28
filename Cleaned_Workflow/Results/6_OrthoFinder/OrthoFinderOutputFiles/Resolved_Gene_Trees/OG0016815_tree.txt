@@ -1,1 +1,0 @@
-(D_muscipula_proteins_Dm_00004700-RA:0.448979,((A_hypochondriacus_proteins_AH004949-RA:0.351522,B_vulgaris_proteins_Bevul.6G220700.1.p:0.301909)n2:0.21463,(P_amilis_proteins_FUN_012804-T1:0.394573,(P_amilis_proteins_FUN_012802-T1:0.0910908,P_amilis_proteins_FUN_012803-T1:0.0646102)n4:0.236604)n3:0.175003)n1:0.448979)n0;

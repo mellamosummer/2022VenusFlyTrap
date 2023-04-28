@@ -1,0 +1,41 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20221013)
+Annotation Version and Release Date:	GO Ontology database DOI:  10.5281/zenodo.7709866 Released 2023-03-06
+Analyzed List:	upload_1 (Arabidopsis thaliana)
+Reference List:	Arabidopsis thaliana (all genes in database)
+Test Type:	FISHER
+Correction:	BONFERRONI
+Bonferroni count:	3010
+GO biological process complete	Arabidopsis thaliana - REFLIST (27430)	upload_1 (126)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (P-value)
+cellular response to hypoxia (GO:0071456)	239	10	1.10	+	9.11	7.02E-04
+cellular response to decreased oxygen levels (GO:0036294)	241	10	1.11	+	9.03	7.56E-04
+cellular response to oxygen levels (GO:0071453)	242	10	1.11	+	9.00	7.84E-04
+response to hypoxia (GO:0001666)	344	13	1.58	+	8.23	3.21E-05
+response to decreased oxygen levels (GO:0036293)	354	13	1.63	+	7.99	4.45E-05
+response to oxygen levels (GO:0070482)	356	13	1.64	+	7.95	4.75E-05
+response to wounding (GO:0009611)	957	20	4.40	+	4.55	5.95E-05
+response to fungus (GO:0009620)	1205	21	5.54	+	3.79	5.19E-04
+defense response to fungus (GO:0050832)	945	16	4.34	+	3.69	2.51E-02
+response to bacterium (GO:0009617)	1397	22	6.42	+	3.43	1.39E-03
+defense response to bacterium (GO:0042742)	1091	17	5.01	+	3.39	3.72E-02
+response to temperature stimulus (GO:0009266)	1321	20	6.07	+	3.30	8.94E-03
+defense response to other organism (GO:0098542)	2317	32	10.64	+	3.01	4.25E-05
+response to external biotic stimulus (GO:0043207)	2697	36	12.39	+	2.91	9.67E-06
+response to other organism (GO:0051707)	2697	36	12.39	+	2.91	9.67E-06
+response to biotic stimulus (GO:0009607)	2700	36	12.40	+	2.90	9.96E-06
+biological process involved in interspecies interaction between organisms (GO:0044419)	2712	36	12.46	+	2.89	1.12E-05
+defense response (GO:0006952)	2637	35	12.11	+	2.89	1.99E-05
+response to external stimulus (GO:0009605)	3218	38	14.78	+	2.57	8.49E-05
+cellular response to chemical stimulus (GO:0070887)	2145	25	9.85	+	2.54	4.40E-02
+response to stress (GO:0006950)	5761	67	26.46	+	2.53	7.83E-12
+response to endogenous stimulus (GO:0009719)	2773	31	12.74	+	2.43	1.14E-02
+response to chemical (GO:0042221)	5354	58	24.59	+	2.36	5.55E-08
+response to lipid (GO:0033993)	2791	30	12.82	+	2.34	2.85E-02
+response to organic substance (GO:0010033)	4603	49	21.14	+	2.32	1.54E-05
+response to abiotic stimulus (GO:0009628)	4779	44	21.95	+	2.00	8.02E-03
+response to stimulus (GO:0050896)	9805	85	45.04	+	1.89	2.52E-09
+Unclassified (UNCLASSIFIED)	1135	4	5.21	-	.77	0.00E00
