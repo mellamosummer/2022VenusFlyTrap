@@ -1,0 +1,96 @@
+
+
+
+
+
+Analysis Type:	PANTHER Overrepresentation Test (Released 20221013)
+Annotation Version and Release Date:	GO Ontology database DOI:  10.5281/zenodo.7709866 Released 2023-03-06
+Analyzed List:	upload_1 (Arabidopsis thaliana)
+Reference List:	Arabidopsis thaliana (all genes in database)
+Test Type:	FISHER
+Correction:	BONFERRONI
+Bonferroni count:	3010
+GO biological process complete	Arabidopsis thaliana - REFLIST (27430)	upload_1 (2301)	upload_1 (expected)	upload_1 (over/under)	upload_1 (fold Enrichment)	upload_1 (P-value)
+ribosomal small subunit assembly (GO:0000028)	35	14	2.94	+	4.77	4.06E-02
+cytoplasmic translation (GO:0002181)	76	28	6.38	+	4.39	1.06E-05
+ribosomal large subunit biogenesis (GO:0042273)	77	27	6.46	+	4.18	4.68E-05
+ribosome assembly (GO:0042255)	69	23	5.79	+	3.97	1.11E-03
+ribosomal small subunit biogenesis (GO:0042274)	93	29	7.80	+	3.72	1.18E-04
+peptide biosynthetic process (GO:0043043)	526	151	44.12	+	3.42	1.01E-29
+translation (GO:0006412)	520	149	43.62	+	3.42	3.22E-29
+peptide metabolic process (GO:0006518)	558	159	46.81	+	3.40	3.95E-31
+amide biosynthetic process (GO:0043604)	593	166	49.74	+	3.34	7.59E-32
+protein folding (GO:0006457)	183	51	15.35	+	3.32	3.33E-08
+amide metabolic process (GO:0043603)	698	184	58.55	+	3.14	1.01E-32
+ribosome biogenesis (GO:0042254)	353	86	29.61	+	2.90	3.81E-12
+organic anion transport (GO:0015711)	165	37	13.84	+	2.67	2.57E-03
+rRNA processing (GO:0006364)	252	56	21.14	+	2.65	6.38E-06
+rRNA metabolic process (GO:0016072)	268	59	22.48	+	2.62	2.87E-06
+ribonucleoprotein complex biogenesis (GO:0022613)	429	94	35.99	+	2.61	5.18E-11
+purine nucleotide metabolic process (GO:0006163)	217	46	18.20	+	2.53	5.07E-04
+purine-containing compound metabolic process (GO:0072521)	238	49	19.96	+	2.45	4.81E-04
+nucleotide metabolic process (GO:0009117)	267	54	22.40	+	2.41	2.15E-04
+nucleoside phosphate metabolic process (GO:0006753)	280	55	23.49	+	2.34	4.28E-04
+small molecule catabolic process (GO:0044282)	235	46	19.71	+	2.33	4.28E-03
+nucleobase-containing small molecule metabolic process (GO:0055086)	372	68	31.21	+	2.18	1.27E-04
+organonitrogen compound biosynthetic process (GO:1901566)	1792	322	150.32	+	2.14	4.19E-30
+response to heat (GO:0009408)	396	66	33.22	+	1.99	4.70E-03
+gene expression (GO:0010467)	1805	293	151.41	+	1.94	1.26E-20
+cellular nitrogen compound biosynthetic process (GO:0044271)	1911	307	160.31	+	1.92	3.79E-21
+organophosphate metabolic process (GO:0019637)	553	88	46.39	+	1.90	5.57E-04
+alpha-amino acid metabolic process (GO:1901605)	409	64	34.31	+	1.87	3.62E-02
+ncRNA metabolic process (GO:0034660)	513	79	43.03	+	1.84	7.52E-03
+amino acid metabolic process (GO:0006520)	600	91	50.33	+	1.81	1.68E-03
+monocarboxylic acid metabolic process (GO:0032787)	700	104	58.72	+	1.77	6.43E-04
+response to salt stress (GO:0009651)	700	104	58.72	+	1.77	6.43E-04
+transmembrane transport (GO:0055085)	894	131	74.99	+	1.75	3.71E-05
+organic acid biosynthetic process (GO:0016053)	652	95	54.69	+	1.74	6.02E-03
+carboxylic acid metabolic process (GO:0019752)	1561	224	130.95	+	1.71	7.92E-10
+cellular biosynthetic process (GO:0044249)	3349	468	280.94	+	1.67	1.99E-22
+organic substance transport (GO:0071702)	1170	163	98.15	+	1.66	1.41E-05
+macromolecule biosynthetic process (GO:0009059)	2338	325	196.13	+	1.66	8.26E-14
+nitrogen compound transport (GO:0071705)	876	120	73.48	+	1.63	3.69E-03
+embryo development (GO:0009790)	804	110	67.44	+	1.63	1.17E-02
+small molecule biosynthetic process (GO:0044283)	961	130	80.61	+	1.61	2.44E-03
+protein localization (GO:0008104)	811	108	68.03	+	1.59	4.13E-02
+oxoacid metabolic process (GO:0043436)	2044	272	171.46	+	1.59	4.30E-09
+response to osmotic stress (GO:0006970)	1046	139	87.75	+	1.58	2.77E-03
+cellular catabolic process (GO:0044248)	1070	142	89.76	+	1.58	2.07E-03
+cellular macromolecule localization (GO:0070727)	876	116	73.48	+	1.58	2.77E-02
+organic substance catabolic process (GO:1901575)	1917	250	160.81	+	1.55	2.45E-07
+cellular response to stress (GO:0033554)	1202	156	100.83	+	1.55	1.65E-03
+cellular nitrogen compound metabolic process (GO:0034641)	4731	614	396.87	+	1.55	1.33E-23
+catabolic process (GO:0009056)	2251	292	188.83	+	1.55	8.92E-09
+organic substance biosynthetic process (GO:1901576)	4530	587	380.00	+	1.54	3.73E-22
+organic acid metabolic process (GO:0006082)	2166	280	181.70	+	1.54	3.54E-08
+small molecule metabolic process (GO:0044281)	3097	399	259.80	+	1.54	7.57E-13
+organonitrogen compound catabolic process (GO:1901565)	1176	151	98.65	+	1.53	4.73E-03
+transport (GO:0006810)	2426	307	203.51	+	1.51	3.36E-08
+establishment of localization (GO:0051234)	2465	310	206.78	+	1.50	4.67E-08
+biosynthetic process (GO:0009058)	4893	610	410.46	+	1.49	1.96E-19
+organonitrogen compound metabolic process (GO:1901564)	6318	771	529.99	+	1.45	2.54E-24
+response to temperature stimulus (GO:0009266)	1321	161	110.81	+	1.45	3.23E-02
+cellular localization (GO:0051641)	1282	156	107.54	+	1.45	4.85E-02
+cellular component biogenesis (GO:0044085)	1923	234	161.31	+	1.45	2.93E-04
+protein metabolic process (GO:0019538)	4604	558	386.21	+	1.44	8.71E-15
+localization (GO:0051179)	2897	350	243.02	+	1.44	1.59E-07
+nucleobase-containing compound metabolic process (GO:0006139)	3717	448	311.81	+	1.44	1.53E-10
+RNA metabolic process (GO:0016070)	2883	347	241.84	+	1.43	2.91E-07
+primary metabolic process (GO:0044238)	9962	1169	835.67	+	1.40	1.62E-38
+heterocycle metabolic process (GO:0046483)	4390	509	368.26	+	1.38	6.80E-10
+nitrogen compound metabolic process (GO:0006807)	9027	1044	757.24	+	1.38	4.09E-29
+nucleic acid metabolic process (GO:0090304)	3333	379	279.59	+	1.36	2.09E-05
+cellular aromatic compound metabolic process (GO:0006725)	4774	541	400.47	+	1.35	3.78E-09
+organic cyclic compound metabolic process (GO:1901360)	4951	557	415.32	+	1.34	4.26E-09
+cellular metabolic process (GO:0044237)	9201	1035	771.84	+	1.34	3.80E-24
+cellular component organization or biogenesis (GO:0071840)	3605	404	302.41	+	1.34	2.50E-05
+organic substance metabolic process (GO:0071704)	12071	1341	1012.59	+	1.32	3.61E-36
+macromolecule metabolic process (GO:0043170)	8524	941	715.05	+	1.32	5.65E-18
+metabolic process (GO:0008152)	12892	1408	1081.46	+	1.30	9.77E-36
+cellular process (GO:0009987)	15187	1624	1273.98	+	1.27	1.84E-43
+response to abiotic stimulus (GO:0009628)	4779	505	400.89	+	1.26	3.19E-04
+response to chemical (GO:0042221)	5354	548	449.13	+	1.22	3.75E-03
+response to stress (GO:0006950)	5761	588	483.27	+	1.22	1.64E-03
+developmental process (GO:0032502)	6257	620	524.88	+	1.18	2.83E-02
+response to stimulus (GO:0050896)	9805	945	822.50	+	1.15	1.24E-03
+Unclassified (UNCLASSIFIED)	1135	66	95.21	-	.69	0.00E00

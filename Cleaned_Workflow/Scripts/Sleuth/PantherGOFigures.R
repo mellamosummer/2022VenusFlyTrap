@@ -202,7 +202,7 @@ SleuthPetiolesVTrapsGoMFGGplot <- ggplot(SleuthPetiolesVTrapsGoMF) +
 
 SleuthPetiolesVTrapsGo <- wrap_plots(SleuthPetiolesVTrapsGoBPGGplot, SleuthPetiolesVTrapsGoCCGGplot, SleuthPetiolesVTrapsGoMFGGplot, nrow = 1)
 
-ggsave("SleuthSleuthPetiolesVTrapsGOPlots.pdf", height = 3, width = 15)
+ggsave("SleuthSleuthPetiolesVTrapsGOPlots.png", height = 3, width = 15)
 
 #####################
 #GO terms 1 hr- all
@@ -240,7 +240,7 @@ Sleuth1hrGoMFGGplot <- ggplot(Sleuth1hrGoMF) +
 
 Sleuth1hrGo <- wrap_plots(Sleuth1hrGoBPGGplot, Sleuth1hrGoCCGGplot, Sleuth1hrGoMFGGplot, nrow = 1)
 
-ggsave("Sleuth1HrGOPlots.pdf", height = 3, width = 15)
+ggsave("Sleuth1HrGOPlots.png", height = 3, width = 15)
 
 #####################
 #GO terms 24 hr- all
@@ -278,7 +278,7 @@ Sleuth24hrGoMFGGplot <- ggplot(Sleuth24hrGoMF) +
 
 Sleuth24hrGo <- wrap_plots(Sleuth24hrGoBPGGplot, Sleuth24hrGoCCGGplot, Sleuth24hrGoMFGGplot, nrow = 1)
 
-ggsave("Sleuth24HrGOPlots.pdf", height = 3, width = 15)
+ggsave("Sleuth24HrGOPlots.png", height = 3, width = 15)
 
 
 ####################
@@ -289,13 +289,13 @@ HigherExpressionIn <- c("PreyTrigger","MechanicalTrigger", "PreyTrigger","Mechan
 Timepoint<- c("1hr","1hr", "24hr","24hr")
 NumberOfGenes <- c(103, 71, 151, 2)
 
-DEGs <- data.frame(Timepoint, Direction, HigherExpressionIn)
+DEGs <- data.frame(Timepoint, NumberOfGenes, HigherExpressionIn)
 
 
 ggplot(data=DEGs, aes(x=Timepoint, y=NumberOfGenes, fill=HigherExpressionIn)) +
-  geom_bar(stat="identity")
+  geom_bar(stat="identity") 
 
-ggsave("SleuthPairwiseDEGs.pdf")
+ggsave("SleuthPairwiseDEGs.png")
 
 
 ##########
@@ -346,4 +346,6 @@ ggplot(data=Sleuth24HrListModules, aes(x=factor(module, level=c('2', '3', '4','6
   geom_histogram(stat="count") +
   xlab("Modules") + ylab("NumberOfDEGs")
 
-ggsave("Sleuth24hrDEGsinModules.pdf")
+ggsave("Sleuth24hrDEGsinModules.png")
+
+

@@ -2317,5 +2317,99 @@ Sleuth_24hr_expanded_orthgroup_genes <- Sleuth_24hr %>%
 
 write.csv(ExpandedOrthogroupsGenes, "ExpandedOrthogroupGenes.csv")
 
-write.csv(NetworkModules_expanded_orthgroup_genes, "NetworkModules_expanded_orthgroup_genes.csv")
+write.csv(NetworkModules_expanded_orthgroup_genes, "NetworkModules_expanded_orthgroup_genes.xlsx")
 
+setwd("/Users/summerblanco/Desktop/")
+library("readxl")
+install.packages("ggupset")
+library(ggupset)
+
+########################################
+# Figure -- # of enzymes in each module
+########################################
+
+EnzymesClasses <- read_xlsx("upsetplot.xlsx")
+EnzymesClasses$module <- as.character(EnzymesClasses$module)
+
+EnzymesClasses %>% 
+ggplot(aes(module, enzymeclass)) +
+  geom_count(aes(size = numberofhits))
+
+ggsave("enzymeclassinmodules.png")
+
+########################################
+# Figure -- # of genes in each module
+########################################
+
+modulesnumberofgenes <- read.csv("Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/NetworkModules/genesinmodules.csv")
+modulesnumberofgenes$module <- as.character(modulesnumberofgenes$module)
+
+modulesnumberofgenes %>% 
+  ggplot(aes(x=module, y=n)) +
+  geom_bar(stat="identity", fill="black")+
+  geom_text(aes(label=n), vjust=-1, color="black", size=3.5) + 
+  xlab("Number of Genes") + ylab("Module Number")
+
+ggsave("numberofgenesinmodules.png")
+
+########################################
+# 
+########################################
+BiocManager::install(version = "3.16")
+BiocManager::install(c("topGO", "KEGGREST", "org.At.tair.db", "Rgraphviz"))
+library(topGO)
+library(Rgraphviz)
+
+tmp <- read.csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_1hr/DEGcsvs/SleuthPreyNoPrey60minResults_q_0.05.csv")
+ATnames <- read.csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_1hr/DEGcsvs/SleuthList1HrAnnotated_modulesandorthogroups.csv")
+ATnames <- ATnames %>% 
+  rename(target_id = gene_ID)
+
+tmp <- tmp %>% 
+  left_join(ATnames, by = 'target_id') %>% 
+  select(target_id, ATgene_ID, qval) %>% 
+  na.omit(ATgene_ID) %>% 
+  na.omit(qval)
+
+geneList <- tmp$qval
+names(geneList) <- tmp$ATgene_ID %>% substr(1,9)
+
+GOdata <- new("topGOdata",
+              ontology = "BP",
+              allGenes = geneList,
+              geneSelectionFun = function(x)x,
+              annot = annFUN.org, mapping = "org.At.tair.db")
+
+resultKS <- runTest(GOdata, algorithm = "weight01", statistic = "ks")
+
+tab <- GenTable(GOdata, raw.p.value = resultKS, topNodes = length(resultKS@score), numChar = 1000)
+
+#test
+results.fisher <- runTest(GOdata, algorithm = "elim", statistic = "fisher")
+GenTable(GOdata, Fisher = results.fisher, topNodes = 20, numChar = 1000)
+goEnrichment <- GenTable(
+  GOdata,
+  Fisher = results.fisher,
+  orderBy = "Fisher",
+  topNodes = 20,
+  numChar = 1000)
+goEnrichment$Fisher <- as.numeric(goEnrichment$Fisher)
+goEnrichment <- goEnrichment[goEnrichment$Fisher < 0.05,] # filter terms for Fisher p<0.05
+goEnrichment <- goEnrichment[,c("GO.ID","Term","Fisher")]
+goEnrichment
+
+library(ggplot2)
+install.packages("scales")
+library(scales)
+
+ntop <- 30
+ggdata <- goEnrichment[1:ntop,]
+ggdata$Term <- factor(ggdata$Term, levels = rev(ggdata$Term)) # fixes order
+gg1 <- ggplot(ggdata,
+              aes(x = Term, y = -log10(KS), size = -log10(KS), fill = -log10(KS))) +
+  
+  expand_limits(y = 1) +
+  geom_point(shape = 21) +
+  scale_size(range = c(2.5,12.5)) +
+  scale_fill_continuous(low = 'royalblue', high = 'red4') 
+  
