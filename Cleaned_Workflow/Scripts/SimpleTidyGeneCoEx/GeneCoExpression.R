@@ -10,11 +10,12 @@ library(patchwork)
 library(RColorBrewer)
 library(viridis)
 library("tximport")
+library("imputeTS")
 
 set.seed(666)
 
 #set input and output dirs
-datapath <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/"  # you need to modify this line to match the path made by your BASH script
+datapath <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/2_KallistoQuant"  # you need to modify this line to match the path made by your BASH script
 resultdir <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis"   # you need to modify this line to match the path made by your BASH script
 setwd(resultdir)
 
@@ -72,7 +73,6 @@ files <- file.path(datapath, sample,"abundance.tsv")
 
 #extracts counts data and builds matrix with geneID and counts
 txi <- tximport(files, type="kallisto", txOut = TRUE, geneIdCol = TRUE, abundanceCol = TRUE, countsCol = FALSE)
-head(txi)
 
 #create variable with just the tpm
 tpm <- txi$abundance
@@ -213,47 +213,12 @@ high_var_genes <- Exp_table_long_averaged_z %>%
 
 dim(high_var_genes)
 
-high_var_genes %>% 
-  filter(gene_ID %in% Baits$gene_ID)
 
 all_var_and_ranks <- Exp_table_long_averaged_z %>% 
   group_by(gene_ID) %>% 
   summarise(var = var(mean.logTPM)) %>% 
   ungroup() %>% 
   mutate(rank = rank(var, ties.method = "average")) 
-
-bait_var <- all_var_and_ranks %>% 
-  filter(gene_ID %in% Baits$gene_ID) 
-
-bait_var
-
-all_var_and_ranks %>% 
-  ggplot(aes(x = var, y = rank)) +
-  geom_rect( 
-    xmax = max(high_var_genes$var), 
-    xmin = min(high_var_genes$var),
-    ymax = nrow(all_var_and_ranks),
-    ymin = nrow(all_var_and_ranks) - nrow(high_var_genes),
-    fill = "dodgerblue2", alpha = 0.2
-  ) +
-  geom_line(size = 1.1) +
-  geom_hline(
-    data = bait_var, aes(yintercept = rank),
-    color = "tomato1", size = 0.8, alpha = 0.5
-  ) +
-  geom_vline(
-    data = bait_var, aes(xintercept = var), 
-    color = "tomato1", size = 0.8, alpha = 0.5
-  ) + 
-  labs(y = "rank",
-       x = "var(log10(FPKM))",
-       caption = "Blue box = high var expressed genes.") +
-  theme_classic() +
-  theme(
-    text = element_text(size = 14),
-    axis.text = element_text(color = "black"),
-    plot.caption = element_text(hjust = 0)
-  )
 
 ggsave("gene_var_distribution.png", height = 3.5, width = 3.5)
 
@@ -801,47 +766,54 @@ module_peak_exp
 # Module QC
 ##################################
 
-module_line_plots <- Exp_table_long_averaged_z_high_var_or_high_F_modules %>% 
-  mutate(treatment = factor(Treatment, levels = c("prey", "no prey")))  %>%
+module_line_plot <- Exp_table_long_averaged_z_high_var_or_high_F_modules %>% 
+  filter(Treatment == "prey") %>% 
   mutate(order_x = case_when(
-    str_detect(module, "2") ~ 1,
-    str_detect(module, "7") ~ 2,
-    str_detect(module, "9") ~ 3,
-    str_detect(module, "14") ~ 4,
-    str_detect(module, "168") ~ 5,
-    str_detect(module, "24") ~ 6,
-    str_detect(module, "6") ~ 7,
-    str_detect(module, "5") ~ 8,
-    str_detect(module, "16") ~ 9,
-    str_detect(module, "10") ~ 10,
-    str_detect(module, "4") ~ 11,
-    str_detect(module, "142") ~ 12,
-    str_detect(module, "13") ~ 13,
-    str_detect(module, "3") ~ 14
+    str_detect(Time, "5") ~ 1,
+    str_detect(Time, "60") ~ 2,
+    str_detect(Time, "180") ~ 3,
+    str_detect(Time, "720") ~ 4,
+    str_detect(Time, "1440") ~ 5,
+    str_detect(Time, "2880") ~ 6,
+    str_detect(Time, "4320") ~ 7
   )) %>% 
-  mutate(module = reorder(module, order_x)) %>% 
+  mutate(Time = reorder(Time, order_x)) %>% 
+  filter(module == "10" | module == "9" | module == "6" | module == "4" | module == "7" | module == "2" |
+           module == "16" | module == "3") %>% 
   ggplot(aes(x = Time, y = z.score)) +
-  facet_grid(Treatment ~ module) +
+  facet_wrap(~factor(module, levels=c('4', '6', '9','10', '7', '16','2', '3')), ncol = 4) +
   geom_line(aes(group = gene_ID), alpha = 0.3, color = "grey70") +
   geom_line(
     data = modules_mean_z %>% 
-      mutate(Treatment = factor(Treatment, levels = c("prey", "no prey"))),
+      filter(Treatment == "prey") %>% 
+      filter(module == "10" | module == "4" | module == "6" | module == "9" | module == "7" | module == "2" |
+               module == "16" | module == "3") %>% 
+      mutate(order_x = case_when(
+          str_detect(Time, "5") ~ 1,
+          str_detect(Time, "60") ~ 2,
+          str_detect(Time, "180") ~ 3,
+          str_detect(Time, "720") ~ 4,
+          str_detect(Time, "1440") ~ 5,
+          str_detect(Time, "2880") ~ 6,
+          str_detect(Time, "4320") ~ 7
+      )) %>% 
+      mutate(Time = reorder(Time, order_x)),
     aes(y = mean.z, group = module), 
     size = 1.1, alpha = 0.8
   ) +
-  labs(x = "time point",
+  labs(x = "Time (min)",
        y = "z score") +
-  theme_classic() +
+  theme_gray() +
   theme(
     text = element_text(size = 14),
     axis.text = element_text(color = "black"),
-    #axis.text.x = element_blank(),
+    axis.text.x = element_text(angle = 45, vjust = 0.5),
     panel.spacing = unit(1, "line")
   )
 
-module_line_plots
+module_line_plot
 
-ggsave("module_line_plots_ordered.png", height = 20, width = , bg = "white")
+ggsave("module_line_plots_ordered_wrap.png", height = 10, width =10 , bg = "white")
 
 module_line_plot_3 <- Exp_table_long_averaged_z_high_var_or_high_F_modules %>% 
   mutate(treatment = factor(Treatment, levels = c("prey", "no prey"))) %>% 
@@ -2328,42 +2300,45 @@ library(ggupset)
 # Figure -- # of enzymes in each module
 ########################################
 
-EnzymesClasses <- read_xlsx("upsetplot.xlsx")
+EnzymesClasses <- read_xlsx("/Users/summerblanco/Desktop/upsetplot.xlsx")
 EnzymesClasses$module <- as.character(EnzymesClasses$module)
+
+
+EnzymesClasses$module <- factor(EnzymesClasses$module,levels = c("3", "2", "4", "10","7","9","6", "16","13","5","24","168","142","460"))
 
 EnzymesClasses %>% 
 ggplot(aes(module, enzymeclass)) +
-  geom_count(aes(size = numberofhits))
+  geom_count(aes(size = numberofhits, color = numberofhits)) + scale_size(range = c(2.5,15)) +
+  ylab("Enzyme Class") + xlab("Module")
 
-ggsave("enzymeclassinmodules.png")
+
+ggsave("enzymeclassinmodules.png", height=10, width = 10)
 
 ########################################
 # Figure -- # of genes in each module
 ########################################
 
-modulesnumberofgenes <- read.csv("Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/NetworkModules/genesinmodules.csv")
+modulesnumberofgenes <- read.csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/NetworkModules/genesinmodules.csv")
 modulesnumberofgenes$module <- as.character(modulesnumberofgenes$module)
 
 modulesnumberofgenes %>% 
-  ggplot(aes(x=module, y=n)) +
+  ggplot(aes(x=reorder(module,(-n)), y=n)) +
   geom_bar(stat="identity", fill="black")+
   geom_text(aes(label=n), vjust=-1, color="black", size=3.5) + 
-  xlab("Number of Genes") + ylab("Module Number")
+  ylab("Number of Genes") + xlab("Module")
 
 ggsave("numberofgenesinmodules.png")
 
-########################################
-# 
-########################################
-BiocManager::install(version = "3.16")
-BiocManager::install(c("topGO", "KEGGREST", "org.At.tair.db", "Rgraphviz"))
-library(topGO)
+#########################################
+# Figures -- GO enrichment pairwise DEGs
+#########################################
+ library(topGO)
 library(Rgraphviz)
 
-tmp <- read.csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_1hr/DEGcsvs/SleuthPreyNoPrey60minResults_q_0.05.csv")
-ATnames <- read.csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_1hr/DEGcsvs/SleuthList1HrAnnotated_modulesandorthogroups.csv")
+tmp <- read.csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_24hr/DEGcsvs/SleuthTable_24hr.csv")
+ATnames <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/5_BLAST/AllDmProteinsBLASTresults/DmProteinsTairdbBLASTconcat.txt", col_names =F)
 ATnames <- ATnames %>% 
-  rename(target_id = gene_ID)
+  rename(target_id = X1, ATgene_ID = X2)
 
 tmp <- tmp %>% 
   left_join(ATnames, by = 'target_id') %>% 
@@ -2373,6 +2348,8 @@ tmp <- tmp %>%
 
 geneList <- tmp$qval
 names(geneList) <- tmp$ATgene_ID %>% substr(1,9)
+head(geneList)
+tail(geneList)
 
 GOdata <- new("topGOdata",
               ontology = "BP",
@@ -2382,34 +2359,508 @@ GOdata <- new("topGOdata",
 
 resultKS <- runTest(GOdata, algorithm = "weight01", statistic = "ks")
 
-tab <- GenTable(GOdata, raw.p.value = resultKS, topNodes = length(resultKS@score), numChar = 1000)
+options(digits=22)
+options(scipen=999)
 
-#test
-results.fisher <- runTest(GOdata, algorithm = "elim", statistic = "fisher")
-GenTable(GOdata, Fisher = results.fisher, topNodes = 20, numChar = 1000)
 goEnrichment <- GenTable(
   GOdata,
-  Fisher = results.fisher,
-  orderBy = "Fisher",
-  topNodes = 20,
+  raw.p.value = resultKS,
+  topNodes = length(resultKS@score),
+  orderBy = "KS",
   numChar = 1000)
-goEnrichment$Fisher <- as.numeric(goEnrichment$Fisher)
-goEnrichment <- goEnrichment[goEnrichment$Fisher < 0.05,] # filter terms for Fisher p<0.05
-goEnrichment <- goEnrichment[,c("GO.ID","Term","Fisher")]
+
+goEnrichment[1, 6] = 0.000000000000000000000000000001
+
+goEnrichment$KS <- as.numeric(goEnrichment$raw.p.value)
+goEnrichment <- goEnrichment[goEnrichment$raw.p.value < 0.05,] # filter terms for KS p<0.05
+goEnrichment <- goEnrichment[,c("GO.ID","Term","KS")]
 goEnrichment
 
-library(ggplot2)
-install.packages("scales")
-library(scales)
-
 ntop <- 30
-ggdata <- goEnrichment[1:ntop,]
-ggdata$Term <- factor(ggdata$Term, levels = rev(ggdata$Term)) # fixes order
-gg1 <- ggplot(ggdata,
+ggdata2 <- goEnrichment[1:ntop,]
+ggdata2$Term <- factor(ggdata2$Term, levels = rev(ggdata2$Term)) # fixes order
+gg2 <- ggplot(ggdata2,
               aes(x = Term, y = -log10(KS), size = -log10(KS), fill = -log10(KS))) +
   
   expand_limits(y = 1) +
   geom_point(shape = 21) +
   scale_size(range = c(2.5,12.5)) +
-  scale_fill_continuous(low = 'royalblue', high = 'red4') 
+  scale_fill_continuous(low = 'royalblue', high = 'red4') +
+  xlab('') + ylab('Enrichment score') +
+  labs(
+    title = 'GO Biological processes',
+    subtitle = 'Top 30 terms ordered by Kolmogorov-Smirnov p-value',
+    caption = 'Cut-off lines drawn at equivalents of p=0.05, p=0.01, p=0.001') +
   
+  geom_hline(yintercept = c(-log10(0.05), -log10(0.01), -log10(0.001)),
+             linetype = c("dotted", "longdash", "solid"),
+             colour = c("black", "black", "black")) +
+  
+  theme_bw(base_size = 24) +
+  theme(
+    legend.position = 'right',
+    legend.background = element_rect(),
+    plot.title = element_text(angle = 0, size = 16, face = 'bold', vjust = 1),
+    plot.subtitle = element_text(angle = 0, size = 14, face = 'bold', vjust = 1),
+    plot.caption = element_text(angle = 0, size = 12, face = 'bold', vjust = 1),
+    
+    axis.text.x = element_text(angle = 0, size = 12, face = 'bold', hjust = 1.10),
+    axis.text.y = element_text(angle = 0, size = 12, face = 'bold', vjust = 0.5),
+    axis.title = element_text(size = 12, face = 'bold'),
+    axis.title.x = element_text(size = 12, face = 'bold'),
+    axis.title.y = element_text(size = 12, face = 'bold'),
+    axis.line = element_line(colour = 'black'),
+    
+    #Legend
+    legend.key = element_blank(), # removes the border
+    legend.key.size = unit(1, "cm"), # Sets overall area/size of the legend
+    legend.text = element_text(size = 14, face = "bold"), # Text size
+    title = element_text(size = 14, face = "bold")) +
+  coord_flip() 
+gg2
+gg1
+
+ggsave("Top30GOBP_1hr.png")
+
+
+######################
+#1hr Fishers Exact
+######################
+setwd("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results")
+tmp_1hr <- read.csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_1hr/DEGcsvs/SleuthTable_1hr.csv")
+ATnames <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/5_BLAST/AllDmProteinsBLASTresults/DmProteinsTairdbBLASTconcat.txt", col_names =F)
+ATnames <- ATnames %>% 
+  rename(target_id = X1, ATgene_ID = X2)
+
+
+
+tmp_1hr <- tmp_1hr %>% 
+  left_join(ATnames, by = 'target_id') %>% 
+  dplyr::select(target_id, ATgene_ID, qval) %>% 
+  na.omit(ATgene_ID) %>% 
+  na.omit(qval)
+
+DE_1hr <- tmp_1hr %>% 
+  dplyr::select(ATgene_ID, qval)
+
+DE_1hr$ATgene_ID <-  substr(DE_1hr$ATgene_ID, 1,9)
+
+qcutoff <- 0.05 
+tmp_1hr <- ifelse(DE_1hr$qval < qcutoff, 1, 0)
+geneList_1hr <- tmp_1hr
+names(geneList_1hr) <- unlist(lapply(strsplit(DE_1hr$ATgene_ID, split = ".", fixed = T), function(x)x[1]))
+head(geneList_1hr)
+
+GOdata_1hr <- new("topGOdata",
+              ontology = "BP",
+              allGenes = geneList_1hr,
+              geneSelectionFun = function(x)(x == 1),
+              annot = annFUN.org, mapping = "org.At.tair.db")
+
+resultFisher_1hr <- runTest(GOdata_1hr, algorithm = "elim", statistic = "fisher")
+tab_1hr <- GenTable(GOdata_1hr, raw.p.value = resultFisher_1hr, topNodes = length(resultFisher_1hr@score),
+                numChar = 1000)
+head(tab_1hr)
+
+write.csv(tab_1hr,"FishersExact1hrTableTopGO.csv")
+
+tab_1hr$raw.p.value <- as.numeric(tab_1hr$raw.p.value)
+tab_1hr <- tab_1hr[tab_1hr$raw.p.value < 0.05,] # filter terms for KS p<0.05
+tab_1hr
+tab_1hr <- tab_1hr %>% 
+  filter(Term != "biological_process")
+
+ntop <- 30
+ggdata_1hr <- tab_1hr[1:ntop,]
+ggdata_1hr$Term <- factor(ggdata_1hr$Term, levels = rev(ggdata_1hr$Term)) 
+
+ggplot(ggdata_1hr,
+              aes(x = Term, y = as.numeric(raw.p.value), size = Significant, fill= 'green')) +
+  geom_point(shape = 21, fill ='darkgreen') +
+  scale_size(range = c(2.5,12.5)) +
+  xlab('Term') + ylab('p-value') + guides(size = guide_legend(title = "Number of Genes")) +
+  scale_y_continuous(limits=c(0.000,0.009),breaks=c(0.000, 0.002,0.004, 0.006,0.008)) +
+  labs(
+    title = '1 hr GO Biological processes',
+    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") +
+  coord_flip()
+
+ggsave("TopGO_Fishers1hr.png")
+
+######################
+#24hr Fishers Exact
+######################
+tmp_24hr <- read.csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_24hr/DEGcsvs/SleuthTable_24hr.csv")
+ATnames <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/5_BLAST/AllDmProteinsBLASTresults/DmProteinsTairdbBLASTconcat.txt", col_names =F)
+ATnames <- ATnames %>% 
+  rename(target_id = X1, ATgene_ID = X2)
+
+tmp_24hr <- tmp_24hr %>% 
+  left_join(ATnames, by = 'target_id') %>% 
+  select(target_id, ATgene_ID, qval) %>% 
+  na.omit(ATgene_ID) %>% 
+  na.omit(qval)
+
+DE_24hr <- tmp_24hr %>% 
+  select(ATgene_ID, qval)
+
+DE_24hr$ATgene_ID <-  substr(DE_24hr$ATgene_ID, 1,9)
+
+qcutoff <- 0.05 
+tmp_24hr <- ifelse(DE_24hr$qval < qcutoff, 1, 0)
+geneList_24hr <- tmp_24hr
+names(geneList_24hr) <- unlist(lapply(strsplit(DE_24hr$ATgene_ID, split = ".", fixed = T), function(x)x[1]))
+head(geneList_24hr)
+
+genelistnames <- names(geneList_24hr) 
+
+genelistnames<- as.data.frame(genelistnames)
+
+
+
+GOdata_24hr <- new("topGOdata",
+                  ontology = "BP",
+                  allGenes = geneList_24hr,
+                  geneSelectionFun = function(x)(x == 1),
+                  annot = annFUN.org, mapping = "org.At.tair.db")
+
+
+resultFisher_24hr <- runTest(GOdata_24hr, algorithm = "elim", statistic = "fisher")
+tab_24hr <- GenTable(GOdata_24hr, raw.p.value = resultFisher_24hr, topNodes = length(resultFisher_24hr@score),
+                    numChar = 1000)
+head(tab_24hr)
+
+write.csv(tab_24hr,"FishersExact24hrTableTopGO.csv")
+
+tab_24hr$raw.p.value <- as.numeric(tab_24hr$raw.p.value)
+tab_24hr <- tab_24hr[tab_24hr$raw.p.value < 0.05,] # filter terms for KS p<0.05
+tab_24hr
+options(scipen=0)
+tab_24hr <- tab_24hr %>% 
+  filter(Term != "biological_process")
+
+ntop <- 30
+ggdata_24hr <- tab_24hr[1:ntop,]
+ggdata_24hr$Term <- factor(ggdata_24hr$Term, levels = rev(ggdata_24hr$Term)) 
+
+ggplot(ggdata_24hr, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
+  geom_point(shape = 21, fill ='darkgreen') +
+  scale_size(range = c(0.0,8.5)) +
+  scale_y_continuous(limits=c(0.000,0.009),breaks=c(0.000, 0.002,0.004, 0.006,0.008)) +
+  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+  labs(
+    title = '24 hr GO Biological processes',
+    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+
+ggsave("TopGO_Fishers24hr.png")
+
+############################
+#3 hr module fishers exact
+############################
+
+module3 <- my_network_modules %>% 
+  filter(module==3) %>% 
+  select(gene_ID) %>% 
+  rename(target_id = gene_ID)
+module3$significant <- 1
+
+ATnames <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/5_BLAST/AllDmProteinsBLASTresults/DmProteinsTairdbBLASTconcat.txt", col_names =F)
+ATnames <- ATnames %>% 
+  rename(target_id = X1, ATgene_ID = X2) %>% 
+  select(target_id, ATgene_ID )
+
+test <- ATnames %>% 
+  left_join(module3, by="target_id")
+
+test$significant <- na_replace(test$significant , 0)
+  
+test$ATgene_ID <-  substr(test$ATgene_ID, 1,9)
+
+cutof <- 0.05 
+tmp_24hr <- ifelse(DE_24hr$qval < qcutoff, 1, 0)
+geneList_module3 <- test
+names(geneList_module3) <- unlist(lapply(strsplit(test$ATgene_ID, split = ".", fixed = T), function(x)x[1]))
+head(geneList_module3)
+
+
+DE_24hr$ATgene_ID <-  substr(DE_24hr$ATgene_ID, 1,9)
+
+qcutoff <- 0.05 
+tmp_24hr <- ifelse(DE_24hr$qval < qcutoff, 1, 0)
+geneList_24hr <- tmp_24hr
+names(geneList_24hr) <- unlist(lapply(strsplit(DE_24hr$ATgene_ID, split = ".", fixed = T), function(x)x[1]))
+head(geneList_24hr)
+
+
+GOdata_24hr <- new("topGOdata",
+                   ontology = "BP",
+                   allGenes = geneList_24hr,
+                   geneSelectionFun = function(x)(x == 1),
+                   annot = annFUN.org, mapping = "org.At.tair.db")
+
+resultFisher_24hr <- runTest(GOdata_24hr, algorithm = "elim", statistic = "fisher")
+tab_24hr <- GenTable(GOdata_24hr, raw.p.value = resultFisher_24hr, topNodes = length(resultFisher_24hr@score),
+                     numChar = 1000)
+head(tab_24hr)
+
+write.csv(tab_24hr,"FishersExact24hrTableTopGO.csv")
+
+tab_24hr$raw.p.value <- as.numeric(tab_24hr$raw.p.value)
+tab_24hr <- tab_24hr[tab_24hr$raw.p.value < 0.05,] # filter terms for KS p<0.05
+tab_24hr
+options(scipen=0)
+tab_24hr <- tab_24hr %>% 
+  filter(Term != "biological_process")
+
+ntop <- 30
+ggdata_24hr <- tab_24hr[1:ntop,]
+ggdata_24hr$Term <- factor(ggdata_24hr$Term, levels = rev(ggdata_24hr$Term)) 
+
+ggplot(ggdata_24hr, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
+  geom_point(shape = 21, fill ='darkgreen') +
+  scale_size(range = c(0.0,8.5)) +
+  scale_y_continuous(limits=c(0.000,0.009),breaks=c(0.000, 0.002,0.004, 0.006,0.008)) +
+  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+  labs(
+    title = '24 hr GO Biological processes',
+    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+
+ggsave("TopGO_Fishers24hr.png")
+
+######################
+#1hr KS
+######################
+
+tmp_1hr <- read.csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_1hr/DEGcsvs/SleuthTable_1hr.csv")
+ATnames <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/5_BLAST/AllDmProteinsBLASTresults/DmProteinsTairdbBLASTconcat.txt", col_names =F)
+ATnames <- ATnames %>% 
+  rename(target_id = X1, ATgene_ID = X2)
+
+tmp_1hr <- tmp_1hr %>% 
+  left_join(ATnames, by = 'target_id') %>% 
+  select(target_id, ATgene_ID, qval) %>% 
+  na.omit(ATgene_ID) %>% 
+  na.omit(qval)
+
+geneList_1hr <- tmp_1hr$qval
+names(geneList_1hr) <- tmp_1hr$ATgene_ID %>% substr(1,9)
+head(geneList_1hr)
+tail(geneList_1hr)
+
+GOdata_1hr <- new("topGOdata",
+              ontology = "BP",
+              allGenes = geneList_1hr,
+              geneSelectionFun = function(x)x,
+              annot = annFUN.org, mapping = "org.At.tair.db")
+
+resultKS_1hr <- runTest(GOdata_1hr, algorithm = "weight01", statistic = "ks")
+options(scipen=999)
+goEnrichment_1hr <- GenTable(
+  GOdata_1hr,
+  KS = resultKS_1hr,
+  topNodes = length(resultKS_1hr@score),
+  orderBy = "KS",
+  numChar = 1000)
+
+goEnrichment_1hr[1, 6] = 0.000000000000000000000000000001
+goEnrichment_1hr$KS <- as.numeric(goEnrichment_1hr$KS)
+goEnrichment_1hr <- goEnrichment_1hr[goEnrichment_1hr$KS < 0.05,] # filter terms for KS p<0.05
+goEnrichment_1hr <- goEnrichment_1hr[,c("GO.ID","Term","KS")]
+goEnrichment_1hr
+
+ntop <- 30
+ggdata_1hrks <- goEnrichment_1hr[1:ntop,]
+ggdata_1hrks$Term <- factor(ggdata_1hrks$Term, levels = rev(ggdata_1hrks$Term)) # fixes order
+gg2 <- ggplot(ggdata_1hrks,
+              aes(x = Term, y = -log10(KS), size = -log10(KS), fill = -log10(KS))) +
+  
+  expand_limits(y = 1) +
+  geom_point(shape = 21) +
+  scale_size(range = c(2.5,12.5)) +
+  scale_fill_continuous(low = 'royalblue', high = 'red4') +
+  xlab('') + ylab('Enrichment score') +
+  labs(
+    title = 'GO Biological processes',
+    subtitle = 'Top 30 terms ordered by Kolmogorov-Smirnov p-value',
+    caption = 'Cut-off lines drawn at equivalents of p=0.05, p=0.01, p=0.001') +
+  
+  geom_hline(yintercept = c(-log10(0.05), -log10(0.01), -log10(0.001)),
+             linetype = c("dotted", "longdash", "solid"),
+             colour = c("black", "black", "black")) +
+  
+  theme_bw(base_size = 24) +
+  theme(
+    legend.position = 'right',
+    legend.background = element_rect(),
+    plot.title = element_text(angle = 0, size = 16, face = 'bold', vjust = 1),
+    plot.subtitle = element_text(angle = 0, size = 14, face = 'bold', vjust = 1),
+    plot.caption = element_text(angle = 0, size = 12, face = 'bold', vjust = 1),
+    
+    axis.text.x = element_text(angle = 0, size = 12, face = 'bold', hjust = 1.10),
+    axis.text.y = element_text(angle = 0, size = 12, face = 'bold', vjust = 0.5),
+    axis.title = element_text(size = 12, face = 'bold'),
+    axis.title.x = element_text(size = 12, face = 'bold'),
+    axis.title.y = element_text(size = 12, face = 'bold'),
+    axis.line = element_line(colour = 'black'),
+    
+    #Legend
+    legend.key = element_blank(), # removes the border
+    legend.key.size = unit(1, "cm"), # Sets overall area/size of the legend
+    legend.text = element_text(size = 14, face = "bold"), # Text size
+    title = element_text(size = 14, face = "bold")) +
+  coord_flip() 
+
+ggsave("Top30GOBP_1hKSr.png")
+
+######################
+#24hr KS
+######################
+
+tmp_24hr <- read.csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_24hr/DEGcsvs/SleuthTable_24hr.csv")
+ATnames <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/5_BLAST/AllDmProteinsBLASTresults/DmProteinsTairdbBLASTconcat.txt", col_names =F)
+ATnames <- ATnames %>% 
+  rename(target_id = X1, ATgene_ID = X2)
+
+tmp_24hr <- tmp_24hr %>% 
+  left_join(ATnames, by = 'target_id') %>% 
+  select(target_id, ATgene_ID, qval) %>% 
+  na.omit(ATgene_ID) %>% 
+  na.omit(qval)
+
+geneList_24hr <- tmp_24hr$qval
+names(geneList_24hr) <- tmp_24hr$ATgene_ID %>% substr(1,9)
+head(geneList_24hr)
+tail(geneList_24hr)
+
+GOdata_24hr <- new("topGOdata",
+                  ontology = "BP",
+                  allGenes = geneList_24hr,
+                  geneSelectionFun = function(x)x,
+                  annot = annFUN.org, mapping = "org.At.tair.db")
+
+GOdata_24hr
+
+resultKS_24hr <- runTest(GOdata_24hr, algorithm = "weight01", statistic = "ks")
+options(scipen=999)
+goEnrichment_24hr <- GenTable(
+  GOdata_24hr,
+  KS = resultKS_24hr,
+  topNodes = length(resultKS_24hr@score),
+  orderBy = "KS",
+  numChar = 1000)
+
+goEnrichment_24hr[1, 6] = 0.000000000000000000000000000001
+goEnrichment_24hr$KS <- as.numeric(goEnrichment_24hr$KS)
+goEnrichment_24hr <- goEnrichment_24hr[goEnrichment_24hr$KS < 0.05,] # filter terms for KS p<0.05
+goEnrichment_24hr <- goEnrichment_24hr[,c("GO.ID","Term","KS")]
+goEnrichment_24hr
+
+ntop <- 30
+goEnrichment_24hr <- goEnrichment_24hr[1:ntop,]
+goEnrichment_24hr$Term <- factor(goEnrichment_24hr$Term, levels = rev(goEnrichment_24hr$Term)) # fixes order
+gg2 <- ggplot(goEnrichment_24hr,
+              aes(x = Term, y = -log10(KS), size = -log10(KS), fill = -log10(KS))) +
+  
+  expand_limits(y = 1) +
+  geom_point(shape = 21) +
+  scale_size(range = c(2.5,12.5)) +
+  scale_fill_continuous(low = 'royalblue', high = 'red4') +
+  xlab('') + ylab('Enrichment score') +
+  labs(
+    title = 'GO Biological processes',
+    subtitle = 'Top 30 terms ordered by Kolmogorov-Smirnov p-value',
+    caption = 'Cut-off lines drawn at equivalents of p=0.05, p=0.01, p=0.001') +
+  
+  geom_hline(yintercept = c(-log10(0.05), -log10(0.01), -log10(0.001)),
+             linetype = c("dotted", "longdash", "solid"),
+             colour = c("black", "black", "black")) +
+  
+  theme_bw(base_size = 24) +
+  theme(
+    legend.position = 'right',
+    legend.background = element_rect(),
+    plot.title = element_text(angle = 0, size = 16, face = 'bold', vjust = 1),
+    plot.subtitle = element_text(angle = 0, size = 14, face = 'bold', vjust = 1),
+    plot.caption = element_text(angle = 0, size = 12, face = 'bold', vjust = 1),
+    
+    axis.text.x = element_text(angle = 0, size = 12, face = 'bold', hjust = 1.10),
+    axis.text.y = element_text(angle = 0, size = 12, face = 'bold', vjust = 0.5),
+    axis.title = element_text(size = 12, face = 'bold'),
+    axis.title.x = element_text(size = 12, face = 'bold'),
+    axis.title.y = element_text(size = 12, face = 'bold'),
+    axis.line = element_line(colour = 'black'),
+    
+    #Legend
+    legend.key = element_blank(), # removes the border
+    legend.key.size = unit(1, "cm"), # Sets overall area/size of the legend
+    legend.text = element_text(size = 14, face = "bold"), # Text size
+    title = element_text(size = 14, face = "bold")) +
+  coord_flip() 
+
+ggsave("Top30GOBP_24hKSr.png")
+
+#########
+#Get GO Terms for gene list
+#########
+
+library(org.At.tair.db)
+
+genes <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_1hr/DEGcsvs/SleuthList1HrAnnotated.csv")
+genes <- genes$AT_gene_id %>% 
+  substr(1,9)
+  
+
+keytypes(org.At.tair.db)
+
+select(org.At.tair.db, keys = genes,
+       column = c('TAIR',"GO"), keytype = 'TAIR')
+
+
+#######################################
+#module genes + tissue specific genes
+#######################################
+
+setwd("/Users/summerblanco/Desktop")
+library("readxl")
+
+VFTTissueTop5 <- read_excel("mmc2.xlsx",sheet="H")
+VFTTissueTop1 <- read_excel("mmc2.xlsx",sheet="I")
+
+my_network_modules$gene_ID<- my_network_modules$gene_ID %>% 
+  substr(1,11)
+
+test_modules <- VFTTissueTop5 %>% 
+  left_join(my_network_modules, by="gene_ID") %>% 
+  na.omit(module)
+
+Sleuth_1hr <- Sleuth_1hr %>% 
+  rename(gene_ID = target_id)
+
+Sleuth_1hr$gene_ID<- Sleuth_1hr$gene_ID %>% 
+  substr(1,11)
+
+test_Sleuth1hr <- Sleuth_1hr %>% 
+  left_join(VFTTissueTop5, by="gene_ID")
+
+Sleuth_1hr_TissueOverlap1<- VFTTissueTop1 %>%
+  filter(gene_ID %in% Sleuth_1hr$gene_ID) %>% 
+  left_join(Sleuth_1hr, by = 'gene_ID') %>% 
+  left_join(my_network_moduless_annotated)
+  dplyr::select(gene_ID, tissue, AT_gene_id, Description, HigherExpressionIn) 
+
+Sleuth_1hr_TissueOverlap5<- VFTTissueTop5 %>%
+  filter(gene_ID %in% Sleuth_1hr$gene_ID) %>% 
+  left_join(Sleuth_1hr, by = 'gene_ID') %>% 
+  dplyr::select(gene_ID, tissue, AT_gene_id, Description, HigherExpressionIn)
+
+Sleuth_24hr <- Sleuth_24hr %>% 
+  rename(gene_ID = target_id)
+
+Sleuth_24hr$gene_ID<- Sleuth_24hr$gene_ID %>% 
+  substr(1,11)
+
+Sleuth_24hr_TissueOverlap1<- VFTTissueTop1 %>%
+  filter(gene_ID %in% Sleuth_24hr$gene_ID)
+
+Sleuth_24hr_TissueOverlap5<- VFTTissueTop5 %>%
+  filter(gene_ID %in% Sleuth_24hr$gene_ID)

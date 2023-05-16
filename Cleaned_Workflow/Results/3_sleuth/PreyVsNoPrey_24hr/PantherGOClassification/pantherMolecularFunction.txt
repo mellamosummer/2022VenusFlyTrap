@@ -1,6 +1,0 @@
-1	transcription regulator activity (GO:0140110)	4	3.2%	3.0%
-2	molecular adaptor activity (GO:0060090)	1	0.8%	0.8%
-3	binding (GO:0005488)	9	7.1%	6.8%
-4	catalytic activity (GO:0003824)	28	22.2%	21.2%
-5	No PANTHER category is assigned (UNCLASSIFIED)	85	67.5%	64.4%
-6	transporter activity (GO:0005215)	5	4.0%	3.8%

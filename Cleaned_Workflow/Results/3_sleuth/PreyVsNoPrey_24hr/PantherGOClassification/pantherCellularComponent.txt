@@ -1,3 +1,0 @@
-1	cellular anatomical entity (GO:0110165)	44	34.9%	34.1%
-2	protein-containing complex (GO:0032991)	3	2.4%	2.3%
-3	No PANTHER category is assigned (UNCLASSIFIED)	82	65.1%	63.6%

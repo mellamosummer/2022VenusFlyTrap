@@ -1,0 +1,179 @@
+"","GO.ID","Term","Annotated","Significant","Expected","raw.p.value"
+"1","GO:0009611","response to wounding",280,19,2.87,0.0000000000093
+"2","GO:0071456","cellular response to hypoxia",87,10,0.89,0.0000000067
+"3","GO:0008150","biological_process",9513,117,97.51,0.00000093
+"4","GO:0009409","response to cold",244,11,2.5,0.000015
+"5","GO:0009651","response to salt stress",302,12,3.1,0.000022
+"6","GO:0009737","response to abscisic acid",457,15,4.68,0.00007
+"7","GO:0042742","defense response to bacterium",359,14,3.68,0.000072
+"8","GO:0019748","secondary metabolic process",259,11,2.65,0.00013
+"9","GO:0009733","response to auxin",170,8,1.74,0.00017
+"10","GO:0050832","defense response to fungus",224,9,2.3,0.00023
+"11","GO:0046208","spermine catabolic process",3,2,0.03,0.00025
+"12","GO:0006979","response to oxidative stress",229,9,2.35,0.00027
+"13","GO:0002376","immune system process",196,10,2.01,0.00027
+"14","GO:0098542","defense response to other organism",731,28,7.49,0.00039
+"15","GO:0009753","response to jasmonic acid",206,10,2.11,0.00041
+"16","GO:0009873","ethylene-activated signaling pathway",45,4,0.46,0.00077
+"17","GO:0080027","response to herbivore",5,2,0.05,0.00083
+"18","GO:0009751","response to salicylic acid",133,8,1.36,0.00174
+"19","GO:0072330","monocarboxylic acid biosynthetic process",141,6,1.45,0.00193
+"20","GO:0001666","response to hypoxia",117,13,1.2,0.00205
+"21","GO:0006355","regulation of DNA-templated transcription",785,16,8.05,0.00225
+"22","GO:0009725","response to hormone",1010,35,10.35,0.00241
+"23","GO:0009739","response to gibberellin",65,4,0.67,0.00302
+"24","GO:0043436","oxoacid metabolic process",917,21,9.4,0.00341
+"25","GO:0009755","hormone-mediated signaling pathway",468,16,4.8,0.00354
+"26","GO:2000022","regulation of jasmonic acid mediated signaling pathway",10,2,0.1,0.00362
+"27","GO:0031348","negative regulation of defense response",37,3,0.38,0.00473
+"28","GO:0010224","response to UV-B",37,3,0.38,0.00473
+"29","GO:0009863","salicylic acid mediated signaling pathway",37,3,0.38,0.00473
+"30","GO:0080134","regulation of response to stress",330,11,3.38,0.00499
+"31","GO:0009682","induced systemic resistance",12,2,0.12,0.00524
+"32","GO:1901657","glycosyl compound metabolic process",77,4,0.79,0.00555
+"33","GO:0048589","developmental growth",563,12,5.77,0.00572
+"34","GO:0009966","regulation of signal transduction",195,8,2,0.00676
+"35","GO:0031537","regulation of anthocyanin metabolic process",14,2,0.14,0.00714
+"36","GO:0002831","regulation of response to biotic stimulus",84,4,0.86,0.00753
+"37","GO:0010817","regulation of hormone levels",133,5,1.36,0.00773
+"38","GO:0043069","negative regulation of programmed cell death",15,2,0.15,0.00819
+"39","GO:0010200","response to chitin",88,4,0.9,0.00885
+"40","GO:0072660","maintenance of protein location in plasma membrane",1,1,0.01,0.00922
+"41","GO:0072720","response to dithiothreitol",1,1,0.01,0.00922
+"42","GO:0098755","maintenance of seed dormancy by absisic acid",1,1,0.01,0.00922
+"43","GO:1900067","regulation of cellular response to alkaline pH",1,1,0.01,0.00922
+"44","GO:0009715","chalcone biosynthetic process",1,1,0.01,0.00922
+"45","GO:0006042","glucosamine biosynthetic process",1,1,0.01,0.00922
+"46","GO:0043065","positive regulation of apoptotic process",1,1,0.01,0.00922
+"47","GO:0030639","polyketide biosynthetic process",1,1,0.01,0.00922
+"48","GO:0032101","regulation of response to external stimulus",90,4,0.92,0.00956
+"49","GO:0019752","carboxylic acid metabolic process",775,18,7.94,0.01021
+"50","GO:0050776","regulation of immune response",49,3,0.5,0.01036
+"51","GO:1902074","response to salt",17,2,0.17,0.01048
+"52","GO:0009932","cell tip growth",94,4,0.96,0.0111
+"53","GO:0006952","defense response",852,32,8.73,0.01126
+"54","GO:0019760","glucosinolate metabolic process",53,3,0.54,0.01282
+"55","GO:0019757","glycosinolate metabolic process",53,3,0.54,0.01282
+"56","GO:0016143","S-glycoside metabolic process",53,3,0.54,0.01282
+"57","GO:0031347","regulation of defense response",253,9,2.59,0.01343
+"58","GO:0010033","response to organic substance",1386,43,14.21,0.01363
+"59","GO:0055085","transmembrane transport",419,9,4.29,0.0154
+"60","GO:0009987","cellular process",7420,93,76.05,0.01564
+"61","GO:0007568","aging",21,2,0.22,0.0158
+"62","GO:0010208","pollen wall assembly",21,2,0.22,0.0158
+"63","GO:0047484","regulation of response to osmotic stress",21,2,0.22,0.0158
+"64","GO:0042445","hormone metabolic process",58,3,0.59,0.01634
+"65","GO:0009723","response to ethylene",106,7,1.09,0.01721
+"66","GO:0009892","negative regulation of metabolic process",653,12,6.69,0.01724
+"67","GO:0042335","cuticle development",22,2,0.23,0.01728
+"68","GO:0033993","response to lipid",782,25,8.02,0.01774
+"69","GO:0098543","detection of other organism",2,1,0.02,0.01837
+"70","GO:0010253","UDP-rhamnose biosynthetic process",2,1,0.02,0.01837
+"71","GO:0016045","detection of bacterium",2,1,0.02,0.01837
+"72","GO:0061635","regulation of protein complex stability",2,1,0.02,0.01837
+"73","GO:0140455","cytoplasm protein quality control",2,1,0.02,0.01837
+"74","GO:0071629","cytoplasm protein quality control by the ubiquitin-proteasome system",2,1,0.02,0.01837
+"75","GO:0015760","glucose-6-phosphate transport",2,1,0.02,0.01837
+"76","GO:0010046","response to mycotoxin",2,1,0.02,0.01837
+"77","GO:0015712","hexose phosphate transport",2,1,0.02,0.01837
+"78","GO:1902931","negative regulation of alcohol biosynthetic process",2,1,0.02,0.01837
+"79","GO:1903427","negative regulation of reactive oxygen species biosynthetic process",2,1,0.02,0.01837
+"80","GO:0046203","spermidine catabolic process",2,1,0.02,0.01837
+"81","GO:0015812","gamma-aminobutyric acid transport",2,1,0.02,0.01837
+"82","GO:0051245","negative regulation of cellular defense response",2,1,0.02,0.01837
+"83","GO:0090359","negative regulation of abscisic acid biosynthetic process",2,1,0.02,0.01837
+"84","GO:0033481","galacturonate biosynthetic process",2,1,0.02,0.01837
+"85","GO:0033478","UDP-rhamnose metabolic process",2,1,0.02,0.01837
+"86","GO:0009800","cinnamic acid biosynthetic process",2,1,0.02,0.01837
+"87","GO:0009803","cinnamic acid metabolic process",2,1,0.02,0.01837
+"88","GO:0046394","carboxylic acid biosynthetic process",314,11,3.22,0.01871
+"89","GO:0010927","cellular component assembly involved in morphogenesis",23,2,0.24,0.01881
+"90","GO:0010928","regulation of auxin mediated signaling pathway",23,2,0.24,0.01881
+"91","GO:0071417","cellular response to organonitrogen compound",23,2,0.24,0.01881
+"92","GO:0032989","cellular component morphogenesis",23,2,0.24,0.01881
+"93","GO:0000038","very long-chain fatty acid metabolic process",23,2,0.24,0.01881
+"94","GO:0009890","negative regulation of biosynthetic process",229,6,2.35,0.01932
+"95","GO:0002682","regulation of immune system process",62,3,0.64,0.01951
+"96","GO:0009226","nucleotide-sugar biosynthetic process",24,2,0.25,0.0204
+"97","GO:0048868","pollen tube development",116,4,1.19,0.02236
+"98","GO:0009740","gibberellic acid mediated signaling pathway",26,2,0.27,0.02374
+"99","GO:0031324","negative regulation of cellular metabolic process",314,7,3.22,0.02619
+"100","GO:2000378","negative regulation of reactive oxygen species metabolic process",3,1,0.03,0.02742
+"101","GO:0051761","sesquiterpene metabolic process",3,1,0.03,0.02742
+"102","GO:0051762","sesquiterpene biosynthetic process",3,1,0.03,0.02742
+"103","GO:0051639","actin filament network formation",3,1,0.03,0.02742
+"104","GO:0006527","arginine catabolic process",3,1,0.03,0.02742
+"105","GO:0006063","uronic acid metabolic process",3,1,0.03,0.02742
+"106","GO:0035264","multicellular organism growth",3,1,0.03,0.02742
+"107","GO:0051560","mitochondrial calcium ion homeostasis",3,1,0.03,0.02742
+"108","GO:0051552","flavone metabolic process",3,1,0.03,0.02742
+"109","GO:0051553","flavone biosynthetic process",3,1,0.03,0.02742
+"110","GO:0051554","flavonol metabolic process",3,1,0.03,0.02742
+"111","GO:0051555","flavonol biosynthetic process",3,1,0.03,0.02742
+"112","GO:0019586","galacturonate metabolic process",3,1,0.03,0.02742
+"113","GO:0080187","floral organ senescence",3,1,0.03,0.02742
+"114","GO:0009871","jasmonic acid and ethylene-dependent systemic resistance, ethylene mediated signaling pathway",3,1,0.03,0.02742
+"115","GO:0036444","calcium import into the mitochondrion",3,1,0.03,0.02742
+"116","GO:0031539","positive regulation of anthocyanin metabolic process",3,1,0.03,0.02742
+"117","GO:0006851","mitochondrial calcium ion transmembrane transport",3,1,0.03,0.02742
+"118","GO:0009617","response to bacterium",438,17,4.49,0.02837
+"119","GO:0048522","positive regulation of cellular process",549,11,5.63,0.02848
+"120","GO:0120255","olefinic compound biosynthetic process",30,3,0.31,0.02867
+"121","GO:1901698","response to nitrogen compound",279,9,2.86,0.02871
+"122","GO:0006633","fatty acid biosynthetic process",72,3,0.74,0.0288
+"123","GO:0010476","gibberellin mediated signaling pathway",29,2,0.3,0.02913
+"124","GO:0048646","anatomical structure formation involved in morphogenesis",126,4,1.29,0.02916
+"125","GO:0009225","nucleotide-sugar metabolic process",30,2,0.31,0.03102
+"126","GO:1901699","cellular response to nitrogen compound",30,2,0.31,0.03102
+"127","GO:0009860","pollen tube growth",75,3,0.77,0.03197
+"128","GO:0042127","regulation of cell population proliferation",31,2,0.32,0.03297
+"129","GO:0071478","cellular response to radiation",77,3,0.79,0.03418
+"130","GO:0014070","response to organic cyclic compound",274,12,2.81,0.03435
+"131","GO:0009826","unidimensional cell growth",196,5,2.01,0.03502
+"132","GO:1901700","response to oxygen-containing compound",1261,33,12.93,0.03503
+"133","GO:0009595","detection of biotic stimulus",4,1,0.04,0.0364
+"134","GO:0008216","spermidine metabolic process",4,1,0.04,0.0364
+"135","GO:0035436","triose phosphate transmembrane transport",4,1,0.04,0.0364
+"136","GO:0106167","extracellular ATP signaling",4,1,0.04,0.0364
+"137","GO:0098581","detection of external biotic stimulus",4,1,0.04,0.0364
+"138","GO:0033198","response to ATP",4,1,0.04,0.0364
+"139","GO:0006564","L-serine biosynthetic process",4,1,0.04,0.0364
+"140","GO:0071323","cellular response to chitin",4,1,0.04,0.0364
+"141","GO:0071318","cellular response to ATP",4,1,0.04,0.0364
+"142","GO:0009625","response to insect",4,1,0.04,0.0364
+"143","GO:0015714","phosphoenolpyruvate transport",4,1,0.04,0.0364
+"144","GO:0015717","triose phosphate transport",4,1,0.04,0.0364
+"145","GO:0033388","putrescine biosynthetic process from arginine",4,1,0.04,0.0364
+"146","GO:0009446","putrescine biosynthetic process",4,1,0.04,0.0364
+"147","GO:0046683","response to organophosphorus",4,1,0.04,0.0364
+"148","GO:0009823","cytokinin catabolic process",4,1,0.04,0.0364
+"149","GO:0010185","regulation of cellular defense response",4,1,0.04,0.0364
+"150","GO:0140115","export across plasma membrane",33,2,0.34,0.03699
+"151","GO:0140352","export from cell",80,3,0.82,0.03765
+"152","GO:0008610","lipid biosynthetic process",415,8,4.25,0.03811
+"153","GO:0009627","systemic acquired resistance",34,2,0.35,0.03907
+"154","GO:0120254","olefinic compound metabolic process",36,3,0.37,0.04056
+"155","GO:0008283","cell population proliferation",35,2,0.36,0.04119
+"156","GO:0009749","response to glucose",35,2,0.36,0.04119
+"157","GO:0045088","regulation of innate immune response",35,2,0.36,0.04119
+"158","GO:0009653","anatomical structure morphogenesis",750,12,7.69,0.04371
+"159","GO:1901615","organic hydroxy compound metabolic process",209,5,2.14,0.04416
+"160","GO:0010148","transpiration",5,1,0.05,0.04529
+"161","GO:0042447","hormone catabolic process",5,1,0.05,0.04529
+"162","GO:0070413","trehalose metabolism in response to stress",5,1,0.05,0.04529
+"163","GO:0045827","negative regulation of isoprenoid metabolic process",5,1,0.05,0.04529
+"164","GO:0010929","positive regulation of auxin mediated signaling pathway",5,1,0.05,0.04529
+"165","GO:0006968","cellular defense response",5,1,0.05,0.04529
+"166","GO:0006047","UDP-N-acetylglucosamine metabolic process",5,1,0.05,0.04529
+"167","GO:0006048","UDP-N-acetylglucosamine biosynthetic process",5,1,0.05,0.04529
+"168","GO:0009445","putrescine metabolic process",5,1,0.05,0.04529
+"169","GO:0009862","systemic acquired resistance, salicylic acid mediated signaling pathway",5,1,0.05,0.04529
+"170","GO:0043066","negative regulation of apoptotic process",5,1,0.05,0.04529
+"171","GO:0071370","cellular response to gibberellin stimulus",37,2,0.38,0.04557
+"172","GO:0000902","cell morphogenesis",282,6,2.89,0.04636
+"173","GO:0048511","rhythmic process",87,3,0.89,0.0464
+"174","GO:0007623","circadian rhythm",87,3,0.89,0.0464
+"175","GO:0016053","organic acid biosynthetic process",362,11,3.71,0.04642
+"176","GO:0000904","cell morphogenesis involved in differentiation",147,4,1.51,0.04706
+"177","GO:0009746","response to hexose",38,2,0.39,0.04782
+"178","GO:0006629","lipid metabolic process",681,11,6.98,0.04957
