@@ -2826,12 +2826,10 @@ library("readxl")
 VFTTissueTop5 <- read_excel("mmc2.xlsx",sheet="H")
 VFTTissueTop1 <- read_excel("mmc2.xlsx",sheet="I")
 
+#match geneID column names
+
 my_network_modules$gene_ID<- my_network_modules$gene_ID %>% 
   substr(1,11)
-
-test_modules <- VFTTissueTop5 %>% 
-  left_join(my_network_modules, by="gene_ID") %>% 
-  na.omit(module)
 
 Sleuth_1hr <- Sleuth_1hr %>% 
   rename(gene_ID = target_id)
@@ -2839,19 +2837,69 @@ Sleuth_1hr <- Sleuth_1hr %>%
 Sleuth_1hr$gene_ID<- Sleuth_1hr$gene_ID %>% 
   substr(1,11)
 
-test_Sleuth1hr <- Sleuth_1hr %>% 
-  left_join(VFTTissueTop5, by="gene_ID")
+#join 1hr DEG list with Tissue specific list from paper (top 1% tissue specific genes)
 
 Sleuth_1hr_TissueOverlap1<- VFTTissueTop1 %>%
   filter(gene_ID %in% Sleuth_1hr$gene_ID) %>% 
   left_join(Sleuth_1hr, by = 'gene_ID') %>% 
-  left_join(my_network_moduless_annotated)
-  dplyr::select(gene_ID, tissue, AT_gene_id, Description, HigherExpressionIn) 
+  left_join(my_network_modules, by = 'gene_ID') %>% 
+  dplyr::select(gene_ID, AT_gene_id, Description, tissue, module, HigherExpressionIn) 
+
+write.csv(Sleuth_1hr_TissueOverlap1, "Sleuth_1hr_TissueOverlap1.csv")
+
+#plots
+
+
+Top1genes1hr_Direction <- Sleuth_1hr_TissueOverlap1 %>% 
+ggplot(aes(y=tissue, fill= HigherExpressionIn)) + 
+  geom_bar()  +
+  scale_y_discrete(name ="Tissue", 
+                   labels=c("Flower","Glands","Gland + Coronatine","Glands + Insect","Petiole","Rim","Root","Trap","Trap + Insect"))
+
+
+Top5genes1hr_Modules <- Sleuth_1hr_TissueOverlap1 %>% 
+  ggplot(aes(y=tissue, fill= as.factor(module))) + 
+  geom_bar()  +
+  scale_y_discrete(name ="Tissue", 
+                   labels=c("Flower","Glands","Gland + Coronatine","Glands + Insect","Petiole","Rim","Root","Trap","Trap + Insect"))
+
+wrap_plots(Top1genes1hr_Direction, Top5genes1hr_Modules, nrow = 1)
+
+ggsave("Top1genes1hr.png", height = 3.5, width = 12, bg = "white")
+
+
+#join 1hr DEG list with Tissue specific list from paper (top 5% tissue specific genes)
 
 Sleuth_1hr_TissueOverlap5<- VFTTissueTop5 %>%
   filter(gene_ID %in% Sleuth_1hr$gene_ID) %>% 
   left_join(Sleuth_1hr, by = 'gene_ID') %>% 
-  dplyr::select(gene_ID, tissue, AT_gene_id, Description, HigherExpressionIn)
+  left_join(my_network_modules, by = 'gene_ID') %>% 
+  dplyr::select(gene_ID, AT_gene_id, Description, tissue, module, HigherExpressionIn)
+
+write.csv(Sleuth_1hr_TissueOverlap5, "Sleuth_1hr_TissueOverlap5.csv")
+
+#plots
+
+Top5genes1hr_Direction<- Sleuth_1hr_TissueOverlap5 %>% 
+  ggplot(aes(y=tissue, fill= HigherExpressionIn)) + 
+  geom_bar()  +
+  scale_y_discrete(name ="Tissue", 
+                   labels=c("Flower","Glands","Gland + Coronatine","Glands + Insect","Petiole","Rim","Root","Trap","Trap + Insect", "NA"))
+
+
+Top5genes5hr_Modules<- Sleuth_1hr_TissueOverlap5 %>% 
+  ggplot(aes(y=tissue, fill= as.factor(module))) + 
+  geom_bar()  +
+  scale_y_discrete(name ="Tissue", 
+                   labels=c("Flower","Glands","Gland + Coronatine","Glands + Insect","Petiole","Rim","Root","Trap","Trap + Insect", "NA"))
+
+
+
+wrap_plots(Top5genes1hr_Direction, Top5genes5hr_Modules, nrow = 1)
+
+ggsave("Top5genes1hr.png", height = 3.5, width = 12, bg = "white")
+
+#match geneID column names -- 24 hr
 
 Sleuth_24hr <- Sleuth_24hr %>% 
   rename(gene_ID = target_id)
@@ -2859,8 +2907,77 @@ Sleuth_24hr <- Sleuth_24hr %>%
 Sleuth_24hr$gene_ID<- Sleuth_24hr$gene_ID %>% 
   substr(1,11)
 
+#
+
 Sleuth_24hr_TissueOverlap1<- VFTTissueTop1 %>%
-  filter(gene_ID %in% Sleuth_24hr$gene_ID)
+  filter(gene_ID %in% Sleuth_24hr$gene_ID) %>% 
+  left_join(Sleuth_24hr, by = 'gene_ID') %>% 
+  left_join(my_network_modules, by = 'gene_ID') %>% 
+  dplyr::select(gene_ID, AT_gene_id, Description, tissue, module, DE_Direction) 
+
+write.csv(Sleuth_24hr_TissueOverlap1, "Sleuth_24hr_TissueOverlap1.csv")
+
+#plots
+
+Top1genes24hr_Direction <- Sleuth_24hr_TissueOverlap1 %>% 
+  ggplot(aes(y=tissue, fill= DE_Direction)) + 
+  geom_bar()  +
+  scale_y_discrete(name ="Tissue", 
+                   labels=c("Flower","Glands","Gland + Coronatine","Glands + Insect","Petiole","Rim","Root","Trap","Trap + Insect","NA"))
+
+
+Top1genes24hr_Modules <- Sleuth_24hr_TissueOverlap1 %>% 
+  ggplot(aes(y=tissue, fill= as.factor(module))) + 
+  geom_bar()  +
+  scale_y_discrete(name ="Tissue", 
+                   labels=c("Flower","Glands","Gland + Coronatine","Glands + Insect","Petiole","Rim","Root","Trap","Trap + Insect","NA"))
+
+
+wrap_plots(Top1genes24hr_Direction, Top1genes24hr_Modules, nrow = 1)
+
+ggsave("Top1genes24hr.png", height = 3.5, width = 12, bg = "white")
+
+#
 
 Sleuth_24hr_TissueOverlap5<- VFTTissueTop5 %>%
-  filter(gene_ID %in% Sleuth_24hr$gene_ID)
+  filter(gene_ID %in% Sleuth_24hr$gene_ID) %>% 
+  left_join(Sleuth_24hr, by = 'gene_ID') %>% 
+  left_join(my_network_modules, by = 'gene_ID') %>% 
+  dplyr::select(gene_ID, AT_gene_id, Description, tissue, module, DE_Direction) 
+
+write.csv(Sleuth_24hr_TissueOverlap5, "Sleuth_24hr_TissueOverlap5.csv")
+
+#plots
+
+Top5genes24hr_Direction<- Sleuth_24hr_TissueOverlap5 %>% 
+  ggplot(aes(y=tissue, fill= DE_Direction)) + 
+  geom_bar()  +
+  scale_y_discrete(name ="Tissue", 
+                   labels=c("Flower","Glands","Gland + Coronatine","Glands + Insect","Petiole","Rim","Root","Trap","Trap + Insect","NA"))
+
+
+Top5genes24hr_Modules <- Sleuth_24hr_TissueOverlap5 %>% 
+  ggplot(aes(y=tissue, fill= as.factor(module))) + 
+  geom_bar()  +
+  scale_y_discrete(name ="Tissue", 
+                   labels=c("Flower","Glands","Gland + Coronatine","Glands + Insect","Petiole","Rim","Root","Trap","Trap + Insect","NA"))
+
+wrap_plots(Top5genes24hr_Direction, Top5genes24hr_Modules, nrow = 1)
+
+ggsave("Top5genes24hr.png", height = 3.5, width = 12, bg = "white")
+
+#####
+#modules
+#####
+
+my_network_modules %>% 
+  group_by(module) %>% 
+  count()
+
+VFTTissueTop5 %>%
+  filter(gene_ID %in% my_network_modules$gene_ID) %>% 
+  left_join(my_network_modules, by = 'gene_ID') %>% 
+  dplyr::select(gene_ID, ATgene_ID, TopBLASTHit_Name, tissue, module) %>% 
+  mutate(module = factor(module, levels=c('3','10','4', '7', '2', '6', '9','16','13','24', '5','168','142')) %>%
+  ggplot(aes(x=module, fill= tissue)) + 
+  geom_bar()
