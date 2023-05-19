@@ -2452,7 +2452,7 @@ names(geneList_1hr) <- unlist(lapply(strsplit(DE_1hr$ATgene_ID, split = ".", fix
 head(geneList_1hr)
 
 GOdata_1hr <- new("topGOdata",
-              ontology = "BP",
+              ontology = "MF",
               allGenes = geneList_1hr,
               geneSelectionFun = function(x)(x == 1),
               annot = annFUN.org, mapping = "org.At.tair.db")
@@ -2462,32 +2462,31 @@ tab_1hr <- GenTable(GOdata_1hr, raw.p.value = resultFisher_1hr, topNodes = lengt
                 numChar = 1000)
 head(tab_1hr)
 
-write.table(var,"genetoGOmapping.txt",sep="\t",quote=F)
-
-write.csv(tab_1hr,"FishersExact1hrTableTopGO.csv")
+write.csv(tab_1hr,"FishersExact1hrTableTopGOMF.csv")
 
 tab_1hr$raw.p.value <- as.numeric(tab_1hr$raw.p.value)
 tab_1hr <- tab_1hr[tab_1hr$raw.p.value < 0.05,] # filter terms for KS p<0.05
 tab_1hr
 tab_1hr <- tab_1hr %>% 
-  filter(Term != "biological_process")
+  filter(Term != "molecular_function")
 
 ntop <- 30
 ggdata_1hr <- tab_1hr[1:ntop,]
 ggdata_1hr$Term <- factor(ggdata_1hr$Term, levels = rev(ggdata_1hr$Term)) 
 
-ggplot(ggdata_1hr,
-              aes(x = Term, y = as.numeric(raw.p.value), size = Significant, fill= 'green')) +
-  geom_point(shape = 21, fill ='darkgreen') +
-  scale_size(range = c(2.5,12.5)) +
-  xlab('Term') + ylab('p-value') + guides(size = guide_legend(title = "Number of Genes")) +
-  scale_y_continuous(limits=c(0.000,0.009),breaks=c(0.000, 0.002,0.004, 0.006,0.008)) +
+TopGo1hrMF <- ggplot(ggdata_1hr,
+              aes(x = reorder(Term,-log10(raw.p.value),sum), y = Significant/Annotated*100, size = Significant, fill= -log10(raw.p.value))) +
+  geom_point(shape = 21) +
+  scale_size(range = c(2.5,12.5)) + scale_fill_continuous(low = 'royalblue', high = 'red4') +
+  xlab('Term') + ylab('Rich factor') + guides(size = guide_legend(title = "Number of Genes")) +
   labs(
-    title = '1 hr GO Biological processes',
-    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") +
+    title = '1 hr GO Molecular Function',
+    subtitle = "Top terms ordered by Fisher's Exact Test p-value") + theme_light() +
   coord_flip()
 
-ggsave("TopGO_Fishers1hr.png")
+TopGo1hrMF
+
+ggsave("TopGO_Fishers1hrMF.png", height=10, width=12)
 
 ######################
 #24hr Fishers Exact
@@ -2514,14 +2513,9 @@ geneList_24hr <- tmp_24hr
 names(geneList_24hr) <- unlist(lapply(strsplit(DE_24hr$ATgene_ID, split = ".", fixed = T), function(x)x[1]))
 head(geneList_24hr)
 
-genelistnames <- names(geneList_24hr) 
-
-genelistnames<- as.data.frame(genelistnames)
-
-
 
 GOdata_24hr <- new("topGOdata",
-                  ontology = "BP",
+                  ontology = "MF",
                   allGenes = geneList_24hr,
                   geneSelectionFun = function(x)(x == 1),
                   annot = annFUN.org, mapping = "org.At.tair.db")
@@ -2532,29 +2526,35 @@ tab_24hr <- GenTable(GOdata_24hr, raw.p.value = resultFisher_24hr, topNodes = le
                     numChar = 1000)
 head(tab_24hr)
 
-write.csv(tab_24hr,"FishersExact24hrTableTopGO.csv")
+write.csv(tab_24hr,"FishersExact24hrTableTopGOMF.csv")
 
 tab_24hr$raw.p.value <- as.numeric(tab_24hr$raw.p.value)
 tab_24hr <- tab_24hr[tab_24hr$raw.p.value < 0.05,] # filter terms for KS p<0.05
 tab_24hr
 options(scipen=0)
 tab_24hr <- tab_24hr %>% 
-  filter(Term != "biological_process")
+  filter(Term != "molecular_function")
 
 ntop <- 30
 ggdata_24hr <- tab_24hr[1:ntop,]
 ggdata_24hr$Term <- factor(ggdata_24hr$Term, levels = rev(ggdata_24hr$Term)) 
 
-ggplot(ggdata_24hr, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
-  geom_point(shape = 21, fill ='darkgreen') +
-  scale_size(range = c(0.0,8.5)) +
-  scale_y_continuous(limits=c(0.000,0.009),breaks=c(0.000, 0.002,0.004, 0.006,0.008)) +
-  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+TopGo24hrMF <- ggplot(ggdata_24hr,
+       aes(x = reorder(Term,-log10(raw.p.value),sum), y = Significant/Annotated*100, size = Significant, fill= -log10(raw.p.value))) +
+  geom_point(shape = 21) +
+  scale_size(range = c(2.5,12.5)) + scale_fill_continuous(low = 'royalblue', high = 'red4') +
+  xlab('Term') + ylab('Rich factor') + guides(size = guide_legend(title = "Number of Genes")) +
   labs(
-    title = '24 hr GO Biological processes',
-    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+    title = '24 hr GO Molecular Function',
+    subtitle = "Top terms ordered by Fisher's Exact Test p-value") + theme_light() +
+  coord_flip()
 
-ggsave("TopGO_Fishers24hr.png")
+TopGo24hrMF
+
+ggsave("TopGO_Fishers24hrMF.png", height=10, width=12)
+
+wrap_plots(TopGo1hrMF, TopGo24hrMF, nrow = 1)
+ggsave("SleuthGOplotsMF.png", height = 10, width = 23, bg = "white")
 
 ############################
 #3 hr module fishers exact
@@ -2655,7 +2655,7 @@ ggdata_module4$Term <- factor(ggdata_module4$Term, levels = rev(ggdata_module4$T
 
 TopGoModule4 <- ggplot(ggdata_module4, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
   geom_point(shape = 21, fill ='darkgreen') +
-  scale_size(range = c(0.0,8.5)) +
+  scale_size(range = c(0.0,8.5)) + 
   xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
   labs(
     title = 'Module 4 GO Biological processes',
