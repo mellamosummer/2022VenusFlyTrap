@@ -2462,6 +2462,8 @@ tab_1hr <- GenTable(GOdata_1hr, raw.p.value = resultFisher_1hr, topNodes = lengt
                 numChar = 1000)
 head(tab_1hr)
 
+write.table(var,"genetoGOmapping.txt",sep="\t",quote=F)
+
 write.csv(tab_1hr,"FishersExact1hrTableTopGO.csv")
 
 tab_1hr$raw.p.value <- as.numeric(tab_1hr$raw.p.value)
@@ -2558,74 +2560,451 @@ ggsave("TopGO_Fishers24hr.png")
 #3 hr module fishers exact
 ############################
 
-module3 <- my_network_modules %>% 
-  filter(module==3) %>% 
-  select(gene_ID) %>% 
-  rename(target_id = gene_ID)
-module3$significant <- 1
+modules <- ATnames %>% 
+  rename(gene_ID = target_id) %>% 
+  left_join(my_network_modules, by = 'gene_ID')
 
-ATnames <- read_delim("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/5_BLAST/AllDmProteinsBLASTresults/DmProteinsTairdbBLASTconcat.txt", col_names =F)
-ATnames <- ATnames %>% 
-  rename(target_id = X1, ATgene_ID = X2) %>% 
-  select(target_id, ATgene_ID )
+DEmodules <- modules %>% 
+  select(ATgene_ID.x, module)
 
-test <- ATnames %>% 
-  left_join(module3, by="target_id")
+DEmodules$ATgene_ID.x <-  substr(DEmodules$ATgene_ID.x, 1,9)
 
-test$significant <- na_replace(test$significant , 0)
-  
-test$ATgene_ID <-  substr(test$ATgene_ID, 1,9)
-
-cutof <- 0.05 
-tmp_24hr <- ifelse(DE_24hr$qval < qcutoff, 1, 0)
-geneList_module3 <- test
-names(geneList_module3) <- unlist(lapply(strsplit(test$ATgene_ID, split = ".", fixed = T), function(x)x[1]))
+tmp_DEmodules <- ifelse(DEmodules$module == 3, 1, 0)
+tmp_DEmodules <- na_replace(tmp_DEmodules, 0)
+head(tmp_DEmodules)
+geneList_module3 <- tmp_DEmodules
+names(geneList_module3) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split = ".", fixed = T), function(x)x[1]))
 head(geneList_module3)
 
-
-DE_24hr$ATgene_ID <-  substr(DE_24hr$ATgene_ID, 1,9)
-
-qcutoff <- 0.05 
-tmp_24hr <- ifelse(DE_24hr$qval < qcutoff, 1, 0)
-geneList_24hr <- tmp_24hr
-names(geneList_24hr) <- unlist(lapply(strsplit(DE_24hr$ATgene_ID, split = ".", fixed = T), function(x)x[1]))
-head(geneList_24hr)
-
-
-GOdata_24hr <- new("topGOdata",
+GOdata_module3 <- new("topGOdata",
                    ontology = "BP",
-                   allGenes = geneList_24hr,
+                   allGenes = geneList_module3,
                    geneSelectionFun = function(x)(x == 1),
                    annot = annFUN.org, mapping = "org.At.tair.db")
 
-resultFisher_24hr <- runTest(GOdata_24hr, algorithm = "elim", statistic = "fisher")
-tab_24hr <- GenTable(GOdata_24hr, raw.p.value = resultFisher_24hr, topNodes = length(resultFisher_24hr@score),
+resultFisher_module3 <- runTest(GOdata_module3, algorithm = "elim", statistic = "fisher")
+
+tab_module3 <- GenTable(GOdata_module3, raw.p.value = resultFisher_module3, topNodes = length(resultFisher_module3@score),
                      numChar = 1000)
-head(tab_24hr)
+head(tab_module3)
 
-write.csv(tab_24hr,"FishersExact24hrTableTopGO.csv")
+write.csv(tab_module3,"FishersExactModule3TableTopGO.csv")
 
-tab_24hr$raw.p.value <- as.numeric(tab_24hr$raw.p.value)
-tab_24hr <- tab_24hr[tab_24hr$raw.p.value < 0.05,] # filter terms for KS p<0.05
-tab_24hr
+tab_module3$raw.p.value <- as.numeric(tab_module3$raw.p.value)
+tab_module3 <- tab_module3[tab_module3$raw.p.value < 0.05,] # filter terms for KS p<0.05
+tab_module3
 options(scipen=0)
-tab_24hr <- tab_24hr %>% 
+tab_module3 <- tab_module3 %>% 
   filter(Term != "biological_process")
 
 ntop <- 30
-ggdata_24hr <- tab_24hr[1:ntop,]
-ggdata_24hr$Term <- factor(ggdata_24hr$Term, levels = rev(ggdata_24hr$Term)) 
+ggdata_module3 <- tab_module3[1:ntop,]
+ggdata_module3$Term <- factor(ggdata_module3$Term, levels = rev(ggdata_module3$Term)) 
 
-ggplot(ggdata_24hr, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
+TopGoModule3 <-ggplot(ggdata_module3, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
   geom_point(shape = 21, fill ='darkgreen') +
   scale_size(range = c(0.0,8.5)) +
-  scale_y_continuous(limits=c(0.000,0.009),breaks=c(0.000, 0.002,0.004, 0.006,0.008)) +
   xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
   labs(
-    title = '24 hr GO Biological processes',
+    title = 'Module 3 GO Biological processes',
     subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
 
-ggsave("TopGO_Fishers24hr.png")
+############################
+# module 4 fishers exact
+############################
+
+modules <- ATnames %>% 
+  rename(gene_ID = target_id) %>% 
+  left_join(my_network_modules, by = 'gene_ID')
+
+DEmodules <- modules %>% 
+  select(ATgene_ID.x, module)
+
+DEmodules$ATgene_ID.x <-  substr(DEmodules$ATgene_ID.x, 1,9)
+
+tmp_DEmodules <- ifelse(DEmodules$module == 4, 1, 0)
+tmp_DEmodules <- na_replace(tmp_DEmodules, 0)
+head(tmp_DEmodules)
+geneList_module4 <- tmp_DEmodules
+names(geneList_module4) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split = ".", fixed = T), function(x)x[1]))
+head(geneList_module4)
+
+GOdata_module4 <- new("topGOdata",
+                      ontology = "BP",
+                      allGenes = geneList_module4,
+                      geneSelectionFun = function(x)(x == 1),
+                      annot = annFUN.org, mapping = "org.At.tair.db")
+
+resultFisher_module4 <- runTest(GOdata_module4, algorithm = "elim", statistic = "fisher")
+
+tab_module4 <- GenTable(GOdata_module4, raw.p.value = resultFisher_module4, topNodes = length(resultFisher_module4@score),
+                        numChar = 1000)
+head(tab_module4)
+
+write.csv(tab_module4,"FishersExactModule4TableTopGO.csv")
+
+tab_module4$raw.p.value <- as.numeric(tab_module4$raw.p.value)
+tab_module4 <- tab_module4[tab_module4$raw.p.value < 0.05,] # filter terms for KS p<0.05
+tab_module4
+options(scipen=0)
+tab_module4 <- tab_module4 %>% 
+  filter(Term != "biological_process")
+ntop <- 30
+ggdata_module4 <- tab_module4[1:ntop,]
+ggdata_module4$Term <- factor(ggdata_module4$Term, levels = rev(ggdata_module4$Term)) 
+
+TopGoModule4 <- ggplot(ggdata_module4, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
+  geom_point(shape = 21, fill ='darkgreen') +
+  scale_size(range = c(0.0,8.5)) +
+  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+  labs(
+    title = 'Module 4 GO Biological processes',
+    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+
+
+############################
+# module 6 fishers exact
+############################
+
+modules <- ATnames %>% 
+  rename(gene_ID = target_id) %>% 
+  left_join(my_network_modules, by = 'gene_ID')
+
+DEmodules <- modules %>% 
+  select(ATgene_ID.x, module)
+
+DEmodules$ATgene_ID.x <-  substr(DEmodules$ATgene_ID.x, 1,9)
+
+tmp_DEmodules <- ifelse(DEmodules$module == 6, 1, 0)
+tmp_DEmodules <- na_replace(tmp_DEmodules, 0)
+head(tmp_DEmodules)
+geneList_module6 <- tmp_DEmodules
+names(geneList_module6) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split = ".", fixed = T), function(x)x[1]))
+head(geneList_module6)
+
+GOdata_module6 <- new("topGOdata",
+                      ontology = "BP",
+                      allGenes = geneList_module6,
+                      geneSelectionFun = function(x)(x == 1),
+                      annot = annFUN.org, mapping = "org.At.tair.db")
+
+resultFisher_module6 <- runTest(GOdata_module6, algorithm = "elim", statistic = "fisher")
+
+tab_module6 <- GenTable(GOdata_module6, raw.p.value = resultFisher_module6, topNodes = length(resultFisher_module6@score),
+                        numChar = 1000)
+head(tab_module6)
+
+write.csv(tab_module6,"FishersExactModule6TableTopGO.csv")
+
+
+tab_module6$raw.p.value <- as.numeric(tab_module6$raw.p.value)
+tab_module6 <- tab_module6[tab_module6$raw.p.value < 0.05,] # filter terms for KS p<0.05
+tab_module6
+options(scipen=0)
+tab_module6 <- tab_module6 %>% 
+  filter(Term != "biological_process")
+ntop <- 30
+ggdata_module6 <- tab_module6[1:ntop,]
+ggdata_module6$Term <- factor(ggdata_module6$Term, levels = rev(ggdata_module6$Term)) 
+
+TopGoModule6 <- ggplot(ggdata_module6, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
+  geom_point(shape = 21, fill ='darkgreen') +
+  scale_size(range = c(0.0,8.5)) +
+  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+  labs(
+    title = 'Module 6 GO Biological processes',
+    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+
+TopGoModule6
+
+############################
+# module 9 fishers exact
+############################
+
+modules <- ATnames %>% 
+  rename(gene_ID = target_id) %>% 
+  left_join(my_network_modules, by = 'gene_ID')
+
+DEmodules <- modules %>% 
+  select(ATgene_ID.x, module)
+
+DEmodules$ATgene_ID.x <-  substr(DEmodules$ATgene_ID.x, 1,9)
+
+tmp_DEmodules <- ifelse(DEmodules$module == 9, 1, 0)
+tmp_DEmodules <- na_replace(tmp_DEmodules, 0)
+head(tmp_DEmodules)
+geneList_module9 <- tmp_DEmodules
+names(geneList_module9) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split = ".", fixed = T), function(x)x[1]))
+head(geneList_module9)
+
+GOdata_module9 <- new("topGOdata",
+                      ontology = "BP",
+                      allGenes = geneList_module9,
+                      geneSelectionFun = function(x)(x == 1),
+                      annot = annFUN.org, mapping = "org.At.tair.db")
+
+resultFisher_module9 <- runTest(GOdata_module9, algorithm = "elim", statistic = "fisher")
+
+tab_module9 <- GenTable(GOdata_module9, raw.p.value = resultFisher_module9, topNodes = length(resultFisher_module9@score),
+                        numChar = 1000)
+head(tab_module9)
+
+write.csv(tab_module9,"FishersExactModule9TableTopGO.csv")
+
+tab_module9$raw.p.value <- as.numeric(tab_module9$raw.p.value)
+tab_module9 <- tab_module9[tab_module9$raw.p.value < 0.05,] # filter terms for KS p<0.05
+tab_module9
+options(scipen=0)
+tab_module9 <- tab_module9 %>% 
+  filter(Term != "biological_process")
+ntop <- 30
+ggdata_module9 <- tab_module9[1:ntop,]
+ggdata_module9$Term <- factor(ggdata_module9$Term, levels = rev(ggdata_module9$Term)) 
+
+TopGoModule9 <- ggplot(ggdata_module9, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
+  geom_point(shape = 21, fill ='darkgreen') +
+  scale_size(range = c(0.0,8.5)) +
+  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+  labs(
+    title = 'Module 9 GO Biological processes',
+    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+
+TopGoModule9
+
+
+wrap_plots(TopGoModule3, TopGoModule4, TopGoModule6, TopGoModule9, nrow = 2)
+ggsave("ModuleGOplots.png", height = 10, width = 20, bg = "white")
+
+############################
+# module 10 fishers exact
+############################
+
+modules <- ATnames %>% 
+  rename(gene_ID = target_id) %>% 
+  left_join(my_network_modules, by = 'gene_ID')
+
+DEmodules <- modules %>% 
+  select(ATgene_ID.x, module)
+
+DEmodules$ATgene_ID.x <-  substr(DEmodules$ATgene_ID.x, 1,9)
+
+tmp_DEmodules <- ifelse(DEmodules$module == 10, 1, 0)
+tmp_DEmodules <- na_replace(tmp_DEmodules, 0)
+head(tmp_DEmodules)
+geneList_module10 <- tmp_DEmodules
+names(geneList_module10) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split = ".", fixed = T), function(x)x[1]))
+head(geneList_module10)
+
+GOdata_module10 <- new("topGOdata",
+                      ontology = "BP",
+                      allGenes = geneList_module10,
+                      geneSelectionFun = function(x)(x == 1),
+                      annot = annFUN.org, mapping = "org.At.tair.db")
+
+resultFisher_module10 <- runTest(GOdata_module10, algorithm = "elim", statistic = "fisher")
+
+tab_module10 <- GenTable(GOdata_module10, raw.p.value = resultFisher_module10, topNodes = length(resultFisher_module10@score),
+                        numChar = 1000)
+head(tab_module10)
+
+write.csv(tab_module10,"FishersExactModule10TableTopGO.csv")
+
+tab_module10$raw.p.value <- as.numeric(tab_module10$raw.p.value)
+tab_module10 <- tab_module10[tab_module10$raw.p.value < 0.05,] # filter terms for KS p<0.05
+tab_module10
+options(scipen=0)
+tab_module10 <- tab_module10 %>% 
+  filter(Term != "biological_process")
+ntop <- 30
+ggdata_module10<- tab_module10[1:ntop,]
+ggdata_module10$Term <- factor(ggdata_module10$Term, levels = rev(ggdata_module10$Term)) 
+
+TopGoModule10 <- ggplot(ggdata_module10, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
+  geom_point(shape = 21, fill ='darkgreen') +
+  scale_size(range = c(0.0,8.5)) +
+  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+  labs(
+    title = 'Module 10 GO Biological processes',
+    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+
+TopGoModule10
+
+############################
+# module 7 fishers exact
+############################
+
+modules <- ATnames %>% 
+  rename(gene_ID = target_id) %>% 
+  left_join(my_network_modules, by = 'gene_ID')
+
+DEmodules <- modules %>% 
+  select(ATgene_ID.x, module)
+
+DEmodules$ATgene_ID.x <-  substr(DEmodules$ATgene_ID.x, 1,9)
+
+tmp_DEmodules <- ifelse(DEmodules$module == 7, 1, 0)
+tmp_DEmodules <- na_replace(tmp_DEmodules, 0)
+head(tmp_DEmodules)
+geneList_module7 <- tmp_DEmodules
+names(geneList_module7) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split = ".", fixed = T), function(x)x[1]))
+head(geneList_module7)
+
+GOdata_module7 <- new("topGOdata",
+                       ontology = "BP",
+                       allGenes = geneList_module7,
+                       geneSelectionFun = function(x)(x == 1),
+                       annot = annFUN.org, mapping = "org.At.tair.db")
+
+resultFisher_module7 <- runTest(GOdata_module10, algorithm = "elim", statistic = "fisher")
+
+tab_module7 <- GenTable(GOdata_module7, raw.p.value = resultFisher_module7, topNodes = length(resultFisher_module7@score),
+                         numChar = 1000)
+head(tab_module7)
+
+write.csv(tab_module7,"FishersExactModule7TableTopGO.csv")
+
+tab_module7$raw.p.value <- as.numeric(tab_module7$raw.p.value)
+tab_module7 <- tab_module7[tab_module7$raw.p.value < 0.05,] # filter terms for KS p<0.05
+tab_module7
+options(scipen=0)
+tab_module7 <- tab_module7 %>% 
+  filter(Term != "biological_process")
+ntop <- 30
+ggdata_module7<- tab_module7[1:ntop,]
+ggdata_module7$Term <- factor(ggdata_module7$Term, levels = rev(ggdata_module7$Term)) 
+
+TopGoModule7 <- ggplot(ggdata_module7, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
+  geom_point(shape = 21, fill ='darkgreen') +
+  scale_size(range = c(0.0,8.5)) +
+  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+  labs(
+    title = 'Module 7 GO Biological processes',
+    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+
+TopGoModule7
+
+############################
+# module 2 fishers exact
+############################
+
+modules <- ATnames %>% 
+  rename(gene_ID = target_id) %>% 
+  left_join(my_network_modules, by = 'gene_ID')
+
+DEmodules <- modules %>% 
+  select(ATgene_ID.x, module)
+
+DEmodules$ATgene_ID.x <-  substr(DEmodules$ATgene_ID.x, 1,9)
+
+tmp_DEmodules <- ifelse(DEmodules$module == 2, 1, 0)
+tmp_DEmodules <- na_replace(tmp_DEmodules, 0)
+head(tmp_DEmodules)
+geneList_module2 <- tmp_DEmodules
+names(geneList_module2) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split = ".", fixed = T), function(x)x[1]))
+head(geneList_module2)
+
+GOdata_module2 <- new("topGOdata",
+                      ontology = "BP",
+                      allGenes = geneList_module2,
+                      geneSelectionFun = function(x)(x == 1),
+                      annot = annFUN.org, mapping = "org.At.tair.db")
+
+resultFisher_module2 <- runTest(GOdata_module2, algorithm = "elim", statistic = "fisher")
+
+tab_module2 <- GenTable(GOdata_module2, raw.p.value = resultFisher_module2, topNodes = length(resultFisher_module2@score),
+                        numChar = 1000)
+head(tab_module2)
+
+write.csv(tab_module2,"FishersExactModule2TableTopGO.csv")
+
+tab_module2$raw.p.value <- as.numeric(tab_module2$raw.p.value)
+tab_module2 <- tab_module2[tab_module2$raw.p.value < 0.05,] # filter terms for KS p<0.05
+tab_module2
+options(scipen=0)
+tab_module2 <- tab_module2 %>% 
+  filter(Term != "biological_process")
+ntop <- 30
+ggdata_module2<- tab_module2[1:ntop,]
+ggdata_module2$Term <- factor(ggdata_module2$Term, levels = rev(ggdata_module2$Term)) 
+
+TopGoModule2 <- ggplot(ggdata_module2, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
+  geom_point(shape = 21, fill ='darkgreen') +
+  scale_size(range = c(0.0,8.5)) +
+  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+  labs(
+    title = 'Module 2 GO Biological processes',
+    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+
+TopGoModule2
+
+############################
+# module 16 fishers exact
+############################
+
+modules <- ATnames %>% 
+  rename(gene_ID = target_id) %>% 
+  left_join(my_network_modules, by = 'gene_ID')
+
+DEmodules <- modules %>% 
+  select(ATgene_ID.x, module)
+
+DEmodules$ATgene_ID.x <-  substr(DEmodules$ATgene_ID.x, 1,9)
+
+tmp_DEmodules <- ifelse(DEmodules$module == 16, 1, 0)
+tmp_DEmodules <- na_replace(tmp_DEmodules, 0)
+head(tmp_DEmodules)
+geneList_module16 <- tmp_DEmodules
+names(geneList_module16) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split = ".", fixed = T), function(x)x[1]))
+head(geneList_module16)
+
+GOdata_module16 <- new("topGOdata",
+                      ontology = "BP",
+                      allGenes = geneList_module16,
+                      geneSelectionFun = function(x)(x == 1),
+                      annot = annFUN.org, mapping = "org.At.tair.db")
+
+resultFisher_module16 <- runTest(GOdata_module16, algorithm = "elim", statistic = "fisher")
+
+tab_module16 <- GenTable(GOdata_module16, raw.p.value = resultFisher_module16, topNodes = length(resultFisher_module16@score),
+                        numChar = 1000)
+head(tab_module16)
+
+write.csv(tab_module16,"FishersExactModule16TableTopGO.csv")
+
+tab_module16$raw.p.value <- as.numeric(tab_module16$raw.p.value)
+tab_module16 <- tab_module16[tab_module16$raw.p.value < 0.05,] # filter terms for KS p<0.05
+tab_module16
+options(scipen=0)
+tab_module16 <- tab_module16 %>% 
+  filter(Term != "biological_process")
+ntop <- 30
+ggdata_module16<- tab_module16[1:ntop,]
+ggdata_module16$Term <- factor(ggdata_module16$Term, levels = rev(ggdata_module16$Term)) 
+
+TopGoModule16 <- ggplot(ggdata_module16, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
+  geom_point(shape = 21, fill ='darkgreen') +
+  scale_size(range = c(0.0,8.5)) +
+  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+  labs(
+    title = 'Module 16 GO Biological processes',
+    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+
+TopGoModule16
+
+#sanity check to make sure gen numbers make sense
+
+length(which(geneList_module3==1))
+length(which(geneList_module2==1))
+length(which(geneList_module4==1))
+length(which(geneList_module10==1))
+length(which(geneList_module7==1))
+length(which(geneList_module9==1))
+length(which(geneList_module6==1))
+length(which(geneList_module16==1))
+
+wrap_plots(TopGoModule4, TopGoModule6, TopGoModule9, TopGoModule10, TopGoModule7, TopGoModule16, TopGoModule2, TopGoModule16, nrow = 2)
+ggsave("ModuleGOplots.png", height = 15, width = 40, bg = "white")
+
 
 ######################
 #1hr KS
@@ -2831,6 +3210,10 @@ VFTTissueTop1 <- read_excel("mmc2.xlsx",sheet="I")
 my_network_modules$gene_ID<- my_network_modules$gene_ID %>% 
   substr(1,11)
 
+#modules
+
+
+
 Sleuth_1hr <- Sleuth_1hr %>% 
   rename(gene_ID = target_id)
 
@@ -2981,3 +3364,28 @@ VFTTissueTop5 %>%
   mutate(module = factor(module, levels=c('3','10','4', '7', '2', '6', '9','16','13','24', '5','168','142')) %>%
   ggplot(aes(x=module, fill= tissue)) + 
   geom_bar()
+
+########################
+#modules cross reference
+########################
+
+my_network_modules <- my_network_modules %>% 
+  rename(target_id = gene_ID)
+
+NetworkModules_VFTTissueTop5 <- my_network_modules %>% 
+  left_join(VFTTissueTop5, by= "target_id") %>% 
+  dplyr::select(target_id, ATgene_ID, TopBLASTHit_Name, tissue, module)
+
+
+NetworkModules_VFTTissueTop1 <- my_network_modules %>% 
+  left_join(VFTTissueTop1, by= "target_id") %>% 
+  dplyr::select(target_id, ATgene_ID, TopBLASTHit_Name, tissue, module)
+
+
+write.csv(NetworkModules_VFTTissueTop5, "NetworkModules_VFTTissueTop5.csv")
+write.csv(NetworkModules_VFTTissueTop1, "NetworkModules_VFTTissueTop1.csv")
+
+test %>% 
+  mutate(module = factor(module, levels=c('3','10','4', '7', '2', '6', '9','16','13','24', '5','168','142'))) %>%
+           ggplot(aes(x=tissue, fill= module)) + geom_bar()
+

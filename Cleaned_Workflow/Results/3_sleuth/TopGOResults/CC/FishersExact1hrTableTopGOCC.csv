@@ -1,0 +1,20 @@
+"","GO.ID","Term","Annotated","Significant","Expected","raw.p.value"
+"1","GO:0110165","cellular anatomical entity",9514,151,114,1.1e-08
+"2","GO:0043231","intracellular membrane-bounded organelle",8138,127,97.51,1.9e-06
+"3","GO:0036396","RNA N6-methyladenosine methyltransferase complex",3,2,0.04,4e-04
+"4","GO:0009506","plasmodesma",440,14,5.27,0.00064
+"5","GO:0009536","plastid",2814,51,33.72,0.00398
+"6","GO:0016020","membrane",2265,39,27.14,0.00648
+"7","GO:0009507","chloroplast",2570,43,30.79,0.00684
+"8","GO:0016587","Isw1 complex",1,1,0.01,0.01168
+"9","GO:0071944","cell periphery",1562,28,18.72,0.01342
+"10","GO:0005576","extracellular region",877,18,10.51,0.01377
+"11","GO:0005634","nucleus",4233,62,50.72,0.0192
+"12","GO:0005886","plasma membrane",1340,24,16.06,0.02213
+"13","GO:0042807","central vacuole",2,1,0.02,0.02322
+"14","GO:0071007","U2-type catalytic step 2 spliceosome",3,1,0.04,0.03463
+"15","GO:0043680","filiform apparatus",3,1,0.04,0.03463
+"16","GO:0005960","glycine cleavage complex",3,1,0.04,0.03463
+"17","GO:0008352","katanin complex",3,1,0.04,0.03463
+"18","GO:0009515","granal stacked thylakoid",4,1,0.05,0.0459
+"19","GO:0009542","granum",4,1,0.05,0.0459
