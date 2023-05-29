@@ -6,7 +6,7 @@ library("sleuth")
 ##################################
 
 #set input and output dirs
-datapath <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/quant"  # you need to modify this line to match the path made by your BASH script
+datapath <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/2_KallistoQuant"  # you need to modify this line to match the path made by your BASH script
 resultdir <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/sleuth"   # you need to modify this line to match the path made by your BASH script
 setwd(resultdir)
 
@@ -184,11 +184,8 @@ models(sleuth_object)
 sleuth_table <- sleuth_results(sleuth_object, 'reduced:full', 'lrt', show_all = FALSE)
 sleuth_significant <- dplyr::filter(sleuth_table, qval <= 0.05)
 
-#print the summary table for DE genes with q-values < 0.05
-write.csv(x = sleuth_significant, file = "petioleVstraps_sleuth_q_0.05.csv", row.names = FALSE)
-
 #visualize results for the 10 most significant DE genes
-pdf(file="SleuthResults.pdf")
+
 for(i in sleuth_significant$target_id[1:1623]) {
   p1 <- plot_bootstrap(sleuth_object, i, units = "tpm", color_by = "condition")
   print(p1)
@@ -210,7 +207,62 @@ rm(list = ls())
 # Prey vs. No Prey 5 min
 ##################################
 
-#NO DEGS!
+#create a sample-to-condition metadata object
+sample <- c('JMGR','JMGT','JMHR','JMHS','JMIK','JMIL','JMIM','JMIN')
+#create vector of sample IDs
+kallisto_dirs <- file.path(datapath, sample) #create vector of paths to kallisto output directories
+condition <- c('NoPrey','NoPrey','NoPrey','NoPrey','Prey','Prey','Prey','Prey')
+
+#create vector of treatments in same order as sample IDs
+samples_to_conditions <- data.frame(sample,condition) #create dataframe associating treatments to sample IDs
+samples_to_conditions <- dplyr::mutate(samples_to_conditions, path = kallisto_dirs) #add kallisto output paths to dataframe
+
+# check that directories and metadata object are OK
+print(kallisto_dirs)
+print(samples_to_conditions)
+
+# read data into sleuth_object, import bootstrap summaries and TPMs, and perform normalization/filtering steps
+sleuth_object <- sleuth_prep(samples_to_conditions, extra_bootstrap_summary = TRUE, read_bootstrap_tpm=TRUE)
+
+# estimate parameters for the full linear model that includes the conditions as factors
+sleuth_object <- sleuth_fit(sleuth_object, ~condition, 'full')
+
+# estimate parameters for the reduced linear model that assumes equal transcript abundances in both conditions
+sleuth_object <- sleuth_fit(sleuth_object, ~1, 'reduced')
+
+# perform likelihood ratio test to identify transcripts whose fit is significantly better under full model relative to reduced model
+sleuth_object <- sleuth_lrt(sleuth_object, 'reduced', 'full')
+
+# check that sleuth object is OK
+models(sleuth_object)
+
+#plot PCA
+pdf(file="SleuthPCAPreyVsNoPrey5min.pdf")
+plot_pca(sleuth_object, color_by='condition')
+dev.off()
+
+pdf(file="SleuthPCALoadingsPreyVsNoPrey1hr.pdf")
+plot_loadings(sleuth_object)
+dev.off()
+
+#summarize the sleuth results for DE genes with q-values < 0.05
+sleuth_table <- sleuth_results(sleuth_object, 'reduced:full', 'lrt', show_all = FALSE)
+sleuth_significant <- dplyr::filter(sleuth_table, qval <= 0.05)
+
+#print the summary table for DE genes with q-values < 0.05
+write.csv(x = sleuth_significant, file = "SleuthPreyNoPrey60minResults_q_0.05.csv", row.names = FALSE)
+
+#visualize results for the 10 most significant DE genes
+pdf(file="SleuthPreyNoPrey60minResults.pdf")
+for(i in sleuth_significant$target_id[1:174]) {
+  p1 <- plot_bootstrap(sleuth_object, i, units = "tpm", color_by = "condition")
+  print(p1)
+}
+dev.off()
+
+sleuth_live(sleuth_object)
+
+rm(list = ls())
 
 ##################################
 # Prey vs. No Prey 60 min

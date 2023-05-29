@@ -2188,8 +2188,9 @@ Droseracea_only_orthogroups <- Droseracea_only_orthogroups %>%
 
 D_muscipula_genes_in_Droseracea_only_orthogroups <- filter(genesinorthogroups,
   Orthogroup %in% Droseracea_only_orthogroups$orthogroup) %>% 
-  select(Orthogroup, D_muscipula.proteins, ) %>% 
-  separate_rows(D_muscipula_genes_in_Droseracea_only_orthogroups, D_muscipula.proteins, sep = ", ") %>% 
+  select(Orthogroup, D_muscipula.proteins)
+
+D_muscipula_genes_in_Droseracea_only_orthogroups <- separate_rows(D_muscipula.proteins, sep = ", ") %>% 
   rename(gene_ID = `D_muscipula.proteins`)
 
 annotated_orthgroupgenes<- filter(funct_anno,
@@ -2233,7 +2234,7 @@ Sleuth_1hr_modules_orthogroups<- Sleuth_1hr %>%
   rename(gene_ID = `target_id`) %>% 
   left_join(my_network_modules, by = "gene_ID") %>% 
   left_join(expanded_genesinorthogroups, by= "gene_ID") %>% 
-  select(gene_ID, ATgene_ID, Symbol, Description, Position, DE_Direction, module, Orthogroup) 
+  select(gene_ID, ATgene_ID, Symbol, Description, Position, HigherExpressionIn, module, Orthogroup) 
 
 
 write.csv(Sleuth_1hr_modules_orthogroups, "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_1hr/DEGcsvs/SleuthList1HrAnnotated_modulesandorthogroups.csv")
@@ -2601,13 +2602,18 @@ ntop <- 30
 ggdata_module3 <- tab_module3[1:ntop,]
 ggdata_module3$Term <- factor(ggdata_module3$Term, levels = rev(ggdata_module3$Term)) 
 
-TopGoModule3 <-ggplot(ggdata_module3, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
-  geom_point(shape = 21, fill ='darkgreen') +
-  scale_size(range = c(0.0,8.5)) +
-  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+TopGoModule3 <- ggplot(ggdata_module3,
+                       aes(x = reorder(Term,-log10(raw.p.value),sum), y = Significant/Annotated*100, size = Significant, fill= -log10(raw.p.value))) +
+  geom_point(shape = 21) +
+  scale_size(range = c(2.5,12.5)) + scale_fill_continuous(low = 'royalblue', high = 'red4') +
+  scale_y_continuous(limits = c(0, 100)) +
+  xlab('Term') + ylab('Rich factor') + guides(size = guide_legend(title = "Number of Genes")) +
   labs(
-    title = 'Module 3 GO Biological processes',
-    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+    title = 'Module 3 GO Biological Process',
+    subtitle = "Top terms ordered by Fisher's Exact Test p-value") + theme_light() +
+  coord_flip()
+
+TopGoModule3
 
 ############################
 # module 4 fishers exact
@@ -2653,14 +2659,18 @@ ntop <- 30
 ggdata_module4 <- tab_module4[1:ntop,]
 ggdata_module4$Term <- factor(ggdata_module4$Term, levels = rev(ggdata_module4$Term)) 
 
-TopGoModule4 <- ggplot(ggdata_module4, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
-  geom_point(shape = 21, fill ='darkgreen') +
-  scale_size(range = c(0.0,8.5)) + 
-  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+TopGoModule4 <- ggplot(ggdata_module4,
+                       aes(x = reorder(Term,-log10(raw.p.value),sum), y = Significant/Annotated*100, size = Significant, fill= -log10(raw.p.value))) +
+  geom_point(shape = 21) +
+  scale_size(range = c(2.5,12.5)) + scale_fill_continuous(low = 'royalblue', high = 'red4') +
+  scale_y_continuous(limits = c(0, 100)) +
+  xlab('Term') + ylab('Rich factor') + guides(size = guide_legend(title = "Number of Genes")) +
   labs(
-    title = 'Module 4 GO Biological processes',
-    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+    title = 'Module 4 GO Biological Process',
+    subtitle = "Top terms ordered by Fisher's Exact Test p-value") + theme_light() +
+  coord_flip()
 
+TopGoModule4
 
 ############################
 # module 6 fishers exact
@@ -2707,13 +2717,16 @@ ntop <- 30
 ggdata_module6 <- tab_module6[1:ntop,]
 ggdata_module6$Term <- factor(ggdata_module6$Term, levels = rev(ggdata_module6$Term)) 
 
-TopGoModule6 <- ggplot(ggdata_module6, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
-  geom_point(shape = 21, fill ='darkgreen') +
-  scale_size(range = c(0.0,8.5)) +
-  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+TopGoModule6 <- ggplot(ggdata_module6,
+                       aes(x = reorder(Term,-log10(raw.p.value),sum), y = Significant/Annotated*100, size = Significant, fill= -log10(raw.p.value))) +
+  geom_point(shape = 21) +
+  scale_size(range = c(2.5,12.5)) + scale_fill_continuous(low = 'royalblue', high = 'red4') +
+  scale_y_continuous(limits = c(0, 100)) +
+  xlab('Term') + ylab('Rich factor') + guides(size = guide_legend(title = "Number of Genes")) +
   labs(
-    title = 'Module 6 GO Biological processes',
-    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+    title = 'Module 6 GO Biological Process',
+    subtitle = "Top terms ordered by Fisher's Exact Test p-value") + theme_light() +
+  coord_flip()
 
 TopGoModule6
 
@@ -2761,13 +2774,16 @@ ntop <- 30
 ggdata_module9 <- tab_module9[1:ntop,]
 ggdata_module9$Term <- factor(ggdata_module9$Term, levels = rev(ggdata_module9$Term)) 
 
-TopGoModule9 <- ggplot(ggdata_module9, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
-  geom_point(shape = 21, fill ='darkgreen') +
-  scale_size(range = c(0.0,8.5)) +
-  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+TopGoModule9 <- ggplot(ggdata_module9,
+                       aes(x = reorder(Term,-log10(raw.p.value),sum), y = Significant/Annotated*100, size = Significant, fill= -log10(raw.p.value))) +
+  geom_point(shape = 21) +
+  scale_size(range = c(2.5,12.5)) + scale_fill_continuous(low = 'royalblue', high = 'red4') +
+  scale_y_continuous(limits = c(0, 100)) +
+  xlab('Term') + ylab('Rich factor') + guides(size = guide_legend(title = "Number of Genes")) +
   labs(
-    title = 'Module 9 GO Biological processes',
-    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+    title = 'Module 9 GO Biological Process',
+    subtitle = "Top terms ordered by Fisher's Exact Test p-value") + theme_light() +
+  coord_flip()
 
 TopGoModule9
 
@@ -2819,13 +2835,16 @@ ntop <- 30
 ggdata_module10<- tab_module10[1:ntop,]
 ggdata_module10$Term <- factor(ggdata_module10$Term, levels = rev(ggdata_module10$Term)) 
 
-TopGoModule10 <- ggplot(ggdata_module10, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
-  geom_point(shape = 21, fill ='darkgreen') +
-  scale_size(range = c(0.0,8.5)) +
-  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+TopGoModule10 <- ggplot(ggdata_module10,
+                       aes(x = reorder(Term,-log10(raw.p.value),sum), y = Significant/Annotated*100, size = Significant, fill= -log10(raw.p.value))) +
+  geom_point(shape = 21) +
+  scale_size(range = c(2.5,12.5)) + scale_fill_continuous(low = 'royalblue', high = 'red4') +
+  xlab('Term') + ylab('Rich factor') + guides(size = guide_legend(title = "Number of Genes")) +
+  scale_y_continuous(limits = c(0, 100)) +
   labs(
-    title = 'Module 10 GO Biological processes',
-    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+    title = 'Module 10 GO Biological Process',
+    subtitle = "Top terms ordered by Fisher's Exact Test p-value") + theme_light() +
+  coord_flip()
 
 TopGoModule10
 
@@ -2873,13 +2892,16 @@ ntop <- 30
 ggdata_module7<- tab_module7[1:ntop,]
 ggdata_module7$Term <- factor(ggdata_module7$Term, levels = rev(ggdata_module7$Term)) 
 
-TopGoModule7 <- ggplot(ggdata_module7, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
-  geom_point(shape = 21, fill ='darkgreen') +
-  scale_size(range = c(0.0,8.5)) +
-  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+TopGoModule7 <- ggplot(ggdata_module7,
+                       aes(x = reorder(Term,-log10(raw.p.value),sum), y = Significant/Annotated*100, size = Significant, fill= -log10(raw.p.value))) +
+  geom_point(shape = 21) +
+  scale_size(range = c(2.5,12.5)) + scale_fill_continuous(low = 'royalblue', high = 'red4') +
+  scale_y_continuous(limits = c(0, 100)) +
+  xlab('Term') + ylab('Rich factor') + guides(size = guide_legend(title = "Number of Genes")) +
   labs(
-    title = 'Module 7 GO Biological processes',
-    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+    title = 'Module 7 GO Biological Process',
+    subtitle = "Top terms ordered by Fisher's Exact Test p-value") + theme_light() +
+  coord_flip()
 
 TopGoModule7
 
@@ -2927,13 +2949,17 @@ ntop <- 30
 ggdata_module2<- tab_module2[1:ntop,]
 ggdata_module2$Term <- factor(ggdata_module2$Term, levels = rev(ggdata_module2$Term)) 
 
-TopGoModule2 <- ggplot(ggdata_module2, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
-  geom_point(shape = 21, fill ='darkgreen') +
-  scale_size(range = c(0.0,8.5)) +
-  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+
+TopGoModule2 <- ggplot(ggdata_module2,
+                       aes(x = reorder(Term,-log10(raw.p.value),sum), y = Significant/Annotated*100, size = Significant, fill= -log10(raw.p.value))) +
+  geom_point(shape = 21) +
+  scale_size(range = c(2.5,12.5)) + scale_fill_continuous(low = 'royalblue', high = 'red4') +
+  xlab('Term') + ylab('Rich factor') + guides(size = guide_legend(title = "Number of Genes")) +
+  scale_y_continuous(limits = c(0, 100)) +
   labs(
-    title = 'Module 2 GO Biological processes',
-    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+    title = 'Module 2 GO Biological Process',
+    subtitle = "Top terms ordered by Fisher's Exact Test p-value") + theme_light() +
+  coord_flip()
 
 TopGoModule2
 
@@ -2981,13 +3007,16 @@ ntop <- 30
 ggdata_module16<- tab_module16[1:ntop,]
 ggdata_module16$Term <- factor(ggdata_module16$Term, levels = rev(ggdata_module16$Term)) 
 
-TopGoModule16 <- ggplot(ggdata_module16, aes(x = Term, y = raw.p.value, size = Significant, fill= 'green')) +
-  geom_point(shape = 21, fill ='darkgreen') +
-  scale_size(range = c(0.0,8.5)) +
-  xlab('Term') + ylab('p-value') +  guides(size = guide_legend(title = "Number of Genes")) +
+TopGoModule16 <- ggplot(ggdata_module16,
+                       aes(x = reorder(Term,-log10(raw.p.value),sum), y = Significant/Annotated*100, size = Significant, fill= -log10(raw.p.value))) +
+  geom_point(shape = 21) +
+  scale_size(range = c(2.5,12.5)) + scale_fill_continuous(low = 'royalblue', high = 'red4') +
+  scale_y_continuous(limits = c(0, 100)) +
+  xlab('Term') + ylab('Rich factor') + guides(size = guide_legend(title = "Number of Genes")) +
   labs(
-    title = 'Module 16 GO Biological processes',
-    subtitle = "Top 30 terms ordered by Fisher's Exact Test p-value") + coord_flip()
+    title = 'Module 16 GO Biological Process',
+    subtitle = "Top terms ordered by Fisher's Exact Test p-value") + theme_light() +
+  coord_flip()
 
 TopGoModule16
 
@@ -3002,7 +3031,7 @@ length(which(geneList_module9==1))
 length(which(geneList_module6==1))
 length(which(geneList_module16==1))
 
-wrap_plots(TopGoModule4, TopGoModule6, TopGoModule9, TopGoModule10, TopGoModule7, TopGoModule16, TopGoModule2, TopGoModule16, nrow = 2)
+wrap_plots(TopGoModule4, TopGoModule6, TopGoModule9, TopGoModule10, TopGoModule7, TopGoModule16, TopGoModule2, TopGoModule3, nrow = 2)
 ggsave("ModuleGOplots.png", height = 15, width = 40, bg = "white")
 
 
@@ -3370,17 +3399,37 @@ VFTTissueTop5 %>%
 ########################
 
 my_network_modules <- my_network_modules %>% 
-  rename(target_id = gene_ID)
+  rename(target_id = gene_ID) 
+
+
+my_network_modules$target_id <- substr(my_network_modules$target_id,1,11)
 
 NetworkModules_VFTTissueTop5 <- my_network_modules %>% 
   left_join(VFTTissueTop5, by= "target_id") %>% 
-  dplyr::select(target_id, ATgene_ID, TopBLASTHit_Name, tissue, module)
+  dplyr::select(target_id, ATgene_ID, TopBLASTHit_Name, tissue, module) %>%   
+  mutate(module = factor(module, levels=c('3','10','4', '7', '2', '6', '9','16','13','24', '5','168','142'))) %>%
+  ggplot(aes(x=module, fill=tissue)) + 
+  scale_y_discrete(name ="Tissue", 
+                              labels=c("Flower","Glands","Gland + Coronatine","Glands + Insect","Petiole","Rim","Root","Trap","Trap + Insect","NA")) +
+  geom_bar()
 
+
+NetworkModules_VFTTissueTop5
+
+ggsave("NetworkModules_VFTTissueTop5.png")
 
 NetworkModules_VFTTissueTop1 <- my_network_modules %>% 
   left_join(VFTTissueTop1, by= "target_id") %>% 
-  dplyr::select(target_id, ATgene_ID, TopBLASTHit_Name, tissue, module)
+  dplyr::select(target_id, ATgene_ID, TopBLASTHit_Name, tissue, module) %>% 
+  mutate(module = factor(module, levels=c('3','10','4', '7', '2', '6', '9','16','13','24', '5','168','142'))) %>%
+  ggplot(aes(x=module, fill=tissue)) + 
+  scale_y_discrete(name ="Tissue", 
+                   labels=c("Flower","Glands","Gland + Coronatine","Glands + Insect","Petiole","Rim","Root","Trap","Trap + Insect","NA")) +
+  geom_bar()
 
+NetworkModules_VFTTissueTop1
+
+ggsave("NetworkModules_VFTTissueTop1.png")
 
 write.csv(NetworkModules_VFTTissueTop5, "NetworkModules_VFTTissueTop5.csv")
 write.csv(NetworkModules_VFTTissueTop1, "NetworkModules_VFTTissueTop1.csv")
