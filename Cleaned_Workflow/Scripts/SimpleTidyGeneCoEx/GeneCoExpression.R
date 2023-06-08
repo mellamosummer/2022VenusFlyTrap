@@ -17,7 +17,7 @@ set.seed(666)
 #set input and output dirs
 datapath <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/2_KallistoQuant"  # you need to modify this line to match the path made by your BASH script
 resultdir <- "/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis"   # you need to modify this line to match the path made by your BASH script
-setwd(resultdir)
+setwd("/Users/summerblanco/Desktop/")
 
 ##################################
 #  BUILD TPM MATRIX
@@ -66,9 +66,10 @@ sample <-c('JMGR',
            'JMHC',
            'JMHD',
            'JMHE',
-           'JMHG')
+           'JMHG',
+           'JMHM')
 
-#Create file path for abundance.tsv file in each of the folders that are specified in "samples"
+#Create file path for abundance.tsv file %>% each of the folders that are specified %>% "samples"
 files <- file.path(datapath, sample,"abundance.tsv")
 
 #extracts counts data and builds matrix with geneID and counts
@@ -82,6 +83,7 @@ colnames(tpm) <- sample
 
 head(tpm)
 dim(tpm)
+Exp_table <- tpm
 
 write.csv(x = tpm, file = "Blanco_tpm_all.csv")
 
@@ -107,8 +109,11 @@ Metadata %>%
 # PCA
 ##################################
 
+
+Exp_table <- cbind(gene_ID = rownames(Exp_table), Exp_table)
+rownames(Exp_table) <- NULL
+
 Exp_table_long <- Exp_table %>% 
-  rename(gene_ID = `...1`) %>% 
   pivot_longer(cols = !gene_ID, names_to = "LibraryName", values_to = "tpm") %>% 
   mutate(logTPM = log10(tpm + 1))
 
@@ -152,8 +157,8 @@ ggsave("PCA_by_treatment.png", height = 3.5, width = 15, bg = "white")
 
 PCA_by_time<- PCA_coord %>% 
   ggplot(aes(x = PC1, y = PC2)) +
-  geom_point(aes(fill = Time), color = "grey20", shape = 21, size = 3, alpha = 0.8) +
-  scale_fill_gradientn(colors = viridis(10, option = "A")) +
+  geom_point(aes(fill = factor(Time)), color ="grey20", shape = 21, size = 3, alpha = 0.8) +
+  scale_fill_brewer(palette = "Set1") +
   labs(x = paste("PC1 (", pc_importance[1, 2] %>% signif(3)*100, "% of Variance)", sep = ""), 
        y = paste("PC2 (", pc_importance[2, 2] %>% signif(3)*100, "% of Variance)", "  ", sep = ""),
        fill = NULL) +  
@@ -1607,6 +1612,17 @@ genesinmodules <- network_modules %>%
 
 write.csv(x = genesinmodules, file = "genesinmodules.csv")
 
+
+serinepeptidasesinnetwork<- my_network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('serine', ignore_case=TRUE))) %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('peptidase', ignore_case=TRUE)))
+
+write.csv(x = serinepeptidasesinnetwork, file = "serinepeptidasesinnetwork.csv")
+
+my_network_modules %>% 
+  filter(str_detect(TopBLASTHit_Name, fixed('aspart', ignore_case=TRUE))) 
+  
+
 phosphatasesinnetwork <- network_modules %>% 
   filter(str_detect(TopBLASTHit_Name, fixed('phosphatase', ignore_case=TRUE)))
 
@@ -2578,7 +2594,7 @@ names(geneList_module3) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split =
 head(geneList_module3)
 
 GOdata_module3 <- new("topGOdata",
-                   ontology = "BP",
+                   ontology = "MF",
                    allGenes = geneList_module3,
                    geneSelectionFun = function(x)(x == 1),
                    annot = annFUN.org, mapping = "org.At.tair.db")
@@ -2589,7 +2605,7 @@ tab_module3 <- GenTable(GOdata_module3, raw.p.value = resultFisher_module3, topN
                      numChar = 1000)
 head(tab_module3)
 
-write.csv(tab_module3,"FishersExactModule3TableTopGO.csv")
+write.csv(tab_module3,"FishersExactModule3TableTopGOMF.csv")
 
 tab_module3$raw.p.value <- as.numeric(tab_module3$raw.p.value)
 tab_module3 <- tab_module3[tab_module3$raw.p.value < 0.05,] # filter terms for KS p<0.05
@@ -2636,7 +2652,7 @@ names(geneList_module4) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split =
 head(geneList_module4)
 
 GOdata_module4 <- new("topGOdata",
-                      ontology = "BP",
+                      ontology = "MF",
                       allGenes = geneList_module4,
                       geneSelectionFun = function(x)(x == 1),
                       annot = annFUN.org, mapping = "org.At.tair.db")
@@ -2647,7 +2663,7 @@ tab_module4 <- GenTable(GOdata_module4, raw.p.value = resultFisher_module4, topN
                         numChar = 1000)
 head(tab_module4)
 
-write.csv(tab_module4,"FishersExactModule4TableTopGO.csv")
+write.csv(tab_module4,"FishersExactModule4TableTopGOMF.csv")
 
 tab_module4$raw.p.value <- as.numeric(tab_module4$raw.p.value)
 tab_module4 <- tab_module4[tab_module4$raw.p.value < 0.05,] # filter terms for KS p<0.05
@@ -2693,7 +2709,7 @@ names(geneList_module6) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split =
 head(geneList_module6)
 
 GOdata_module6 <- new("topGOdata",
-                      ontology = "BP",
+                      ontology = "MF",
                       allGenes = geneList_module6,
                       geneSelectionFun = function(x)(x == 1),
                       annot = annFUN.org, mapping = "org.At.tair.db")
@@ -2704,7 +2720,7 @@ tab_module6 <- GenTable(GOdata_module6, raw.p.value = resultFisher_module6, topN
                         numChar = 1000)
 head(tab_module6)
 
-write.csv(tab_module6,"FishersExactModule6TableTopGO.csv")
+write.csv(tab_module6,"FishersExactModule6TableTopGOMF.csv")
 
 
 tab_module6$raw.p.value <- as.numeric(tab_module6$raw.p.value)
@@ -2751,7 +2767,7 @@ names(geneList_module9) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split =
 head(geneList_module9)
 
 GOdata_module9 <- new("topGOdata",
-                      ontology = "BP",
+                      ontology = "MF",
                       allGenes = geneList_module9,
                       geneSelectionFun = function(x)(x == 1),
                       annot = annFUN.org, mapping = "org.At.tair.db")
@@ -2762,7 +2778,7 @@ tab_module9 <- GenTable(GOdata_module9, raw.p.value = resultFisher_module9, topN
                         numChar = 1000)
 head(tab_module9)
 
-write.csv(tab_module9,"FishersExactModule9TableTopGO.csv")
+write.csv(tab_module9,"FishersExactModule9TableTopGOMF.csv")
 
 tab_module9$raw.p.value <- as.numeric(tab_module9$raw.p.value)
 tab_module9 <- tab_module9[tab_module9$raw.p.value < 0.05,] # filter terms for KS p<0.05
@@ -2812,7 +2828,7 @@ names(geneList_module10) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split 
 head(geneList_module10)
 
 GOdata_module10 <- new("topGOdata",
-                      ontology = "BP",
+                      ontology = "MF",
                       allGenes = geneList_module10,
                       geneSelectionFun = function(x)(x == 1),
                       annot = annFUN.org, mapping = "org.At.tair.db")
@@ -2823,7 +2839,7 @@ tab_module10 <- GenTable(GOdata_module10, raw.p.value = resultFisher_module10, t
                         numChar = 1000)
 head(tab_module10)
 
-write.csv(tab_module10,"FishersExactModule10TableTopGO.csv")
+write.csv(tab_module10,"FishersExactModule10TableTopGOMF.csv")
 
 tab_module10$raw.p.value <- as.numeric(tab_module10$raw.p.value)
 tab_module10 <- tab_module10[tab_module10$raw.p.value < 0.05,] # filter terms for KS p<0.05
@@ -2869,7 +2885,7 @@ names(geneList_module7) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split =
 head(geneList_module7)
 
 GOdata_module7 <- new("topGOdata",
-                       ontology = "BP",
+                       ontology = "MF",
                        allGenes = geneList_module7,
                        geneSelectionFun = function(x)(x == 1),
                        annot = annFUN.org, mapping = "org.At.tair.db")
@@ -2880,7 +2896,7 @@ tab_module7 <- GenTable(GOdata_module7, raw.p.value = resultFisher_module7, topN
                          numChar = 1000)
 head(tab_module7)
 
-write.csv(tab_module7,"FishersExactModule7TableTopGO.csv")
+write.csv(tab_module7,"FishersExactModule7TableTopGOMF.csv")
 
 tab_module7$raw.p.value <- as.numeric(tab_module7$raw.p.value)
 tab_module7 <- tab_module7[tab_module7$raw.p.value < 0.05,] # filter terms for KS p<0.05
@@ -2926,7 +2942,7 @@ names(geneList_module2) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split =
 head(geneList_module2)
 
 GOdata_module2 <- new("topGOdata",
-                      ontology = "BP",
+                      ontology = "MF",
                       allGenes = geneList_module2,
                       geneSelectionFun = function(x)(x == 1),
                       annot = annFUN.org, mapping = "org.At.tair.db")
@@ -2937,7 +2953,7 @@ tab_module2 <- GenTable(GOdata_module2, raw.p.value = resultFisher_module2, topN
                         numChar = 1000)
 head(tab_module2)
 
-write.csv(tab_module2,"FishersExactModule2TableTopGO.csv")
+write.csv(tab_module2,"FishersExactModule2TableTopGOMF.csv")
 
 tab_module2$raw.p.value <- as.numeric(tab_module2$raw.p.value)
 tab_module2 <- tab_module2[tab_module2$raw.p.value < 0.05,] # filter terms for KS p<0.05
@@ -2984,7 +3000,7 @@ names(geneList_module16) <- unlist(lapply(strsplit(DEmodules$ATgene_ID.x, split 
 head(geneList_module16)
 
 GOdata_module16 <- new("topGOdata",
-                      ontology = "BP",
+                      ontology = "MF",
                       allGenes = geneList_module16,
                       geneSelectionFun = function(x)(x == 1),
                       annot = annFUN.org, mapping = "org.At.tair.db")
@@ -2995,7 +3011,7 @@ tab_module16 <- GenTable(GOdata_module16, raw.p.value = resultFisher_module16, t
                         numChar = 1000)
 head(tab_module16)
 
-write.csv(tab_module16,"FishersExactModule16TableTopGO.csv")
+write.csv(tab_module16,"FishersExactModule16TableTopGOMF.csv")
 
 tab_module16$raw.p.value <- as.numeric(tab_module16$raw.p.value)
 tab_module16 <- tab_module16[tab_module16$raw.p.value < 0.05,] # filter terms for KS p<0.05
@@ -3399,7 +3415,7 @@ VFTTissueTop5 %>%
 ########################
 
 my_network_modules <- my_network_modules %>% 
-  rename(target_id = gene_ID) 
+  rename(target_id = gene_ID)
 
 
 my_network_modules$target_id <- substr(my_network_modules$target_id,1,11)
@@ -3438,3 +3454,218 @@ test %>%
   mutate(module = factor(module, levels=c('3','10','4', '7', '2', '6', '9','16','13','24', '5','168','142'))) %>%
            ggplot(aes(x=tissue, fill= module)) + geom_bar()
 
+
+####################
+#plot sleuth DEGs
+####################
+
+Sleuth_24hr <- Sleuth_24hr %>% 
+  rename(gene_ID = target_id)
+
+
+AsparticEnzymes <- Exp_table_long_averaged_z %>%
+  filter(Treatment == "prey") %>% 
+  filter(gene_ID %in% Sleuth_24hr$gene_ID) %>% 
+  filter(gene_ID == "Dm_00017908-RA" | gene_ID == "Dm_00016884-RA") %>% 
+  ggplot(aes(x = Time, y = z.score)) +
+  geom_point(aes(group = gene_ID), color = "grey70") +
+  geom_line(aes(group = gene_ID), color = "grey70") + 
+  facet_wrap(~gene_ID)
+
+AsparticEnzymes
+
+SerineEnzymes <- Exp_table_long_averaged_z %>%
+  filter(Treatment == "prey") %>% 
+  filter(gene_ID %in% Sleuth_24hr$gene_ID) %>% 
+  filter(gene_ID == "Dm_00001342-RA" | gene_ID == "Dm_00013008-RA" | gene_ID == "Dm_00003204-RA") %>% 
+  ggplot(aes(x = Time, y = z.score)) +
+  geom_point(aes(group = gene_ID), color = "grey70")+
+  geom_line(aes(group = gene_ID), color = "grey70") + 
+  facet_wrap(~gene_ID)
+
+SerineEnzymes
+
+CysteineEnzymes <- Exp_table_long_averaged_z %>%
+  filter(Treatment == "prey") %>% 
+  filter(gene_ID %in% Sleuth_24hr$gene_ID) %>% 
+  filter(gene_ID == "Dm_00017323-RA") %>% 
+  ggplot(aes(x = Time, y = z.score)) +
+  geom_point(aes(group = gene_ID), color = "grey70")+
+  geom_line(aes(group = gene_ID), color = "grey70") + 
+  facet_wrap(~gene_ID)
+
+CysteineEnzymes
+
+####################
+#find common GO terms
+####################
+setwd("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/BP/")
+
+TopGoModule4BP <- read_csv("FishersExactModule4TableTopGO.csv")
+TopGoModule2BP <-read_csv("FishersExactModule2TableTopGO.csv")
+TopGoModule3BP <-read_csv("FishersExactModule3TableTopGO.csv")
+TopGoModule6BP <-read_csv("FishersExactModule6TableTopGO.csv")
+TopGoModule7BP <-read_csv("FishersExactModule7TableTopGO.csv")
+TopGoModule9BP <-read_csv("FishersExactModule9TableTopGO.csv")
+TopGoModule10BP <-read_csv("FishersExactModule10TableTopGO.csv")
+TopGoModule16BP <-read_csv("FishersExactModule16TableTopGO.csv")
+
+TopGoModule4BP <- TopGoModule4BP %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule4BP$Module <- c("4")
+
+TopGoModule2BP <- TopGoModule2BP %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule2BP$Module <- c("2")
+
+TopGoModule3BP <- TopGoModule3BP %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule3BP$Module <- c("3")
+
+TopGoModule6BP <- TopGoModule6BP %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule6BP$Module <- c("6")
+
+TopGoModule7BP <- TopGoModule7BP %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule7BP$Module <- c("7")
+
+TopGoModule9BP <- TopGoModule9BP %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule9BP$Module <- c("9")
+
+TopGoModule10BP <- TopGoModule10BP %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule10BP$Module <- c("10")
+
+TopGoModule16BP <- TopGoModule16BP %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule16BP$Module <- c("16")
+
+setwd("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/MF/")
+
+TopGoModule4MF <- read_csv("FishersExactModule4TableTopGOMF.csv")
+TopGoModule2MF <-read_csv("FishersExactModule2TableTopGOMF.csv")
+TopGoModule3MF <-read_csv("FishersExactModule3TableTopGOMF.csv")
+TopGoModule6MF <-read_csv("FishersExactModule6TableTopGOMF.csv")
+TopGoModule7MF <-read_csv("FishersExactModule7TableTopGOMF.csv")
+TopGoModule9MF <-read_csv("FishersExactModule9TableTopGOMF.csv")
+TopGoModule10MF <-read_csv("FishersExactModule10TableTopGOMF.csv")
+TopGoModule16MF <-read_csv("FishersExactModule16TableTopGOMF.csv")
+
+TopGoModule4MF <- TopGoModule4MF %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule4MF$Module <- c("4")
+
+TopGoModule2MF <- TopGoModule2MF %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule2MF$Module <- c("2")
+
+TopGoModule3MF <- TopGoModule3MF %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule3MF$Module <- c("3")
+
+TopGoModule6MF <- TopGoModule6MF %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule6MF$Module <- c("6")
+
+TopGoModule7MF <- TopGoModule7MF %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule7MF$Module <- c("7")
+
+TopGoModule9MF <- TopGoModule9MF %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule9MF$Module <- c("9")
+
+TopGoModule10MF <- TopGoModule10MF %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule10MF$Module <- c("10")
+
+TopGoModule16MF <- TopGoModule16MF %>% 
+  filter(raw.p.value < 0.05)
+
+TopGoModule16MF$Module <- c("16")
+
+
+df_listMF = list(TopGoModule4,TopGoModule2,TopGoModule6,TopGoModule7,TopGoModule9,TopGoModule10,TopGoModule16)
+
+GoTerms <- df_listMF %>% reduce(rbind) %>%  filter(Term != "biological_process")
+
+test <- TopGoModule3 %>% 
+    left_join(GoTerms, by = "GO.ID")
+
+
+write.csv(GoTermsTopGoBP, "GoTermsTopGoBP.csv")
+
+GoTermsTopGoBP %>% 
+  ggplot(aes(Module, Term)) +
+  geom_count(aes(size = Significant, color = Significant)) + scale_size(range = c(2.5,15)) +
+  ylab("Go Term") + xlab("Module")
+
+
+ExpandedOrthogroups <- read_excel("/Users/summerblanco/Desktop/mmc2.xlsx",sheet="C") %>% 
+  rename(GO.ID = go)
+
+test <- test %>% left_join(GoTermsTopGoBP, by = "GO.ID")
+
+
+a <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/5_BLAST/AllDmProteinsBLASTresults/DmProteinsTairdbBLASTconcat.txt")
+b <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_1hr/DEGcsvs/SleuthTable_1hr.csv")
+c <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/PreyVsNoPrey_24hr/DEGcsvs/SleuthTable_24hr.csv")
+d <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/TopGOResults/MF/FishersExact1hrTableTopGOMF.csv")
+e <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/TopGOResults/MF/FishersExact24hrTableTopGOMF.csv")
+f <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/TopGOResults/BP/FishersExact1hrTableTopGO.csv")
+g <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/3_sleuth/TopGOResults/BP/FishersExact24hrTableTopGO.csv")
+h <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/Data/Blanco_tpm_all.csv")
+i <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/Data/Metadata.csv")
+j <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/NetworkModules/network_modules_annotated.csv")
+k <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/MF/FishersExactModule2TableTopGOMF.csv")
+l <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/MF/FishersExactModule3TableTopGOMF.csv")
+m <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/MF/FishersExactModule4TableTopGOMF.csv")
+n <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/MF/FishersExactModule6TableTopGOMF.csv")
+o <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/MF/FishersExactModule7TableTopGOMF.csv")
+p <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/MF/FishersExactModule9TableTopGOMF.csv")
+q <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/MF/FishersExactModule10TableTopGOMF.csv")
+r <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/MF/FishersExactModule16TableTopGOMF.csv")
+s <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/BP/FishersExactModule2TableTopGO.csv")
+t <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/BP/FishersExactModule3TableTopGO.csv")
+u <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/BP/FishersExactModule4TableTopGO.csv")
+v <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/BP/FishersExactModule6TableTopGO.csv")
+w <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/BP/FishersExactModule7TableTopGO.csv")
+x <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/BP/FishersExactModule9TableTopGO.csv")
+y <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/BP/FishersExactModule10TableTopGO.csv")
+z <- read_csv("/Users/summerblanco/Desktop/Github/2022VenusFlyTrap/Cleaned_Workflow/Results/7_GeneCoexpressionAnalysis/AllTrapsAnalysis/ModulesFishersExactTopGo/BP/FishersExactModule16TableTopGO.csv")
+
+out <- list("a" = a, "b" = b, "c" = c, "d" = d, "e" = e, "f" = f, "g" = g, "h" = h,
+            "i" = i, "j" = j, "k" = k, "l" = l, "m" = m, "n" = n, "o" = o, "p" = p,
+            "q" = q, "r" = r, "s" = s, "t" = t, "u" = u, "v" = v, "w" = w, "x" = x,
+            "y" = y, "z" = z)
+
+out <- as.data.frame(out)
+
+library(writexl)
+
+write_xlsx(out, "output.xlsx")
+
+my_network_modules <- my_network_modules %>% 
+  rename(target_id = gene_ID)
+
+Secretome <- read_excel("/Users/summerblanco/Desktop/mmc2.xlsx",sheet="N") %>% 
+  left_join(my_network_modules)
+
+write.csv(Secretome, "secretome.csv")

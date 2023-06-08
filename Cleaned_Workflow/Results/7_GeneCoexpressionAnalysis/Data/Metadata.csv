@@ -1,48 +1,48 @@
-"","Tissue","Time","Treatment","LibraryName","SampleName"
-"1","Petiole","NA","NA","JMGS","VFT46"
-"2","Petiole","NA","NA","JMIG","VFT45"
-"3","Petiole","NA","NA","JMIH","VFT47"
-"4","Petiole","NA","NA","JMII","VFT48"
-"5","Trap","5","no prey","JMGR","VFT29"
-"6","Trap","5","no prey","JMGT","VFT32"
-"7","Trap","5","no prey","JMHR","VFT30"
-"8","Trap","5","no prey","JMHS","VFT31"
-"9","Trap","60","no prey","JMGQ","VFT40"
-"10","Trap","60","no prey","JMHY","VFT37"
-"11","Trap","60","no prey","JMHZ","VFT38"
-"12","Trap","60","no prey","JMIA","VFT39"
-"13","Trap","1440","no prey","JMHT","VFT33"
-"14","Trap","1440","no prey","JMHU","VFT34"
-"15","Trap","1440","no prey","JMHW","VFT35"
-"16","Trap","1440","no prey","JMHX","VFT36"
-"17","Trap","0","no prey","JMHF","VFT1"
-"18","Trap","0","no prey","JMHQ","VFT2"
-"19","Trap","0","no prey","JMIB","VFT3"
-"20","Trap","0","no prey","JMIJ","VFT4"
-"21","Trap","5","prey","JMIK","VFT5"
-"22","Trap","5","prey","JMIL","VFT6"
-"23","Trap","5","prey","JMIM","VFT7"
-"24","Trap","5","prey","JMIN","VFT8"
-"25","Trap","60","prey","JMGU","VFT10"
-"26","Trap","60","prey","JMGW","VFT11"
-"27","Trap","60","prey","JMGX","VFT12"
-"28","Trap","60","prey","JMIP","VFT9"
-"29","Trap","180","prey","JMGY","VFT13"
-"30","Trap","180","prey","JMGZ","VFT14"
-"31","Trap","180","prey","JMHA","VFT15"
-"32","Trap","180","prey","JMHB","VFT16"
-"33","Trap","720","prey","JMIC","VFT41"
-"34","Trap","720","prey","JMID","VFT42"
-"35","Trap","720","prey","JMIE","VFT43"
-"36","Trap","720","prey","JMIF","VFT44"
-"37","Trap","1440","prey","JMHH","VFT21"
-"38","Trap","1440","prey","JMHI","VFT22"
-"39","Trap","1440","prey","JMHJ","VFT23"
-"40","Trap","1440","prey","JMHK","VFT24"
-"41","Trap","2880","prey","JMHL","VFT25"
-"42","Trap","2880","prey","JMHN","VFT27"
-"43","Trap","2880","prey","JMHP","VFT28"
-"44","Trap","4320","prey","JMHC","VFT17"
-"45","Trap","4320","prey","JMHD","VFT18"
-"46","Trap","4320","prey","JMHE","VFT19"
-"47","Trap","4320","prey","JMHG","VFT20"
+,Tissue,Time,Treatment,LibraryName,SampleName
+1,Petiole,NA,NA,JMGS,VFT46
+2,Petiole,NA,NA,JMIG,VFT45
+3,Petiole,NA,NA,JMIH,VFT47
+4,Petiole,NA,NA,JMII,VFT48
+5,Trap,5,no prey,JMGR,VFT29
+6,Trap,5,no prey,JMGT,VFT32
+7,Trap,5,no prey,JMHR,VFT30
+8,Trap,5,no prey,JMHS,VFT31
+9,Trap,60,no prey,JMGQ,VFT40
+10,Trap,60,no prey,JMHY,VFT37
+11,Trap,60,no prey,JMHZ,VFT38
+12,Trap,60,no prey,JMIA,VFT39
+13,Trap,1440,no prey,JMHT,VFT33
+14,Trap,1440,no prey,JMHU,VFT34
+15,Trap,1440,no prey,JMHW,VFT35
+16,Trap,1440,no prey,JMHX,VFT36
+17,Trap,0,no prey,JMHF,VFT1
+18,Trap,0,no prey,JMHQ,VFT2
+19,Trap,0,no prey,JMIB,VFT3
+20,Trap,0,no prey,JMIJ,VFT4
+21,Trap,5,prey,JMIK,VFT5
+22,Trap,5,prey,JMIL,VFT6
+23,Trap,5,prey,JMIM,VFT7
+24,Trap,5,prey,JMIN,VFT8
+25,Trap,60,prey,JMGU,VFT10
+26,Trap,60,prey,JMGW,VFT11
+27,Trap,60,prey,JMGX,VFT12
+28,Trap,60,prey,JMIP,VFT9
+29,Trap,180,prey,JMGY,VFT13
+30,Trap,180,prey,JMGZ,VFT14
+31,Trap,180,prey,JMHA,VFT15
+32,Trap,180,prey,JMHB,VFT16
+33,Trap,720,prey,JMIC,VFT41
+34,Trap,720,prey,JMID,VFT42
+35,Trap,720,prey,JMIE,VFT43
+36,Trap,720,prey,JMIF,VFT44
+37,Trap,1440,prey,JMHH,VFT21
+38,Trap,1440,prey,JMHI,VFT22
+39,Trap,1440,prey,JMHJ,VFT23
+40,Trap,1440,prey,JMHK,VFT24
+41,Trap,2880,prey,JMHL,VFT25
+42,Trap,2880,prey,JMHN,VFT27
+43,Trap,2880,prey,JMHP,VFT28
+44,Trap,4320,prey,JMHC,VFT17
+45,Trap,4320,prey,JMHD,VFT18
+46,Trap,4320,prey,JMHE,VFT19
+47,Trap,4320,prey,JMHG,VFT20
